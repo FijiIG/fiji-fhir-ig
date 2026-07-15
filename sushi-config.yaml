@@ -6,7 +6,7 @@
 # | The version should be updated for each release of the IG, in accord with versioning policy.    |
 # | Keep the fhirVersion and instanceOptions settings unless specific reasons to change them.      |
 # ╰───────────────────────────────────────────────────────────────────────────────────────────────╯
-id: hl7.fhir.uv.pacific.core
+id: hl7.fhir.uv.fiji.core
 packageId: hl7.fhir.uv.fiji.core
 canonical: https://fijiig.github.io/fiji-fhir-ig
 name: FijiCoreIG
