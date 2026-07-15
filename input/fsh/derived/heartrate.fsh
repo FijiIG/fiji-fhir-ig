@@ -6,11 +6,11 @@ Description: "LOINC codes for heart rate measurements, spot or average."
 * include $loinc#8867-4 "Heart rate"
 * include $loinc#103205-1 "Mean heart rate"
 
-Profile: PacificVitalHeartRate
-Parent: PacificObservation
-Id: pacific-vital-heart-rate
-Title: "Heart Rate Vitals (Pacific region)"
-Description: "Profile for heart rate vital observations in the Pacific region"
+Profile: FijiVitalHeartRate
+Parent: FijiObservation
+Id: fiji-vital-heart-rate
+Title: "Heart Rate Vitals - Fiji"
+Description: "Profile for heart rate vital observations in Fiji"
 * status = #final
 * category = $obs-cat-cs#vital-signs
 * code from HeartRateVS (preferred)
@@ -20,4 +20,4 @@ Description: "Profile for heart rate vital observations in the Pacific region"
 //* valueQuantity.minValue = 0
 //* valueQuantity.maxValue = 300
 * effective[x] only dateTime
-* subject only Reference(PacificPatient)
+* subject only Reference(FijiPatient)

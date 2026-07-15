@@ -1,6 +1,6 @@
-Extension: PacificClanAffiliation
-Id: pacific-clan-affiliation
-Title: "Pacific Clan Affiliation"
+Extension: FijiClanAffiliation
+Id: fiji-clan-affiliation
+Title: "Fiji Clan Affiliation"
 Description: """
 Represents clan, tribe, lineage, or descent-based group affiliation.
 

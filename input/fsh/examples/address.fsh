@@ -1,5 +1,5 @@
-Instance: PacificAddressExampleFiji
-InstanceOf: PacificAddress
+Instance: FijiAddressExampleFiji
+InstanceOf: FijiAddress
 Usage: #inline
 
 * text = "Opposite Methodist Church, Nabouwalu Village, Bua Province, Fiji"

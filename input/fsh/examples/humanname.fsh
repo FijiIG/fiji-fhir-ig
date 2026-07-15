@@ -1,7 +1,7 @@
 
-// PacificHumanName Examples  for inline use in PacificPatient--------------------------------------------------------------
-Instance: InlinePacificHumanNameOfficialOnly
-InstanceOf: PacificHumanName
+// FijiHumanName Examples  for inline use in FijiPatient--------------------------------------------------------------
+Instance: InlineFijiHumanNameOfficialOnly
+InstanceOf: FijiHumanName
 Usage: #inline
 
 * use = #official
@@ -9,8 +9,8 @@ Usage: #inline
 * given[1] = "Litia"
 * text = "Maria Litia"
 
-Instance: InlinePacificHumanNameDual
-InstanceOf: PacificHumanName
+Instance: InlineFijiHumanNameDual
+InstanceOf: FijiHumanName
 Usage: #inline
 
 * use = #official
@@ -18,8 +18,8 @@ Usage: #inline
 * family = "Kalo"
 * text = "Tevita Kalo"
 
-Instance: InlinePacificHumanNameUsual
-InstanceOf: PacificHumanName
+Instance: InlineFijiHumanNameUsual
+InstanceOf: FijiHumanName
 Usage: #inline
 
 * use = #usual
@@ -27,8 +27,8 @@ Usage: #inline
 * given[0] = "Tui"
 * text = "Susuga Tui"
 
-Instance: InlinePacificHumanNameUsualOnly
-InstanceOf: PacificHumanName
+Instance: InlineFijiHumanNameUsualOnly
+InstanceOf: FijiHumanName
 Usage: #inline
 
 * use = #usual

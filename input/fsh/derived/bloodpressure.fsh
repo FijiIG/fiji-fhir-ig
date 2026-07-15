@@ -1,13 +1,13 @@
-Profile: PacificVitalBloodPressure
-Parent: PacificObservation
-Id: pacific-vital-blood-pressure
-Title: "Blood Pressure Observation (Pacific region)"
+Profile: FijiVitalBloodPressure
+Parent: FijiObservation
+Id: fiji-vital-blood-pressure
+Title: "Blood Pressure Observation"
 Description: "Observation profile for blood pressure using LOINC"
 
 * status = #final
 * category = $obs-cat-cs#vital-signs
 * code = $loinc#85354-9 "Blood pressure panel with all children optional"
-* subject only Reference(PacificPatient)
+* subject only Reference(FijiPatient)
 * effective[x] only dateTime
 
 * component ^slicing.discriminator.type = #value

@@ -1,10 +1,10 @@
 // Immunizations 
-Profile: PacificImmunization
+Profile: FijiImmunization
 Parent: Immunization
-Id: pacific-immunization
-Title: "Pacific Immunization"
+Id: fiji-immunization
+Title: "Fiji Immunization"
 Description: """
-# Profile of Immunizations for Pacific Patient
+# Profile of Immunizations for Fiji Patient
 
 This profile sets minimum expectations for an Immunization resource to record, search, and fetch immunisation history 
 associated with a patient. 
@@ -13,7 +13,7 @@ associated with a patient.
 The following elements must be recorded:
 * status - one of the following codes (completed, entered-in-error, not-done)
 * vaccineCode - a vaccine code from the Immunization ValueSet
-* patient - a reference to a  Pacific Patient
+* patient - a reference to a  Fiji Patient
 * occurrence[x] -  the vaccine administration date can be recorded using one of the two options below
   * occurenceDateTime  (preferred)
   * occurrenceString - this is a free text representation of the date or administration
@@ -45,7 +45,7 @@ New Zealand Base FHIR specification does not include Immunization.
 * status 1..1 MS
 * vaccineCode 1..1 MS
 * vaccineCode from ImmVS (extensible)
-* patient only Reference(PacificPatient)
+* patient only Reference(FijiPatient)
 * occurrence[x] 1..1 MS
 * occurrenceDateTime MS
 * lotNumber MS

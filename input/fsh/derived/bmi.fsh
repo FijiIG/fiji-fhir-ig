@@ -1,8 +1,8 @@
-Profile: PacificBMI
-Parent: PacificObservation
-Id: pacific-vital-bmi
-Title: "BMI Vitals (Pacific region)"
-Description: "Profile for BMI vital observations in the Pacific region"
+Profile: FijiBMI
+Parent: FijiObservation
+Id: fiji-vital-bmi
+Title: "BMI Vitals - Fiji"
+Description: "Profile for BMI vital observations in Fiji"
 * status = #final
 * category = $obs-cat-cs#vital-signs
 * code = $loinc#39156-5 "Body mass index (BMI) [Ratio]"
@@ -12,4 +12,4 @@ Description: "Profile for BMI vital observations in the Pacific region"
 //* valueQuantity.minValue = 0
 //* valueQuantity.maxValue = 100
 * effective[x] only dateTime
-* subject only Reference(PacificPatient)
+* subject only Reference(FijiPatient)

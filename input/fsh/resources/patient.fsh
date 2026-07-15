@@ -1,12 +1,12 @@
-Profile: PacificPatient
+Profile: FijiPatient
 Parent: Patient
-Id: pacific-patient
-Title: "Pacific Patient"
+Id: fiji-patient
+Title: "Fiji Patient"
 Description: """
-Patient profile for South Pacific jurisdictions.
+Patient profile for Fiji jurisdiction.
 
 Integrates:
-- PacificHumanName
+- FijiHumanName
 - Patient-level clan affiliation
 - Guidance for usual vs official name use
 """
@@ -26,13 +26,13 @@ Integrates:
 // -----------------------------
 
 * name 1..*
-* name only PacificHumanName
+* name only FijiHumanName
 
 // -----------------------------
 // Clan Extension Integration
 // -----------------------------
 
-* extension contains PacificClanAffiliation named clanAffiliation 0..*
+* extension contains FijiClanAffiliation named clanAffiliation 0..*
 
 * extension[clanAffiliation] MS
 
@@ -44,7 +44,7 @@ Integrates:
 * birthDate MS
 
 * address 0..*
-* address only PacificAddress
+* address only FijiAddress
 
 // -----------------------------
 // Display Guidance
@@ -62,18 +62,18 @@ Integrates:
     role 0..*
 
 * generalPractitioner[practitioner] only Reference(
-    PacificPractitioner or Practitioner
+    FijiPractitioner or Practitioner
 )
 
 * generalPractitioner[role] only Reference(
-    PacificPractitionerRole or PractitionerRole
+    FijiPractitionerRole or PractitionerRole
 )
 
-* generalPractitioner ^short = "Care providers for this patient; prefer Pacific-specific profiles"
+* generalPractitioner ^short = "Care providers for this patient; prefer Fiji-specific profiles"
 
 * managingOrganization 0..1
-* managingOrganization only Reference(PacificOrganization or Organization)
-* managingOrganization ^short = "Organization responsible for the patient; prefer Pacific-specific profiles"
+* managingOrganization only Reference(FijiOrganization or Organization)
+* managingOrganization ^short = "Organization responsible for the patient; prefer Fiji specific profiles"
 
 ///////////////////////////////////////////////////////////////
 // COMMUNICATION

@@ -1,5 +1,5 @@
-Extension: PacificAddressIsland
-Id: pacific-address-island
+Extension: FijiAddressIsland
+Id: fiji-address-island
 Title: "Island"
 Description: "Island where the address is located."
 

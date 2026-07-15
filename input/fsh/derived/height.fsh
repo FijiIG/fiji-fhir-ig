@@ -1,8 +1,8 @@
-Profile: PacificHeight
-Parent: PacificObservation
-Id: pacific-vital-height
-Title: "Height Vitals (Pacific region)"
-Description: "Profile for height vital observations in the Pacific region"
+Profile: FijiHeight
+Parent: FijiObservation
+Id: fiji-vital-height
+Title: "Height Vitals - Fiji"
+Description: "Profile for height vital observations in Fiji"
 * status = #final
 * category = $obs-cat-cs#vital-signs
 * code = $loinc#8302-2 "Body height"
@@ -12,4 +12,4 @@ Description: "Profile for height vital observations in the Pacific region"
 //* valueQuantity.minValue = 0
 //* valueQuantity.maxValue = 300
 * effective[x] only dateTime
-* subject only Reference(PacificPatient)
+* subject only Reference(FijiPatient)

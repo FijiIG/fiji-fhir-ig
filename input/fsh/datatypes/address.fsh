@@ -1,21 +1,20 @@
-Profile: PacificAddress
+Profile: FijiAddress
 Parent: Address
-Id: pacific-address
-Title: "Pacific Address"
-Description: """Address profile designed for Pacific nations where addresses are commonly descriptive and village-based rather than street-based.
-This profile supports a range of address formats commonly used in Pacific jurisdictions, with commonly required extensions, and general usage guidance.
-Each national core IG derived from this base profile should further specify mappings of administrative hierarchies to the specific address fields
+Id: fiji-address
+Title: "Fiji Address"
+Description: """Address profile designed for Fiji where addresses are commonly descriptive and village-based rather than street-based.
+This profile supports a range of address formats, with commonly required extensions, and general usage guidance.
 In all cases:
 - text is a mandatory field and should be considered the primary representation of the fully address.
 - line is used for free text address lines and may relate to a landmark, school, church etc. rather than a street address.
-- Village and Island are added as extensions to the base fhir Address definition to support common Pacific address formats.
+- Village and Island are added as extensions to the base fhir Address definition to support common address formats.
 - geolocation is added as an optional extension to support use case where GPS coordinates are available. It is expected that this will become more common.
 - Postal code is often not used, so is currently optional and may be removed (ie 0..0) if not required in the future
 - Country is required to support international interoperability
 
 Recommended mapping of address fields are below but should be specifically defined and documented in nation specific examples.
 
-| FHIR Element        | Typical Pacific Use            | Notes                          |
+| FHIR Element        | Typical Use            | Notes                          |
 | ------------------- | ------------------------------ | ------------------------------ |
 | `text`              | Full narrative address         | Often the primary address form |
 | `line`              | Landmark, compound, street     | Free-text                      |
@@ -25,7 +24,7 @@ Recommended mapping of address fields are below but should be specifically defin
 | `extension:village` | Village                        | Most rural addresses           |
 | `extension:island`  | Island                         | Important for logistics        |
 
-Note: clanAffiliation is already an extension in the PacificPatient, PacificProvider profiles so does not need to be duplicated here.
+Note: clanAffiliation is already an extension in the FijiPatient, FijiProvider profiles so does not need to be duplicated here.
 
 **STATUS**: Proposed - needs further review and consensus from South Pacific stakeholders before finalization.
 """
@@ -35,7 +34,7 @@ Note: clanAffiliation is already an extension in the PacificPatient, PacificProv
 
 * text 1..1 MS
 * text ^short = "Full descriptive address, should be considered the primary representation of the address"
-* text ^definition = "The complete address as written or spoken locally. In many Pacific contexts this is the primary form of the address and may include village, island, landmarks, or other narrative description."
+* text ^definition = "The complete address as written or spoken locally. This is the primary form of the address and may include village, island, landmarks, or other narrative description."
 
 * line 0..* MS
 * line ^short = "Free text address lines may refer to proximity to landmarks (e.g.school, church etc.)"
@@ -58,15 +57,15 @@ Note: clanAffiliation is already an extension in the PacificPatient, PacificProv
 * country ^definition = "Country expressed using ISO 3166 two-letter country codes."
 
 * postalCode 0..1
-* postalCode ^short = "Postal code is often not used, so is currently optional and may be removed if not required in the future"
+* postalCode ^short = "Postal code is currently optional"
 
 * extension contains
-    PacificAddressVillage named village 0..1 MS and
-    PacificAddressIsland named island 0..1 MS and
+    FijiAddressVillage named village 0..1 MS and
+    FijiAddressIsland named island 0..1 MS and
     $geolocation|4.0.1 named geolocation 0..1
 
 * extension[village] ^short = "Village or rural settlement."
-* extension[village] ^definition = "Village, settlement, or rural community name. This is often a primary geographic identifier in Pacific addressing."
+* extension[village] ^definition = "Village, settlement, or rural community name. This may be a primary geographic identifier for addressing."
 
 * extension[island] ^short = "Island where the address is located."
 * extension[island] ^definition = "Island name where the address is located. This is important in archipelago nations where logistics and travel depend on island geography."

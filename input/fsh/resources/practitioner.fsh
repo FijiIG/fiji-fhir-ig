@@ -1,10 +1,10 @@
 // Practioner Providing Care for template Patient
-Profile: PacificPractitioner
+Profile: FijiPractitioner
 Parent: Practitioner
-Id: pacific-practitioner
-Title: "Pacific Practitioner"
+Id: fiji-practitioner
+Title: "Fiji Practitioner"
 Description: """
-Practitioner profile for Pacific jurisdictions supporting culturally appropriate naming 
+Practitioner profile for Fiji jurisdictions supporting culturally appropriate naming 
 while maintaining regulatory and medico-legal identity requirements.
 
 Requires at least one official name (registered/licensed name).
@@ -14,7 +14,7 @@ Supports clan affiliation as an optional extension.
 // TODO: 
 // Consider adding a "displayName" extension for easier display of preferred name in EHRs and HIEs.
 // Require at least one professional identifier slice for registration
-// Bind qualification.code to a Pacific value set
+// Bind qualification.code to a Fiji value set
 // Require communication language
 
 
@@ -35,7 +35,7 @@ Supports clan affiliation as an optional extension.
 ///////////////////////////////////////////////////////////////
 
 * name 1..*
-* name only PacificHumanName
+* name only FijiHumanName
 
 * name ^slicing.discriminator.type = #value
 * name ^slicing.discriminator.path = "use"
@@ -55,7 +55,7 @@ Supports clan affiliation as an optional extension.
 // CLAN AFFILIATION (OPTIONAL)
 ///////////////////////////////////////////////////////////////
 
-* extension contains PacificClanAffiliation named clanAffiliation 0..*
+* extension contains FijiClanAffiliation named clanAffiliation 0..*
 
 ///////////////////////////////////////////////////////////////
 // TELECOM
@@ -69,7 +69,7 @@ Supports clan affiliation as an optional extension.
 ///////////////////////////////////////////////////////////////
 
 * address 0..*
-* address only PacificAddress
+* address only FijiAddress
 * address ^short = "Practice or correspondence address"
 
 ///////////////////////////////////////////////////////////////

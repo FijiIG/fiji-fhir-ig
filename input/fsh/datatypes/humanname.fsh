@@ -1,11 +1,11 @@
-Profile: PacificHumanName
+Profile: FijiHumanName
 Parent: HumanName
-Id: pacific-humanname
-Title: "Pacific HumanName"
+Id: fiji-humanname
+Title: "Fiji HumanName"
 Description: """
-A HumanName profile designed for South Pacific jurisdictions.
+A HumanName profile designed for representing Fiji names.
 
-In the South Pacific, naming conventions are diverse and may not align with Western norms. This profile accommodates a range of naming practices used in the South Pacific including:
+Naming conventions are diverse and may not align with Western norms. This profile accommodates a range of naming practices including:
 
 - Absence of family names (e.g., in some cultures where individuals may have only given names)
 - Patronymic or Matronymic structures
@@ -13,12 +13,12 @@ In the South Pacific, naming conventions are diverse and may not align with West
 - Customary and ceremonial naming
 - Distinction between 'usual' (social) and 'official' (legal) names
 
-At least one PacificHumanName instance must exist on PacificPatient and PacificPractitioner resources.
+At least one FijiHumanName instance must exist on FijiPatient and FijiPractitioner resources.
 Systems SHALL NOT require both usual and official names.
 
-Note: Clan affiliation is recorded separately from the PacificHumanName.  It issupported as an optional extension of  PacificPatient and PacificPractitioner resources to capture important cultural identity information.
+Note: Clan affiliation is recorded separately from the FijiHumanName.  It issupported as an optional extension of  FijiPatient and FijiPractitioner resources to capture important cultural identity information.
 
-**STATUS**: Proposed - needs further review and consensus from South Pacific stakeholders before finalization.
+**STATUS**: Proposed for wider Pacific use - needs further review and consensus from Pacific stakeholders before finalization.
 """
 
 * ^status = #active
@@ -42,8 +42,7 @@ Note: Clan affiliation is recorded separately from the PacificHumanName.  It iss
 * use ^short = "Identifies whether this is the usual or official name"
 * use ^definition = """
 Indicates the purpose of this name instance.
-
-South Pacific guidance:
+Guidance:
 
 - official: The name as recorded in civil registration,
   passport, or national identity documents. May be Westernised.
@@ -92,7 +91,7 @@ including macrons and glottal markers are permitted.
 * family ^definition = """
 Family name if present.
 
-In some Pacific contexts this may represent:
+In some contexts this may represent:
 - An inherited surname
 - A patronymic (father's name)
 - A colonial-era family name

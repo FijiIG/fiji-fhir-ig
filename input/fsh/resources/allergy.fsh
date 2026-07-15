@@ -1,12 +1,12 @@
 // Medication Allergies 
-Profile: PacificAllergyIntolerance
+Profile: FijiAllergyIntolerance
 Parent: AllergyIntolerance
-Id: pacific-allergy-intolerance
-Title: "Pacific Allergy/Intolerance"
-Description: "Profile of Allergy/Intolerance for Pacific Patient"
+Id: fiji-allergy-intolerance
+Title: "Fiji Allergy/Intolerance"
+Description: "Profile of Allergy/Intolerance for Fiji Patient"
 * code 1..1 MS
 * clinicalStatus 0..1 MS
 * verificationStatus 0..1 MS
 * category 1..* MS
 * criticality 0..1 MS
-* patient only Reference(PacificPatient)
+* patient only Reference(FijiPatient)

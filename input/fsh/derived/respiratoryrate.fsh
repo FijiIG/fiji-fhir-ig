@@ -1,8 +1,8 @@
-Profile: PacificRespiratoryRate
-Parent: PacificObservation
-Id: pacific-vital-respiratory-rate
-Title: "Respiratory Rate Vitals (Pacific region)"
-Description: "Profile for respiratory rate vital observations in the Pacific region"
+Profile: FijiRespiratoryRate
+Parent: FijiObservation
+Id: fiji-vital-respiratory-rate
+Title: "Respiratory Rate Vitals - Fiji"
+Description: "Profile for respiratory rate vital observations in Fiji"
 * status = #final
 * category = $obs-cat-cs#vital-signs
 * code = $loinc#9279-1 "Respiratory rate"
@@ -12,4 +12,4 @@ Description: "Profile for respiratory rate vital observations in the Pacific reg
 //* valueQuantity.minValue = 0
 //* valueQuantity.maxValue = 300
 * effective[x] only dateTime
-* subject only Reference(PacificPatient)
+* subject only Reference(FijiPatient)

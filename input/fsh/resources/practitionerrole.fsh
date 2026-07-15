@@ -1,12 +1,12 @@
-Profile: PacificPractitionerRole
+Profile: FijiPractitionerRole
 Parent: PractitionerRole
-Id: pacific-practitioner-role
-Title: "Pacific Practitioner Role"
+Id: fiji-practitioner-role
+Title: "Fiji Practitioner Role"
 Description: """
-Defines the functional, organisational, and regulatory role of a Pacific Practitioner.
+Defines the functional, organisational, and regulatory role of a Fiji Practitioner.
 
 Supports multiple roles per practitioner (e.g., GP, hospital consultant, outreach clinician).
-Intended for use in Pacific regional health systems and future HIE environments.
+Intended for use in Fiji regional health systems and future HIE environments.
 """
 
 * ^status = #active
@@ -17,11 +17,11 @@ Intended for use in Pacific regional health systems and future HIE environments.
 ///////////////////////////////////////////////////////////////
 
 * practitioner 1..1
-* practitioner only Reference(PacificPractitioner)
+* practitioner only Reference(FijiPractitioner)
 * practitioner ^short = "The practitioner performing this role"
 
 * organization 1..1
-* organization only Reference(PacificOrganization)
+* organization only Reference(FijiOrganization)
 * organization ^short = "The healthcare organisation where the role is performed"
 
 ///////////////////////////////////////////////////////////////

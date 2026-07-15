@@ -1,5 +1,5 @@
-Extension: PacificAddressVillage
-Id: pacific-address-village
+Extension: FijiAddressVillage
+Id: fiji-address-village
 Title: "Village"
 Description: "Village or rural settlement name used in Pacific addressing."
 

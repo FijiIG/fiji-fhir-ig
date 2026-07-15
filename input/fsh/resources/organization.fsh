@@ -1,11 +1,11 @@
 // Organization providing care for patients in this IG scope
-Profile: PacificOrganization
+Profile: FijiOrganization
 Parent: Organization
-Id: pacific-organization
-Title: "Pacific Healthcare Organization"
-Description: "Profile for Pacific Healthcare Organization"
+Id: fiji-organization
+Title: "Fiji Healthcare Service or Organization"
+Description: "Profile for Fiji Healthcare Service or Organization"
 * identifier 1..1 MS
 * name 1..1 MS
 * telecom 1..* MS
 * address 0..* MS
-* address only PacificAddress
+* address only FijiAddress

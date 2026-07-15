@@ -1,6 +1,6 @@
-// Pacific Patient Examples ---------------------------------------------------------------------------
-Instance: PacificPatientExample1
-InstanceOf: PacificPatient
+// Fiji Patient Examples ---------------------------------------------------------------------------
+Instance: FijiPatientExample1
+InstanceOf: FijiPatient
 Usage: #example
 Description: """
 Example patient with official and usual names, clan affiliation, and demographic details."""
@@ -23,8 +23,8 @@ Example patient with official and usual names, clan affiliation, and demographic
 * gender = #male
 * birthDate = "1990-04-12"
 
-Instance: PacificPatientExample2
-InstanceOf: PacificPatient
+Instance: FijiPatientExample2
+InstanceOf: FijiPatient
 Usage: #example
 Description: """Example patient with official and usual names, clan affiliation, and demographic details."""
 
@@ -47,8 +47,8 @@ Description: """Example patient with official and usual names, clan affiliation,
 * birthDate = "1985-11-02"
 
 
-Instance: PacificPatientFijiITaukei
-InstanceOf: PacificPatient
+Instance: FijiPatientFijiITaukei
+InstanceOf: FijiPatient
 Usage: #example
 Title: "Fiji Patient - iTaukei with Mataqali"
 Description: """
@@ -62,7 +62,7 @@ Example Fijian patient of iTaukei background demonstrating:
 // NATIONAL HEALTH IDENTIFIER
 ///////////////////////////////////////////////////////////////
 
-* identifier[0].system = "http://health.gov.fj/fhir/identifier/nhi"
+* identifier[0].system = "http://fhir.health.gov.fj/identifier/nhi"
 * identifier[0].value = "FJ-NHI-982345671"
 
 ///////////////////////////////////////////////////////////////
@@ -97,8 +97,8 @@ Example Fijian patient of iTaukei background demonstrating:
 * address.text = "Nadi Village, Ba Province"
 * address.country = "FJ"
 
-Instance: PacificPatientFijiIndo
-InstanceOf: PacificPatient
+Instance: FijiPatientFijiIndo
+InstanceOf: FijiPatient
 Usage: #example
 Title: "Fiji Patient – Indo-Fijian"
 Description: """
@@ -112,7 +112,7 @@ Example Indo-Fijian patient demonstrating:
 // NATIONAL HEALTH IDENTIFIER
 ///////////////////////////////////////////////////////////////
 
-* identifier[0].system = "http://health.gov.fj/fhir/identifier/nhi"
+* identifier[0].system = "http://fhir.health.gov.fj/identifier/nhi"
 * identifier[0].value = "FJ-NHI-771245903"
 
 ///////////////////////////////////////////////////////////////
@@ -141,37 +141,17 @@ Example Indo-Fijian patient demonstrating:
 * address.country = "FJ"
 
 
-// Pacific Practitioner Examples ----------------------------------------------------------------------
-Instance: PacificPractitionerExample
-InstanceOf: PacificPractitioner
+// Fiji Practitioner Examples ----------------------------------------------------------------------
+
+// Fiji PractitionerRole Examples ----------------------------------------------------------------------
+Instance: FijiPractitionerRoleExample
+InstanceOf: FijiPractitionerRole
 Usage: #example
-Title: "Pacific Practitioner Example Samoa"
-Description: "Registered practitioner with official registration name and usual community name including clan affiliation."
+Title: "Fiji Practitioner Role District Hospital GP"
+Description: "General Practitioner role at district hospital for registered Fiji practitioner."
 
-* identifier.system = "http://health.gov.ws/fhir/identifier/practitioner"
-* identifier.value = "REG-12345"
-
-* name[official].use = #official
-* name[official].family = "Tupua"
-* name[official].given = "Leilani"
-
-* name[usual].use = #usual
-* name[usual].given = "Lani"
-
-* extension[clanAffiliation].valueCodeableConcept.text = "Sa Tupua"
-
-* gender = #female
-
-
-// Pacific PractitionerRole Examples ----------------------------------------------------------------------
-Instance: PacificPractitionerRoleExample
-InstanceOf: PacificPractitionerRole
-Usage: #example
-Title: "Pacific Practitioner Role District Hospital GP"
-Description: "General Practitioner role at district hospital for registered Pacific practitioner."
-
-* practitioner = Reference(PacificPractitionerExample)
-* organization = Reference(PacificHospitalExample)
+* practitioner = Reference(FijiPractitionerExample)
+* organization = Reference(FijiHospitalExample)
 
 * code[0].text = "General Practitioner"
 
@@ -183,13 +163,13 @@ Description: "General Practitioner role at district hospital for registered Paci
 * telecom.value = "+685123456"
 
 
-// Pacific Organization Examples ----------------------------------------------------------------------
-Instance: PacificHospitalExample
+// Fiji Organization Examples ----------------------------------------------------------------------
+Instance: FijiHospitalExample
 InstanceOf: Organization
 Usage: #example
-Title: "Pacific Hospital Example Fiji Divisional Hospital"
+Title: "Fiji Hospital Example Fiji Divisional Hospital"
 Description: """
-Example Pacific hospital organization in Fiji.
+Example Fiji hospital organization in Fiji.
 Includes organizational identifier, contact information, and address.
 """
 
@@ -197,7 +177,7 @@ Includes organizational identifier, contact information, and address.
 // IDENTIFIER
 ///////////////////////////////////////////////////////////////
 
-* identifier.system = "http://health.gov.fj/fhir/identifier/organization"
+* identifier.system = "http://fhir.health.gov.fj/identifier/organization"
 * identifier.value = "FJ-HOSP-SUH-001"
 
 ///////////////////////////////////////////////////////////////
