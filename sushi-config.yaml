@@ -1,5 +1,5 @@
 # ╭─────────────────────────          ImplementationGuide Notes         ───────────────────────────╮
-# | This is an initial configuration file for the Pacific Base IG.                                 |
+# | This is an initial configuration file for the Fiji Core IG.                                 |
 # | The id, packageId, canonical URL, name, etc. need to be validated/agreed by the Fiji IG team.  |
 # | The canonical URL will need to be changed once a suitable URL is agreed upon and available.    |
 # | The menu structure will be customized as required to fit the content of the IG.                |
@@ -7,13 +7,13 @@
 # | Keep the fhirVersion and instanceOptions settings unless specific reasons to change them.      |
 # ╰───────────────────────────────────────────────────────────────────────────────────────────────╯
 id: hl7.fhir.uv.pacific.core
-packageId: hl7.fhir.uv.pacific.core
-canonical: https://fijiig.github.io/fiji-pacific-ig
-name: FijiPacificCore
-title: Fiji Pacific Core Implementation Guide
-description: Implementation Guide for Fiji FHIR Interopeerability with base definitions applicable to the wider South Pacific region.
+packageId: hl7.fhir.uv.fiji.core
+canonical: https://fijiig.github.io/fiji-fhir-ig
+name: FijiCoreIG
+title: Fiji Core Implementation Guide
+description: Implementation Guide for Fiji FHIR Interopeerability.
 status: draft # draft | active | retired | unknown
-version: 0.2.1
+version: 0.1.0
 copyrightYear: 2026+
 releaseLabel: ci-build
 license: CC0-1.0
@@ -21,8 +21,8 @@ copyright: Distributed under the Creative Commons CC0-1.0 License (https://creat
 
 # publisher information
 publisher:
-  name: HealthInfoServices
-  url: https://healthinfoservices.net
+  name: Fiji MHMS
+  url: https://fhir.health.gov.fj
 
 menu:
   Home: index.html
@@ -38,7 +38,7 @@ contact:
   - name: Support
     telecom:
       - system: url
-        value: https://www.healthinfoservices.net
+        value: https://www.fhir.health.gov.fj
 
 
 # leave these settings as is unless you know what you're doing and have a reason to change them
@@ -48,9 +48,9 @@ instanceOptions:
 
 pages:
   index.md:
-    title: Fiji/Pacific Core Implementation Guide
+    title: Fiji Core Implementation Guide
   gettingstarted.md:
-    title: Contributing to the Fiji/Pacific Core IG
+    title: Contributing to the Fiji Core IG
   datatypes.md:
     title: Data Type Profiles
   resources.md:
