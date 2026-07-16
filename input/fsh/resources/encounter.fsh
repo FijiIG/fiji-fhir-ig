@@ -8,4 +8,4 @@ Profile for Fiji Healthcare Encounter
 (Work in progress)
 """
 * identifier 1..1 MS
-* subject only FijiPatient
+* subject only Reference(FijiPatient)
