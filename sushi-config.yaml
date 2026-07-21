@@ -10,8 +10,8 @@ id: hl7.fhir.uv.fiji.core
 packageId: hl7.fhir.uv.fiji.core
 canonical: https://fijiig.github.io/fiji-fhir-ig
 name: FijiCoreIG
-title: Fiji Core Implementation Guide
-description: Implementation Guide for Fiji FHIR Interopeerability.
+title: Draft Fiji Core Implementation Guide
+description: Implementation Guide for Fiji FHIR Interoperability.
 status: draft # draft | active | retired | unknown
 version: 0.1.0
 copyrightYear: 2026+
@@ -21,7 +21,7 @@ copyright: Distributed under the Creative Commons CC0-1.0 License (https://creat
 
 # publisher information
 publisher:
-  name: Fiji MHMS
+  name: MHMS Fiji
   url: https://fhir.health.gov.fj
 
 menu:
