@@ -1,0 +1,5 @@
+URL,Version,Status,OIDs,Name,Title,Description,Uses,Used,Sources
+http://hl7.org/fhir/ValueSet/observation-category,4.0.1,draft,"2.16.840.1.113883.4.642.3.403",ObservationCategoryCodes,Observation Category Codes,"Observation Category codes.","StructureDefinition/fiji-observation","THO"
+https://core.fhir.health.gov.fj/ValueSet/heart-rate-loinc,0.1.1,draft,,HeartRateVS,Heart Rate LOINC Codes,"LOINC codes for heart rate measurements, spot or average.","StructureDefinition/fiji-vital-heart-rate","LOINC"
+https://core.fhir.health.gov.fj/ValueSet/imm-vs,0.1.1,draft,,ImmVS,Immunization ValueSet,"Immunization valueset based on until Fiji-Pacific valueset is developed","StructureDefinition/fiji-immunization","FHIR"
+https://core.fhir.health.gov.fj/ValueSet/obs-vs,0.1.1,draft,,ObsVS,Observation ValueSet,"Use all LOINC codes as temporary observation valueset until Fiji-Pacific valueset is developed","StructureDefinition/fiji-observation","LOINC"

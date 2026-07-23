@@ -1,0 +1,401 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+
+
+
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en" dir="ltr">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>Fiji Core Implementation Guide - Draft Fiji Core Implementation Guide v0.1.1</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+    <link href="assets/css/project.css" rel="stylesheet"/>
+  	<link href="assets/css/cqf.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+    <script type="text/javascript" src="assets/js/direction-management.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="fhir-logo" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="fhir-logo" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="fhir-logo" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script type="text/javascript" src="assets/js/prism.js"></script>
+	  <script type="text/javascript" src="assets/js/prism-fhirpath.js"></script>
+	  <script type="text/javascript" src="assets/js/prism-cql.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
+    <style type="text/css">h2{--heading-prefix:"1"}
+    h3,h4,h5,h6{--heading-prefix:"1"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+
+        <!-- Placeholder for child template header declarations -->
+
+
+        <div id="ig-status" data-fhir="generated">
+          <p><span style="font-size:12pt;font-weight:bold">Draft Fiji Core Implementation Guide</span>
+            <br/>
+            <span style="display:inline-block;">0.1.1 - ci-build
+
+
+
+  <img alt="Fiji flag" src="../assets/images/fji.svg" height="16" title="Fiji"/>
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment" data-fhir="generated">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+  <li>
+    <a href="gettingstarted.html">Getting Started</a>
+  </li>
+  <li>
+    <a href="datatypes.html">Data Types</a>
+  </li>
+  <li>
+    <a href="resources.html">Resources</a>
+  </li>
+  <li>
+    <a href="terminology.html">Terminology</a>
+  </li>
+  <li>
+    <a href="extensions.html">Extensions</a>
+  </li>
+  <li>
+    <a href="artifacts.html">Artifacts</a>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+
+              
+
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment" data-fhir="generated">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><b>Fiji Core Implementation Guide</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">Draft Fiji Core Implementation Guide - Local Development build (v0.1.1) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://core.fhir.health.gov.fj/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
+  <h2>Fiji Core Implementation Guide</h2>
+  
+
+
+
+
+  <table class="colsd" data-fhir="generated">
+
+    <tr>
+      <td colspan="4"><i>Official URL</i>: <span class="copy-text">https://core.fhir.health.gov.fj/ImplementationGuide/health-gov-fhir-fj-core<button title="Click to copy URL" class="btn-copy" data-clipboard-text="https://core.fhir.health.gov.fj/ImplementationGuide/health-gov-fhir-fj-core"/></span>
+      </td>
+      <td><i>Version</i>:
+      <span class="copy-text">0.1.1<button title="Click to copy versioned URL" class="btn-copy" data-clipboard-text="https://core.fhir.health.gov.fj/ImplementationGuide/health-gov-fhir-fj-core|0.1.1"/></span>
+      </td>
+      <td style="text-align: right;border-left-style: hidden" title="Enable this to see changes since the last official release">
+        <span id="toggle-change-display"><label style="margin:0;font-weight:normal" for="showChanges">Highlight text changes?</label>
+  
+        <input style="margin:0" type="checkbox" id="showChanges" onchange="toggleChanges()"/>
+  
+      </span>
+      </td>
+    </tr>
+
+    <tr>
+
+
+
+
+
+
+
+      <td colspan="5">
+        
+          Draft
+          
+
+            as of 
+2026-07-23
+
+          
+        
+      </td>
+
+
+
+      <td><i>Computable Name</i>: <span style="font-family: monospace;">FijiCoreIG</span></td>
+    </tr>
+
+
+
+
+
+    <tr>
+      <td colspan="6"><p><em>Copyright/Legal</em>: Distributed under the Creative Commons CC0-1.0 License (https://creativecommons.org/publicdomain/zero/1.0/)</p>
+</td>
+    </tr>
+
+  </table>
+
+
+
+
+
+
+
+
+
+
+
+
+    <p><!-- white space is critical inside of capture --></p>
+<div class="markdown-toc">
+<ul id="markdown-toc">
+  <li><a href="#overview" id="markdown-toc-overview">Overview</a></li>
+  <li><a href="#audience" id="markdown-toc-audience">Audience</a></li>
+  <li><a href="#design--decision-documents" id="markdown-toc-design--decision-documents">Design &amp; Decision Documents</a></li>
+  <li><a href="#getting-started-contributions-and-feedback" id="markdown-toc-getting-started-contributions-and-feedback">Getting Started, Contributions and Feedback</a></li>
+  <li><a href="#package-information" id="markdown-toc-package-information">Package Information</a></li>
+  <li><a href="#primary-contributors" id="markdown-toc-primary-contributors">Primary Contributors</a></li>
+</ul>
+
+</div>
+<h3 id="overview">Overview</h3>
+
+<blockquote>
+  <p><strong>Project Status: In Development</strong> &lt;/P&gt;
+This Implementation Guide is under active development and is not yet available for public or production use. Content, data models, and implementation details are subject to change.</p>
+</blockquote>
+
+<p>The Fiji Core FHIR Implementation Guide defines the nationally agreed core clinical and administrative data standards for interoperable health information exchange in Fiji. The FHIR Implementation Guide (IG) defines a common set of FHIR profiles, extensions and terminology to support interoperable health information exchange in Fiji.</p>
+
+<p>The high level goals of this IG are:</p>
+<ul>
+  <li>Interoperability specification for health data exchange in Fiji</li>
+  <li>Compliance/compatibility guidance for aquisition or development of future health systems/software</li>
+  <li>Interface/data structure definition basis for future Health Information Exchange based on OpenHIE</li>
+  <li>Future support for Internation Patient Summary (FHIR IPS)</li>
+</ul>
+
+<h3 id="audience">Audience</h3>
+
+<p>This guide is intended for:</p>
+
+<ul>
+  <li>Health ministries</li>
+  <li>Software developers &amp; Implementers</li>
+  <li>Clinical informatics specialists</li>
+  <li>Clinical/Technical Advisors and Working Groups</li>
+  <li>Vendors</li>
+</ul>
+
+<h3 id="design--decision-documents">Design &amp; Decision Documents</h3>
+<ul>
+  <li><a href="https://github.com/FijiIG/fiji-fhir-ig/blob/main/docs/index.md">Document Index</a></li>
+</ul>
+
+<h3 id="getting-started-contributions-and-feedback">Getting Started, Contributions and Feedback</h3>
+
+<p>New users should begin with:</p>
+
+<ul>
+  <li><a href="gettingstarted.html">Getting Started</a></li>
+</ul>
+
+<p>Then review the following key artifacts:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Category</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="resources.html">Resource Profiles</a></td>
+      <td>Fiji-specific constrained FHIR resources</td>
+    </tr>
+    <tr>
+      <td><a href="datatypes.html">Data Type Profiles</a></td>
+      <td>Fiji-specific constrained or extended FHIR datatypes</td>
+    </tr>
+    <tr>
+      <td><a href="extensions.html">Extensions</a></td>
+      <td>Fiji-specific extension data elements</td>
+    </tr>
+    <tr>
+      <td><a href="terminology.html">Terminology</a></td>
+      <td>Terminology bindings</td>
+    </tr>
+    <tr>
+      <td>Downloads</td>
+      <td>Package and definitions</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="package-information">Package Information</h3>
+
+<p>Canonical:  <code class="language-plaintext highlighter-rouge">https://core.fhir.health.gov.fj</code></p>
+
+<p>FHIR Version: This IG derives from <a href="https://hl7.org/fhir/R4/index.html">FHIR R4 ver 4.0.1</a>.</p>
+
+<p>Package Id: <code class="language-plaintext highlighter-rouge">health.gov.fhir.fj.core</code></p>
+
+<p>Version:  0.1.1 ci-build</p>
+
+<h3 id="primary-contributors">Primary Contributors</h3>
+
+<p>The Draft Fiji Core FHIR IG is being developed in collaboration with MHMS Fiji, under the supervision of Digital Health, Technical Advisory Group (TAG), with support from CSIRO Strengthening Standards Capability Project, and Australian Government.</p>
+
+<p>This Implementation Guide is released under the Creative Commons CC0 1.0 Universal Public Domain Dedication.</p>
+
+<p>This publication includes IP covered under the following statements.</p>
+<ul>
+<li>This material contains content from <a href="http://loinc.org">LOINC</a>. LOINC is copyright &copy; 1995-2020, Regenstrief Institute, Inc. and the Logical Observation Identifiers Names and Codes (LOINC) Committee and is available at no cost under the <a href="http://loinc.org/license">license</a>. LOINC&reg; is a registered United States trademark of Regenstrief Institute, Inc.<div data-fhir="generated" id="ipp_1" onclick="if (document.getElementById('ipp2_1').innerHTML != '') {document.getElementById('ipp_1').innerHTML = document.getElementById('ipp2_1').innerHTML; document.getElementById('ipp2_1').innerHTML = ''}"> <span style="cursor: pointer; border: 1px grey solid; background-color: #fcdcb3; padding-left: 3px; padding-right: 3px; color: black">Show Usage</span></div><div id="ipp2_1" style="display: none">
+<ul>
+<li><a href="http://tx.fhir.org/r4/ValueSet/x-loinc2.82">LOINC</a>: <a href="StructureDefinition-fiji-vital-bmi.html">FijiBMI</a>, <a href="StructureDefinition-fiji-vital-height.html">FijiHeight</a><span id="ips_1" onclick="document.getElementById('ips_1').innerHTML = document.getElementById('ips2_1').innerHTML">... <span style="cursor: pointer; border: 1px grey solid; background-color: #fcdcb3; padding-left: 3px; padding-right: 3px; color: black">Show 9 more</span></span><span id="ips2_1" style="display: none">, <a href="StructureDefinition-fiji-observation.html">FijiObservation</a>, <a href="StructureDefinition-fiji-vital-oxygen-saturation.html">FijiOxygenSaturation</a>, <a href="StructureDefinition-fiji-vital-respiratory-rate.html">FijiRespiratoryRate</a>, <a href="StructureDefinition-fiji-vital-blood-pressure.html">FijiVitalBloodPressure</a>, <a href="StructureDefinition-fiji-vital-body-temperature.html">FijiVitalBodyTemperature</a>, <a href="StructureDefinition-fiji-vital-heart-rate.html">FijiVitalHeartRate</a>, <a href="StructureDefinition-fiji-vital-weight.html">FijiWeight</a>, <a href="ValueSet-heart-rate-loinc.html">HeartRateVS</a> and <a href="ValueSet-obs-vs.html">ObsVS</a></span></li>
+</ul>
+</div></li>
+<li>This material derives from the HL7 Terminology (THO). THO is copyright &copy;1989+ Health Level Seven International and is made available under the CC0 designation. For more licensing information see: <a href="https://terminology.hl7.org/license.html">https://terminology.hl7.org/license.html</a><div data-fhir="generated" id="ipp_2" onclick="if (document.getElementById('ipp2_2').innerHTML != '') {document.getElementById('ipp_2').innerHTML = document.getElementById('ipp2_2').innerHTML; document.getElementById('ipp2_2').innerHTML = ''}"> <span style="cursor: pointer; border: 1px grey solid; background-color: #fcdcb3; padding-left: 3px; padding-right: 3px; color: black">Show Usage</span></div><div id="ipp2_2" style="display: none">
+<ul>
+<li><a href="http://terminology.hl7.org/7.2.0/CodeSystem-observation-category.html">Observation Category Codes</a>: <a href="StructureDefinition-fiji-vital-bmi.html">FijiBMI</a>, <a href="StructureDefinition-fiji-vital-height.html">FijiHeight</a><span id="ips_2" onclick="document.getElementById('ips_2').innerHTML = document.getElementById('ips2_2').innerHTML">... <span style="cursor: pointer; border: 1px grey solid; background-color: #fcdcb3; padding-left: 3px; padding-right: 3px; color: black">Show 7 more</span></span><span id="ips2_2" style="display: none">, <a href="StructureDefinition-fiji-observation.html">FijiObservation</a>, <a href="StructureDefinition-fiji-vital-oxygen-saturation.html">FijiOxygenSaturation</a>, <a href="StructureDefinition-fiji-vital-respiratory-rate.html">FijiRespiratoryRate</a>, <a href="StructureDefinition-fiji-vital-blood-pressure.html">FijiVitalBloodPressure</a>, <a href="StructureDefinition-fiji-vital-body-temperature.html">FijiVitalBodyTemperature</a>, <a href="StructureDefinition-fiji-vital-heart-rate.html">FijiVitalHeartRate</a> and <a href="StructureDefinition-fiji-vital-weight.html">FijiWeight</a></span></li>
+</ul>
+</div></li>
+</ul>
+<!--$$1$$-->
+
+
+
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+  <script type="text/javascript" src="assets/js/flags.js"> </script>
+
+  <script type="text/javascript" src="assets/js/window-hash.js"> </script>
+  <script type="text/javascript" src="assets/js/togglechanges.js"> </script>
+  <script type="text/javascript" src="assets/js/requirements-table.js"> </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container" data-fhir="generated">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+
+
+
+          IG © 2026+ <a style="color:var(--footer-hyperlink-text-color)" href="https://fhir.health.gov.fj">MHMS Fiji</a>.  
+          Package health.gov.fhir.fj.core#0.1.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
+          Generated 
+  <span title="2026-07-23 07:16:00 +0000">
+    2026-07-23
+  </span>
+
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="../qa.html">QA Report</a>
+                 
+                
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

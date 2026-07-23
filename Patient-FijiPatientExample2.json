@@ -1,0 +1,35 @@
+{
+  "resourceType" : "Patient",
+  "id" : "FijiPatientExample2",
+  "meta" : {
+    "profile" : ["https://core.fhir.health.gov.fj/StructureDefinition/fiji-patient"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Patient FijiPatientExample2</b></p><a name=\"FijiPatientExample2\"> </a><a name=\"hcFijiPatientExample2\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-fiji-patient.html\">Fiji Patient</a></p></div><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\">Susuga Tui Male, DoB: 1985-11-02 ( http://health.example.org/fhir/identifier#987654321)</p><hr/><table class=\"grid\"><tr><td style=\"background-color: #f3f5da\" title=\"Alternate names (see the one above)\">Alt. Name:</td><td colspan=\"3\">Tevita Kalo(Official)</td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Represents clan, tribe, lineage, or descent-based group affiliation.\n\nThis is a demographic identity attribute.\nIt is not a syntactic component of a name.\"><a href=\"StructureDefinition-fiji-clan-affiliation.html\">Fiji Clan Affiliation</a></td><td colspan=\"3\"><span title=\"Codes:\">Sa Malietoa</span></td></tr></table></div>"
+  },
+  "extension" : [{
+    "url" : "https://core.fhir.health.gov.fj/StructureDefinition/fiji-clan-affiliation",
+    "valueCodeableConcept" : {
+      "text" : "Sa Malietoa"
+    }
+  }],
+  "identifier" : [{
+    "system" : "http://health.example.org/fhir/identifier",
+    "value" : "987654321"
+  }],
+  "name" : [{
+    "use" : "official",
+    "text" : "Tevita Kalo",
+    "family" : "Kalo",
+    "given" : ["Tevita"]
+  },
+  {
+    "use" : "usual",
+    "text" : "Susuga Tui",
+    "given" : ["Tui"],
+    "prefix" : ["Susuga"]
+  }],
+  "gender" : "male",
+  "birthDate" : "1985-11-02"
+}

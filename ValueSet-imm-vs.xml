@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="imm-vs"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet imm-vs</b></p><a name="imm-vs"> </a><a name="hcimm-vs"> </a><ul><li>Include all codes defined in <a href="http://tx.fhir.org/r4"><code>http://hl7.org/fhir/sid/cvx</code></a><span style="opacity: 0.5" title="Version is not explicitly stated. When building this specification, the most recent version 20250715 has been used"> version ⏿20250715</span></li></ul></div>
+  </text>
+  <url value="https://core.fhir.health.gov.fj/ValueSet/imm-vs"/>
+  <version value="0.1.1"/>
+  <name value="ImmVS"/>
+  <title value="Immunization ValueSet"/>
+  <status value="draft"/>
+  <date value="2026-07-23T07:16:02+00:00"/>
+  <publisher value="MHMS Fiji"/>
+  <contact>
+    <name value="MHMS Fiji"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://fhir.health.gov.fj"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Support"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.fhir.health.gov.fj"/>
+    </telecom>
+  </contact>
+  <description value="Immunization valueset based on until Fiji-Pacific valueset is developed"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="FJ"/>
+      <display value="Fiji"/>
+    </coding>
+  </jurisdiction>
+  <copyright value="Distributed under the Creative Commons CC0-1.0 License (https://creativecommons.org/publicdomain/zero/1.0/)"/>
+  <compose>
+    <include>
+      <system value="http://hl7.org/fhir/sid/cvx"/>
+    </include>
+  </compose>
+</ValueSet>

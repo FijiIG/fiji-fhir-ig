@@ -1,0 +1,37 @@
+{
+  "codeSystems" : [{
+    "url" : "http://hl7.org/fhir/sid/cvx",
+    "version" : "20250715",
+    "status" : "active",
+    "name" : "CVX",
+    "title" : "CVX - US Vaccine Codes",
+    "description" : "CVX Codes for vaccines",
+    "uses" : {
+    },
+    "ValueSet-imm-vs.html" : "Immunization ValueSet"
+  },
+  {
+    "url" : "http://loinc.org",
+    "version" : "2.82",
+    "status" : "active",
+    "name" : "LOINC",
+    "title" : null,
+    "description" : "This is a place holder for the code system which is fully supported through internal means (not by this code system)",
+    "uses" : {
+    },
+    "ValueSet-obs-vs.html" : "Observation ValueSet",
+    "ValueSet-heart-rate-loinc.html" : "Heart Rate LOINC Codes"
+  },
+  {
+    "url" : "http://terminology.hl7.org/CodeSystem/observation-category",
+    "version" : "2.0.0",
+    "status" : "active",
+    "name" : "ObservationCategoryCodes",
+    "title" : "Observation Category Codes",
+    "description" : "Observation Category codes.",
+    "oids" : ["2.16.840.1.113883.4.642.1.1125"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-observation-category.html" : "Observation Category Codes"
+  }]
+}

@@ -1,0 +1,4 @@
+URL,Version,Status,OIDs,Name,Title,Description,Used
+http://hl7.org/fhir/sid/cvx,20250715,active,,CVX,CVX - US Vaccine Codes,"CVX Codes for vaccines","ValueSet/imm-vs"
+http://loinc.org,2.82,active,,LOINC,,"This is a place holder for the code system which is fully supported through internal means (not by this code system)","ValueSet/heart-rate-loinc,ValueSet/obs-vs"
+http://terminology.hl7.org/CodeSystem/observation-category,2.0.0,active,"2.16.840.1.113883.4.642.1.1125",ObservationCategoryCodes,Observation Category Codes,"Observation Category codes.","ValueSet/observation-category"

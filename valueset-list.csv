@@ -1,0 +1,4 @@
+URL,Version,Status,OIDs,Name,Title,Description,Uses,Used,Sources
+https://core.fhir.health.gov.fj/ValueSet/heart-rate-loinc,0.1.1,draft,,HeartRateVS,Heart Rate LOINC Codes,"LOINC codes for heart rate measurements, spot or average.",,"LOINC"
+https://core.fhir.health.gov.fj/ValueSet/imm-vs,0.1.1,draft,,ImmVS,Immunization ValueSet,"Immunization valueset based on until Fiji-Pacific valueset is developed",,"FHIR"
+https://core.fhir.health.gov.fj/ValueSet/obs-vs,0.1.1,draft,,ObsVS,Observation ValueSet,"Use all LOINC codes as temporary observation valueset until Fiji-Pacific valueset is developed",,"LOINC"

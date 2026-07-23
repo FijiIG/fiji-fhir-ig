@@ -1,0 +1,366 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+
+
+
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en" dir="ltr">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>Contributing to the Fiji Core IG - Draft Fiji Core Implementation Guide v0.1.1</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+    <link href="assets/css/project.css" rel="stylesheet"/>
+  	<link href="assets/css/cqf.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+    <script type="text/javascript" src="assets/js/direction-management.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="fhir-logo" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="fhir-logo" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="fhir-logo" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script type="text/javascript" src="assets/js/prism.js"></script>
+	  <script type="text/javascript" src="assets/js/prism-fhirpath.js"></script>
+	  <script type="text/javascript" src="assets/js/prism-cql.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
+    <style type="text/css">h2{--heading-prefix:"2"}
+    h3,h4,h5,h6{--heading-prefix:"2"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+
+        <!-- Placeholder for child template header declarations -->
+
+
+        <div id="ig-status" data-fhir="generated">
+          <p><span style="font-size:12pt;font-weight:bold">Draft Fiji Core Implementation Guide</span>
+            <br/>
+            <span style="display:inline-block;">0.1.1 - ci-build
+
+
+
+  <img alt="Fiji flag" src="../assets/images/fji.svg" height="16" title="Fiji"/>
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment" data-fhir="generated">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+  <li>
+    <a href="gettingstarted.html">Getting Started</a>
+  </li>
+  <li>
+    <a href="datatypes.html">Data Types</a>
+  </li>
+  <li>
+    <a href="resources.html">Resources</a>
+  </li>
+  <li>
+    <a href="terminology.html">Terminology</a>
+  </li>
+  <li>
+    <a href="extensions.html">Extensions</a>
+  </li>
+  <li>
+    <a href="artifacts.html">Artifacts</a>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+
+              
+
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment" data-fhir="generated">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><b>Contributing to the Fiji Core IG</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">Draft Fiji Core Implementation Guide - Local Development build (v0.1.1) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://core.fhir.health.gov.fj/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
+  <h2>Contributing to the Fiji Core IG</h2>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <p><!-- white space is critical inside of capture --></p>
+<div class="markdown-toc">
+<ul id="markdown-toc">
+  <li><a href="#getting-started" id="markdown-toc-getting-started">Getting Started</a>    <ul>
+      <li><a href="#prerequisite-skills" id="markdown-toc-prerequisite-skills">Prerequisite Skills</a></li>
+      <li><a href="#required-software" id="markdown-toc-required-software">Required Software</a></li>
+      <li><a href="#installation" id="markdown-toc-installation">Installation</a></li>
+      <li><a href="#contributing-to-this-ig" id="markdown-toc-contributing-to-this-ig">Contributing to this IG</a></li>
+      <li><a href="#to-derive-your-own-ig-based-on-this-content" id="markdown-toc-to-derive-your-own-ig-based-on-this-content">To derive your own IG based on this content</a></li>
+      <li><a href="#references-and-acknowledgements" id="markdown-toc-references-and-acknowledgements">References and Acknowledgements</a></li>
+    </ul>
+  </li>
+</ul>
+
+</div>
+<h2 id="getting-started">Getting Started</h2>
+<p>This file is intended to assist you in setting up your system to contribute to this project,  or to derive another IG from the starting place of this project.</p>
+
+<p>To configure your system to compile this code into an IG, follow the steps below.</p>
+
+<h3 id="prerequisite-skills">Prerequisite Skills</h3>
+<p>This IG is designed to make your getting started process as easy as possible…  But if you are unfamiliar with FHIR, you are strongly recommended to first familiarise yourself with the basic concepts of FHIR resources.  There are many tutorials and guides,  but don't get lost in the weeds,  the best way to learn is actually starting with a simple project.</p>
+
+<p>Equally if you are not familiar with FHIR Shorthand (FSH) it would be good to follow a tutorial   My recommendations are:</p>
+<ul>
+  <li><a href="https://fshschool.github.io/courses/fsh-seminar/">FSH Seminar</a></li>
+  <li><a href="https://fshschool.org/docs/sushi/tutorial/">Sushi Tutorial</a></li>
+</ul>
+
+<h3 id="required-software">Required Software</h3>
+<p>You will need to have the following software installed and configured on the system that you will be using for creating the IG.</p>
+<ol>
+  <li>Node.js</li>
+  <li>Sushi - to install Sushi and Node.js follow these <a href="https://fshschool.org/docs/sushi/installation/">instructions</a></li>
+  <li>Git</li>
+  <li>A text editor (Notepad++ or Visual Studio Code)</li>
+</ol>
+
+<h3 id="installation">Installation</h3>
+<p>To setup and deploy the IG, ensure that you have the pre-requisite software installed,  and then follow the steps below.</p>
+<ol>
+  <li>Create or go to a folder that you will use for working with the FSH code</li>
+  <li>Clone this repository by executing:
+    <div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  git clone https://github.com/healthinfoservices/fiji-fhir-ig.git
+</code></pre></div>    </div>
+  </li>
+  <li>Install the FHIR packages listed in the dependencies section of the sushi-config.yaml file:
+    <div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  sushi update-dependencies
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>Download the latest version of the HL7 FHIR IG Publisher tool into the cache.</p>
+
+    <p>(for Linux/Mac)</p>
+    <div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>./_updatePublisher.sh
+</code></pre></div>    </div>
+    <p>(for Windows CMD)</p>
+    <div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>_updatePublisher
+</code></pre></div>    </div>
+    <p>(for Windows Powershell)</p>
+    <div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>./_updatePublisher.bat
+</code></pre></div>    </div>
+  </li>
+  <li>Run SUSHI on the FSH files in input/fsh:
+    <div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  sushi build <span class="nb">.</span>
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>Build the IG</p>
+
+    <p>(for Linux/Mac)</p>
+    <div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>./_genonce.sh
+</code></pre></div>    </div>
+    <p>(for Windows CMD)</p>
+    <div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>_genonce
+</code></pre></div>    </div>
+    <p>(for Windows Powershell)</p>
+    <div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>./_genonce.bat
+</code></pre></div>    </div>
+  </li>
+</ol>
+
+<h3 id="contributing-to-this-ig">Contributing to this IG</h3>
+<p>To contribute to this IG you will need to use a text editor to modify or add to files in the input folder.</p>
+
+<p>After each modification to fsh or md files,  run the following command:
+  (for Linux/Mac)</p>
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  ./_genonce.sh
+</code></pre></div></div>
+<p>(for Windows CMD)</p>
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  _genonce
+  <span class="o">(</span><span class="k">for </span>Windows Powershell<span class="o">)</span>
+  <span class="sb">```</span>sh
+  ./_genonce.bat
+</code></pre></div></div>
+
+<h3 id="to-derive-your-own-ig-based-on-this-content">To derive your own IG based on this content</h3>
+<p>To create or derive another IG from this content, you will need to use a text editor to modify the following:</p>
+
+<ol>
+  <li>
+    <p>Change the information in the sushi-config.yaml file to set overall settings for your IG.</p>
+  </li>
+  <li>
+    <p>Using a text editor,  you can adapt or extend the IG by editing the .fsh files in the input/fsh folder.  You can also delete and .fsh files for profiles that you will not be using,  and/or create new fsh files for additional profiles.</p>
+  </li>
+  <li>
+    <p>Using a text editor,  modify the index.md.  This creates the content for the home page of your IG.</p>
+  </li>
+  <li>
+    <p>Make use of the aliases.fsh file.  It contains a set of aliases that you can use in your fsh files to prevent having to type in long url's.</p>
+  </li>
+  <li>
+    <p>After each modification to fsh or md files,  run the following command:
+  (for Linux/Mac)</p>
+    <div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  ./_genonce.sh
+</code></pre></div>    </div>
+    <p>(for Windows CMD)</p>
+    <div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  _genonce
+  <span class="o">(</span><span class="k">for </span>Windows Powershell<span class="o">)</span>
+  <span class="sb">```</span>sh
+  ./_genonce.bat
+</code></pre></div>    </div>
+  </li>
+</ol>
+
+<h3 id="references-and-acknowledgements">References and Acknowledgements</h3>
+<ul>
+  <li><a href="https://github.com/healthinfoservices/fiji-fhir-ig">FHIR Shorthand repository for this IG</a></li>
+  <li><a href="https://build.fhir.org/ig/HL7/fhir-shorthand/overview.html">FHIR Shorthand FSH</a></li>
+  <li><a href="https://fshschool.org/">FHIR Shorthand training</a></li>
+  <li><a href="https://build.fhir.org/ig/FHIR/ig-guidance/best-practice.html#pages-and-organization">Guidance for FHIR IG Creation</a></li>
+  <li><a href="https://healthinfoservices.net">HealthInfoServices - Australia</a></li>
+  <li><a href="https://www.linkedin.com/in/daniel-foulkes/">Daniel Foulkes</a></li>
+</ul>
+
+<!-- MARKDOWN LINKS & IMAGES -->
+
+
+
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+  <script type="text/javascript" src="assets/js/flags.js"> </script>
+
+  <script type="text/javascript" src="assets/js/window-hash.js"> </script>
+  <script type="text/javascript" src="assets/js/togglechanges.js"> </script>
+  <script type="text/javascript" src="assets/js/requirements-table.js"> </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container" data-fhir="generated">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+
+
+
+          IG © 2026+ <a style="color:var(--footer-hyperlink-text-color)" href="https://fhir.health.gov.fj">MHMS Fiji</a>.  
+          Package health.gov.fhir.fj.core#0.1.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
+          Generated 
+  <span title="2026-07-23 07:16:00 +0000">
+    2026-07-23
+  </span>
+
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="../qa.html">QA Report</a>
+                 
+                
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PractitionerRole xmlns="http://hl7.org/fhir">
+  <id value="FijiPractitionerRoleExample"/>
+  <meta>
+    <profile value="https://core.fhir.health.gov.fj/StructureDefinition/fiji-practitioner-role"/>
+  </meta>
+  <language value="en"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: PractitionerRole FijiPractitionerRoleExample</b></p><a name="FijiPractitionerRoleExample"> </a><a name="hcFijiPractitionerRoleExample"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-fiji-practitioner-role.html">Fiji Practitioner Role</a></p></div><p><b>period</b>: 2023-01-01 --&gt; (ongoing)</p><p><b>practitioner</b>: <code>FijiPractitionerExample</code></p><p><b>organization</b>: <a href="Organization-FijiHospitalExample.html">Organization Suva Divisional Hospital</a></p><p><b>code</b>: <span title="Codes:">General Practitioner</span></p><p><b>specialty</b>: <span title="Codes:">Family Medicine</span></p><p><b>telecom</b>: <a href="tel:+685123456">+685123456</a></p></div>
+  </text>
+  <period>
+    <start value="2023-01-01"/>
+  </period>
+  <practitioner>
+    <reference value="FijiPractitionerExample"/>
+  </practitioner>
+  <organization>
+    <reference value="Organization/FijiHospitalExample"/>
+  </organization>
+  <code>
+    <text value="General Practitioner"/>
+  </code>
+  <specialty>
+    <text value="Family Medicine"/>
+  </specialty>
+  <telecom>
+    <system value="phone"/>
+    <value value="+685123456"/>
+  </telecom>
+</PractitionerRole>

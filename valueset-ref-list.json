@@ -1,0 +1,52 @@
+{
+  "codeSystems" : [{
+    "url" : "http://hl7.org/fhir/ValueSet/observation-category",
+    "version" : "4.0.1",
+    "status" : "draft",
+    "name" : "ObservationCategoryCodes",
+    "title" : "Observation Category Codes",
+    "description" : "Observation Category codes.",
+    "systems" : ["http://terminology.hl7.org/CodeSystem/observation-category"],
+    "oids" : ["2.16.840.1.113883.4.642.3.403"],
+    "sources" : ["2.16.840.1.113883.4.642.3.403"],
+    "uses" : {
+    },
+    "StructureDefinition-fiji-observation.html" : "Fiji Observation"
+  },
+  {
+    "url" : "https://core.fhir.health.gov.fj/ValueSet/heart-rate-loinc",
+    "version" : "0.1.1",
+    "status" : "draft",
+    "name" : "HeartRateVS",
+    "title" : "Heart Rate LOINC Codes",
+    "description" : "LOINC codes for heart rate measurements, spot or average.",
+    "systems" : ["http://loinc.org"],
+    "uses" : {
+    },
+    "StructureDefinition-fiji-vital-heart-rate.html" : "Heart Rate Vitals - Fiji"
+  },
+  {
+    "url" : "https://core.fhir.health.gov.fj/ValueSet/imm-vs",
+    "version" : "0.1.1",
+    "status" : "draft",
+    "name" : "ImmVS",
+    "title" : "Immunization ValueSet",
+    "description" : "Immunization valueset based on until Fiji-Pacific valueset is developed",
+    "systems" : ["http://hl7.org/fhir/sid/cvx"],
+    "uses" : {
+    },
+    "StructureDefinition-fiji-immunization.html" : "Fiji Immunization"
+  },
+  {
+    "url" : "https://core.fhir.health.gov.fj/ValueSet/obs-vs",
+    "version" : "0.1.1",
+    "status" : "draft",
+    "name" : "ObsVS",
+    "title" : "Observation ValueSet",
+    "description" : "Use all LOINC codes as temporary observation valueset until Fiji-Pacific valueset is developed",
+    "systems" : ["http://loinc.org"],
+    "uses" : {
+    },
+    "StructureDefinition-fiji-observation.html" : "Fiji Observation"
+  }]
+}

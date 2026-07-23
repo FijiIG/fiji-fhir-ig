@@ -1,0 +1,29 @@
+{
+  "codeSystems" : [{
+    "url" : "https://core.fhir.health.gov.fj/ValueSet/heart-rate-loinc",
+    "version" : "0.1.1",
+    "status" : "draft",
+    "name" : "HeartRateVS",
+    "title" : "Heart Rate LOINC Codes",
+    "description" : "LOINC codes for heart rate measurements, spot or average.",
+    "systems" : ["http://loinc.org"]
+  },
+  {
+    "url" : "https://core.fhir.health.gov.fj/ValueSet/imm-vs",
+    "version" : "0.1.1",
+    "status" : "draft",
+    "name" : "ImmVS",
+    "title" : "Immunization ValueSet",
+    "description" : "Immunization valueset based on until Fiji-Pacific valueset is developed",
+    "systems" : ["http://hl7.org/fhir/sid/cvx"]
+  },
+  {
+    "url" : "https://core.fhir.health.gov.fj/ValueSet/obs-vs",
+    "version" : "0.1.1",
+    "status" : "draft",
+    "name" : "ObsVS",
+    "title" : "Observation ValueSet",
+    "description" : "Use all LOINC codes as temporary observation valueset until Fiji-Pacific valueset is developed",
+    "systems" : ["http://loinc.org"]
+  }]
+}

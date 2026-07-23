@@ -1,0 +1,70 @@
+# health.gov.fhir.fj.core#0.1.1: Draft Fiji Core Implementation Guide(en)
+
+## Pages
+
+* [Fiji Core Implementation Guide](index.md)
+* [Contributing to the Fiji Core IG](gettingstarted.md)
+* [Extensions](extensions.md)
+* [Data Type Profiles](datatypes.md)
+* [Terminology](terminology.md)
+* [Resource Profiles](resources.md)
+* [Artifacts Summary](artifacts.md)
+
+## Resources
+
+### ValueSets
+
+* [Heart Rate LOINC Codes](ValueSet-heart-rate-loinc.md)
+* [Immunization ValueSet](ValueSet-imm-vs.md)
+* [Observation ValueSet](ValueSet-obs-vs.md)
+
+### Complex-type Profiles
+
+* [Fiji Address](StructureDefinition-fiji-address.md)
+* [Fiji HumanName](StructureDefinition-fiji-humanname.md)
+
+### Resource Profiles
+
+* [Fiji Allergy/Intolerance](StructureDefinition-fiji-allergy-intolerance.md)
+* [Fiji Condition](StructureDefinition-fiji-condition.md)
+* [Fiji Healthcare Encounter](StructureDefinition-fiji-encounter.md)
+* [Fiji Immunization](StructureDefinition-fiji-immunization.md)
+* [Fiji Observation](StructureDefinition-fiji-observation.md)
+* [Fiji Healthcare Service or Organization](StructureDefinition-fiji-organization.md)
+* [Fiji Patient](StructureDefinition-fiji-patient.md)
+* [Fiji Practitioner Role](StructureDefinition-fiji-practitioner-role.md)
+* [Fiji Practitioner](StructureDefinition-fiji-practitioner.md)
+* [Blood Pressure Observation](StructureDefinition-fiji-vital-blood-pressure.md)
+* [BMI Vitals - Fiji](StructureDefinition-fiji-vital-bmi.md)
+* [Body Temperature Vitals - Fiji](StructureDefinition-fiji-vital-body-temperature.md)
+* [Heart Rate Vitals - Fiji](StructureDefinition-fiji-vital-heart-rate.md)
+* [Height Vitals - Fiji](StructureDefinition-fiji-vital-height.md)
+* [Oxygen Saturation Vitals - Fiji](StructureDefinition-fiji-vital-oxygen-saturation.md)
+* [Respiratory Rate Vitals - Fiji](StructureDefinition-fiji-vital-respiratory-rate.md)
+* [Weight Vitals - Fiji](StructureDefinition-fiji-vital-weight.md)
+
+### Extensions
+
+* [Birth Date Estimated Indicator](StructureDefinition-birthdate-estimated-indicator.md)
+* [Island](StructureDefinition-fiji-address-island.md)
+* [Village](StructureDefinition-fiji-address-village.md)
+* [Fiji Clan Affiliation](StructureDefinition-fiji-clan-affiliation.md)
+
+### ImplementationGuides
+
+* [Draft Fiji Core Implementation Guide](ImplementationGuide-health-gov-fhir-fj-core.md)
+
+### NamingSystems
+
+* [FijiOrganizationIdentifier](NamingSystem-FijiOrganizationIdentifier.md)
+* [FijiPatientIdentifier](NamingSystem-FijiPatientIdentifier.md)
+* [FijiPractitionerRegistration](NamingSystem-FijiPractitionerRegistration.md)
+
+### Examples
+
+* [Suva Divisional Hospital (Organization)](Organization-FijiHospitalExample.md)
+* [FijiPatientExample1 (Patient)](Patient-FijiPatientExample1.md)
+* [FijiPatientExample2 (Patient)](Patient-FijiPatientExample2.md)
+* [FijiPatientFijiITaukei (Patient)](Patient-FijiPatientFijiITaukei.md)
+* [FijiPatientFijiIndo (Patient)](Patient-FijiPatientFijiIndo.md)
+* [FijiPractitionerRoleExample (PractitionerRole)](PractitionerRole-FijiPractitionerRoleExample.md)
