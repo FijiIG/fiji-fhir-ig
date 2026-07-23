@@ -1,15 +1,15 @@
 ### Overview
-Welcome to the Fiji Core Implementation Guide.
 
-This FHIR Implementation Guide (IG) defines a common set of FHIR profiles, extensions and terminology to support interoperable health information exchange in Fiji.   It is intended that in the future this IG will also be extended for use in other Pacific nations.  Thus it provides a basic structure for commonly used FHIR profiles with definitions that are relevant across the region to other Pacific nations.  
+> **Project Status: In Development** </P>
+>This Implementation Guide is under active development and is not yet available for public or production use. Content, data models, and implementation details are subject to change.
+
+The Fiji Core FHIR Implementation Guide defines the nationally agreed core clinical and administrative data standards for interoperable health information exchange in Fiji. The FHIR Implementation Guide (IG) defines a common set of FHIR profiles, extensions and terminology to support interoperable health information exchange in Fiji.
 
 The high level goals of this IG are:
 - Interoperability specification for health data exchange in Fiji 
 - Compliance/compatibility guidance for aquisition or development of future health systems/software
 - Interface/data structure definition basis for future Health Information Exchange based on OpenHIE
 - Future support for Internation Patient Summary (FHIR IPS)
-
-This IG is currently in draft state for evaluation and validation by Fiji MHMS and other health stakeholders.   If you have experience and responsibility delivering health in the Fiji, any assistance, comments or suggestions would be deeply valued as we seek to refine this further.
 
 ### Audience
 
@@ -53,10 +53,9 @@ Version:  0.2.1 ci-build
 
 ### Primary Contributors  
 
-This Implementation Guide is released under the Creative Commons CC0 1.0 Universal Public Domain Dedication. Attribution is not required, but acknowledgement of the primary contributors is appreciated:  
+The Draft Fiji Core FHIR IG is being developed in collaboration with MHMS Fiji, under the supervision of Digital Health, Technical Advisory Group (TAG), with support from CSIRO Strengthening Standards Capability Project, and Australian Government.
 
-- [Daniel Foulkes](https://www.linkedin.com/in/daniel-foulkes/)
-- [Health Info Services](https://healthinfoservices.net)
+This Implementation Guide is released under the Creative Commons CC0 1.0 Universal Public Domain Dedication. 
 
 
 {% include ip-statements.xhtml %}

@@ -1,5 +1,5 @@
 ### Overview
-Welcome to the Fiji Core Implementation Guide Documentation.
+Welcome to the Draft Fiji Core Implementation Guide Documentation.
 
 
 ### Document List:
