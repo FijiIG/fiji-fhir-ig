@@ -42,6 +42,8 @@ Integrates:
 
 * gender MS
 * birthDate MS
+* birthDate ^short = "Date of birth, may be flagged as estimated via extension"
+* birthDate.extension contains BirthDateEstimatedIndicator named birthDateEstimated 0..1 MS
 
 * address 0..*
 * address only FijiAddress
