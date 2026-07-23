@@ -42,13 +42,13 @@ Then review the following key artifacts:
 
 ### Package Information
 
-Canonical:  `https://fijiig.github.io/fiji-fhir-ig`
+Canonical:  `https://core.fhir.health.gov.fj`
 
 FHIR Version: This IG derives from [FHIR R4 ver 4.0.1](https://hl7.org/fhir/R4/index.html). 
 
-Package Id: `hl7.fhir.uv.fiji.core`
+Package Id: `health.gov.fhir.fj.core`
 
-Version:  0.2.1 ci-build
+Version:  0.1.1 ci-build
 
 
 ### Primary Contributors  

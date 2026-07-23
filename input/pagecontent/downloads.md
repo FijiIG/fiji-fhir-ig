@@ -6,17 +6,17 @@ TODO:  Details below are example only, these need to be adjusted to match the re
 
 | Item          | Value                                |
 | ------------- | ------------------------------------ |
-| Package ID    | `hl7.fhir.uv.fiji.core`              |
-| Version       | `0.2.0-ci-build`                       |
+| Package ID    | `health.gov.fhir.fj.core`              |
+| Version       | `0.1.1-ci-build`                       |
 | FHIR Version  | `4.0.1 (R4)`                         |
-| Canonical URL | `https://fijiig.github.io/fiji-fhir-ig` |
+| Canonical URL | `https://core.fhir.health.gov.fj` |
 
 ### NPM Package
 
 The complete implementation guide is distributed as an NPM package:
 
 ```text
-hl7.fhir.uv.fiji.core#??? (not yet available)
+health.gov.fhir.fj.core#??? (not yet available)
 ```
 
 The package contains:
@@ -33,7 +33,7 @@ The package may be used with the HL7 FHIR Validator:
 
 ```bash
 java -jar validator.jar resource.json \
-  -ig hl7.fhir.uv.fiji.core
+  -ig health.gov.fhir.fj.core
 ```
 
 ### Source Repository
