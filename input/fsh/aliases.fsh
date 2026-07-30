@@ -16,6 +16,7 @@ Alias: $RADLEX = http://www.radlex.org
 Alias: $DICOM = http://dicom.nema.org/resources/ontology/DCM
 Alias: $ICD10CM = http://hl7.org/fhir/sid/icd-10-cm
 Alias: $ICD10PCS = http://www.cms.gov/Medicare/Coding/ICD10
+Alias: $ICD11MMS = http://id.who.int/icd/release/11/mms
 Alias: $ICDO3 = http://terminology.hl7.org/CodeSystem/icd-o-3
 Alias: $UMLS = http://terminology.hl7.org/CodeSystem/umls
 

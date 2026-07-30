@@ -16,7 +16,7 @@ TODO:  Details below are example only, these need to be adjusted to match the re
 The complete implementation guide is distributed as an NPM package:
 
 ```text
-health.gov.fhir.fj.core#??? (not yet available)
+health.gov.fhir.fj.core#current (not yet available)
 ```
 
 The package contains:
