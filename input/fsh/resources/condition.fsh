@@ -10,8 +10,9 @@ Description: "Profile of Condition as defined for Fiji Core IG."
 * verificationStatus 0..1 MS
 * category 1..* MS
 * severity 0..1 MS
-* bodySite from FijiBodySiteVS
+* bodySite from FijiBodySiteVS (extensible)
 * subject only Reference(FijiPatient)
 * onsetDateTime MS
 * abatement[x] MS
+* evidence.code from FijiEvidenceVS (preferred)
 * note MS
