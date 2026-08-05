@@ -12,4 +12,9 @@ Description: "Profile of Allergy/Intolerance for Fiji Patient"
 * criticality 0..1 MS
 * patient only Reference(FijiPatient)
 * onsetDateTime MS
+* note MS
+* reaction MS
+* reaction.manifestation 1..* MS
 * reaction.manifestation from FijiConditionCodeVS (preferred)
+* reaction.severity MS
+
