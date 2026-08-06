@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="fiji-allergy-agent-vs"/>
+  <language value="en"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet fiji-allergy-agent-vs</b></p><a name="fiji-allergy-agent-vs"> </a><a name="hcfiji-allergy-agent-vs"> </a><p>This value set includes codes based on the following rules:</p><ul><li>Include codes from<a href="http://www.snomed.org/"><code>http://snomed.info/sct</code></a><span title="Version is not explicitly stated. No matching Code System found"> version Not Stated (use latest from terminology server)</span> where expression  = &lt; 762766007 |Edible substance| AND ^ 10811000132104 |International Patient Summary reference set|</li><li>Include codes from<a href="http://www.snomed.org/"><code>http://snomed.info/sct</code></a><span title="Version is not explicitly stated. No matching Code System found"> version Not Stated (use latest from terminology server)</span> where expression  = &lt; 406455002 |Allergen class| AND ^ 10811000132104 |International Patient Summary reference set|</li><li>Include codes from<a href="http://www.snomed.org/"><code>http://snomed.info/sct</code></a><span title="Version is not explicitly stated. No matching Code System found"> version Not Stated (use latest from terminology server)</span> where expression  = &lt; 425620007 |Metal| AND ^ 10811000132104 |International Patient Summary reference set|</li><li>Include codes from<a href="http://www.snomed.org/"><code>http://snomed.info/sct</code></a><span title="Version is not explicitly stated. No matching Code System found"> version Not Stated (use latest from terminology server)</span> where expression  = &lt; 373873005 |Pharmaceutical / biologic product| AND ^ 10811000132104 |International Patient Summary reference set|</li><li>Include codes from<a href="http://www.snomed.org/"><code>http://snomed.info/sct</code></a><span title="Version is not explicitly stated. No matching Code System found"> version Not Stated (use latest from terminology server)</span> where expression  = &lt; 410942007 |Drug or medicament| AND ^ 10811000132104 |International Patient Summary reference set|</li></ul></div>
+  </text>
+  <url value="https://core.fhir.health.gov.fj/ValueSet/fiji-allergy-agent-vs"/>
+  <version value="0.1.1"/>
+  <name value="FijiAllergyAgentVS"/>
+  <title value="Allergy Causative Agent Value Set for Fiji Patient"/>
+  <status value="active"/>
+  <date value="2026-08-06T07:01:07+00:00"/>
+  <publisher value="MHMS Fiji"/>
+  <contact>
+    <name value="MHMS Fiji"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://fhir.health.gov.fj"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Support"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.fhir.health.gov.fj"/>
+    </telecom>
+  </contact>
+  <description value="A subset of SNOMED CT concepts representing substances or products that cause allergies or intolerances, aligned with global IPS."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="FJ"/>
+      <display value="Fiji"/>
+    </coding>
+  </jurisdiction>
+  <copyright value="Distributed under the Creative Commons CC0-1.0 License (https://creativecommons.org/publicdomain/zero/1.0/)"/>
+  <compose>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <filter>
+        <property value="expression"/>
+        <op value="="/>
+        <value value="&lt; 762766007 |Edible substance| AND ^ 10811000132104 |International Patient Summary reference set|"/>
+      </filter>
+    </include>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <filter>
+        <property value="expression"/>
+        <op value="="/>
+        <value value="&lt; 406455002 |Allergen class| AND ^ 10811000132104 |International Patient Summary reference set|"/>
+      </filter>
+    </include>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <filter>
+        <property value="expression"/>
+        <op value="="/>
+        <value value="&lt; 425620007 |Metal| AND ^ 10811000132104 |International Patient Summary reference set|"/>
+      </filter>
+    </include>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <filter>
+        <property value="expression"/>
+        <op value="="/>
+        <value value="&lt; 373873005 |Pharmaceutical / biologic product| AND ^ 10811000132104 |International Patient Summary reference set|"/>
+      </filter>
+    </include>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <filter>
+        <property value="expression"/>
+        <op value="="/>
+        <value value="&lt; 410942007 |Drug or medicament| AND ^ 10811000132104 |International Patient Summary reference set|"/>
+      </filter>
+    </include>
+  </compose>
+</ValueSet>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="fiji-body-site-vs"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet fiji-body-site-vs</b></p><a name="fiji-body-site-vs"> </a><a name="hcfiji-body-site-vs"> </a><ul><li>Include codes from<a href="http://www.snomed.org/"><code>http://snomed.info/sct</code></a><span title="Version is not explicitly stated. No matching Code System found"> version Not Stated (use latest from terminology server)</span> where expression  = &lt; 442083009 |Anatomical or acquired body structure (body structure)|</li></ul></div>
+  </text>
+  <url value="https://core.fhir.health.gov.fj/ValueSet/fiji-body-site-vs"/>
+  <version value="0.1.1"/>
+  <name value="FijiBodySiteVS"/>
+  <title value="Fiji Body Site (Anatomical Structure) Value Set"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2026-08-06T07:01:07+00:00"/>
+  <publisher value="MHMS Fiji"/>
+  <contact>
+    <name value="MHMS Fiji"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://fhir.health.gov.fj"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Support"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.fhir.health.gov.fj"/>
+    </telecom>
+  </contact>
+  <description value="Valueset for bodysite/anatomical structures.&#xA;Used for Condition.bodySite&#xA;Values from SNOMED CT anatomical structures."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="FJ"/>
+      <display value="Fiji"/>
+    </coding>
+  </jurisdiction>
+  <copyright value="Distributed under the Creative Commons CC0-1.0 License (https://creativecommons.org/publicdomain/zero/1.0/)"/>
+  <compose>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <filter>
+        <property value="expression"/>
+        <op value="="/>
+        <value value="&lt; 442083009 |Anatomical or acquired body structure (body structure)|"/>
+      </filter>
+    </include>
+  </compose>
+</ValueSet>

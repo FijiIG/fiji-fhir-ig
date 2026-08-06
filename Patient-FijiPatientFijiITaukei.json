@@ -1,0 +1,37 @@
+{
+  "resourceType" : "Patient",
+  "id" : "FijiPatientFijiITaukei",
+  "meta" : {
+    "profile" : ["https://core.fhir.health.gov.fj/StructureDefinition/fiji-patient"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Patient FijiPatientFijiITaukei</b></p><a name=\"FijiPatientFijiITaukei\"> </a><a name=\"hcFijiPatientFijiITaukei\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-fiji-patient.html\">Fiji Patient</a></p></div><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\">Jone Nabou Male, DoB: 1992-04-17 ( http://fhir.health.gov.fj/identifier/nhi#FijiPatientIdentifier#FJ-NHI-982345671)</p><hr/><table class=\"grid\"><tr><td style=\"background-color: #f3f5da\" title=\"Alternate names (see the one above)\">Alt. Name:</td><td colspan=\"3\">Jone Nabou (Official)</td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Ways to contact the Patient\">Contact Detail</td><td colspan=\"3\">Nadi Village, Ba Province</td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Represents clan, tribe, lineage, or descent-based group affiliation.\n\nThis is a demographic identity attribute.\nIt is not a syntactic component of a name.\"><a href=\"StructureDefinition-fiji-clan-affiliation.html\">Fiji Clan Affiliation</a></td><td colspan=\"3\"><span title=\"Codes:\">Mataqali Vunisei</span></td></tr></table></div>"
+  },
+  "extension" : [{
+    "url" : "https://core.fhir.health.gov.fj/StructureDefinition/fiji-clan-affiliation",
+    "valueCodeableConcept" : {
+      "text" : "Mataqali Vunisei"
+    }
+  }],
+  "identifier" : [{
+    "system" : "http://fhir.health.gov.fj/identifier/nhi",
+    "value" : "FJ-NHI-982345671"
+  }],
+  "name" : [{
+    "use" : "official",
+    "family" : "Nabou",
+    "given" : ["Jone"]
+  },
+  {
+    "use" : "usual",
+    "text" : "Jone Nabou",
+    "given" : ["Jone"]
+  }],
+  "gender" : "male",
+  "birthDate" : "1992-04-17",
+  "address" : [{
+    "text" : "Nadi Village, Ba Province",
+    "country" : "FJ"
+  }]
+}

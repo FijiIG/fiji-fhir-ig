@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Organization xmlns="http://hl7.org/fhir">
+  <id value="FijiHospitalExample"/>
+  <language value="en"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Organization FijiHospitalExample</b></p><a name="FijiHospitalExample"> </a><a name="hcFijiHospitalExample"> </a><p><b>identifier</b>: <code>http://fhir.health.gov.fj/identifier/organization</code>/FJ-HOSP-SUH-001</p><p><b>name</b>: Suva Divisional Hospital</p><p><b>telecom</b>: <a href="tel:+6793313444">+6793313444</a>, <a href="mailto:info@suvahospital.gov.fj">info@suvahospital.gov.fj</a></p><p><b>address</b>: Amy Street Suva FJ </p></div>
+  </text>
+  <identifier>
+    <system value="http://fhir.health.gov.fj/identifier/organization"/>
+    <value value="FJ-HOSP-SUH-001"/>
+  </identifier>
+  <name value="Suva Divisional Hospital"/>
+  <telecom>
+    <system value="phone"/>
+    <value value="+6793313444"/>
+    <use value="work"/>
+  </telecom>
+  <telecom>
+    <system value="email"/>
+    <value value="info@suvahospital.gov.fj"/>
+    <use value="work"/>
+  </telecom>
+  <address>
+    <line value="Amy Street"/>
+    <city value="Suva"/>
+    <district value="Central Division"/>
+    <country value="FJ"/>
+  </address>
+</Organization>

@@ -1,0 +1,2079 @@
+{
+  "date" : "Thu, 06 Aug, 2026 07:01:07 +0000",
+  "doco" : "For each file: start is seconds after start activity occurred. Length = milliseconds activity took",
+  "files" : [{
+    "name" : "/fsh-generated/resources/ImplementationGuide-health-gov-fhir-fj-core.json",
+    "size" : 22183,
+    "processes" : [{
+      "activity" : "load",
+      "start" : 34,
+      "length" : 14
+    },
+    {
+      "activity" : "checkR4R4B",
+      "start" : 40,
+      "length" : 13
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 40,
+      "length" : 164
+    },
+    {
+      "activity" : "validate",
+      "start" : 74,
+      "length" : 6059
+    },
+    {
+      "activity" : "scanForUsageStats",
+      "start" : 80,
+      "length" : 1
+    },
+    {
+      "activity" : "generate1",
+      "start" : 81,
+      "length" : 159
+    },
+    {
+      "activity" : "generate2",
+      "start" : 88,
+      "length" : 265
+    },
+    {
+      "activity" : "generateValidationPack",
+      "start" : 118,
+      "length" : 5
+    },
+    {
+      "activity" : "scanExamplesForR5",
+      "start" : 152,
+      "length" : 3
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/NamingSystem-FijiOrganizationIdentifier.json",
+    "size" : 471,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 33,
+      "length" : 2
+    },
+    {
+      "activity" : "load",
+      "start" : 33,
+      "length" : 10
+    },
+    {
+      "activity" : "load-configure",
+      "start" : 40,
+      "length" : 1
+    },
+    {
+      "activity" : "checkR4R4B",
+      "start" : 40,
+      "length" : 1
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 40,
+      "length" : 5
+    },
+    {
+      "activity" : "validate",
+      "start" : 61,
+      "length" : 1295
+    },
+    {
+      "activity" : "generate1",
+      "start" : 81,
+      "length" : 12
+    },
+    {
+      "activity" : "generate2",
+      "start" : 89,
+      "length" : 24
+    },
+    {
+      "activity" : "generateValidationPack",
+      "start" : 118,
+      "length" : 1
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/NamingSystem-FijiPatientIdentifier.json",
+    "size" : 451,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 33,
+      "length" : 1
+    },
+    {
+      "activity" : "load",
+      "start" : 33,
+      "length" : 3
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 40,
+      "length" : 3
+    },
+    {
+      "activity" : "validate",
+      "start" : 62,
+      "length" : 21
+    },
+    {
+      "activity" : "generate1",
+      "start" : 81,
+      "length" : 11
+    },
+    {
+      "activity" : "generate2",
+      "start" : 89,
+      "length" : 19
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/NamingSystem-FijiPractitionerRegistration.json",
+    "size" : 492,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 33,
+      "length" : 1
+    },
+    {
+      "activity" : "load",
+      "start" : 34,
+      "length" : 1
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 40,
+      "length" : 3
+    },
+    {
+      "activity" : "validate",
+      "start" : 62,
+      "length" : 18
+    },
+    {
+      "activity" : "generate1",
+      "start" : 81,
+      "length" : 10
+    },
+    {
+      "activity" : "generate2",
+      "start" : 89,
+      "length" : 17
+    },
+    {
+      "activity" : "generateValidationPack",
+      "start" : 118,
+      "length" : 1
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/Organization-FijiHospitalExample.json",
+    "size" : 611,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 33,
+      "length" : 1
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 40,
+      "length" : 340
+    },
+    {
+      "activity" : "validate",
+      "start" : 80,
+      "length" : 11
+    },
+    {
+      "activity" : "generate1",
+      "start" : 81,
+      "length" : 6
+    },
+    {
+      "activity" : "generate2",
+      "start" : 89,
+      "length" : 13
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/Patient-FijiPatientExample1.json",
+    "size" : 825,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 33,
+      "length" : 2
+    },
+    {
+      "activity" : "checkR4R4B",
+      "start" : 40,
+      "length" : 1
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 40,
+      "length" : 4
+    },
+    {
+      "activity" : "validate",
+      "start" : 80,
+      "length" : 14
+    },
+    {
+      "activity" : "generate1",
+      "start" : 81,
+      "length" : 9
+    },
+    {
+      "activity" : "generate2",
+      "start" : 89,
+      "length" : 12
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/Patient-FijiPatientExample2.json",
+    "size" : 837,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 33,
+      "length" : 1
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 40,
+      "length" : 1
+    },
+    {
+      "activity" : "validate",
+      "start" : 80,
+      "length" : 9
+    },
+    {
+      "activity" : "generate1",
+      "start" : 81,
+      "length" : 7
+    },
+    {
+      "activity" : "generate2",
+      "start" : 89,
+      "length" : 11
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/Patient-FijiPatientFijiITaukei.json",
+    "size" : 875,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 33,
+      "length" : 2
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 40,
+      "length" : 1
+    },
+    {
+      "activity" : "validate",
+      "start" : 74,
+      "length" : 1
+    },
+    {
+      "activity" : "validate",
+      "start" : 80,
+      "length" : 8
+    },
+    {
+      "activity" : "generate1",
+      "start" : 81,
+      "length" : 9
+    },
+    {
+      "activity" : "generate2",
+      "start" : 89,
+      "length" : 12
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/Patient-FijiPatientFijiIndo.json",
+    "size" : 650,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 33,
+      "length" : 1
+    },
+    {
+      "activity" : "generateSnapshots",
+      "start" : 34,
+      "length" : 1
+    },
+    {
+      "activity" : "checkR4R4B",
+      "start" : 40,
+      "length" : 1
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 40,
+      "length" : 2
+    },
+    {
+      "activity" : "validate",
+      "start" : 80,
+      "length" : 4
+    },
+    {
+      "activity" : "generate1",
+      "start" : 81,
+      "length" : 8
+    },
+    {
+      "activity" : "generate2",
+      "start" : 89,
+      "length" : 9
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/PractitionerRole-FijiPractitionerRoleExample.json",
+    "size" : 610,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 33,
+      "length" : 1
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 40,
+      "length" : 4
+    },
+    {
+      "activity" : "validate",
+      "start" : 80,
+      "length" : 23
+    },
+    {
+      "activity" : "generate1",
+      "start" : 81,
+      "length" : 9
+    },
+    {
+      "activity" : "generate2",
+      "start" : 89,
+      "length" : 19
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/StructureDefinition-birthdate-estimated-indicator.json",
+    "size" : 1681,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 33,
+      "length" : 1
+    },
+    {
+      "activity" : "load",
+      "start" : 34,
+      "length" : 4
+    },
+    {
+      "activity" : "generateSnapshots",
+      "start" : 34,
+      "length" : 8
+    },
+    {
+      "activity" : "loadInfo",
+      "start" : 40,
+      "length" : 1
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 40,
+      "length" : 685
+    },
+    {
+      "activity" : "validate",
+      "start" : 63,
+      "length" : 2254
+    },
+    {
+      "activity" : "generate1",
+      "start" : 81,
+      "length" : 43
+    },
+    {
+      "activity" : "generate2",
+      "start" : 89,
+      "length" : 644
+    },
+    {
+      "activity" : "generate2",
+      "start" : 102,
+      "length" : 1109
+    },
+    {
+      "activity" : "generateValidationPack",
+      "start" : 118,
+      "length" : 1
+    },
+    {
+      "activity" : "scanProfilesForR5",
+      "start" : 152,
+      "length" : 1
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/StructureDefinition-fiji-address-island.json",
+    "size" : 1427,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 33,
+      "length" : 2
+    },
+    {
+      "activity" : "load",
+      "start" : 34,
+      "length" : 3
+    },
+    {
+      "activity" : "generateSnapshots",
+      "start" : 34,
+      "length" : 6
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 41,
+      "length" : 8
+    },
+    {
+      "activity" : "validate",
+      "start" : 66,
+      "length" : 108
+    },
+    {
+      "activity" : "generate1",
+      "start" : 81,
+      "length" : 38
+    },
+    {
+      "activity" : "generate2",
+      "start" : 89,
+      "length" : 174
+    },
+    {
+      "activity" : "generate2",
+      "start" : 103,
+      "length" : 80
+    },
+    {
+      "activity" : "generateValidationPack",
+      "start" : 118,
+      "length" : 1
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/StructureDefinition-fiji-address-village.json",
+    "size" : 1431,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 33,
+      "length" : 2
+    },
+    {
+      "activity" : "load",
+      "start" : 34,
+      "length" : 2
+    },
+    {
+      "activity" : "generateSnapshots",
+      "start" : 34,
+      "length" : 6
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 41,
+      "length" : 5
+    },
+    {
+      "activity" : "validate",
+      "start" : 66,
+      "length" : 86
+    },
+    {
+      "activity" : "scanForUsageStats",
+      "start" : 80,
+      "length" : 1
+    },
+    {
+      "activity" : "generate1",
+      "start" : 81,
+      "length" : 36
+    },
+    {
+      "activity" : "generate2",
+      "start" : 90,
+      "length" : 164
+    },
+    {
+      "activity" : "generate2",
+      "start" : 103,
+      "length" : 65
+    },
+    {
+      "activity" : "generateValidationPack",
+      "start" : 118,
+      "length" : 1
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/StructureDefinition-fiji-address.json",
+    "size" : 6647,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 33,
+      "length" : 2
+    },
+    {
+      "activity" : "load",
+      "start" : 34,
+      "length" : 4
+    },
+    {
+      "activity" : "generateSnapshots",
+      "start" : 34,
+      "length" : 20
+    },
+    {
+      "activity" : "load-configure",
+      "start" : 40,
+      "length" : 1
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 41,
+      "length" : 20
+    },
+    {
+      "activity" : "validate",
+      "start" : 66,
+      "length" : 322
+    },
+    {
+      "activity" : "checkConformanceResources",
+      "start" : 80,
+      "length" : 1
+    },
+    {
+      "activity" : "generate1",
+      "start" : 81,
+      "length" : 86
+    },
+    {
+      "activity" : "generate2",
+      "start" : 90,
+      "length" : 291
+    },
+    {
+      "activity" : "generate2",
+      "start" : 103,
+      "length" : 149
+    },
+    {
+      "activity" : "generateValidationPack",
+      "start" : 118,
+      "length" : 3
+    },
+    {
+      "activity" : "scanExamplesForR5",
+      "start" : 152,
+      "length" : 1
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/StructureDefinition-fiji-allergy-intolerance.json",
+    "size" : 3610,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 33,
+      "length" : 2
+    },
+    {
+      "activity" : "load",
+      "start" : 34,
+      "length" : 5
+    },
+    {
+      "activity" : "generateSnapshots",
+      "start" : 34,
+      "length" : 41
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 41,
+      "length" : 25
+    },
+    {
+      "activity" : "validate",
+      "start" : 66,
+      "length" : 505
+    },
+    {
+      "activity" : "scanForUsageStats",
+      "start" : 80,
+      "length" : 1
+    },
+    {
+      "activity" : "generate1",
+      "start" : 81,
+      "length" : 150
+    },
+    {
+      "activity" : "generate2",
+      "start" : 90,
+      "length" : 464
+    },
+    {
+      "activity" : "generate2",
+      "start" : 103,
+      "length" : 185
+    },
+    {
+      "activity" : "generateValidationPack",
+      "start" : 118,
+      "length" : 6
+    },
+    {
+      "activity" : "scanExamplesForR5",
+      "start" : 152,
+      "length" : 2
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/StructureDefinition-fiji-clan-affiliation.json",
+    "size" : 1741,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 33,
+      "length" : 2
+    },
+    {
+      "activity" : "load",
+      "start" : 34,
+      "length" : 2
+    },
+    {
+      "activity" : "generateSnapshots",
+      "start" : 34,
+      "length" : 10
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 41,
+      "length" : 7
+    },
+    {
+      "activity" : "validate",
+      "start" : 67,
+      "length" : 116
+    },
+    {
+      "activity" : "generate1",
+      "start" : 81,
+      "length" : 44
+    },
+    {
+      "activity" : "generate2",
+      "start" : 91,
+      "length" : 168
+    },
+    {
+      "activity" : "generate2",
+      "start" : 103,
+      "length" : 58
+    },
+    {
+      "activity" : "generateValidationPack",
+      "start" : 118,
+      "length" : 2
+    },
+    {
+      "activity" : "scanExamplesForR5",
+      "start" : 152,
+      "length" : 1
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/StructureDefinition-fiji-condition.json",
+    "size" : 2965,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 33,
+      "length" : 2
+    },
+    {
+      "activity" : "load",
+      "start" : 34,
+      "length" : 5
+    },
+    {
+      "activity" : "generateSnapshots",
+      "start" : 34,
+      "length" : 37
+    },
+    {
+      "activity" : "checkR4R4B",
+      "start" : 40,
+      "length" : 1
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 41,
+      "length" : 25
+    },
+    {
+      "activity" : "validate",
+      "start" : 67,
+      "length" : 421
+    },
+    {
+      "activity" : "generate1",
+      "start" : 81,
+      "length" : 146
+    },
+    {
+      "activity" : "generate2",
+      "start" : 91,
+      "length" : 1076
+    },
+    {
+      "activity" : "generate2",
+      "start" : 103,
+      "length" : 129
+    },
+    {
+      "activity" : "generateValidationPack",
+      "start" : 118,
+      "length" : 5
+    },
+    {
+      "activity" : "scanExamplesForR5",
+      "start" : 152,
+      "length" : 1
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/StructureDefinition-fiji-encounter.json",
+    "size" : 1018,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 33,
+      "length" : 1
+    },
+    {
+      "activity" : "load",
+      "start" : 34,
+      "length" : 1
+    },
+    {
+      "activity" : "generateSnapshots",
+      "start" : 34,
+      "length" : 56
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 41,
+      "length" : 23
+    },
+    {
+      "activity" : "validate",
+      "start" : 67,
+      "length" : 624
+    },
+    {
+      "activity" : "scanForUsageStats",
+      "start" : 80,
+      "length" : 1
+    },
+    {
+      "activity" : "generate1",
+      "start" : 82,
+      "length" : 238
+    },
+    {
+      "activity" : "generate2",
+      "start" : 92,
+      "length" : 450
+    },
+    {
+      "activity" : "generate2",
+      "start" : 103,
+      "length" : 220
+    },
+    {
+      "activity" : "generateValidationPack",
+      "start" : 118,
+      "length" : 7
+    },
+    {
+      "activity" : "scanExamplesForR5",
+      "start" : 152,
+      "length" : 1
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/StructureDefinition-fiji-humanname.json",
+    "size" : 4022,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 33,
+      "length" : 1
+    },
+    {
+      "activity" : "load",
+      "start" : 34,
+      "length" : 3
+    },
+    {
+      "activity" : "generateSnapshots",
+      "start" : 34,
+      "length" : 14
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 41,
+      "length" : 11
+    },
+    {
+      "activity" : "validate",
+      "start" : 68,
+      "length" : 165
+    },
+    {
+      "activity" : "generate1",
+      "start" : 82,
+      "length" : 70
+    },
+    {
+      "activity" : "generate2",
+      "start" : 92,
+      "length" : 135
+    },
+    {
+      "activity" : "generate2",
+      "start" : 104,
+      "length" : 43
+    },
+    {
+      "activity" : "generateValidationPack",
+      "start" : 118,
+      "length" : 2
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/StructureDefinition-fiji-immunization.json",
+    "size" : 4456,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 33,
+      "length" : 2
+    },
+    {
+      "activity" : "load",
+      "start" : 34,
+      "length" : 4
+    },
+    {
+      "activity" : "generateSnapshots",
+      "start" : 34,
+      "length" : 51
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 41,
+      "length" : 20
+    },
+    {
+      "activity" : "validate",
+      "start" : 68,
+      "length" : 535
+    },
+    {
+      "activity" : "scanForUsageStats",
+      "start" : 80,
+      "length" : 1
+    },
+    {
+      "activity" : "generate1",
+      "start" : 82,
+      "length" : 217
+    },
+    {
+      "activity" : "generate2",
+      "start" : 92,
+      "length" : 375
+    },
+    {
+      "activity" : "generate2",
+      "start" : 104,
+      "length" : 175
+    },
+    {
+      "activity" : "generateValidationPack",
+      "start" : 118,
+      "length" : 7
+    },
+    {
+      "activity" : "scanExamplesForR5",
+      "start" : 152,
+      "length" : 1
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/StructureDefinition-fiji-observation.json",
+    "size" : 1308,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 33,
+      "length" : 2
+    },
+    {
+      "activity" : "load",
+      "start" : 34,
+      "length" : 2
+    },
+    {
+      "activity" : "generateSnapshots",
+      "start" : 34,
+      "length" : 46
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 41,
+      "length" : 16
+    },
+    {
+      "activity" : "validate",
+      "start" : 68,
+      "length" : 409
+    },
+    {
+      "activity" : "generate1",
+      "start" : 82,
+      "length" : 148
+    },
+    {
+      "activity" : "generate2",
+      "start" : 93,
+      "length" : 871
+    },
+    {
+      "activity" : "generate2",
+      "start" : 104,
+      "length" : 136
+    },
+    {
+      "activity" : "generateValidationPack",
+      "start" : 118,
+      "length" : 7
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/StructureDefinition-fiji-organization.json",
+    "size" : 1350,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 33,
+      "length" : 1
+    },
+    {
+      "activity" : "load",
+      "start" : 34,
+      "length" : 2
+    },
+    {
+      "activity" : "generateSnapshots",
+      "start" : 34,
+      "length" : 24
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 41,
+      "length" : 9
+    },
+    {
+      "activity" : "validate",
+      "start" : 69,
+      "length" : 193
+    },
+    {
+      "activity" : "generate1",
+      "start" : 82,
+      "length" : 81
+    },
+    {
+      "activity" : "generate2",
+      "start" : 94,
+      "length" : 258
+    },
+    {
+      "activity" : "generate2",
+      "start" : 104,
+      "length" : 68
+    },
+    {
+      "activity" : "generateValidationPack",
+      "start" : 118,
+      "length" : 3
+    },
+    {
+      "activity" : "scanExamplesForR5",
+      "start" : 152,
+      "length" : 1
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/StructureDefinition-fiji-patient.json",
+    "size" : 5392,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 33,
+      "length" : 2
+    },
+    {
+      "activity" : "load",
+      "start" : 34,
+      "length" : 5
+    },
+    {
+      "activity" : "generateSnapshots",
+      "start" : 34,
+      "length" : 46
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 41,
+      "length" : 20
+    },
+    {
+      "activity" : "validate",
+      "start" : 69,
+      "length" : 397
+    },
+    {
+      "activity" : "scanForUsageStats",
+      "start" : 80,
+      "length" : 1
+    },
+    {
+      "activity" : "generate1",
+      "start" : 82,
+      "length" : 154
+    },
+    {
+      "activity" : "generate2",
+      "start" : 94,
+      "length" : 426
+    },
+    {
+      "activity" : "generate2",
+      "start" : 104,
+      "length" : 116
+    },
+    {
+      "activity" : "generateValidationPack",
+      "start" : 118,
+      "length" : 7
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/StructureDefinition-fiji-practitioner-role.json",
+    "size" : 2950,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 33,
+      "length" : 2
+    },
+    {
+      "activity" : "load",
+      "start" : 34,
+      "length" : 3
+    },
+    {
+      "activity" : "generateSnapshots",
+      "start" : 34,
+      "length" : 28
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 41,
+      "length" : 13
+    },
+    {
+      "activity" : "validate",
+      "start" : 69,
+      "length" : 241
+    },
+    {
+      "activity" : "generate1",
+      "start" : 82,
+      "length" : 100
+    },
+    {
+      "activity" : "generate2",
+      "start" : 94,
+      "length" : 256
+    },
+    {
+      "activity" : "generate2",
+      "start" : 104,
+      "length" : 82
+    },
+    {
+      "activity" : "generateValidationPack",
+      "start" : 118,
+      "length" : 4
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/StructureDefinition-fiji-practitioner.json",
+    "size" : 4098,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 33,
+      "length" : 2
+    },
+    {
+      "activity" : "load",
+      "start" : 34,
+      "length" : 4
+    },
+    {
+      "activity" : "generateSnapshots",
+      "start" : 34,
+      "length" : 35
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 41,
+      "length" : 23
+    },
+    {
+      "activity" : "validate",
+      "start" : 70,
+      "length" : 369
+    },
+    {
+      "activity" : "scanForUsageStats",
+      "start" : 80,
+      "length" : 1
+    },
+    {
+      "activity" : "generate1",
+      "start" : 83,
+      "length" : 132
+    },
+    {
+      "activity" : "generate2",
+      "start" : 95,
+      "length" : 866
+    },
+    {
+      "activity" : "generate2",
+      "start" : 104,
+      "length" : 92
+    },
+    {
+      "activity" : "generateValidationPack",
+      "start" : 118,
+      "length" : 6
+    },
+    {
+      "activity" : "scanExamplesForR5",
+      "start" : 152,
+      "length" : 1
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/StructureDefinition-fiji-vital-blood-pressure.json",
+    "size" : 2664,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 33,
+      "length" : 1
+    },
+    {
+      "activity" : "load",
+      "start" : 34,
+      "length" : 2
+    },
+    {
+      "activity" : "generateSnapshots",
+      "start" : 34,
+      "length" : 88
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 41,
+      "length" : 31
+    },
+    {
+      "activity" : "validate",
+      "start" : 70,
+      "length" : 841
+    },
+    {
+      "activity" : "scanForUsageStats",
+      "start" : 80,
+      "length" : 1
+    },
+    {
+      "activity" : "generate1",
+      "start" : 83,
+      "length" : 286
+    },
+    {
+      "activity" : "generate2",
+      "start" : 95,
+      "length" : 1025
+    },
+    {
+      "activity" : "generate2",
+      "start" : 104,
+      "length" : 255
+    },
+    {
+      "activity" : "generateValidationPack",
+      "start" : 118,
+      "length" : 15
+    },
+    {
+      "activity" : "scanProfilesForR5",
+      "start" : 152,
+      "length" : 1
+    },
+    {
+      "activity" : "scanExamplesForR5",
+      "start" : 152,
+      "length" : 1
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/StructureDefinition-fiji-vital-bmi.json",
+    "size" : 828,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 33,
+      "length" : 1
+    },
+    {
+      "activity" : "load",
+      "start" : 34,
+      "length" : 1
+    },
+    {
+      "activity" : "generateSnapshots",
+      "start" : 34,
+      "length" : 53
+    },
+    {
+      "activity" : "load-configure",
+      "start" : 40,
+      "length" : 1
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 41,
+      "length" : 23
+    },
+    {
+      "activity" : "validate",
+      "start" : 71,
+      "length" : 568
+    },
+    {
+      "activity" : "checkConformanceResources",
+      "start" : 80,
+      "length" : 1
+    },
+    {
+      "activity" : "scanForUsageStats",
+      "start" : 80,
+      "length" : 1
+    },
+    {
+      "activity" : "generate1",
+      "start" : 83,
+      "length" : 187
+    },
+    {
+      "activity" : "generate2",
+      "start" : 96,
+      "length" : 621
+    },
+    {
+      "activity" : "generate2",
+      "start" : 105,
+      "length" : 149
+    },
+    {
+      "activity" : "generateValidationPack",
+      "start" : 118,
+      "length" : 10
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/StructureDefinition-fiji-vital-body-temperature.json",
+    "size" : 902,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 33,
+      "length" : 1
+    },
+    {
+      "activity" : "load",
+      "start" : 34,
+      "length" : 2
+    },
+    {
+      "activity" : "generateSnapshots",
+      "start" : 34,
+      "length" : 51
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 41,
+      "length" : 25
+    },
+    {
+      "activity" : "validate",
+      "start" : 71,
+      "length" : 480
+    },
+    {
+      "activity" : "scanForUsageStats",
+      "start" : 80,
+      "length" : 1
+    },
+    {
+      "activity" : "generate1",
+      "start" : 83,
+      "length" : 188
+    },
+    {
+      "activity" : "generate2",
+      "start" : 97,
+      "length" : 571
+    },
+    {
+      "activity" : "generate2",
+      "start" : 105,
+      "length" : 182
+    },
+    {
+      "activity" : "generateValidationPack",
+      "start" : 118,
+      "length" : 10
+    },
+    {
+      "activity" : "scanExamplesForR5",
+      "start" : 152,
+      "length" : 1
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/StructureDefinition-fiji-vital-heart-rate.json",
+    "size" : 873,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 33,
+      "length" : 1
+    },
+    {
+      "activity" : "load",
+      "start" : 34,
+      "length" : 2
+    },
+    {
+      "activity" : "generateSnapshots",
+      "start" : 34,
+      "length" : 48
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 41,
+      "length" : 21
+    },
+    {
+      "activity" : "validate",
+      "start" : 72,
+      "length" : 485
+    },
+    {
+      "activity" : "scanForUsageStats",
+      "start" : 80,
+      "length" : 1
+    },
+    {
+      "activity" : "generate1",
+      "start" : 83,
+      "length" : 185
+    },
+    {
+      "activity" : "generate2",
+      "start" : 98,
+      "length" : 426
+    },
+    {
+      "activity" : "generate2",
+      "start" : 105,
+      "length" : 130
+    },
+    {
+      "activity" : "generateValidationPack",
+      "start" : 118,
+      "length" : 10
+    },
+    {
+      "activity" : "scanExamplesForR5",
+      "start" : 152,
+      "length" : 1
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/StructureDefinition-fiji-vital-height.json",
+    "size" : 855,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 33,
+      "length" : 1
+    },
+    {
+      "activity" : "load",
+      "start" : 34,
+      "length" : 1
+    },
+    {
+      "activity" : "generateSnapshots",
+      "start" : 34,
+      "length" : 48
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 41,
+      "length" : 22
+    },
+    {
+      "activity" : "validate",
+      "start" : 72,
+      "length" : 477
+    },
+    {
+      "activity" : "generate1",
+      "start" : 83,
+      "length" : 220
+    },
+    {
+      "activity" : "generate2",
+      "start" : 98,
+      "length" : 363
+    },
+    {
+      "activity" : "generate2",
+      "start" : 105,
+      "length" : 133
+    },
+    {
+      "activity" : "generateValidationPack",
+      "start" : 118,
+      "length" : 11
+    },
+    {
+      "activity" : "scanProfilesForR5",
+      "start" : 152,
+      "length" : 1
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/StructureDefinition-fiji-vital-oxygen-saturation.json",
+    "size" : 903,
+    "processes" : [{
+      "activity" : "load",
+      "start" : 34,
+      "length" : 23
+    },
+    {
+      "activity" : "generateSnapshots",
+      "start" : 34,
+      "length" : 48
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 41,
+      "length" : 20
+    },
+    {
+      "activity" : "validate",
+      "start" : 73,
+      "length" : 459
+    },
+    {
+      "activity" : "scanForUsageStats",
+      "start" : 80,
+      "length" : 1
+    },
+    {
+      "activity" : "generate1",
+      "start" : 84,
+      "length" : 187
+    },
+    {
+      "activity" : "generate2",
+      "start" : 98,
+      "length" : 395
+    },
+    {
+      "activity" : "generate2",
+      "start" : 105,
+      "length" : 156
+    },
+    {
+      "activity" : "generateValidationPack",
+      "start" : 118,
+      "length" : 10
+    },
+    {
+      "activity" : "scanExamplesForR5",
+      "start" : 152,
+      "length" : 1
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/StructureDefinition-fiji-vital-respiratory-rate.json",
+    "size" : 897,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 33,
+      "length" : 1
+    },
+    {
+      "activity" : "load",
+      "start" : 34,
+      "length" : 3
+    },
+    {
+      "activity" : "generateSnapshots",
+      "start" : 34,
+      "length" : 51
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 41,
+      "length" : 19
+    },
+    {
+      "activity" : "validate",
+      "start" : 73,
+      "length" : 488
+    },
+    {
+      "activity" : "scanForUsageStats",
+      "start" : 80,
+      "length" : 1
+    },
+    {
+      "activity" : "generate1",
+      "start" : 84,
+      "length" : 185
+    },
+    {
+      "activity" : "generate2",
+      "start" : 99,
+      "length" : 409
+    },
+    {
+      "activity" : "generate2",
+      "start" : 105,
+      "length" : 138
+    },
+    {
+      "activity" : "generateValidationPack",
+      "start" : 118,
+      "length" : 12
+    },
+    {
+      "activity" : "scanExamplesForR5",
+      "start" : 152,
+      "length" : 1
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/StructureDefinition-fiji-vital-weight.json",
+    "size" : 850,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 33,
+      "length" : 1
+    },
+    {
+      "activity" : "load",
+      "start" : 34,
+      "length" : 2
+    },
+    {
+      "activity" : "generateSnapshots",
+      "start" : 34,
+      "length" : 48
+    },
+    {
+      "activity" : "checkR4R4B",
+      "start" : 40,
+      "length" : 1
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 41,
+      "length" : 23
+    },
+    {
+      "activity" : "validate",
+      "start" : 74,
+      "length" : 491
+    },
+    {
+      "activity" : "scanForUsageStats",
+      "start" : 80,
+      "length" : 1
+    },
+    {
+      "activity" : "generate1",
+      "start" : 84,
+      "length" : 187
+    },
+    {
+      "activity" : "generate2",
+      "start" : 99,
+      "length" : 399
+    },
+    {
+      "activity" : "generate2",
+      "start" : 106,
+      "length" : 125
+    },
+    {
+      "activity" : "generateValidationPack",
+      "start" : 119,
+      "length" : 10
+    },
+    {
+      "activity" : "scanExamplesForR5",
+      "start" : 152,
+      "length" : 1
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/ValueSet-fiji-allergy-agent-vs.json",
+    "size" : 1943,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 33,
+      "length" : 1
+    },
+    {
+      "activity" : "load",
+      "start" : 34,
+      "length" : 4
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 42,
+      "length" : 1463
+    },
+    {
+      "activity" : "validate",
+      "start" : 62,
+      "length" : 269
+    },
+    {
+      "activity" : "generate1",
+      "start" : 84,
+      "length" : 13
+    },
+    {
+      "activity" : "generate2",
+      "start" : 100,
+      "length" : 340
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/ValueSet-fiji-body-site-vs.json",
+    "size" : 748,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 33,
+      "length" : 2
+    },
+    {
+      "activity" : "load",
+      "start" : 34,
+      "length" : 2
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 43,
+      "length" : 239
+    },
+    {
+      "activity" : "validate",
+      "start" : 62,
+      "length" : 16
+    },
+    {
+      "activity" : "generate1",
+      "start" : 84,
+      "length" : 7
+    },
+    {
+      "activity" : "generate2",
+      "start" : 100,
+      "length" : 69
+    },
+    {
+      "activity" : "generateValidationPack",
+      "start" : 119,
+      "length" : 1
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/ValueSet-fiji-condition-code-vs.json",
+    "size" : 1188,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 33,
+      "length" : 1
+    },
+    {
+      "activity" : "load",
+      "start" : 34,
+      "length" : 2
+    },
+    {
+      "activity" : "checkR4R4B",
+      "start" : 40,
+      "length" : 1
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 43,
+      "length" : 471
+    },
+    {
+      "activity" : "validate",
+      "start" : 62,
+      "length" : 19
+    },
+    {
+      "activity" : "generate1",
+      "start" : 84,
+      "length" : 9
+    },
+    {
+      "activity" : "generate2",
+      "start" : 100,
+      "length" : 67
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/ValueSet-fiji-evidence-vs.json",
+    "size" : 1410,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 33,
+      "length" : 1
+    },
+    {
+      "activity" : "load",
+      "start" : 34,
+      "length" : 8
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 44,
+      "length" : 2393
+    },
+    {
+      "activity" : "validate",
+      "start" : 62,
+      "length" : 270
+    },
+    {
+      "activity" : "generate1",
+      "start" : 84,
+      "length" : 8
+    },
+    {
+      "activity" : "generate2",
+      "start" : 100,
+      "length" : 76
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/ValueSet-heart-rate-loinc.json",
+    "size" : 608,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 33,
+      "length" : 1
+    },
+    {
+      "activity" : "load",
+      "start" : 34,
+      "length" : 4
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 46,
+      "length" : 480
+    },
+    {
+      "activity" : "validate",
+      "start" : 62,
+      "length" : 492
+    },
+    {
+      "activity" : "generate1",
+      "start" : 84,
+      "length" : 7
+    },
+    {
+      "activity" : "generate2",
+      "start" : 100,
+      "length" : 305
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/ValueSet-imm-vs.json",
+    "size" : 386,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 33,
+      "length" : 1
+    },
+    {
+      "activity" : "load",
+      "start" : 34,
+      "length" : 3
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 47,
+      "length" : 1039
+    },
+    {
+      "activity" : "validate",
+      "start" : 63,
+      "length" : 13
+    },
+    {
+      "activity" : "generate1",
+      "start" : 84,
+      "length" : 6
+    },
+    {
+      "activity" : "generate2",
+      "start" : 101,
+      "length" : 705
+    },
+    {
+      "activity" : "generateValidationPack",
+      "start" : 119,
+      "length" : 1
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/ValueSet-immunization-status-reason.json",
+    "size" : 2122,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 33,
+      "length" : 2
+    },
+    {
+      "activity" : "load",
+      "start" : 34,
+      "length" : 4
+    },
+    {
+      "activity" : "checkR4R4B",
+      "start" : 40,
+      "length" : 1
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 48,
+      "length" : 12931
+    },
+    {
+      "activity" : "validate",
+      "start" : 63,
+      "length" : 365
+    },
+    {
+      "activity" : "generate1",
+      "start" : 84,
+      "length" : 15
+    },
+    {
+      "activity" : "generate2",
+      "start" : 101,
+      "length" : 220
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/ValueSet-obs-vs.json",
+    "size" : 397,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 33,
+      "length" : 1
+    },
+    {
+      "activity" : "load",
+      "start" : 34,
+      "length" : 2
+    },
+    {
+      "activity" : "load",
+      "start" : 34,
+      "length" : 1
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 61,
+      "length" : 2
+    },
+    {
+      "activity" : "validate",
+      "start" : 63,
+      "length" : 18
+    },
+    {
+      "activity" : "generate1",
+      "start" : 84,
+      "length" : 7
+    },
+    {
+      "activity" : "generate2",
+      "start" : 101,
+      "length" : 205
+    },
+    {
+      "activity" : "makeDependencies",
+      "start" : 107,
+      "length" : 1
+    }]
+  },
+  {
+    "name" : "/input/includes/cross-version-analysis.xhtml",
+    "size" : 38
+  },
+  {
+    "name" : "/input/includes/globals-table.xhtml",
+    "size" : 39
+  },
+  {
+    "name" : "/input/includes/dependency-table.xhtml",
+    "size" : 38
+  },
+  {
+    "name" : "/fsh-generated/includes/menu.xml",
+    "size" : 1351,
+    "processes" : [{
+      "activity" : "generate2",
+      "start" : 102,
+      "length" : 1
+    }]
+  },
+  {
+    "name" : "/fsh-generated/includes/fsh-link-references.md",
+    "size" : 2486
+  },
+  {
+    "name" : "/input/pagecontent/extensions.md",
+    "size" : 574
+  },
+  {
+    "name" : "/input/pagecontent/resources.md",
+    "size" : 1463
+  },
+  {
+    "name" : "/input/pagecontent/downloads.md",
+    "size" : 1927,
+    "processes" : [{
+      "activity" : "generate2",
+      "start" : 102,
+      "length" : 1
+    }]
+  },
+  {
+    "name" : "/input/pagecontent/datatypes.md",
+    "size" : 1558
+  },
+  {
+    "name" : "/input/pagecontent/terminology.md",
+    "size" : 105
+  },
+  {
+    "name" : "/input/pagecontent/gettingstarted.md",
+    "size" : 4350
+  },
+  {
+    "name" : "/input/pagecontent/index.md",
+    "size" : 2483,
+    "processes" : [{
+      "activity" : "generate2",
+      "start" : 102,
+      "length" : 1
+    }]
+  },
+  {
+    "name" : "/template/config",
+    "size" : 0
+  },
+  {
+    "name" : "/template/config/_config.yml",
+    "size" : 140
+  },
+  {
+    "name" : "/input/images",
+    "size" : 0
+  },
+  {
+    "name" : "/input/images/logo2.jpg",
+    "size" : 15742
+  },
+  {
+    "name" : "/input/images/logo.ico",
+    "size" : 178646
+  },
+  {
+    "name" : "/input/images/logo extended.png",
+    "size" : 73262,
+    "processes" : [{
+      "activity" : "generate2",
+      "start" : 102,
+      "length" : 1
+    }]
+  },
+  {
+    "name" : "/temp/pages/_includes/artifacts.xml",
+    "size" : 33616,
+    "processes" : [{
+      "activity" : "generate2",
+      "start" : 102,
+      "length" : 2
+    }]
+  }]
+}

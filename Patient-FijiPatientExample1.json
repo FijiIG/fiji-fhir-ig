@@ -1,0 +1,35 @@
+{
+  "resourceType" : "Patient",
+  "id" : "FijiPatientExample1",
+  "meta" : {
+    "profile" : ["https://core.fhir.health.gov.fj/StructureDefinition/fiji-patient"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Patient FijiPatientExample1</b></p><a name=\"FijiPatientExample1\"> </a><a name=\"hcFijiPatientExample1\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-fiji-patient.html\">Fiji Patient</a></p></div><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\">Taviri Male, DoB: 1990-04-12 ( http://health.example.org/fhir/identifier#123456789)</p><hr/><table class=\"grid\"><tr><td style=\"background-color: #f3f5da\" title=\"Alternate names (see the one above)\">Alt. Name:</td><td colspan=\"3\">Michael Taviri Kalo(Official)</td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Represents clan, tribe, lineage, or descent-based group affiliation.\n\nThis is a demographic identity attribute.\nIt is not a syntactic component of a name.\"><a href=\"StructureDefinition-fiji-clan-affiliation.html\">Fiji Clan Affiliation</a></td><td colspan=\"3\"><span title=\"Codes:\">Nakamal Vaturanga</span></td></tr></table></div>"
+  },
+  "extension" : [{
+    "url" : "https://core.fhir.health.gov.fj/StructureDefinition/fiji-clan-affiliation",
+    "valueCodeableConcept" : {
+      "text" : "Nakamal Vaturanga"
+    }
+  }],
+  "identifier" : [{
+    "system" : "http://health.example.org/fhir/identifier",
+    "value" : "123456789"
+  }],
+  "name" : [{
+    "use" : "official",
+    "text" : "Michael Taviri Kalo",
+    "family" : "Kalo",
+    "given" : ["Michael",
+    "Taviri"]
+  },
+  {
+    "use" : "usual",
+    "text" : "Taviri",
+    "given" : ["Taviri"]
+  }],
+  "gender" : "male",
+  "birthDate" : "1990-04-12"
+}

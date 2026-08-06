@@ -1,0 +1,49 @@
+{
+  "resourceType" : "NamingSystem",
+  "id" : "FijiPractitionerRegistration",
+  "language" : "en",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: NamingSystem FijiPractitionerRegistration</b></p><a name=\"FijiPractitionerRegistration\"> </a><a name=\"hcFijiPractitionerRegistration\"> </a><h3>Summary</h3><table class=\"grid\"><tr><td>Defining URL</td><td>https://core.fhir.health.gov.fj/NamingSystem/FijiPractitionerRegistration</td></tr><tr><td>Version</td><td>0.1.1</td></tr><tr><td>Name</td><td>FijiPractitionerRegistration</td></tr><tr><td>Status</td><td>active</td></tr><tr><td>Definition</td><td><div><p>NamingSystem for practitioner registration identifiers in Fiji, using a simulated national identifier system for demonstration purposes.</p>\n</div></td></tr><tr><td>Publisher</td><td>MHMS Fiji</td></tr><tr><td>Copyright</td><td><div><p>Distributed under the Creative Commons CC0-1.0 License (https://creativecommons.org/publicdomain/zero/1.0/)</p>\n</div></td></tr></table><h3>Identifiers</h3><table class=\"grid\"><tr><td><b>Type</b></td><td><b>Value</b></td><td><b>Preferred</b></td></tr><tr><td>URI</td><td>http://fhir.health.gov.fj/identifier/practitioner</td><td>true</td></tr></table></div>"
+  },
+  "extension" : [{
+    "url" : "http://hl7.org/fhir/5.0/StructureDefinition/extension-NamingSystem.url",
+    "valueUri" : "https://core.fhir.health.gov.fj/NamingSystem/FijiPractitionerRegistration"
+  },
+  {
+    "url" : "http://hl7.org/fhir/5.0/StructureDefinition/extension-NamingSystem.version",
+    "valueString" : "0.1.1"
+  }],
+  "name" : "FijiPractitionerRegistration",
+  "status" : "active",
+  "kind" : "identifier",
+  "date" : "2026-03-31",
+  "publisher" : "MHMS Fiji",
+  "contact" : [{
+    "name" : "MHMS Fiji",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://fhir.health.gov.fj"
+    }]
+  },
+  {
+    "name" : "Support",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.fhir.health.gov.fj"
+    }]
+  }],
+  "description" : "NamingSystem for practitioner registration identifiers in Fiji, using a simulated national identifier system for demonstration purposes.",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "FJ",
+      "display" : "Fiji"
+    }]
+  }],
+  "uniqueId" : [{
+    "type" : "uri",
+    "value" : "http://fhir.health.gov.fj/identifier/practitioner",
+    "preferred" : true
+  }]
+}

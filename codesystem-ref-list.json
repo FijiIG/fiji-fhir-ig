@@ -1,0 +1,65 @@
+{
+  "codeSystems" : [{
+    "url" : "http://hl7.org/fhir/sid/cvx",
+    "version" : "20250715",
+    "status" : "active",
+    "name" : "CVX",
+    "title" : "CVX - US Vaccine Codes",
+    "description" : "CVX Codes for vaccines",
+    "uses" : {
+    },
+    "ValueSet-imm-vs.html" : "Immunization ValueSet"
+  },
+  {
+    "url" : "http://id.who.int/icd/release/11/mms",
+    "version" : "2026-01",
+    "status" : "active",
+    "name" : "ICD11MMS_es",
+    "title" : "CIE-11 para Estadísticas de Mortalidad y Morbilidad (MMS) - Español",
+    "description" : "",
+    "oids" : ["2.16.840.1.113883.6.90"],
+    "uses" : {
+    },
+    "ValueSet-immunization-status-reason.html" : "Immunization Status Reason valueset for reason a vaccine was not administered"
+  },
+  {
+    "url" : "http://loinc.org",
+    "version" : "2.82",
+    "status" : "active",
+    "name" : "LOINC",
+    "title" : null,
+    "description" : "This is a place holder for the code system which is fully supported through internal means (not by this code system)",
+    "uses" : {
+    },
+    "ValueSet-fiji-evidence-vs.html" : "Condition Evidence Value Set for Fiji Core IG",
+    "ValueSet-obs-vs.html" : "Observation ValueSet",
+    "ValueSet-heart-rate-loinc.html" : "Heart Rate LOINC Codes"
+  },
+  {
+    "url" : "http://snomed.info/sct",
+    "version" : null,
+    "status" : "active",
+    "name" : "SNOMED_CT",
+    "title" : "SNOMED CT (all versions)",
+    "description" : "SNOMED CT is the most comprehensive and precise clinical health terminology product in the world, owned and distributed around the world by The International Health Terminology Standards Development Organisation (IHTSDO).",
+    "oids" : ["2.16.840.1.113883.6.96"],
+    "uses" : {
+    },
+    "ValueSet-fiji-allergy-agent-vs.html" : "Allergy Causative Agent Value Set for Fiji Patient",
+    "ValueSet-fiji-body-site-vs.html" : "Fiji Body Site (Anatomical Structure) Value Set",
+    "ValueSet-fiji-evidence-vs.html" : "Condition Evidence Value Set for Fiji Core IG",
+    "ValueSet-fiji-condition-code-vs.html" : "Condition/Diagnosis code valueset"
+  },
+  {
+    "url" : "http://terminology.hl7.org/CodeSystem/observation-category",
+    "version" : "2.0.0",
+    "status" : "active",
+    "name" : "ObservationCategoryCodes",
+    "title" : "Observation Category Codes",
+    "description" : "Observation Category codes.",
+    "oids" : ["2.16.840.1.113883.4.642.1.1125"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-observation-category.html" : "Observation Category Codes"
+  }]
+}

@@ -1,0 +1,70 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://core.fhir.health.gov.fj/NamingSystem/FijiPatientIdentifier> a fhir:NamingSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "FijiPatientIdentifier"] ;
+  fhir:Resource.language [ fhir:value "en"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: NamingSystem FijiPatientIdentifier</b></p><a name=\"FijiPatientIdentifier\"> </a><a name=\"hcFijiPatientIdentifier\"> </a><h3>Summary</h3><table class=\"grid\"><tr><td>Defining URL</td><td>https://core.fhir.health.gov.fj/NamingSystem/FijiPatientIdentifier</td></tr><tr><td>Version</td><td>0.1.1</td></tr><tr><td>Name</td><td>FijiPatientIdentifier</td></tr><tr><td>Status</td><td>active</td></tr><tr><td>Definition</td><td><div><p>NamingSystem for patient identifiers in Fiji, using a simulated national identifier system for demonstration purposes.</p>\n</div></td></tr><tr><td>Publisher</td><td>MHMS Fiji</td></tr><tr><td>Copyright</td><td><div><p>Distributed under the Creative Commons CC0-1.0 License (https://creativecommons.org/publicdomain/zero/1.0/)</p>\n</div></td></tr></table><h3>Identifiers</h3><table class=\"grid\"><tr><td><b>Type</b></td><td><b>Value</b></td><td><b>Preferred</b></td></tr><tr><td>URI</td><td>http://fhir.health.gov.fj/identifier/nhi</td><td>true</td></tr></table></div>"
+  ] ;
+  fhir:DomainResource.extension [
+     fhir:index -1 ;
+     fhir:Extension.url [ fhir:value "http://hl7.org/fhir/5.0/StructureDefinition/extension-NamingSystem.url" ] ;
+     fhir:Extension.valueUri [ fhir:value "https://core.fhir.health.gov.fj/NamingSystem/FijiPatientIdentifier" ]
+  ], [
+     fhir:index -1 ;
+     fhir:Extension.url [ fhir:value "http://hl7.org/fhir/5.0/StructureDefinition/extension-NamingSystem.version" ] ;
+     fhir:Extension.valueString [ fhir:value "0.1.1" ]
+  ] ;
+  fhir:NamingSystem.name [ fhir:value "FijiPatientIdentifier"] ;
+  fhir:NamingSystem.status [ fhir:value "active"] ;
+  fhir:NamingSystem.kind [ fhir:value "identifier"] ;
+  fhir:NamingSystem.date [ fhir:value "2026-03-31"^^xsd:date] ;
+  fhir:NamingSystem.publisher [ fhir:value "MHMS Fiji"] ;
+  fhir:NamingSystem.contact [
+     fhir:index -1 ;
+     fhir:ContactDetail.name [ fhir:value "MHMS Fiji" ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index -1 ;
+       fhir:ContactPoint.system [ fhir:value "url" ] ;
+       fhir:ContactPoint.value [ fhir:value "https://fhir.health.gov.fj" ]
+     ]
+  ], [
+     fhir:index -1 ;
+     fhir:ContactDetail.name [ fhir:value "Support" ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index -1 ;
+       fhir:ContactPoint.system [ fhir:value "url" ] ;
+       fhir:ContactPoint.value [ fhir:value "https://www.fhir.health.gov.fj" ]
+     ]
+  ] ;
+  fhir:NamingSystem.description [ fhir:value "NamingSystem for patient identifiers in Fiji, using a simulated national identifier system for demonstration purposes."] ;
+  fhir:NamingSystem.jurisdiction [
+     fhir:index -1 ;
+     fhir:CodeableConcept.coding [
+       fhir:index -1 ;
+       fhir:Coding.system [ fhir:value "urn:iso:std:iso:3166" ] ;
+       fhir:Coding.code [ fhir:value "FJ" ] ;
+       fhir:Coding.display [ fhir:value "Fiji" ]
+     ]
+  ] ;
+  fhir:NamingSystem.uniqueId [
+     fhir:index -1 ;
+     fhir:NamingSystem.uniqueId.type [ fhir:value "uri" ] ;
+     fhir:NamingSystem.uniqueId.value [ fhir:value "http://fhir.health.gov.fj/identifier/nhi" ] ;
+     fhir:NamingSystem.uniqueId.preferred [ fhir:value "true"^^xsd:boolean ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://core.fhir.health.gov.fj/NamingSystem/FijiPatientIdentifier.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

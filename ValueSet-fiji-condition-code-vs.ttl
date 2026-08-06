@@ -1,0 +1,79 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://core.fhir.health.gov.fj/ValueSet/fiji-condition-code-vs> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "fiji-condition-code-vs"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet fiji-condition-code-vs</b></p><a name=\"fiji-condition-code-vs\"> </a><a name=\"hcfiji-condition-code-vs\"> </a><p>This value set includes codes based on the following rules:</p><ul><li>Include codes from<a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a><span title=\"Version is not explicitly stated. No matching Code System found\"> version Not Stated (use latest from terminology server)</span> where expression  = &lt; 404684003 |Clinical finding| AND ^ 10811000132104 |International Patient Summary reference set|</li><li>Include codes from<a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a><span title=\"Version is not explicitly stated. No matching Code System found\"> version Not Stated (use latest from terminology server)</span> where expression  = &lt; 243796009 |Situation with explicit context| AND ^ 10811000132104 |International Patient Summary reference set|</li></ul></div>"
+  ] ;
+  fhir:ValueSet.url [ fhir:value "https://core.fhir.health.gov.fj/ValueSet/fiji-condition-code-vs"] ;
+  fhir:ValueSet.version [ fhir:value "0.1.1"] ;
+  fhir:ValueSet.name [ fhir:value "FijiConditionCodeVS"] ;
+  fhir:ValueSet.title [ fhir:value "Condition/Diagnosis code valueset"] ;
+  fhir:ValueSet.status [ fhir:value "active"] ;
+  fhir:ValueSet.experimental [ fhir:value "false"^^xsd:boolean] ;
+  fhir:ValueSet.date [ fhir:value "2026-08-06T07:01:07+00:00"^^xsd:dateTime] ;
+  fhir:ValueSet.publisher [ fhir:value "MHMS Fiji"] ;
+  fhir:ValueSet.contact [
+     fhir:index 0 ;
+     fhir:ContactDetail.name [ fhir:value "MHMS Fiji" ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index 0 ;
+       fhir:ContactPoint.system [ fhir:value "url" ] ;
+       fhir:ContactPoint.value [ fhir:value "https://fhir.health.gov.fj" ]
+     ]
+  ], [
+     fhir:index 1 ;
+     fhir:ContactDetail.name [ fhir:value "Support" ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index 0 ;
+       fhir:ContactPoint.system [ fhir:value "url" ] ;
+       fhir:ContactPoint.value [ fhir:value "https://www.fhir.health.gov.fj" ]
+     ]
+  ] ;
+  fhir:ValueSet.description [ fhir:value "Condition Code valueset for Fiji Core. \nProposed valueset is taken from SNOMED codes curated for International Patient Summary.\nIncludes \"clinical finding\"  codes and codes for \"situation with explicit content\"."] ;
+  fhir:ValueSet.jurisdiction [
+     fhir:index 0 ;
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       fhir:Coding.system [ fhir:value "urn:iso:std:iso:3166" ] ;
+       fhir:Coding.code [ fhir:value "FJ" ] ;
+       fhir:Coding.display [ fhir:value "Fiji" ]
+     ]
+  ] ;
+  fhir:ValueSet.copyright [ fhir:value "Distributed under the Creative Commons CC0-1.0 License (https://creativecommons.org/publicdomain/zero/1.0/)"] ;
+  fhir:ValueSet.compose [
+     fhir:ValueSet.compose.include [
+       fhir:index 0 ;
+       fhir:ValueSet.compose.include.system [ fhir:value "http://snomed.info/sct" ] ;
+       fhir:ValueSet.compose.include.filter [
+         fhir:index 0 ;
+         fhir:ValueSet.compose.include.filter.property [ fhir:value "expression" ] ;
+         fhir:ValueSet.compose.include.filter.op [ fhir:value "=" ] ;
+         fhir:ValueSet.compose.include.filter.value [ fhir:value "< 404684003 |Clinical finding| AND ^ 10811000132104 |International Patient Summary reference set|" ]
+       ]
+     ], [
+       fhir:index 1 ;
+       fhir:ValueSet.compose.include.system [ fhir:value "http://snomed.info/sct" ] ;
+       fhir:ValueSet.compose.include.filter [
+         fhir:index 0 ;
+         fhir:ValueSet.compose.include.filter.property [ fhir:value "expression" ] ;
+         fhir:ValueSet.compose.include.filter.op [ fhir:value "=" ] ;
+         fhir:ValueSet.compose.include.filter.value [ fhir:value "< 243796009 |Situation with explicit context| AND ^ 10811000132104 |International Patient Summary reference set|" ]
+       ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://core.fhir.health.gov.fj/ValueSet/fiji-condition-code-vs.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+
