@@ -74,4 +74,18 @@ Alias: $patient-mothersMaidenName = http://hl7.org/fhir/StructureDefinition/pati
 Alias: $patient-interpreterRequired = http://hl7.org/fhir/StructureDefinition/patient-interpreterRequired
 Alias: $patient-birthTime = http://hl7.org/fhir/StructureDefinition/patient-birthTime
 Alias: $geolocation = http://hl7.org/fhir/StructureDefinition/geolocation
+Alias: $bodysite = http://hl7.org/fhir/StructureDefinition/bodySite // references BodyStructure
+Alias: $allerg-assertdate = http://hl7.org/fhir/StructureDefinition/allergyintolerance-assertedDate
+Alias: $cond-assertdate = http://hl7.org/fhir/StructureDefinition/condition-assertedDate
+
+// FHIR profiles for common scenarios
+Alias: $obs-bmi = http://hl7.org/fhir/StructureDefinition/bmi
+Alias: $obs-bodyheight = http://hl7.org/fhir/StructureDefinition/bodyheight
+Alias: $obs-bodytemp = http://hl7.org/fhir/StructureDefinition/bodytemp
+Alias: $obs-bodyweight = http://hl7.org/fhir/StructureDefinition/bodyweight
+Alias: $obs-bp = http://hl7.org/fhir/StructureDefinition/bp
+Alias: $obs-heartrate = http://hl7.org/fhir/StructureDefinition/heartrate
+Alias: $obs-headcircum = http://hl7.org/fhir/StructureDefinition/headcircum
+Alias: $obs-oxygensat = http://hl7.org/fhir/StructureDefinition/oxygensat
+Alias: $obs-resprate = http://hl7.org/fhir/StructureDefinition/resprate
 
