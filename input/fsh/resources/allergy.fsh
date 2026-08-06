@@ -13,6 +13,8 @@ Description: "Profile of Allergy/Intolerance for Fiji Patient"
 * patient only Reference(FijiPatient)
 * onsetDateTime MS
 * note MS
+* recorder 0..1
+* recorder only Reference(FijiPractioner or FijiPractitionerRole)
 * reaction MS
 * reaction.manifestation 1..* MS
 * reaction.manifestation from FijiConditionCodeVS (preferred)
