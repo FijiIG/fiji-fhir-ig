@@ -3,7 +3,9 @@ Profile: FijiCondition
 Parent: Condition
 Id: fiji-condition
 Title: "Fiji Condition"
-Description: "Profile of Condition as defined for Fiji Core IG."
+Description: """
+Profile of Condition as defined for Fiji Core IG.
+"""
 * code 1..1
 * code from FijiConditionCodeVS (extensible)
 * clinicalStatus 1..1 MS
