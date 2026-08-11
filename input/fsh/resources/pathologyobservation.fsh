@@ -17,7 +17,7 @@ Profile for Pathology Results Observation as defined for Fiji IG.
 * performer only Reference(FijiPatient or FijiPractitioner or FijiPractitionerRole or FijiOrganization)
 * value[x] MS
 * dataAbsentReason MS
-* dataAbsentReason from $obs-dataabsent-vs
+* dataAbsentReason from $obs-dataabsent-vs (extensible)
 * interpretation MS
 * interpretation from $obs-interp-vs (extensible)
 * specimen MS
@@ -26,6 +26,6 @@ Profile for Pathology Results Observation as defined for Fiji IG.
 * hasMember only Reference(FijiPathologyObservation)
 * component MS
 * component.code 1..1 MS
-* component.code from ObsVS
+* component.code from ObsVS (preferred)
 * component.value[x] MS
 * component.dataAbsentReason MS
