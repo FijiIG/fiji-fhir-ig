@@ -17,7 +17,7 @@ For diagnoses and problem list items:
 * [FijiCondition](StructureDefinition-fiji-condition.html)  
 
 For lab results and other observations:
-* [FijiObservation](StructureDefinition-fiji-observation.html)  
+* [FijiPathologyObservation](StructureDefinition-fiji-pathology-observation.html)  
 
 For Immunizations:
 * [FijiImmunization](StructureDefinition-fiji-immunization.html)

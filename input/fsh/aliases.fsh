@@ -48,6 +48,7 @@ Alias: $id-type-vs = http://terminology.hl7.org/ValueSet/v2-0203
 Alias: $obs-status-vs = http://hl7.org/fhir/ValueSet/observation-status
 Alias: $obs-cat-vs = http://hl7.org/fhir/ValueSet/observation-category
 Alias: $obs-interp-vs = http://hl7.org/fhir/ValueSet/observation-interpretation
+Alias: $obs-dataabsent-vs = http://hl7.org/fhir/ValueSet/data-absent-reason
 
 
 // ---------- STRUCTURE DEFINITION ALIASES ---------------------------
