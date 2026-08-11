@@ -16,8 +16,9 @@ For allergies and intolerances:
 For diagnoses and problem list items:
 * [FijiCondition](StructureDefinition-fiji-condition.html)  
 
-For lab results and other observations:
+For pathology & diagnostic results and other observations:
 * [FijiPathologyObservation](StructureDefinition-fiji-pathology-observation.html)  
+* [FijiDiagnosticObservation](StructureDefinition-fiji-pathology-observation.html)  
 
 For Immunizations:
 * [FijiImmunization](StructureDefinition-fiji-immunization.html)

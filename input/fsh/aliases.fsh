@@ -49,7 +49,7 @@ Alias: $obs-status-vs = http://hl7.org/fhir/ValueSet/observation-status
 Alias: $obs-cat-vs = http://hl7.org/fhir/ValueSet/observation-category
 Alias: $obs-interp-vs = http://hl7.org/fhir/ValueSet/observation-interpretation
 Alias: $obs-dataabsent-vs = http://hl7.org/fhir/ValueSet/data-absent-reason
-
+Alias: $obs-diag-svc-vs = http://hl7.org/fhir/ValueSet/diagnostic-service-sections
 
 // ---------- STRUCTURE DEFINITION ALIASES ---------------------------
 // Base FHIR Structure Definitions
