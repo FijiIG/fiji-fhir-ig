@@ -36,6 +36,24 @@ Integrates:
 
 * extension[clanAffiliation] MS
 
+
+// -----------------------------
+// Nationality Extension
+// -----------------------------
+
+* extension contains $patient-nationality named nationality 0..1
+* extension[nationality] ^short = "The patient's nationality"
+* extension[nationality] ^definition = "The nationality represented using ISO 3166 2 letter country codes."
+* extension[nationality].extension[code].value[x] from $iso-country-vs (required)
+
+// -----------------------------
+// Religion Extension
+// -----------------------------
+
+* extension contains $patient-religion named religion 0..1
+* extension[religion] ^short = "The patient's religious affiliation"
+* extension[nationality] ^definition = "The patient's professed religious affilition with an extensible valueset based on [ReligiousAffiliation valueset](http://terminology.hl7.org/ValueSet/v3-ReligiousAffiliation)."
+
 // -----------------------------
 // Basic Demographics
 // -----------------------------

@@ -44,6 +44,7 @@ Alias: $condition-category-cs = http://terminology.hl7.org/CodeSystem/condition-
 Alias: $specimen-type-cs = http://terminology.hl7.org/CodeSystem/v2-0487
 
 // Value sets for specific elements
+Alias: $iso-country-vs = http://hl7.org/fhir/ValueSet/iso3166-1-2
 Alias: $id-type-vs = http://terminology.hl7.org/ValueSet/v2-0203
 Alias: $obs-status-vs = http://hl7.org/fhir/ValueSet/observation-status
 Alias: $obs-cat-vs = http://hl7.org/fhir/ValueSet/observation-category
@@ -70,6 +71,8 @@ Alias: $reference = http://hl7.org/fhir/StructureDefinition/Reference
 Alias: $narrative = http://hl7.org/fhir/StructureDefinition/Narrative
  
 // Commonly Used Extension Definitions
+Alias: $patient-nationality = http://hl7.org/fhir/StructureDefinition/patient-nationality
+Alias: $patient-religion = http://hl7.org/fhir/StructureDefinition/patient-religion
 Alias: $patient-birthPlace = http://hl7.org/fhir/StructureDefinition/patient-birthPlace
 Alias: $patient-mothersMaidenName = http://hl7.org/fhir/StructureDefinition/patient-mothersMaidenName
 Alias: $patient-interpreterRequired = http://hl7.org/fhir/StructureDefinition/patient-interpreterRequired
