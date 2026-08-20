@@ -1,5 +1,5 @@
-Extension: FijiOccupation
-Id: fiji-occupation
+Extension: FijiPatientOccupation
+Id: fiji-patient-occupation
 Title: "Fiji Patient Occupation"
 Description: """
 Describes occupation of a Fiji Patient.  This is based on the structure of the NZ FHIR Base extension for 

@@ -58,10 +58,17 @@ Integrates:
 // Occupation Extension
 // -----------------------------
 
-* extension contains FijiOccupation named occupation 0..1
+* extension contains FijiPatientOccupation named occupation 0..1
 * extension[occupation] MS
-
 // TODO: need to define a valueset
+
+// -----------------------------
+// Ethnicity Extension
+// -----------------------------
+
+* extension contains FijiPatientEthnicity named ethnicity 0..1
+* extension[ethnicity] MS
+// TODO: need to define a valueset for Ethnicity
 
 
 // -----------------------------
