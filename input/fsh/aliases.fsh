@@ -73,6 +73,7 @@ Alias: $narrative = http://hl7.org/fhir/StructureDefinition/Narrative
 // Commonly Used Extension Definitions
 Alias: $patient-nationality = http://hl7.org/fhir/StructureDefinition/patient-nationality
 Alias: $patient-religion = http://hl7.org/fhir/StructureDefinition/patient-religion
+Alias: $patient-occupation = http://hl7.org.nz/fhir/StructureDefinition/acc-patient-occupation
 Alias: $patient-birthPlace = http://hl7.org/fhir/StructureDefinition/patient-birthPlace
 Alias: $patient-mothersMaidenName = http://hl7.org/fhir/StructureDefinition/patient-mothersMaidenName
 Alias: $patient-interpreterRequired = http://hl7.org/fhir/StructureDefinition/patient-interpreterRequired

@@ -52,7 +52,17 @@ Integrates:
 
 * extension contains $patient-religion named religion 0..1
 * extension[religion] ^short = "The patient's religious affiliation"
-* extension[nationality] ^definition = "The patient's professed religious affilition with an extensible valueset based on [ReligiousAffiliation valueset](http://terminology.hl7.org/ValueSet/v3-ReligiousAffiliation)."
+* extension[religion] ^definition = "The patient's professed religious affilition with an extensible valueset based on [ReligiousAffiliation valueset](http://terminology.hl7.org/ValueSet/v3-ReligiousAffiliation)."
+
+// -----------------------------
+// Occupation Extension
+// -----------------------------
+
+* extension contains FijiOccupation named occupation 0..1
+* extension[occupation] MS
+
+// TODO: need to define a valueset
+
 
 // -----------------------------
 // Basic Demographics
