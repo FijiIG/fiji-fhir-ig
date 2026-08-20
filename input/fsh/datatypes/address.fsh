@@ -7,26 +7,24 @@ This profile supports a range of address formats, with commonly required extensi
 In all cases:
 - text is a mandatory field and should be considered the primary representation of the fully address.
 - line is used for free text address lines and may relate to a landmark, school, church etc. rather than a street address.
-- Village and Island are added as extensions to the base fhir Address definition to support common address formats.
+- Province, Village and Settlement are added as extensions to the base fhir Address definition to support common address formats.
 - geolocation is added as an optional extension to support use case where GPS coordinates are available. It is expected that this will become more common.
 - Postal code is often not used, so is currently optional and may be removed (ie 0..0) if not required in the future
 - Country is required to support international interoperability
 
-Recommended mapping of address fields are below but should be specifically defined and documented in nation specific examples.
+Recommended mapping of address fields are below but should be validated and used with Fiji specific examples.
 
 | FHIR Element        | Typical Use            | Notes                          |
 | ------------------- | ------------------------------ | ------------------------------ |
 | `text`              | Full narrative address         | Often the primary address form |
 | `line`              | Landmark, compound, street     | Free-text                      |
 | `city`              | Town                           | Mainly urban areas             |
-| `district`          | Ward / district / area council | Country dependent              |
-| `state`             | Province / division            | Country dependent              |
+| `district`          | Tikina / district              | Country dependent              |
+| `extension:province` | Yasana / province              | Country dependent              |
+| `state`             | Division                       | Country dependent              |
 | `extension:village` | Village                        | Most rural addresses           |
-| `extension:island`  | Island                         | Important for logistics        |
+| `extension:settlement`| Settlement                   | Rural addresses        |
 
-Note: clanAffiliation is already an extension in the FijiPatient, FijiProvider profiles so does not need to be duplicated here.
-
-**STATUS**: Proposed - needs further review and consensus from South Pacific stakeholders before finalization.
 """
 
 
