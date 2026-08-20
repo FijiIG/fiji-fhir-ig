@@ -1,0 +1,81 @@
+# health.gov.fhir.fj.core#0.1.1: Draft Fiji Core Implementation Guide(en)
+
+## Pages
+
+* [Fiji Core Implementation Guide](en/index.md)
+* [Data Type Profiles](en/datatypes.md)
+* [Terminology](en/terminology.md)
+* [Extensions](en/extensions.md)
+* [Artifacts Summary](en/artifacts.md)
+* [Resource Profiles](en/resources.md)
+* [Contributing to the Fiji Core IG](en/gettingstarted.md)
+
+## Resources
+
+### ValueSets
+
+* [Allergy Causative Agent Value Set for Fiji Patient](en/ValueSet-fiji-allergy-agent-vs.md)
+* [Fiji Body Site (Anatomical Structure) Value Set](en/ValueSet-fiji-body-site-vs.md)
+* [Condition/Diagnosis code valueset](en/ValueSet-fiji-condition-code-vs.md)
+* [Condition Evidence Value Set for Fiji Core IG](en/ValueSet-fiji-evidence-vs.md)
+* [Fiji Radiology/Diagnostic Findings Value Set](en/ValueSet-fiji-radiology-findings-vs.md)
+* [Heart Rate LOINC Codes](en/ValueSet-heart-rate-loinc.md)
+* [Immunization ValueSet](en/ValueSet-imm-vs.md)
+* [Immunization Status Reason valueset for reason a vaccine was not administered](en/ValueSet-immunization-status-reason.md)
+* [Observation ValueSet](en/ValueSet-obs-vs.md)
+
+### Complex-type Profiles
+
+* [Fiji Address](en/StructureDefinition-fiji-address.md)
+* [Fiji HumanName](en/StructureDefinition-fiji-humanname.md)
+
+### Resource Profiles
+
+* [Fiji Allergy/Intolerance](en/StructureDefinition-fiji-allergy-intolerance.md)
+* [Fiji Condition](en/StructureDefinition-fiji-condition.md)
+* [Fiji Diagnostic Observation](en/StructureDefinition-fiji-diagnostic-observation.md)
+* [Fiji Healthcare Encounter](en/StructureDefinition-fiji-encounter.md)
+* [Fiji Immunization](en/StructureDefinition-fiji-immunization.md)
+* [Fiji Healthcare Service or Organization](en/StructureDefinition-fiji-organization.md)
+* [Fiji Pathology Observation](en/StructureDefinition-fiji-pathology-observation.md)
+* [Fiji Patient](en/StructureDefinition-fiji-patient.md)
+* [Fiji Practitioner Role](en/StructureDefinition-fiji-practitioner-role.md)
+* [Fiji Practitioner](en/StructureDefinition-fiji-practitioner.md)
+* [Blood Pressure Observation](en/StructureDefinition-fiji-vital-blood-pressure.md)
+* [BMI Vitals - Fiji](en/StructureDefinition-fiji-vital-bmi.md)
+* [Body Temperature Vitals - Fiji](en/StructureDefinition-fiji-vital-body-temperature.md)
+* [Heart Rate Vitals - Fiji](en/StructureDefinition-fiji-vital-heart-rate.md)
+* [Height Vitals - Fiji](en/StructureDefinition-fiji-vital-height.md)
+* [Oxygen Saturation Vitals - Fiji](en/StructureDefinition-fiji-vital-oxygen-saturation.md)
+* [Respiratory Rate Vitals - Fiji](en/StructureDefinition-fiji-vital-respiratory-rate.md)
+* [Weight Vitals - Fiji](en/StructureDefinition-fiji-vital-weight.md)
+
+### Extensions
+
+* [Birth Date Estimated Indicator](en/StructureDefinition-birthdate-estimated-indicator.md)
+* [Island](en/StructureDefinition-fiji-address-island.md)
+* [Fiji Yasana or Province](en/StructureDefinition-fiji-address-province.md)
+* [Fiji Settlement](en/StructureDefinition-fiji-address-settlement.md)
+* [Fiji KoroDina or Village](en/StructureDefinition-fiji-address-village.md)
+* [Fiji Clan Affiliation](en/StructureDefinition-fiji-clan-affiliation.md)
+* [Fiji Patient Ethnicity](en/StructureDefinition-fiji-patient-ethnicity.md)
+* [Fiji Patient Occupation](en/StructureDefinition-fiji-patient-occupation.md)
+
+### ImplementationGuides
+
+* [Draft Fiji Core Implementation Guide](en/ImplementationGuide-health-gov-fhir-fj-core.md)
+
+### NamingSystems
+
+* [FijiOrganizationIdentifier](en/NamingSystem-FijiOrganizationIdentifier.md)
+* [FijiPatientIdentifier](en/NamingSystem-FijiPatientIdentifier.md)
+* [FijiPractitionerRegistration](en/NamingSystem-FijiPractitionerRegistration.md)
+
+### Examples
+
+* [Suva Divisional Hospital (Organization)](en/Organization-FijiHospitalExample.md)
+* [FijiPatientExample1 (Patient)](en/Patient-FijiPatientExample1.md)
+* [FijiPatientExample2 (Patient)](en/Patient-FijiPatientExample2.md)
+* [FijiPatientFijiITaukei (Patient)](en/Patient-FijiPatientFijiITaukei.md)
+* [FijiPatientFijiIndo (Patient)](en/Patient-FijiPatientFijiIndo.md)
+* [FijiPractitionerRoleExample (PractitionerRole)](en/PractitionerRole-FijiPractitionerRoleExample.md)

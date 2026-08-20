@@ -1,0 +1,29 @@
+{
+  "resourceType" : "Organization",
+  "id" : "FijiHospitalExample",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Organization FijiHospitalExample</b></p><a name=\"FijiHospitalExample\"> </a><a name=\"hcFijiHospitalExample\"> </a><p><b>identifier</b>: <code>http://fhir.health.gov.fj/identifier/organization</code>/FJ-HOSP-SUH-001</p><p><b>name</b>: Suva Divisional Hospital</p><p><b>telecom</b>: <a href=\"tel:+6793313444\">+6793313444</a>, <a href=\"mailto:info@suvahospital.gov.fj\">info@suvahospital.gov.fj</a></p><p><b>address</b>: Amy Street Suva FJ </p></div>"
+  },
+  "identifier" : [{
+    "system" : "http://fhir.health.gov.fj/identifier/organization",
+    "value" : "FJ-HOSP-SUH-001"
+  }],
+  "name" : "Suva Divisional Hospital",
+  "telecom" : [{
+    "system" : "phone",
+    "value" : "+6793313444",
+    "use" : "work"
+  },
+  {
+    "system" : "email",
+    "value" : "info@suvahospital.gov.fj",
+    "use" : "work"
+  }],
+  "address" : [{
+    "line" : ["Amy Street"],
+    "city" : "Suva",
+    "district" : "Central Division",
+    "country" : "FJ"
+  }]
+}

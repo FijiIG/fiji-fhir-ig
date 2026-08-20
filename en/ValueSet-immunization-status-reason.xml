@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="immunization-status-reason"/>
+  <language value="en"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet immunization-status-reason</b></p><a name="immunization-status-reason"> </a><a name="hcimmunization-status-reason"> </a><ul><li>Include these codes as defined in <a href="https://tx.hl7chile.cl/r4"><code>http://id.who.int/icd/release/11/mms</code></a><span style="opacity: 0.5" title="Version is not explicitly stated. When building this specification, the most recent version 2026-01 has been used"> version ⏿2026-01</span><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href="https://tx.hl7chile.cl/r4/ValueSet/icd11-mms-es#icd11-mms-es-QC04.460">QC04.0</a></td><td>Immunization not carried out due to patient having had the disease</td></tr><tr><td><a href="https://tx.hl7chile.cl/r4/ValueSet/icd11-mms-es#icd11-mms-es-QC04.461">QC04.1</a></td><td>Immunization not carried out because of acute illness</td></tr><tr><td><a href="https://tx.hl7chile.cl/r4/ValueSet/icd11-mms-es#icd11-mms-es-QC04.462">QC04.2</a></td><td>Immunization not carried out because of chronic illness or condition of patient</td></tr><tr><td><a href="https://tx.hl7chile.cl/r4/ValueSet/icd11-mms-es#icd11-mms-es-QC04.463">QC04.3</a></td><td>Immunization not carried out because of immune-compromised state of patient</td></tr><tr><td><a href="https://tx.hl7chile.cl/r4/ValueSet/icd11-mms-es#icd11-mms-es-QC04.464">QC04.4</a></td><td>Immunization not carried out because of patient allergy to vaccine or component</td></tr><tr><td><a href="https://tx.hl7chile.cl/r4/ValueSet/icd11-mms-es#icd11-mms-es-QC04.465">QC04.5</a></td><td>Immunization not carried out because of patient refusal</td></tr><tr><td><a href="https://tx.hl7chile.cl/r4/ValueSet/icd11-mms-es#icd11-mms-es-QC04.466">QC04.6</a></td><td> Immunization not carried out because of caregiver refusal</td></tr><tr><td><a href="https://tx.hl7chile.cl/r4/ValueSet/icd11-mms-es#icd11-mms-es-QC04.467">QC04.7</a></td><td>Immunization not carried out due to lack of availability</td></tr><tr><td><a href="https://tx.hl7chile.cl/r4/ValueSet/icd11-mms-es#icd11-mms-es-QC04.46Y">QC04.Y</a></td><td>Immunization not carried out for other reasons</td></tr><tr><td><a href="https://tx.hl7chile.cl/r4/ValueSet/icd11-mms-es#icd11-mms-es-QC04.46Z">QC04.Z</a></td><td>Immunization not carried out for unspecified reason</td></tr></table></li></ul></div>
+  </text>
+  <url value="https://core.fhir.health.gov.fj/ValueSet/immunization-status-reason"/>
+  <version value="0.1.1"/>
+  <name value="ImmStatusReasonVS"/>
+  <title value="Immunization Status Reason valueset for reason a vaccine was not administered"/>
+  <status value="draft"/>
+  <date value="2026-08-20T22:55:52+00:00"/>
+  <publisher value="MHMS Fiji"/>
+  <contact>
+    <name value="MHMS Fiji"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://fhir.health.gov.fj"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Support"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.fhir.health.gov.fj"/>
+    </telecom>
+  </contact>
+  <description value="Status Reason codes for reason a vaccine was not administered. &#xA;Initial codes used are ICD-11 codes from DAK.&#xA;TODO: Converted and/or extend from vaccine specific exception codes from SNOMED CT codes or whatever code system chosen"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="FJ"/>
+      <display value="Fiji"/>
+    </coding>
+  </jurisdiction>
+  <copyright value="Distributed under the Creative Commons CC0-1.0 License (https://creativecommons.org/publicdomain/zero/1.0/)"/>
+  <compose>
+    <include>
+      <system value="http://id.who.int/icd/release/11/mms"/>
+      <concept>
+        <code value="QC04.0"/>
+        <display value="Immunization not carried out due to patient having had the disease"/>
+      </concept>
+      <concept>
+        <code value="QC04.1"/>
+        <display value="Immunization not carried out because of acute illness"/>
+      </concept>
+      <concept>
+        <code value="QC04.2"/>
+        <display value="Immunization not carried out because of chronic illness or condition of patient"/>
+      </concept>
+      <concept>
+        <code value="QC04.3"/>
+        <display value="Immunization not carried out because of immune-compromised state of patient"/>
+      </concept>
+      <concept>
+        <code value="QC04.4"/>
+        <display value="Immunization not carried out because of patient allergy to vaccine or component"/>
+      </concept>
+      <concept>
+        <code value="QC04.5"/>
+        <display value="Immunization not carried out because of patient refusal"/>
+      </concept>
+      <concept>
+        <code value="QC04.6"/>
+        <display value=" Immunization not carried out because of caregiver refusal"/>
+      </concept>
+      <concept>
+        <code value="QC04.7"/>
+        <display value="Immunization not carried out due to lack of availability"/>
+      </concept>
+      <concept>
+        <code value="QC04.Y"/>
+        <display value="Immunization not carried out for other reasons"/>
+      </concept>
+      <concept>
+        <code value="QC04.Z"/>
+        <display value="Immunization not carried out for unspecified reason"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

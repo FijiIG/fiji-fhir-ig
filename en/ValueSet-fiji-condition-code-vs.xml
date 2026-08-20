@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="fiji-condition-code-vs"/>
+  <language value="en"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet fiji-condition-code-vs</b></p><a name="fiji-condition-code-vs"> </a><a name="hcfiji-condition-code-vs"> </a><p>This value set includes codes based on the following rules:</p><ul><li>Include codes from<a href="http://www.snomed.org/"><code>http://snomed.info/sct</code></a><span title="Version is not explicitly stated. No matching Code System found"> version Not Stated (use latest from terminology server)</span> where expression  = &lt; 404684003 |Clinical finding| AND ^ 10811000132104 |International Patient Summary reference set|</li><li>Include codes from<a href="http://www.snomed.org/"><code>http://snomed.info/sct</code></a><span title="Version is not explicitly stated. No matching Code System found"> version Not Stated (use latest from terminology server)</span> where expression  = &lt; 243796009 |Situation with explicit context| AND ^ 10811000132104 |International Patient Summary reference set|</li></ul></div>
+  </text>
+  <url value="https://core.fhir.health.gov.fj/ValueSet/fiji-condition-code-vs"/>
+  <version value="0.1.1"/>
+  <name value="FijiConditionCodeVS"/>
+  <title value="Condition/Diagnosis code valueset"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2026-08-20T22:55:52+00:00"/>
+  <publisher value="MHMS Fiji"/>
+  <contact>
+    <name value="MHMS Fiji"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://fhir.health.gov.fj"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Support"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.fhir.health.gov.fj"/>
+    </telecom>
+  </contact>
+  <description value="Condition Code valueset for Fiji Core. &#xA;Proposed valueset is taken from SNOMED codes curated for International Patient Summary.&#xA;Includes &quot;clinical finding&quot;  codes and codes for &quot;situation with explicit content&quot;."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="FJ"/>
+      <display value="Fiji"/>
+    </coding>
+  </jurisdiction>
+  <copyright value="Distributed under the Creative Commons CC0-1.0 License (https://creativecommons.org/publicdomain/zero/1.0/)"/>
+  <compose>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <filter>
+        <property value="expression"/>
+        <op value="="/>
+        <value value="&lt; 404684003 |Clinical finding| AND ^ 10811000132104 |International Patient Summary reference set|"/>
+      </filter>
+    </include>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <filter>
+        <property value="expression"/>
+        <op value="="/>
+        <value value="&lt; 243796009 |Situation with explicit context| AND ^ 10811000132104 |International Patient Summary reference set|"/>
+      </filter>
+    </include>
+  </compose>
+</ValueSet>

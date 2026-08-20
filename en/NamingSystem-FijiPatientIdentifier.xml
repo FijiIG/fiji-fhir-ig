@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<NamingSystem xmlns="http://hl7.org/fhir">
+  <id value="FijiPatientIdentifier"/>
+  <language value="en"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: NamingSystem FijiPatientIdentifier</b></p><a name="FijiPatientIdentifier"> </a><a name="hcFijiPatientIdentifier"> </a><h3>Summary</h3><table class="grid"><tr><td>Defining URL</td><td>https://core.fhir.health.gov.fj/NamingSystem/FijiPatientIdentifier</td></tr><tr><td>Version</td><td>0.1.1</td></tr><tr><td>Name</td><td>FijiPatientIdentifier</td></tr><tr><td>Status</td><td>active</td></tr><tr><td>Definition</td><td><div><p>NamingSystem for patient identifiers in Fiji, using a simulated national identifier system for demonstration purposes.</p>
+</div></td></tr><tr><td>Publisher</td><td>MHMS Fiji</td></tr><tr><td>Copyright</td><td><div><p>Distributed under the Creative Commons CC0-1.0 License (https://creativecommons.org/publicdomain/zero/1.0/)</p>
+</div></td></tr></table><h3>Identifiers</h3><table class="grid"><tr><td><b>Type</b></td><td><b>Value</b></td><td><b>Preferred</b></td></tr><tr><td>URI</td><td>http://fhir.health.gov.fj/identifier/nhi</td><td>true</td></tr></table></div>
+  </text>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-NamingSystem.url">
+    <valueUri value="https://core.fhir.health.gov.fj/NamingSystem/FijiPatientIdentifier"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-NamingSystem.version">
+    <valueString value="0.1.1"/>
+  </extension>
+  <name value="FijiPatientIdentifier"/>
+  <status value="active"/>
+  <kind value="identifier"/>
+  <date value="2026-03-31"/>
+  <publisher value="MHMS Fiji"/>
+  <contact>
+    <name value="MHMS Fiji"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://fhir.health.gov.fj"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Support"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.fhir.health.gov.fj"/>
+    </telecom>
+  </contact>
+  <description value="NamingSystem for patient identifiers in Fiji, using a simulated national identifier system for demonstration purposes."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="FJ"/>
+      <display value="Fiji"/>
+    </coding>
+  </jurisdiction>
+  <uniqueId>
+    <type value="uri"/>
+    <value value="http://fhir.health.gov.fj/identifier/nhi"/>
+    <preferred value="true"/>
+  </uniqueId>
+</NamingSystem>

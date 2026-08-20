@@ -1,0 +1,1319 @@
+{
+  "resourceType" : "ImplementationGuide",
+  "id" : "health-gov-fhir-fj-core",
+  "language" : "en",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xml:lang=\"en\" xmlns=\"http://www.w3.org/1999/xhtml\" lang=\"en\"><p class=\"res-header-id\"><b>Generated Narrative: ImplementationGuide health-gov-fhir-fj-core</b></p><a name=\"health-gov-fhir-fj-core\"> </a><a name=\"hchealth-gov-fhir-fj-core\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Language: en</p></div><h2>FijiCoreIG</h2><p>The official URL for this implementation guide is: </p><pre>https://core.fhir.health.gov.fj/ImplementationGuide/health-gov-fhir-fj-core</pre><div><p>Implementation Guide for Fiji FHIR Interoperability.</p>\n</div></div>"
+  },
+  "url" : "https://core.fhir.health.gov.fj/ImplementationGuide/health-gov-fhir-fj-core",
+  "version" : "0.1.1",
+  "name" : "FijiCoreIG",
+  "title" : "Draft Fiji Core Implementation Guide",
+  "status" : "draft",
+  "date" : "2026-08-20T22:55:52+00:00",
+  "publisher" : "MHMS Fiji",
+  "contact" : [{
+    "name" : "MHMS Fiji",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://fhir.health.gov.fj"
+    }]
+  },
+  {
+    "name" : "Support",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.fhir.health.gov.fj"
+    }]
+  }],
+  "description" : "Implementation Guide for Fiji FHIR Interoperability.",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "FJ",
+      "display" : "Fiji"
+    }]
+  }],
+  "copyright" : "Distributed under the Creative Commons CC0-1.0 License (https://creativecommons.org/publicdomain/zero/1.0/)",
+  "packageId" : "health.gov.fhir.fj.core",
+  "license" : "CC0-1.0",
+  "fhirVersion" : ["4.0.1"],
+  "dependsOn" : [{
+    "id" : "hl7tx",
+    "extension" : [{
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment",
+      "valueMarkdown" : "Automatically added as a dependency - all IGs depend on HL7 Terminology"
+    }],
+    "uri" : "http://terminology.hl7.org/ImplementationGuide/hl7.terminology",
+    "packageId" : "hl7.terminology.r4",
+    "version" : "7.3.0"
+  },
+  {
+    "id" : "hl7ext",
+    "extension" : [{
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment",
+      "valueMarkdown" : "Automatically added as a dependency - all IGs depend on the HL7 Extension Pack"
+    }],
+    "uri" : "http://hl7.org/fhir/extensions/ImplementationGuide/hl7.fhir.uv.extensions",
+    "packageId" : "hl7.fhir.uv.extensions.r4",
+    "version" : "5.3.0"
+  }],
+  "definition" : {
+    "extension" : [{
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "copyrightyear"
+      },
+      {
+        "url" : "value",
+        "valueString" : "2026+"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "releaselabel"
+      },
+      {
+        "url" : "value",
+        "valueString" : "ci-build"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "autoload-resources"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "path-liquid-template"
+      },
+      {
+        "url" : "value",
+        "valueString" : "template/liquid"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "path-liquid-template"
+      },
+      {
+        "url" : "value",
+        "valueString" : "input/liquid"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "path-qa"
+      },
+      {
+        "url" : "value",
+        "valueString" : "temp/qa"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "path-temp"
+      },
+      {
+        "url" : "value",
+        "valueString" : "temp/pages"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "path-output"
+      },
+      {
+        "url" : "value",
+        "valueString" : "output"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "path-suppressed-warnings"
+      },
+      {
+        "url" : "value",
+        "valueString" : "input/ignoreWarnings.txt"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "path-history"
+      },
+      {
+        "url" : "value",
+        "valueString" : "https://core.fhir.health.gov.fj/history.html"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "template-html"
+      },
+      {
+        "url" : "value",
+        "valueString" : "template-page.html"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "template-md"
+      },
+      {
+        "url" : "value",
+        "valueString" : "template-page-md.html"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "apply-contact"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "apply-context"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "apply-copyright"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "apply-jurisdiction"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "apply-license"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "apply-publisher"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "apply-version"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "apply-wg"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "active-tables"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "fmm-definition"
+      },
+      {
+        "url" : "value",
+        "valueString" : "http://hl7.org/fhir/versions.html#maturity"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "propagate-status"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "excludelogbinaryformat"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "tabbed-snapshots"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "i18n-default-lang"
+      },
+      {
+        "url" : "value",
+        "valueString" : "en"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency",
+      "valueCode" : "hl7.fhir.uv.tools.r4#1.1.2"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "copyrightyear"
+      },
+      {
+        "url" : "value",
+        "valueString" : "2026+"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "releaselabel"
+      },
+      {
+        "url" : "value",
+        "valueString" : "ci-build"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "autoload-resources"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "path-liquid-template"
+      },
+      {
+        "url" : "value",
+        "valueString" : "template/liquid"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "path-liquid-template"
+      },
+      {
+        "url" : "value",
+        "valueString" : "input/liquid"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "path-qa"
+      },
+      {
+        "url" : "value",
+        "valueString" : "temp/qa"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "path-temp"
+      },
+      {
+        "url" : "value",
+        "valueString" : "temp/pages"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "path-output"
+      },
+      {
+        "url" : "value",
+        "valueString" : "output"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "path-suppressed-warnings"
+      },
+      {
+        "url" : "value",
+        "valueString" : "input/ignoreWarnings.txt"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "path-history"
+      },
+      {
+        "url" : "value",
+        "valueString" : "https://core.fhir.health.gov.fj/history.html"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "template-html"
+      },
+      {
+        "url" : "value",
+        "valueString" : "template-page.html"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "template-md"
+      },
+      {
+        "url" : "value",
+        "valueString" : "template-page-md.html"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "apply-contact"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "apply-context"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "apply-copyright"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "apply-jurisdiction"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "apply-license"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "apply-publisher"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "apply-version"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "apply-wg"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "active-tables"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "fmm-definition"
+      },
+      {
+        "url" : "value",
+        "valueString" : "http://hl7.org/fhir/versions.html#maturity"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "propagate-status"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "excludelogbinaryformat"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "tabbed-snapshots"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "i18n-default-lang"
+      },
+      {
+        "url" : "value",
+        "valueString" : "en"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    }],
+    "resource" : [{
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/fiji-allergy-agent-vs"
+      },
+      "name" : "Allergy Causative Agent Value Set for Fiji Patient",
+      "description" : "A subset of SNOMED CT concepts representing substances or products that cause allergies or intolerances, aligned with global IPS.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/birthdate-estimated-indicator"
+      },
+      "name" : "Birth Date Estimated Indicator",
+      "description" : "Indicates that the associated Patient.birthDate is an estimated (approximate) date of birth rather than a confirmed, exact date. Absence of this extension means no assertion is made about accuracy.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/fiji-vital-blood-pressure"
+      },
+      "name" : "Blood Pressure Observation",
+      "description" : "This profile sets minimum expectations for an Observation resource to record blood pressure observations.\nIt is based on the FHIR Blood Pressure Profile and adapted as required for the Fiji Core Implementation Guide.\n\n### Summary of  Requirements\n\n1.  One code in `Observation.code` which must have\n    -   a fixed `Observation.code.coding.system`=**'http ://loinc.org'**\n    -   a fixed  `Observation.code.coding.code`= **85354-9'**\n    -   Other additional Codings are allowed in `Observation.code`- e.g. more specific LOINC\n        Codes, SNOMED CT concepts, system specific codes. All codes\n        SHALL have an system value\n2.  One  `Observation.component.code`  which must have\n    -   a fixed `Observation.component.code.coding.system`=**'http://loinc.org'**\n    -   fixed  `Observation.component.code.coding.code`= **'8480-6'**\n    -   Other additional Codings are allowed in `Observation.code`- e.g. more specific LOINC\n        Codes, SNOMED CT concepts, system specific codes. All codes\n        SHALL have an system value\n3.  One  `Observation.component.code` which must have \n    -   a fixed `Observation.component.code.coding.system`=**'http://loinc.org'**\n    -   fixed  `Observation.component.code.coding.code`= **'8462-4'**\n    -   Other additional Codings are allowed in `Observation.code`- e.g. more specific LOINC\n        Codes, SNOMED CT concepts, system specific codes. All codes\n        SHALL have an system value\n4. Either one Observation.valueQuantity or, if there is no value, one code in Observation.DataAbsentReason\n   - Each Observation.valueQuantity must have:\n     - One numeric value in Observation.valueQuantity.value\n     - a fixed Observation.valueQuantity.system=\\\"http://unitsofmeasure.org\\\"\n     - a UCUM unit code in Observation.valueQuantity.code = **'mm[Hg]'**",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/fiji-vital-bmi"
+      },
+      "name" : "BMI Vitals - Fiji",
+      "description" : "Profile for BMI vital observations in Fiji",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/fiji-vital-body-temperature"
+      },
+      "name" : "Body Temperature Vitals - Fiji",
+      "description" : "Profile for body temperature vital observations in Fiji",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/fiji-evidence-vs"
+      },
+      "name" : "Condition Evidence Value Set for Fiji Core IG",
+      "description" : "Evidence: Signs, symptoms, procedures, and labs, explicitly excluding formal diseases.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/fiji-condition-code-vs"
+      },
+      "name" : "Condition/Diagnosis code valueset",
+      "description" : "Condition Code valueset for Fiji Core. \nProposed valueset is taken from SNOMED codes curated for International Patient Summary.\nIncludes \"clinical finding\"  codes and codes for \"situation with explicit content\".",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:complex-type"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/fiji-address"
+      },
+      "name" : "Fiji Address",
+      "description" : "Address profile designed for Fiji where addresses are commonly descriptive and village-based rather than street-based.\nThis profile supports a range of address formats, with commonly required extensions, and general usage guidance.\nIn all cases:\n- text is a mandatory field and should be considered the primary representation of the fully address.\n- line is used for free text address lines and may relate to a landmark, school, church etc. rather than a street address.\n- Province, Village and Settlement are added as extensions to the base fhir Address definition to support common address formats.\n- geolocation is added as an optional extension to support use case where GPS coordinates are available. It is expected that this will become more common.\n- Postal code is often not used, so is currently optional and may be removed (ie 0..0) if not required in the future\n- Country is required to support international interoperability\n\nRecommended mapping of address fields are below but should be validated and used with Fiji specific examples.\n\n| FHIR Element        | Typical Use            | Notes                          |\n| ------------------- | ------------------------------ | ------------------------------ |\n| `text`              | Full narrative address         | Often the primary address form |\n| `line`              | Landmark, compound, street     | Free-text                      |\n| `city`              | Town                           | Mainly urban areas             |\n| `district`          | Tikina / district              | Country dependent              |\n| `extension:province` | Yasana / province              | Country dependent              |\n| `state`             | Division                       | Country dependent              |\n| `extension:village` | Village                        | Most rural addresses           |\n| `extension:settlement`| Settlement                   | Rural addresses        |",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/fiji-allergy-intolerance"
+      },
+      "name" : "Fiji Allergy/Intolerance",
+      "description" : "Profile of Allergy/Intolerance for Fiji Patient",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/fiji-body-site-vs"
+      },
+      "name" : "Fiji Body Site (Anatomical Structure) Value Set",
+      "description" : "Valueset for bodysite/anatomical structures.\nUsed for Condition.bodySite\nValues from SNOMED CT anatomical structures.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/fiji-clan-affiliation"
+      },
+      "name" : "Fiji Clan Affiliation",
+      "description" : "Represents clan, tribe, lineage, or descent-based group affiliation.\n\nThis is a demographic identity attribute.\nIt is not a syntactic component of a name.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/fiji-condition"
+      },
+      "name" : "Fiji Condition",
+      "description" : "Profile of Condition as defined for Fiji Core IG.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/fiji-diagnostic-observation"
+      },
+      "name" : "Fiji Diagnostic Observation",
+      "description" : "Profile for Radiology/Diagnostic Results Observation as defined for Fiji IG.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/fiji-encounter"
+      },
+      "name" : "Fiji Healthcare Encounter",
+      "description" : "Profile for Fiji Healthcare Encounter\n(Work in progress)",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/fiji-organization"
+      },
+      "name" : "Fiji Healthcare Service or Organization",
+      "description" : "Profile for Fiji Healthcare Service or Organization",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Organization"
+      }],
+      "reference" : {
+        "reference" : "Organization/FijiHospitalExample"
+      },
+      "name" : "Fiji Hospital Example Fiji Divisional Hospital",
+      "description" : "Example Fiji hospital organization in Fiji.\nIncludes organizational identifier, contact information, and address.",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:complex-type"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/fiji-humanname"
+      },
+      "name" : "Fiji HumanName",
+      "description" : "A HumanName profile designed for representing Fiji names.\n\nNaming conventions are diverse and may not align with Western norms. This profile accommodates a range of naming practices including:\n\n- Absence of family names (e.g., in some cultures where individuals may have only given names)\n- Patronymic or Matronymic structures\n- Multiple given names\n- Customary and ceremonial naming\n- Distinction between 'usual' (social) and 'official' (legal) names\n\nAt least one FijiHumanName instance must exist on FijiPatient and FijiPractitioner resources.\nSystems SHALL NOT require both usual and official names.\n\nNote: Clan affiliation is recorded separately from the FijiHumanName.  It issupported as an optional extension of  FijiPatient and FijiPractitioner resources to capture important cultural identity information.\n\n**STATUS**: Proposed for wider Pacific use - needs further review and consensus from Pacific stakeholders before finalization.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/fiji-immunization"
+      },
+      "name" : "Fiji Immunization",
+      "description" : "# Profile of Immunizations for Fiji Patient\n\nThis profile sets minimum expectations for an Immunization resource to record, search, and fetch immunisation history \nassociated with a patient. \n\n## Mandatory elements  \nThe following elements must be recorded:\n* status - one of the following codes (completed, entered-in-error, not-done)\n* statusReason -  reason a vaccine was not administered (currently uses ICD11 valueset from DAK, suggest converting to SNOMED CT)\n* vaccineCode - a vaccine code from the Immunization ValueSet\nThis element should be coded with terminology from the defined valueset. If no appropriate value is available\nthen a coded value from another terminology may be used. Free text entry should only be permitted if no \ncoded value is available or to record historic immunizations.\n* patient - a reference to a  Fiji Patient\n* occurrence[x] -  the vaccine administration date can be recorded using one of the two options below\n  * occurenceDateTime  (recommended for use where possible)\n  * occurrenceString - this is a free text representation of the date or administration\n\n## Other elements defined\n* lotNumber - is not mandatory but should be recorded if known\n* protocolApplied.doseNumber - should be recorded if multiple doses are required\n* protocolApplied.seriesDoses - should be recorded where multiple doses are recommended for full immunity\n* note - Extra information about the immunization that is not conveyed by the other attributes\n\n\n\n## Terminology  \n\nImmunization.vaccineCode.coding shall be populated by one of the codes from the Immunization ValueSet where such a code exists\nfor the vaccine.  Additional codes may be used where no matching code is present.\n\n\n\n## Alignment with Regional IGs  \n\nThe following specifications have been reviewed in development of this profile. \n-\tAustralian Clinical Data for Interoperability Release 2\n-\tNew Zealand Clinical Data for Interoperability 2026\n-\tAustralian AU Core Implementation Guide 2.0.0\n-\tWHO DAK Administer Vaccine Immunization Elements",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/fiji-address-village"
+      },
+      "name" : "Fiji KoroDina or Village",
+      "description" : "Village or KoroDina part of FijiAddress.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "NamingSystem"
+      }],
+      "reference" : {
+        "reference" : "NamingSystem/FijiOrganizationIdentifier"
+      },
+      "name" : "Fiji Organization Identifier",
+      "description" : "NamingSystem for organization identifiers in Fiji, using a simulated national identifier system for demonstration purposes.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/fiji-pathology-observation"
+      },
+      "name" : "Fiji Pathology Observation",
+      "description" : "Profile for Pathology Results Observation as defined for Fiji IG.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/fiji-patient"
+      },
+      "name" : "Fiji Patient",
+      "description" : "Patient profile for Fiji jurisdiction.\n\nIntegrates:\n- FijiHumanName\n- Patient-level clan affiliation\n- Guidance for usual vs official name use",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Patient"
+      }],
+      "reference" : {
+        "reference" : "Patient/FijiPatientFijiITaukei"
+      },
+      "name" : "Fiji Patient - iTaukei with Mataqali",
+      "description" : "Example Fijian patient of iTaukei background demonstrating:\n- Simulated national health identifier\n- Official and usual names\n- Mataqali clan affiliation",
+      "exampleCanonical" : "https://core.fhir.health.gov.fj/StructureDefinition/fiji-patient"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/fiji-patient-ethnicity"
+      },
+      "name" : "Fiji Patient Ethnicity",
+      "description" : "Describes ethnicity of a Fiji Patient.  This is based on the structure of the NZ FHIR Base extension for \n[NZ Ethnicity](http://hl7.org.nz/fhir/StructureDefinition/nz-ethnicity)\nbut is separately defined so as to enable a national/regional valueset for ethnicity codes.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "NamingSystem"
+      }],
+      "reference" : {
+        "reference" : "NamingSystem/FijiPatientIdentifier"
+      },
+      "name" : "Fiji Patient Identifier",
+      "description" : "NamingSystem for patient identifiers in Fiji, using a simulated national identifier system for demonstration purposes.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/fiji-patient-occupation"
+      },
+      "name" : "Fiji Patient Occupation",
+      "description" : "Describes occupation of a Fiji Patient.  This is based on the structure of the NZ FHIR Base extension for \n[ACC Patient Occupation](http://hl7.org.nz/fhir/StructureDefinition/acc-patient-occupation)\nbut is separately defined so as to enable a national/regional valueset for occupation codes.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Patient"
+      }],
+      "reference" : {
+        "reference" : "Patient/FijiPatientFijiIndo"
+      },
+      "name" : "Fiji Patient – Indo-Fijian",
+      "description" : "Example Indo-Fijian patient demonstrating:\n- Simulated national health identifier\n- Official and usual names\n- No clan affiliation",
+      "exampleCanonical" : "https://core.fhir.health.gov.fj/StructureDefinition/fiji-patient"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/fiji-practitioner"
+      },
+      "name" : "Fiji Practitioner",
+      "description" : "Practitioner profile for Fiji jurisdictions supporting culturally appropriate naming \nwhile maintaining regulatory and medico-legal identity requirements.\n\nRequires at least one official name (registered/licensed name).\nSupports usual name for culturally recognised or commonly used name.\nSupports clan affiliation as an optional extension.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "NamingSystem"
+      }],
+      "reference" : {
+        "reference" : "NamingSystem/FijiPractitionerRegistration"
+      },
+      "name" : "Fiji Practitioner Registration",
+      "description" : "NamingSystem for practitioner registration identifiers in Fiji, using a simulated national identifier system for demonstration purposes.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/fiji-practitioner-role"
+      },
+      "name" : "Fiji Practitioner Role",
+      "description" : "Defines the functional, organisational, and regulatory role of a Fiji Practitioner.\n\nSupports multiple roles per practitioner (e.g., GP, hospital consultant, outreach clinician).\nIntended for use in Fiji regional health systems and future HIE environments.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "PractitionerRole"
+      }],
+      "reference" : {
+        "reference" : "PractitionerRole/FijiPractitionerRoleExample"
+      },
+      "name" : "Fiji Practitioner Role District Hospital GP",
+      "description" : "General Practitioner role at district hospital for registered Fiji practitioner.",
+      "exampleCanonical" : "https://core.fhir.health.gov.fj/StructureDefinition/fiji-practitioner-role"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/fiji-radiology-findings-vs"
+      },
+      "name" : "Fiji Radiology/Diagnostic Findings Value Set",
+      "description" : "Fiji radiology findings including SNOMED CT concepts filtered for radiology and imaging findings used within an IPS context.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/fiji-address-settlement"
+      },
+      "name" : "Fiji Settlement",
+      "description" : "Settlement part of FijiAddress.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/fiji-address-province"
+      },
+      "name" : "Fiji Yasana or Province",
+      "description" : "Yasana or Province part of FijiAddress.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Patient"
+      }],
+      "reference" : {
+        "reference" : "Patient/FijiPatientExample1"
+      },
+      "name" : "FijiPatientExample1",
+      "description" : "Example patient with official and usual names, clan affiliation, and demographic details.",
+      "exampleCanonical" : "https://core.fhir.health.gov.fj/StructureDefinition/fiji-patient"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Patient"
+      }],
+      "reference" : {
+        "reference" : "Patient/FijiPatientExample2"
+      },
+      "name" : "FijiPatientExample2",
+      "description" : "Example patient with official and usual names, clan affiliation, and demographic details.",
+      "exampleCanonical" : "https://core.fhir.health.gov.fj/StructureDefinition/fiji-patient"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/heart-rate-loinc"
+      },
+      "name" : "Heart Rate LOINC Codes",
+      "description" : "LOINC codes for heart rate measurements, spot or average.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/fiji-vital-heart-rate"
+      },
+      "name" : "Heart Rate Vitals - Fiji",
+      "description" : "Profile for heart rate vital observations in Fiji",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/fiji-vital-height"
+      },
+      "name" : "Height Vitals - Fiji",
+      "description" : "Profile for body height vital observations in Fiji",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/immunization-status-reason"
+      },
+      "name" : "Immunization Status Reason valueset for reason a vaccine was not administered",
+      "description" : "Status Reason codes for reason a vaccine was not administered. \nInitial codes used are ICD-11 codes from DAK.\nTODO: Converted and/or extend from vaccine specific exception codes from SNOMED CT codes or whatever code system chosen",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/imm-vs"
+      },
+      "name" : "Immunization ValueSet",
+      "description" : "Immunization valueset based on until Fiji-Pacific valueset is developed",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/fiji-address-island"
+      },
+      "name" : "Island",
+      "description" : "Island where the address is located.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/obs-vs"
+      },
+      "name" : "Observation ValueSet",
+      "description" : "Use all LOINC codes as temporary observation valueset until Fiji-Pacific valueset is developed",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/fiji-vital-oxygen-saturation"
+      },
+      "name" : "Oxygen Saturation Vitals - Fiji",
+      "description" : "Profile for oxygen saturation vital observations in Fiji",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/fiji-vital-respiratory-rate"
+      },
+      "name" : "Respiratory Rate Vitals - Fiji",
+      "description" : "Profile for respiratory rate vital observations in Fiji",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/fiji-vital-weight"
+      },
+      "name" : "Weight Vitals - Fiji",
+      "description" : "Profile for weight vital observations in Fiji",
+      "exampleBoolean" : false
+    }],
+    "page" : {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+        "valueUrl" : "toc.html"
+      }],
+      "nameUrl" : "toc.html",
+      "title" : "Table of Contents",
+      "generation" : "html",
+      "page" : [{
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+          "valueUrl" : "index.html"
+        }],
+        "nameUrl" : "index.html",
+        "title" : "Fiji Core Implementation Guide",
+        "generation" : "markdown"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+          "valueUrl" : "gettingstarted.html"
+        }],
+        "nameUrl" : "gettingstarted.html",
+        "title" : "Contributing to the Fiji Core IG",
+        "generation" : "markdown"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+          "valueUrl" : "datatypes.html"
+        }],
+        "nameUrl" : "datatypes.html",
+        "title" : "Data Type Profiles",
+        "generation" : "markdown"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+          "valueUrl" : "resources.html"
+        }],
+        "nameUrl" : "resources.html",
+        "title" : "Resource Profiles",
+        "generation" : "markdown"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+          "valueUrl" : "terminology.html"
+        }],
+        "nameUrl" : "terminology.html",
+        "title" : "Terminology",
+        "generation" : "markdown"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+          "valueUrl" : "extensions.html"
+        }],
+        "nameUrl" : "extensions.html",
+        "title" : "Extensions",
+        "generation" : "markdown"
+      }]
+    },
+    "parameter" : [{
+      "code" : "path-resource",
+      "value" : "input/capabilities"
+    },
+    {
+      "code" : "path-resource",
+      "value" : "input/examples"
+    },
+    {
+      "code" : "path-resource",
+      "value" : "input/extensions"
+    },
+    {
+      "code" : "path-resource",
+      "value" : "input/models"
+    },
+    {
+      "code" : "path-resource",
+      "value" : "input/operations"
+    },
+    {
+      "code" : "path-resource",
+      "value" : "input/profiles"
+    },
+    {
+      "code" : "path-resource",
+      "value" : "input/resources"
+    },
+    {
+      "code" : "path-resource",
+      "value" : "input/vocabulary"
+    },
+    {
+      "code" : "path-resource",
+      "value" : "input/maps"
+    },
+    {
+      "code" : "path-resource",
+      "value" : "input/testing"
+    },
+    {
+      "code" : "path-resource",
+      "value" : "input/history"
+    },
+    {
+      "code" : "path-resource",
+      "value" : "fsh-generated/resources"
+    },
+    {
+      "code" : "path-pages",
+      "value" : "template/config"
+    },
+    {
+      "code" : "path-pages",
+      "value" : "input/assets"
+    },
+    {
+      "code" : "path-pages",
+      "value" : "input/images"
+    },
+    {
+      "code" : "path-tx-cache",
+      "value" : "input-cache/txcache"
+    }]
+  }
+}

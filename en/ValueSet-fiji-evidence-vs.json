@@ -1,0 +1,73 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "fiji-evidence-vs",
+  "language" : "en",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet fiji-evidence-vs</b></p><a name=\"fiji-evidence-vs\"> </a><a name=\"hcfiji-evidence-vs\"> </a><p>This value set includes codes based on the following rules:</p><ul><li>Include codes from<a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a><span title=\"Version is not explicitly stated. No matching Code System found\"> version Not Stated (use latest from terminology server)</span> where expression  = (&lt; 404684003 |Clinical finding| MINUS &lt; 64572001 |Disease|) AND ^ 10811000132104 |International Patient Summary reference set|</li><li>Include codes from<a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a><span title=\"Version is not explicitly stated. No matching Code System found\"> version Not Stated (use latest from terminology server)</span> where expression  = &lt; 71388002 |Procedure| AND ^ 10811000132104 |International Patient Summary reference set|</li><li>Include codes from<a href=\"http://loinc.org\"><code>http://loinc.org</code></a><span title=\"Version is not explicitly stated. No matching Code System found\"> version Not Stated (use latest from terminology server)</span> where concept  is-a LP29684-5 (RAD)</li><li>Include codes from<a href=\"http://loinc.org\"><code>http://loinc.org</code></a><span title=\"Version is not explicitly stated. No matching Code System found\"> version Not Stated (use latest from terminology server)</span> where concept  is-a LP29700-9</li></ul></div>"
+  },
+  "url" : "https://core.fhir.health.gov.fj/ValueSet/fiji-evidence-vs",
+  "version" : "0.1.1",
+  "name" : "FijiEvidenceVS",
+  "title" : "Condition Evidence Value Set for Fiji Core IG",
+  "status" : "draft",
+  "date" : "2026-08-20T22:55:52+00:00",
+  "publisher" : "MHMS Fiji",
+  "contact" : [{
+    "name" : "MHMS Fiji",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://fhir.health.gov.fj"
+    }]
+  },
+  {
+    "name" : "Support",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.fhir.health.gov.fj"
+    }]
+  }],
+  "description" : "Evidence: Signs, symptoms, procedures, and labs, explicitly excluding formal diseases.",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "FJ",
+      "display" : "Fiji"
+    }]
+  }],
+  "copyright" : "Distributed under the Creative Commons CC0-1.0 License (https://creativecommons.org/publicdomain/zero/1.0/)",
+  "compose" : {
+    "include" : [{
+      "system" : "http://snomed.info/sct",
+      "filter" : [{
+        "property" : "expression",
+        "op" : "=",
+        "value" : "(< 404684003 |Clinical finding| MINUS < 64572001 |Disease|) AND ^ 10811000132104 |International Patient Summary reference set|"
+      }]
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "filter" : [{
+        "property" : "expression",
+        "op" : "=",
+        "value" : "< 71388002 |Procedure| AND ^ 10811000132104 |International Patient Summary reference set|"
+      }]
+    },
+    {
+      "system" : "http://loinc.org",
+      "filter" : [{
+        "property" : "concept",
+        "op" : "is-a",
+        "value" : "LP29684-5"
+      }]
+    },
+    {
+      "system" : "http://loinc.org",
+      "filter" : [{
+        "property" : "concept",
+        "op" : "is-a",
+        "value" : "LP29700-9"
+      }]
+    }]
+  }
+}
