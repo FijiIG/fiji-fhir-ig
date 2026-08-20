@@ -32,9 +32,8 @@ Integrates:
 // Clan Extension Integration
 // -----------------------------
 
-* extension contains FijiClanAffiliation named clanAffiliation 0..*
-
-* extension[clanAffiliation] MS
+// * extension contains FijiClanAffiliation named clanAffiliation 0..*
+// * extension[clanAffiliation] MS
 
 
 // -----------------------------

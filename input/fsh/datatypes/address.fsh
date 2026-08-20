@@ -60,15 +60,22 @@ Note: clanAffiliation is already an extension in the FijiPatient, FijiProvider p
 * postalCode ^short = "Postal code is currently optional"
 
 * extension contains
+    FijiAddressProvince named province 0..1 MS and
     FijiAddressVillage named village 0..1 MS and
-    FijiAddressIsland named island 0..1 MS and
+    FijiAddressSettlement named settlement 0..1 MS and
     $geolocation|4.0.1 named geolocation 0..1
+
+* extension[province] ^short = "Yasana or province."
+* extension[province] ^definition = "Yasana or province name."
 
 * extension[village] ^short = "Village or rural settlement."
 * extension[village] ^definition = "Village, settlement, or rural community name. This may be a primary geographic identifier for addressing."
 
-* extension[island] ^short = "Island where the address is located."
-* extension[island] ^definition = "Island name where the address is located. This is important in archipelago nations where logistics and travel depend on island geography."
+* extension[settlement] ^short = "Rural settlement."
+* extension[settlement] ^definition = "Settlement, or rural community name. This may be a primary geographic identifier for addressing."
+
+// * extension[island] ^short = "Island where the address is located."
+// * extension[island] ^definition = "Island name where the address is located. This is important in archipelago nations where logistics and travel depend on island geography."
 
 * extension[geolocation] ^short = "Geographic coordinates of the address."
 * extension[geolocation] ^definition = "Latitude and longitude coordinates representing the geographic location of the address. May represent household, facility, or village centroid."

@@ -18,7 +18,7 @@ Example patient with official and usual names, clan affiliation, and demographic
 * name[1].given[0] = "Taviri"
 * name[1].text = "Taviri"
 
-* extension[clanAffiliation].valueCodeableConcept.text = "Nakamal Vaturanga"
+// * extension[clanAffiliation].valueCodeableConcept.text = "Nakamal Vaturanga"
 
 * gender = #male
 * birthDate = "1990-04-12"
@@ -41,7 +41,7 @@ Description: """Example patient with official and usual names, clan affiliation,
 * name[1].given[0] = "Tui"
 * name[1].text = "Susuga Tui"
 
-* extension[clanAffiliation].valueCodeableConcept.text = "Sa Malietoa"
+//* extension[clanAffiliation].valueCodeableConcept.text = "Sa Malietoa"
 
 * gender = #male
 * birthDate = "1985-11-02"
@@ -81,7 +81,7 @@ Example Fijian patient of iTaukei background demonstrating:
 // CLAN (MATAQALI)
 ///////////////////////////////////////////////////////////////
 
-* extension[clanAffiliation].valueCodeableConcept.text = "Mataqali Vunisei"
+// * extension[clanAffiliation].valueCodeableConcept.text = "Mataqali Vunisei"
 
 ///////////////////////////////////////////////////////////////
 // DEMOGRAPHICS
