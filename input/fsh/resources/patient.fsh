@@ -29,6 +29,12 @@ Integrates:
 * name only FijiHumanName
 
 // -----------------------------
+// Health Administration Zone Extension
+// -----------------------------
+
+* extension contains FijiAdminZone named healthZone 0..1
+
+// -----------------------------
 // Clan Extension Integration
 // -----------------------------
 

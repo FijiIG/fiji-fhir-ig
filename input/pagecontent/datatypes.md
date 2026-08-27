@@ -55,11 +55,10 @@ Recommended mapping of address fields are below but should be validated and used
 | `text`              | Full narrative address         | Often the primary address form |
 | `line`              | Landmark, compound, street     | Free-text                      |
 | `city`              | Town                           | Mainly urban areas             |
-| `district`          | Tikina / district              | Country dependent              |
-| `extension:province` | Yasana / province              | Country dependent              |
-| `state`             | Division                       | Country dependent              |
-| `extension:village` | Village                        | Most rural addresses           |
-| `extension:settlement`| Settlement                   | Rural addresses        |
+| `district`          | Tikina / district              |               |
+| `state`             | Yasana / province              |               |
+| `extension:village` | Village                        | Rural addresses           |
+
 
 #### Structure and Extensions  
 
