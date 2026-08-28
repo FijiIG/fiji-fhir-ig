@@ -4,3 +4,5 @@ Id: fiji-vital-height
 Title: "Height Vitals - Fiji"
 Description: "Profile for body height vital observations in Fiji"
 * subject only Reference(FijiPatient)
+* encounter only Reference(FijiEncounter)
+* interpretation from FijiObsInterpretationVS (extensible)

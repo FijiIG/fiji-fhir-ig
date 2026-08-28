@@ -34,3 +34,6 @@ It is based on the FHIR Blood Pressure Profile and adapted as required for the F
 	 
 """
 * subject only Reference(FijiPatient)
+* encounter only Reference(FijiEncounter)
+* interpretation from FijiObsInterpretationVS (extensible)
+

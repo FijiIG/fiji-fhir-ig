@@ -12,3 +12,5 @@ Id: fiji-vital-heart-rate
 Title: "Heart Rate Vitals - Fiji"
 Description: "Profile for heart rate vital observations in Fiji"
 * subject only Reference(FijiPatient)
+* encounter only Reference(FijiEncounter)
+* interpretation from FijiObsInterpretationVS (extensible)
