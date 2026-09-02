@@ -43,9 +43,9 @@ coded value is available or to record historic immunizations.
 * occurrence[x] -  the vaccine administration date can be recorded using one of the two options below
   * occurenceDateTime  (recommended for use where possible)
   * occurrenceString - this is a free text representation of the date or administration
-* location only Reference(FijiLocation)
 
 ## Other elements defined
+* location only Reference(FijiLocation)
 * lotNumber - is not mandatory but should be recorded if known
 * site - to body location where the vaccine was administered (use FijiBodySiteVS valueset,r extend if required)
 * route - How vaccine entered body uses SNOMED codes where concept descendent-of #284009009
@@ -90,6 +90,7 @@ The following specifications have been reviewed in development of this profile.
 * site from FijiBodySiteVS (extensible)
 * route 0..1
 * route from FijiMedicationRouteVS (extensible)
+* performer 0..*
 * performer.actor only Reference(FijiPractitioner or FijiPractitionerRole or FijiOrganization)
 * note MS
 * reaction 0..1
