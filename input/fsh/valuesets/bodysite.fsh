@@ -3,7 +3,7 @@ Id: fiji-body-site-vs
 Title: "Fiji Body Site (Anatomical Structure) Value Set"
 Description: """
 Valueset for bodysite/anatomical structures.
-Used for Condition.bodySite
+Used for Condition.bodySite and Immunization.site
 Values from SNOMED CT anatomical structures.
 """
 * ^status = #active

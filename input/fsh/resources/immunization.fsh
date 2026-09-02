@@ -39,15 +39,24 @@ This element should be coded with terminology from the defined valueset. If no a
 then a coded value from another terminology may be used. Free text entry should only be permitted if no 
 coded value is available or to record historic immunizations.
 * patient - a reference to a  Fiji Patient
+* encounter - a reference to an encounter where/when the immunization took place
 * occurrence[x] -  the vaccine administration date can be recorded using one of the two options below
   * occurenceDateTime  (recommended for use where possible)
   * occurrenceString - this is a free text representation of the date or administration
+* location only Reference(FijiLocation)
 
 ## Other elements defined
 * lotNumber - is not mandatory but should be recorded if known
+* site - to body location where the vaccine was administered (use FijiBodySiteVS valueset,r extend if required)
+* route - How vaccine entered body uses SNOMED codes where concept descendent-of #284009009
 * protocolApplied.doseNumber - should be recorded if multiple doses are required
 * protocolApplied.seriesDoses - should be recorded where multiple doses are recommended for full immunity
+* performer.actor - who administered the vaccine can be Fiji Practitioner, PractitionerRole or Organization
 * note - Extra information about the immunization that is not conveyed by the other attributes
+* reaction - Details of a reaction that follows immunization 
+  * reaction.date - mandatory if a reaction is recorded.  The date/time of the reaction.
+  * reaction.detail  - mandatory if a reaction is recorded. This is a reference to an Observation that describes the reaction.
+
 
 
 
@@ -72,8 +81,18 @@ The following specifications have been reviewed in development of this profile.
 * vaccineCode 1..1 MS
 * vaccineCode from ImmVS (extensible)
 * patient only Reference(FijiPatient)
+* encounter only Reference(FijiEncounter)
 * occurrence[x] 1..1 MS
 * occurrenceDateTime MS
+* location only Reference(FijiLocation)
 * lotNumber MS
+* site 0..1 MS
+* site from FijiBodySiteVS (extensible)
+* route 0..1
+* route from FijiMedicationRouteVS (extensible)
+* performer.actor only Reference(FijiPractitioner or FijiPractitionerRole or FijiOrganization)
 * note MS
-
+* reaction 0..1
+* reaction.date 1..1 MS
+* reaction.detail 1..1 MS
+* reaction.detail only Reference(Observation)
