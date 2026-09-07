@@ -39,14 +39,14 @@ This element should be coded with terminology from the defined valueset. If no a
 then a coded value from another terminology may be used. Free text entry should only be permitted if no 
 coded value is available or to record historic immunizations.
 * patient - a reference to a  Fiji Patient
-* encounter - a reference to an encounter where/when the immunization took place
 * occurrence[x] -  the vaccine administration date can be recorded using one of the two options below
   * occurenceDateTime  (recommended for use where possible)
   * occurrenceString - this is a free text representation of the date or administration
 
 ## Other elements defined
-* location only Reference(FijiLocation)
 * lotNumber - is not mandatory but should be recorded if known
+* encounter - a reference to an encounter where/when the immunization took place
+* location only Reference(FijiLocation)
 * site - to body location where the vaccine was administered (use FijiBodySiteVS valueset,r extend if required)
 * route - How vaccine entered body uses SNOMED codes where concept descendent-of #284009009
 * protocolApplied.doseNumber - should be recorded if multiple doses are required
