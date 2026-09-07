@@ -4,7 +4,7 @@ Usage: #example
 
 * status = #final
 
-* category = $obs-cat-cs#vital-signs "Vital Signs"
+* category[VSCat] = $obs-cat-cs#vital-signs "Vital Signs"
 
 * code = $loinc#39156-5 "Body mass index (BMI) [Ratio]"
 

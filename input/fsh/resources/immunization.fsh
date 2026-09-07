@@ -30,7 +30,7 @@ Description: """
 This profile sets minimum expectations for an Immunization resource to record, search, and fetch immunisation history 
 associated with a patient. 
 
-## Mandatory elements  
+### Mandatory elements  
 The following elements must be recorded:
 * status - one of the following codes (completed, entered-in-error, not-done)
 * vaccineCode - a vaccine code from the Immunization ValueSet
@@ -42,7 +42,7 @@ coded value is available or to record historic immunizations.
   * occurenceDateTime  (recommended for use where possible)
   * occurrenceString - this is a free text representation of the date or administration
 
-## Other elements defined
+### Other elements defined
 * statusReason -  provides reason for administration of vaccine - mandatory if vaccine not administered (currently uses ICD11 valueset from DAK, suggest converting to SNOMED CT)
 * lotNumber - is not mandatory but should be recorded if known
 * encounter - a reference to an encounter where/when the immunization took place
@@ -57,17 +57,12 @@ coded value is available or to record historic immunizations.
   * reaction.date - mandatory if a reaction is recorded.  The date/time of the reaction.
   * reaction.detail  - mandatory if a reaction is recorded. This is a reference to an Observation that describes the reaction.
 
-
-
-
-## Terminology  
+### Terminology  
 
 Immunization.vaccineCode.coding shall be populated by one of the codes from the Immunization ValueSet where such a code exists
 for the vaccine.  Additional codes may be used where no matching code is present.
 
-
-
-## Alignment with Regional IGs  
+### Alignment with Regional IGs  
 
 The following specifications have been reviewed in development of this profile. 
 -	Australian Clinical Data for Interoperability Release 2

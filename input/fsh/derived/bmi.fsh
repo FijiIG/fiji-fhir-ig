@@ -6,7 +6,7 @@ Description: """
 This profile defines the requirements and usage of an Observation resource recording BMI vital observations.
 It is based on the FHIR BMI Profile and adapted as required for the Fiji Core Implementation Guide.
 
-## Mandatory elements  
+### Mandatory elements  
 The following elements must be recorded:
 * status - one of the following codes (registered | preliminary | final | amended +)
 * code.coding.system - must be http ://loinc.org 
@@ -23,7 +23,7 @@ The following elements must be recorded:
   * valueQuantity.system - "http://unitsofmeasure.org"
   * valueQuantity.code - the UCUM unit code **'mm[Hg]'**
 
-## Other elements defined
+### Other elements defined
 * dataAbsentReason - reason why no value present for this vital sign (mandatory if no value)
 * encounter - a reference to an encounter where/when the BMI measurement took place	 
 * interpretation - a coded concept providing interpretation for the value 
