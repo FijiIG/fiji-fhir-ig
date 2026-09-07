@@ -33,7 +33,6 @@ associated with a patient.
 ## Mandatory elements  
 The following elements must be recorded:
 * status - one of the following codes (completed, entered-in-error, not-done)
-* statusReason -  reason a vaccine was not administered (currently uses ICD11 valueset from DAK, suggest converting to SNOMED CT)
 * vaccineCode - a vaccine code from the Immunization ValueSet
 This element should be coded with terminology from the defined valueset. If no appropriate value is available
 then a coded value from another terminology may be used. Free text entry should only be permitted if no 
@@ -44,6 +43,7 @@ coded value is available or to record historic immunizations.
   * occurrenceString - this is a free text representation of the date or administration
 
 ## Other elements defined
+* statusReason -  provides reason for administration of vaccine - mandatory if vaccine not administered (currently uses ICD11 valueset from DAK, suggest converting to SNOMED CT)
 * lotNumber - is not mandatory but should be recorded if known
 * encounter - a reference to an encounter where/when the immunization took place
 * location only Reference(FijiLocation)
