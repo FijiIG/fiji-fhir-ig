@@ -21,7 +21,7 @@ The following elements must be recorded:
 * valueQuantity - the BMI value measured as below (if there is no value, the dataAbsentReason must be populated with a relevant code)
   * valueQuantity.value - One numeric value
   * valueQuantity.system - "http://unitsofmeasure.org"
-  * valueQuantity.code - the UCUM unit code **'mm[Hg]'**
+  * valueQuantity.code - the UCUM unit code **'kg/m2'**
 
 ### Other elements defined
 * dataAbsentReason - reason why no value present for this vital sign (mandatory if no value)
