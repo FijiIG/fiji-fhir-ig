@@ -27,6 +27,9 @@ This may be extended as required including with local codes used in historic dat
 * include $SCT#13385008 "Mediate auscultation"
 * include $SCT#113011001 "Palpation"
 * include $SCT#31813000 "Vascular oscillometry"
+* include $SCT#469311001 "Manual-inflation electronic sphygmomanometer, non-portable"
+* include $SCT#464069000 "Mercury manual sphygmomanometer"
+* include $SCT#57401000087101 "Measurement of orthostatic blood pressure"
 
 // ---------------------------------------------------------------------
 // Height / length / Weight

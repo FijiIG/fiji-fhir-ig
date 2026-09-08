@@ -36,10 +36,12 @@ The following elements must be recorded:
 ### Other elements defined
 * dataAbsentReason - reason why no value present for this vital sign (mandatory if no value)
 * encounter - a reference to an encounter where/when the BMI measurement took place	 
+* method -  a SNOMED coded concept from a valueset that describes procedures used for vitals measurement
 * interpretation - a coded concept providing interpretation for the value 
 * note - any additional relevant information to be recorded 
 """
 * subject only Reference(FijiPatient)
 * encounter only Reference(FijiEncounter)
 * interpretation from FijiObsInterpretationVS (extensible)
+* method from FijiVitalMethodVS (preferred)
 
