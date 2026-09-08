@@ -83,7 +83,7 @@ jobs:
           name: publisher-log
           path: publisher.log
 
-      # 13. Deploy to gh-pages branch
+      # 13. Deploy to gh-pages branch setting the CNAME to core.fhir.health.gov.fj
       - name: Deploy IG to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
         with:
@@ -91,4 +91,5 @@ jobs:
           publish_dir: ./output
           publish_branch: gh-pages
           force_orphan: true
+          cname: core.fhir.health.gov.fj
   

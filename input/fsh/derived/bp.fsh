@@ -16,7 +16,7 @@ The following elements must be recorded:
   * category.coding.system - http://terminology.hl7.org/CodeSystem/observation-category
   * category.coding.code - vital-signs
 * subject - a reference to a  Fiji Patient
-* effective[x] -  the date/time when the BMI was measured using one of the values below
+* effective[x] -  the date/time when the Blood pressure was measured using one of the values below
   * effectiveDateTime  (recommended for use where possible)
   * effectivePeriod - this is a time period with specific start/end over which the BMI did not change
 * component for systolic reading which must have
