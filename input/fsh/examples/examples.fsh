@@ -47,7 +47,7 @@ Description: """Example patient with official and usual names, clan affiliation,
 * birthDate = "1985-11-02"
 
 
-Instance: FijiPatientFijiITaukei
+Instance: FijiPatientExample
 InstanceOf: FijiPatient
 Usage: #example
 Title: "Fiji Patient - iTaukei with Mataqali"
@@ -151,7 +151,7 @@ Title: "Fiji Practitioner Role District Hospital GP"
 Description: "General Practitioner role at district hospital for registered Fiji practitioner."
 
 * practitioner = Reference(FijiPractitionerExample)
-* organization = Reference(FijiHospitalExample)
+* organization = Reference(FijiOrganizationExample)
 
 * code[0].text = "General Practitioner"
 
@@ -164,7 +164,7 @@ Description: "General Practitioner role at district hospital for registered Fiji
 
 
 // Fiji Organization Examples ----------------------------------------------------------------------
-Instance: FijiHospitalExample
+Instance: FijiOrganizationExample
 InstanceOf: Organization
 Usage: #example
 Title: "Fiji Hospital Example Fiji Divisional Hospital"
