@@ -97,4 +97,5 @@ Alias: $obs-heartrate = http://hl7.org/fhir/StructureDefinition/heartrate
 Alias: $obs-headcircum = http://hl7.org/fhir/StructureDefinition/headcircum
 Alias: $obs-oxygensat = http://hl7.org/fhir/StructureDefinition/oxygensat
 Alias: $obs-resprate = http://hl7.org/fhir/StructureDefinition/resprate
+Alias: $obs-headcircum = http://hl7.org/fhir/StructureDefinition/headcircum
 

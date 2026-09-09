@@ -29,6 +29,7 @@ For vital signs:
 * [FijiBodyTemperature](StructureDefinition-fiji-vital-body-temperature.html)  
 * [FijiHeartRate](StructureDefinition-fiji-vital-heart-rate.html)  
 * [FijiHeight](StructureDefinition-fiji-vital-height.html)  
+* [FijiHeadCircumference](StructureDefinition-fiji-vital-head-circumference.html)  
 * [FijiOxygenSaturation](StructureDefinition-fiji-vital-oxygen-saturation.html)  
 * [FijiRespiratoryRate](StructureDefinition-fiji-vital-respiratory-rate.html)  
 * [FijiWeight](StructureDefinition-fiji-vital-weight.html)  
