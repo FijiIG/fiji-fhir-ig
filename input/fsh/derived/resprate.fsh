@@ -37,7 +37,5 @@ The following elements must be recorded:
 
 // standard HL7 FHIR R4 body position extension added
 * extension contains $bodyposition named bodyPosition 0..1
-* extension[bodyPosition] ^short = "The body position at the time of the observation"
-* extension[bodyPosition] ^definition = "The position of the body when the observation was done, e.g. standing, sitting. To be used only when the body position in not precoordinated in the observation code."
 * extension[bodyPosition].valueCodeableConcept from $obs-bodypos-vs (extensible)
 
