@@ -17,3 +17,4 @@ Usage: #example
 * valueQuantity.code = #/min
 
 * method = $SCT#248981007 "Respiration observation (procedure)"
+* extension[bodyPosition].valueCodeableConcept =  $SCT#33586001 "Sitting position"

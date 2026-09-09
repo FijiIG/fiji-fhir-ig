@@ -52,6 +52,7 @@ Alias: $obs-interp-vs = http://hl7.org/fhir/ValueSet/observation-interpretation
 Alias: $obs-dataabsent-vs = http://hl7.org/fhir/ValueSet/data-absent-reason
 Alias: $obs-diag-svc-vs = http://hl7.org/fhir/ValueSet/diagnostic-service-sections
 Alias: $imm-route-vs = http://hl7.org/fhir/ValueSet/immunization-route
+Alias: $obs-bodypos-vs = http://hl7.org/fhir/us/vitals/ValueSet/bodyPositionVS
 
 // ---------- STRUCTURE DEFINITION ALIASES ---------------------------
 // Base FHIR Structure Definitions
@@ -82,6 +83,7 @@ Alias: $patient-interpreterRequired = http://hl7.org/fhir/StructureDefinition/pa
 Alias: $patient-birthTime = http://hl7.org/fhir/StructureDefinition/patient-birthTime
 Alias: $geolocation = http://hl7.org/fhir/StructureDefinition/geolocation
 Alias: $bodysite = http://hl7.org/fhir/StructureDefinition/bodySite // references BodyStructure
+Alias: $bodyposition = http://hl7.org/fhir/StructureDefinition/observation-bodyPosition // references BodyPosition in Observations
 Alias: $allerg-assertdate = http://hl7.org/fhir/StructureDefinition/allergyintolerance-assertedDate
 Alias: $cond-assertdate = http://hl7.org/fhir/StructureDefinition/condition-assertedDate
 

@@ -32,3 +32,7 @@ The following elements must be recorded:
 * encounter only Reference(FijiEncounter)
 * interpretation from FijiObsInterpretationVS (extensible)
 * device only Reference(FijiDevice)
+
+// standard HL7 FHIR R4 body position extension added
+* extension contains $bodyposition named bodyPosition 0..1
+* extension[bodyPosition].valueCodeableConcept from $obs-bodypos-vs (extensible)

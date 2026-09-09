@@ -18,3 +18,5 @@ Usage: #example
 
 // Measurement site: radial artery
 * bodySite = $SCT#45631007 "Structure of radial artery"
+
+* extension[bodyPosition].valueCodeableConcept =  $SCT#33586001 "Sitting position"

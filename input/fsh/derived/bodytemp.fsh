@@ -34,5 +34,6 @@ The following elements must be recorded:
 * subject only Reference(FijiPatient)
 * encounter only Reference(FijiEncounter)
 * interpretation from FijiObsInterpretationVS (extensible)
+* bodySite MS
 * bodySite from FijiBodySiteVS (preferred)
 * method from FijiVitalMethodVS (preferred)

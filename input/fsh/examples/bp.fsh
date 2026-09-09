@@ -14,6 +14,8 @@ Usage: #example
 
 * interpretation = $obs-interp-cs#H "High"
 
+* extension[bodyPosition].valueCodeableConcept =  $SCT#33586001 "Sitting position"
+
 * component[SystolicBP].code = http://loinc.org#8480-6
 * component[SystolicBP].valueQuantity.value = 128
 * component[SystolicBP].valueQuantity.unit = "mmHg"
