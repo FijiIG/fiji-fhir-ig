@@ -9,3 +9,7 @@ Profile for Fiji Healthcare Encounter
 """
 * identifier 1..1 MS
 * subject only Reference(FijiPatient)
+* class MS
+* type MS
+* reasonCode MS
+* reasonCode from $enc_reason-vs (extensible)

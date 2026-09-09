@@ -44,7 +44,7 @@ Title: "Tdap Immunization with Reaction"
 * vaccineCode.coding.code = #115
 * vaccineCode.coding.display = "Tdap"
 
-* patient = Reference(FijiPatientExample)
+* patient = Reference(Patient/FijiPatientExample)
 * encounter = Reference(FijiEncounterExample)
 * occurrenceDateTime = "2026-09-07"
 

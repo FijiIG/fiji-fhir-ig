@@ -8,7 +8,7 @@ Usage: #example
 
 * code = $loinc#39156-5 "Body mass index (BMI) [Ratio]"
 
-* subject = Reference(FijiPatientExample)
+* subject = Reference(Patient/FijiPatientExample)
 * encounter = Reference(FijiEncounterExample)
 * effectiveDateTime = "2026-09-07"
 

@@ -14,7 +14,7 @@ Example of Body Weight vital measurement
 * performer = Reference(Practitioner/FijiPractitionerExample)
 * encounter = Reference(Encounter/FijiEncounterExample)
 
-* valueQuantity.value = 72.4
+* valueQuantity.value = 98.4
 * valueQuantity.unit = "kg"
 * valueQuantity.system = $UCUM
 * valueQuantity.code = #kg

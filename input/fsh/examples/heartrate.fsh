@@ -5,7 +5,7 @@ Usage: #example
 * status = #final
 * category[VSCat] = $obs-cat-cs#vital-signs "Vital Signs"
 * code = $loinc#8867-4 "Heart rate"
-* subject = Reference(FijiPatientExample)
+* subject = Reference(Patient/FijiPatientExample)
 * effectiveDateTime = "2026-09-08T09:30:00+10:00"
 * encounter = Reference(FijiEncounterExample)
 * valueQuantity.value = 78

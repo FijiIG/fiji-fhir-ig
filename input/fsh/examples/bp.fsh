@@ -8,7 +8,7 @@ Usage: #example
 
 * code = $loinc#85354-9 "Blood pressure panel with all children optional"
 
-* subject = Reference(Patient/ExamplePatient)
+* subject = Reference(Patient/FijiPatientExample)
 
 * effectiveDateTime = "2026-09-07T10:30:00+10:00"
 

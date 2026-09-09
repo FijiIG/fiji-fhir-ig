@@ -11,7 +11,7 @@ Description: "Example body height observation including measurement device refer
 * effectiveDateTime = "2026-09-08T09:16:00+10:00"
 * performer = Reference(Practitioner/FijiPractitionerExample)
 
-* valueQuantity.value = 168.5
+* valueQuantity.value = 178.5
 * valueQuantity.unit = "cm"
 * valueQuantity.system = $UCUM
 * valueQuantity.code = #cm

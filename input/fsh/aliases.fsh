@@ -42,6 +42,8 @@ Alias: $condition-ver-status-cs = http://terminology.hl7.org/CodeSystem/conditio
 Alias: $condition-category-cs = http://terminology.hl7.org/CodeSystem/condition-category
 
 Alias: $specimen-type-cs = http://terminology.hl7.org/CodeSystem/v2-0487
+Alias: $enc-class-cs = http://terminology.hl7.org/CodeSystem/v3-ActCode
+Alias: $participant-type-cs = 	http://terminology.hl7.org/CodeSystem/v3-ParticipationType
 
 // Value sets for specific elements
 Alias: $iso-country-vs = http://hl7.org/fhir/ValueSet/iso3166-1-2
@@ -53,6 +55,7 @@ Alias: $obs-dataabsent-vs = http://hl7.org/fhir/ValueSet/data-absent-reason
 Alias: $obs-diag-svc-vs = http://hl7.org/fhir/ValueSet/diagnostic-service-sections
 Alias: $imm-route-vs = http://hl7.org/fhir/ValueSet/immunization-route
 Alias: $obs-bodypos-vs = http://hl7.org/fhir/us/vitals/ValueSet/bodyPositionVS
+Alias: $enc_reason-vs = http://hl7.org/fhir/ValueSet/encounter-reason
 
 // ---------- STRUCTURE DEFINITION ALIASES ---------------------------
 // Base FHIR Structure Definitions
