@@ -13,6 +13,7 @@ Profile for Pathology Results Observation as defined for Fiji IG.
 * code 1..1 MS
 * code from ObsVS (preferred)
 * effective[x] 1..1 MS
+* encounter = Reference(Encounter/FijiEncounterExample)
 * performer MS
 * performer only Reference(FijiPatient or FijiPractitioner or FijiPractitionerRole or FijiOrganization)
 * value[x] MS
