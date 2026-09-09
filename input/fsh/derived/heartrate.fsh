@@ -35,6 +35,7 @@ The following elements must be recorded:
 * encounter - a reference to an encounter where/when the Heart Rate measurement took place	 
 * bodySite - a SNOMED coded concept specifying the part of the body used in this measurement
 * method - a SNOMED coded concept from a valueset that describes procedures used for vitals measurement
+* bodyPosition (extension) - a SNOMED coded concept that desciribes the position of the body at time of measurement
 * interpretation - a coded concept providing interpretation for the value 
 * note - any additional relevant information to be recorded
 """

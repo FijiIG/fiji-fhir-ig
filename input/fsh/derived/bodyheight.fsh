@@ -28,6 +28,7 @@ The following elements must be recorded:
 * encounter - a reference to an encounter where/when the Body Height measurement took place	 
 * interpretation - a coded concept providing interpretation for the value 
 * device - reference to the specific device used to measure
+* bodyPosition (extension) - a SNOMED coded concept that desciribes the position of the body at time of measurement
 * note - any additional relevant information to be recorded
 """
 * subject only Reference(FijiPatient)

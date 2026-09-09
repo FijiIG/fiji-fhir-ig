@@ -37,6 +37,7 @@ The following elements must be recorded:
 * dataAbsentReason - reason why no value present for this vital sign (mandatory if no value)
 * encounter - a reference to an encounter where/when the BMI measurement took place	 
 * method -  a SNOMED coded concept from a valueset that describes procedures used for vitals measurement
+* bodyPosition (extension) - a SNOMED coded concept that desciribes the position of the body at time of measurement
 * interpretation - a coded concept providing interpretation for the value 
 * note - any additional relevant information to be recorded 
 """

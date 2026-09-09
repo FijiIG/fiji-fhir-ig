@@ -25,6 +25,7 @@ The following elements must be recorded:
 ### Other elements defined
 * dataAbsentReason - reason why no value present for this vital sign (mandatory if no value)
 * encounter - a reference to an encounter where/when the Oxygen Saturation measurement took place	 
+* bodyPosition (extension) - a SNOMED coded concept that desciribes the position of the body at time of measurement
 * interpretation - a coded concept providing interpretation for the value 
 * note - any additional relevant information to be recorded
 """
