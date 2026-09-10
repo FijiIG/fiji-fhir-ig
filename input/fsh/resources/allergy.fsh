@@ -17,8 +17,11 @@ Profile of Allergy/Intolerance for Fiji Patient
 * note MS
 * recorder 0..1
 * recorder only Reference(FijiPractitioner or FijiPractitionerRole)
+
 * reaction MS
 * reaction.manifestation 1..* MS
 * reaction.manifestation from FijiConditionCodeVS (preferred)
+* reaction.manifestation ^short = "Clinical symptoms/signs associated with adverse reaction"
+
 * reaction.severity MS
 
