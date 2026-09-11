@@ -1,0 +1,28 @@
+{
+  "resourceType" : "Observation",
+  "id" : "FijiTdapReactionObservation",
+  "language" : "en",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Observation FijiTdapReactionObservation</b></p><a name=\"FijiTdapReactionObservation\"> </a><a name=\"hcFijiTdapReactionObservation\"> </a><p><b>status</b>: Final</p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 271807003}\">Skin lesion</span></p><p><b>subject</b>: <a href=\"Patient-FijiPatientExample.html\">Jone Nabou Male, DoB: 1992-04-17 ( http://fhir.health.gov.fj/identifier/nhi#FijiPatientIdentifier#FJ-NHI-982345671)</a></p><p><b>effective</b>: 2026-09-08</p><p><b>value</b>: <span title=\"Codes:{http://snomed.info/sct 385615009}\">Injection site reaction</span></p></div>"
+  },
+  "status" : "final",
+  "code" : {
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "271807003",
+      "display" : "Skin lesion"
+    }]
+  },
+  "subject" : {
+    "reference" : "Patient/FijiPatientExample"
+  },
+  "effectiveDateTime" : "2026-09-08",
+  "valueCodeableConcept" : {
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "385615009",
+      "display" : "Injection site reaction"
+    }]
+  }
+}

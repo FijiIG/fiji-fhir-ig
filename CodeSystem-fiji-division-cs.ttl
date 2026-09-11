@@ -1,0 +1,80 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://core.fhir.health.gov.fj/CodeSystem/fiji-division-cs> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "fiji-division-cs"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem fiji-division-cs</b></p><a name=\"fiji-division-cs\"> </a><a name=\"hcfiji-division-cs\"> </a><p>This  code system <code>https://core.fhir.health.gov.fj/CodeSystem/fiji-division-cs</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">central<a name=\"fiji-division-cs-central\"> </a></td><td>Central</td><td>Central division covers capital regions and surrounding provinces</td></tr><tr><td style=\"white-space:nowrap\">eastern<a name=\"fiji-division-cs-eastern\"> </a></td><td>Eastern</td><td>Eastern division Covers outer islands and remote areas like Levuka and Rotuma</td></tr><tr><td style=\"white-space:nowrap\">western<a name=\"fiji-division-cs-western\"> </a></td><td>Western</td><td>Western division covers western side of Viti Levu and nearby islands</td></tr><tr><td style=\"white-space:nowrap\">northern<a name=\"fiji-division-cs-northern\"> </a></td><td>Northern</td><td>Northern division Covers Vanua Levu and Taveuni</td></tr></table></div>"
+  ] ;
+  fhir:CodeSystem.url [ fhir:value "https://core.fhir.health.gov.fj/CodeSystem/fiji-division-cs"] ;
+  fhir:CodeSystem.version [ fhir:value "0.2.0"] ;
+  fhir:CodeSystem.name [ fhir:value "FijiDivisionCS"] ;
+  fhir:CodeSystem.title [ fhir:value "Health administrative division codes in Fiji"] ;
+  fhir:CodeSystem.status [ fhir:value "draft"] ;
+  fhir:CodeSystem.date [ fhir:value "2026-09-11T02:30:38+00:00"^^xsd:dateTime] ;
+  fhir:CodeSystem.publisher [ fhir:value "MHMS Fiji"] ;
+  fhir:CodeSystem.contact [
+     fhir:index 0 ;
+     fhir:ContactDetail.name [ fhir:value "MHMS Fiji" ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index 0 ;
+       fhir:ContactPoint.system [ fhir:value "url" ] ;
+       fhir:ContactPoint.value [ fhir:value "https://fhir.health.gov.fj" ]
+     ]
+  ], [
+     fhir:index 1 ;
+     fhir:ContactDetail.name [ fhir:value "Support" ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index 0 ;
+       fhir:ContactPoint.system [ fhir:value "url" ] ;
+       fhir:ContactPoint.value [ fhir:value "https://www.fhir.health.gov.fj" ]
+     ]
+  ] ;
+  fhir:CodeSystem.description [ fhir:value "Health administrative division codes in Fiji"] ;
+  fhir:CodeSystem.jurisdiction [
+     fhir:index 0 ;
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       fhir:Coding.system [ fhir:value "urn:iso:std:iso:3166" ] ;
+       fhir:Coding.code [ fhir:value "FJ" ] ;
+       fhir:Coding.display [ fhir:value "Fiji" ]
+     ]
+  ] ;
+  fhir:CodeSystem.copyright [ fhir:value "Distributed under the Creative Commons CC0-1.0 License (https://creativecommons.org/publicdomain/zero/1.0/)"] ;
+  fhir:CodeSystem.content [ fhir:value "complete"] ;
+  fhir:CodeSystem.count [ fhir:value "4"^^xsd:nonNegativeInteger] ;
+  fhir:CodeSystem.concept [
+     fhir:index 0 ;
+     fhir:CodeSystem.concept.code [ fhir:value "central" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Central" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Central division covers capital regions and surrounding provinces" ]
+  ], [
+     fhir:index 1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "eastern" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Eastern" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Eastern division Covers outer islands and remote areas like Levuka and Rotuma" ]
+  ], [
+     fhir:index 2 ;
+     fhir:CodeSystem.concept.code [ fhir:value "western" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Western" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Western division covers western side of Viti Levu and nearby islands" ]
+  ], [
+     fhir:index 3 ;
+     fhir:CodeSystem.concept.code [ fhir:value "northern" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Northern" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Northern division Covers Vanua Levu and Taveuni" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://core.fhir.health.gov.fj/CodeSystem/fiji-division-cs.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

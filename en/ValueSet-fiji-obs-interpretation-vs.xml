@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="fiji-obs-interpretation-vs"/>
+  <language value="en"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet fiji-obs-interpretation-vs</b></p><a name="fiji-obs-interpretation-vs"> </a><a name="hcfiji-obs-interpretation-vs"> </a><p>This value set includes codes based on the following rules:</p><ul><li>Include all codes defined in <a href="http://terminology.hl7.org/7.3.0/CodeSystem-v3-ObservationInterpretation.html"><code>http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation</code></a><span title="Version is not explicitly stated, which means it is fixed to 4.0.0, the version found through the package references"> version &#x1F4E6;4.0.0</span></li><li>Include all codes defined in <a href="CodeSystem-fiji-obs-interpretation-cs.html"><code>https://core.fhir.health.gov.fj/CodeSystem/fiji-obs-interpretation-cs</code></a><span title="Version is not explicitly stated, which means it is fixed to the version provided in this specification"> version &#x1F4E6;0.2.0</span></li></ul></div>
+  </text>
+  <url value="https://core.fhir.health.gov.fj/ValueSet/fiji-obs-interpretation-vs"/>
+  <version value="0.2.0"/>
+  <name value="FijiObsInterpretationVS"/>
+  <title value="Fiji Observation Interpretation Value Set"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2026-09-11T02:30:38+00:00"/>
+  <publisher value="MHMS Fiji"/>
+  <contact>
+    <name value="MHMS Fiji"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://fhir.health.gov.fj"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Support"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.fhir.health.gov.fj"/>
+    </telecom>
+  </contact>
+  <description value="Valueset for interpretations of Observations for Fiji.&#xA;Used for interpretaton element for Observations and derived profiles (eg. Vital signs)&#xA;Values from  HL7 v3 Code System ObservationInterpretation with added values from WHO/Fiji usage."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="FJ"/>
+      <display value="Fiji"/>
+    </coding>
+  </jurisdiction>
+  <copyright value="Distributed under the Creative Commons CC0-1.0 License (https://creativecommons.org/publicdomain/zero/1.0/)"/>
+  <compose>
+    <include>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation"/>
+    </include>
+    <include>
+      <system value="https://core.fhir.health.gov.fj/CodeSystem/fiji-obs-interpretation-cs"/>
+    </include>
+  </compose>
+</ValueSet>

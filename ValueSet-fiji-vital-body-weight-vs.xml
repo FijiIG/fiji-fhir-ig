@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="fiji-vital-body-weight-vs"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet fiji-vital-body-weight-vs</b></p><a name="fiji-vital-body-weight-vs"> </a><a name="hcfiji-vital-body-weight-vs"> </a><ul><li>Include these codes as defined in <a href="http://loinc.org"><code>http://loinc.org</code></a><span title="Version is not explicitly stated. No matching Code System found"> version Not Stated (use latest from terminology server)</span><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href="https://loinc.org/29463-7/">29463-7</a></td><td>Body weight</td></tr><tr><td><a href="https://loinc.org/8339-4/">8339-4</a></td><td>Birth weight Measured</td></tr></table></li></ul></div>
+  </text>
+  <url value="https://core.fhir.health.gov.fj/ValueSet/fiji-vital-body-weight-vs"/>
+  <version value="0.2.0"/>
+  <name value="FijiVitalBodyWeightVS"/>
+  <title value="Fiji Vital Sign Body Weight ValueSet"/>
+  <status value="draft"/>
+  <date value="2026-09-11T02:30:38+00:00"/>
+  <publisher value="MHMS Fiji"/>
+  <contact>
+    <name value="MHMS Fiji"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://fhir.health.gov.fj"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Support"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.fhir.health.gov.fj"/>
+    </telecom>
+  </contact>
+  <description value="Concepts representing options that provide further context for body weight coding. (eg.  Birth Weight...)&#xA;NOTE: This is not currently used but may be used in future when a full valueset has been developed"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="FJ"/>
+      <display value="Fiji"/>
+    </coding>
+  </jurisdiction>
+  <copyright value="Distributed under the Creative Commons CC0-1.0 License (https://creativecommons.org/publicdomain/zero/1.0/)"/>
+  <compose>
+    <include>
+      <system value="http://loinc.org"/>
+      <concept>
+        <code value="29463-7"/>
+        <display value="Body weight"/>
+      </concept>
+      <concept>
+        <code value="8339-4"/>
+        <display value="Birth weight Measured"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

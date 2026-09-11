@@ -1,0 +1,78 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://core.fhir.health.gov.fj/Immunization/FijiTdapImmunizationExample> a fhir:Immunization ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "FijiTdapImmunizationExample"] ;
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "https://core.fhir.health.gov.fj/StructureDefinition/fiji-immunization" ;
+       fhir:index 0 ;
+       fhir:link <https://core.fhir.health.gov.fj/StructureDefinition/fiji-immunization>
+     ]
+  ] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Immunization FijiTdapImmunizationExample</b></p><a name=\"FijiTdapImmunizationExample\"> </a><a name=\"hcFijiTdapImmunizationExample\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-fiji-immunization.html\">Fiji Immunization</a></p></div><p><b>status</b>: Completed</p><p><b>vaccineCode</b>: <span title=\"Codes:{http://hl7.org/fhir/sid/cvx 115}\">Tdap</span></p><p><b>patient</b>: <a href=\"Patient/example-patient\">Patient/example-patient</a></p><p><b>encounter</b>: <a href=\"Encounter/example-encounter\">Encounter/example-encounter</a></p><p><b>occurrence</b>: 2026-09-07</p><p><b>location</b>: <a href=\"Location/example-clinic\">Location/example-clinic</a></p><p><b>lotNumber</b>: TDAP-FJ-2026-001</p><p><b>site</b>: <span title=\"Codes:{http://snomed.info/sct 368208006}\">Left upper arm structure</span></p><p><b>route</b>: <span title=\"Codes:{http://snomed.info/sct 76601001}\">Intramuscular injection</span></p><h3>Performers</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Actor</b></td></tr><tr><td style=\"display: none\">*</td><td><a href=\"Practitioner/example-practitioner\">Practitioner/example-practitioner</a></td></tr></table></div>"
+  ] ;
+  fhir:Immunization.status [ fhir:value "completed"] ;
+  fhir:Immunization.vaccineCode [
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       fhir:Coding.system [ fhir:value "http://hl7.org/fhir/sid/cvx" ] ;
+       fhir:Coding.code [ fhir:value "115" ] ;
+       fhir:Coding.display [ fhir:value "Tdap" ]
+     ]
+  ] ;
+  fhir:Immunization.patient [
+     fhir:link <https://core.fhir.health.gov.fj/Patient/example-patient> ;
+     fhir:Reference.reference [ fhir:value "Patient/example-patient" ]
+  ] ;
+  fhir:Immunization.encounter [
+     fhir:link <https://core.fhir.health.gov.fj/Encounter/example-encounter> ;
+     fhir:Reference.reference [ fhir:value "Encounter/example-encounter" ]
+  ] ;
+  fhir:Immunization.occurrenceDateTime [ fhir:value "2026-09-07"^^xsd:date] ;
+  fhir:Immunization.location [
+     fhir:link <https://core.fhir.health.gov.fj/Location/example-clinic> ;
+     fhir:Reference.reference [ fhir:value "Location/example-clinic" ]
+  ] ;
+  fhir:Immunization.lotNumber [ fhir:value "TDAP-FJ-2026-001"] ;
+  fhir:Immunization.site [
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       a sct:368208006 ;
+       fhir:Coding.system [ fhir:value "http://snomed.info/sct" ] ;
+       fhir:Coding.code [ fhir:value "368208006" ] ;
+       fhir:Coding.display [ fhir:value "Left upper arm structure" ]
+     ]
+  ] ;
+  fhir:Immunization.route [
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       a sct:76601001 ;
+       fhir:Coding.system [ fhir:value "http://snomed.info/sct" ] ;
+       fhir:Coding.code [ fhir:value "76601001" ] ;
+       fhir:Coding.display [ fhir:value "Intramuscular injection" ]
+     ]
+  ] ;
+  fhir:Immunization.performer [
+     fhir:index 0 ;
+     fhir:Immunization.performer.actor [
+       fhir:link <https://core.fhir.health.gov.fj/Practitioner/example-practitioner> ;
+       fhir:Reference.reference [ fhir:value "Practitioner/example-practitioner" ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://core.fhir.health.gov.fj/Immunization/FijiTdapImmunizationExample.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

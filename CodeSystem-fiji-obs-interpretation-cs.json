@@ -1,0 +1,45 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "fiji-obs-interpretation-cs",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem fiji-obs-interpretation-cs</b></p><a name=\"fiji-obs-interpretation-cs\"> </a><a name=\"hcfiji-obs-interpretation-cs\"> </a><p>This  code system <code>https://core.fhir.health.gov.fj/CodeSystem/fiji-obs-interpretation-cs</code> defines the following code:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">interp1<a name=\"fiji-obs-interpretation-cs-interp1\"> </a></td><td>ExampleInterpretation1</td><td>Example Interpretation 1 (example only need to populate this code system)</td></tr></table></div>"
+  },
+  "url" : "https://core.fhir.health.gov.fj/CodeSystem/fiji-obs-interpretation-cs",
+  "version" : "0.2.0",
+  "name" : "FijiObsInterpretationCS",
+  "title" : "Observation interpretation local codes in Fiji",
+  "status" : "draft",
+  "date" : "2026-09-11T02:30:38+00:00",
+  "publisher" : "MHMS Fiji",
+  "contact" : [{
+    "name" : "MHMS Fiji",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://fhir.health.gov.fj"
+    }]
+  },
+  {
+    "name" : "Support",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.fhir.health.gov.fj"
+    }]
+  }],
+  "description" : "Observation interpretation local codes in Fiji",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "FJ",
+      "display" : "Fiji"
+    }]
+  }],
+  "copyright" : "Distributed under the Creative Commons CC0-1.0 License (https://creativecommons.org/publicdomain/zero/1.0/)",
+  "content" : "complete",
+  "count" : 1,
+  "concept" : [{
+    "code" : "interp1",
+    "display" : "ExampleInterpretation1",
+    "definition" : "Example Interpretation 1 (example only need to populate this code system)"
+  }]
+}

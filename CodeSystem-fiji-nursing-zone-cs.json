@@ -1,0 +1,45 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "fiji-nursing-zone-cs",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem fiji-nursing-zone-cs</b></p><a name=\"fiji-nursing-zone-cs\"> </a><a name=\"hcfiji-nursing-zone-cs\"> </a><p>This  code system <code>https://core.fhir.health.gov.fj/CodeSystem/fiji-nursing-zone-cs</code> defines the following code:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">zone1<a name=\"fiji-nursing-zone-cs-zone1\"> </a></td><td>Zone1</td><td>Nursing zone 1 (example only need to populate this code system)</td></tr></table></div>"
+  },
+  "url" : "https://core.fhir.health.gov.fj/CodeSystem/fiji-nursing-zone-cs",
+  "version" : "0.2.0",
+  "name" : "FijiNursingZoneCS",
+  "title" : "Health administrative nursing zone codes in Fiji",
+  "status" : "draft",
+  "date" : "2026-09-11T02:30:38+00:00",
+  "publisher" : "MHMS Fiji",
+  "contact" : [{
+    "name" : "MHMS Fiji",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://fhir.health.gov.fj"
+    }]
+  },
+  {
+    "name" : "Support",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.fhir.health.gov.fj"
+    }]
+  }],
+  "description" : "Health administrative nursing zone codes in Fiji",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "FJ",
+      "display" : "Fiji"
+    }]
+  }],
+  "copyright" : "Distributed under the Creative Commons CC0-1.0 License (https://creativecommons.org/publicdomain/zero/1.0/)",
+  "content" : "complete",
+  "count" : 1,
+  "concept" : [{
+    "code" : "zone1",
+    "display" : "Zone1",
+    "definition" : "Nursing zone 1 (example only need to populate this code system)"
+  }]
+}

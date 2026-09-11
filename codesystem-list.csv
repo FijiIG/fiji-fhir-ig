@@ -1,0 +1,6 @@
+URL,Version,Status,OIDs,Name,Title,Description,Used
+https://core.fhir.health.gov.fj/CodeSystem/fiji-division-cs,0.2.0,draft,,FijiDivisionCS,Health administrative division codes in Fiji,"Health administrative division codes in Fiji",
+https://core.fhir.health.gov.fj/CodeSystem/fiji-medical-area-cs,0.2.0,draft,,FijiMedicalAreaCS,Health administrative medical area codes in Fiji,"Health administrative medical area codes in Fiji",
+https://core.fhir.health.gov.fj/CodeSystem/fiji-nursing-zone-cs,0.2.0,draft,,FijiNursingZoneCS,Health administrative nursing zone codes in Fiji,"Health administrative nursing zone codes in Fiji",
+https://core.fhir.health.gov.fj/CodeSystem/fiji-obs-interpretation-cs,0.2.0,draft,,FijiObsInterpretationCS,Observation interpretation local codes in Fiji,"Observation interpretation local codes in Fiji",
+https://core.fhir.health.gov.fj/CodeSystem/fiji-sub-division-cs,0.2.0,draft,,FijiSubDivisionCS,Health administrative sub-division codes in Fiji,"Health administrative sub division codes in Fiji",

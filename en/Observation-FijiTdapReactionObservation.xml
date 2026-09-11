@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Observation xmlns="http://hl7.org/fhir">
+  <id value="FijiTdapReactionObservation"/>
+  <language value="en"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Observation FijiTdapReactionObservation</b></p><a name="FijiTdapReactionObservation"> </a><a name="hcFijiTdapReactionObservation"> </a><p><b>status</b>: Final</p><p><b>code</b>: <span title="Codes:{http://snomed.info/sct 271807003}">Skin lesion</span></p><p><b>subject</b>: <a href="Patient-FijiPatientExample.html">Jone Nabou Male, DoB: 1992-04-17 ( http://fhir.health.gov.fj/identifier/nhi#FijiPatientIdentifier#FJ-NHI-982345671)</a></p><p><b>effective</b>: 2026-09-08</p><p><b>value</b>: <span title="Codes:{http://snomed.info/sct 385615009}">Injection site reaction</span></p></div>
+  </text>
+  <status value="final"/>
+  <code>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="271807003"/>
+      <display value="Skin lesion"/>
+    </coding>
+  </code>
+  <subject>
+    <reference value="Patient/FijiPatientExample"/>
+  </subject>
+  <effectiveDateTime value="2026-09-08"/>
+  <valueCodeableConcept>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="385615009"/>
+      <display value="Injection site reaction"/>
+    </coding>
+  </valueCodeableConcept>
+</Observation>

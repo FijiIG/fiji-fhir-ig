@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="fiji-sub-division-cs"/>
+  <language value="en"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: CodeSystem fiji-sub-division-cs</b></p><a name="fiji-sub-division-cs"> </a><a name="hcfiji-sub-division-cs"> </a><p>This  code system <code>https://core.fhir.health.gov.fj/CodeSystem/fiji-sub-division-cs</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style="white-space:nowrap">rewa<a name="fiji-sub-division-cs-rewa"> </a></td><td>Rewa</td><td>Rewa sub-division</td></tr><tr><td style="white-space:nowrap">naitasiri<a name="fiji-sub-division-cs-naitasiri"> </a></td><td>Naitasiri</td><td>Naitasiri sub-division</td></tr><tr><td style="white-space:nowrap">tailevu<a name="fiji-sub-division-cs-tailevu"> </a></td><td>Tailevu</td><td>Tailevu sub-division</td></tr><tr><td style="white-space:nowrap">serua-namosi<a name="fiji-sub-division-cs-serua-namosi"> </a></td><td>SeruaNamosi</td><td>Serua/Namosi subDivision</td></tr><tr><td style="white-space:nowrap">lomaiviti<a name="fiji-sub-division-cs-lomaiviti"> </a></td><td>LomaivitiLevuka</td><td>Lomaiviti (Levuka)  sub-division</td></tr><tr><td style="white-space:nowrap">lau<a name="fiji-sub-division-cs-lau"> </a></td><td>LauLakebaLomaloma</td><td>Lau (Lakeba, Lomaloma)  sub-division</td></tr><tr><td style="white-space:nowrap">rotuma<a name="fiji-sub-division-cs-rotuma"> </a></td><td>Rotuma</td><td>Rotuma  sub-division</td></tr><tr><td style="white-space:nowrap">nadi<a name="fiji-sub-division-cs-nadi"> </a></td><td/><td>  sub-division</td></tr><tr><td style="white-space:nowrap">lautoka-ba<a name="fiji-sub-division-cs-lautoka-ba"> </a></td><td>LautokaBa</td><td>Lautoka/Ba sub-division</td></tr><tr><td style="white-space:nowrap">tavua<a name="fiji-sub-division-cs-tavua"> </a></td><td>Tavua</td><td>Tavua sub-division</td></tr><tr><td style="white-space:nowrap">rakiraki<a name="fiji-sub-division-cs-rakiraki"> </a></td><td>Rakiraki</td><td>Rakiraki sub-division</td></tr><tr><td style="white-space:nowrap">sigatoka<a name="fiji-sub-division-cs-sigatoka"> </a></td><td>Sigatoka</td><td>Sigatoka sub-division</td></tr><tr><td style="white-space:nowrap">labasa<a name="fiji-sub-division-cs-labasa"> </a></td><td>Labasa</td><td> Labasa sub-division</td></tr><tr><td style="white-space:nowrap">savusavu<a name="fiji-sub-division-cs-savusavu"> </a></td><td>Savusavu</td><td>Savusavu sub-division</td></tr><tr><td style="white-space:nowrap">bua<a name="fiji-sub-division-cs-bua"> </a></td><td>BuaNabouwalu</td><td>Bua (Nabouwalu) sub-division</td></tr><tr><td style="white-space:nowrap">taveuni<a name="fiji-sub-division-cs-taveuni"> </a></td><td>Taveuni</td><td>Taveuni sub-division</td></tr></table></div>
+  </text>
+  <url value="https://core.fhir.health.gov.fj/CodeSystem/fiji-sub-division-cs"/>
+  <version value="0.2.0"/>
+  <name value="FijiSubDivisionCS"/>
+  <title value="Health administrative sub-division codes in Fiji"/>
+  <status value="draft"/>
+  <date value="2026-09-11T02:30:38+00:00"/>
+  <publisher value="MHMS Fiji"/>
+  <contact>
+    <name value="MHMS Fiji"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://fhir.health.gov.fj"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Support"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.fhir.health.gov.fj"/>
+    </telecom>
+  </contact>
+  <description value="Health administrative sub division codes in Fiji"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="FJ"/>
+      <display value="Fiji"/>
+    </coding>
+  </jurisdiction>
+  <copyright value="Distributed under the Creative Commons CC0-1.0 License (https://creativecommons.org/publicdomain/zero/1.0/)"/>
+  <content value="complete"/>
+  <count value="16"/>
+  <concept>
+    <code value="rewa"/>
+    <display value="Rewa"/>
+    <definition value="Rewa sub-division"/>
+  </concept>
+  <concept>
+    <code value="naitasiri"/>
+    <display value="Naitasiri"/>
+    <definition value="Naitasiri sub-division"/>
+  </concept>
+  <concept>
+    <code value="tailevu"/>
+    <display value="Tailevu"/>
+    <definition value="Tailevu sub-division"/>
+  </concept>
+  <concept>
+    <code value="serua-namosi"/>
+    <display value="SeruaNamosi"/>
+    <definition value="Serua/Namosi subDivision"/>
+  </concept>
+  <concept>
+    <code value="lomaiviti"/>
+    <display value="LomaivitiLevuka"/>
+    <definition value="Lomaiviti (Levuka)  sub-division"/>
+  </concept>
+  <concept>
+    <code value="lau"/>
+    <display value="LauLakebaLomaloma"/>
+    <definition value="Lau (Lakeba, Lomaloma)  sub-division"/>
+  </concept>
+  <concept>
+    <code value="rotuma"/>
+    <display value="Rotuma"/>
+    <definition value="Rotuma  sub-division"/>
+  </concept>
+  <concept>
+    <code value="nadi"/>
+    <definition value="  sub-division"/>
+  </concept>
+  <concept>
+    <code value="lautoka-ba"/>
+    <display value="LautokaBa"/>
+    <definition value="Lautoka/Ba sub-division"/>
+  </concept>
+  <concept>
+    <code value="tavua"/>
+    <display value="Tavua"/>
+    <definition value="Tavua sub-division"/>
+  </concept>
+  <concept>
+    <code value="rakiraki"/>
+    <display value="Rakiraki"/>
+    <definition value="Rakiraki sub-division"/>
+  </concept>
+  <concept>
+    <code value="sigatoka"/>
+    <display value="Sigatoka"/>
+    <definition value="Sigatoka sub-division"/>
+  </concept>
+  <concept>
+    <code value="labasa"/>
+    <display value="Labasa"/>
+    <definition value=" Labasa sub-division"/>
+  </concept>
+  <concept>
+    <code value="savusavu"/>
+    <display value="Savusavu"/>
+    <definition value="Savusavu sub-division"/>
+  </concept>
+  <concept>
+    <code value="bua"/>
+    <display value="BuaNabouwalu"/>
+    <definition value="Bua (Nabouwalu) sub-division"/>
+  </concept>
+  <concept>
+    <code value="taveuni"/>
+    <display value="Taveuni"/>
+    <definition value="Taveuni sub-division"/>
+  </concept>
+</CodeSystem>

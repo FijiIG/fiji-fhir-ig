@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="fiji-nursing-zone-vs"/>
+  <language value="en"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet fiji-nursing-zone-vs</b></p><a name="fiji-nursing-zone-vs"> </a><a name="hcfiji-nursing-zone-vs"> </a><ul><li>Include all codes defined in <a href="CodeSystem-fiji-nursing-zone-cs.html"><code>https://core.fhir.health.gov.fj/CodeSystem/fiji-nursing-zone-cs</code></a><span title="Version is not explicitly stated, which means it is fixed to the version provided in this specification"> version &#x1F4E6;0.2.0</span></li></ul></div>
+  </text>
+  <url value="https://core.fhir.health.gov.fj/ValueSet/fiji-nursing-zone-vs"/>
+  <version value="0.2.0"/>
+  <name value="FijiNursingZoneVS"/>
+  <title value="Valueset of Fiji Health Administration nursing zones"/>
+  <status value="draft"/>
+  <date value="2026-09-11T02:30:38+00:00"/>
+  <publisher value="MHMS Fiji"/>
+  <contact>
+    <name value="MHMS Fiji"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://fhir.health.gov.fj"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Support"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.fhir.health.gov.fj"/>
+    </telecom>
+  </contact>
+  <description value="A valueset containing Fiji Health Administration  nursing zones"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="FJ"/>
+      <display value="Fiji"/>
+    </coding>
+  </jurisdiction>
+  <copyright value="Distributed under the Creative Commons CC0-1.0 License (https://creativecommons.org/publicdomain/zero/1.0/)"/>
+  <compose>
+    <include>
+      <system value="https://core.fhir.health.gov.fj/CodeSystem/fiji-nursing-zone-cs"/>
+    </include>
+  </compose>
+</ValueSet>

@@ -1,0 +1,47 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "fiji-obs-interpretation-vs",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet fiji-obs-interpretation-vs</b></p><a name=\"fiji-obs-interpretation-vs\"> </a><a name=\"hcfiji-obs-interpretation-vs\"> </a><p>This value set includes codes based on the following rules:</p><ul><li>Include all codes defined in <a href=\"http://terminology.hl7.org/7.3.0/CodeSystem-v3-ObservationInterpretation.html\"><code>http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation</code></a><span title=\"Version is not explicitly stated, which means it is fixed to 4.0.0, the version found through the package references\"> version &#x1F4E6;4.0.0</span></li><li>Include all codes defined in <a href=\"CodeSystem-fiji-obs-interpretation-cs.html\"><code>https://core.fhir.health.gov.fj/CodeSystem/fiji-obs-interpretation-cs</code></a><span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\"> version &#x1F4E6;0.2.0</span></li></ul></div>"
+  },
+  "url" : "https://core.fhir.health.gov.fj/ValueSet/fiji-obs-interpretation-vs",
+  "version" : "0.2.0",
+  "name" : "FijiObsInterpretationVS",
+  "title" : "Fiji Observation Interpretation Value Set",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2026-09-11T02:30:38+00:00",
+  "publisher" : "MHMS Fiji",
+  "contact" : [{
+    "name" : "MHMS Fiji",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://fhir.health.gov.fj"
+    }]
+  },
+  {
+    "name" : "Support",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.fhir.health.gov.fj"
+    }]
+  }],
+  "description" : "Valueset for interpretations of Observations for Fiji.\nUsed for interpretaton element for Observations and derived profiles (eg. Vital signs)\nValues from  HL7 v3 Code System ObservationInterpretation with added values from WHO/Fiji usage.",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "FJ",
+      "display" : "Fiji"
+    }]
+  }],
+  "copyright" : "Distributed under the Creative Commons CC0-1.0 License (https://creativecommons.org/publicdomain/zero/1.0/)",
+  "compose" : {
+    "include" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation"
+    },
+    {
+      "system" : "https://core.fhir.health.gov.fj/CodeSystem/fiji-obs-interpretation-cs"
+    }]
+  }
+}

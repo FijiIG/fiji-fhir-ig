@@ -1,0 +1,139 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://core.fhir.health.gov.fj/CodeSystem/fiji-sub-division-cs> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "fiji-sub-division-cs"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem fiji-sub-division-cs</b></p><a name=\"fiji-sub-division-cs\"> </a><a name=\"hcfiji-sub-division-cs\"> </a><p>This  code system <code>https://core.fhir.health.gov.fj/CodeSystem/fiji-sub-division-cs</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">rewa<a name=\"fiji-sub-division-cs-rewa\"> </a></td><td>Rewa</td><td>Rewa sub-division</td></tr><tr><td style=\"white-space:nowrap\">naitasiri<a name=\"fiji-sub-division-cs-naitasiri\"> </a></td><td>Naitasiri</td><td>Naitasiri sub-division</td></tr><tr><td style=\"white-space:nowrap\">tailevu<a name=\"fiji-sub-division-cs-tailevu\"> </a></td><td>Tailevu</td><td>Tailevu sub-division</td></tr><tr><td style=\"white-space:nowrap\">serua-namosi<a name=\"fiji-sub-division-cs-serua-namosi\"> </a></td><td>SeruaNamosi</td><td>Serua/Namosi subDivision</td></tr><tr><td style=\"white-space:nowrap\">lomaiviti<a name=\"fiji-sub-division-cs-lomaiviti\"> </a></td><td>LomaivitiLevuka</td><td>Lomaiviti (Levuka)  sub-division</td></tr><tr><td style=\"white-space:nowrap\">lau<a name=\"fiji-sub-division-cs-lau\"> </a></td><td>LauLakebaLomaloma</td><td>Lau (Lakeba, Lomaloma)  sub-division</td></tr><tr><td style=\"white-space:nowrap\">rotuma<a name=\"fiji-sub-division-cs-rotuma\"> </a></td><td>Rotuma</td><td>Rotuma  sub-division</td></tr><tr><td style=\"white-space:nowrap\">nadi<a name=\"fiji-sub-division-cs-nadi\"> </a></td><td/><td>  sub-division</td></tr><tr><td style=\"white-space:nowrap\">lautoka-ba<a name=\"fiji-sub-division-cs-lautoka-ba\"> </a></td><td>LautokaBa</td><td>Lautoka/Ba sub-division</td></tr><tr><td style=\"white-space:nowrap\">tavua<a name=\"fiji-sub-division-cs-tavua\"> </a></td><td>Tavua</td><td>Tavua sub-division</td></tr><tr><td style=\"white-space:nowrap\">rakiraki<a name=\"fiji-sub-division-cs-rakiraki\"> </a></td><td>Rakiraki</td><td>Rakiraki sub-division</td></tr><tr><td style=\"white-space:nowrap\">sigatoka<a name=\"fiji-sub-division-cs-sigatoka\"> </a></td><td>Sigatoka</td><td>Sigatoka sub-division</td></tr><tr><td style=\"white-space:nowrap\">labasa<a name=\"fiji-sub-division-cs-labasa\"> </a></td><td>Labasa</td><td> Labasa sub-division</td></tr><tr><td style=\"white-space:nowrap\">savusavu<a name=\"fiji-sub-division-cs-savusavu\"> </a></td><td>Savusavu</td><td>Savusavu sub-division</td></tr><tr><td style=\"white-space:nowrap\">bua<a name=\"fiji-sub-division-cs-bua\"> </a></td><td>BuaNabouwalu</td><td>Bua (Nabouwalu) sub-division</td></tr><tr><td style=\"white-space:nowrap\">taveuni<a name=\"fiji-sub-division-cs-taveuni\"> </a></td><td>Taveuni</td><td>Taveuni sub-division</td></tr></table></div>"
+  ] ;
+  fhir:CodeSystem.url [ fhir:value "https://core.fhir.health.gov.fj/CodeSystem/fiji-sub-division-cs"] ;
+  fhir:CodeSystem.version [ fhir:value "0.2.0"] ;
+  fhir:CodeSystem.name [ fhir:value "FijiSubDivisionCS"] ;
+  fhir:CodeSystem.title [ fhir:value "Health administrative sub-division codes in Fiji"] ;
+  fhir:CodeSystem.status [ fhir:value "draft"] ;
+  fhir:CodeSystem.date [ fhir:value "2026-09-11T02:30:38+00:00"^^xsd:dateTime] ;
+  fhir:CodeSystem.publisher [ fhir:value "MHMS Fiji"] ;
+  fhir:CodeSystem.contact [
+     fhir:index 0 ;
+     fhir:ContactDetail.name [ fhir:value "MHMS Fiji" ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index 0 ;
+       fhir:ContactPoint.system [ fhir:value "url" ] ;
+       fhir:ContactPoint.value [ fhir:value "https://fhir.health.gov.fj" ]
+     ]
+  ], [
+     fhir:index 1 ;
+     fhir:ContactDetail.name [ fhir:value "Support" ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index 0 ;
+       fhir:ContactPoint.system [ fhir:value "url" ] ;
+       fhir:ContactPoint.value [ fhir:value "https://www.fhir.health.gov.fj" ]
+     ]
+  ] ;
+  fhir:CodeSystem.description [ fhir:value "Health administrative sub division codes in Fiji"] ;
+  fhir:CodeSystem.jurisdiction [
+     fhir:index 0 ;
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       fhir:Coding.system [ fhir:value "urn:iso:std:iso:3166" ] ;
+       fhir:Coding.code [ fhir:value "FJ" ] ;
+       fhir:Coding.display [ fhir:value "Fiji" ]
+     ]
+  ] ;
+  fhir:CodeSystem.copyright [ fhir:value "Distributed under the Creative Commons CC0-1.0 License (https://creativecommons.org/publicdomain/zero/1.0/)"] ;
+  fhir:CodeSystem.content [ fhir:value "complete"] ;
+  fhir:CodeSystem.count [ fhir:value "16"^^xsd:nonNegativeInteger] ;
+  fhir:CodeSystem.concept [
+     fhir:index 0 ;
+     fhir:CodeSystem.concept.code [ fhir:value "rewa" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Rewa" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Rewa sub-division" ]
+  ], [
+     fhir:index 1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "naitasiri" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Naitasiri" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Naitasiri sub-division" ]
+  ], [
+     fhir:index 2 ;
+     fhir:CodeSystem.concept.code [ fhir:value "tailevu" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Tailevu" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Tailevu sub-division" ]
+  ], [
+     fhir:index 3 ;
+     fhir:CodeSystem.concept.code [ fhir:value "serua-namosi" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "SeruaNamosi" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Serua/Namosi subDivision" ]
+  ], [
+     fhir:index 4 ;
+     fhir:CodeSystem.concept.code [ fhir:value "lomaiviti" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "LomaivitiLevuka" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Lomaiviti (Levuka)  sub-division" ]
+  ], [
+     fhir:index 5 ;
+     fhir:CodeSystem.concept.code [ fhir:value "lau" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "LauLakebaLomaloma" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Lau (Lakeba, Lomaloma)  sub-division" ]
+  ], [
+     fhir:index 6 ;
+     fhir:CodeSystem.concept.code [ fhir:value "rotuma" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Rotuma" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Rotuma  sub-division" ]
+  ], [
+     fhir:index 7 ;
+     fhir:CodeSystem.concept.code [ fhir:value "nadi" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "  sub-division" ]
+  ], [
+     fhir:index 8 ;
+     fhir:CodeSystem.concept.code [ fhir:value "lautoka-ba" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "LautokaBa" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Lautoka/Ba sub-division" ]
+  ], [
+     fhir:index 9 ;
+     fhir:CodeSystem.concept.code [ fhir:value "tavua" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Tavua" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Tavua sub-division" ]
+  ], [
+     fhir:index 10 ;
+     fhir:CodeSystem.concept.code [ fhir:value "rakiraki" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Rakiraki" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Rakiraki sub-division" ]
+  ], [
+     fhir:index 11 ;
+     fhir:CodeSystem.concept.code [ fhir:value "sigatoka" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Sigatoka" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Sigatoka sub-division" ]
+  ], [
+     fhir:index 12 ;
+     fhir:CodeSystem.concept.code [ fhir:value "labasa" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Labasa" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value " Labasa sub-division" ]
+  ], [
+     fhir:index 13 ;
+     fhir:CodeSystem.concept.code [ fhir:value "savusavu" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Savusavu" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Savusavu sub-division" ]
+  ], [
+     fhir:index 14 ;
+     fhir:CodeSystem.concept.code [ fhir:value "bua" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "BuaNabouwalu" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Bua (Nabouwalu) sub-division" ]
+  ], [
+     fhir:index 15 ;
+     fhir:CodeSystem.concept.code [ fhir:value "taveuni" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Taveuni" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Taveuni sub-division" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://core.fhir.health.gov.fj/CodeSystem/fiji-sub-division-cs.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

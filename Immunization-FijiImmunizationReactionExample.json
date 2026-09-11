@@ -1,0 +1,55 @@
+{
+  "resourceType" : "Immunization",
+  "id" : "FijiImmunizationReactionExample",
+  "meta" : {
+    "profile" : ["https://core.fhir.health.gov.fj/StructureDefinition/fiji-immunization"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Immunization FijiImmunizationReactionExample</b></p><a name=\"FijiImmunizationReactionExample\"> </a><a name=\"hcFijiImmunizationReactionExample\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-fiji-immunization.html\">Fiji Immunization</a></p></div><p><b>status</b>: Completed</p><p><b>vaccineCode</b>: <span title=\"Codes:{http://hl7.org/fhir/sid/cvx 115}\">Tdap</span></p><p><b>patient</b>: <a href=\"Patient-FijiPatientExample.html\">Jone Nabou Male, DoB: 1992-04-17 ( http://fhir.health.gov.fj/identifier/nhi#FijiPatientIdentifier#FJ-NHI-982345671)</a></p><p><b>encounter</b>: <a href=\"Encounter-FijiEncounterExample.html\">Encounter: identifier = https://fhir.health.gov.fj/encounter#ENC-2026-000123; status = finished; class = ambulatory (ActCode#AMB); type = Patient encounter procedure; period = 2026-09-09 09:00:00+1000 --&gt; 2026-09-09 09:30:00+1000; reasonCode = Fever</a></p><p><b>occurrence</b>: 2026-09-07</p><p><b>location</b>: <code>FijiClinicExample</code></p><p><b>lotNumber</b>: TDAP-FJ-2026-001</p><p><b>site</b>: <span title=\"Codes:{http://snomed.info/sct 368208006}\">Left upper arm structure</span></p><p><b>route</b>: <span title=\"Codes:{http://snomed.info/sct 76601001}\">Intramuscular injection</span></p><h3>Performers</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Actor</b></td></tr><tr><td style=\"display: none\">*</td><td><code>FijiPractitionerExample</code></td></tr></table><h3>Reactions</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Date</b></td><td><b>Detail</b></td></tr><tr><td style=\"display: none\">*</td><td>2026-09-08</td><td><a href=\"Observation-FijiTdapReactionObservation.html\">Observation Skin lesion</a></td></tr></table></div>"
+  },
+  "status" : "completed",
+  "vaccineCode" : {
+    "coding" : [{
+      "system" : "http://hl7.org/fhir/sid/cvx",
+      "code" : "115",
+      "display" : "Tdap"
+    }]
+  },
+  "patient" : {
+    "reference" : "Patient/FijiPatientExample"
+  },
+  "encounter" : {
+    "reference" : "Encounter/FijiEncounterExample"
+  },
+  "occurrenceDateTime" : "2026-09-07",
+  "location" : {
+    "reference" : "FijiClinicExample"
+  },
+  "lotNumber" : "TDAP-FJ-2026-001",
+  "site" : {
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "368208006",
+      "display" : "Left upper arm structure"
+    }]
+  },
+  "route" : {
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "76601001",
+      "display" : "Intramuscular injection"
+    }]
+  },
+  "performer" : [{
+    "actor" : {
+      "reference" : "FijiPractitionerExample"
+    }
+  }],
+  "reaction" : [{
+    "date" : "2026-09-08",
+    "detail" : {
+      "reference" : "Observation/FijiTdapReactionObservation"
+    }
+  }]
+}

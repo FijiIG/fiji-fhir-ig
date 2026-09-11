@@ -1,0 +1,43 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "fiji-nursing-zone-vs",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet fiji-nursing-zone-vs</b></p><a name=\"fiji-nursing-zone-vs\"> </a><a name=\"hcfiji-nursing-zone-vs\"> </a><ul><li>Include all codes defined in <a href=\"CodeSystem-fiji-nursing-zone-cs.html\"><code>https://core.fhir.health.gov.fj/CodeSystem/fiji-nursing-zone-cs</code></a><span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\"> version &#x1F4E6;0.2.0</span></li></ul></div>"
+  },
+  "url" : "https://core.fhir.health.gov.fj/ValueSet/fiji-nursing-zone-vs",
+  "version" : "0.2.0",
+  "name" : "FijiNursingZoneVS",
+  "title" : "Valueset of Fiji Health Administration nursing zones",
+  "status" : "draft",
+  "date" : "2026-09-11T02:30:38+00:00",
+  "publisher" : "MHMS Fiji",
+  "contact" : [{
+    "name" : "MHMS Fiji",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://fhir.health.gov.fj"
+    }]
+  },
+  {
+    "name" : "Support",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.fhir.health.gov.fj"
+    }]
+  }],
+  "description" : "A valueset containing Fiji Health Administration  nursing zones",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "FJ",
+      "display" : "Fiji"
+    }]
+  }],
+  "copyright" : "Distributed under the Creative Commons CC0-1.0 License (https://creativecommons.org/publicdomain/zero/1.0/)",
+  "compose" : {
+    "include" : [{
+      "system" : "https://core.fhir.health.gov.fj/CodeSystem/fiji-nursing-zone-cs"
+    }]
+  }
+}

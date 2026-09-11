@@ -1,0 +1,67 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://core.fhir.health.gov.fj/ValueSet/fiji-obs-interpretation-vs> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "fiji-obs-interpretation-vs"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet fiji-obs-interpretation-vs</b></p><a name=\"fiji-obs-interpretation-vs\"> </a><a name=\"hcfiji-obs-interpretation-vs\"> </a><p>This value set includes codes based on the following rules:</p><ul><li>Include all codes defined in <a href=\"http://terminology.hl7.org/7.3.0/CodeSystem-v3-ObservationInterpretation.html\"><code>http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation</code></a><span title=\"Version is not explicitly stated, which means it is fixed to 4.0.0, the version found through the package references\"> version ?4.0.0</span></li><li>Include all codes defined in <a href=\"CodeSystem-fiji-obs-interpretation-cs.html\"><code>https://core.fhir.health.gov.fj/CodeSystem/fiji-obs-interpretation-cs</code></a><span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\"> version ?0.2.0</span></li></ul></div>"
+  ] ;
+  fhir:ValueSet.url [ fhir:value "https://core.fhir.health.gov.fj/ValueSet/fiji-obs-interpretation-vs"] ;
+  fhir:ValueSet.version [ fhir:value "0.2.0"] ;
+  fhir:ValueSet.name [ fhir:value "FijiObsInterpretationVS"] ;
+  fhir:ValueSet.title [ fhir:value "Fiji Observation Interpretation Value Set"] ;
+  fhir:ValueSet.status [ fhir:value "active"] ;
+  fhir:ValueSet.experimental [ fhir:value "false"^^xsd:boolean] ;
+  fhir:ValueSet.date [ fhir:value "2026-09-11T02:30:38+00:00"^^xsd:dateTime] ;
+  fhir:ValueSet.publisher [ fhir:value "MHMS Fiji"] ;
+  fhir:ValueSet.contact [
+     fhir:index 0 ;
+     fhir:ContactDetail.name [ fhir:value "MHMS Fiji" ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index 0 ;
+       fhir:ContactPoint.system [ fhir:value "url" ] ;
+       fhir:ContactPoint.value [ fhir:value "https://fhir.health.gov.fj" ]
+     ]
+  ], [
+     fhir:index 1 ;
+     fhir:ContactDetail.name [ fhir:value "Support" ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index 0 ;
+       fhir:ContactPoint.system [ fhir:value "url" ] ;
+       fhir:ContactPoint.value [ fhir:value "https://www.fhir.health.gov.fj" ]
+     ]
+  ] ;
+  fhir:ValueSet.description [ fhir:value "Valueset for interpretations of Observations for Fiji.\nUsed for interpretaton element for Observations and derived profiles (eg. Vital signs)\nValues from  HL7 v3 Code System ObservationInterpretation with added values from WHO/Fiji usage."] ;
+  fhir:ValueSet.jurisdiction [
+     fhir:index 0 ;
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       fhir:Coding.system [ fhir:value "urn:iso:std:iso:3166" ] ;
+       fhir:Coding.code [ fhir:value "FJ" ] ;
+       fhir:Coding.display [ fhir:value "Fiji" ]
+     ]
+  ] ;
+  fhir:ValueSet.copyright [ fhir:value "Distributed under the Creative Commons CC0-1.0 License (https://creativecommons.org/publicdomain/zero/1.0/)"] ;
+  fhir:ValueSet.compose [
+     fhir:ValueSet.compose.include [
+       fhir:index 0 ;
+       fhir:ValueSet.compose.include.system [ fhir:value "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation" ]
+     ], [
+       fhir:index 1 ;
+       fhir:ValueSet.compose.include.system [ fhir:value "https://core.fhir.health.gov.fj/CodeSystem/fiji-obs-interpretation-cs" ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://core.fhir.health.gov.fj/ValueSet/fiji-obs-interpretation-vs.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

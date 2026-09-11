@@ -1,0 +1,42 @@
+{
+  "codeSystems" : [{
+    "url" : "https://core.fhir.health.gov.fj/CodeSystem/fiji-division-cs",
+    "version" : "0.2.0",
+    "status" : "draft",
+    "name" : "FijiDivisionCS",
+    "title" : "Health administrative division codes in Fiji",
+    "description" : "Health administrative division codes in Fiji"
+  },
+  {
+    "url" : "https://core.fhir.health.gov.fj/CodeSystem/fiji-medical-area-cs",
+    "version" : "0.2.0",
+    "status" : "draft",
+    "name" : "FijiMedicalAreaCS",
+    "title" : "Health administrative medical area codes in Fiji",
+    "description" : "Health administrative medical area codes in Fiji"
+  },
+  {
+    "url" : "https://core.fhir.health.gov.fj/CodeSystem/fiji-nursing-zone-cs",
+    "version" : "0.2.0",
+    "status" : "draft",
+    "name" : "FijiNursingZoneCS",
+    "title" : "Health administrative nursing zone codes in Fiji",
+    "description" : "Health administrative nursing zone codes in Fiji"
+  },
+  {
+    "url" : "https://core.fhir.health.gov.fj/CodeSystem/fiji-obs-interpretation-cs",
+    "version" : "0.2.0",
+    "status" : "draft",
+    "name" : "FijiObsInterpretationCS",
+    "title" : "Observation interpretation local codes in Fiji",
+    "description" : "Observation interpretation local codes in Fiji"
+  },
+  {
+    "url" : "https://core.fhir.health.gov.fj/CodeSystem/fiji-sub-division-cs",
+    "version" : "0.2.0",
+    "status" : "draft",
+    "name" : "FijiSubDivisionCS",
+    "title" : "Health administrative sub-division codes in Fiji",
+    "description" : "Health administrative sub division codes in Fiji"
+  }]
+}

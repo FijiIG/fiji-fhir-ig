@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Encounter xmlns="http://hl7.org/fhir">
+  <id value="FijiEncounterExample"/>
+  <meta>
+    <profile value="https://core.fhir.health.gov.fj/StructureDefinition/fiji-encounter"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Encounter FijiEncounterExample</b></p><a name="FijiEncounterExample"> </a><a name="hcFijiEncounterExample"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-fiji-encounter.html">Fiji Healthcare Encounter</a></p></div><p><b>identifier</b>: <code>https://fhir.health.gov.fj/encounter</code>/ENC-2026-000123</p><p><b>status</b>: Finished</p><p><b>class</b>: <a href="http://terminology.hl7.org/7.3.0/CodeSystem-v3-ActCode.html#v3-ActCode-AMB">ActCode: AMB</a> (ambulatory)</p><p><b>type</b>: <span title="Codes:{http://snomed.info/sct 308335008}">Outpatient consultation</span></p><p><b>subject</b>: <a href="Patient-FijiPatientExample.html">Jone Nabou Male, DoB: 1992-04-17 ( http://fhir.health.gov.fj/identifier/nhi#FijiPatientIdentifier#FJ-NHI-982345671)</a></p><h3>Participants</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Type</b></td><td><b>Individual</b></td></tr><tr><td style="display: none">*</td><td><span title="Codes:{http://terminology.hl7.org/CodeSystem/v3-ParticipationType PPRF}">primary performer</span></td><td><code>FijiPractitionerExample</code></td></tr></table><p><b>period</b>: 2026-09-09 09:00:00+1000 --&gt; 2026-09-09 09:30:00+1000</p><p><b>reasonCode</b>: <span title="Codes:{http://snomed.info/sct 386661006}">Fever</span></p><h3>Locations</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Location</b></td><td><b>Status</b></td></tr><tr><td style="display: none">*</td><td><code>FijiLocationExample</code></td><td>Completed</td></tr></table><p><b>serviceProvider</b>: <a href="Organization-FijiOrganizationExample.html">Organization Suva Divisional Hospital</a></p></div>
+  </text>
+  <identifier>
+    <system value="https://fhir.health.gov.fj/encounter"/>
+    <value value="ENC-2026-000123"/>
+  </identifier>
+  <status value="finished"/>
+  <class>
+    <system value="http://terminology.hl7.org/CodeSystem/v3-ActCode"/>
+    <code value="AMB"/>
+    <display value="ambulatory"/>
+  </class>
+  <type>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="308335008"/>
+      <display value="Patient encounter procedure"/>
+    </coding>
+    <text value="Outpatient consultation"/>
+  </type>
+  <subject>
+    <reference value="Patient/FijiPatientExample"/>
+  </subject>
+  <participant>
+    <type>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/v3-ParticipationType"/>
+        <code value="PPRF"/>
+        <display value="primary performer"/>
+      </coding>
+    </type>
+    <individual>
+      <reference value="FijiPractitionerExample"/>
+    </individual>
+  </participant>
+  <period>
+    <start value="2026-09-09T09:00:00+10:00"/>
+    <end value="2026-09-09T09:30:00+10:00"/>
+  </period>
+  <reasonCode>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="386661006"/>
+      <display value="Fever"/>
+    </coding>
+    <text value="Fever"/>
+  </reasonCode>
+  <location>
+    <location>
+      <reference value="FijiLocationExample"/>
+    </location>
+    <status value="completed"/>
+  </location>
+  <serviceProvider>
+    <reference value="Organization/FijiOrganizationExample"/>
+  </serviceProvider>
+</Encounter>
