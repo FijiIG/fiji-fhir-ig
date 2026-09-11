@@ -53,9 +53,9 @@ coded value is available or to record historic immunizations.
 * protocolApplied.seriesDoses - should be recorded where multiple doses are recommended for full immunity
 * performer.actor - who administered the vaccine can be Fiji Practitioner, PractitionerRole or Organization
 * note - Extra information about the immunization that is not conveyed by the other attributes
-* reaction - Details of a reaction that follows immunization 
-  * reaction.date - mandatory if a reaction is recorded.  The date/time of the reaction.
-  * reaction.detail  - mandatory if a reaction is recorded. This is a reference to an Observation that describes the reaction.
+* reaction - Details of an adverse reaction that follows immunization 
+  * reaction.date - mandatory if a reaction is recorded.  The date/time the adverse reaction started.
+  * reaction.detail  - mandatory if a reaction is recorded. This is a reference to an Observation that describes the adverse reaction.
 
 ### Terminology  
 
@@ -89,6 +89,9 @@ The following specifications have been reviewed in development of this profile.
 * performer.actor only Reference(FijiPractitioner or FijiPractitionerRole or FijiOrganization)
 * note MS
 * reaction 0..1
+* reaction ^short = "Details of an adverse reaction that follows immunization"
 * reaction.date 1..1 MS
+* reaction.date ^short = "When adverse reaction started"
+* reaction.detail ^short = "Observation detail of adverse reaction"
 * reaction.detail 1..1 MS
 * reaction.detail only Reference(Observation)

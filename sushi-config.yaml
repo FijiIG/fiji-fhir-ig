@@ -13,7 +13,7 @@ name: FijiCoreIG
 title: Draft Fiji Core Implementation Guide
 description: Implementation Guide for Fiji FHIR Interoperability.
 status: draft # draft | active | retired | unknown
-version: 0.1.1
+version: 0.2.0
 copyrightYear: 2026+
 releaseLabel: ci-build
 license: CC0-1.0

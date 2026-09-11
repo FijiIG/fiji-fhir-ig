@@ -14,6 +14,7 @@ Alias: $DSM5 = http://hl7.org/fhir/sid/dsm5
 Alias: $NUBC = http://www.nubc.org/patient-discharge
 Alias: $RADLEX = http://www.radlex.org
 Alias: $DICOM = http://dicom.nema.org/resources/ontology/DCM
+Alias: $ICD10AM = http://hl7.org/fhir/sid/icd-10-am
 Alias: $ICD10CM = http://hl7.org/fhir/sid/icd-10-cm
 Alias: $ICD10PCS = http://www.cms.gov/Medicare/Coding/ICD10
 Alias: $ICD11MMS = http://id.who.int/icd/release/11/mms

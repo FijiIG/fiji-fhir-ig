@@ -1,6 +1,6 @@
 {
   "name": "health.gov.fhir.fj.core",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "description": "Fiji Core Implementation Guide",
   "license": "CC0-1.0",
   "dependencies": {
