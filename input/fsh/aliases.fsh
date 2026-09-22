@@ -39,7 +39,7 @@ Alias: $allergy-clinical-cs = http://terminology.hl7.org/CodeSystem/allergyintol
 Alias: $allergy-verification-cs = http://terminology.hl7.org/CodeSystem/allergyintolerance-verification
 
 Alias: $condition-clinical-cs = http://terminology.hl7.org/CodeSystem/condition-clinical
-Alias: $condition-ver-status-cs = http://terminology.hl7.org/CodeSystem/condition-ver-status
+Alias: $condition-verification-cs = http://terminology.hl7.org/CodeSystem/condition-ver-status
 Alias: $condition-category-cs = http://terminology.hl7.org/CodeSystem/condition-category
 
 Alias: $specimen-type-cs = http://terminology.hl7.org/CodeSystem/v2-0487

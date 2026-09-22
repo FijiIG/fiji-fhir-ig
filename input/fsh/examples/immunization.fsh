@@ -13,7 +13,7 @@ Select the JSON tab to view the JSON code that would represent this as a FHIR re
 * vaccineCode.coding.code = #115
 * vaccineCode.coding.display = "Tdap"
 
-* patient = Reference(Patient/example-patient)
+* patient = Reference(Patient/FijiPatientExample)
 * encounter = Reference(Encounter/example-encounter)
 
 * occurrenceDateTime = "2026-09-07"
