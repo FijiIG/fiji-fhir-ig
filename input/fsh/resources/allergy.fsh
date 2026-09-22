@@ -35,8 +35,8 @@ The following terminology bindings are defined by this profile:
 
 | Element | Value Set | Description |
 |---|---|---|
-| `code` | **Fiji Allergy Agent ValueSet** | Based on subset of SNOMED CT concepts representing substances or products that cause allergies or intolerances, aligned with global IPS.|
-| `reaction.manifestation` | **Fiji Condition Code ValueSet** | Based on SNOMED CT concepts for "clinical finding" and "situation with explicit content" curated for International Patient Summary|
+| `code` | **Fiji Allergy Agent** | Based on subset of SNOMED CT concepts representing substances or products that cause allergies or intolerances, aligned with global IPS.|
+| `reaction.manifestation` | **Fiji Condition Code** | Based on SNOMED CT concepts for "clinical finding" and "situation with explicit content" curated for International Patient Summary|
 
 The extensible binding on `code` allows an allergy or intolerance agent to be represented using a code outside the Fiji Allergy Agent ValueSet when an appropriate concept is not available in the value set.
 
@@ -47,6 +47,15 @@ The preferred binding on `reaction.manifestation` encourages implementers to use
 An `AllergyIntolerance` instance should identify the **allergy or intolerance agent** using `code` and, where a reaction has occurred, describe the associated **clinical manifestations** using `reaction.manifestation`. The `reaction.severity` element may be used to communicate the clinical severity of the reaction.
 
 Where the identity of the person responsible for recording the information is known, `recorder` should reference the relevant Fiji Practitioner or Fiji PractitionerRole.
+
+### No Known Allergies 
+No Known Allergies representation
+The recommended 'best practice' for representing 'No Known Allergies' requires a combination of the following element settings:
+1. `code` : should include both the SNOMED CT "716186003" and the HL7 "no-known-allergies" codings
+1. `clinicalStatus` : should be set to "active"
+1. `verificationStatus` : should be set to "confirmed"
+This indicates that a clinican has formally verified that status, and the use of both codings maximizes interoperability
+** Note: ** Any other recorded Active allergy for the patient should negate a No Known Allergy record.
 """
 * code 1..1 MS
 * code from FijiAllergyAgentVS (extensible)
