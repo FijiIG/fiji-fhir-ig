@@ -42,11 +42,11 @@ The following terminology bindings are defined by this profile:
 
 | Element            | ValueSet             | Binding Strength |
 | ------------------ | -------------------- | ---------------- |
-| `category`         | `$obs-cat-vs`        | Preferred        |
-| `code`             | `ObsVS`              | Preferred        |
-| `dataAbsentReason` | `$obs-dataabsent-vs` | Extensible       |
-| `interpretation`   | `$obs-interp-vs`     | Extensible       |
-| `component.code`   | `ObsVS`              | Preferred        |
+| `category`         | [ObservationCategoryCodes HL7](http://hl7.org/fhir/ValueSet/observation-category)      | Preferred        |
+| `code`             | [LOINC codes](http://loinc.org)         | Preferred        |
+| `dataAbsentReason` | [DataAbsentReason HL7](https://hl7.org/fhir/R4/valueset-data-absent-reason.html) | Extensible       |
+| `interpretation`   | [ObservationInterpretation HL7](https://hl7.org/fhir/R4/valueset-observation-interpretation.html)     | Extensible       |
+| `component.code`   | [LOINC codes](http://loinc.org)              | Preferred        |
 
 Where an appropriate terminology exists, coded pathology observations should use internationally recognized terminology such as **LOINC** for laboratory tests and **SNOMED CT** where appropriate. Results expressed as quantities should use UCUM for units of measure.
 
