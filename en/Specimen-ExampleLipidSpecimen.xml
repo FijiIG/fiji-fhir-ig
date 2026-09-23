@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Specimen xmlns="http://hl7.org/fhir">
+  <id value="ExampleLipidSpecimen"/>
+  <language value="en"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Specimen ExampleLipidSpecimen</b></p><a name="ExampleLipidSpecimen"> </a><a name="hcExampleLipidSpecimen"> </a><p><b>status</b>: final</p><p><b>type</b>: <span title="Codes:{http://snomed.info/sct 119364003}">Serum specimen</span></p><p><b>subject</b>: <a href="Patient/FijiExamplePatient">Patient/FijiExamplePatient</a></p><p><b>receivedTime</b>: 2026-09-23 09:15:00+1200</p><h3>Collections</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Collected[x]</b></td><td><b>BodySite</b></td></tr><tr><td style="display: none">*</td><td>2026-09-23 08:45:00+1200</td><td><span title="Codes:{http://snomed.info/sct 82094008}">Forearm structure</span></td></tr></table></div>
+  </text>
+  <status value="final"/>
+  <type>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="119364003"/>
+      <display value="Serum specimen"/>
+    </coding>
+  </type>
+  <subject>
+    <reference value="Patient/FijiExamplePatient"/>
+  </subject>
+  <receivedTime value="2026-09-23T09:15:00+12:00"/>
+  <collection>
+    <collectedDateTime value="2026-09-23T08:45:00+12:00"/>
+    <bodySite>
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="82094008"/>
+        <display value="Forearm structure"/>
+      </coding>
+    </bodySite>
+  </collection>
+</Specimen>

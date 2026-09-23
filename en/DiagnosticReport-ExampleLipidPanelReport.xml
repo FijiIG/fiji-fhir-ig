@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<DiagnosticReport xmlns="http://hl7.org/fhir">
+  <id value="ExampleLipidPanelReport"/>
+  <language value="en"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: DiagnosticReport ExampleLipidPanelReport</b></p><a name="ExampleLipidPanelReport"> </a><a name="hcExampleLipidPanelReport"> </a><h2><span title="Codes:{http://loinc.org 24331-1}">Lipid panel</span> (<span title="Codes:{http://terminology.hl7.org/CodeSystem/v2-0074 LAB}">Laboratory</span>) </h2><table class="grid"><tr><td>Subject</td><td>Jone Nabou Male, DoB: 1992-04-17 ( http://fhir.health.gov.fj/identifier/nhi#FijiPatientIdentifier#FJ-NHI-982345671)</td></tr><tr><td>Relevant Time</td><td>2026-09-23 09:00:00+1200</td></tr><tr><td>Reported</td><td>2026-09-23 12:00:00+1200</td></tr></table><p><b>Report Details</b></p><table class="grid"><tr><td><b>Code</b></td><td><b>Value</b></td><td><b>Flags</b></td></tr><tr><td><a href="Observation-ExampleLipidPanel.html"><span title="Codes:{http://loinc.org 24331-1}">Lipid panel</span></a></td><td/><td>Final</td></tr></table></div>
+  </text>
+  <status value="final"/>
+  <category>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/v2-0074"/>
+      <code value="LAB"/>
+    </coding>
+  </category>
+  <code>
+    <coding>
+      <system value="http://loinc.org"/>
+      <code value="24331-1"/>
+      <display value="Lipid panel"/>
+    </coding>
+  </code>
+  <subject>
+    <reference value="Patient/FijiPatientExample"/>
+  </subject>
+  <effectiveDateTime value="2026-09-23T09:00:00+12:00"/>
+  <issued value="2026-09-23T12:00:00+12:00"/>
+  <result>
+    <reference value="Observation/ExampleLipidPanel"/>
+  </result>
+</DiagnosticReport>

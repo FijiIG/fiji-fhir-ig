@@ -1,0 +1,47 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://core.fhir.health.gov.fj/Observation/FijiTdapReactionObservation> a fhir:Observation ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "FijiTdapReactionObservation"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Observation FijiTdapReactionObservation</b></p><a name=\"FijiTdapReactionObservation\"> </a><a name=\"hcFijiTdapReactionObservation\"> </a><p><b>status</b>: Final</p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 271807003}\">Skin lesion</span></p><p><b>subject</b>: <a href=\"Patient-FijiPatientExample.html\">Jone Nabou Male, DoB: 1992-04-17 ( http://fhir.health.gov.fj/identifier/nhi#FijiPatientIdentifier#FJ-NHI-982345671)</a></p><p><b>effective</b>: 2026-09-08</p><p><b>value</b>: <span title=\"Codes:{http://snomed.info/sct 385615009}\">Injection site reaction</span></p></div>"
+  ] ;
+  fhir:Observation.status [ fhir:value "final"] ;
+  fhir:Observation.code [
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       a sct:271807003 ;
+       fhir:Coding.system [ fhir:value "http://snomed.info/sct" ] ;
+       fhir:Coding.code [ fhir:value "271807003" ] ;
+       fhir:Coding.display [ fhir:value "Skin lesion" ]
+     ]
+  ] ;
+  fhir:Observation.subject [
+     fhir:link <https://core.fhir.health.gov.fj/Patient/FijiPatientExample> ;
+     fhir:Reference.reference [ fhir:value "Patient/FijiPatientExample" ]
+  ] ;
+  fhir:Observation.effectiveDateTime [ fhir:value "2026-09-08"^^xsd:date] ;
+  fhir:Observation.valueCodeableConcept [
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       a sct:385615009 ;
+       fhir:Coding.system [ fhir:value "http://snomed.info/sct" ] ;
+       fhir:Coding.code [ fhir:value "385615009" ] ;
+       fhir:Coding.display [ fhir:value "Injection site reaction" ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://core.fhir.health.gov.fj/Observation/FijiTdapReactionObservation.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

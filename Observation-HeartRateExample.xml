@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Observation xmlns="http://hl7.org/fhir">
+  <id value="HeartRateExample"/>
+  <meta>
+    <profile value="https://core.fhir.health.gov.fj/StructureDefinition/fiji-vital-heart-rate"/>
+  </meta>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Observation HeartRateExample</b></p><a name="HeartRateExample"> </a><a name="hcHeartRateExample"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-fiji-vital-heart-rate.html">Heart Rate Vitals - Fiji</a></p></div><p><b>Observation Body Position</b>: <span title="Codes:{http://snomed.info/sct 33586001}">Sitting position</span></p><p><b>status</b>: Final</p><p><b>category</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/observation-category vital-signs}">Vital Signs</span></p><p><b>code</b>: <span title="Codes:{http://loinc.org 8867-4}">Heart rate</span></p><p><b>subject</b>: <a href="Patient-FijiPatientExample.html">Jone Nabou Male, DoB: 1992-04-17 ( http://fhir.health.gov.fj/identifier/nhi#FijiPatientIdentifier#FJ-NHI-982345671)</a></p><p><b>encounter</b>: <a href="Encounter-FijiEncounterExample.html">Encounter: identifier = https://fhir.health.gov.fj/encounter#ENC-2026-000123; status = finished; class = ambulatory (ActCode#AMB); type = Patient encounter procedure; period = 2026-09-09 09:00:00+1000 --&gt; 2026-09-09 09:30:00+1000; reasonCode = Fever</a></p><p><b>effective</b>: 2026-09-08 09:30:00+1000</p><p><b>value</b>: 78 /min<span style="background: LightGoldenRodYellow"> (Details: UCUM  code/min = '/min')</span></p><p><b>bodySite</b>: <span title="Codes:{http://snomed.info/sct 45631007}">Structure of radial artery</span></p><p><b>method</b>: <span title="Codes:{http://snomed.info/sct 113011001}">Palpation</span></p></div>
+  </text>
+  <extension url="http://hl7.org/fhir/StructureDefinition/observation-bodyPosition">
+    <valueCodeableConcept>
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="33586001"/>
+        <display value="Sitting position"/>
+      </coding>
+    </valueCodeableConcept>
+  </extension>
+  <status value="final"/>
+  <category>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+      <code value="vital-signs"/>
+      <display value="Vital Signs"/>
+    </coding>
+  </category>
+  <code>
+    <coding>
+      <system value="http://loinc.org"/>
+      <code value="8867-4"/>
+      <display value="Heart rate"/>
+    </coding>
+  </code>
+  <subject>
+    <reference value="Patient/FijiPatientExample"/>
+  </subject>
+  <encounter>
+    <reference value="Encounter/FijiEncounterExample"/>
+  </encounter>
+  <effectiveDateTime value="2026-09-08T09:30:00+10:00"/>
+  <valueQuantity>
+    <value value="78"/>
+    <unit value="/min"/>
+    <system value="http://unitsofmeasure.org"/>
+    <code value="/min"/>
+  </valueQuantity>
+  <bodySite>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="45631007"/>
+      <display value="Structure of radial artery"/>
+    </coding>
+  </bodySite>
+  <method>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="113011001"/>
+      <display value="Palpation"/>
+    </coding>
+  </method>
+</Observation>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Observation xmlns="http://hl7.org/fhir">
+  <id value="ExampleLipidPanel"/>
+  <meta>
+    <profile value="https://core.fhir.health.gov.fj/StructureDefinition/fiji-pathology-observation"/>
+  </meta>
+  <language value="en"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Observation ExampleLipidPanel</b></p><a name="ExampleLipidPanel"> </a><a name="hcExampleLipidPanel"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-fiji-pathology-observation.html">Fiji Pathology Observation</a></p></div><p><b>status</b>: Final</p><p><b>category</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/observation-category laboratory}">Laboratory</span></p><p><b>code</b>: <span title="Codes:{http://loinc.org 24331-1}">Lipid panel</span></p><p><b>subject</b>: <a href="Patient-FijiPatientExample.html">Jone Nabou Male, DoB: 1992-04-17 ( http://fhir.health.gov.fj/identifier/nhi#FijiPatientIdentifier#FJ-NHI-982345671)</a></p><p><b>effective</b>: 2026-09-23 09:00:00+1200</p><p><b>issued</b>: 2026-09-23 12:00:00+1200</p><p><b>specimen</b>: <a href="Specimen-ExampleLipidSpecimen.html">Specimen: status = final; type = Serum specimen; receivedTime = 2026-09-23 09:15:00+1200</a></p><p><b>hasMember</b>: </p><ul><li><a href="Observation-ExampleTotalCholesterol.html">Observation Cholesterol [Mass/volume] in Serum or Plasma</a></li><li><a href="Observation-ExampleHDLCholesterol.html">Observation Cholesterol in HDL [Mass/volume] in Serum or Plasma</a></li><li><a href="Observation-ExampleLDLCholesterol.html">Observation Cholesterol in LDL [Mass/volume] in Serum or Plasma</a></li><li><a href="Observation-ExampleTriglycerides.html">Observation Triglyceride [Mass/volume] in Serum or Plasma</a></li></ul></div>
+  </text>
+  <status value="final"/>
+  <category>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+      <code value="laboratory"/>
+    </coding>
+  </category>
+  <code>
+    <coding>
+      <system value="http://loinc.org"/>
+      <code value="24331-1"/>
+      <display value="Lipid panel"/>
+    </coding>
+  </code>
+  <subject>
+    <reference value="Patient/FijiPatientExample"/>
+  </subject>
+  <effectiveDateTime value="2026-09-23T09:00:00+12:00"/>
+  <issued value="2026-09-23T12:00:00+12:00"/>
+  <specimen>
+    <reference value="Specimen/ExampleLipidSpecimen"/>
+  </specimen>
+  <hasMember>
+    <reference value="Observation/ExampleTotalCholesterol"/>
+  </hasMember>
+  <hasMember>
+    <reference value="Observation/ExampleHDLCholesterol"/>
+  </hasMember>
+  <hasMember>
+    <reference value="Observation/ExampleLDLCholesterol"/>
+  </hasMember>
+  <hasMember>
+    <reference value="Observation/ExampleTriglycerides"/>
+  </hasMember>
+</Observation>

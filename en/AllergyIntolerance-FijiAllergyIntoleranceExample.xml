@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<AllergyIntolerance xmlns="http://hl7.org/fhir">
+  <id value="FijiAllergyIntoleranceExample"/>
+  <meta>
+    <profile value="https://core.fhir.health.gov.fj/StructureDefinition/fiji-allergy-intolerance"/>
+  </meta>
+  <language value="en"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: AllergyIntolerance FijiAllergyIntoleranceExample</b></p><a name="FijiAllergyIntoleranceExample"> </a><a name="hcFijiAllergyIntoleranceExample"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-fiji-allergy-intolerance.html">Fiji Allergy/Intolerance</a></p></div><p><b>clinicalStatus</b>: <span title="Codes:">active</span></p><p><b>verificationStatus</b>: <span title="Codes:">confirmed</span></p><p><b>type</b>: Allergy</p><p><b>category</b>: Medication</p><p><b>criticality</b>: High Risk</p><p><b>code</b>: <span title="Codes:{http://snomed.info/sct 91936005}">Penicillin</span></p><p><b>patient</b>: <a href="Patient-FijiPatientExample.html">Jone Nabou Male, DoB: 1992-04-17 ( http://fhir.health.gov.fj/identifier/nhi#FijiPatientIdentifier#FJ-NHI-982345671)</a></p><p><b>onset</b>: 2024-06-15</p><p><b>recorder</b>: <a href="Patient/FijiPractitionerExample">Patient/FijiPractitionerExample</a></p><p><b>note</b>: </p><blockquote><div><p>Patient reports a previous allergic reaction to penicillin.</p>
+</div></blockquote><h3>Reactions</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Manifestation</b></td><td><b>Severity</b></td></tr><tr><td style="display: none">*</td><td><span title="Codes:{http://snomed.info/sct 39579001}">Anaphylaxis</span></td><td>Severe</td></tr></table></div>
+  </text>
+  <clinicalStatus>
+    <coding>
+      <code value="active"/>
+    </coding>
+  </clinicalStatus>
+  <verificationStatus>
+    <coding>
+      <code value="confirmed"/>
+    </coding>
+  </verificationStatus>
+  <type value="allergy"/>
+  <category value="medication"/>
+  <criticality value="high"/>
+  <code>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="91936005"/>
+      <display value="Penicillin"/>
+    </coding>
+  </code>
+  <patient>
+    <reference value="Patient/FijiPatientExample"/>
+  </patient>
+  <onsetDateTime value="2024-06-15"/>
+  <recorder>
+    <reference value="Patient/FijiPractitionerExample"/>
+  </recorder>
+  <note>
+    <text value="Patient reports a previous allergic reaction to penicillin."/>
+  </note>
+  <reaction>
+    <manifestation>
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="39579001"/>
+        <display value="Anaphylaxis"/>
+      </coding>
+    </manifestation>
+    <severity value="severe"/>
+  </reaction>
+</AllergyIntolerance>

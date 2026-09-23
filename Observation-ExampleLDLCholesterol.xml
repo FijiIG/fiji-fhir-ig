@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Observation xmlns="http://hl7.org/fhir">
+  <id value="ExampleLDLCholesterol"/>
+  <meta>
+    <profile value="https://core.fhir.health.gov.fj/StructureDefinition/fiji-pathology-observation"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Observation ExampleLDLCholesterol</b></p><a name="ExampleLDLCholesterol"> </a><a name="hcExampleLDLCholesterol"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-fiji-pathology-observation.html">Fiji Pathology Observation</a></p></div><p><b>status</b>: Final</p><p><b>category</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/observation-category laboratory}">Laboratory</span></p><p><b>code</b>: <span title="Codes:{http://loinc.org 2089-1}">Cholesterol in LDL [Mass/volume] in Serum or Plasma</span></p><p><b>subject</b>: <a href="Patient/FijiExamplePatient">Patient/FijiExamplePatient</a></p><p><b>effective</b>: 2026-09-23 09:00:00+1200</p><p><b>value</b>: 2.7 mmol/L<span style="background: LightGoldenRodYellow"> (Details: UCUM  codemmol/L = 'mmol/L')</span></p><p><b>specimen</b>: <a href="Specimen-ExampleLipidSpecimen.html">Specimen: status = final; type = Serum specimen; receivedTime = 2026-09-23 09:15:00+1200</a></p></div>
+  </text>
+  <status value="final"/>
+  <category>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+      <code value="laboratory"/>
+    </coding>
+  </category>
+  <code>
+    <coding>
+      <system value="http://loinc.org"/>
+      <code value="2089-1"/>
+      <display value="Cholesterol in LDL [Mass/volume] in Serum or Plasma"/>
+    </coding>
+  </code>
+  <subject>
+    <reference value="Patient/FijiExamplePatient"/>
+  </subject>
+  <effectiveDateTime value="2026-09-23T09:00:00+12:00"/>
+  <valueQuantity>
+    <value value="2.7"/>
+    <system value="http://unitsofmeasure.org"/>
+    <code value="mmol/L"/>
+  </valueQuantity>
+  <specimen>
+    <reference value="Specimen/ExampleLipidSpecimen"/>
+  </specimen>
+</Observation>

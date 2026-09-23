@@ -1,0 +1,76 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix loinc: <http://loinc.org/rdf#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://core.fhir.health.gov.fj/Observation/ExampleLipidPanel> a fhir:Observation ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "ExampleLipidPanel"] ;
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "https://core.fhir.health.gov.fj/StructureDefinition/fiji-pathology-observation" ;
+       fhir:index -1 ;
+       fhir:link <https://core.fhir.health.gov.fj/StructureDefinition/fiji-pathology-observation>
+     ]
+  ] ;
+  fhir:Resource.language [ fhir:value "en"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Observation ExampleLipidPanel</b></p><a name=\"ExampleLipidPanel\"> </a><a name=\"hcExampleLipidPanel\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-fiji-pathology-observation.html\">Fiji Pathology Observation</a></p></div><p><b>status</b>: Final</p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/observation-category laboratory}\">Laboratory</span></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 24331-1}\">Lipid panel</span></p><p><b>subject</b>: <a href=\"Patient-FijiPatientExample.html\">Jone Nabou Male, DoB: 1992-04-17 ( http://fhir.health.gov.fj/identifier/nhi#FijiPatientIdentifier#FJ-NHI-982345671)</a></p><p><b>effective</b>: 2026-09-23 09:00:00+1200</p><p><b>issued</b>: 2026-09-23 12:00:00+1200</p><p><b>specimen</b>: <a href=\"Specimen-ExampleLipidSpecimen.html\">Specimen: status = final; type = Serum specimen; receivedTime = 2026-09-23 09:15:00+1200</a></p><p><b>hasMember</b>: </p><ul><li><a href=\"Observation-ExampleTotalCholesterol.html\">Observation Cholesterol [Mass/volume] in Serum or Plasma</a></li><li><a href=\"Observation-ExampleHDLCholesterol.html\">Observation Cholesterol in HDL [Mass/volume] in Serum or Plasma</a></li><li><a href=\"Observation-ExampleLDLCholesterol.html\">Observation Cholesterol in LDL [Mass/volume] in Serum or Plasma</a></li><li><a href=\"Observation-ExampleTriglycerides.html\">Observation Triglyceride [Mass/volume] in Serum or Plasma</a></li></ul></div>"
+  ] ;
+  fhir:Observation.status [ fhir:value "final"] ;
+  fhir:Observation.category [
+     fhir:index -1 ;
+     fhir:CodeableConcept.coding [
+       fhir:index -1 ;
+       fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/observation-category" ] ;
+       fhir:Coding.code [ fhir:value "laboratory" ]
+     ]
+  ] ;
+  fhir:Observation.code [
+     fhir:CodeableConcept.coding [
+       fhir:index -1 ;
+       a loinc:24331-1 ;
+       fhir:Coding.system [ fhir:value "http://loinc.org" ] ;
+       fhir:Coding.code [ fhir:value "24331-1" ] ;
+       fhir:Coding.display [ fhir:value "Lipid panel" ]
+     ]
+  ] ;
+  fhir:Observation.subject [
+     fhir:link <https://core.fhir.health.gov.fj/Patient/FijiPatientExample> ;
+     fhir:Reference.reference [ fhir:value "Patient/FijiPatientExample" ]
+  ] ;
+  fhir:Observation.effectiveDateTime [ fhir:value "2026-09-23T09:00:00+12:00"^^xsd:dateTime] ;
+  fhir:Observation.issued [ fhir:value "2026-09-23T12:00:00+12:00"^^xsd:dateTime] ;
+  fhir:Observation.specimen [
+     fhir:link <https://core.fhir.health.gov.fj/Specimen/ExampleLipidSpecimen> ;
+     fhir:Reference.reference [ fhir:value "Specimen/ExampleLipidSpecimen" ]
+  ] ;
+  fhir:Observation.hasMember [
+     fhir:index -1 ;
+     fhir:link <https://core.fhir.health.gov.fj/Observation/ExampleTotalCholesterol> ;
+     fhir:Reference.reference [ fhir:value "Observation/ExampleTotalCholesterol" ]
+  ], [
+     fhir:index -1 ;
+     fhir:link <https://core.fhir.health.gov.fj/Observation/ExampleHDLCholesterol> ;
+     fhir:Reference.reference [ fhir:value "Observation/ExampleHDLCholesterol" ]
+  ], [
+     fhir:index -1 ;
+     fhir:link <https://core.fhir.health.gov.fj/Observation/ExampleLDLCholesterol> ;
+     fhir:Reference.reference [ fhir:value "Observation/ExampleLDLCholesterol" ]
+  ], [
+     fhir:index -1 ;
+     fhir:link <https://core.fhir.health.gov.fj/Observation/ExampleTriglycerides> ;
+     fhir:Reference.reference [ fhir:value "Observation/ExampleTriglycerides" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://core.fhir.health.gov.fj/Observation/ExampleLipidPanel.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+
