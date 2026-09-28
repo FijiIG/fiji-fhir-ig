@@ -1,0 +1,44 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "fiji-dcm-modality-vs",
+  "language" : "en",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet fiji-dcm-modality-vs</b></p><a name=\"fiji-dcm-modality-vs\"> </a><a name=\"hcfiji-dcm-modality-vs\"> </a><ul><li>Include all codes defined in <a href=\"http://dicom.nema.org/resources/ontology/DCM\"><code>http://dicom.nema.org/resources/ontology/DCM</code></a><span title=\"Version is not explicitly stated, which means it is fixed to 01, the version found through the package references\"> version &#x1F4E6;01</span></li></ul></div>"
+  },
+  "url" : "https://core.fhir.health.gov.fj/ValueSet/fiji-dcm-modality-vs",
+  "version" : "0.2.1",
+  "name" : "FijiDCMModalityVS",
+  "title" : "Fiji Dicom Imaging Modality Value Set",
+  "status" : "draft",
+  "date" : "2026-09-28T06:16:24+00:00",
+  "publisher" : "MHMS Fiji",
+  "contact" : [{
+    "name" : "MHMS Fiji",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://fhir.health.gov.fj"
+    }]
+  },
+  {
+    "name" : "Support",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.fhir.health.gov.fj"
+    }]
+  }],
+  "description" : "Imaging acquisition modalities based on DICOM CID 29.",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "FJ",
+      "display" : "Fiji"
+    }]
+  }],
+  "copyright" : "Distributed under the Creative Commons CC0-1.0 License (https://creativecommons.org/publicdomain/zero/1.0/)",
+  "compose" : {
+    "include" : [{
+      "system" : "http://dicom.nema.org/resources/ontology/DCM"
+    }]
+  }
+}
