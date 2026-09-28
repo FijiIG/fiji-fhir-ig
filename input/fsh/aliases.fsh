@@ -20,6 +20,7 @@ Alias: $ICD10PCS = http://www.cms.gov/Medicare/Coding/ICD10
 Alias: $ICD11MMS = http://id.who.int/icd/release/11/mms
 Alias: $ICDO3 = http://terminology.hl7.org/CodeSystem/icd-o-3
 Alias: $UMLS = http://terminology.hl7.org/CodeSystem/umls
+Alias: $DCM = http://dicom.nema.org/resources/ontology/DCM
 
 // Code systems for specific elements
 Alias: $id-type-cs = http://terminology.hl7.org/CodeSystem/v2-0203

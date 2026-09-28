@@ -7,6 +7,9 @@ Description: "NamingSystem for patient identifiers in Fiji, using a simulated na
 * status = #active
 * kind = #identifier
 * date = "2026-03-31"
+* publisher = "Ministry of Health and Medical Services, Fiji"
+* responsible = "Ministry of Health and Medical Services, Fiji"
+
 * uniqueId[0].type = #uri
-* uniqueId[0].value = "http://fhir.health.gov.fj/identifier/nhi"
+* uniqueId[0].value = "http://fhir.health.gov.fj/NamingSystem/nhi"
 * uniqueId[0].preferred = true
