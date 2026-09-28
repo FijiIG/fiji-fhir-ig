@@ -30,7 +30,7 @@ Select the JSON tab to view the JSON code that would represent this as a FHIR re
 * route.coding.code = #76601001
 * route.coding.display = "Intramuscular injection"
 
-* performer.actor = Reference(Practitioner/example-practitioner)
+* performer.actor = Reference(Practitioner/FijiPractitionerExample)
 
 
 Instance: FijiImmunizationReactionExample
@@ -45,10 +45,10 @@ Title: "Tdap Immunization with Reaction"
 * vaccineCode.coding.display = "Tdap"
 
 * patient = Reference(Patient/FijiPatientExample)
-* encounter = Reference(FijiEncounterExample)
+* encounter = Reference(Encounter/FijiEncounterExample)
 * occurrenceDateTime = "2026-09-07"
 
-* location = Reference(FijiClinicExample)
+* location = Reference(Organization/FijiClinicExample)
 
 * lotNumber = "TDAP-FJ-2026-001"
 
@@ -60,10 +60,10 @@ Title: "Tdap Immunization with Reaction"
 * route.coding.code = #76601001
 * route.coding.display = "Intramuscular injection"
 
-* performer.actor = Reference(FijiPractitionerExample)
+* performer.actor = Reference(Practitioner/FijiPractitionerExample)
 
 * reaction.date = "2026-09-08"
-* reaction.detail = Reference(FijiTdapReactionObservation)
+* reaction.detail = Reference(Observation/FijiTdapReactionObservation)
 
 
 

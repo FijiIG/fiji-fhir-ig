@@ -46,7 +46,7 @@ Alias: $specimen-type-cs = http://terminology.hl7.org/CodeSystem/v2-0487
 Alias: $enc-class-cs = http://terminology.hl7.org/CodeSystem/v3-ActCode
 Alias: $participant-type-cs = 	http://terminology.hl7.org/CodeSystem/v3-ParticipationType
 
-Alias: $diag-svc-sect-cs = http://terminology.hl7.org/CodeSystem/v2-0074
+Alias: $obs-diag-svc-cs = http://terminology.hl7.org/CodeSystem/v2-0074
 
 // Value sets for specific elements
 Alias: $iso-country-vs = http://hl7.org/fhir/ValueSet/iso3166-1-2

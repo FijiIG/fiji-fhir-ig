@@ -6,7 +6,7 @@ Description: "Diagnostic report for laboratory investigations in Fiji health inf
 
 * status 1..1 MS
 * category 1..1 MS
-* category = $diag-svc-sect-cs#LAB
+* category = $obs-diag-svc-cs#LAB
 * code 1..1 MS
 * subject 1..1 MS
 * subject only Reference(FijiPatient)

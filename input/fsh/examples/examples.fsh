@@ -150,8 +150,8 @@ Usage: #example
 Title: "Fiji Practitioner Role District Hospital GP"
 Description: "General Practitioner role at district hospital for registered Fiji practitioner."
 
-* practitioner = Reference(FijiPractitionerExample)
-* organization = Reference(FijiOrganizationExample)
+* practitioner = Reference(Practitioner/FijiPractitionerExample)
+* organization = Reference(Organization/FijiOrganizationExample)
 
 * code[0].text = "General Practitioner"
 

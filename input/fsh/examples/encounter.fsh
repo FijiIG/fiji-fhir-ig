@@ -17,7 +17,7 @@ Description: "Example of an outpatient encounter in a Fiji healthcare setting"
 * subject = Reference(Patient/FijiPatientExample)
 
 * participant[0].type = $participant-type-cs#PPRF "primary performer"
-* participant[0].individual = Reference(FijiPractitionerExample)
+* participant[0].individual = Reference(Practitioner/FijiPractitionerExample)
 
 * period.start = "2026-09-09T09:00:00+10:00"
 * period.end = "2026-09-09T09:30:00+10:00"
@@ -25,7 +25,7 @@ Description: "Example of an outpatient encounter in a Fiji healthcare setting"
 * reasonCode[0] = $SCT#386661006 "Fever"
 * reasonCode[0].text = "Fever"
 
-* location[0].location = Reference(FijiLocationExample)
+* location[0].location = Reference(Location/FijiLocationExample)
 * location[0].status = #completed
 
-* serviceProvider = Reference(FijiOrganizationExample)
+* serviceProvider = Reference(Organization/FijiOrganizationExample)

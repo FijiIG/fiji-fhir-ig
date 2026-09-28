@@ -9,7 +9,7 @@ Title: "Example Lipid Panel Report"
 Description: "Example laboratory report containing a lipid panel."
 
 * status = #final
-* category = $diag-svc-sect-cs#LAB
+* category = $obs-diag-svc-cs#LAB
 * code = $loinc#24331-1 "Lipid panel"
 * subject = Reference(Patient/FijiPatientExample)
 * effectiveDateTime = "2026-09-23T09:00:00+12:00"

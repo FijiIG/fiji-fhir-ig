@@ -8,8 +8,8 @@ Usage: #example
 * code = $loinc#9279-1 "Respiratory rate"
 * subject = Reference(Patient/FijiPatientExample)
 * effectiveDateTime = "2026-09-08T10:30:00+10:00"
-* performer = Reference(FijiPractitionerExample)
-* encounter = Reference(FijiEncounterExample)
+* performer = Reference(Practitioner/FijiPractitionerExample)
+* encounter = Reference(Encounter/FijiEncounterExample)
 
 * valueQuantity.value = 18
 * valueQuantity.unit = "breaths/minute"

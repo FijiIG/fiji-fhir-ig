@@ -19,7 +19,7 @@ For diagnoses and problem list items:
 For pathology & diagnostic results and other observations:
 * [FijiPathologyObservation](StructureDefinition-fiji-pathology-observation.html)  
 * [FijiPathologyReport](StructureDefinition-fiji-laboratory-diagnostic-report.html)
-* [FijiDiagnosticObservation](StructureDefinition-fiji-pathology-observation.html)  
+* [FijiDiagnosticObservation](StructureDefinition-fiji-diagnostic-observation.html)  
 
 For Immunizations:
 * [FijiImmunization](StructureDefinition-fiji-immunization.html)
