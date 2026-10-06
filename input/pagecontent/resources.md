@@ -16,13 +16,16 @@ For allergies and intolerances:
 For diagnoses and problem list items:
 * [FijiCondition](StructureDefinition-fiji-condition.html)  
 
-For pathology & diagnostic results and other observations:
-* [FijiPathologyObservation](StructureDefinition-fiji-pathology-observation.html)  
-* [FijiPathologyReport](StructureDefinition-fiji-laboratory-diagnostic-report.html)
-* [FijiDiagnosticObservation](StructureDefinition-fiji-diagnostic-observation.html)  
-
 For Immunizations:
 * [FijiImmunization](StructureDefinition-fiji-immunization.html)
+
+For lab/pathology observations and diagnostic reports:
+* [FijiPathologyObservation](StructureDefinition-fiji-pathology-observation.html)  
+* [FijiPathologyReport](StructureDefinition-fiji-laboratory-diagnostic-report.html)
+
+For imaging observations and diagnostic reports:
+* [FijiDiagnosticObservation](StructureDefinition-fiji-diagnostic-observation.html)  
+* [FijiImagingDiagnosticReport](StructureDefinition-fiji-imaging-diagnostic-report.html)
 
 For vital signs:
 * [FijiBloodPressure](StructureDefinition-fiji-vital-blood-pressure.html)  
