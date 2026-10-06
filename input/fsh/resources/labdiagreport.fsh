@@ -15,7 +15,7 @@ Description: "Diagnostic report for laboratory investigations in Fiji health inf
 // * identifier[labOrder].value 1..1 MS
 
 * basedOn 0..* MS
-* basedOn only Reference(ServiceRequest)
+* basedOn only Reference(FijiServiceRequest)
 * status 1..1 MS
 * category 1..1 MS
 * category = $obs-diag-svc-cs#LAB

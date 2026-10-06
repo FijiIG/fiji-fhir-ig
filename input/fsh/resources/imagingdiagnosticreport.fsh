@@ -15,7 +15,7 @@ Description: "Diagnostic report for imaging studies in Fiji health information s
 * identifier[risAccession].value 1..1 MS
 
 * basedOn 0..* MS
-* basedOn only Reference(ServiceRequest)
+* basedOn only Reference(FijiServiceRequest)
 * status 1..1 MS
 
 // Identifier supports DICOM and/or HL7 valuesets for category for maximum flexiblity
