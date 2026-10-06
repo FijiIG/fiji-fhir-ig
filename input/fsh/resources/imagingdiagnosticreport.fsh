@@ -15,6 +15,7 @@ Description: "Diagnostic report for imaging studies in Fiji health information s
 * identifier[risAccession].value 1..1 MS
 
 * basedOn 0..* MS
+* basedOn only Reference(ServiceRequest)
 * status 1..1 MS
 
 // Identifier supports DICOM and/or HL7 valuesets for category for maximum flexiblity
@@ -31,15 +32,18 @@ Description: "Diagnostic report for imaging studies in Fiji health information s
 * category[dicomModality].coding.system = $DCM
 
 * code 1..1 MS
+* code from FijiRadiologyFindingsVS (preferred)
 * subject 1..1 MS
 * subject only Reference(FijiPatient)
+* encounter only Reference(FijiEncounter)
 * effective[x] 1..1 MS
 * issued 1..1 MS
 * performer MS
 * performer only Reference(FijiPractitioner or FijiPractitionerRole or FijiOrganization)
 * resultsInterpreter 0..* MS
 * resultsInterpreter only Reference(FijiPractitioner or FijiPractitionerRole or FijiOrganization)
-* presentedForm MS
+* presentedForm 1..* MS
 * presentedForm.contentType 1..1 MS
 * presentedForm.data 1..1 MS
 * presentedForm.language MS
+* presentedForm.language from $lang-vs

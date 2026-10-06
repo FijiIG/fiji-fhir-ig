@@ -60,6 +60,7 @@ Alias: $obs-diag-svc-vs = http://hl7.org/fhir/ValueSet/diagnostic-service-sectio
 Alias: $imm-route-vs = http://hl7.org/fhir/ValueSet/immunization-route
 Alias: $obs-bodypos-vs = http://hl7.org/fhir/us/vitals/ValueSet/bodyPositionVS
 Alias: $enc_reason-vs = http://hl7.org/fhir/ValueSet/encounter-reason
+Alias: $lang-vs = https://hl7.org/fhir/R4/valueset-languages
 
 // ---------- STRUCTURE DEFINITION ALIASES ---------------------------
 // Base FHIR Structure Definitions

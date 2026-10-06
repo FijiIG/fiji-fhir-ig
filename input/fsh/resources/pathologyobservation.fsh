@@ -85,7 +85,7 @@ For example, an observation representing a blood pressure measurement can contai
 * code 1..1 MS
 * code from ObsVS (preferred)
 * effective[x] 1..1 MS
-* encounter = Reference(Encounter/FijiEncounterExample)
+* encounter only Reference(FijiEncounter)
 * performer MS
 * performer only Reference(FijiPatient or FijiPractitioner or FijiPractitionerRole or FijiOrganization)
 * value[x] MS
@@ -93,6 +93,7 @@ For example, an observation representing a blood pressure measurement can contai
 * dataAbsentReason from $obs-dataabsent-vs (extensible)
 * interpretation MS
 * interpretation from $obs-interp-vs (extensible)
+* note 0..* MS
 * specimen MS
 * referenceRange MS
 * hasMember MS
