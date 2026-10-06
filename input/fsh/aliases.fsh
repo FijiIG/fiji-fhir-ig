@@ -61,6 +61,8 @@ Alias: $imm-route-vs = http://hl7.org/fhir/ValueSet/immunization-route
 Alias: $obs-bodypos-vs = http://hl7.org/fhir/us/vitals/ValueSet/bodyPositionVS
 Alias: $enc_reason-vs = http://hl7.org/fhir/ValueSet/encounter-reason
 Alias: $lang-vs = https://hl7.org/fhir/R4/valueset-languages
+Alias: $enc-class-vs = http://terminology.hl7.org/ValueSet/v3-ActEncounterCode
+Alias: $participant-type-vs = http://hl7.org/fhir/ValueSet/encounter-participant-type
 
 // ---------- STRUCTURE DEFINITION ALIASES ---------------------------
 // Base FHIR Structure Definitions
