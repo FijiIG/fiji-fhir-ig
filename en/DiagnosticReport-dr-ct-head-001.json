@@ -1,0 +1,62 @@
+{
+  "resourceType" : "DiagnosticReport",
+  "id" : "dr-ct-head-001",
+  "meta" : {
+    "profile" : ["https://core.fhir.health.gov.fj/StructureDefinition/fiji-imaging-diagnostic-report"]
+  },
+  "language" : "en",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: DiagnosticReport dr-ct-head-001</b></p><a name=\"dr-ct-head-001\"> </a><a name=\"hcdr-ct-head-001\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-fiji-imaging-diagnostic-report.html\">Fiji Imaging Diagnostic Report</a></p></div><h2><span title=\"Codes:{http://snomed.info/sct 77477000}\">Computerized axial tomography of head</span> (<span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v2-0074 RAD}\">Radiology</span>, <span title=\"Codes:{http://dicom.nema.org/resources/ontology/DCM CT}\">Computed Tomography</span>) </h2><table class=\"grid\"><tr><td>Subject</td><td>Jone Nabou Male, DoB: 1992-04-17 ( http://fhir.health.gov.fj/identifier/nhi#FJ-NHI-982345671)</td></tr><tr><td>Relevant Time</td><td>2026-10-05 10:05:00+1200</td></tr><tr><td>Reported</td><td>2026-10-05 14:30:00+1200</td></tr><tr><td>Performer</td><td> <a href=\"Organization-FijiOrganizationExample.html\">Organization Suva Divisional Hospital</a></td></tr><tr><td>Identifier</td><td> <a href=\"NamingSystem-FijiRISAccessionNumber.html\" title=\"NamingSystem for RIS Accession number.\">FijiRISAccessionNumber</a>/RIS-2026-001847</td></tr><tr><td>Presented Form</td><td> application/pdf: JVBERi0xLjQK</td></tr></table><p><b>Report Details</b></p></div>"
+  },
+  "identifier" : [{
+    "system" : "http://fhir.health.gov.fj/NamingSystem/ris-accession-number",
+    "value" : "RIS-2026-001847"
+  }],
+  "basedOn" : [{
+    "reference" : "ServiceRequest/sr-ct-head-001"
+  }],
+  "status" : "final",
+  "category" : [{
+    "coding" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/v2-0074",
+      "code" : "RAD",
+      "display" : "Radiology"
+    }]
+  },
+  {
+    "coding" : [{
+      "system" : "http://dicom.nema.org/resources/ontology/DCM",
+      "code" : "CT",
+      "display" : "Computed Tomography"
+    }]
+  }],
+  "code" : {
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "77477000",
+      "display" : "Computerized axial tomography of head"
+    }]
+  },
+  "subject" : {
+    "reference" : "Patient/FijiPatientExample"
+  },
+  "encounter" : {
+    "reference" : "Encounter/FijiEncounterExample"
+  },
+  "effectiveDateTime" : "2026-10-05T10:05:00+12:00",
+  "issued" : "2026-10-05T14:30:00+12:00",
+  "performer" : [{
+    "reference" : "Organization/FijiOrganizationExample"
+  }],
+  "resultsInterpreter" : [{
+    "reference" : "Practitioner/FijiPractitionerExample"
+  }],
+  "presentedForm" : [{
+    "contentType" : "application/pdf",
+    "language" : "en",
+    "data" : "JVBERi0xLjQK",
+    "title" : "CT Head Report",
+    "creation" : "2026-10-05T14:30:00+12:00"
+  }]
+}

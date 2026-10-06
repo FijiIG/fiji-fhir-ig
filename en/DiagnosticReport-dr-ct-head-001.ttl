@@ -1,0 +1,96 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://core.fhir.health.gov.fj/DiagnosticReport/dr-ct-head-001> a fhir:DiagnosticReport ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "dr-ct-head-001"] ;
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "https://core.fhir.health.gov.fj/StructureDefinition/fiji-imaging-diagnostic-report" ;
+       fhir:index -1 ;
+       fhir:link <https://core.fhir.health.gov.fj/StructureDefinition/fiji-imaging-diagnostic-report>
+     ]
+  ] ;
+  fhir:Resource.language [ fhir:value "en"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: DiagnosticReport dr-ct-head-001</b></p><a name=\"dr-ct-head-001\"> </a><a name=\"hcdr-ct-head-001\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-fiji-imaging-diagnostic-report.html\">Fiji Imaging Diagnostic Report</a></p></div><h2><span title=\"Codes:{http://snomed.info/sct 77477000}\">Computerized axial tomography of head</span> (<span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v2-0074 RAD}\">Radiology</span>, <span title=\"Codes:{http://dicom.nema.org/resources/ontology/DCM CT}\">Computed Tomography</span>) </h2><table class=\"grid\"><tr><td>Subject</td><td>Jone Nabou Male, DoB: 1992-04-17 ( http://fhir.health.gov.fj/identifier/nhi#FJ-NHI-982345671)</td></tr><tr><td>Relevant Time</td><td>2026-10-05 10:05:00+1200</td></tr><tr><td>Reported</td><td>2026-10-05 14:30:00+1200</td></tr><tr><td>Performer</td><td> <a href=\"Organization-FijiOrganizationExample.html\">Organization Suva Divisional Hospital</a></td></tr><tr><td>Identifier</td><td> <a href=\"NamingSystem-FijiRISAccessionNumber.html\" title=\"NamingSystem for RIS Accession number.\">FijiRISAccessionNumber</a>/RIS-2026-001847</td></tr><tr><td>Presented Form</td><td> application/pdf: JVBERi0xLjQK</td></tr></table><p><b>Report Details</b></p></div>"
+  ] ;
+  fhir:DiagnosticReport.identifier [
+     fhir:index -1 ;
+     fhir:Identifier.system [ fhir:value "http://fhir.health.gov.fj/NamingSystem/ris-accession-number" ] ;
+     fhir:Identifier.value [ fhir:value "RIS-2026-001847" ]
+  ] ;
+  fhir:DiagnosticReport.basedOn [
+     fhir:index -1 ;
+     fhir:link <https://core.fhir.health.gov.fj/ServiceRequest/sr-ct-head-001> ;
+     fhir:Reference.reference [ fhir:value "ServiceRequest/sr-ct-head-001" ]
+  ] ;
+  fhir:DiagnosticReport.status [ fhir:value "final"] ;
+  fhir:DiagnosticReport.category [
+     fhir:index -1 ;
+     fhir:CodeableConcept.coding [
+       fhir:index -1 ;
+       fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/v2-0074" ] ;
+       fhir:Coding.code [ fhir:value "RAD" ] ;
+       fhir:Coding.display [ fhir:value "Radiology" ]
+     ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeableConcept.coding [
+       fhir:index -1 ;
+       fhir:Coding.system [ fhir:value "http://dicom.nema.org/resources/ontology/DCM" ] ;
+       fhir:Coding.code [ fhir:value "CT" ] ;
+       fhir:Coding.display [ fhir:value "Computed Tomography" ]
+     ]
+  ] ;
+  fhir:DiagnosticReport.code [
+     fhir:CodeableConcept.coding [
+       fhir:index -1 ;
+       a sct:77477000 ;
+       fhir:Coding.system [ fhir:value "http://snomed.info/sct" ] ;
+       fhir:Coding.code [ fhir:value "77477000" ] ;
+       fhir:Coding.display [ fhir:value "Computerized axial tomography of head" ]
+     ]
+  ] ;
+  fhir:DiagnosticReport.subject [
+     fhir:link <https://core.fhir.health.gov.fj/Patient/FijiPatientExample> ;
+     fhir:Reference.reference [ fhir:value "Patient/FijiPatientExample" ]
+  ] ;
+  fhir:DiagnosticReport.encounter [
+     fhir:link <https://core.fhir.health.gov.fj/Encounter/FijiEncounterExample> ;
+     fhir:Reference.reference [ fhir:value "Encounter/FijiEncounterExample" ]
+  ] ;
+  fhir:DiagnosticReport.effectiveDateTime [ fhir:value "2026-10-05T10:05:00+12:00"^^xsd:dateTime] ;
+  fhir:DiagnosticReport.issued [ fhir:value "2026-10-05T14:30:00+12:00"^^xsd:dateTime] ;
+  fhir:DiagnosticReport.performer [
+     fhir:index -1 ;
+     fhir:link <https://core.fhir.health.gov.fj/Organization/FijiOrganizationExample> ;
+     fhir:Reference.reference [ fhir:value "Organization/FijiOrganizationExample" ]
+  ] ;
+  fhir:DiagnosticReport.resultsInterpreter [
+     fhir:index -1 ;
+     fhir:link <https://core.fhir.health.gov.fj/Practitioner/FijiPractitionerExample> ;
+     fhir:Reference.reference [ fhir:value "Practitioner/FijiPractitionerExample" ]
+  ] ;
+  fhir:DiagnosticReport.presentedForm [
+     fhir:index -1 ;
+     fhir:Attachment.contentType [ fhir:value "application/pdf" ] ;
+     fhir:Attachment.language [ fhir:value "en" ] ;
+     fhir:Attachment.data [ fhir:value "JVBERi0xLjQK"^^xsd:base64Binary ] ;
+     fhir:Attachment.title [ fhir:value "CT Head Report" ] ;
+     fhir:Attachment.creation [ fhir:value "2026-10-05T14:30:00+12:00"^^xsd:dateTime ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://core.fhir.health.gov.fj/DiagnosticReport/dr-ct-head-001.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

@@ -1,0 +1,2339 @@
+# Resource Draft Fiji Core Implementation Guide
+
+
+
+## Resource Content
+
+```json
+{
+  "resourceType" : "ImplementationGuide",
+  "id" : "health-gov-fhir-fj-core",
+  "language" : "en",
+  "url" : "https://core.fhir.health.gov.fj/ImplementationGuide/health-gov-fhir-fj-core",
+  "version" : "0.2.1",
+  "name" : "FijiCoreIG",
+  "title" : "Draft Fiji Core Implementation Guide",
+  "status" : "draft",
+  "date" : "2026-10-06T07:16:04+00:00",
+  "publisher" : "MHMS Fiji",
+  "contact" : [{
+    "name" : "MHMS Fiji",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://fhir.health.gov.fj"
+    }]
+  },
+  {
+    "name" : "Support",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.fhir.health.gov.fj"
+    }]
+  }],
+  "description" : "Implementation Guide for Fiji FHIR Interoperability.",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "FJ",
+      "display" : "Fiji"
+    }]
+  }],
+  "copyright" : "Distributed under the Creative Commons CC0-1.0 License (https://creativecommons.org/publicdomain/zero/1.0/)",
+  "packageId" : "health.gov.fhir.fj.core",
+  "license" : "CC0-1.0",
+  "fhirVersion" : ["4.0.1"],
+  "dependsOn" : [{
+    "id" : "hl7tx",
+    "extension" : [{
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment",
+      "valueMarkdown" : "Automatically added as a dependency - all IGs depend on HL7 Terminology"
+    }],
+    "uri" : "http://terminology.hl7.org/ImplementationGuide/hl7.terminology",
+    "packageId" : "hl7.terminology.r4",
+    "version" : "7.4.0"
+  },
+  {
+    "id" : "hl7ext",
+    "extension" : [{
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment",
+      "valueMarkdown" : "Automatically added as a dependency - all IGs depend on the HL7 Extension Pack"
+    }],
+    "uri" : "http://hl7.org/fhir/extensions/ImplementationGuide/hl7.fhir.uv.extensions",
+    "packageId" : "hl7.fhir.uv.extensions.r4",
+    "version" : "5.3.0"
+  }],
+  "definition" : {
+    "extension" : [{
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "copyrightyear"
+      },
+      {
+        "url" : "value",
+        "valueString" : "2026+"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "releaselabel"
+      },
+      {
+        "url" : "value",
+        "valueString" : "ci-build"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "autoload-resources"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "path-liquid-template"
+      },
+      {
+        "url" : "value",
+        "valueString" : "template/liquid"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "path-liquid-template"
+      },
+      {
+        "url" : "value",
+        "valueString" : "input/liquid"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "path-qa"
+      },
+      {
+        "url" : "value",
+        "valueString" : "temp/qa"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "path-temp"
+      },
+      {
+        "url" : "value",
+        "valueString" : "temp/pages"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "path-output"
+      },
+      {
+        "url" : "value",
+        "valueString" : "output"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "path-suppressed-warnings"
+      },
+      {
+        "url" : "value",
+        "valueString" : "input/ignoreWarnings.txt"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "path-history"
+      },
+      {
+        "url" : "value",
+        "valueString" : "https://core.fhir.health.gov.fj/history.html"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "template-html"
+      },
+      {
+        "url" : "value",
+        "valueString" : "template-page.html"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "template-md"
+      },
+      {
+        "url" : "value",
+        "valueString" : "template-page-md.html"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "apply-contact"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "apply-context"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "apply-copyright"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "apply-jurisdiction"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "apply-license"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "apply-publisher"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "apply-version"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "apply-wg"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "active-tables"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "fmm-definition"
+      },
+      {
+        "url" : "value",
+        "valueString" : "http://hl7.org/fhir/versions.html#maturity"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "propagate-status"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "excludelogbinaryformat"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "tabbed-snapshots"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueString" : "i18n-default-lang"
+      },
+      {
+        "url" : "value",
+        "valueString" : "en"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency",
+      "valueCode" : "hl7.fhir.uv.tools.r4#1.1.2"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "copyrightyear"
+      },
+      {
+        "url" : "value",
+        "valueString" : "2026+"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "releaselabel"
+      },
+      {
+        "url" : "value",
+        "valueString" : "ci-build"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "autoload-resources"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "path-liquid-template"
+      },
+      {
+        "url" : "value",
+        "valueString" : "template/liquid"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "path-liquid-template"
+      },
+      {
+        "url" : "value",
+        "valueString" : "input/liquid"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "path-qa"
+      },
+      {
+        "url" : "value",
+        "valueString" : "temp/qa"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "path-temp"
+      },
+      {
+        "url" : "value",
+        "valueString" : "temp/pages"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "path-output"
+      },
+      {
+        "url" : "value",
+        "valueString" : "output"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "path-suppressed-warnings"
+      },
+      {
+        "url" : "value",
+        "valueString" : "input/ignoreWarnings.txt"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "path-history"
+      },
+      {
+        "url" : "value",
+        "valueString" : "https://core.fhir.health.gov.fj/history.html"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "template-html"
+      },
+      {
+        "url" : "value",
+        "valueString" : "template-page.html"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "template-md"
+      },
+      {
+        "url" : "value",
+        "valueString" : "template-page-md.html"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "apply-contact"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "apply-context"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "apply-copyright"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "apply-jurisdiction"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "apply-license"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "apply-publisher"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "apply-version"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "apply-wg"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "active-tables"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "fmm-definition"
+      },
+      {
+        "url" : "value",
+        "valueString" : "http://hl7.org/fhir/versions.html#maturity"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "propagate-status"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "excludelogbinaryformat"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "tabbed-snapshots"
+      },
+      {
+        "url" : "value",
+        "valueString" : "true"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    },
+    {
+      "extension" : [{
+        "url" : "code",
+        "valueCode" : "i18n-default-lang"
+      },
+      {
+        "url" : "value",
+        "valueString" : "en"
+      }],
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+    }],
+    "resource" : [{
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-fiji-allergy-agent-vs.html"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/fiji-allergy-agent-vs"
+      },
+      "name" : "Allergy Causative Agent Value Set for Fiji Patient",
+      "description" : "A subset of SNOMED CT concepts representing substances or products that cause allergies or intolerances, aligned with global IPS.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-birthdate-estimated-indicator.html"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/birthdate-estimated-indicator"
+      },
+      "name" : "Birth Date Estimated Indicator",
+      "description" : "Indicates that the associated Patient.birthDate is an estimated (approximate) date of birth rather than a confirmed, exact date. Absence of this extension means no assertion is made about accuracy.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-fiji-vital-blood-pressure.html"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/fiji-vital-blood-pressure"
+      },
+      "name" : "Blood Pressure Observation",
+      "description" : "This profile defines the requirements and usage of a resource recording Blood Pressure vital observations.\nIt is based on the FHIR Blood Pressure Profile and adapted as required for the Fiji Core Implementation Guide.\n\n### Mandatory elements  \nThe following elements must be recorded:\n* status - one of the following codes (registered | preliminary | final | amended +)\n* code - code defining this is a blood pressure measurement\n  * code.coding.system - must be http ://loinc.org \n  * code.coding.code - must be 85354-9\n* category must have at miniumu one element conforming to following:\n  * category.coding.system - http://terminology.hl7.org/CodeSystem/observation-category\n  * category.coding.code - vital-signs\n* subject - a reference to a  Fiji Patient\n* effective[x] -  the date/time when the Blood pressure was measured using one of the values below\n  * effectiveDateTime  (recommended for use where possible)\n  * effectivePeriod - this is a time period with specific start/end over which the BMI did not change\n* component for systolic reading which must have\n    * component.code.coding.system = http://loinc.org\n    * component.code.coding.code = **'8480-6'**\n    * component.valueQuantity.value - decimal value of bp\n    * component.valueQuantity.system = http://unitsofmeasure.org\n    * component.valueQuantity.code = **'mm[Hg]'**\n\n* component for diastolic reading which must have\n    * component.code.coding.system = http://loinc.org\n    * component.code.coding.code = **'8462-4'**\n    * component.valueQuantity.value - decimal value of bp\n    * component.valueQuantity.system = http://unitsofmeasure.org\n    * component.valueQuantity.code = **'mm[Hg]'**\n\n### Other elements defined\n* dataAbsentReason - reason why no value present for this vital sign (mandatory if no value)\n* encounter - a reference to an encounter where/when the BMI measurement took place\t \n* method -  a SNOMED coded concept from a valueset that describes procedures used for vitals measurement\n* bodyPosition (extension) - a SNOMED coded concept that desciribes the position of the body at time of measurement\n* interpretation - a coded concept providing interpretation for the value \n* note - any additional relevant information to be recorded",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-fiji-vital-bmi.html"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/fiji-vital-bmi"
+      },
+      "name" : "BMI Vitals - Fiji",
+      "description" : "This profile defines the requirements and usage of an Observation resource recording BMI vital observations.\nIt is based on the FHIR BMI Profile and adapted as required for the Fiji Core Implementation Guide.\n\n### Mandatory elements  \nThe following elements must be recorded:\n* status - one of the following codes (registered | preliminary | final | amended +)\n* code.coding.system - must be http ://loinc.org \n* code.coding.code - must be 85354-9\n* category must have at miniumu one element conforming to following:\n  * category.coding.system - http://terminology.hl7.org/CodeSystem/observation-category\n  * category.coding.code - vital-signs\n* subject - a reference to a  Fiji Patient\n* effective[x] -  the date/time when the BMI was measured using one of the values below\n  * effectiveDateTime  (recommended for use where possible)\n  * effectivePeriod - this is a time period with specific start/end over which the BMI did not change\n* valueQuantity - the BMI value measured as below (if there is no value, the dataAbsentReason must be populated with a relevant code)\n  * valueQuantity.value - One numeric value\n  * valueQuantity.system - \"http://unitsofmeasure.org\"\n  * valueQuantity.code - the UCUM unit code **'kg/m2'**\n\n### Other elements defined\n* dataAbsentReason - reason why no value present for this vital sign (mandatory if no value)\n* encounter - a reference to an encounter where/when the BMI measurement took place\t \n* interpretation - a coded concept providing interpretation for the value \n* note - any additional relevant information to be recorded",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Observation-FijiBodyTemperatureExample.html"
+      }],
+      "reference" : {
+        "reference" : "Observation/FijiBodyTemperatureExample"
+      },
+      "name" : "Body temperature vital observation",
+      "description" : "Body temperature observation example with reference ranges and interpretation.",
+      "exampleCanonical" : "https://core.fhir.health.gov.fj/StructureDefinition/fiji-vital-body-temperature"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-fiji-vital-body-temperature.html"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/fiji-vital-body-temperature"
+      },
+      "name" : "Body Temperature Vitals - Fiji",
+      "description" : "This profile defines the requirements and usage of an Observation resource recording Body Temperature vital observations.\nIt is based on the FHIR Body Temperature Profile and adapted as required for the Fiji Core Implementation Guide.\n\n### Mandatory elements  \nThe following elements must be recorded:\n* status - one of the following codes (registered | preliminary | final | amended +)\n* code.coding.system - must be http ://loinc.org \n* code.coding.code - must be 8310-5\n* category must have at miniumu one element conforming to following:\n  * category.coding.system - http://terminology.hl7.org/CodeSystem/observation-category\n  * category.coding.code - vital-signs\n* subject - a reference to a  Fiji Patient\n* effective[x] -  the date/time when the Body Temperature was measured using one of the values below\n  * effectiveDateTime  (recommended for use where possible)\n  * effectivePeriod - this is a time period with specific start/end over which the BMI did not change\n* valueQuantity - the Blood Pressure value measured as below (if there is no value, the dataAbsentReason must be populated with a relevant code)\n  * valueQuantity.value - One numeric value\n  * valueQuantity.system - \"http://unitsofmeasure.org\"\n  * valueQuantity.code - the UCUM unit code **'Cel'**\n\n### Other elements defined\n* dataAbsentReason - reason why no value present for this vital sign (mandatory if no value)\n* encounter - a reference to an encounter where/when the BMI measurement took place\t \n* method -  a SNOMED coded concept from a valueset that describes procedures used for vitals measurement\n* bodySite - a SNOMED coded concept specifying the part of the body used in this measurement\n* interpretation - a coded concept providing interpretation for the value \n* note - any additional relevant information to be recorded",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-fiji-evidence-vs.html"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/fiji-evidence-vs"
+      },
+      "name" : "Condition Evidence Value Set for Fiji Core IG",
+      "description" : "Evidence: Signs, symptoms, procedures, and labs, explicitly excluding formal diseases.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Condition"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Condition-condition-example-diabetes2.html"
+      }],
+      "reference" : {
+        "reference" : "Condition/condition-example-diabetes2"
+      },
+      "name" : "Condition Example - Type 2 Diabetes Mellitus",
+      "exampleCanonical" : "https://core.fhir.health.gov.fj/StructureDefinition/fiji-condition"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-fiji-condition-code-vs.html"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/fiji-condition-code-vs"
+      },
+      "name" : "Condition/Diagnosis code valueset",
+      "description" : "Condition Code valueset for Fiji Core. \nProposed valueset is taken from SNOMED codes curated for International Patient Summary.\nIncludes \"clinical finding\"  codes and codes for \"situation with explicit content\".",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-fiji-encounter-reason-vs.html"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/fiji-encounter-reason-vs"
+      },
+      "name" : "Encounter reason code valueset",
+      "description" : "Encounter reason valueset for Fiji Core. \nProposed valueset is taken from SNOMED Problem/Diagnosis and Procedure refsets.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Observation-ExampleArterialPO2.html"
+      }],
+      "reference" : {
+        "reference" : "Observation/ExampleArterialPO2"
+      },
+      "name" : "Example arterial oxygen partial pressure",
+      "exampleCanonical" : "https://core.fhir.health.gov.fj/StructureDefinition/fiji-pathology-observation"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Observation-Example-BodyHeight.html"
+      }],
+      "reference" : {
+        "reference" : "Observation/Example-BodyHeight"
+      },
+      "name" : "Example Body Height",
+      "description" : "Example body height observation including measurement device reference.",
+      "exampleCanonical" : "https://core.fhir.health.gov.fj/StructureDefinition/fiji-vital-height"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Observation-Example-BodyWeight.html"
+      }],
+      "reference" : {
+        "reference" : "Observation/Example-BodyWeight"
+      },
+      "name" : "Example Body Weight",
+      "description" : "Example of Body Weight vital measurement",
+      "exampleCanonical" : "https://core.fhir.health.gov.fj/StructureDefinition/fiji-vital-weight"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "DiagnosticReport"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "DiagnosticReport-dr-ct-head-001.html"
+      }],
+      "reference" : {
+        "reference" : "DiagnosticReport/dr-ct-head-001"
+      },
+      "name" : "Example CT Head Diagnostic Report",
+      "description" : "Example final diagnostic report for a CT examination of the head.",
+      "exampleCanonical" : "https://core.fhir.health.gov.fj/StructureDefinition/fiji-imaging-diagnostic-report"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ServiceRequest"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ServiceRequest-sr-ct-head-001.html"
+      }],
+      "reference" : {
+        "reference" : "ServiceRequest/sr-ct-head-001"
+      },
+      "name" : "Example CT Head Service Request",
+      "description" : "Example service request for a CT head examination.",
+      "exampleCanonical" : "https://core.fhir.health.gov.fj/StructureDefinition/fiji-service-request"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Observation-ExampleHDLCholesterol.html"
+      }],
+      "reference" : {
+        "reference" : "Observation/ExampleHDLCholesterol"
+      },
+      "name" : "Example HDL Cholesterol",
+      "exampleCanonical" : "https://core.fhir.health.gov.fj/StructureDefinition/fiji-pathology-observation"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Observation-ExampleLDLCholesterol.html"
+      }],
+      "reference" : {
+        "reference" : "Observation/ExampleLDLCholesterol"
+      },
+      "name" : "Example LDL Cholesterol",
+      "exampleCanonical" : "https://core.fhir.health.gov.fj/StructureDefinition/fiji-pathology-observation"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Observation-ExampleLipidPanel.html"
+      }],
+      "reference" : {
+        "reference" : "Observation/ExampleLipidPanel"
+      },
+      "name" : "Example Lipid Panel",
+      "exampleCanonical" : "https://core.fhir.health.gov.fj/StructureDefinition/fiji-pathology-observation"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "DiagnosticReport"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "DiagnosticReport-ExampleLipidPanelReport.html"
+      }],
+      "reference" : {
+        "reference" : "DiagnosticReport/ExampleLipidPanelReport"
+      },
+      "name" : "Example Lipid Panel Report",
+      "description" : "Example laboratory report containing a lipid panel.",
+      "exampleCanonical" : "https://core.fhir.health.gov.fj/StructureDefinition/fiji-laboratory-diagnostic-report"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Specimen"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Specimen-ExampleLipidSpecimen.html"
+      }],
+      "reference" : {
+        "reference" : "Specimen/ExampleLipidSpecimen"
+      },
+      "name" : "Example Lipid Panel Specimen",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Encounter"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Encounter-FijiEncounterExample.html"
+      }],
+      "reference" : {
+        "reference" : "Encounter/FijiEncounterExample"
+      },
+      "name" : "Example outpatient encounter",
+      "description" : "Example of an outpatient encounter in a Fiji healthcare setting",
+      "exampleCanonical" : "https://core.fhir.health.gov.fj/StructureDefinition/fiji-encounter"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Observation-ExampleTotalCholesterol.html"
+      }],
+      "reference" : {
+        "reference" : "Observation/ExampleTotalCholesterol"
+      },
+      "name" : "Example Total Cholesterol",
+      "exampleCanonical" : "https://core.fhir.health.gov.fj/StructureDefinition/fiji-pathology-observation"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Observation-ExampleTriglycerides.html"
+      }],
+      "reference" : {
+        "reference" : "Observation/ExampleTriglycerides"
+      },
+      "name" : "Example Triglycerides",
+      "exampleCanonical" : "https://core.fhir.health.gov.fj/StructureDefinition/fiji-pathology-observation"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Observation-Example-BMI.html"
+      }],
+      "reference" : {
+        "reference" : "Observation/Example-BMI"
+      },
+      "name" : "Example-BMI",
+      "exampleCanonical" : "https://core.fhir.health.gov.fj/StructureDefinition/fiji-vital-bmi"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Observation-ExampleBloodPressure.html"
+      }],
+      "reference" : {
+        "reference" : "Observation/ExampleBloodPressure"
+      },
+      "name" : "ExampleBloodPressure",
+      "exampleCanonical" : "https://core.fhir.health.gov.fj/StructureDefinition/fiji-vital-blood-pressure"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:complex-type"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-fiji-address.html"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/fiji-address"
+      },
+      "name" : "Fiji Address",
+      "description" : "Address profile designed for Fiji where addresses are commonly descriptive and village-based rather than street-based.\nThis profile supports a range of address formats, with commonly required extensions, and general usage guidance.\nIn all cases:\n- text is a mandatory field and should be considered the primary representation of the fully address.\n- line is used for free text address lines and may relate to a landmark, school, church etc. rather than a street address.\n- Province, Village and Settlement are added as extensions to the base fhir Address definition to support common address formats.\n- geolocation is added as an optional extension to support use case where GPS coordinates are available. It is expected that this will become more common.\n- Postal code is often not used, so is currently optional and may be removed (ie 0..0) if not required in the future\n- Country is required to support international interoperability\n\nRecommended mapping of address fields are below but should be validated and used with Fiji specific examples.\n\n| FHIR Element        | Typical Use            | Notes                          |\n| ------------------- | ------------------------------ | ------------------------------ |\n| `text`              | Full narrative address         | Often the primary address form |\n| `line`              | Landmark, compound, street     | Free-text                      |\n| `city`              | Town                           | Mainly urban areas             |\n| `district`          | Tikina / district              | Country dependent              |\n| `extension:province` | Yasana / province              | Country dependent              |\n| `state`             | Division                       | Country dependent              |\n| `extension:village` | Village                        | Most rural addresses           |\n| `extension:settlement`| Settlement                   | Rural addresses        |",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-fiji-allergy-intolerance.html"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/fiji-allergy-intolerance"
+      },
+      "name" : "Fiji Allergy/Intolerance",
+      "description" : "## Overview\n\nThe **Fiji AllergyIntolerance Profile** defines the minimum data elements and terminology requirements for representing a patient's known or suspected allergies and intolerances within the Fiji FHIR implementation.\n\nThe profile is based on the FHIR `AllergyIntolerance` resource and constrains the `patient` reference to the **Fiji Patient** profile. Where applicable, terminology bindings use Fiji-specific value sets to support consistent representation of allergy agents and clinical manifestations.\n\nThis profile can be used to represent both confirmed allergies and other adverse reactions or intolerances where clinically relevant.\n\n## Key Elements\n\n| Element | Cardinality | Must Support | Description |\n|---|---:|:---:|---|\n| `code` | 1..1 | ✓ | **Allergy or intolerance agent.** Identifies the substance, medication, food, or other agent to which the patient has an allergy or intolerance. Bound to the **Fiji Allergy Agent ValueSet** with an extensible binding. |\n| `clinicalStatus` | 0..1 | ✓ | Indicates the current clinical status of the allergy or intolerance, such as active or resolved. |\n| `verificationStatus` | 0..1 | ✓ | Indicates the degree of certainty that the allergy or intolerance is valid, such as confirmed, unconfirmed, or refuted. |\n| `category` | 1..* | ✓ | Identifies the general category of the allergy or intolerance, such as medication, food, or environment. |\n| `criticality` | 0..1 | ✓ | Indicates the potential clinical impact of the allergy or intolerance, such as low, high, or unable to assess. |\n| `patient` | 1..1 |  | Identifies the patient to whom the allergy or intolerance applies. The reference is constrained to the **Fiji Patient** profile. |\n| `onsetDateTime` | 0..1 | ✓ | Records the date and time when the allergy or intolerance was first known or began. |\n| `note` | 0..* | ✓ | Provides additional free-text clinical information about the allergy or intolerance that is not captured by the structured elements. |\n| `recorder` | 0..1 |  | Identifies the practitioner or practitioner role who recorded the allergy or intolerance. References are constrained to **Fiji Practitioner** or **Fiji PractitionerRole**. |\n| `reaction` | 0..* | ✓ | Describes a clinical reaction associated with the allergy or intolerance, including its manifestations and severity. |\n| `reaction.manifestation` | 1..* | ✓ | **Clinical symptoms/signs associated with the adverse reaction.** Bound to the **Fiji Condition Code ValueSet** using a preferred binding. |\n| `reaction.severity` | 0..1 | ✓ | Indicates the severity of the reaction, such as mild, moderate, or severe. |\n\n## Terminology\n\nThe following terminology bindings are defined by this profile:\n\n| Element | Value Set | Description |\n|---|---|---|\n| `code` | **Fiji Allergy Agent** | Based on subset of SNOMED CT concepts representing substances or products that cause allergies or intolerances, aligned with global IPS.|\n| `reaction.manifestation` | **Fiji Condition Code** | Based on SNOMED CT concepts for \"clinical finding\" and \"situation with explicit content\" curated for International Patient Summary|\n\nThe extensible binding on `code` allows an allergy or intolerance agent to be represented using a code outside the Fiji Allergy Agent ValueSet when an appropriate concept is not available in the value set.\n\nThe preferred binding on `reaction.manifestation` encourages implementers to use concepts from the Fiji Condition Code ValueSet while allowing alternative codes where appropriate.\n\n## Usage\n\nAn `AllergyIntolerance` instance should identify the **allergy or intolerance agent** using `code` and, where a reaction has occurred, describe the associated **clinical manifestations** using `reaction.manifestation`. The `reaction.severity` element may be used to communicate the clinical severity of the reaction.\n\nWhere the identity of the person responsible for recording the information is known, `recorder` should reference the relevant Fiji Practitioner or Fiji PractitionerRole.\n\n### No Known Allergies \nNo Known Allergies representation\nThe recommended 'best practice' for representing 'No Known Allergies' requires a combination of the following element settings:\n1. `code` : should include both the SNOMED CT \"716186003\" and the HL7 \"no-known-allergies\" codings\n1. `clinicalStatus` : should be set to \"active\"\n1. `verificationStatus` : should be set to \"confirmed\"\nThis indicates that a clinican has formally verified that status, and the use of both codings maximizes interoperability\n** Note: ** Any other recorded Active allergy for the patient should negate a No Known Allergy record.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "AllergyIntolerance"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "AllergyIntolerance-FijiAllergyIntoleranceExample.html"
+      }],
+      "reference" : {
+        "reference" : "AllergyIntolerance/FijiAllergyIntoleranceExample"
+      },
+      "name" : "Fiji AllergyIntolerance Example",
+      "description" : "Example of an AllergyIntolerance for a patient with a confirmed penicillin allergy.",
+      "exampleCanonical" : "https://core.fhir.health.gov.fj/StructureDefinition/fiji-allergy-intolerance"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-fiji-body-site-vs.html"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/fiji-body-site-vs"
+      },
+      "name" : "Fiji Body Site (Anatomical Structure) Value Set",
+      "description" : "Valueset for bodysite/anatomical structures.\nUsed for Condition.bodySite and Immunization.site\nValues from SNOMED CT anatomical structures.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-fiji-clan-affiliation.html"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/fiji-clan-affiliation"
+      },
+      "name" : "Fiji Clan Affiliation",
+      "description" : "Represents clan, tribe, lineage, or descent-based group affiliation.\n\nThis is a demographic identity attribute.\nIt is not a syntactic component of a name.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-fiji-condition.html"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/fiji-condition"
+      },
+      "name" : "Fiji Condition",
+      "description" : "# Profile of Condition (Diagnosis, Problem List item etc) as defined for Fiji Context.\n\nThis profile sets minimum expectations for an Condition resource to record, search, and fetch diagnoses or problmen-list items \nassociated with a patient. \n\n### Mandatory elements  \nThe following elements must be recorded:\n* code - a coded concept for the condition.  The recommendation for future terminology of this element should be selected from SNOMED CT \n Clinical Finding or Situation with Explicit Context reference sets.   Current and past records may use ICD-10 AM terminology.\nFree text entry should only be permitted if no coded value is available or to record uncoded historic condition information.\n* subject - a reference to a  Fiji Patient\n* clinicalStatus - the clinical status of the condition from one of (active | recurrence | relapse | inactive | remission | resolved)\n* category - at least one item from the extensible valueset (problem-list-item | encounter-diagnosis)\n\n### Other elements defined\n* verificationStatus - the verification status supports or declines the clincal status (unconfirmed | provisional | differential | confirmed | refuted | entered-in-error)\n* onset[x] -  the estimated or actual date or age when the condition was first observed/diagnosed\n* abatement[x] - the estimated or actual date when the condition was resolved or went into remission\n* severity - subjective severity of condition coded from [condition severity valueset](https://hl7.org/fhir/R4/valueset-condition-severity.html)\n* bodySite - a coded concept specifying the part of the body used in this measurement preferred to use SNOMED CT body structure concepts\n* evidence.code - coded concept for the manifestation or symptom leading to diagnosis (there may be multiple values).  These concepts \nmay be from SNOMED CT clinical finding or procedure sets, or LOINC lab studies or radiology codes.\n\n### Terminology  \n\nAs noted above, it is intended that future deployments will use SNOMED CT valuesets for most coded concepts,  but current and \npast information is dominantly recorded using ICD-10-AM terminology for condition codes.\n\n### Alignment with Regional IGs  \n\nThe following specifications have been reviewed in development of this profile. \n-\tAustralian Clinical Data for Interoperability Release 2\n-\tNew Zealand Clinical Data for Interoperability 2026\n-\tAustralian AU Core Implementation Guide 2.0.0",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-fiji-diagnostic-observation.html"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/fiji-diagnostic-observation"
+      },
+      "name" : "Fiji Diagnostic Observation",
+      "description" : "## Fiji Diagnostic Observation\n\nThe **Fiji Diagnostic Observation** profile represents an individual observation or finding produced as part of a radiology or other diagnostic investigation. It is based on the FHIR `Observation` resource and provides constraints and terminology bindings appropriate for diagnostic results in Fiji.\n\nThe profile is intended to support the representation of individual diagnostic findings, including coded radiology findings, anatomical locations, performers, and component observations.\n\n### Key Elements\n\n| Element | Cardinality | Description |\n|---|---:|---|\n| `status` | 1..1 | The status of the diagnostic observation, indicating whether the result is preliminary, final, amended, or has another applicable status. |\n| `category` | 1..* | Classifies the observation as belonging to a diagnostic service or discipline. Bound to the FHIR Diagnostic Service Sections value set with a preferred binding. |\n| `code` | 1..1 | Identifies the type of diagnostic finding or observation. Bound to the Fiji Radiology Findings Value Set with a preferred binding. |\n| `subject` | 1..1 | Identifies the patient who is the subject of the diagnostic observation. Restricted to `FijiPatient`. |\n| `effective[x]` | 1..1 | The clinically relevant date/time or period associated with the observation. |\n| `performer` | 0..* | Identifies the individual or organisation responsible for performing or producing the observation. Restricted to a Fiji patient, practitioner, practitioner role, or organisation. |\n| `value[x]` | 0..1 | The result of the diagnostic observation. The type of value is determined by the nature of the observation. |\n| `dataAbsentReason` | 0..1 | Provides a reason when a result is not available. Bound to the FHIR Data Absent Reason value set with an extensible binding. |\n| `bodySite` | 0..1 | Identifies the anatomical site associated with the diagnostic observation. Bound to the Fiji Body Site Value Set with an extensible binding. |\n| `hasMember` | 0..* | References other diagnostic observations that are related to or form part of this observation. References are restricted to `FijiDiagnosticObservation`. |\n| `component` | 0..* | Represents component observations that form part of the diagnostic observation. |\n| `component.code` | 1..1 | Identifies the type of the component observation. |\n| `component.value[x]` | 0..1 | The result of the component observation. |\n| `component.dataAbsentReason` | 0..1 | Provides a reason when the value of a component observation is not available. |\n\n### Terminology Bindings\n\n| Element | Value Set | Binding | Purpose |\n|---|---|---|---|\n| `category` | Diagnostic Service Sections | Preferred | Identifies the diagnostic service or discipline associated with the observation. |\n| `code` | `FijiRadiologyFindingsVS` | Preferred | Identifies the diagnostic finding or observation using relevant SNOMED CT concepts. |\n| `dataAbsentReason` | FHIR Data Absent Reason | Extensible | Provides a standard reason when an observation result is unavailable. |\n| `bodySite` | `FijiBodySiteVS` | Extensible | Identifies the anatomical or acquired body structure associated with the observation using SNOMED CT. |\n\n### Diagnostic Finding Code\n\nThe `code` element identifies the diagnostic finding represented by the observation and is bound to `FijiRadiologyFindingsVS`.\n\nThe value set is defined using SNOMED CT concepts that are both clinical findings and associated with imaging procedures:\n\n`descendant-of 404684003 |Clinical finding| AND descendant-of 363679005 |Imaging procedure|`\n\nThis provides a terminology-based approach to identifying findings relevant to radiology and imaging rather than maintaining a fixed list of individual concepts.\n\n### Body Site\n\nWhere applicable, `bodySite` identifies the anatomical location to which the diagnostic observation relates. The element is bound to `FijiBodySiteVS` using an extensible binding.\n\nThe value set is based on SNOMED CT anatomical or acquired body structure concepts:\n\n`< 442083009 |Anatomical or acquired body structure (body structure)|`\n\nThis allows standard SNOMED CT concepts to be used to represent the anatomical site while allowing additional concepts where required.\n\n### Component Observations\n\nThe `component` element may be used when a diagnostic observation contains additional observations that are integral to the main observation. Each component must have a `code` identifying what is being observed and may contain either a result in `value[x]` or a `dataAbsentReason` when the result is unavailable.\n\nComponents are appropriate where the individual results form part of a single overall observation and do not need to be represented as separate resources.\n\n### Related Diagnostic Observations\n\nThe `hasMember` element may be used to associate the observation with other diagnostic observations. References are restricted to `FijiDiagnosticObservation`, supporting the representation of groups of related diagnostic findings.\n\nFor example, a diagnostic observation may use `hasMember` to reference separate observations representing individual findings from the same diagnostic investigation.\n\n### Missing Results\n\nBoth the main observation and its components support `dataAbsentReason`. This should be used when a result that would otherwise be represented in `value[x]` is not available, rather than leaving the reason for the missing result implicit.\n\nThe profile uses the standard FHIR Data Absent Reason value set with an **extensible** binding.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Observation-FijiDiagnosticObservationChestXrayReport.html"
+      }],
+      "reference" : {
+        "reference" : "Observation/FijiDiagnosticObservationChestXrayReport"
+      },
+      "name" : "Fiji Diagnostic Observation - Chest X-ray Report",
+      "description" : "Example of a radiology diagnostic observation representing a chest\nX-ray report with multiple individual findings.",
+      "exampleCanonical" : "https://core.fhir.health.gov.fj/StructureDefinition/fiji-diagnostic-observation"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Observation-FijiDiagnosticObservationPleuralEffusion.html"
+      }],
+      "reference" : {
+        "reference" : "Observation/FijiDiagnosticObservationPleuralEffusion"
+      },
+      "name" : "Fiji Diagnostic Observation - Pleural Effusion",
+      "exampleCanonical" : "https://core.fhir.health.gov.fj/StructureDefinition/fiji-diagnostic-observation"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Observation-FijiDiagnosticObservationPulmonaryConsolidation.html"
+      }],
+      "reference" : {
+        "reference" : "Observation/FijiDiagnosticObservationPulmonaryConsolidation"
+      },
+      "name" : "Fiji Diagnostic Observation - Pulmonary Consolidation",
+      "exampleCanonical" : "https://core.fhir.health.gov.fj/StructureDefinition/fiji-diagnostic-observation"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-fiji-dcm-modality-vs.html"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/fiji-dcm-modality-vs"
+      },
+      "name" : "Fiji Dicom Imaging Modality Value Set",
+      "description" : "Imaging acquisition modalities based on DICOM CID 29.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Observation-FijiHeadCircumferenceExample.html"
+      }],
+      "reference" : {
+        "reference" : "Observation/FijiHeadCircumferenceExample"
+      },
+      "name" : "Fiji Head Circumference Example",
+      "exampleCanonical" : "https://core.fhir.health.gov.fj/StructureDefinition/fiji-vital-head-circumference"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-fiji-admin-zone.html"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/fiji-admin-zone"
+      },
+      "name" : "Fiji Health Administration Zone",
+      "description" : "The health administration zoning for the patient represented as Division, Sub-divsions, medical area, nursing zone and settlement",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-fiji-device.html"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/fiji-device"
+      },
+      "name" : "Fiji Healthcare Device",
+      "description" : "This profile is a placeholder to be extended in subsequent versions of the Fiji Core IG.  \nA device is a manufactured item that is used in the provision of healthcare without being substantially changed through that activity. \nThe device may be a medical or non-medical device.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-fiji-encounter.html"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/fiji-encounter"
+      },
+      "name" : "Fiji Healthcare Encounter",
+      "description" : "## Fiji Healthcare Encounter\n\nThe **Fiji Healthcare Encounter** profile represents an interaction between a patient and the healthcare system in which healthcare services are provided. It is based on the FHIR `Encounter` resource and is intended to support the recording of clinical encounters within the scope of this Implementation Guide.\n\nThe profile constrains the patient, encounter classification, service type, participants, timing, reasons for the encounter, locations, and responsible healthcare organisation. Where appropriate, references are restricted to the corresponding Fiji profiles.\n\n### Key Elements\n\n| Element | Cardinality | Type / Binding | Description |\n|---|---:|---|---|\n| `identifier` | 0..* | Identifier | Business identifier(s) assigned to the encounter, such as a facility encounter number or local medical record number. |\n| `status` | **1..1** | Code | Current status of the encounter, such as planned, in-progress, finished, or cancelled. |\n| `class` | **1..1** | `FijiEncounterClassVS` | Classification of the encounter, for example inpatient, outpatient, emergency, or ambulatory care. |\n| `serviceType` | 0..* | `FijiServiceTypeVS` (preferred) | The type of healthcare service provided during the encounter. |\n| `subject` | **1..1** | Reference(`FijiPatient`) | The patient who is the subject of the encounter. |\n| `participant.type` | 0..* | `$participant-type-vs` | Identifies the role or function of a participant in the encounter, such as attending clinician or consultant. |\n| `participant.individual` | 0..1 | Reference(`FijiPractitioner`, `FijiPractitionerRole`, or `FijiRelatedPerson`) | Identifies the person participating in the encounter. |\n| `period` | 0..1 | Period | The date and time during which the encounter took place or is expected to take place. |\n| `reasonCode` | 0..* | `FijiEncounterReasonVS` (preferred) | Coded reason for the encounter, such as a presenting complaint, clinical problem, or other reason for seeking care. |\n| `reasonReference` | 0..* | Reference(`FijiCondition` or `FijiProcedure`) | References a condition or procedure that is the reason for the encounter. |\n| `location.location` | 0..1 | Reference(`FijiLocation`) | The physical location where the encounter occurred. |\n| `serviceProvider` | 0..1 | Reference(`FijiOrganization`) | The organisation responsible for providing the healthcare services associated with the encounter. |\n\n### Encounter Classification\n\nThe `class` element is mandatory and is bound to the **`$enc-class-vs`** value set. This identifies the broad setting or classification of the encounter and should be used consistently to distinguish, for example, inpatient, outpatient, emergency, and other forms of healthcare delivery.\n\n### Service Type\n\n`serviceType` identifies the specific type of healthcare service being provided. It is bound with a **preferred** binding to `FijiServiceTypeVS`, allowing implementations to use the Fiji-defined terminology where applicable while permitting other codes where necessary.\n\n### Patient and Participants\n\nThe `subject` element is mandatory and is restricted to a reference to a `FijiPatient`.\n\nEncounter participants may be recorded using `participant.type` to describe their role and `participant.individual` to identify the participating person. Participants are restricted to a `FijiPractitioner`, `FijiPractitionerRole`, or `FijiRelatedPerson`.\n\n### Reason for Encounter\n\nThe reason for the encounter can be represented using either:\n\n- `reasonCode` for a coded reason that does not require a reference to another resource; or\n- `reasonReference` when the reason is represented by an existing `FijiCondition` or `FijiProcedure` resource.\n\nThe `reasonCode` element has a preferred binding to `FijiEncounterReasonVS`.\n\n### Location and Service Provider\n\nThe `location.location` element identifies where the encounter occurred and is restricted to a `FijiLocation`.\n\nThe `serviceProvider` identifies the organisation responsible for the healthcare service and is restricted to a `FijiOrganization`.\n\n### Terminology Bindings\n\n| Element | Value Set | Binding |\n|---|---|---|\n| `class` | `$enc-class-vs` | **Required** |\n| `serviceType` | `FijiServiceTypeVS` | **Preferred** |\n| `participant.type` | `$participant-type-vs` | **Required** |\n| `reasonCode` | `FijiEncounterReasonVS` | **Preferred** |\n\n### Relationship to Other Resources\n\nA `FijiEncounter` may be associated with other clinical and administrative resources, including:\n\n- **Patient** – identifies the patient receiving care.\n- **Practitioner / PractitionerRole** – identifies healthcare professionals involved in the encounter.\n- **RelatedPerson** – identifies other people participating in the patient's care.\n- **Condition** – may identify a condition that is the reason for the encounter.\n- **Procedure** – may identify a procedure associated with or motivating the encounter.\n- **Location** – identifies where care was provided.\n- **Organization** – identifies the healthcare organisation responsible for the encounter.\n\nThis profile is currently **work in progress** and may be subject to further refinement as encounter requirements for the Fiji implementation are established.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-fiji-location.html"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/fiji-location"
+      },
+      "name" : "Fiji Healthcare Location",
+      "description" : "This profile is a placeholder to be extended in subsequent versions of the Fiji Core IG.  \nA Location includes both incidental locations (a place which is used for healthcare without prior designation or authorization) and dedicated, formally appointed locations.\nThese locations are not intended to cover parts of the body, or locations on a patient where something occurred (i.e. a patient's broken leg), but can happily cover the location where the patient broke the leg (the playground)",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-fiji-procedure.html"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/fiji-procedure"
+      },
+      "name" : "Fiji Healthcare Procedure",
+      "description" : "This profile is a placeholder to be extended in subsequent versions of the Fiji Core IG.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-fiji-related-person.html"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/fiji-related-person"
+      },
+      "name" : "Fiji Healthcare Related Person",
+      "description" : "This profile is a placeholder to be extended in subsequent versions of the Fiji Core IG.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-fiji-organization.html"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/fiji-organization"
+      },
+      "name" : "Fiji Healthcare Service or Organization",
+      "description" : "Profile for Fiji Healthcare Service or Organization",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-fiji-service-request.html"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/fiji-service-request"
+      },
+      "name" : "Fiji Healthcare Service Request",
+      "description" : "This profile is a placeholder to be extended in subsequent versions of the Fiji Core IG.\n\nA service request  is a record of a request for a procedure or diagnostic or other service to be planned, proposed, or performed,\nwith or on a patient. The request will lead to either a Procedure or DiagnosticReport, which in turn may reference associated \nresources/documentation such as observations, images, findings that are relevant to the treatment/management of the subject. \n\nThis resource may be used to share relevant information required to support a referral or a transfer of care request from one \npractitioner or organization to another when a patient is required to be referred to another provider for a consultation\n /second opinion and/or for short term or longer term management of one or more health issues or problems..",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Organization"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Organization-FijiOrganizationExample.html"
+      }],
+      "reference" : {
+        "reference" : "Organization/FijiOrganizationExample"
+      },
+      "name" : "Fiji Hospital Example Fiji Divisional Hospital",
+      "description" : "Example Fiji hospital organization in Fiji.\nIncludes organizational identifier, contact information, and address.",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:complex-type"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-fiji-humanname.html"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/fiji-humanname"
+      },
+      "name" : "Fiji HumanName",
+      "description" : "A HumanName profile designed for representing Fiji names.\n\nNaming conventions are diverse and may not align with Western norms. This profile accommodates a range of naming practices including:\n\n- Absence of family names (e.g., in some cultures where individuals may have only given names)\n- Patronymic or Matronymic structures\n- Multiple given names\n- Customary and ceremonial naming\n- Distinction between 'usual' (social) and 'official' (legal) names\n\nAt least one FijiHumanName instance must exist on FijiPatient and FijiPractitioner resources.\nSystems SHALL NOT require both usual and official names.\n\nNote: Clan affiliation is recorded separately from the FijiHumanName.  It issupported as an optional extension of  FijiPatient and FijiPractitioner resources to capture important cultural identity information.\n\n**STATUS**: Proposed for wider Pacific use - needs further review and consensus from Pacific stakeholders before finalization.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-fiji-imaging-diagnostic-report.html"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/fiji-imaging-diagnostic-report"
+      },
+      "name" : "Fiji Imaging Diagnostic Report",
+      "description" : "### Fiji Imaging Diagnostic Report\n\nThe **Fiji Imaging Diagnostic Report** profile represents a diagnostic report for imaging examinations performed within Fiji health information systems. It is based on the FHIR `DiagnosticReport` resource and provides additional constraints to support interoperability between radiology information systems (RIS), imaging systems, and other health information systems.\n\nThe profile requires each report to have a **RIS Accession Number**, which provides a unique identifier for the imaging examination within the radiology workflow. The report may also reference one or more `ServiceRequest` resources through `basedOn`, allowing the report to be linked to the request or referral that initiated the examination.\n\nThe `category` element supports both **HL7 diagnostic service classification** and **DICOM modality classification**. These are represented as separate slices so that an implementation can provide either or both classifications. This allows the profile to accommodate systems that use HL7 terminology, DICOM terminology, or both.\n\nThe `code` element identifies the type of imaging diagnostic report and is bound to the Fiji radiology findings value set. The patient, encounter, report timing, performers, interpreters, and report presentation are also constrained to support consistent exchange of imaging results.\n\n### Key Elements\n\n| Element | Cardinality | Description |\n|---|---:|---|\n| `identifier` | 1..* | Identifiers for the diagnostic report. The identifier list must contain one RIS Accession Number. |\n| `identifier[risAccession]` | 1..1 | The RIS Accession Number assigned to the imaging examination. |\n| `identifier[risAccession].system` | 1..1 | Fixed to the Fiji RIS Accession Number NamingSystem. |\n| `identifier[risAccession].value` | 1..1 | The accession number assigned by the radiology information system. |\n| `basedOn` | 0..* | References the service request(s) that resulted in the imaging examination. References are restricted to `FijiServiceRequest`. |\n| `status` | 1..1 | The current status of the diagnostic report, such as preliminary, final, amended, or cancelled. |\n| `category` | 1..* | Classification of the diagnostic service and/or imaging modality associated with the report. |\n| `category[hl7DiagnosticService]` | 0..1 | HL7 diagnostic service classification. Uses the HL7 diagnostic service value set. |\n| `category[dicomModality]` | 0..1 | DICOM modality classification. Uses the Fiji DICOM Modality value set. |\n| `code` | 1..1 | Code identifying the type of imaging diagnostic report or examination. Bound to `FijiRadiologyFindingsVS` with a preferred binding. |\n| `subject` | 1..1 | The patient to whom the report relates. Restricted to `FijiPatient`. |\n| `encounter` | 0..1 | The healthcare encounter associated with the imaging examination. Restricted to `FijiEncounter`. |\n| `effective[x]` | 1..1 | The clinically relevant time or period of the imaging examination. |\n| `issued` | 1..1 | The date and time at which the diagnostic report was issued. |\n| `performer` | 0..* | The organisation, practitioner, or practitioner role responsible for performing the imaging examination or producing the report. |\n| `resultsInterpreter` | 0..* | The practitioner, practitioner role, or organisation responsible for interpreting the imaging results. |\n| `presentedForm` | 1..* | The report as a human-readable or otherwise presentable document, such as a PDF. |\n| `presentedForm.contentType` | 1..1 | MIME type of the presented report, such as `application/pdf`. |\n| `presentedForm.data` | 1..1 | The report content encoded as base64 data. |\n| `presentedForm.language` | 0..1 | Language of the presented report, using the FHIR language value set. |\n\n### Imaging Modality and Diagnostic Service\n\nThe `category` element uses open slicing to allow both HL7 and DICOM classifications to be represented independently:\n\n- **HL7 Diagnostic Service** identifies the type of diagnostic service that produced the report.\n- **DICOM Modality** identifies the imaging modality used to acquire the examination, such as CT, MR, CR, or ultrasound.\n\nBoth slices are optional individually, but at least one `category` element is required. Implementations are encouraged to provide both classifications where they are available.\n\nThis approach avoids combining multiple modality codes into a single code or comma-separated value and allows multiple classifications to be represented using standard FHIR coding structures.\n\n### Report Presentation\n\nAt least one `presentedForm` is required so that the diagnostic report can be exchanged in a human-readable or otherwise renderable form. The content type and encoded data are required. Where appropriate, implementations may provide the final report as a PDF document using `application/pdf`.\n\nThe `language` element may be populated to identify the language used in the presented report.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-fiji-immunization.html"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/fiji-immunization"
+      },
+      "name" : "Fiji Immunization",
+      "description" : "# Profile of Immunizations for Fiji Patient\n\nThis profile sets minimum expectations for an Immunization resource to record, search, and fetch immunisation history \nassociated with a patient. \n\n### Mandatory elements  \nThe following elements must be recorded:\n* status - one of the following codes (completed, entered-in-error, not-done)\n* vaccineCode - a vaccine code from the Immunization ValueSet\nThis element should be coded with terminology from the defined valueset. If no appropriate value is available\nthen a coded value from another terminology may be used. Free text entry should only be permitted if no \ncoded value is available or to record historic immunizations.\n* patient - a reference to a  Fiji Patient\n* occurrence[x] -  the vaccine administration date can be recorded using one of the two options below\n  * occurenceDateTime  (recommended for use where possible)\n  * occurrenceString - this is a free text representation of the date or administration\n\n### Other elements defined\n* statusReason -  provides reason for administration of vaccine - mandatory if vaccine not administered (currently uses ICD11 valueset from DAK, suggest converting to SNOMED CT)\n* lotNumber - is not mandatory but should be recorded if known\n* encounter - a reference to an encounter where/when the immunization took place\n* location only Reference(FijiLocation)\n* site - to body location where the vaccine was administered (use FijiBodySiteVS valueset,r extend if required)\n* route - How vaccine entered body uses SNOMED codes where concept descendent-of #284009009\n* protocolApplied.doseNumber - should be recorded if multiple doses are required\n* protocolApplied.seriesDoses - should be recorded where multiple doses are recommended for full immunity\n* performer.actor - who administered the vaccine can be Fiji Practitioner, PractitionerRole or Organization\n* note - Extra information about the immunization that is not conveyed by the other attributes\n* reaction - Details of an adverse reaction that follows immunization \n  * reaction.date - mandatory if a reaction is recorded.  The date/time the adverse reaction started.\n  * reaction.detail  - mandatory if a reaction is recorded. This is a reference to an Observation that describes the adverse reaction.\n\n### Terminology  \n\nImmunization.vaccineCode.coding shall be populated by one of the codes from the Immunization ValueSet where such a code exists\nfor the vaccine.  Additional codes may be used where no matching code is present.\n\n### Alignment with Regional IGs  \n\nThe following specifications have been reviewed in development of this profile. \n-\tAustralian Clinical Data for Interoperability Release 2\n-\tNew Zealand Clinical Data for Interoperability 2026\n-\tAustralian AU Core Implementation Guide 2.0.0\n-\tWHO DAK Administer Vaccine Immunization Elements",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-fiji-address-village.html"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/fiji-address-village"
+      },
+      "name" : "Fiji KoroDina or Village",
+      "description" : "Village or KoroDina part of FijiAddress.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-fiji-laboratory-diagnostic-report.html"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/fiji-laboratory-diagnostic-report"
+      },
+      "name" : "Fiji Laboratory Diagnostic Report",
+      "description" : "## Fiji Pathology DiagnosticReport\n\nThe **Fiji Pathology DiagnosticReport** profile defines the representation of a pathology diagnostic report in the Fiji FHIR Implementation Guide. It is based on the FHIR `DiagnosticReport` resource and is intended to provide a structured representation of pathology investigations and their results.\n\nA pathology diagnostic report provides a summary of the investigation performed, identifies the patient and relevant specimens, records the clinicians or organisations responsible for the report, and links to the individual pathology observations that comprise the report.\n\nThe profile requires a report identifier, a pathology service category, a coded description of the investigation, the patient, the clinically relevant date/time, and at least one pathology result. Where applicable, the report can also reference the `ServiceRequest` that initiated the investigation and the `Specimen` used for testing.\n\n### Key Elements\n\n| Element | Cardinality | Description |\n|---|---:|---|\n| `identifier` | **1..*** | Business identifier(s) for the diagnostic report. At least one identifier is required to allow the report to be uniquely identified within the relevant pathology system. |\n| `basedOn` | 0..* | References the `ServiceRequest` that initiated or authorised the pathology investigation. References are constrained to `FijiServiceRequest`. |\n| `status` | **1..1** | Indicates the current status of the diagnostic report, such as preliminary, final, amended, or cancelled. |\n| `category` | **1..1** | Identifies the type of diagnostic service. This profile fixes the category to the laboratory value `LAB` from the diagnostic service category code system. |\n| `code` | **1..1** | Coded description of the pathology investigation or diagnostic service being reported. The code is bound to `ObsVS` with a preferred binding. |\n| `subject` | **1..1** | Identifies the patient who is the subject of the pathology investigation. References are constrained to `FijiPatient`. |\n| `effective[x]` | **1..1** | Records the clinically relevant date/time or period for the pathology investigation, such as the time the specimen was collected or the investigation was performed. |\n| `issued` | **1..1** | Date and time at which the diagnostic report was issued and made available. |\n| `performer` | 0..* | Identifies the practitioner, practitioner role, or organisation responsible for performing the pathology investigation. References are constrained to `FijiPractitioner`, `FijiPractitionerRole`, or `FijiOrganization`. |\n| `resultsInterpreter` | 0..* | Identifies the practitioner, practitioner role, or organisation responsible for interpreting or reviewing the pathology results. References are constrained to `FijiPractitioner`, `FijiPractitionerRole`, or `FijiOrganization`. |\n| `specimen` | 0..* | Identifies the specimen(s) on which the pathology investigation was performed. References are constrained to `FijiSpecimen`. |\n| `result` | **1..*** | References the individual pathology observations that make up the diagnostic report. References are constrained to `FijiPathologyObservation`. At least one result is required. |\n| `presentedForm` | **1..*** | Provides the complete report in an electronically presentable format, such as a PDF document. At least one presented form is required. |\n| `presentedForm.contentType` | **1..1** | Specifies the MIME type of the presented report, such as `application/pdf`. |\n| `presentedForm.data` | **1..1** | Contains the report content encoded as `base64Binary`. |\n| `presentedForm.language` | 0..1 | Identifies the language in which the presented report is written. The value is bound to the `$lang-vs` language ValueSet. |\n\n### Relationships to Other Resources\n\nThe profile establishes the following important relationships:\n\n- **ServiceRequest** — `basedOn` links the diagnostic report to the request that initiated the pathology investigation.\n- **Patient** — `subject` identifies the patient for whom the report was produced.\n- **Specimen** — `specimen` identifies the biological specimen(s) examined.\n- **Pathology Observation** — `result` links the report to the individual pathology results and measurements.\n- **Practitioner / PractitionerRole / Organization** — `performer` identifies the party responsible for performing the investigation, while `resultsInterpreter` identifies the party responsible for interpreting or reviewing the results.\n\n### Report Presentation\n\nThe `presentedForm` element is mandatory and is intended to support exchange of the complete human-readable pathology report in addition to the structured FHIR representation. The profile requires the content type and report data to be present. The language may also be specified using the language ValueSet defined for the Fiji Implementation Guide.\n\nThe structured `result` references should be used for individual pathology findings and values, while `presentedForm` provides the complete report as a document for presentation or archival purposes.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-fiji-medication-route-vs.html"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/fiji-medication-route-vs"
+      },
+      "name" : "Fiji Medication and Vaccine Route Value Set",
+      "description" : "Valueset for medication and vaccine route.\nUsed for Medications and Immunization.route\nValues are descendants from SNOMED CT Route of Administration concept.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-fiji-obs-interpretation-vs.html"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/fiji-obs-interpretation-vs"
+      },
+      "name" : "Fiji Observation Interpretation Value Set",
+      "description" : "Valueset for interpretations of Observations for Fiji.\nUsed for interpretaton element for Observations and derived profiles (eg. Vital signs)\nValues from  HL7 v3 Code System ObservationInterpretation with added values from WHO/Fiji usage.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "NamingSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "NamingSystem-FijiOrganizationIdentifier.html"
+      }],
+      "reference" : {
+        "reference" : "NamingSystem/FijiOrganizationIdentifier"
+      },
+      "name" : "Fiji Organization Identifier",
+      "description" : "NamingSystem for organization identifiers in Fiji, using a simulated national identifier system for demonstration purposes.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-fiji-pathology-observation.html"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/fiji-pathology-observation"
+      },
+      "name" : "Fiji Pathology Observation",
+      "description" : "## Scope\n\nThe **Fiji Pathology Observation** profile represents a laboratory or pathology result associated with a patient. It is based on the FHIR `Observation` resource and is intended to support the exchange of individual pathology results as well as groups of related results, such as lipid panels, full blood counts, and blood gas analyses.\n\nA pathology observation identifies the test performed, the patient, the timing of the observation, and the resulting value. It may also provide information about the specimen, performer, interpretation, reference range, and relationships to other pathology observations.\n\nThe profile supports two approaches for grouping related results:\n\n* **`hasMember`** — used to link a panel or other higher-level observation to independently represented member observations.\n* **`component`** — used when multiple values are intrinsically part of a single observation and are represented within the same resource.\n\n### Key Elements\n\n| Element                      | Cardinality | Must Support | Description                                                                                                                                                                                     |\n| ---------------------------- | ----------: | :----------: | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |\n| `status`                     |        1..1 |      Yes     | Indicates the status of the pathology result, such as preliminary, final, amended, or corrected.                                                                                                |\n| `category`                   |        1..* |      Yes     | Classifies the observation. For pathology results, the laboratory category should normally be used. Values are drawn from the observation category ValueSet.                                    |\n| `subject`                    |        1..1 |      Yes     | Identifies the patient to whom the pathology result relates. In this profile, the reference is restricted to `FijiPatient`.                                                                     |\n| `code`                       |        1..1 |      Yes     | Identifies the pathology test or observation being reported, such as haemoglobin, glucose, cholesterol, or arterial oxygen partial pressure. Values should preferably use the `ObsVS` ValueSet. |\n| `effective[x]`               |        1..1 |      Yes     | Records the clinically relevant time or period for the observation, such as the time a specimen was collected or the measurement was performed.                                                 |\n| `encounter`                  |        0..1 |      Yes     | Identifies the healthcare encounter associated with the observation.                                                                                                                            |\n| `performer`                  |        0..* |      Yes     | Identifies the person, practitioner, practitioner role, or organization responsible for the observation or result.                                                                              |\n| `value[x]`                   |        0..1 |      Yes     | Contains the actual pathology result, such as a quantity, coded concept, string, or other appropriate FHIR data type.                                                                           |\n| `dataAbsentReason`           |        0..1 |      Yes     | Provides a reason when an expected result value is not available.                                                                                                                               |\n| `interpretation`             |        0..* |      Yes     | Provides an interpretation of the result, such as high, low, normal, or abnormal.                                                                                                               |\n| `specimen`                   |        0..1 |      Yes     | Identifies the specimen from which the pathology result was obtained, such as serum, plasma, or arterial blood.                                                                                 |\n| `referenceRange`             |        0..* |      Yes     | Provides the reference range against which the result can be interpreted.                                                                                                                       |\n| `hasMember`                  |        0..* |      Yes     | Links the observation to other independently represented pathology observations. This is particularly useful for pathology panels. References are restricted to `FijiPathologyObservation`.     |\n| `component`                  |        0..* |      Yes     | Represents additional measurements that are part of the same observation.                                                                                                                       |\n| `component.code`             |        1..1 |      Yes     | Identifies the type of component observation. Values should preferably use the `ObsVS` ValueSet.                                                                                                |\n| `component.value[x]`         |        0..1 |      Yes     | Contains the value of the component observation.                                                                                                                                                |\n| `component.dataAbsentReason` |        0..1 |      Yes     | Provides a reason when a component result is not available.                                                                                                                                     |\n\n### Terminology\n\nThe following terminology bindings are defined by this profile:\n\n| Element            | ValueSet             | Binding Strength |\n| ------------------ | -------------------- | ---------------- |\n| `category`         | [ObservationCategoryCodes HL7](http://hl7.org/fhir/ValueSet/observation-category)      | Preferred        |\n| `code`             | [LOINC codes](http://loinc.org)         | Preferred        |\n| `dataAbsentReason` | [DataAbsentReason HL7](https://hl7.org/fhir/R4/valueset-data-absent-reason.html) | Extensible       |\n| `interpretation`   | [ObservationInterpretation HL7](https://hl7.org/fhir/R4/valueset-observation-interpretation.html)     | Extensible       |\n| `component.code`   | [LOINC codes](http://loinc.org)              | Preferred        |\n\nWhere an appropriate terminology exists, coded pathology observations should use internationally recognized terminology such as **LOINC** for laboratory tests and **SNOMED CT** where appropriate. Results expressed as quantities should use UCUM for units of measure.\n\n### Pathology Panels\n\nA pathology panel may be represented as a higher-level `FijiPathologyObservation` with `hasMember` references to the individual results.\n\nFor example, a lipid panel could be represented as:\n\n```text\nFijiPathologyObservation\n  code: Lipid panel\n  hasMember:\n    - Total cholesterol\n    - HDL cholesterol\n    - LDL cholesterol\n    - Triglycerides\n```\n\nEach member is itself a `FijiPathologyObservation` and can contain its own result, interpretation, reference range, and specimen.\n\nThis approach allows individual pathology results to be independently referenced and exchanged while retaining their relationship to the overall panel.\n\n### Components\n\n`component` should be used when multiple measurements form part of a **single observation** rather than being independently represented results.\n\nFor example, an observation representing a blood pressure measurement can contain systolic and diastolic blood pressure as components. In contrast, a laboratory panel such as a lipid panel is generally better represented using `hasMember`, with each analyte represented as a separate observation.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-fiji-patient.html"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/fiji-patient"
+      },
+      "name" : "Fiji Patient",
+      "description" : "Patient profile for Fiji jurisdiction.\n\nIntegrates:\n- FijiHumanName\n- Patient-level clan affiliation\n- Guidance for usual vs official name use",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Patient"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Patient-FijiPatientExample.html"
+      }],
+      "reference" : {
+        "reference" : "Patient/FijiPatientExample"
+      },
+      "name" : "Fiji Patient - iTaukei with Mataqali",
+      "description" : "Example Fijian patient of iTaukei background demonstrating:\n- Simulated national health identifier\n- Official and usual names\n- Mataqali clan affiliation",
+      "exampleCanonical" : "https://core.fhir.health.gov.fj/StructureDefinition/fiji-patient"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-fiji-patient-ethnicity.html"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/fiji-patient-ethnicity"
+      },
+      "name" : "Fiji Patient Ethnicity",
+      "description" : "Describes ethnicity of a Fiji Patient.  This is based on the structure of the NZ FHIR Base extension for \n[NZ Ethnicity](http://hl7.org.nz/fhir/StructureDefinition/nz-ethnicity)\nbut is separately defined so as to enable a national/regional valueset for ethnicity codes.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "NamingSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "NamingSystem-FijiPatientIdentifier.html"
+      }],
+      "reference" : {
+        "reference" : "NamingSystem/FijiPatientIdentifier"
+      },
+      "name" : "Fiji Patient Identifier",
+      "description" : "NamingSystem for patient identifiers in Fiji, using a simulated national identifier system for demonstration purposes.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-fiji-patient-occupation.html"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/fiji-patient-occupation"
+      },
+      "name" : "Fiji Patient Occupation",
+      "description" : "Describes occupation of a Fiji Patient.  This is based on the structure of the NZ FHIR Base extension for \n[ACC Patient Occupation](http://hl7.org.nz/fhir/StructureDefinition/acc-patient-occupation)\nbut is separately defined so as to enable a national/regional valueset for occupation codes.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Patient"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Patient-FijiPatientFijiIndo.html"
+      }],
+      "reference" : {
+        "reference" : "Patient/FijiPatientFijiIndo"
+      },
+      "name" : "Fiji Patient – Indo-Fijian",
+      "description" : "Example Indo-Fijian patient demonstrating:\n- Simulated national health identifier\n- Official and usual names\n- No clan affiliation",
+      "exampleCanonical" : "https://core.fhir.health.gov.fj/StructureDefinition/fiji-patient"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-fiji-practitioner.html"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/fiji-practitioner"
+      },
+      "name" : "Fiji Practitioner",
+      "description" : "Practitioner profile for Fiji jurisdictions supporting culturally appropriate naming \nwhile maintaining regulatory and medico-legal identity requirements.\n\nRequires at least one official name (registered/licensed name).\nSupports usual name for culturally recognised or commonly used name.\nSupports clan affiliation as an optional extension.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "NamingSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "NamingSystem-FijiPractitionerRegistration.html"
+      }],
+      "reference" : {
+        "reference" : "NamingSystem/FijiPractitionerRegistration"
+      },
+      "name" : "Fiji Practitioner Registration",
+      "description" : "NamingSystem for practitioner registration identifiers in Fiji, using a simulated national identifier system for demonstration purposes.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-fiji-practitioner-role.html"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/fiji-practitioner-role"
+      },
+      "name" : "Fiji Practitioner Role",
+      "description" : "Defines the functional, organisational, and regulatory role of a Fiji Practitioner.\n\nSupports multiple roles per practitioner (e.g., GP, hospital consultant, outreach clinician).\nIntended for use in Fiji regional health systems and future HIE environments.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "PractitionerRole"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "PractitionerRole-FijiPractitionerRoleExample.html"
+      }],
+      "reference" : {
+        "reference" : "PractitionerRole/FijiPractitionerRoleExample"
+      },
+      "name" : "Fiji Practitioner Role District Hospital GP",
+      "description" : "General Practitioner role at district hospital for registered Fiji practitioner.",
+      "exampleCanonical" : "https://core.fhir.health.gov.fj/StructureDefinition/fiji-practitioner-role"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-fiji-radiology-findings-vs.html"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/fiji-radiology-findings-vs"
+      },
+      "name" : "Fiji Radiology/Diagnostic Findings Value Set",
+      "description" : "Fiji radiology findings including SNOMED CT concepts filtered for radiology and imaging findings used within an IPS context.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "NamingSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "NamingSystem-FijiRISAccessionNumber.html"
+      }],
+      "reference" : {
+        "reference" : "NamingSystem/FijiRISAccessionNumber"
+      },
+      "name" : "Fiji RIS Accession Number",
+      "description" : "NamingSystem for RIS Accession number.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-fiji-specimen.html"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/fiji-specimen"
+      },
+      "name" : "Fiji Specimen",
+      "description" : "Profile of Specimen for use in Fiji health information systems.  This profile is a placeholder to be extended in subsequent versions of the Fiji Core IG.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-fiji-vital-body-weight-vs.html"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/fiji-vital-body-weight-vs"
+      },
+      "name" : "Fiji Vital Sign Body Weight ValueSet",
+      "description" : "Concepts representing options that provide further context for body weight coding. (eg.  Birth Weight...)\nNOTE: This is not currently used but may be used in future when a full valueset has been developed",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-fiji-vital-method-vs.html"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/fiji-vital-method-vs"
+      },
+      "name" : "Fiji Vital Sign Measurement Method ValueSet",
+      "description" : "SNOMED CT concepts representing methods used to obtain vital sign\nmeasurements, including body temperature, blood pressure, body height,\nbody weight, heart rate, oxygen saturation and respiratory rate.\nThis may be extended as required including with local codes used in historic data.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Patient"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Patient-FijiPatientExample1.html"
+      }],
+      "reference" : {
+        "reference" : "Patient/FijiPatientExample1"
+      },
+      "name" : "FijiPatientExample1",
+      "description" : "Example patient with official and usual names, clan affiliation, and demographic details.",
+      "exampleCanonical" : "https://core.fhir.health.gov.fj/StructureDefinition/fiji-patient"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Patient"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Patient-FijiPatientExample2.html"
+      }],
+      "reference" : {
+        "reference" : "Patient/FijiPatientExample2"
+      },
+      "name" : "FijiPatientExample2",
+      "description" : "Example patient with official and usual names, clan affiliation, and demographic details.",
+      "exampleCanonical" : "https://core.fhir.health.gov.fj/StructureDefinition/fiji-patient"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-fiji-vital-head-circumference.html"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/fiji-vital-head-circumference"
+      },
+      "name" : "Head circumference Vitals - Fiji",
+      "description" : "This profile defines the requirements and usage of an Observation resource recording Head Circumference.\nIt is based on the FHIR Head Circumference Profile and adapted as required for the Fiji Core Implementation Guide.\n\n### Mandatory elements  \nThe following elements must be recorded:\n* status - one of the following codes (registered | preliminary | final | amended +)\n* code.coding.system - must be http ://loinc.org \n* code.coding.code - must be 9843-4\n* category must have at miniumu one element conforming to following:\n  * category.coding.system - http://terminology.hl7.org/CodeSystem/observation-category\n  * category.coding.code - vital-signs\n* subject - a reference to a  Fiji Patient\n* effective[x] -  the date/time when the Body Height was measured using one of the values below\n  * effectiveDateTime  (recommended for use where possible)\n  * effectivePeriod - this is a time period with specific start/end over which the Body Height did not change\n* valueQuantity - the Body Height value measured as below (if there is no value, the dataAbsentReason must be populated with a relevant code)\n  * valueQuantity.value - One numeric value\n  * valueQuantity.system - \"http://unitsofmeasure.org\"\n  * valueQuantity.code - the UCUM unit code **'cm'**\n\n### Other elements defined\n* dataAbsentReason - reason why no value present for this vital sign (mandatory if no value)\n* encounter - a reference to an encounter where/when the Body Height measurement took place\t \n* interpretation - a coded concept providing interpretation for the value \n* note - any additional relevant information to be recorded",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-fiji-division-cs.html"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/fiji-division-cs"
+      },
+      "name" : "Health administrative division codes in Fiji",
+      "description" : "Health administrative division codes in Fiji",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-fiji-medical-area-cs.html"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/fiji-medical-area-cs"
+      },
+      "name" : "Health administrative medical area codes in Fiji",
+      "description" : "Health administrative medical area codes in Fiji",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-fiji-nursing-zone-cs.html"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/fiji-nursing-zone-cs"
+      },
+      "name" : "Health administrative nursing zone codes in Fiji",
+      "description" : "Health administrative nursing zone codes in Fiji",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-fiji-sub-division-cs.html"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/fiji-sub-division-cs"
+      },
+      "name" : "Health administrative sub-division codes in Fiji",
+      "description" : "Health administrative sub division codes in Fiji",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-heart-rate-loinc.html"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/heart-rate-loinc"
+      },
+      "name" : "Heart Rate LOINC Codes",
+      "description" : "LOINC codes for heart rate measurements, spot or average.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-fiji-vital-heart-rate.html"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/fiji-vital-heart-rate"
+      },
+      "name" : "Heart Rate Vitals - Fiji",
+      "description" : "This profile defines the requirements and usage of an Observation resource recording Heart Rate vital observations.\nIt is based on the FHIR Heart Rate Profile and adapted as required for the Fiji Core Implementation Guide.\n\n### Mandatory elements  \nThe following elements must be recorded:\n* status - one of the following codes (registered | preliminary | final | amended +)\n* code.coding.system - must be http ://loinc.org \n* code.coding.code - must be 8867-4\n* category must have at miniumu one element conforming to following:\n  * category.coding.system - http://terminology.hl7.org/CodeSystem/observation-category\n  * category.coding.code - vital-signs\n* subject - a reference to a  Fiji Patient\n* effective[x] -  the date/time when the Heart Rate was measured using one of the values below\n  * effectiveDateTime  (recommended for use where possible)\n* valueQuantity - the Heart Rate value measured as below (if there is no value, the dataAbsentReason must be populated with a relevant code)\n  * valueQuantity.value - One numeric value\n  * valueQuantity.system - \"http://unitsofmeasure.org\"\n  * valueQuantity.code - the UCUM unit code **'/min'**\n\n### Other elements defined\n* dataAbsentReason - reason why no value present for this vital sign (mandatory if no value)\n* encounter - a reference to an encounter where/when the Heart Rate measurement took place\t \n* bodySite - a SNOMED coded concept specifying the part of the body used in this measurement\n* method - a SNOMED coded concept from a valueset that describes procedures used for vitals measurement\n* bodyPosition (extension) - a SNOMED coded concept that desciribes the position of the body at time of measurement\n* interpretation - a coded concept providing interpretation for the value \n* note - any additional relevant information to be recorded",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Observation-HeartRateExample.html"
+      }],
+      "reference" : {
+        "reference" : "Observation/HeartRateExample"
+      },
+      "name" : "HeartRateExample",
+      "exampleCanonical" : "https://core.fhir.health.gov.fj/StructureDefinition/fiji-vital-heart-rate"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-fiji-vital-height.html"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/fiji-vital-height"
+      },
+      "name" : "Height Vitals - Fiji",
+      "description" : "This profile defines the requirements and usage of an Observation resource recording Body Height vital observations.\nIt is based on the FHIR Body Height Profile and adapted as required for the Fiji Core Implementation Guide.\n\n### Mandatory elements  \nThe following elements must be recorded:\n* status - one of the following codes (registered | preliminary | final | amended +)\n* code.coding.system - must be http ://loinc.org \n* code.coding.code - must be 8302-2\n* category must have at miniumu one element conforming to following:\n  * category.coding.system - http://terminology.hl7.org/CodeSystem/observation-category\n  * category.coding.code - vital-signs\n* subject - a reference to a  Fiji Patient\n* effective[x] -  the date/time when the Body Height was measured using one of the values below\n  * effectiveDateTime  (recommended for use where possible)\n  * effectivePeriod - this is a time period with specific start/end over which the Body Height did not change\n* valueQuantity - the Body Height value measured as below (if there is no value, the dataAbsentReason must be populated with a relevant code)\n  * valueQuantity.value - One numeric value\n  * valueQuantity.system - \"http://unitsofmeasure.org\"\n  * valueQuantity.code - the UCUM unit code **'cm'**\n\n### Other elements defined\n* dataAbsentReason - reason why no value present for this vital sign (mandatory if no value)\n* encounter - a reference to an encounter where/when the Body Height measurement took place\t \n* interpretation - a coded concept providing interpretation for the value \n* device - reference to the specific device used to measure\n* bodyPosition (extension) - a SNOMED coded concept that desciribes the position of the body at time of measurement\n* note - any additional relevant information to be recorded",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-immunization-status-reason.html"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/immunization-status-reason"
+      },
+      "name" : "Immunization Status Reason valueset for reason a vaccine was not administered",
+      "description" : "Status Reason codes for reason a vaccine was not administered. \nInitial codes used are ICD-11 codes from DAK.\nTODO: Converted and/or extend from vaccine specific exception codes from SNOMED CT codes or whatever code system chosen",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-imm-vs.html"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/imm-vs"
+      },
+      "name" : "Immunization ValueSet",
+      "description" : "Immunization valueset based on until Fiji-Pacific valueset is developed",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-fiji-address-island.html"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/fiji-address-island"
+      },
+      "name" : "Island",
+      "description" : "Island where the address is located.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "CodeSystem-fiji-obs-interpretation-cs.html"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/fiji-obs-interpretation-cs"
+      },
+      "name" : "Observation interpretation local codes in Fiji",
+      "description" : "Observation interpretation local codes in Fiji",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-obs-vs.html"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/obs-vs"
+      },
+      "name" : "Observation ValueSet",
+      "description" : "Use all LOINC codes as temporary observation valueset until Fiji-Pacific valueset is developed",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Observation-OxygenSaturationExample.html"
+      }],
+      "reference" : {
+        "reference" : "Observation/OxygenSaturationExample"
+      },
+      "name" : "Oxygen Saturation Observation",
+      "description" : "Oxygen saturation measured by pulse oximetry",
+      "exampleCanonical" : "https://core.fhir.health.gov.fj/StructureDefinition/fiji-vital-oxygen-saturation"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-fiji-vital-oxygen-saturation.html"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/fiji-vital-oxygen-saturation"
+      },
+      "name" : "Oxygen Saturation Vitals - Fiji",
+      "description" : "This profile defines the requirements and usage of an Observation resource recording Oxygen Saturation vital observations.\nIt is based on the FHIR Oxygen Saturation Profile and adapted as required for the Fiji Core Implementation Guide.\n\n### Mandatory elements  \nThe following elements must be recorded:\n* status - one of the following codes (registered | preliminary | final | amended +)\n* code.coding.system - must be http ://loinc.org \n* code.coding.code - must be 2708-6\n* category must have at miniumu one element conforming to following:\n  * category.coding.system - http://terminology.hl7.org/CodeSystem/observation-category\n  * category.coding.code - vital-signs\n* subject - a reference to a  Fiji Patient\n* effective[x] -  the date/time when the Oxygen Saturation was measured using one of the values below\n  * effectiveDateTime  (recommended for use where possible)\n* valueQuantity - the Oxygen Saturation value measured as below (if there is no value, the dataAbsentReason must be populated with a relevant code)\n  * valueQuantity.value - One numeric value\n  * valueQuantity.system - \"http://unitsofmeasure.org\"\n  * valueQuantity.code - the UCUM unit code **'%'**\n\n### Other elements defined\n* dataAbsentReason - reason why no value present for this vital sign (mandatory if no value)\n* encounter - a reference to an encounter where/when the Oxygen Saturation measurement took place\t \n* bodyPosition (extension) - a SNOMED coded concept that desciribes the position of the body at time of measurement\n* interpretation - a coded concept providing interpretation for the value \n* note - any additional relevant information to be recorded",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-fiji-vital-respiratory-rate.html"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/fiji-vital-respiratory-rate"
+      },
+      "name" : "Respiratory Rate Vitals - Fiji",
+      "description" : "This profile defines the requirements and usage of an Observation resource recording Respiratory Rate vital observations.\nIt is based on the FHIR Respiratory Rate Profile and adapted as required for the Fiji Core Implementation Guide.\n\n### Mandatory elements  \nThe following elements must be recorded:\n* status - one of the following codes (registered | preliminary | final | amended +)\n* code.coding.system - must be http ://loinc.org \n* code.coding.code - must be 9279-1\n* category must have at miniumu one element conforming to following:\n  * category.coding.system - http://terminology.hl7.org/CodeSystem/observation-category\n  * category.coding.code - vital-signs\n* subject - a reference to a  Fiji Patient\n* effective[x] -  the date/time when the Respiratory Rate was measured using one of the values below\n  * effectiveDateTime  (recommended for use where possible)\n* valueQuantity - the Respiratory Rate value measured as below (if there is no value, the dataAbsentReason must be populated with a relevant code)\n  * valueQuantity.value - One numeric value\n  * valueQuantity.system - \"http://unitsofmeasure.org\"\n  * valueQuantity.code - the UCUM unit code **'/min'**\n\n### Other elements defined\n* dataAbsentReason - reason why no value present for this vital sign (mandatory if no value)\n* encounter - a reference to an encounter where/when the Respiratory Rate measurement took place\t \n* method - a SNOMED coded concept from a valueset that describes procedures used for vitals measurement\n* bodyPosition (extension) - a SNOMED coded concept that desciribes the position of the body at time of measurement\n* interpretation - a coded concept providing interpretation for the value \n* note - any additional relevant information to be recorded",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Observation-RespiratoryRateExample.html"
+      }],
+      "reference" : {
+        "reference" : "Observation/RespiratoryRateExample"
+      },
+      "name" : "RespiratoryRateExample",
+      "exampleCanonical" : "https://core.fhir.health.gov.fj/StructureDefinition/fiji-vital-respiratory-rate"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-fiji-service-type-vs.html"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/fiji-service-type-vs"
+      },
+      "name" : "Service Type code valueset",
+      "description" : "Service Type valueset for Fiji Core. \nProposed valueset is taken from SNOMED Services codes.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Immunization"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Immunization-FijiTdapImmunizationExample.html"
+      }],
+      "reference" : {
+        "reference" : "Immunization/FijiTdapImmunizationExample"
+      },
+      "name" : "Tdap Immunization",
+      "description" : "This is an example of a vaccination conforming to the Fiji Immunization profile.  \nSelect the JSON tab to view the JSON code that would represent this as a FHIR resource.",
+      "exampleCanonical" : "https://core.fhir.health.gov.fj/StructureDefinition/fiji-immunization"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Immunization"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Immunization-FijiImmunizationReactionExample.html"
+      }],
+      "reference" : {
+        "reference" : "Immunization/FijiImmunizationReactionExample"
+      },
+      "name" : "Tdap Immunization with Reaction",
+      "exampleCanonical" : "https://core.fhir.health.gov.fj/StructureDefinition/fiji-immunization"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Observation-FijiTdapReactionObservation.html"
+      }],
+      "reference" : {
+        "reference" : "Observation/FijiTdapReactionObservation"
+      },
+      "name" : "Tdap Injection Site Reaction",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-fiji-division-vs.html"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/fiji-division-vs"
+      },
+      "name" : "Valueset of Fiji Health Administration Divisions",
+      "description" : "A valueset containing Fiji Health Administration Divisions",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-fiji-medical-area-vs.html"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/fiji-medical-area-vs"
+      },
+      "name" : "Valueset of Fiji Health Administration medical areas",
+      "description" : "A valueset containing Fiji Health Administration  medical areas",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-fiji-nursing-zone-vs.html"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/fiji-nursing-zone-vs"
+      },
+      "name" : "Valueset of Fiji Health Administration nursing zones",
+      "description" : "A valueset containing Fiji Health Administration  nursing zones",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ValueSet-fiji-sub-division-vs.html"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/fiji-sub-division-vs"
+      },
+      "name" : "Valueset of Fiji Health Administration Sub-divisions",
+      "description" : "A valueset containing Fiji Health Administration sub-divisions",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "StructureDefinition-fiji-vital-weight.html"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/fiji-vital-weight"
+      },
+      "name" : "Weight Vitals - Fiji",
+      "description" : "This profile defines the requirements and usage of an Observation resource recording Body Weight vital observations.\nIt is based on the FHIR Body Weight Profile and adapted as required for the Fiji Core Implementation Guide.\n\n### Mandatory elements  \nThe following elements must be recorded:\n* status - one of the following codes (registered | preliminary | final | amended +)\n* code.coding.system - must be http ://loinc.org \n* code.coding.code - must be 29463-7\n* category must have at miniumu one element conforming to following:\n  * category.coding.system - http://terminology.hl7.org/CodeSystem/observation-category\n  * category.coding.code - vital-signs\n* subject - a reference to a  Fiji Patient\n* effective[x] -  the date/time when the Body Weight was measured using one of the values below\n  * effectiveDateTime  (recommended for use where possible)\n  * effectivePeriod - this is a time period with specific start/end over which the Body Weight did not change\n* valueQuantity - the Body Weight value measured as below (if there is no value, the dataAbsentReason must be populated with a relevant code)\n  * valueQuantity.value - One numeric value\n  * valueQuantity.system - \"http://unitsofmeasure.org\"\n  * valueQuantity.code - the UCUM unit code **'kg'**\n\n### Other elements defined\n* dataAbsentReason - reason why no value present for this vital sign (mandatory if no value)\n* encounter - a reference to an encounter where/when the Body Weight measurement took place\t \n* interpretation - a coded concept providing interpretation for the value \n* device - reference to the specific device used to measure\n* note - any additional relevant information to be recorded",
+      "exampleBoolean" : false
+    }],
+    "page" : {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+        "valueUrl" : "toc.html"
+      }],
+      "nameUrl" : "toc.html",
+      "title" : "Table of Contents",
+      "generation" : "html",
+      "page" : [{
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+          "valueUrl" : "index.html"
+        }],
+        "nameUrl" : "index.html",
+        "title" : "Fiji Core Implementation Guide",
+        "generation" : "markdown"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+          "valueUrl" : "gettingstarted.html"
+        }],
+        "nameUrl" : "gettingstarted.html",
+        "title" : "Contributing to the Fiji Core IG",
+        "generation" : "markdown"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+          "valueUrl" : "datatypes.html"
+        }],
+        "nameUrl" : "datatypes.html",
+        "title" : "Data Type Profiles",
+        "generation" : "markdown"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+          "valueUrl" : "resources.html"
+        }],
+        "nameUrl" : "resources.html",
+        "title" : "Resource Profiles",
+        "generation" : "markdown"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+          "valueUrl" : "terminology.html"
+        }],
+        "nameUrl" : "terminology.html",
+        "title" : "Terminology",
+        "generation" : "markdown"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+          "valueUrl" : "extensions.html"
+        }],
+        "nameUrl" : "extensions.html",
+        "title" : "Extensions",
+        "generation" : "markdown"
+      }]
+    },
+    "parameter" : [{
+      "code" : "path-resource",
+      "value" : "input/capabilities"
+    },
+    {
+      "code" : "path-resource",
+      "value" : "input/examples"
+    },
+    {
+      "code" : "path-resource",
+      "value" : "input/extensions"
+    },
+    {
+      "code" : "path-resource",
+      "value" : "input/models"
+    },
+    {
+      "code" : "path-resource",
+      "value" : "input/operations"
+    },
+    {
+      "code" : "path-resource",
+      "value" : "input/profiles"
+    },
+    {
+      "code" : "path-resource",
+      "value" : "input/resources"
+    },
+    {
+      "code" : "path-resource",
+      "value" : "input/vocabulary"
+    },
+    {
+      "code" : "path-resource",
+      "value" : "input/maps"
+    },
+    {
+      "code" : "path-resource",
+      "value" : "input/testing"
+    },
+    {
+      "code" : "path-resource",
+      "value" : "input/history"
+    },
+    {
+      "code" : "path-resource",
+      "value" : "fsh-generated/resources"
+    },
+    {
+      "code" : "path-pages",
+      "value" : "template/config"
+    },
+    {
+      "code" : "path-pages",
+      "value" : "input/assets"
+    },
+    {
+      "code" : "path-pages",
+      "value" : "input/images"
+    },
+    {
+      "code" : "path-tx-cache",
+      "value" : "input-cache/txcache"
+    }]
+  }
+}
+
+```

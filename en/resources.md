@@ -1,0 +1,50 @@
+# Resource Profiles - Draft Fiji Core Implementation Guide v0.2.1
+
+## Resource Profiles
+
+### Resource Profiles
+
+This page describes constraints and usage of FHIR Resource profiles used in this Implementation Guide.
+
+* [FijiPatient](StructureDefinition-fiji-patient.md)
+* [FijiPractitioner](StructureDefinition-fiji-practitioner.md)
+* [FijiPractitionerRole](StructureDefinition-fiji-practitioner-role.md)
+* [FijiOrganization](StructureDefinition-fiji-organization.md)
+* [FijiEncounter](StructureDefinition-fiji-encounter.md)
+
+#### Clinical Profiles
+
+For allergies and intolerances:
+
+* [FijiAllergyIntolerance](StructureDefinition-fiji-allergy-intolerance.md)
+
+For diagnoses and problem list items:
+
+* [FijiCondition](StructureDefinition-fiji-condition.md)
+
+For Immunizations:
+
+* [FijiImmunization](StructureDefinition-fiji-immunization.md)
+
+For lab/pathology observations and diagnostic reports:
+
+* [FijiPathologyObservation](StructureDefinition-fiji-pathology-observation.md)
+* [FijiPathologyReport](StructureDefinition-fiji-laboratory-diagnostic-report.md)
+
+For imaging observations and diagnostic reports:
+
+* [FijiDiagnosticObservation](StructureDefinition-fiji-diagnostic-observation.md)
+* [FijiImagingDiagnosticReport](StructureDefinition-fiji-imaging-diagnostic-report.md)
+
+For vital signs:
+
+* [FijiBloodPressure](StructureDefinition-fiji-vital-blood-pressure.md)
+* [FijiBMI](StructureDefinition-fiji-vital-bmi.md)
+* [FijiBodyTemperature](StructureDefinition-fiji-vital-body-temperature.md)
+* [FijiHeartRate](StructureDefinition-fiji-vital-heart-rate.md)
+* [FijiHeight](StructureDefinition-fiji-vital-height.md)
+* [FijiHeadCircumference](StructureDefinition-fiji-vital-head-circumference.md)
+* [FijiOxygenSaturation](StructureDefinition-fiji-vital-oxygen-saturation.md)
+* [FijiRespiratoryRate](StructureDefinition-fiji-vital-respiratory-rate.md)
+* [FijiWeight](StructureDefinition-fiji-vital-weight.md)
+

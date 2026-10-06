@@ -1,0 +1,50 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "fiji-encounter-reason-vs",
+  "language" : "en",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet fiji-encounter-reason-vs</b></p><a name=\"fiji-encounter-reason-vs\"> </a><a name=\"hcfiji-encounter-reason-vs\"> </a><ul><li>Include codes from<a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a><span title=\"Version is not explicitly stated. No matching Code System found\"> version Not Stated (use latest from terminology server)</span> where expression  = ^ 32570581000036105|Problem/Diagnosis reference set| OR ^ 32570141000036105|Procedure foundation reference set|</li></ul></div>"
+  },
+  "url" : "https://core.fhir.health.gov.fj/ValueSet/fiji-encounter-reason-vs",
+  "version" : "0.2.1",
+  "name" : "FijiEncounterReasonVS",
+  "title" : "Encounter reason code valueset",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2026-10-06T07:16:04+00:00",
+  "publisher" : "MHMS Fiji",
+  "contact" : [{
+    "name" : "MHMS Fiji",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://fhir.health.gov.fj"
+    }]
+  },
+  {
+    "name" : "Support",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.fhir.health.gov.fj"
+    }]
+  }],
+  "description" : "Encounter reason valueset for Fiji Core. \nProposed valueset is taken from SNOMED Problem/Diagnosis and Procedure refsets.",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "FJ",
+      "display" : "Fiji"
+    }]
+  }],
+  "copyright" : "Distributed under the Creative Commons CC0-1.0 License (https://creativecommons.org/publicdomain/zero/1.0/)",
+  "compose" : {
+    "include" : [{
+      "system" : "http://snomed.info/sct",
+      "filter" : [{
+        "property" : "expression",
+        "op" : "=",
+        "value" : "^ 32570581000036105|Problem/Diagnosis reference set| OR ^ 32570141000036105|Procedure foundation reference set|"
+      }]
+    }]
+  }
+}

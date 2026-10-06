@@ -1,0 +1,41 @@
+{
+  "resourceType" : "ServiceRequest",
+  "id" : "sr-ct-head-001",
+  "meta" : {
+    "profile" : ["https://core.fhir.health.gov.fj/StructureDefinition/fiji-service-request"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ServiceRequest sr-ct-head-001</b></p><a name=\"sr-ct-head-001\"> </a><a name=\"hcsr-ct-head-001\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-fiji-service-request.html\">Fiji Healthcare Service Request</a></p></div><p><b>identifier</b>: sr-ct-head-001</p><p><b>status</b>: Completed</p><p><b>intent</b>: Order</p><p><b>priority</b>: Routine</p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 77477000}\">Computerized axial tomography of head</span></p><p><b>subject</b>: <a href=\"Patient-FijiPatientExample.html\">Jone Nabou Male, DoB: 1992-04-17 ( http://fhir.health.gov.fj/identifier/nhi#FJ-NHI-982345671)</a></p><p><b>encounter</b>: <a href=\"Encounter-FijiEncounterExample.html\">Encounter: identifier = https://fhir.health.gov.fj/encounter#ENC-2026-000123; status = finished; class = ambulatory (ActCode#AMB); type = Patient encounter procedure; period = 2026-09-09 09:00:00+1000 --&gt; 2026-09-09 09:30:00+1000; reasonCode = Fever</a></p><p><b>authoredOn</b>: 2026-10-05 09:15:00+1200</p><p><b>requester</b>: <a href=\"Practitioner/FijiPractitionerExample\">Practitioner/FijiPractitionerExample</a></p><p><b>reasonCode</b>: <span title=\"Codes:{http://snomed.info/sct 25064002}\">Headache</span></p></div>"
+  },
+  "identifier" : [{
+    "value" : "sr-ct-head-001"
+  }],
+  "status" : "completed",
+  "intent" : "order",
+  "priority" : "routine",
+  "code" : {
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "77477000",
+      "display" : "Computerized axial tomography of head"
+    }]
+  },
+  "subject" : {
+    "reference" : "Patient/FijiPatientExample"
+  },
+  "encounter" : {
+    "reference" : "Encounter/FijiEncounterExample"
+  },
+  "authoredOn" : "2026-10-05T09:15:00+12:00",
+  "requester" : {
+    "reference" : "Practitioner/FijiPractitionerExample"
+  },
+  "reasonCode" : [{
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "25064002",
+      "display" : "Headache"
+    }]
+  }]
+}
