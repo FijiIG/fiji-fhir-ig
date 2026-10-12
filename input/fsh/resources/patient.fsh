@@ -32,15 +32,13 @@ Integrates:
 // Health Administration Zone Extension
 // -----------------------------
 
-* extension contains FijiAdminZone named healthZone 0..1
+* extension contains FijiAdminZone named adminZone 0..1
 
 // -----------------------------
-// Clan Extension Integration
+// iTaukei Extension Integration
 // -----------------------------
 
-// * extension contains FijiClanAffiliation named clanAffiliation 0..*
-// * extension[clanAffiliation] MS
-
+* extension contains FijiITaukeiAffiliation named iTaukei 0..1
 
 // -----------------------------
 // Nationality Extension

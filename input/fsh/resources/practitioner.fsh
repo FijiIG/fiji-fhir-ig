@@ -55,7 +55,7 @@ Supports clan affiliation as an optional extension.
 // CLAN AFFILIATION (OPTIONAL)
 ///////////////////////////////////////////////////////////////
 
-* extension contains FijiClanAffiliation named clanAffiliation 0..*
+* extension contains FijiITaukeiAffiliation named iTaukei 0..1
 
 ///////////////////////////////////////////////////////////////
 // TELECOM

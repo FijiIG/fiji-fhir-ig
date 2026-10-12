@@ -11,15 +11,15 @@ Description: "The health administration zoning for the patient represented as Di
     settlement 0..1
 
 * extension[division].value[x] only CodeableConcept
-* extension[division].valueCodeableConcept from FijiDivisionVS
+* extension[division].valueCodeableConcept from FijiDivisionVS (extensible)
 
 * extension[subDivision].value[x] only CodeableConcept
-* extension[subDivision].valueCodeableConcept from FijiSubDivisionVS
+* extension[subDivision].valueCodeableConcept from FijiSubDivisionVS (extensible)
 
 * extension[medicalArea].value[x] only CodeableConcept
-* extension[medicalArea].valueCodeableConcept from FijiDivisionVS
+* extension[medicalArea].valueCodeableConcept from FijiMedicalAreaVS (extensible)
 
 * extension[nursingZone].value[x] only CodeableConcept
-* extension[nursingZone].valueCodeableConcept from FijiDivisionVS
+* extension[nursingZone].valueCodeableConcept from FijiNursingZoneVS (extensible)
 
 * extension[settlement].value[x] only string
