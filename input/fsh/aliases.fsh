@@ -63,6 +63,10 @@ Alias: $enc_reason-vs = http://hl7.org/fhir/ValueSet/encounter-reason
 Alias: $lang-vs = https://hl7.org/fhir/R4/valueset-languages
 Alias: $enc-class-vs = http://terminology.hl7.org/ValueSet/v3-ActEncounterCode
 Alias: $participant-type-vs = http://hl7.org/fhir/ValueSet/encounter-participant-type
+Alias: $proc-cat-vs = http://hl7.org/fhir/ValueSet/procedure-category
+Alias: $proc-code-ips-vs = http://hl7.org/fhir/uv/ips/ValueSet/procedures-uv-ips
+Alias: $proc-reason-vs = http://hl7.org/fhir/ValueSet/procedure-reason
+Alias: $proc-outcome-vs = http://hl7.org/fhir/ValueSet/procedure-outcome
 
 // ---------- STRUCTURE DEFINITION ALIASES ---------------------------
 // Base FHIR Structure Definitions
