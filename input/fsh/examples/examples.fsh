@@ -8,6 +8,10 @@ Example patient with official and usual names, clan affiliation, and demographic
 * identifier[0].system = "http://health.example.org/fhir/identifier"
 * identifier[0].value = "123456789"
 
+* identifier[nationalHealthNumber].system = "http://fhir.health.gov.fj/identifier/national-health-number"
+* identifier[nationalHealthNumber].use = #official
+* identifier[nationalHealthNumber].value = "11122333"
+
 * name[0].use = #official
 * name[0].given[0] = "Michael"
 * name[0].given[1] = "Taviri"
@@ -30,6 +34,10 @@ Description: """Example patient with official and usual names, clan affiliation,
 
 * identifier[0].system = "http://health.example.org/fhir/identifier"
 * identifier[0].value = "987654321"
+* identifier[nationalHealthNumber].system = "http://fhir.health.gov.fj/identifier/national-health-number"
+* identifier[nationalHealthNumber].use = #official
+* identifier[nationalHealthNumber].value = "22333444"
+
 
 * name[0].use = #official
 * name[0].given[0] = "Tevita"
@@ -62,8 +70,8 @@ Example Fijian patient of iTaukei background demonstrating:
 // NATIONAL HEALTH IDENTIFIER
 ///////////////////////////////////////////////////////////////
 
-* identifier[0].system = "http://fhir.health.gov.fj/identifier/nhi"
-* identifier[0].value = "FJ-NHI-982345671"
+* identifier[nationalHealthNumber].system = "http://fhir.health.gov.fj/identifier/national-health-number"
+* identifier[nationalHealthNumber].value = "FJ-NHI-982345671"
 
 ///////////////////////////////////////////////////////////////
 // NAME
@@ -78,10 +86,14 @@ Example Fijian patient of iTaukei background demonstrating:
 * name[1].text = "Jone Nabou"
 
 ///////////////////////////////////////////////////////////////
-// CLAN (MATAQALI)
+// iTaukei
 ///////////////////////////////////////////////////////////////
-
-// * extension[clanAffiliation].valueCodeableConcept.text = "Mataqali Vunisei"
+* extension[iTaukei].extension[yasana].valueCodeableConcept.text = $yasana-cs#bua "Bua"
+* extension[iTaukei].extension[tikina].valueCodeableConcept.text = $tikina-cs#dama "Dama"
+* extension[iTaukei].extension[korodina].valueCodeableConcept.text = $korodina-cs#nagadoa "NagaDoa"
+* extension[iTaukei].extension[yavusa].valueCodeableConcept.text = $yavusa-cs#kai-narocake "KAI NAROCAKE"
+* extension[iTaukei].extension[mataqali].valueCodeableConcept.text = $mataqali-cs#tova-natokalau "TOVA(NATOKALAU)"
+* extension[iTaukei].extension[tokatoka].valueCodeableConcept.text = $tokatoka-cs#tk-bureta "TK:402,403 BURETA"
 
 ///////////////////////////////////////////////////////////////
 // DEMOGRAPHICS
@@ -112,8 +124,8 @@ Example Indo-Fijian patient demonstrating:
 // NATIONAL HEALTH IDENTIFIER
 ///////////////////////////////////////////////////////////////
 
-* identifier[0].system = "http://fhir.health.gov.fj/identifier/nhi"
-* identifier[0].value = "FJ-NHI-771245903"
+* identifier[nationalHealthNumber].system = "http://fhir.health.gov.fj/identifier/national-health-number"
+* identifier[nationalHealthNumber].value = "FJ-NHI-771245903"
 
 ///////////////////////////////////////////////////////////////
 // NAME

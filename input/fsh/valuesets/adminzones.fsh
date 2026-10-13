@@ -3,15 +3,19 @@ Id: fiji-division-cs
 Title: "Health administrative division codes in Fiji"
 Description: "Health administrative division codes in Fiji"
 
+* ^url = "https://fhir.health.gov.fj/CodeSystem/fiji-division"
+
 * #central "Central" "Central division covers capital regions and surrounding provinces"
 * #eastern "Eastern" "Eastern division Covers outer islands and remote areas like Levuka and Rotuma"
 * #western "Western" "Western division covers western side of Viti Levu and nearby islands"
 * #northern "Northern" "Northern division Covers Vanua Levu and Taveuni"
 
 CodeSystem: FijiSubDivisionCS
-Id: fiji-sub-division-cs
+Id: fiji-subdivision-cs
 Title: "Health administrative sub-division codes in Fiji"
 Description: "Health administrative sub division codes in Fiji"
+
+* ^url = "https://fhir.health.gov.fj/CodeSystem/fiji-subdivision"
 
 * #rewa  "Rewa" "Rewa sub-division"
 * #naitasiri  "Naitasiri" "Naitasiri sub-division"
@@ -35,16 +39,18 @@ Description: "Health administrative sub division codes in Fiji"
 
 
 CodeSystem: FijiMedicalAreaCS
-Id: fiji-medical-area-cs
+Id: fiji-medicalarea-cs
 Title: "Health administrative medical area codes in Fiji"
 Description: "Health administrative medical area codes in Fiji"
+* ^url = "https://fhir.health.gov.fj/CodeSystem/fiji-medicalarea"
 
 * #area1 "Area1" "Medical area 1 (example only need to populate this code system)"
 
 CodeSystem: FijiNursingZoneCS
-Id: fiji-nursing-zone-cs
+Id: fiji-nursingzone-cs
 Title: "Health administrative nursing zone codes in Fiji"
 Description: "Health administrative nursing zone codes in Fiji"
+* ^url = "https://fhir.health.gov.fj/CodeSystem/fiji-nursingzone"
 
 * #zone1 "Zone1" "Nursing zone 1 (example only need to populate this code system)"
 

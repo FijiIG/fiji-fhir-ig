@@ -11,7 +11,6 @@ Integrates:
 - Guidance for usual vs official name use
 """
 
-* ^status = #active
 
 ///////////////////////////////////////////////////////////////
 // IDENTIFIERS
@@ -20,6 +19,20 @@ Integrates:
 * identifier 1..*
 * identifier ^short = "Identifers (e.g., national ID, medical record number)"
 * identifier ^definition = "Strongly recommended to includes national identification numbers as well as other medical record numbers."
+* identifier.system 1..1 MS
+* identifier.value 1..1 MS
+
+// Slice identifiers by their system URI
+* identifier ^slicing.discriminator.type = #value
+* identifier ^slicing.discriminator.path = "system"
+* identifier ^slicing.rules = #open
+* identifier ^slicing.ordered = false
+
+// Mandatory national health number
+* identifier contains nationalHealthNumber 1..1 MS
+* identifier[nationalHealthNumber].system 1..1
+* identifier[nationalHealthNumber].system = "http://fhir.health.gov.fj/identifier/national-health-number" (exactly)
+* identifier[nationalHealthNumber].value 1..1
 
 // -----------------------------
 // Name Requirements

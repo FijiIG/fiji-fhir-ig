@@ -1,11 +1,8 @@
-// yavusa 0..1 and
-// mataqali 0..1 and
-// tokatoka 0..1
-
 CodeSystem: FijiYasanaCS
-Id: fiji-yasana-cs
+Id: fiji-yasana
 Title: "Yasana (province) largest administrative division codes in Fiji iTaukei society"
 Description: "Yasana (province) largest administrative division codes in Fiji iTaukei society"
+* ^url = "https://fhir.health.gov.fj/CodeSystem/fiji-yasana"
 
 * #ba "Ba" "Ba"
 * #nadroga-navosa "" ""
@@ -140,8 +137,6 @@ adopted by the Fiji Implementation Guide.
 * ^url = "https://fhir.health.gov.fj/CodeSystem/fiji-korodina"
 * ^status = #active
 * ^experimental = false
-* ^caseSensitive = true
-* ^content = #complete
 
 // Populate with verified korodina codes.
 // Example syntax:

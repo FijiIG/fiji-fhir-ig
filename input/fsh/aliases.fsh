@@ -101,6 +101,21 @@ Alias: $bodyposition = http://hl7.org/fhir/StructureDefinition/observation-bodyP
 Alias: $allerg-assertdate = http://hl7.org/fhir/StructureDefinition/allergyintolerance-assertedDate
 Alias: $cond-assertdate = http://hl7.org/fhir/StructureDefinition/condition-assertedDate
 
+// Fiji Extension Definitions & System codes
+Alias: $yasana-cs = https://core.fhir.health.gov.fj/CodeSystem/fiji-yasana
+Alias: $tikina-cs = https://core.fhir.health.gov.fj/CodeSystem/fiji-tikina
+Alias: $korodina-cs = https://core.fhir.health.gov.fj/CodeSystem/fiji-korodina
+Alias: $yavusa-cs = https://core.fhir.health.gov.fj/CodeSystem/fiji-yavusa
+Alias: $mataqali-cs = https://core.fhir.health.gov.fj/CodeSystem/fiji-mataqali
+Alias: $tokatoka-cs = https://core.fhir.health.gov.fj/CodeSystem/fiji-tokatoka
+
+Alias: $division-cs = https://core.fhir.health.gov.fj/CodeSystem/fiji-division
+Alias: $subdivision-cs = https://core.fhir.health.gov.fj/CodeSystem/fiji-subdivision
+Alias: $medicalarea-cs = https://core.fhir.health.gov.fj/CodeSystem/fiji-medicalarea
+Alias: $nursingzone-cs = https://core.fhir.health.gov.fj/CodeSystem/fiji-nursingzone
+
+
+
 // FHIR profiles for common scenarios
 Alias: $obs-bmi = http://hl7.org/fhir/StructureDefinition/bmi
 Alias: $obs-bodyheight = http://hl7.org/fhir/StructureDefinition/bodyheight
