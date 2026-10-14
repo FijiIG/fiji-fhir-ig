@@ -3,8 +3,7 @@
 This page describes constraints and usage of FHIR Resource profiles used in this Implementation Guide.
 
 * [FijiPatient](StructureDefinition-fiji-patient.html)  
-* [FijiPractitioner](StructureDefinition-fiji-practitioner.html)  
-* [FijiPractitionerRole](StructureDefinition-fiji-practitioner-role.html)  
+* [FijiPractitioner](StructureDefinition-fiji-practitioner.html)   
 * [FijiOrganization](StructureDefinition-fiji-organization.html)  
 * [FijiEncounter](StructureDefinition-fiji-encounter.html)  
 
@@ -15,6 +14,9 @@ For allergies and intolerances:
 
 For diagnoses and problem list items:
 * [FijiCondition](StructureDefinition-fiji-condition.html)  
+
+For interventions/procedures:
+* [FijiProcedure](StructureDefinition-fiji-procedure.html)
 
 For Immunizations:
 * [FijiImmunization](StructureDefinition-fiji-immunization.html)
