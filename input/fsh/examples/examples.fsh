@@ -58,12 +58,12 @@ Description: """Example patient with official and usual names, clan affiliation,
 Instance: FijiPatientExample
 InstanceOf: FijiPatient
 Usage: #example
-Title: "Fiji Patient - iTaukei with Mataqali"
+Title: "Fiji Patient - iTaukei"
 Description: """
 Example Fijian patient of iTaukei background demonstrating:
 - Simulated national health identifier
 - Official and usual names
-- Mataqali clan affiliation
+- iTaukei affiliation
 """
 
 ///////////////////////////////////////////////////////////////
@@ -88,12 +88,12 @@ Example Fijian patient of iTaukei background demonstrating:
 ///////////////////////////////////////////////////////////////
 // iTaukei
 ///////////////////////////////////////////////////////////////
-* extension[iTaukei].extension[yasana].valueCodeableConcept.text = $yasana-cs#bua "Bua"
-* extension[iTaukei].extension[tikina].valueCodeableConcept.text = $tikina-cs#dama "Dama"
-* extension[iTaukei].extension[korodina].valueCodeableConcept.text = $korodina-cs#nagadoa "NagaDoa"
-* extension[iTaukei].extension[yavusa].valueCodeableConcept.text = $yavusa-cs#kai-narocake "KAI NAROCAKE"
-* extension[iTaukei].extension[mataqali].valueCodeableConcept.text = $mataqali-cs#tova-natokalau "TOVA(NATOKALAU)"
-* extension[iTaukei].extension[tokatoka].valueCodeableConcept.text = $tokatoka-cs#tk-bureta "TK:402,403 BURETA"
+* extension[iTaukei].extension[yasana].valueCodeableConcept = $yasana-cs#bua "Bua"
+* extension[iTaukei].extension[tikina].valueCodeableConcept = $tikina-cs#dama "Dama"
+* extension[iTaukei].extension[korodina].valueCodeableConcept = $korodina-cs#nagadoa "NagaDoa"
+* extension[iTaukei].extension[yavusa].valueCodeableConcept = $yavusa-cs#kai-narocake "KAI NAROCAKE"
+* extension[iTaukei].extension[mataqali].valueCodeableConcept = $mataqali-cs#tova-natokalau "TOVA(NATOKALAU)"
+* extension[iTaukei].extension[tokatoka].valueCodeableConcept = $tokatoka-cs#tk-bureta "TK:402,403 BURETA"
 
 ///////////////////////////////////////////////////////////////
 // DEMOGRAPHICS
