@@ -11,7 +11,7 @@ Description: "NamingSystem for RIS Accession number."
 * responsible = "Ministry of Health and Medical Services, Fiji"
 // Recommended system code for RIS Accession Numbering
 * uniqueId[0].type = #uri
-* uniqueId[0].value = "http://fhir.health.gov.fj/NamingSystem/ris-accession-number"
+* uniqueId[0].value = "http://fhir.health.gov.fj/identifier/ris-accession-number"
 * uniqueId[0].preferred = true
 // Legacy system code for RIS Accession Numbering
 * uniqueId[1].type = #uri

@@ -36,7 +36,7 @@ Usage: #example
 
 * id = "dr-ct-head-001"
 
-* identifier[risAccession].system = "http://fhir.health.gov.fj/NamingSystem/ris-accession-number"
+* identifier[risAccession].system = "http://fhir.health.gov.fj/identifier/ris-accession-number"
 * identifier[risAccession].value = "RIS-2026-001847"
 
 * basedOn = Reference(FijiImagingServiceRequestExample)

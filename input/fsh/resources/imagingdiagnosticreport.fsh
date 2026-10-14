@@ -63,7 +63,7 @@ The `language` element may be populated to identify the language used in the pre
 * identifier ^slicing.rules = #open
 * identifier contains risAccession 1..1 MS
 * identifier[risAccession].system 1..1 MS
-* identifier[risAccession].system = "http://fhir.health.gov.fj/NamingSystem/ris-accession-number"
+* identifier[risAccession].system = "http://fhir.health.gov.fj/identifier/ris-accession-number"
 * identifier[risAccession].value 1..1 MS
 
 * basedOn 0..* MS
