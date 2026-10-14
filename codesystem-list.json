@@ -1,0 +1,90 @@
+{
+  "codeSystems" : [{
+    "url" : "https://core.fhir.health.gov.fj/CodeSystem/fiji-obs-interpretation-cs",
+    "version" : "0.2.2",
+    "status" : "draft",
+    "name" : "FijiObsInterpretationCS",
+    "title" : "Observation interpretation local codes in Fiji",
+    "description" : "Observation interpretation local codes in Fiji"
+  },
+  {
+    "url" : "https://fhir.health.gov.fj/CodeSystem/fiji-division",
+    "version" : "0.2.2",
+    "status" : "draft",
+    "name" : "FijiDivisionCS",
+    "title" : "Health administrative division codes in Fiji",
+    "description" : "Health administrative division codes in Fiji"
+  },
+  {
+    "url" : "https://fhir.health.gov.fj/CodeSystem/fiji-korodina",
+    "version" : "0.2.2",
+    "status" : "active",
+    "name" : "FijiKorodinaCS",
+    "title" : "Fiji Korodina",
+    "description" : "A code system representing korodina (wards) in Fiji\nfor use in healthcare information exchange.\n\nCodes and display names should be sourced from the\nauthoritative Fiji geographic administrative dataset\nadopted by the Fiji Implementation Guide."
+  },
+  {
+    "url" : "https://fhir.health.gov.fj/CodeSystem/fiji-mataqali",
+    "version" : "0.2.2",
+    "status" : "active",
+    "name" : "FijiMataqaliCS",
+    "title" : "Fiji Mataqali",
+    "description" : "A code system representing mataqali recognised in Fiji,\nfor use in healthcare information exchange where\nidentification of a mataqali is required.\n\nCodes and display names must be sourced from an\nauthoritative dataset approved for the intended use.\nAccess, disclosure and use of customary information\nmust respect applicable Fiji laws and governance."
+  },
+  {
+    "url" : "https://fhir.health.gov.fj/CodeSystem/fiji-medicalarea",
+    "version" : "0.2.2",
+    "status" : "draft",
+    "name" : "FijiMedicalAreaCS",
+    "title" : "Health administrative medical area codes in Fiji",
+    "description" : "Health administrative medical area codes in Fiji"
+  },
+  {
+    "url" : "https://fhir.health.gov.fj/CodeSystem/fiji-nursingzone",
+    "version" : "0.2.2",
+    "status" : "draft",
+    "name" : "FijiNursingZoneCS",
+    "title" : "Health administrative nursing zone codes in Fiji",
+    "description" : "Health administrative nursing zone codes in Fiji"
+  },
+  {
+    "url" : "https://fhir.health.gov.fj/CodeSystem/fiji-subdivision",
+    "version" : "0.2.2",
+    "status" : "draft",
+    "name" : "FijiSubDivisionCS",
+    "title" : "Health administrative sub-division codes in Fiji",
+    "description" : "Health administrative sub division codes in Fiji"
+  },
+  {
+    "url" : "https://fhir.health.gov.fj/CodeSystem/fiji-tikina",
+    "version" : "0.2.2",
+    "status" : "active",
+    "name" : "FijiTikinaCS",
+    "title" : "Fiji Tikina",
+    "description" : "A code system representing the tikina (districts) of Fiji\nfor use in healthcare information exchange.\n\nCodes are based on the Fiji geographic coding convention\nand should be validated against the adopted authoritative\ngeographic dataset.\n\nTikina are associated with their respective provinces."
+  },
+  {
+    "url" : "https://fhir.health.gov.fj/CodeSystem/fiji-tokatoka",
+    "version" : "0.2.2",
+    "status" : "active",
+    "name" : "FijiTokatokaCS",
+    "title" : "Fiji Tokatoka",
+    "description" : "A code system representing tokatoka recognised in Fiji,\nfor use in healthcare information exchange where\nidentification of a tokatoka is required.\n\nCodes and display names must be sourced from an\nauthoritative dataset approved for the intended use.\nAccess, disclosure and use of customary information\nmust respect applicable Fiji laws and governance."
+  },
+  {
+    "url" : "https://fhir.health.gov.fj/CodeSystem/fiji-yasana",
+    "version" : "0.2.2",
+    "status" : "draft",
+    "name" : "FijiYasanaCS",
+    "title" : "Yasana (province) largest administrative division codes in Fiji iTaukei society",
+    "description" : "Yasana (province) largest administrative division codes in Fiji iTaukei society"
+  },
+  {
+    "url" : "https://fhir.health.gov.fj/CodeSystem/fiji-yavusa",
+    "version" : "0.2.2",
+    "status" : "active",
+    "name" : "FijiYavusaCS",
+    "title" : "Fiji Yavusa",
+    "description" : "A code system representing yavusa in Fiji\nfor use in healthcare information exchange.\n\nCodes and display names should be sourced from the\nauthoritative Fiji geographic administrative dataset\nadopted by the Fiji Implementation Guide."
+  }]
+}

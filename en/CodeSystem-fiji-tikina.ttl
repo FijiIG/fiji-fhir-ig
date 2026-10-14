@@ -1,0 +1,240 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://core.fhir.health.gov.fj/CodeSystem/fiji-tikina> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "fiji-tikina"] ;
+  fhir:Resource.language [ fhir:value "en"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem fiji-tikina</b></p><a name=\"fiji-tikina\"> </a><a name=\"hcfiji-tikina\"> </a><p>This case-sensitive code system <code>https://fhir.health.gov.fj/CodeSystem/fiji-tikina</code> defines the following codes in a Grouped By hierarchy:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">0101<a name=\"fiji-tikina-0101\"> </a></td><td>Ba</td></tr><tr><td style=\"white-space:nowrap\">0102<a name=\"fiji-tikina-0102\"> </a></td><td>Magodro</td></tr><tr><td style=\"white-space:nowrap\">0103<a name=\"fiji-tikina-0103\"> </a></td><td>Nadi</td></tr><tr><td style=\"white-space:nowrap\">0104<a name=\"fiji-tikina-0104\"> </a></td><td>Naviti</td></tr><tr><td style=\"white-space:nowrap\">0105<a name=\"fiji-tikina-0105\"> </a></td><td>Nawaka</td></tr><tr><td style=\"white-space:nowrap\">0106<a name=\"fiji-tikina-0106\"> </a></td><td>Tavua</td></tr><tr><td style=\"white-space:nowrap\">0107<a name=\"fiji-tikina-0107\"> </a></td><td>Vuda</td></tr><tr><td style=\"white-space:nowrap\">0108<a name=\"fiji-tikina-0108\"> </a></td><td>Yasawa</td></tr><tr><td style=\"white-space:nowrap\">0201<a name=\"fiji-tikina-0201\"> </a></td><td>Bua</td></tr><tr><td style=\"white-space:nowrap\">0202<a name=\"fiji-tikina-0202\"> </a></td><td>Vuya</td></tr><tr><td style=\"white-space:nowrap\">0203<a name=\"fiji-tikina-0203\"> </a></td><td>Wainunu</td></tr><tr><td style=\"white-space:nowrap\">0301<a name=\"fiji-tikina-0301\"> </a></td><td>Cakaudrove</td></tr><tr><td style=\"white-space:nowrap\">0302<a name=\"fiji-tikina-0302\"> </a></td><td>Nasavusavu</td></tr><tr><td style=\"white-space:nowrap\">0303<a name=\"fiji-tikina-0303\"> </a></td><td>Rabi</td></tr><tr><td style=\"white-space:nowrap\">0304<a name=\"fiji-tikina-0304\"> </a></td><td>Saqani</td></tr><tr><td style=\"white-space:nowrap\">0305<a name=\"fiji-tikina-0305\"> </a></td><td>Tunuloa</td></tr><tr><td style=\"white-space:nowrap\">0306<a name=\"fiji-tikina-0306\"> </a></td><td>Vaturova</td></tr><tr><td style=\"white-space:nowrap\">0307<a name=\"fiji-tikina-0307\"> </a></td><td>Wailevu</td></tr><tr><td style=\"white-space:nowrap\">0308<a name=\"fiji-tikina-0308\"> </a></td><td>Wainikeli</td></tr><tr><td style=\"white-space:nowrap\">0401<a name=\"fiji-tikina-0401\"> </a></td><td>Nabukelevu</td></tr><tr><td style=\"white-space:nowrap\">0402<a name=\"fiji-tikina-0402\"> </a></td><td>Naceva</td></tr><tr><td style=\"white-space:nowrap\">0403<a name=\"fiji-tikina-0403\"> </a></td><td>Nakasaleka</td></tr><tr><td style=\"white-space:nowrap\">0404<a name=\"fiji-tikina-0404\"> </a></td><td>Tavuki</td></tr><tr><td style=\"white-space:nowrap\">0501<a name=\"fiji-tikina-0501\"> </a></td><td>Cicia</td></tr><tr><td style=\"white-space:nowrap\">0502<a name=\"fiji-tikina-0502\"> </a></td><td>Kabara</td></tr><tr><td style=\"white-space:nowrap\">0503<a name=\"fiji-tikina-0503\"> </a></td><td>Lakeba</td></tr><tr><td style=\"white-space:nowrap\">0504<a name=\"fiji-tikina-0504\"> </a></td><td>Lomaloma</td></tr><tr><td style=\"white-space:nowrap\">0505<a name=\"fiji-tikina-0505\"> </a></td><td>Matuku</td></tr><tr><td style=\"white-space:nowrap\">0506<a name=\"fiji-tikina-0506\"> </a></td><td>Moala</td></tr><tr><td style=\"white-space:nowrap\">0507<a name=\"fiji-tikina-0507\"> </a></td><td>Moce</td></tr><tr><td style=\"white-space:nowrap\">0508<a name=\"fiji-tikina-0508\"> </a></td><td>Mualevu</td></tr><tr><td style=\"white-space:nowrap\">0509<a name=\"fiji-tikina-0509\"> </a></td><td>Nayau</td></tr><tr><td style=\"white-space:nowrap\">0511<a name=\"fiji-tikina-0511\"> </a></td><td>Ono</td></tr><tr><td style=\"white-space:nowrap\">0512<a name=\"fiji-tikina-0512\"> </a></td><td>Totoya</td></tr><tr><td style=\"white-space:nowrap\">0513<a name=\"fiji-tikina-0513\"> </a></td><td>Vulaga</td></tr><tr><td style=\"white-space:nowrap\">0602<a name=\"fiji-tikina-0602\"> </a></td><td>Gau</td></tr><tr><td style=\"white-space:nowrap\">0603<a name=\"fiji-tikina-0603\"> </a></td><td>Koro</td></tr><tr><td style=\"white-space:nowrap\">0604<a name=\"fiji-tikina-0604\"> </a></td><td>Nairai</td></tr><tr><td style=\"white-space:nowrap\">0605<a name=\"fiji-tikina-0605\"> </a></td><td>Ovalau</td></tr><tr><td style=\"white-space:nowrap\">0701<a name=\"fiji-tikina-0701\"> </a></td><td>Cikobia</td></tr><tr><td style=\"white-space:nowrap\">0702<a name=\"fiji-tikina-0702\"> </a></td><td>Dogotuki</td></tr><tr><td style=\"white-space:nowrap\">0703<a name=\"fiji-tikina-0703\"> </a></td><td>Labasa</td></tr><tr><td style=\"white-space:nowrap\">0704<a name=\"fiji-tikina-0704\"> </a></td><td>Macuata</td></tr><tr><td style=\"white-space:nowrap\">0705<a name=\"fiji-tikina-0705\"> </a></td><td>Sasa</td></tr></table></div>"
+  ] ;
+  fhir:CodeSystem.url [ fhir:value "https://fhir.health.gov.fj/CodeSystem/fiji-tikina"] ;
+  fhir:CodeSystem.version [ fhir:value "0.2.2"] ;
+  fhir:CodeSystem.name [ fhir:value "FijiTikinaCS"] ;
+  fhir:CodeSystem.title [ fhir:value "Fiji Tikina"] ;
+  fhir:CodeSystem.status [ fhir:value "active"] ;
+  fhir:CodeSystem.experimental [ fhir:value "false"^^xsd:boolean] ;
+  fhir:CodeSystem.date [ fhir:value "2026-10-14T05:21:25+00:00"^^xsd:dateTime] ;
+  fhir:CodeSystem.publisher [ fhir:value "MHMS Fiji"] ;
+  fhir:CodeSystem.contact [
+     fhir:index -1 ;
+     fhir:ContactDetail.name [ fhir:value "MHMS Fiji" ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index -1 ;
+       fhir:ContactPoint.system [ fhir:value "url" ] ;
+       fhir:ContactPoint.value [ fhir:value "https://fhir.health.gov.fj" ]
+     ]
+  ], [
+     fhir:index -1 ;
+     fhir:ContactDetail.name [ fhir:value "Support" ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index -1 ;
+       fhir:ContactPoint.system [ fhir:value "url" ] ;
+       fhir:ContactPoint.value [ fhir:value "https://www.fhir.health.gov.fj" ]
+     ]
+  ] ;
+  fhir:CodeSystem.description [ fhir:value "A code system representing the tikina (districts) of Fiji\nfor use in healthcare information exchange.\n\nCodes are based on the Fiji geographic coding convention\nand should be validated against the adopted authoritative\ngeographic dataset.\n\nTikina are associated with their respective provinces."] ;
+  fhir:CodeSystem.jurisdiction [
+     fhir:index -1 ;
+     fhir:CodeableConcept.coding [
+       fhir:index -1 ;
+       fhir:Coding.system [ fhir:value "urn:iso:std:iso:3166" ] ;
+       fhir:Coding.code [ fhir:value "FJ" ] ;
+       fhir:Coding.display [ fhir:value "Fiji" ]
+     ]
+  ] ;
+  fhir:CodeSystem.copyright [ fhir:value "Distributed under the Creative Commons CC0-1.0 License (https://creativecommons.org/publicdomain/zero/1.0/)"] ;
+  fhir:CodeSystem.caseSensitive [ fhir:value "true"^^xsd:boolean] ;
+  fhir:CodeSystem.hierarchyMeaning [ fhir:value "grouped-by"] ;
+  fhir:CodeSystem.content [ fhir:value "complete"] ;
+  fhir:CodeSystem.count [ fhir:value "44"^^xsd:nonNegativeInteger] ;
+  fhir:CodeSystem.concept [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "0101" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Ba" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "0102" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Magodro" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "0103" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Nadi" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "0104" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Naviti" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "0105" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Nawaka" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "0106" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Tavua" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "0107" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Vuda" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "0108" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Yasawa" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "0201" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Bua" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "0202" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Vuya" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "0203" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Wainunu" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "0301" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Cakaudrove" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "0302" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Nasavusavu" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "0303" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Rabi" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "0304" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Saqani" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "0305" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Tunuloa" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "0306" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Vaturova" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "0307" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Wailevu" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "0308" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Wainikeli" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "0401" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Nabukelevu" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "0402" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Naceva" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "0403" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Nakasaleka" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "0404" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Tavuki" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "0501" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Cicia" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "0502" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Kabara" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "0503" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Lakeba" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "0504" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Lomaloma" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "0505" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Matuku" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "0506" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Moala" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "0507" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Moce" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "0508" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Mualevu" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "0509" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Nayau" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "0511" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Ono" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "0512" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Totoya" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "0513" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Vulaga" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "0602" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Gau" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "0603" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Koro" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "0604" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Nairai" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "0605" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Ovalau" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "0701" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Cikobia" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "0702" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Dogotuki" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "0703" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Labasa" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "0704" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Macuata" ]
+  ], [
+     fhir:index -1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "0705" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Sasa" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://core.fhir.health.gov.fj/CodeSystem/fiji-tikina.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

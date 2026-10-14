@@ -1,0 +1,50 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "fiji-organization-role-vs",
+  "language" : "en",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet fiji-organization-role-vs</b></p><a name=\"fiji-organization-role-vs\"> </a><a name=\"hcfiji-organization-role-vs\"> </a><ul><li>Include codes from<a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a><span title=\"Version is not explicitly stated. No matching Code System found\"> version Not Stated (use latest from terminology server)</span> where expression  = &lt;&lt; 285201006|Hospital environment| OR &lt;&lt; 43741000|Site of care| OR &lt;&lt; 440655000|Outpatient environment| OR &lt;&lt; 440654001|Inpatient environment|</li></ul></div>"
+  },
+  "url" : "https://core.fhir.health.gov.fj/ValueSet/fiji-organization-role-vs",
+  "version" : "0.2.2",
+  "name" : "FijiOrganizationRoleVS",
+  "title" : "Fiji Healthcare Organization Role Type Value Set",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2026-10-14T05:21:25+00:00",
+  "publisher" : "MHMS Fiji",
+  "contact" : [{
+    "name" : "MHMS Fiji",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://fhir.health.gov.fj"
+    }]
+  },
+  {
+    "name" : "Support",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.fhir.health.gov.fj"
+    }]
+  }],
+  "description" : "Valueset for Healthcare Organization Role Type.\nValues from SNOMED CT Hospital environment, Site of care, Outpatient environment, and Inpatient environment.",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "FJ",
+      "display" : "Fiji"
+    }]
+  }],
+  "copyright" : "Distributed under the Creative Commons CC0-1.0 License (https://creativecommons.org/publicdomain/zero/1.0/)",
+  "compose" : {
+    "include" : [{
+      "system" : "http://snomed.info/sct",
+      "filter" : [{
+        "property" : "expression",
+        "op" : "=",
+        "value" : "<< 285201006|Hospital environment| OR << 43741000|Site of care| OR << 440655000|Outpatient environment| OR << 440654001|Inpatient environment|"
+      }]
+    }]
+  }
+}

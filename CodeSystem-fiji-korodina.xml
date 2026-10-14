@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="fiji-korodina"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: CodeSystem fiji-korodina</b></p><a name="fiji-korodina"> </a><a name="hcfiji-korodina"> </a><p>This  code system <code>https://fhir.health.gov.fj/CodeSystem/fiji-korodina</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td></tr></table></div>
+  </text>
+  <url value="https://fhir.health.gov.fj/CodeSystem/fiji-korodina"/>
+  <version value="0.2.2"/>
+  <name value="FijiKorodinaCS"/>
+  <title value="Fiji Korodina"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2026-10-14T05:21:25+00:00"/>
+  <publisher value="MHMS Fiji"/>
+  <contact>
+    <name value="MHMS Fiji"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://fhir.health.gov.fj"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Support"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.fhir.health.gov.fj"/>
+    </telecom>
+  </contact>
+  <description value="A code system representing korodina (wards) in Fiji&#xA;for use in healthcare information exchange.&#xA;&#xA;Codes and display names should be sourced from the&#xA;authoritative Fiji geographic administrative dataset&#xA;adopted by the Fiji Implementation Guide."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="FJ"/>
+      <display value="Fiji"/>
+    </coding>
+  </jurisdiction>
+  <copyright value="Distributed under the Creative Commons CC0-1.0 License (https://creativecommons.org/publicdomain/zero/1.0/)"/>
+  <content value="complete"/>
+</CodeSystem>

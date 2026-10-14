@@ -1,0 +1,101 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://core.fhir.health.gov.fj/Practitioner/FijiPractitionerExample> a fhir:Practitioner ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "FijiPractitionerExample"] ;
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "https://core.fhir.health.gov.fj/StructureDefinition/fiji-practitioner" ;
+       fhir:index 0 ;
+       fhir:link <https://core.fhir.health.gov.fj/StructureDefinition/fiji-practitioner>
+     ]
+  ] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Practitioner FijiPractitionerExample</b></p><a name=\"FijiPractitionerExample\"> </a><a name=\"hcFijiPractitionerExample\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-fiji-practitioner.html\">Fiji Practitioner</a></p></div><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\">Jone Nabose (https://fhir.health.gov.fj/identifier/practitioner-medical-registration#MED-12345)</p><hr/><table class=\"grid\"><tr><td style=\"background-color: #f3f5da\" title=\"Administrative gender\">Gender:</td><td colspan=\"3\">Male</td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Alternate names (see the one above)\">Alt. Name:</td><td colspan=\"3\">Jone Viliame Nabose (Official)</td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Ways to contact the Practitioner\">Contact Detail</td><td colspan=\"3\"><ul><li><a href=\"tel:+6793310000\">+679 331 0000</a></li><li><a href=\"mailto:jone.nabose@example.org\">jone.nabose@example.org</a></li><li>Hospital Road, Suva(work)</li></ul></td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Certification, licensure, or training pertaining to the provision of care\">Qualification:</td><td colspan=\"3\"><span title=\"Codes:\">Bachelor of Medicine and Bachelor of Surgery</span></td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Languages spoken\">Languages:</td><td colspan=\"3\"><ul><li><span title=\"Codes:{urn:ietf:bcp:47 en}\">English</span></li><li><span title=\"Codes:{urn:ietf:bcp:47 fj}\">Fijian</span></li></ul></td></tr></table></div>"
+  ] ;
+  fhir:Practitioner.identifier [
+     fhir:index 0 ;
+     fhir:Identifier.system [ fhir:value "https://fhir.health.gov.fj/identifier/practitioner-medical-registration" ] ;
+     fhir:Identifier.value [ fhir:value "MED-12345" ]
+  ] ;
+  fhir:Practitioner.name [
+     fhir:index 0 ;
+     fhir:HumanName.use [ fhir:value "official" ] ;
+     fhir:HumanName.family [ fhir:value "Nabose" ] ;
+     fhir:HumanName.given [
+       fhir:value "Jone" ;
+       fhir:index 0
+     ], [
+       fhir:value "Viliame" ;
+       fhir:index 1
+     ]
+  ], [
+     fhir:index 1 ;
+     fhir:HumanName.use [ fhir:value "usual" ] ;
+     fhir:HumanName.family [ fhir:value "Nabose" ] ;
+     fhir:HumanName.given [
+       fhir:value "Jone" ;
+       fhir:index 0
+     ]
+  ] ;
+  fhir:Practitioner.telecom [
+     fhir:index 0 ;
+     fhir:ContactPoint.system [ fhir:value "phone" ] ;
+     fhir:ContactPoint.value [ fhir:value "+679 331 0000" ] ;
+     fhir:ContactPoint.use [ fhir:value "work" ]
+  ], [
+     fhir:index 1 ;
+     fhir:ContactPoint.system [ fhir:value "email" ] ;
+     fhir:ContactPoint.value [ fhir:value "jone.nabose@example.org" ] ;
+     fhir:ContactPoint.use [ fhir:value "work" ]
+  ] ;
+  fhir:Practitioner.address [
+     fhir:index 0 ;
+     fhir:Address.use [ fhir:value "work" ] ;
+     fhir:Address.type [ fhir:value "physical" ] ;
+     fhir:Address.text [ fhir:value "Hospital Road, Suva" ] ;
+     fhir:Address.line [
+       fhir:value "Hospital Road" ;
+       fhir:index 0
+     ] ;
+     fhir:Address.city [ fhir:value "Suva" ] ;
+     fhir:Address.country [ fhir:value "Fiji" ]
+  ] ;
+  fhir:Practitioner.gender [ fhir:value "male"] ;
+  fhir:Practitioner.qualification [
+     fhir:index 0 ;
+     fhir:Practitioner.qualification.code [
+       fhir:CodeableConcept.text [ fhir:value "Bachelor of Medicine and Bachelor of Surgery" ]
+     ]
+  ] ;
+  fhir:Practitioner.communication [
+     fhir:index 0 ;
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       fhir:Coding.system [ fhir:value "urn:ietf:bcp:47" ] ;
+       fhir:Coding.code [ fhir:value "en" ]
+     ] ;
+     fhir:CodeableConcept.text [ fhir:value "English" ]
+  ], [
+     fhir:index 1 ;
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       fhir:Coding.system [ fhir:value "urn:ietf:bcp:47" ] ;
+       fhir:Coding.code [ fhir:value "fj" ]
+     ] ;
+     fhir:CodeableConcept.text [ fhir:value "Fijian" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://core.fhir.health.gov.fj/Practitioner/FijiPractitionerExample.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

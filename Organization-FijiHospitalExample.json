@@ -1,0 +1,36 @@
+{
+  "resourceType" : "Organization",
+  "id" : "FijiHospitalExample",
+  "meta" : {
+    "profile" : ["https://core.fhir.health.gov.fj/StructureDefinition/fiji-organization"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Organization FijiHospitalExample</b></p><a name=\"FijiHospitalExample\"> </a><a name=\"hcFijiHospitalExample\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-fiji-organization.html\">Fiji Healthcare Service or Organization</a></p></div><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\">Namosi District Hospital (Hospital) (https://fhir.health.gov.fj/identifier/organization#HOSP-001)</p><hr/><table class=\"grid\"><tr><td style=\"background-color: #f3f5da\" title=\"Record is active\">Active:</td><td colspan=\"3\">true</td></tr><tr><td style=\"background-color: #f3f5da\" title=\"The kind(s) of organization that this is\">Type:</td><td colspan=\"3\"><span title=\"Codes:{http://snomed.info/sct 22232009}\">Hospital</span></td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Ways to contact the organization\">Contact Detail</td><td colspan=\"3\"><ul><li><a href=\"tel:+6793456000\">+679 345 6000</a></li><li>Namosi District Hospital, Namosi, Fiji</li></ul></td></tr></table></div>"
+  },
+  "identifier" : [{
+    "system" : "https://fhir.health.gov.fj/identifier/organization",
+    "value" : "HOSP-001"
+  }],
+  "active" : true,
+  "type" : [{
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "22232009",
+      "display" : "Hospital"
+    }],
+    "text" : "Hospital"
+  }],
+  "name" : "Namosi District Hospital",
+  "telecom" : [{
+    "system" : "phone",
+    "value" : "+679 345 6000",
+    "use" : "work"
+  }],
+  "address" : [{
+    "text" : "Namosi District Hospital, Namosi, Fiji",
+    "line" : ["Hospital Road"],
+    "city" : "Namosi",
+    "country" : "Fiji"
+  }]
+}
