@@ -135,6 +135,11 @@ Integrates:
 * communication 0..*
 * communication ^short = "Languages patient can use"
 
+// Link to another resource that concerns the same person
+
+* link.other only Reference(FijiPatient or FijiRelatedPerson)
+
+
 // Encourage but do not require official/usual
 Invariant: pac-pat-1
 Description: "At least one name must have use = usual or official"
