@@ -21,6 +21,10 @@ For interventions/procedures:
 For Immunizations:
 * [FijiImmunization](StructureDefinition-fiji-immunization.html)
 
+For Medication Prescription and Dispensing:
+* [FijiMedicationRequest](StructureDefinition-fiji-medication-request.html)
+* [FijiMedicationDispense](StructureDefinition-fiji-medication-dispense.html)
+
 For lab/pathology observations and diagnostic reports:
 * [FijiPathologyObservation](StructureDefinition-fiji-pathology-observation.html)  
 * [FijiPathologyReport](StructureDefinition-fiji-laboratory-diagnostic-report.html)
