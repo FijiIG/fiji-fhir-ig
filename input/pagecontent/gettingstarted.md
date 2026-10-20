@@ -23,7 +23,7 @@ To setup and deploy the IG, ensure that you have the pre-requisite software inst
 1. Create or go to a folder that you will use for working with the FSH code
 2. Clone this repository by executing:
   ```sh
-  git clone https://github.com/healthinfoservices/fiji-fhir-ig.git
+  git clone https://github.com/FijiIG/fiji-fhir-ig.git
   ```
 3. Install the FHIR packages listed in the dependencies section of the sushi-config.yaml file:
   ```sh
