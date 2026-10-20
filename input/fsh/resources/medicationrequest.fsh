@@ -114,7 +114,9 @@ The Fiji Medication Request profile builds on the FHIR R4 `MedicationRequest` re
 * medicationReference only Reference(FijiMedication)
 * medicationReference MS
 
+* subject 1..1 MS
 * subject only Reference(FijiPatient)
+* encounter MS
 * encounter only Reference(FijiEncounter)
 * authoredOn 1..1 MS
 * requester 1..1 MS
