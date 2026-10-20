@@ -55,6 +55,8 @@ Version:  0.1.1 ci-build
 
 The Draft Fiji Core FHIR IG is being developed in collaboration with MHMS Fiji, under the supervision of Digital Health, Technical Advisory Group (TAG), with support from CSIRO Strengthening Standards Capability Project, and Australian Government.
 
+Primary guidance and IG development has been provided by [Daniel Foulkes](https://www.linkedin.com/in/daniel-foulkes).
+
 This Implementation Guide is released under the Creative Commons CC0 1.0 Universal Public Domain Dedication. 
 
 
