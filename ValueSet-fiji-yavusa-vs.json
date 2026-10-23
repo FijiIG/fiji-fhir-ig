@@ -1,0 +1,43 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "fiji-yavusa-vs",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet fiji-yavusa-vs</b></p><a name=\"fiji-yavusa-vs\"> </a><a name=\"hcfiji-yavusa-vs\"> </a><ul><li>Include all codes defined in <a href=\"CodeSystem-fiji-yavusa.html\"><code>https://fhir.health.gov.fj/CodeSystem/fiji-yavusa</code></a><span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\"> version &#x1F4E6;0.3.0</span></li></ul></div>"
+  },
+  "url" : "https://fhir.health.gov.fj/ValueSet/fiji-yavusa",
+  "version" : "0.3.0",
+  "name" : "FijiYavusaVS",
+  "title" : "Fiji Yavusa ValueSet",
+  "status" : "active",
+  "date" : "2026-10-23T04:23:18+00:00",
+  "publisher" : "MHMS Fiji",
+  "contact" : [{
+    "name" : "MHMS Fiji",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://fhir.health.gov.fj"
+    }]
+  },
+  {
+    "name" : "Support",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.fhir.health.gov.fj"
+    }]
+  }],
+  "description" : "The set of yavusa codes recognised by the\nFiji Implementation Guide.",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "FJ",
+      "display" : "Fiji"
+    }]
+  }],
+  "copyright" : "Distributed under the Creative Commons CC0-1.0 License (https://creativecommons.org/publicdomain/zero/1.0/)",
+  "compose" : {
+    "include" : [{
+      "system" : "https://fhir.health.gov.fj/CodeSystem/fiji-yavusa"
+    }]
+  }
+}

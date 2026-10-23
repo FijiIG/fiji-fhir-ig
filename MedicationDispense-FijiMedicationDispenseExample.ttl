@@ -1,0 +1,73 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://core.fhir.health.gov.fj/MedicationDispense/FijiMedicationDispenseExample> a fhir:MedicationDispense ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "FijiMedicationDispenseExample"] ;
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "https://core.fhir.health.gov.fj/StructureDefinition/fiji-medication-dispense" ;
+       fhir:index 0 ;
+       fhir:link <https://core.fhir.health.gov.fj/StructureDefinition/fiji-medication-dispense>
+     ]
+  ] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: MedicationDispense FijiMedicationDispenseExample</b></p><a name=\"FijiMedicationDispenseExample\"> </a><a name=\"hcFijiMedicationDispenseExample\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-fiji-medication-dispense.html\">Fiji Medication Dispense</a></p></div><p><b>identifier</b>: <a href=\"NamingSystem-FijiMedicationDispenseIdentifier.html\" title=\"NamingSystem for Medication Dispense  identifiers in Fiji\">FijiMedicationDispenseIdentifier</a>/MSD-2026-000123</p><p><b>status</b>: Completed</p><p><b>medication</b>: <span title=\"Codes:{http://snomed.info/sct 27658006}\">Amoxicillin</span></p><p><b>subject</b>: <a href=\"Patient-FijiPatientExample.html\">Jone Nabou Male, DoB: 1992-04-17 ( http://fhir.health.gov.fj/identifier/national-health-number#FijiPatientIdentifier#FJ-NHI-982345671)</a></p><h3>Performers</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Actor</b></td></tr><tr><td style=\"display: none\">*</td><td><a href=\"Practitioner-FijiPractitionerExample.html\">Jone Nabose (https://fhir.health.gov.fj/identifier/practitioner-medical-registration#MED-12345)</a></td></tr></table><p><b>authorizingPrescription</b>: <a href=\"MedicationRequest-FijiMedicationRequestExample.html\">MedicationRequest: status = active; intent = order; medication[x] = Amoxicillin; authoredOn = 2026-10-20</a></p><p><b>quantity</b>: 15 capsule<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  code1 = '1')</span></p><p><b>whenPrepared</b>: 2026-10-20 09:00:00+1200</p><p><b>whenHandedOver</b>: 2026-10-20</p><h3>DosageInstructions</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Text</b></td></tr><tr><td style=\"display: none\">*</td><td>Take one capsule orally three times daily for 5 days.</td></tr></table></div>"
+  ] ;
+  fhir:MedicationDispense.identifier [
+     fhir:index 0 ;
+     fhir:Identifier.system [ fhir:value "http://fhir.health.gov.fj/identifier/msupply-dispense" ] ;
+     fhir:Identifier.value [ fhir:value "MSD-2026-000123" ]
+  ] ;
+  fhir:MedicationDispense.status [ fhir:value "completed"] ;
+  fhir:MedicationDispense.medicationCodeableConcept [
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       a sct:27658006 ;
+       fhir:Coding.system [ fhir:value "http://snomed.info/sct" ] ;
+       fhir:Coding.code [ fhir:value "27658006" ] ;
+       fhir:Coding.display [ fhir:value "Amoxicillin" ]
+     ]
+  ] ;
+  fhir:MedicationDispense.subject [
+     fhir:link <https://core.fhir.health.gov.fj/Patient/FijiPatientExample> ;
+     fhir:Reference.reference [ fhir:value "Patient/FijiPatientExample" ]
+  ] ;
+  fhir:MedicationDispense.performer [
+     fhir:index 0 ;
+     fhir:MedicationDispense.performer.actor [
+       fhir:link <https://core.fhir.health.gov.fj/Practitioner/FijiPractitionerExample> ;
+       fhir:Reference.reference [ fhir:value "Practitioner/FijiPractitionerExample" ]
+     ]
+  ] ;
+  fhir:MedicationDispense.authorizingPrescription [
+     fhir:index 0 ;
+     fhir:link <https://core.fhir.health.gov.fj/MedicationRequest/FijiMedicationRequestExample> ;
+     fhir:Reference.reference [ fhir:value "MedicationRequest/FijiMedicationRequestExample" ]
+  ] ;
+  fhir:MedicationDispense.quantity [
+     fhir:Quantity.value [ fhir:value "15"^^xsd:decimal ] ;
+     fhir:Quantity.unit [ fhir:value "capsule" ] ;
+     fhir:Quantity.system [ fhir:value "http://unitsofmeasure.org" ] ;
+     fhir:Quantity.code [ fhir:value "1" ]
+  ] ;
+  fhir:MedicationDispense.whenPrepared [ fhir:value "2026-10-20T09:00:00+12:00"^^xsd:dateTime] ;
+  fhir:MedicationDispense.whenHandedOver [ fhir:value "2026-10-20"^^xsd:date] ;
+  fhir:MedicationDispense.dosageInstruction [
+     fhir:index 0 ;
+     fhir:Dosage.text [ fhir:value "Take one capsule orally three times daily for 5 days." ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://core.fhir.health.gov.fj/MedicationDispense/FijiMedicationDispenseExample.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

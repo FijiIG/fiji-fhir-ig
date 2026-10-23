@@ -1,0 +1,82 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "fiji-yasana",
+  "language" : "en",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem fiji-yasana</b></p><a name=\"fiji-yasana\"> </a><a name=\"hcfiji-yasana\"> </a><p>This  code system <code>https://fhir.health.gov.fj/CodeSystem/fiji-yasana</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">ba<a name=\"fiji-yasana-ba\"> </a></td><td>Ba</td><td>Ba</td></tr><tr><td style=\"white-space:nowrap\">nadroga-navosa<a name=\"fiji-yasana-nadroga-navosa\"> </a></td><td/><td/></tr><tr><td style=\"white-space:nowrap\">ra<a name=\"fiji-yasana-ra\"> </a></td><td/><td/></tr><tr><td style=\"white-space:nowrap\">tailevu<a name=\"fiji-yasana-tailevu\"> </a></td><td/><td/></tr><tr><td style=\"white-space:nowrap\">naitasiri<a name=\"fiji-yasana-naitasiri\"> </a></td><td/><td/></tr><tr><td style=\"white-space:nowrap\">namosi<a name=\"fiji-yasana-namosi\"> </a></td><td/><td/></tr><tr><td style=\"white-space:nowrap\">serua<a name=\"fiji-yasana-serua\"> </a></td><td/><td/></tr><tr><td style=\"white-space:nowrap\">rewa<a name=\"fiji-yasana-rewa\"> </a></td><td/><td/></tr><tr><td style=\"white-space:nowrap\">cakaudrove<a name=\"fiji-yasana-cakaudrove\"> </a></td><td/><td/></tr><tr><td style=\"white-space:nowrap\">macuata<a name=\"fiji-yasana-macuata\"> </a></td><td/><td/></tr><tr><td style=\"white-space:nowrap\">bua<a name=\"fiji-yasana-bua\"> </a></td><td/><td/></tr><tr><td style=\"white-space:nowrap\">lau<a name=\"fiji-yasana-lau\"> </a></td><td/><td/></tr><tr><td style=\"white-space:nowrap\">lomaiviti<a name=\"fiji-yasana-lomaiviti\"> </a></td><td/><td/></tr></table></div>"
+  },
+  "url" : "https://fhir.health.gov.fj/CodeSystem/fiji-yasana",
+  "version" : "0.3.0",
+  "name" : "FijiYasanaCS",
+  "title" : "Yasana (province) largest administrative division codes in Fiji iTaukei society",
+  "status" : "draft",
+  "date" : "2026-10-23T04:23:18+00:00",
+  "publisher" : "MHMS Fiji",
+  "contact" : [{
+    "name" : "MHMS Fiji",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://fhir.health.gov.fj"
+    }]
+  },
+  {
+    "name" : "Support",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.fhir.health.gov.fj"
+    }]
+  }],
+  "description" : "Yasana (province) largest administrative division codes in Fiji iTaukei society",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "FJ",
+      "display" : "Fiji"
+    }]
+  }],
+  "copyright" : "Distributed under the Creative Commons CC0-1.0 License (https://creativecommons.org/publicdomain/zero/1.0/)",
+  "content" : "complete",
+  "count" : 13,
+  "concept" : [{
+    "code" : "ba",
+    "display" : "Ba",
+    "definition" : "Ba"
+  },
+  {
+    "code" : "nadroga-navosa"
+  },
+  {
+    "code" : "ra"
+  },
+  {
+    "code" : "tailevu"
+  },
+  {
+    "code" : "naitasiri"
+  },
+  {
+    "code" : "namosi"
+  },
+  {
+    "code" : "serua"
+  },
+  {
+    "code" : "rewa"
+  },
+  {
+    "code" : "cakaudrove"
+  },
+  {
+    "code" : "macuata"
+  },
+  {
+    "code" : "bua"
+  },
+  {
+    "code" : "lau"
+  },
+  {
+    "code" : "lomaiviti"
+  }]
+}

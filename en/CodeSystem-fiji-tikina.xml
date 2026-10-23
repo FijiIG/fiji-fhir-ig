@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="fiji-tikina"/>
+  <language value="en"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: CodeSystem fiji-tikina</b></p><a name="fiji-tikina"> </a><a name="hcfiji-tikina"> </a><p>This case-sensitive code system <code>https://fhir.health.gov.fj/CodeSystem/fiji-tikina</code> defines the following codes in a Grouped By hierarchy:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">0101<a name="fiji-tikina-0101"> </a></td><td>Ba</td></tr><tr><td style="white-space:nowrap">0102<a name="fiji-tikina-0102"> </a></td><td>Magodro</td></tr><tr><td style="white-space:nowrap">0103<a name="fiji-tikina-0103"> </a></td><td>Nadi</td></tr><tr><td style="white-space:nowrap">0104<a name="fiji-tikina-0104"> </a></td><td>Naviti</td></tr><tr><td style="white-space:nowrap">0105<a name="fiji-tikina-0105"> </a></td><td>Nawaka</td></tr><tr><td style="white-space:nowrap">0106<a name="fiji-tikina-0106"> </a></td><td>Tavua</td></tr><tr><td style="white-space:nowrap">0107<a name="fiji-tikina-0107"> </a></td><td>Vuda</td></tr><tr><td style="white-space:nowrap">0108<a name="fiji-tikina-0108"> </a></td><td>Yasawa</td></tr><tr><td style="white-space:nowrap">0201<a name="fiji-tikina-0201"> </a></td><td>Bua</td></tr><tr><td style="white-space:nowrap">0202<a name="fiji-tikina-0202"> </a></td><td>Vuya</td></tr><tr><td style="white-space:nowrap">0203<a name="fiji-tikina-0203"> </a></td><td>Wainunu</td></tr><tr><td style="white-space:nowrap">0301<a name="fiji-tikina-0301"> </a></td><td>Cakaudrove</td></tr><tr><td style="white-space:nowrap">0302<a name="fiji-tikina-0302"> </a></td><td>Nasavusavu</td></tr><tr><td style="white-space:nowrap">0303<a name="fiji-tikina-0303"> </a></td><td>Rabi</td></tr><tr><td style="white-space:nowrap">0304<a name="fiji-tikina-0304"> </a></td><td>Saqani</td></tr><tr><td style="white-space:nowrap">0305<a name="fiji-tikina-0305"> </a></td><td>Tunuloa</td></tr><tr><td style="white-space:nowrap">0306<a name="fiji-tikina-0306"> </a></td><td>Vaturova</td></tr><tr><td style="white-space:nowrap">0307<a name="fiji-tikina-0307"> </a></td><td>Wailevu</td></tr><tr><td style="white-space:nowrap">0308<a name="fiji-tikina-0308"> </a></td><td>Wainikeli</td></tr><tr><td style="white-space:nowrap">0401<a name="fiji-tikina-0401"> </a></td><td>Nabukelevu</td></tr><tr><td style="white-space:nowrap">0402<a name="fiji-tikina-0402"> </a></td><td>Naceva</td></tr><tr><td style="white-space:nowrap">0403<a name="fiji-tikina-0403"> </a></td><td>Nakasaleka</td></tr><tr><td style="white-space:nowrap">0404<a name="fiji-tikina-0404"> </a></td><td>Tavuki</td></tr><tr><td style="white-space:nowrap">0501<a name="fiji-tikina-0501"> </a></td><td>Cicia</td></tr><tr><td style="white-space:nowrap">0502<a name="fiji-tikina-0502"> </a></td><td>Kabara</td></tr><tr><td style="white-space:nowrap">0503<a name="fiji-tikina-0503"> </a></td><td>Lakeba</td></tr><tr><td style="white-space:nowrap">0504<a name="fiji-tikina-0504"> </a></td><td>Lomaloma</td></tr><tr><td style="white-space:nowrap">0505<a name="fiji-tikina-0505"> </a></td><td>Matuku</td></tr><tr><td style="white-space:nowrap">0506<a name="fiji-tikina-0506"> </a></td><td>Moala</td></tr><tr><td style="white-space:nowrap">0507<a name="fiji-tikina-0507"> </a></td><td>Moce</td></tr><tr><td style="white-space:nowrap">0508<a name="fiji-tikina-0508"> </a></td><td>Mualevu</td></tr><tr><td style="white-space:nowrap">0509<a name="fiji-tikina-0509"> </a></td><td>Nayau</td></tr><tr><td style="white-space:nowrap">0511<a name="fiji-tikina-0511"> </a></td><td>Ono</td></tr><tr><td style="white-space:nowrap">0512<a name="fiji-tikina-0512"> </a></td><td>Totoya</td></tr><tr><td style="white-space:nowrap">0513<a name="fiji-tikina-0513"> </a></td><td>Vulaga</td></tr><tr><td style="white-space:nowrap">0602<a name="fiji-tikina-0602"> </a></td><td>Gau</td></tr><tr><td style="white-space:nowrap">0603<a name="fiji-tikina-0603"> </a></td><td>Koro</td></tr><tr><td style="white-space:nowrap">0604<a name="fiji-tikina-0604"> </a></td><td>Nairai</td></tr><tr><td style="white-space:nowrap">0605<a name="fiji-tikina-0605"> </a></td><td>Ovalau</td></tr><tr><td style="white-space:nowrap">0701<a name="fiji-tikina-0701"> </a></td><td>Cikobia</td></tr><tr><td style="white-space:nowrap">0702<a name="fiji-tikina-0702"> </a></td><td>Dogotuki</td></tr><tr><td style="white-space:nowrap">0703<a name="fiji-tikina-0703"> </a></td><td>Labasa</td></tr><tr><td style="white-space:nowrap">0704<a name="fiji-tikina-0704"> </a></td><td>Macuata</td></tr><tr><td style="white-space:nowrap">0705<a name="fiji-tikina-0705"> </a></td><td>Sasa</td></tr></table></div>
+  </text>
+  <url value="https://fhir.health.gov.fj/CodeSystem/fiji-tikina"/>
+  <version value="0.3.0"/>
+  <name value="FijiTikinaCS"/>
+  <title value="Fiji Tikina"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2026-10-23T04:23:18+00:00"/>
+  <publisher value="MHMS Fiji"/>
+  <contact>
+    <name value="MHMS Fiji"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://fhir.health.gov.fj"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Support"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.fhir.health.gov.fj"/>
+    </telecom>
+  </contact>
+  <description value="A code system representing the tikina (districts) of Fiji&#xA;for use in healthcare information exchange.&#xA;&#xA;Codes are based on the Fiji geographic coding convention&#xA;and should be validated against the adopted authoritative&#xA;geographic dataset.&#xA;&#xA;Tikina are associated with their respective provinces."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="FJ"/>
+      <display value="Fiji"/>
+    </coding>
+  </jurisdiction>
+  <copyright value="Distributed under the Creative Commons CC0-1.0 License (https://creativecommons.org/publicdomain/zero/1.0/)"/>
+  <caseSensitive value="true"/>
+  <hierarchyMeaning value="grouped-by"/>
+  <content value="complete"/>
+  <count value="44"/>
+  <concept>
+    <code value="0101"/>
+    <display value="Ba"/>
+  </concept>
+  <concept>
+    <code value="0102"/>
+    <display value="Magodro"/>
+  </concept>
+  <concept>
+    <code value="0103"/>
+    <display value="Nadi"/>
+  </concept>
+  <concept>
+    <code value="0104"/>
+    <display value="Naviti"/>
+  </concept>
+  <concept>
+    <code value="0105"/>
+    <display value="Nawaka"/>
+  </concept>
+  <concept>
+    <code value="0106"/>
+    <display value="Tavua"/>
+  </concept>
+  <concept>
+    <code value="0107"/>
+    <display value="Vuda"/>
+  </concept>
+  <concept>
+    <code value="0108"/>
+    <display value="Yasawa"/>
+  </concept>
+  <concept>
+    <code value="0201"/>
+    <display value="Bua"/>
+  </concept>
+  <concept>
+    <code value="0202"/>
+    <display value="Vuya"/>
+  </concept>
+  <concept>
+    <code value="0203"/>
+    <display value="Wainunu"/>
+  </concept>
+  <concept>
+    <code value="0301"/>
+    <display value="Cakaudrove"/>
+  </concept>
+  <concept>
+    <code value="0302"/>
+    <display value="Nasavusavu"/>
+  </concept>
+  <concept>
+    <code value="0303"/>
+    <display value="Rabi"/>
+  </concept>
+  <concept>
+    <code value="0304"/>
+    <display value="Saqani"/>
+  </concept>
+  <concept>
+    <code value="0305"/>
+    <display value="Tunuloa"/>
+  </concept>
+  <concept>
+    <code value="0306"/>
+    <display value="Vaturova"/>
+  </concept>
+  <concept>
+    <code value="0307"/>
+    <display value="Wailevu"/>
+  </concept>
+  <concept>
+    <code value="0308"/>
+    <display value="Wainikeli"/>
+  </concept>
+  <concept>
+    <code value="0401"/>
+    <display value="Nabukelevu"/>
+  </concept>
+  <concept>
+    <code value="0402"/>
+    <display value="Naceva"/>
+  </concept>
+  <concept>
+    <code value="0403"/>
+    <display value="Nakasaleka"/>
+  </concept>
+  <concept>
+    <code value="0404"/>
+    <display value="Tavuki"/>
+  </concept>
+  <concept>
+    <code value="0501"/>
+    <display value="Cicia"/>
+  </concept>
+  <concept>
+    <code value="0502"/>
+    <display value="Kabara"/>
+  </concept>
+  <concept>
+    <code value="0503"/>
+    <display value="Lakeba"/>
+  </concept>
+  <concept>
+    <code value="0504"/>
+    <display value="Lomaloma"/>
+  </concept>
+  <concept>
+    <code value="0505"/>
+    <display value="Matuku"/>
+  </concept>
+  <concept>
+    <code value="0506"/>
+    <display value="Moala"/>
+  </concept>
+  <concept>
+    <code value="0507"/>
+    <display value="Moce"/>
+  </concept>
+  <concept>
+    <code value="0508"/>
+    <display value="Mualevu"/>
+  </concept>
+  <concept>
+    <code value="0509"/>
+    <display value="Nayau"/>
+  </concept>
+  <concept>
+    <code value="0511"/>
+    <display value="Ono"/>
+  </concept>
+  <concept>
+    <code value="0512"/>
+    <display value="Totoya"/>
+  </concept>
+  <concept>
+    <code value="0513"/>
+    <display value="Vulaga"/>
+  </concept>
+  <concept>
+    <code value="0602"/>
+    <display value="Gau"/>
+  </concept>
+  <concept>
+    <code value="0603"/>
+    <display value="Koro"/>
+  </concept>
+  <concept>
+    <code value="0604"/>
+    <display value="Nairai"/>
+  </concept>
+  <concept>
+    <code value="0605"/>
+    <display value="Ovalau"/>
+  </concept>
+  <concept>
+    <code value="0701"/>
+    <display value="Cikobia"/>
+  </concept>
+  <concept>
+    <code value="0702"/>
+    <display value="Dogotuki"/>
+  </concept>
+  <concept>
+    <code value="0703"/>
+    <display value="Labasa"/>
+  </concept>
+  <concept>
+    <code value="0704"/>
+    <display value="Macuata"/>
+  </concept>
+  <concept>
+    <code value="0705"/>
+    <display value="Sasa"/>
+  </concept>
+</CodeSystem>

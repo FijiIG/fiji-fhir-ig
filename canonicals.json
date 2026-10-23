@@ -1,0 +1,595 @@
+[{
+  "id" : "fiji-obs-interpretation-cs",
+  "type" : "CodeSystem",
+  "url" : "https://core.fhir.health.gov.fj/CodeSystem/fiji-obs-interpretation-cs",
+  "version" : "0.3.0",
+  "name" : "FijiObsInterpretationCS"
+},
+{
+  "id" : "health-gov-fhir-fj-core",
+  "type" : "ImplementationGuide",
+  "url" : "https://core.fhir.health.gov.fj/ImplementationGuide/health-gov-fhir-fj-core",
+  "version" : "0.3.0",
+  "name" : "FijiCoreIG"
+},
+{
+  "id" : "FijiMedicationDispenseIdentifier",
+  "type" : "NamingSystem",
+  "url" : "https://core.fhir.health.gov.fj/NamingSystem/FijiMedicationDispenseIdentifier",
+  "version" : "0.3.0",
+  "name" : "FijiMedicationDispenseIdentifier"
+},
+{
+  "id" : "FijiNationalPatientIdentifier",
+  "type" : "NamingSystem",
+  "url" : "https://core.fhir.health.gov.fj/NamingSystem/FijiNationalPatientIdentifier",
+  "version" : "0.3.0",
+  "name" : "FijiPatientIdentifier"
+},
+{
+  "id" : "FijiOrganizationIdentifier",
+  "type" : "NamingSystem",
+  "url" : "https://core.fhir.health.gov.fj/NamingSystem/FijiOrganizationIdentifier",
+  "version" : "0.3.0",
+  "name" : "FijiOrganizationIdentifier"
+},
+{
+  "id" : "FijiPractitionerMedicalRegistrationNumber",
+  "type" : "NamingSystem",
+  "url" : "https://core.fhir.health.gov.fj/NamingSystem/FijiPractitionerMedicalRegistrationNumber",
+  "version" : "0.3.0",
+  "name" : "FijiPractitionerMedicalRegistrationNumber"
+},
+{
+  "id" : "FijiRISAccessionNumber",
+  "type" : "NamingSystem",
+  "url" : "https://core.fhir.health.gov.fj/NamingSystem/FijiRISAccessionNumber",
+  "version" : "0.3.0",
+  "name" : "FijiRISAccessionNumber"
+},
+{
+  "id" : "birthdate-verified-indicator",
+  "type" : "StructureDefinition",
+  "url" : "https://core.fhir.health.gov.fj/StructureDefinition/birthdate-verified-indicator",
+  "version" : "0.3.0",
+  "name" : "BirthDateVerifiedIndicator"
+},
+{
+  "id" : "fiji-address",
+  "type" : "StructureDefinition",
+  "url" : "https://core.fhir.health.gov.fj/StructureDefinition/fiji-address",
+  "version" : "0.3.0",
+  "name" : "FijiAddress"
+},
+{
+  "id" : "fiji-address-island",
+  "type" : "StructureDefinition",
+  "url" : "https://core.fhir.health.gov.fj/StructureDefinition/fiji-address-island",
+  "version" : "0.3.0",
+  "name" : "FijiAddressIsland"
+},
+{
+  "id" : "fiji-address-village",
+  "type" : "StructureDefinition",
+  "url" : "https://core.fhir.health.gov.fj/StructureDefinition/fiji-address-village",
+  "version" : "0.3.0",
+  "name" : "FijiAddressVillage"
+},
+{
+  "id" : "fiji-admin-zone",
+  "type" : "StructureDefinition",
+  "url" : "https://core.fhir.health.gov.fj/StructureDefinition/fiji-admin-zone",
+  "version" : "0.3.0",
+  "name" : "FijiAdminZone"
+},
+{
+  "id" : "fiji-allergy-intolerance",
+  "type" : "StructureDefinition",
+  "url" : "https://core.fhir.health.gov.fj/StructureDefinition/fiji-allergy-intolerance",
+  "version" : "0.3.0",
+  "name" : "FijiAllergyIntolerance"
+},
+{
+  "id" : "fiji-condition",
+  "type" : "StructureDefinition",
+  "url" : "https://core.fhir.health.gov.fj/StructureDefinition/fiji-condition",
+  "version" : "0.3.0",
+  "name" : "FijiCondition"
+},
+{
+  "id" : "fiji-device",
+  "type" : "StructureDefinition",
+  "url" : "https://core.fhir.health.gov.fj/StructureDefinition/fiji-device",
+  "version" : "0.3.0",
+  "name" : "FijiDevice"
+},
+{
+  "id" : "fiji-diagnostic-observation",
+  "type" : "StructureDefinition",
+  "url" : "https://core.fhir.health.gov.fj/StructureDefinition/fiji-diagnostic-observation",
+  "version" : "0.3.0",
+  "name" : "FijiDiagnosticObservation"
+},
+{
+  "id" : "fiji-encounter",
+  "type" : "StructureDefinition",
+  "url" : "https://core.fhir.health.gov.fj/StructureDefinition/fiji-encounter",
+  "version" : "0.3.0",
+  "name" : "FijiEncounter"
+},
+{
+  "id" : "fiji-humanname",
+  "type" : "StructureDefinition",
+  "url" : "https://core.fhir.health.gov.fj/StructureDefinition/fiji-humanname",
+  "version" : "0.3.0",
+  "name" : "FijiHumanName"
+},
+{
+  "id" : "fiji-iTaukei-affiliation",
+  "type" : "StructureDefinition",
+  "url" : "https://core.fhir.health.gov.fj/StructureDefinition/fiji-iTaukei-affiliation",
+  "version" : "0.3.0",
+  "name" : "FijiITaukeiAffiliation"
+},
+{
+  "id" : "fiji-imaging-diagnostic-report",
+  "type" : "StructureDefinition",
+  "url" : "https://core.fhir.health.gov.fj/StructureDefinition/fiji-imaging-diagnostic-report",
+  "version" : "0.3.0",
+  "name" : "FijiImagingDiagnosticReport"
+},
+{
+  "id" : "fiji-immunization",
+  "type" : "StructureDefinition",
+  "url" : "https://core.fhir.health.gov.fj/StructureDefinition/fiji-immunization",
+  "version" : "0.3.0",
+  "name" : "FijiImmunization"
+},
+{
+  "id" : "fiji-laboratory-diagnostic-report",
+  "type" : "StructureDefinition",
+  "url" : "https://core.fhir.health.gov.fj/StructureDefinition/fiji-laboratory-diagnostic-report",
+  "version" : "0.3.0",
+  "name" : "FijiLaboratoryDiagnosticReport"
+},
+{
+  "id" : "fiji-location",
+  "type" : "StructureDefinition",
+  "url" : "https://core.fhir.health.gov.fj/StructureDefinition/fiji-location",
+  "version" : "0.3.0",
+  "name" : "FijiLocation"
+},
+{
+  "id" : "fiji-medication",
+  "type" : "StructureDefinition",
+  "url" : "https://core.fhir.health.gov.fj/StructureDefinition/fiji-medication",
+  "version" : "0.3.0",
+  "name" : "FijiMedication"
+},
+{
+  "id" : "fiji-medication-dispense",
+  "type" : "StructureDefinition",
+  "url" : "https://core.fhir.health.gov.fj/StructureDefinition/fiji-medication-dispense",
+  "version" : "0.3.0",
+  "name" : "FijiMedicationDispense"
+},
+{
+  "id" : "fiji-medication-request",
+  "type" : "StructureDefinition",
+  "url" : "https://core.fhir.health.gov.fj/StructureDefinition/fiji-medication-request",
+  "version" : "0.3.0",
+  "name" : "FijiMedicationRequest"
+},
+{
+  "id" : "fiji-organization",
+  "type" : "StructureDefinition",
+  "url" : "https://core.fhir.health.gov.fj/StructureDefinition/fiji-organization",
+  "version" : "0.3.0",
+  "name" : "FijiOrganization"
+},
+{
+  "id" : "fiji-pathology-observation",
+  "type" : "StructureDefinition",
+  "url" : "https://core.fhir.health.gov.fj/StructureDefinition/fiji-pathology-observation",
+  "version" : "0.3.0",
+  "name" : "FijiPathologyObservation"
+},
+{
+  "id" : "fiji-patient",
+  "type" : "StructureDefinition",
+  "url" : "https://core.fhir.health.gov.fj/StructureDefinition/fiji-patient",
+  "version" : "0.3.0",
+  "name" : "FijiPatient"
+},
+{
+  "id" : "fiji-patient-ethnicity",
+  "type" : "StructureDefinition",
+  "url" : "https://core.fhir.health.gov.fj/StructureDefinition/fiji-patient-ethnicity",
+  "version" : "0.3.0",
+  "name" : "FijiPatientEthnicity"
+},
+{
+  "id" : "fiji-patient-occupation",
+  "type" : "StructureDefinition",
+  "url" : "https://core.fhir.health.gov.fj/StructureDefinition/fiji-patient-occupation",
+  "version" : "0.3.0",
+  "name" : "FijiPatientOccupation"
+},
+{
+  "id" : "fiji-practitioner",
+  "type" : "StructureDefinition",
+  "url" : "https://core.fhir.health.gov.fj/StructureDefinition/fiji-practitioner",
+  "version" : "0.3.0",
+  "name" : "FijiPractitioner"
+},
+{
+  "id" : "fiji-practitioner-role",
+  "type" : "StructureDefinition",
+  "url" : "https://core.fhir.health.gov.fj/StructureDefinition/fiji-practitioner-role",
+  "version" : "0.3.0",
+  "name" : "FijiPractitionerRole"
+},
+{
+  "id" : "fiji-procedure",
+  "type" : "StructureDefinition",
+  "url" : "https://core.fhir.health.gov.fj/StructureDefinition/fiji-procedure",
+  "version" : "0.3.0",
+  "name" : "FijiProcedure"
+},
+{
+  "id" : "fiji-related-person",
+  "type" : "StructureDefinition",
+  "url" : "https://core.fhir.health.gov.fj/StructureDefinition/fiji-related-person",
+  "version" : "0.3.0",
+  "name" : "FijiRelatedPerson"
+},
+{
+  "id" : "fiji-service-request",
+  "type" : "StructureDefinition",
+  "url" : "https://core.fhir.health.gov.fj/StructureDefinition/fiji-service-request",
+  "version" : "0.3.0",
+  "name" : "FijiServiceRequest"
+},
+{
+  "id" : "fiji-specimen",
+  "type" : "StructureDefinition",
+  "url" : "https://core.fhir.health.gov.fj/StructureDefinition/fiji-specimen",
+  "version" : "0.3.0",
+  "name" : "FijiSpecimen"
+},
+{
+  "id" : "fiji-vital-blood-pressure",
+  "type" : "StructureDefinition",
+  "url" : "https://core.fhir.health.gov.fj/StructureDefinition/fiji-vital-blood-pressure",
+  "version" : "0.3.0",
+  "name" : "FijiVitalBloodPressure"
+},
+{
+  "id" : "fiji-vital-bmi",
+  "type" : "StructureDefinition",
+  "url" : "https://core.fhir.health.gov.fj/StructureDefinition/fiji-vital-bmi",
+  "version" : "0.3.0",
+  "name" : "FijiBMI"
+},
+{
+  "id" : "fiji-vital-body-temperature",
+  "type" : "StructureDefinition",
+  "url" : "https://core.fhir.health.gov.fj/StructureDefinition/fiji-vital-body-temperature",
+  "version" : "0.3.0",
+  "name" : "FijiVitalBodyTemperature"
+},
+{
+  "id" : "fiji-vital-head-circumference",
+  "type" : "StructureDefinition",
+  "url" : "https://core.fhir.health.gov.fj/StructureDefinition/fiji-vital-head-circumference",
+  "version" : "0.3.0",
+  "name" : "FijiHeadCircumference"
+},
+{
+  "id" : "fiji-vital-heart-rate",
+  "type" : "StructureDefinition",
+  "url" : "https://core.fhir.health.gov.fj/StructureDefinition/fiji-vital-heart-rate",
+  "version" : "0.3.0",
+  "name" : "FijiVitalHeartRate"
+},
+{
+  "id" : "fiji-vital-height",
+  "type" : "StructureDefinition",
+  "url" : "https://core.fhir.health.gov.fj/StructureDefinition/fiji-vital-height",
+  "version" : "0.3.0",
+  "name" : "FijiHeight"
+},
+{
+  "id" : "fiji-vital-oxygen-saturation",
+  "type" : "StructureDefinition",
+  "url" : "https://core.fhir.health.gov.fj/StructureDefinition/fiji-vital-oxygen-saturation",
+  "version" : "0.3.0",
+  "name" : "FijiOxygenSaturation"
+},
+{
+  "id" : "fiji-vital-respiratory-rate",
+  "type" : "StructureDefinition",
+  "url" : "https://core.fhir.health.gov.fj/StructureDefinition/fiji-vital-respiratory-rate",
+  "version" : "0.3.0",
+  "name" : "FijiRespiratoryRate"
+},
+{
+  "id" : "fiji-vital-weight",
+  "type" : "StructureDefinition",
+  "url" : "https://core.fhir.health.gov.fj/StructureDefinition/fiji-vital-weight",
+  "version" : "0.3.0",
+  "name" : "FijiWeight"
+},
+{
+  "id" : "fiji-allergy-agent-vs",
+  "type" : "ValueSet",
+  "url" : "https://core.fhir.health.gov.fj/ValueSet/fiji-allergy-agent-vs",
+  "version" : "0.3.0",
+  "name" : "FijiAllergyAgentVS"
+},
+{
+  "id" : "fiji-body-site-vs",
+  "type" : "ValueSet",
+  "url" : "https://core.fhir.health.gov.fj/ValueSet/fiji-body-site-vs",
+  "version" : "0.3.0",
+  "name" : "FijiBodySiteVS"
+},
+{
+  "id" : "fiji-condition-code-vs",
+  "type" : "ValueSet",
+  "url" : "https://core.fhir.health.gov.fj/ValueSet/fiji-condition-code-vs",
+  "version" : "0.3.0",
+  "name" : "FijiConditionCodeVS"
+},
+{
+  "id" : "fiji-dcm-modality-vs",
+  "type" : "ValueSet",
+  "url" : "https://core.fhir.health.gov.fj/ValueSet/fiji-dcm-modality-vs",
+  "version" : "0.3.0",
+  "name" : "FijiDCMModalityVS"
+},
+{
+  "id" : "fiji-division-vs",
+  "type" : "ValueSet",
+  "url" : "https://core.fhir.health.gov.fj/ValueSet/fiji-division-vs",
+  "version" : "0.3.0",
+  "name" : "FijiDivisionVS"
+},
+{
+  "id" : "fiji-encounter-reason-vs",
+  "type" : "ValueSet",
+  "url" : "https://core.fhir.health.gov.fj/ValueSet/fiji-encounter-reason-vs",
+  "version" : "0.3.0",
+  "name" : "FijiEncounterReasonVS"
+},
+{
+  "id" : "fiji-evidence-vs",
+  "type" : "ValueSet",
+  "url" : "https://core.fhir.health.gov.fj/ValueSet/fiji-evidence-vs",
+  "version" : "0.3.0",
+  "name" : "FijiEvidenceVS"
+},
+{
+  "id" : "fiji-med-vs",
+  "type" : "ValueSet",
+  "url" : "https://core.fhir.health.gov.fj/ValueSet/fiji-med-vs",
+  "version" : "0.3.0",
+  "name" : "FijiMedVS"
+},
+{
+  "id" : "fiji-medical-area-vs",
+  "type" : "ValueSet",
+  "url" : "https://core.fhir.health.gov.fj/ValueSet/fiji-medical-area-vs",
+  "version" : "0.3.0",
+  "name" : "FijiMedicalAreaVS"
+},
+{
+  "id" : "fiji-medication-request-reason-vs",
+  "type" : "ValueSet",
+  "url" : "https://core.fhir.health.gov.fj/ValueSet/fiji-medication-request-reason-vs",
+  "version" : "0.3.0",
+  "name" : "FijiMedicationRequestReasonVS"
+},
+{
+  "id" : "fiji-medication-route-vs",
+  "type" : "ValueSet",
+  "url" : "https://core.fhir.health.gov.fj/ValueSet/fiji-medication-route-vs",
+  "version" : "0.3.0",
+  "name" : "FijiMedicationRouteVS"
+},
+{
+  "id" : "fiji-nursing-zone-vs",
+  "type" : "ValueSet",
+  "url" : "https://core.fhir.health.gov.fj/ValueSet/fiji-nursing-zone-vs",
+  "version" : "0.3.0",
+  "name" : "FijiNursingZoneVS"
+},
+{
+  "id" : "fiji-obs-interpretation-vs",
+  "type" : "ValueSet",
+  "url" : "https://core.fhir.health.gov.fj/ValueSet/fiji-obs-interpretation-vs",
+  "version" : "0.3.0",
+  "name" : "FijiObsInterpretationVS"
+},
+{
+  "id" : "fiji-organization-role-vs",
+  "type" : "ValueSet",
+  "url" : "https://core.fhir.health.gov.fj/ValueSet/fiji-organization-role-vs",
+  "version" : "0.3.0",
+  "name" : "FijiOrganizationRoleVS"
+},
+{
+  "id" : "fiji-radiology-findings-vs",
+  "type" : "ValueSet",
+  "url" : "https://core.fhir.health.gov.fj/ValueSet/fiji-radiology-findings-vs",
+  "version" : "0.3.0",
+  "name" : "FijiRadiologyFindingsVS"
+},
+{
+  "id" : "fiji-service-type-vs",
+  "type" : "ValueSet",
+  "url" : "https://core.fhir.health.gov.fj/ValueSet/fiji-service-type-vs",
+  "version" : "0.3.0",
+  "name" : "FijiServiceTypeVS"
+},
+{
+  "id" : "fiji-sub-division-vs",
+  "type" : "ValueSet",
+  "url" : "https://core.fhir.health.gov.fj/ValueSet/fiji-sub-division-vs",
+  "version" : "0.3.0",
+  "name" : "FijiSubDivisionVS"
+},
+{
+  "id" : "fiji-vital-body-weight-vs",
+  "type" : "ValueSet",
+  "url" : "https://core.fhir.health.gov.fj/ValueSet/fiji-vital-body-weight-vs",
+  "version" : "0.3.0",
+  "name" : "FijiVitalBodyWeightVS"
+},
+{
+  "id" : "fiji-vital-method-vs",
+  "type" : "ValueSet",
+  "url" : "https://core.fhir.health.gov.fj/ValueSet/fiji-vital-method-vs",
+  "version" : "0.3.0",
+  "name" : "FijiVitalMethodVS"
+},
+{
+  "id" : "heart-rate-loinc",
+  "type" : "ValueSet",
+  "url" : "https://core.fhir.health.gov.fj/ValueSet/heart-rate-loinc",
+  "version" : "0.3.0",
+  "name" : "HeartRateVS"
+},
+{
+  "id" : "imm-vs",
+  "type" : "ValueSet",
+  "url" : "https://core.fhir.health.gov.fj/ValueSet/imm-vs",
+  "version" : "0.3.0",
+  "name" : "ImmVS"
+},
+{
+  "id" : "immunization-status-reason",
+  "type" : "ValueSet",
+  "url" : "https://core.fhir.health.gov.fj/ValueSet/immunization-status-reason",
+  "version" : "0.3.0",
+  "name" : "ImmStatusReasonVS"
+},
+{
+  "id" : "obs-vs",
+  "type" : "ValueSet",
+  "url" : "https://core.fhir.health.gov.fj/ValueSet/obs-vs",
+  "version" : "0.3.0",
+  "name" : "ObsVS"
+},
+{
+  "id" : "fiji-division-cs",
+  "type" : "CodeSystem",
+  "url" : "https://fhir.health.gov.fj/CodeSystem/fiji-division",
+  "version" : "0.3.0",
+  "name" : "FijiDivisionCS"
+},
+{
+  "id" : "fiji-korodina",
+  "type" : "CodeSystem",
+  "url" : "https://fhir.health.gov.fj/CodeSystem/fiji-korodina",
+  "version" : "0.3.0",
+  "name" : "FijiKorodinaCS"
+},
+{
+  "id" : "fiji-mataqali",
+  "type" : "CodeSystem",
+  "url" : "https://fhir.health.gov.fj/CodeSystem/fiji-mataqali",
+  "version" : "0.3.0",
+  "name" : "FijiMataqaliCS"
+},
+{
+  "id" : "fiji-medicalarea-cs",
+  "type" : "CodeSystem",
+  "url" : "https://fhir.health.gov.fj/CodeSystem/fiji-medicalarea",
+  "version" : "0.3.0",
+  "name" : "FijiMedicalAreaCS"
+},
+{
+  "id" : "fiji-nursingzone-cs",
+  "type" : "CodeSystem",
+  "url" : "https://fhir.health.gov.fj/CodeSystem/fiji-nursingzone",
+  "version" : "0.3.0",
+  "name" : "FijiNursingZoneCS"
+},
+{
+  "id" : "fiji-subdivision-cs",
+  "type" : "CodeSystem",
+  "url" : "https://fhir.health.gov.fj/CodeSystem/fiji-subdivision",
+  "version" : "0.3.0",
+  "name" : "FijiSubDivisionCS"
+},
+{
+  "id" : "fiji-tikina",
+  "type" : "CodeSystem",
+  "url" : "https://fhir.health.gov.fj/CodeSystem/fiji-tikina",
+  "version" : "0.3.0",
+  "name" : "FijiTikinaCS"
+},
+{
+  "id" : "fiji-tokatoka",
+  "type" : "CodeSystem",
+  "url" : "https://fhir.health.gov.fj/CodeSystem/fiji-tokatoka",
+  "version" : "0.3.0",
+  "name" : "FijiTokatokaCS"
+},
+{
+  "id" : "fiji-yasana",
+  "type" : "CodeSystem",
+  "url" : "https://fhir.health.gov.fj/CodeSystem/fiji-yasana",
+  "version" : "0.3.0",
+  "name" : "FijiYasanaCS"
+},
+{
+  "id" : "fiji-yavusa",
+  "type" : "CodeSystem",
+  "url" : "https://fhir.health.gov.fj/CodeSystem/fiji-yavusa",
+  "version" : "0.3.0",
+  "name" : "FijiYavusaCS"
+},
+{
+  "id" : "fiji-korodina-vs",
+  "type" : "ValueSet",
+  "url" : "https://fhir.health.gov.fj/ValueSet/fiji-korodina",
+  "version" : "0.3.0",
+  "name" : "FijiKorodinaVS"
+},
+{
+  "id" : "fiji-mataqali-vs",
+  "type" : "ValueSet",
+  "url" : "https://fhir.health.gov.fj/ValueSet/fiji-mataqali",
+  "version" : "0.3.0",
+  "name" : "FijiMataqaliVS"
+},
+{
+  "id" : "fiji-tikina-vs",
+  "type" : "ValueSet",
+  "url" : "https://fhir.health.gov.fj/ValueSet/fiji-tikina",
+  "version" : "0.3.0",
+  "name" : "FijiTikinaVS"
+},
+{
+  "id" : "fiji-tokatoka-vs",
+  "type" : "ValueSet",
+  "url" : "https://fhir.health.gov.fj/ValueSet/fiji-tokatoka",
+  "version" : "0.3.0",
+  "name" : "FijiTokatokaVS"
+},
+{
+  "id" : "fiji-yasana-vs",
+  "type" : "ValueSet",
+  "url" : "https://fhir.health.gov.fj/ValueSet/fiji-yasana",
+  "version" : "0.3.0",
+  "name" : "FijiYasanaVS"
+},
+{
+  "id" : "fiji-yavusa-vs",
+  "type" : "ValueSet",
+  "url" : "https://fhir.health.gov.fj/ValueSet/fiji-yavusa",
+  "version" : "0.3.0",
+  "name" : "FijiYavusaVS"
+}]

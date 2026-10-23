@@ -1,0 +1,53 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://core.fhir.health.gov.fj/PractitionerRole/FijiPractitionerRoleExample> a fhir:PractitionerRole ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "FijiPractitionerRoleExample"] ;
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "https://core.fhir.health.gov.fj/StructureDefinition/fiji-practitioner-role" ;
+       fhir:index 0 ;
+       fhir:link <https://core.fhir.health.gov.fj/StructureDefinition/fiji-practitioner-role>
+     ]
+  ] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: PractitionerRole FijiPractitionerRoleExample</b></p><a name=\"FijiPractitionerRoleExample\"> </a><a name=\"hcFijiPractitionerRoleExample\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-fiji-practitioner-role.html\">Fiji Practitioner Role</a></p></div><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\">Jone Nabose (https://fhir.health.gov.fj/identifier/practitioner-medical-registration#MED-12345): General Practitioner at Suva Divisional Hospital (http://fhir.health.gov.fj/identifier/organization#FijiOrganizationIdentifier#FJ-HOSP-SUH-001)</p><hr/><table class=\"grid\"><tr><td style=\"background-color: #f3f5da\" title=\"The period during which this record applies\">Valid Period:</td><td colspan=\"3\">2023-01-01 --&gt; (ongoing)</td></tr><tr><td style=\"background-color: #f3f5da\" title=\"The practitioner who is able to provide the services in this role\">Practitioner:</td><td colspan=\"3\"><a href=\"Practitioner-FijiPractitionerExample.html\">Jone Nabose (https://fhir.health.gov.fj/identifier/practitioner-medical-registration#MED-12345)</a></td></tr><tr><td style=\"background-color: #f3f5da\" title=\"The organization where the practitioner performs the roles\">Organization:</td><td colspan=\"3\"><a href=\"Organization-FijiOrganizationExample.html\">Suva Divisional Hospital (http://fhir.health.gov.fj/identifier/organization#FijiOrganizationIdentifier#FJ-HOSP-SUH-001)</a></td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Roles which this practitioner is authorized to perform for the organization\">Role:</td><td colspan=\"3\"><span title=\"Codes:\">General Practitioner</span></td></tr><tr><td style=\"background-color: #f3f5da\" title=\"The specialties of the practitioner in this role\">Specialty:</td><td colspan=\"3\"><span title=\"Codes:\">Family Medicine</span></td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Ways to contact the practitioner in this role\">Contact Detail</td><td colspan=\"3\"><a href=\"tel:+685123456\">+685123456</a></td></tr></table></div>"
+  ] ;
+  fhir:PractitionerRole.period [
+     fhir:Period.start [ fhir:value "2023-01-01"^^xsd:date ]
+  ] ;
+  fhir:PractitionerRole.practitioner [
+     fhir:link <https://core.fhir.health.gov.fj/Practitioner/FijiPractitionerExample> ;
+     fhir:Reference.reference [ fhir:value "Practitioner/FijiPractitionerExample" ]
+  ] ;
+  fhir:PractitionerRole.organization [
+     fhir:link <https://core.fhir.health.gov.fj/Organization/FijiOrganizationExample> ;
+     fhir:Reference.reference [ fhir:value "Organization/FijiOrganizationExample" ]
+  ] ;
+  fhir:PractitionerRole.code [
+     fhir:index 0 ;
+     fhir:CodeableConcept.text [ fhir:value "General Practitioner" ]
+  ] ;
+  fhir:PractitionerRole.specialty [
+     fhir:index 0 ;
+     fhir:CodeableConcept.text [ fhir:value "Family Medicine" ]
+  ] ;
+  fhir:PractitionerRole.telecom [
+     fhir:index 0 ;
+     fhir:ContactPoint.system [ fhir:value "phone" ] ;
+     fhir:ContactPoint.value [ fhir:value "+685123456" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://core.fhir.health.gov.fj/PractitionerRole/FijiPractitionerRoleExample.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

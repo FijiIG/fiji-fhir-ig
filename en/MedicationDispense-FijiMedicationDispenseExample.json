@@ -1,0 +1,46 @@
+{
+  "resourceType" : "MedicationDispense",
+  "id" : "FijiMedicationDispenseExample",
+  "meta" : {
+    "profile" : ["https://core.fhir.health.gov.fj/StructureDefinition/fiji-medication-dispense"]
+  },
+  "language" : "en",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: MedicationDispense FijiMedicationDispenseExample</b></p><a name=\"FijiMedicationDispenseExample\"> </a><a name=\"hcFijiMedicationDispenseExample\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-fiji-medication-dispense.html\">Fiji Medication Dispense</a></p></div><p><b>identifier</b>: <a href=\"NamingSystem-FijiMedicationDispenseIdentifier.html\" title=\"NamingSystem for Medication Dispense  identifiers in Fiji\">FijiMedicationDispenseIdentifier</a>/MSD-2026-000123</p><p><b>status</b>: Completed</p><p><b>medication</b>: <span title=\"Codes:{http://snomed.info/sct 27658006}\">Amoxicillin</span></p><p><b>subject</b>: <a href=\"Patient-FijiPatientExample.html\">Jone Nabou Male, DoB: 1992-04-17 ( http://fhir.health.gov.fj/identifier/national-health-number#FijiPatientIdentifier#FJ-NHI-982345671)</a></p><h3>Performers</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Actor</b></td></tr><tr><td style=\"display: none\">*</td><td><a href=\"Practitioner-FijiPractitionerExample.html\">Jone Nabose (https://fhir.health.gov.fj/identifier/practitioner-medical-registration#MED-12345)</a></td></tr></table><p><b>authorizingPrescription</b>: <a href=\"MedicationRequest-FijiMedicationRequestExample.html\">MedicationRequest: status = active; intent = order; medication[x] = Amoxicillin; authoredOn = 2026-10-20</a></p><p><b>quantity</b>: 15 capsule<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  code1 = '1')</span></p><p><b>whenPrepared</b>: 2026-10-20 09:00:00+1200</p><p><b>whenHandedOver</b>: 2026-10-20</p><h3>DosageInstructions</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Text</b></td></tr><tr><td style=\"display: none\">*</td><td>Take one capsule orally three times daily for 5 days.</td></tr></table></div>"
+  },
+  "identifier" : [{
+    "system" : "http://fhir.health.gov.fj/identifier/msupply-dispense",
+    "value" : "MSD-2026-000123"
+  }],
+  "status" : "completed",
+  "medicationCodeableConcept" : {
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "27658006",
+      "display" : "Amoxicillin"
+    }]
+  },
+  "subject" : {
+    "reference" : "Patient/FijiPatientExample"
+  },
+  "performer" : [{
+    "actor" : {
+      "reference" : "Practitioner/FijiPractitionerExample"
+    }
+  }],
+  "authorizingPrescription" : [{
+    "reference" : "MedicationRequest/FijiMedicationRequestExample"
+  }],
+  "quantity" : {
+    "value" : 15,
+    "unit" : "capsule",
+    "system" : "http://unitsofmeasure.org",
+    "code" : "1"
+  },
+  "whenPrepared" : "2026-10-20T09:00:00+12:00",
+  "whenHandedOver" : "2026-10-20",
+  "dosageInstruction" : [{
+    "text" : "Take one capsule orally three times daily for 5 days."
+  }]
+}

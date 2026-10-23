@@ -1,0 +1,60 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "fiji-medication-request-reason-vs",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet fiji-medication-request-reason-vs</b></p><a name=\"fiji-medication-request-reason-vs\"> </a><a name=\"hcfiji-medication-request-reason-vs\"> </a><p>This value set includes codes based on the following rules:</p><ul><li>Include codes from<a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a><span title=\"Version is not explicitly stated. No matching Code System found\"> version Not Stated (use latest from terminology server)</span> where expression  = ^ 32570581000036105|Problem/Diagnosis reference set|</li><li>Include codes from<a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a><span title=\"Version is not explicitly stated. No matching Code System found\"> version Not Stated (use latest from terminology server)</span> where expression  = &lt; 404684003 |Clinical finding| AND ^ 10811000132104 |International Patient Summary reference set|</li><li>Include all codes defined in <code>http://hl7.org/fhir/sid/icd-10-am</code><span title=\"Version is not explicitly stated. No matching Code System found\"> version Not Stated (use latest from terminology server)</span></li></ul></div>"
+  },
+  "url" : "https://core.fhir.health.gov.fj/ValueSet/fiji-medication-request-reason-vs",
+  "version" : "0.3.0",
+  "name" : "FijiMedicationRequestReasonVS",
+  "title" : "MedicationRequest reason code valueset",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2026-10-23T04:23:18+00:00",
+  "publisher" : "MHMS Fiji",
+  "contact" : [{
+    "name" : "MHMS Fiji",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://fhir.health.gov.fj"
+    }]
+  },
+  {
+    "name" : "Support",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.fhir.health.gov.fj"
+    }]
+  }],
+  "description" : "MedicationRequest reason valueset for Fiji Core. \nProposed valueset is taken from SNOMED Problem/Diagnosis refsets.",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "FJ",
+      "display" : "Fiji"
+    }]
+  }],
+  "copyright" : "Distributed under the Creative Commons CC0-1.0 License (https://creativecommons.org/publicdomain/zero/1.0/)",
+  "compose" : {
+    "include" : [{
+      "system" : "http://snomed.info/sct",
+      "filter" : [{
+        "property" : "expression",
+        "op" : "=",
+        "value" : "^ 32570581000036105|Problem/Diagnosis reference set|"
+      }]
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "filter" : [{
+        "property" : "expression",
+        "op" : "=",
+        "value" : "< 404684003 |Clinical finding| AND ^ 10811000132104 |International Patient Summary reference set|"
+      }]
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-10-am"
+    }]
+  }
+}
