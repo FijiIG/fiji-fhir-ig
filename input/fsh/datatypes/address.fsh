@@ -3,14 +3,13 @@ Parent: Address
 Id: fiji-address
 Title: "Fiji Address"
 Description: """Address profile designed for Fiji where addresses are commonly descriptive and village-based rather than street-based.
-This profile supports a range of address formats, with commonly required extensions, and general usage guidance.
+This profile supports a range of address formats and general usage guidance.
 In all cases:
 - text is a mandatory field and should be considered the primary representation of the fully address.
 - line is used for free text address lines and may relate to a landmark, school, church etc. rather than a street address.
-- Province, Village and Settlement are added as extensions to the base fhir Address definition to support common address formats.
-- geolocation is added as an optional extension to support use case where GPS coordinates are available. It is expected that this will become more common.
 - Postal code is often not used, so is currently optional and may be removed (ie 0..0) if not required in the future
-- Country is required to support international interoperability
+- Country supports international interoperability
+- geolocation is added as an optional extension to support use case where GPS coordinates are available. It is expected that this will become more common.
 
 Recommended mapping of address fields are below but should be validated and used with Fiji specific examples.
 
@@ -20,11 +19,8 @@ Recommended mapping of address fields are below but should be validated and used
 | `line`              | Landmark, compound, street     | Free-text                      |
 | `city`              | Town                           | Mainly urban areas             |
 | `district`          | Tikina / district              | Country dependent              |
-| `extension:province` | Yasana / province              | Country dependent              |
 | `state`             | Division                       | Country dependent              |
 | `extension:village` | Village                        | Most rural addresses           |
-| `extension:settlement`| Settlement                   | Rural addresses        |
-
 """
 
 
@@ -63,9 +59,6 @@ Recommended mapping of address fields are below but should be validated and used
 
 * extension[village] ^short = "Village or rural settlement."
 * extension[village] ^definition = "Village, settlement, or rural community name. This may be a primary geographic identifier for addressing."
-
-// * extension[island] ^short = "Island where the address is located."
-// * extension[island] ^definition = "Island name where the address is located. This is important in archipelago nations where logistics and travel depend on island geography."
 
 * extension[geolocation] ^short = "Geographic coordinates of the address."
 * extension[geolocation] ^definition = "Latitude and longitude coordinates representing the geographic location of the address. May represent household, facility, or village centroid."

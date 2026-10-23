@@ -282,8 +282,8 @@ The profile also defines mandatory cardinalities for identifiers, identifier sys
 
 * gender MS
 * birthDate MS
-* birthDate ^short = "Date of birth, may be flagged as estimated via extension"
-* birthDate.extension contains BirthDateEstimatedIndicator named birthDateEstimated 0..1 MS
+* birthDate ^short = "Date of birth, may be flagged as verified via extension"
+* birthDate.extension contains BirthDateVerifiedIndicator named birthDateVerified 0..1 MS
 
 * address 0..*
 * address only FijiAddress

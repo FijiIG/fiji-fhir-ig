@@ -59,6 +59,8 @@ pages:
     title: Terminology
   extensions.md:
     title: Extensions
+  snomed.md:
+    title: SNOMED CT Adoption
   
 
 #   implementation.xml:

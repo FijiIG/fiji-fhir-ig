@@ -49,3 +49,48 @@ Description: "Example of a primary care clinic providing community healthcare se
 * address[0].line[0] = "Main Road"
 * address[0].city = "Navua"
 * address[0].country = "Fiji"
+
+
+// Fiji Organization Examples ----------------------------------------------------------------------
+Instance: FijiOrganizationExample
+InstanceOf: Organization
+Usage: #example
+Title: "Fiji Hospital Example Fiji Divisional Hospital"
+Description: """
+Example Fiji hospital organization in Fiji.
+Includes organizational identifier, contact information, and address.
+"""
+
+///////////////////////////////////////////////////////////////
+// IDENTIFIER
+///////////////////////////////////////////////////////////////
+
+* identifier.system = "http://fhir.health.gov.fj/identifier/organization"
+* identifier.value = "FJ-HOSP-SUH-001"
+
+///////////////////////////////////////////////////////////////
+// NAME
+///////////////////////////////////////////////////////////////
+
+* name = "Suva Divisional Hospital"
+
+///////////////////////////////////////////////////////////////
+// TELECOM
+///////////////////////////////////////////////////////////////
+
+* telecom[0].system = #phone
+* telecom[0].value = "+6793313444"
+* telecom[0].use = #work
+
+* telecom[1].system = #email
+* telecom[1].value = "info@suvahospital.gov.fj"
+* telecom[1].use = #work
+
+///////////////////////////////////////////////////////////////
+// ADDRESS
+///////////////////////////////////////////////////////////////
+
+* address.line = "Amy Street"
+* address.city = "Suva"
+* address.district = "Central Division"
+* address.country = "FJ"

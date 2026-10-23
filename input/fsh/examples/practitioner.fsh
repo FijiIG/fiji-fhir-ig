@@ -44,3 +44,22 @@ Note: The registration number and names are for illustrative purposes only and a
 * communication[1].coding[0].system = "urn:ietf:bcp:47"
 * communication[1].coding[0].code = #fj
 * communication[1].text = "Fijian"
+
+// Fiji PractitionerRole Examples ----------------------------------------------------------------------
+Instance: FijiPractitionerRoleExample
+InstanceOf: FijiPractitionerRole
+Usage: #example
+Title: "Fiji Practitioner Role District Hospital GP"
+Description: "General Practitioner role at district hospital for registered Fiji practitioner."
+
+* practitioner = Reference(Practitioner/FijiPractitionerExample)
+* organization = Reference(Organization/FijiOrganizationExample)
+
+* code[0].text = "General Practitioner"
+
+* specialty[0].text = "Family Medicine"
+
+* period.start = "2023-01-01"
+
+* telecom.system = #phone
+* telecom.value = "+685123456"
