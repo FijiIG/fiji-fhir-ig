@@ -2,14 +2,17 @@ Profile: FijiAddress
 Parent: Address
 Id: fiji-address
 Title: "Fiji Address"
-Description: """Address profile designed for Fiji where addresses are commonly descriptive and village-based rather than street-based.
+Description: """Address profile designed for Fiji where addresses are commonly descriptive and village-based rather than 
+street-based.   
 This profile supports a range of address formats and general usage guidance.
 In all cases:
 - text is a mandatory field and should be considered the primary representation of the fully address.
-- line is used for free text address lines and may relate to a landmark, school, church etc. rather than a street address.
+- line is used for free text address lines and may relate to a landmark, school, church etc. in some cases combined with a village or settlement name - rather than a street address.
 - Postal code is often not used, so is currently optional and may be removed (ie 0..0) if not required in the future
 - Country supports international interoperability
 - geolocation is added as an optional extension to support use case where GPS coordinates are available. It is expected that this will become more common.
+
+This is used by FijiPatient, FijiPractitioner, FijiLocation and FijiOrganization.
 
 Recommended mapping of address fields are below but should be validated and used with Fiji specific examples.
 
@@ -20,7 +23,7 @@ Recommended mapping of address fields are below but should be validated and used
 | `city`              | Town                           | Mainly urban areas             |
 | `district`          | Tikina / district              | Country dependent              |
 | `state`             | Division                       | Country dependent              |
-| `extension:village` | Village                        | Most rural addresses           |
+| `extension:geolocation` | Geolocation coordinates    | Lat/Long coordinates        |
 """
 
 
@@ -54,11 +57,11 @@ Recommended mapping of address fields are below but should be validated and used
 * postalCode ^short = "Postal code is currently optional"
 
 * extension contains
-    FijiAddressVillage named village 0..1 MS and
+//    FijiAddressVillage named village 0..1 MS and
     $geolocation|4.0.1 named geolocation 0..1
 
-* extension[village] ^short = "Village or rural settlement."
-* extension[village] ^definition = "Village, settlement, or rural community name. This may be a primary geographic identifier for addressing."
+//* extension[village] ^short = "Village or rural settlement."
+//* extension[village] ^definition = "Village, settlement, or rural community name. This may be a primary geographic identifier for addressing."
 
 * extension[geolocation] ^short = "Geographic coordinates of the address."
 * extension[geolocation] ^definition = "Latitude and longitude coordinates representing the geographic location of the address. May represent household, facility, or village centroid."

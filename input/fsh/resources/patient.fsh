@@ -231,12 +231,6 @@ The profile also defines mandatory cardinalities for identifiers, identifier sys
 * name only FijiHumanName
 
 // -----------------------------
-// Health Administration Zone Extension
-// -----------------------------
-
-* extension contains FijiAdminZone named adminZone 0..1
-
-// -----------------------------
 // iTaukei Extension Integration
 // -----------------------------
 
