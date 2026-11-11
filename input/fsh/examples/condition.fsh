@@ -11,7 +11,7 @@ Title: "Condition Example - Type 2 Diabetes Mellitus"
 
 * category[0] = $condition-category-cs#encounter-diagnosis "Encounter Diagnosis"
 
-* severity = $SCT#6736007 "Moderate"
+* severity = $SCT#6736007 "Moderate severity"
 
 * bodySite = $SCT#81745001 "Structure of pancreas"
 

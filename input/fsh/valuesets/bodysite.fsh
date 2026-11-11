@@ -11,4 +11,4 @@ Values from SNOMED CT anatomical structures.
 * ^publisher = "MHMS Fiji"
 
 // Pulls the entire anatomical structure tree as defined by the HL7 IPS standard
-* include codes from system $SCT where expression = "< 442083009 |Anatomical or acquired body structure (body structure)|"
+* include codes from system $SCT where constraint = "< 442083009"

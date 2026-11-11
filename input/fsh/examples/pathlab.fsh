@@ -24,7 +24,7 @@ Title: "Example Lipid Panel"
 
 * status = #final
 * category = $obs-cat-cs#laboratory
-* code = $loinc#24331-1 "Lipid panel"
+* code = $loinc#24331-1 "Lipid 1996 panel - Serum or Plasma"
 * subject = Reference(Patient/FijiPatientExample)
 * effectiveDateTime = "2026-09-23T09:00:00+12:00"
 * issued = "2026-09-23T12:00:00+12:00"
