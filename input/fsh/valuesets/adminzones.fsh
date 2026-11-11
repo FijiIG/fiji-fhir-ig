@@ -5,7 +5,7 @@ Description: "Health administrative division codes in Fiji"
 
 * ^experimental = false
 * ^caseSensitive = true
-* ^url = "https://fhir.health.gov.fj/CodeSystem/fiji-division"
+* ^url = $division-cs
 
 * #central "Central" "Central division covers capital regions and surrounding provinces"
 * #eastern "Eastern" "Eastern division Covers outer islands and remote areas like Levuka and Rotuma"
@@ -19,7 +19,7 @@ Description: "Health administrative sub division codes in Fiji"
 
 * ^experimental = false
 * ^caseSensitive = true
-* ^url = "https://fhir.health.gov.fj/CodeSystem/fiji-subdivision"
+* ^url = $subdivision-cs
 
 * #rewa  "Rewa" "Rewa sub-division"
 * #naitasiri  "Naitasiri" "Naitasiri sub-division"
@@ -49,7 +49,7 @@ Description: "Health administrative medical area codes in Fiji"
 
 * ^experimental = false
 * ^caseSensitive = true
-* ^url = "https://fhir.health.gov.fj/CodeSystem/fiji-medicalarea"
+* ^url = $medicalarea-cs
 
 * #area1 "Area1" "Medical area 1 (example only need to populate this code system)"
 
@@ -60,7 +60,7 @@ Description: "Health administrative nursing zone codes in Fiji"
 
 * ^experimental = false
 * ^caseSensitive = true
-* ^url = "https://fhir.health.gov.fj/CodeSystem/fiji-nursingzone"
+* ^url = $nursingzone-cs
 
 * #zone1 "Zone1" "Nursing zone 1 (example only need to populate this code system)"
 

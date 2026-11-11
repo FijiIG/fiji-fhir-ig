@@ -12,8 +12,12 @@ Includes "clinical finding"  codes and codes for "situation with explicit conten
 * ^experimental = false
 * ^publisher = "MHMS Fiji"
 // SNOMED rule: Intersect Clinical Finding with the IPS RefSet using ECL
-* include codes from system $SCT where expression = "< 404684003 |Clinical finding| AND ^ 10811000132104 |International Patient Summary reference set|"
+// * include codes from system $SCT where expression = "< 404684003 |Clinical finding| AND ^ 10811000132104 |International Patient Summary reference set|"
 // SNOMED: Also pull in clinical history concepts ("Situation with explicit context") from the IPS RefSet
-* include codes from system $SCT where expression = "< 243796009 |Situation with explicit context| AND ^ 10811000132104 |International Patient Summary reference set|"
+// * include codes from system $SCT where expression = "< 243796009 |Situation with explicit context| AND ^ 10811000132104 |International Patient Summary reference set|"
+* include codes from system $SCT where constraint = "< 404684003 AND ^ 816080008"
+* include codes from system $SCT where constraint = "< 243796009 AND ^ 816080008"
+
+
 // ICD-10: These codes are included for support of historic data and until SNOMED is fully supported
 * include codes from system $ICD10AM

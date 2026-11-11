@@ -10,7 +10,7 @@ Description: "Example of an AllergyIntolerance for a patient with a confirmed pe
 * category = #medication
 * criticality = #high
 
-* code = $SCT#91936005 "Penicillin"
+* code = $SCT#91936005 "Allergy to penicillin"
 * patient = Reference(Patient/FijiPatientExample)
 * onsetDateTime = "2024-06-15"
 
