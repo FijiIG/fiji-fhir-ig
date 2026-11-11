@@ -3,13 +3,13 @@ Parent: Observation
 Id: fiji-diagnostic-observation
 Title: "Fiji Diagnostic Observation"
 Description: """
-## Fiji Diagnostic Observation
+### Fiji Diagnostic Observation
 
 The **Fiji Diagnostic Observation** profile represents an individual observation or finding produced as part of a radiology or other diagnostic investigation. It is based on the FHIR `Observation` resource and provides constraints and terminology bindings appropriate for diagnostic results in Fiji.
 
 The profile is intended to support the representation of individual diagnostic findings, including coded radiology findings, anatomical locations, performers, and component observations.
 
-### Key Elements
+#### Key Elements
 
 | Element | Cardinality | Description |
 |---|---:|---|
@@ -28,7 +28,7 @@ The profile is intended to support the representation of individual diagnostic f
 | `component.value[x]` | 0..1 | The result of the component observation. |
 | `component.dataAbsentReason` | 0..1 | Provides a reason when the value of a component observation is not available. |
 
-### Terminology Bindings
+#### Terminology Bindings
 
 | Element | Value Set | Binding | Purpose |
 |---|---|---|---|
@@ -37,7 +37,7 @@ The profile is intended to support the representation of individual diagnostic f
 | `dataAbsentReason` | FHIR Data Absent Reason | Extensible | Provides a standard reason when an observation result is unavailable. |
 | `bodySite` | `FijiBodySiteVS` | Extensible | Identifies the anatomical or acquired body structure associated with the observation using SNOMED CT. |
 
-### Diagnostic Finding Code
+#### Diagnostic Finding Code
 
 The `code` element identifies the diagnostic finding represented by the observation and is bound to `FijiRadiologyFindingsVS`.
 
@@ -47,7 +47,7 @@ The value set is defined using SNOMED CT concepts that are both clinical finding
 
 This provides a terminology-based approach to identifying findings relevant to radiology and imaging rather than maintaining a fixed list of individual concepts.
 
-### Body Site
+#### Body Site
 
 Where applicable, `bodySite` identifies the anatomical location to which the diagnostic observation relates. The element is bound to `FijiBodySiteVS` using an extensible binding.
 
@@ -57,19 +57,19 @@ The value set is based on SNOMED CT anatomical or acquired body structure concep
 
 This allows standard SNOMED CT concepts to be used to represent the anatomical site while allowing additional concepts where required.
 
-### Component Observations
+#### Component Observations
 
 The `component` element may be used when a diagnostic observation contains additional observations that are integral to the main observation. Each component must have a `code` identifying what is being observed and may contain either a result in `value[x]` or a `dataAbsentReason` when the result is unavailable.
 
 Components are appropriate where the individual results form part of a single overall observation and do not need to be represented as separate resources.
 
-### Related Diagnostic Observations
+#### Related Diagnostic Observations
 
 The `hasMember` element may be used to associate the observation with other diagnostic observations. References are restricted to `FijiDiagnosticObservation`, supporting the representation of groups of related diagnostic findings.
 
 For example, a diagnostic observation may use `hasMember` to reference separate observations representing individual findings from the same diagnostic investigation.
 
-### Missing Results
+#### Missing Results
 
 Both the main observation and its components support `dataAbsentReason`. This should be used when a result that would otherwise be represented in `value[x]` is not available, rather than leaving the reason for the missing result implicit.
 

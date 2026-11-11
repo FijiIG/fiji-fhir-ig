@@ -4,9 +4,7 @@ Parent: Practitioner
 Id: fiji-practitioner
 Title: "Fiji Practitioner"
 Description: """
-# Fiji Practitioner
-
-## Overview
+### Fiji Practitioner Profile
 
 The **Fiji Practitioner** profile represents a healthcare practitioner involved in the delivery of healthcare services within Fiji. It supports culturally appropriate naming conventions while preserving the regulatory and medico-legal identity requirements necessary for clinical documentation, healthcare information exchange (HIE), and practitioner identification.
 
@@ -14,7 +12,7 @@ The profile uses the FHIR `Practitioner` resource and supports professional iden
 
 At least one professional identifier and exactly one official name are required. A usual name may be recorded when the practitioner is commonly known by a different name in clinical or community settings.
 
-## Key elements
+### Key elements
 
 | Element | Cardinality | Constraints / requirements | Description |
 |---|---|---|---|
@@ -30,7 +28,7 @@ At least one professional identifier and exactly one official name are required.
 | `qualification` | `0..*` | `qualification.code` is `1..1` for each qualification. | Professional qualifications, certifications, or credentials held by the practitioner. |
 | `communication` | `0..*` | No mandatory language has been specified by this profile. | Languages the practitioner can use to communicate with patients and other healthcare professionals. |
 
-## Implementation guidance
+### Implementation guidance
 
 - **Professional identity:** Implementations should use the medical registration identifier when one is available. The profile currently permits other identifiers and does not require the medical registration slice to be populated.
 - **Name handling:** The official name should reflect the practitioner's registered or licensed identity. The usual name supports respectful, culturally appropriate communication without replacing the official name.
@@ -39,7 +37,7 @@ At least one professional identifier and exactly one official name are required.
 - **Communication:** Record the languages the practitioner can use to support appropriate patient communication and care coordination. A minimum communication language is not currently required.
 - **Contact information:** Use `telecom` and `address` for professional contact details and practice or correspondence locations, subject to applicable privacy and data governance requirements.
 
-## Scope and future considerations
+### Scope and future considerations
 
 The following items are identified for future development and are not mandatory constraints in the current profile:
 

@@ -4,7 +4,7 @@ Parent: Condition
 Id: fiji-condition
 Title: "Fiji Condition"
 Description: """
-# Profile of Condition (Diagnosis, Problem List item etc) as defined for Fiji Context.
+### Profile of Condition (Diagnosis, Problem List item etc) as defined for Fiji Context.
 
 This profile sets minimum expectations for an Condition resource to record, search, and fetch diagnoses or problmen-list items 
 associated with a patient. 

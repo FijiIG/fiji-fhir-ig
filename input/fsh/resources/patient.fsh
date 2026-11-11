@@ -3,9 +3,7 @@ Parent: Patient
 Id: fiji-patient
 Title: "Fiji Patient"
 Description: """
-# Fiji Patient
-
-## Overview
+### Fiji Patient Profile
 
 The `FijiPatient` profile defines the representation of a patient in Fiji healthcare information systems. It builds on the FHIR `Patient` resource and establishes requirements and guidance for recording patient identity, names, demographic information, administrative geography, cultural affiliation, and other relevant personal characteristics.
 
@@ -15,7 +13,7 @@ It also supports Fiji-specific naming conventions through `FijiHumanName`, admin
 
 The profile encourages the use of Fiji-specific resource profiles where available, while retaining compatibility with standard FHIR resources.
 
-## Scope and Usage
+### Scope and Usage
 
 `FijiPatient` is intended to represent a person receiving or having received healthcare services within the scope of the Fiji Implementation Guide.
 
@@ -32,7 +30,7 @@ It supports:
 
 Optional demographic and cultural information should be recorded only when available, relevant, and appropriate for the intended healthcare purpose.
 
-## Key Elements
+### Key Elements
 
 | Element | Cardinality | Description and implementation guidance |
 |---|---|---|
@@ -54,23 +52,21 @@ Optional demographic and cultural information should be recorded only when avail
 | `communication` | 0..* | Records languages the patient can use for communication. |
 | `link.other` | 1..1 per link | References another record concerning the same person, using `FijiPatient` or `FijiRelatedPerson`. The cardinality of `link` itself is inherited from the base `Patient` resource. |
 
-## Fiji-Specific Extensions
+### Fiji-Specific Links and Extensions
 
-### Health Administration Zone
+#### Health Administration Zone
 
-The `FijiAdminZone` extension represents the administrative geography relevant to the patient's healthcare. It supports coded values for:
-
+The `Fiji Health Administration Zone` indicates the administrative geography relevant to the patient's healthcare. It supports:
 - Division
 - Subdivision
 - Medical area
 - Nursing zone
-- Settlement
 
-These values can support patient registration, service catchment identification, care coordination, reporting, and health service planning.
+These zones are created as a hierarchy of Organization resources. The Patient is linked to these administrative zones by a 
+managingOrganization reference to the relevant Nursing Zone Organization.  The higher level zones can be derived from inspecting
+this using the partOf element the references the next level.
 
-The administration zone is distinct from the patient's cultural or genealogical affiliation. Implementations should use the appropriate extension for each purpose rather than treating administrative geography and traditional affiliation as interchangeable.
-
-### iTaukei Affiliation
+#### iTaukei Affiliation
 
 The `FijiITaukeiAffiliation` extension represents culturally and genealogically relevant iTaukei affiliation. It supports coded values for:
 
@@ -85,31 +81,31 @@ The extension provides a structured representation of affiliation rather than re
 
 The extension is optional in the `FijiPatient` profile. Its use should respect patient preferences, applicable governance requirements, and the intended purpose of collecting the information.
 
-### Nationality
+#### Nationality
 
 The patient-nationality extension records the patient's nationality using a coded country value. The profile requires the extension's `code` subextension to use the ISO country value set.
 
 Nationality should be distinguished from citizenship, place of birth, ethnicity, and current residence, as these concepts are not necessarily equivalent.
 
-### Religious Affiliation
+#### Religious Affiliation
 
 The patient-religion extension records the patient's religious affiliation. Its terminology is based on the HL7 ReligiousAffiliation value set with an extensible binding.
 
 Religious affiliation is optional and should be recorded where appropriate to the care context and the patient's expressed information.
 
-### Occupation
+#### Occupation
 
 The `FijiPatientOccupation` extension records the patient's occupation. The extension is optional but is designated Must Support.
 
 A definitive value set is yet to be specified. Implementations should follow the terminology guidance established by the Fiji Implementation Guide when available.
 
-### Ethnicity
+#### Ethnicity
 
 The `FijiPatientEthnicity` extension records the patient's ethnicity. The extension is optional but is designated Must Support.
 
 A definitive value set is yet to be specified. Implementations should use the terminology guidance established by the Fiji Implementation Guide when available.
 
-## Naming Requirements
+### Naming Requirements
 
 All patient names must conform to `FijiHumanName`. At least one name must be recorded.
 
@@ -121,7 +117,7 @@ This invariant has warning severity. It encourages implementations to identify e
 
 Where both names are available, implementations should preserve their distinct purposes. The usual name is generally appropriate for routine display, while the official name supports formal identification and medico-legal processes.
 
-## Patient Identification
+### Patient Identification
 
 The profile requires at least one patient identifier and mandates exactly one identifier slice for the national health number.
 
@@ -133,7 +129,7 @@ The identifier's value is mandatory. Other identifiers may be recorded using the
 
 Identifiers should be preserved with their assigning system so that values originating from different identifier namespaces are not incorrectly treated as equivalent.
 
-## Demographic Information
+### Demographic Information
 
 The profile supports the recording of gender and date of birth, with both elements marked Must Support.
 
@@ -143,7 +139,7 @@ Addresses must conform to `FijiAddress`, allowing address information to follow 
 
 Patient languages are recorded through `communication`, supporting appropriate communication and continuity of care.
 
-## Care Providers and Organizational Responsibility
+### Care Providers and Organizational Responsibility
 
 The `generalPractitioner` element supports references to practitioners and practitioner roles. The profile distinguishes these reference types through slicing:
 
@@ -154,7 +150,7 @@ The `managingOrganization` element identifies the organization responsible for t
 
 Implementations should prefer Fiji-specific profiles where available, while permitting standard FHIR resources for interoperability.
 
-## Must Support and Conformance Notes
+### Must Support and Conformance Notes
 
 Elements marked Must Support indicate that implementations are expected to support the element in accordance with the Implementation Guide's conformance expectations. Must Support does not, by itself, mean that the element must contain a value in every instance.
 
@@ -169,7 +165,7 @@ The following elements are explicitly marked Must Support in the supplied profil
 
 The profile also defines mandatory cardinalities for identifiers, identifier system and value, the national health number slice, and patient names. These cardinality requirements must be distinguished from Must Support expectations.
 
-## Implementation Considerations
+### Implementation Considerations
 
 1. **Patient identity:** Ensure that the mandatory national health number is recorded using the prescribed identifier system URI.
 2. **Name handling:** Use `FijiHumanName` and distinguish official and usual names where the information is available.
@@ -181,7 +177,7 @@ The profile also defines mandatory cardinalities for identifiers, identifier sys
 8. **Interoperability:** Prefer Fiji-specific profiles for practitioners, practitioner roles, organizations, addresses, and related persons when available, while maintaining compatibility with standard FHIR resources.
 9. **Privacy and appropriate use:** Collect and disclose cultural, religious, and other personal information in accordance with applicable privacy, governance, and healthcare requirements.
 
-## Related Profiles and Extensions
+### Related Profiles and Extensions
 
 | Conformance artifact | Purpose |
 |---|---|

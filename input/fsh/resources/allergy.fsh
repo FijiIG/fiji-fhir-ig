@@ -4,7 +4,7 @@ Parent: AllergyIntolerance
 Id: fiji-allergy-intolerance
 Title: "Fiji Allergy/Intolerance"
 Description: """
-## Overview
+### Overview
 
 The **Fiji AllergyIntolerance Profile** defines the minimum data elements and terminology requirements for representing a patient's known or suspected allergies and intolerances within the Fiji FHIR implementation.
 
@@ -12,7 +12,7 @@ The profile is based on the FHIR `AllergyIntolerance` resource and constrains th
 
 This profile can be used to represent both confirmed allergies and other adverse reactions or intolerances where clinically relevant.
 
-## Key Elements
+#### Key Elements
 
 | Element | Cardinality | Must Support | Description |
 |---|---:|:---:|---|
@@ -29,7 +29,7 @@ This profile can be used to represent both confirmed allergies and other adverse
 | `reaction.manifestation` | 1..* | ✓ | **Clinical symptoms/signs associated with the adverse reaction.** Bound to the **Fiji Condition Code ValueSet** using a preferred binding. |
 | `reaction.severity` | 0..1 | ✓ | Indicates the severity of the reaction, such as mild, moderate, or severe. |
 
-## Terminology
+#### Terminology
 
 The following terminology bindings are defined by this profile:
 
@@ -42,13 +42,13 @@ The extensible binding on `code` allows an allergy or intolerance agent to be re
 
 The preferred binding on `reaction.manifestation` encourages implementers to use concepts from the Fiji Condition Code ValueSet while allowing alternative codes where appropriate.
 
-## Usage
+#### Usage
 
 An `AllergyIntolerance` instance should identify the **allergy or intolerance agent** using `code` and, where a reaction has occurred, describe the associated **clinical manifestations** using `reaction.manifestation`. The `reaction.severity` element may be used to communicate the clinical severity of the reaction.
 
 Where the identity of the person responsible for recording the information is known, `recorder` should reference the relevant Fiji Practitioner or Fiji PractitionerRole.
 
-### No Known Allergies 
+##### No Known Allergies 
 No Known Allergies representation
 The recommended 'best practice' for representing 'No Known Allergies' requires a combination of the following element settings:
 1. `code` : should include both the SNOMED CT "716186003" and the HL7 "no-known-allergies" codings

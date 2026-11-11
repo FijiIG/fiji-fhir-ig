@@ -5,6 +5,8 @@ Title: "Fiji Practitioner Role"
 Description: """
 Defines the functional, organisational, and regulatory role of a Fiji Practitioner.
 
+Requires future development for next version of the IG.
+
 Supports multiple roles per practitioner (e.g., GP, hospital consultant, outreach clinician).
 Intended for use in Fiji regional health systems and future HIE environments.
 """

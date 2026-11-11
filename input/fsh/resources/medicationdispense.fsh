@@ -3,15 +3,13 @@ Parent: MedicationDispense
 Id: fiji-medication-dispense
 Title: "Fiji Medication Dispense"
 Description: """
-# Fiji Medication Dispense
-
-## Profile Description
+### Fiji Medication Dispense
 
 The Fiji Medication Dispense profile defines the minimum expectations for recording medication dispensing events in Fiji healthcare settings. It is based on the FHIR R4 `MedicationDispense` resource and supports the exchange of information about medications supplied to patients, including the dispensing status, medication details, authorizing prescription, dispensing practitioner or organization, quantity supplied, and date of handover.
 
 The profile introduces a mandatory mSupply dispense identifier to support consistent identification and traceability of dispensing records across systems. It also constrains references to Fiji-specific profiles to improve interoperability between Fiji healthcare information systems.
 
-## Scope and Usage
+### Scope and Usage
 
 This profile is intended for recording medication dispensing events, including the supply of medications in response to an authorized prescription. It supports:
 
@@ -24,7 +22,7 @@ This profile is intended for recording medication dispensing events, including t
 - Recording the quantity supplied and the date the medication was handed over.
 - Optionally associating the dispense with an encounter, dispensing location, preparation date, days supply, and dosage instructions.
 
-## Key Elements
+### Key Elements
 
 The following table describes the important, mandatory, and Must Support elements defined by this profile.
 
@@ -56,7 +54,7 @@ The following table describes the important, mandatory, and Must Support element
 
 **Cardinality note:** Elements described as retaining their base cardinality are not made mandatory by this profile. Their cardinalities are inherited from FHIR R4 `MedicationDispense`.
 
-## Identifier Requirements
+### Identifier Requirements
 
 Every `FijiMedicationDispense` resource must contain at least one identifier. The profile requires a specific identifier slice for the mSupply dispensing system.
 
@@ -71,7 +69,7 @@ Every `FijiMedicationDispense` resource must contain at least one identifier. Th
 
 The open slicing rule allows additional identifiers to be recorded alongside the mandatory mSupply identifier. This supports interoperability with other dispensing systems, local identifiers, and external workflows without compromising the requirement for mSupply traceability.
 
-## Medication Identification
+### Medication Identification
 
 The `medication[x]` element is mandatory and supports two alternative representations:
 
@@ -80,7 +78,7 @@ The `medication[x]` element is mandatory and supports two alternative representa
 
 Exactly one of these alternatives must be populated. The preferred ValueSet binding encourages consistent medication coding while allowing other appropriate codes when necessary.
 
-## Prescription and Dispensing Performer
+### Prescription and Dispensing Performer
 
 The `authorizingPrescription` element links the dispensing event to the medication request that authorized it. The profile requires at least one reference, and each reference must target a `FijiMedicationRequest` resource.
 
@@ -92,7 +90,7 @@ The `performer` element identifies those responsible for dispensing the medicati
 
 This supports representation of an individual dispensing practitioner, a practitioner acting in a defined role, or an organization responsible for the dispensing activity.
 
-## Quantity and Handover
+### Quantity and Handover
 
 The `quantity` element is mandatory and records the amount of medication supplied. Implementations should use appropriate units and represent the quantity consistently with the medication's pharmaceutical form.
 
@@ -100,7 +98,7 @@ The `whenHandedOver` element is mandatory and records when the medication was ha
 
 The optional `daysSupply` element can be used to indicate the expected duration of the dispensed supply.
 
-## Dosage Instructions
+### Dosage Instructions
 
 The profile marks both `dosageInstruction` and `dosageInstruction.text` as Must Support. The text element provides a human-readable description of the directions for using the dispensed medication.
 
@@ -108,7 +106,7 @@ Where a dispense fulfils a prescription, the dosage instructions should be consi
 
 Neither `dosageInstruction` nor `dosageInstruction.text` is made mandatory by the profile.
 
-## Referenced Fiji Profiles
+### Referenced Fiji Profiles
 
 | Profile | Purpose |
 |---|---|
@@ -121,7 +119,7 @@ Neither `dosageInstruction` nor `dosageInstruction.text` is made mandatory by th
 | `FijiMedication` | Represents the medication supplied. |
 | `FijiMedicationRequest` | Represents the medication request authorizing the dispense. |
 
-## Must Support Interpretation
+### Must Support Interpretation
 
 Elements marked Must Support indicate that implementations claiming conformance to this profile are expected to support those elements according to the implementation guide's conformance requirements.
 
@@ -129,7 +127,7 @@ Must Support does not, by itself, make an element mandatory or require it to be 
 
 For this profile, mandatory elements include the identifier and mSupply identifier slice, `status`, `medication[x]`, `subject`, `performer`, `performer.actor`, `authorizingPrescription`, `quantity`, and `whenHandedOver`. Other Must Support elements remain optional unless their cardinality is constrained elsewhere.
 
-## Alignment with Regional IGs
+### Alignment with Regional IGs
 
 The following specifications have been reviewed in the development of this profile:
 

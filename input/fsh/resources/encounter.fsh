@@ -4,7 +4,7 @@ Parent: Encounter
 Id: fiji-encounter
 Title: "Fiji Healthcare Encounter"
 Description: """
-## Fiji Healthcare Encounter
+### Fiji Healthcare Encounter
 
 The **Fiji Healthcare Encounter** profile represents an interaction between a patient and the healthcare system in which healthcare services are provided. It is based on the FHIR `Encounter` resource and is intended to support the recording of clinical encounters within the scope of this Implementation Guide.
 

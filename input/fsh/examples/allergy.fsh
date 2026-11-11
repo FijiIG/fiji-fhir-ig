@@ -4,8 +4,8 @@ Usage: #example
 Title: "Fiji AllergyIntolerance Example"
 Description: "Example of an AllergyIntolerance for a patient with a confirmed penicillin allergy."
 
-* clinicalStatus = #active
-* verificationStatus = #confirmed
+* clinicalStatus = $allergy-clinical-cs#active
+* verificationStatus = $allergy-verification-cs#confirmed
 * type = #allergy
 * category = #medication
 * criticality = #high

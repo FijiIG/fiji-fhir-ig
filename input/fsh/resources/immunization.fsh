@@ -4,7 +4,7 @@ Parent: Immunization
 Id: fiji-immunization
 Title: "Fiji Immunization"
 Description: """
-# Profile of Immunizations for Fiji Patient
+### Profile of Immunizations for Fiji Patient
 
 This profile sets minimum expectations for an Immunization resource to record, search, and fetch immunisation history 
 associated with a patient. 

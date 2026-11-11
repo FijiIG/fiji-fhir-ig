@@ -1,8 +1,10 @@
 CodeSystem: FijiDivisionCS
-Id: fiji-division-cs
+Id: fiji-division
 Title: "Health administrative division codes in Fiji"
 Description: "Health administrative division codes in Fiji"
 
+* ^experimental = false
+* ^caseSensitive = true
 * ^url = "https://fhir.health.gov.fj/CodeSystem/fiji-division"
 
 * #central "Central" "Central division covers capital regions and surrounding provinces"
@@ -11,10 +13,12 @@ Description: "Health administrative division codes in Fiji"
 * #northern "Northern" "Northern division Covers Vanua Levu and Taveuni"
 
 CodeSystem: FijiSubDivisionCS
-Id: fiji-subdivision-cs
+Id: fiji-subdivision
 Title: "Health administrative sub-division codes in Fiji"
 Description: "Health administrative sub division codes in Fiji"
 
+* ^experimental = false
+* ^caseSensitive = true
 * ^url = "https://fhir.health.gov.fj/CodeSystem/fiji-subdivision"
 
 * #rewa  "Rewa" "Rewa sub-division"
@@ -39,17 +43,23 @@ Description: "Health administrative sub division codes in Fiji"
 
 
 CodeSystem: FijiMedicalAreaCS
-Id: fiji-medicalarea-cs
+Id: fiji-medicalarea
 Title: "Health administrative medical area codes in Fiji"
 Description: "Health administrative medical area codes in Fiji"
+
+* ^experimental = false
+* ^caseSensitive = true
 * ^url = "https://fhir.health.gov.fj/CodeSystem/fiji-medicalarea"
 
 * #area1 "Area1" "Medical area 1 (example only need to populate this code system)"
 
 CodeSystem: FijiNursingZoneCS
-Id: fiji-nursingzone-cs
+Id: fiji-nursingzone
 Title: "Health administrative nursing zone codes in Fiji"
 Description: "Health administrative nursing zone codes in Fiji"
+
+* ^experimental = false
+* ^caseSensitive = true
 * ^url = "https://fhir.health.gov.fj/CodeSystem/fiji-nursingzone"
 
 * #zone1 "Zone1" "Nursing zone 1 (example only need to populate this code system)"
@@ -59,7 +69,7 @@ Description: "Health administrative nursing zone codes in Fiji"
 
 
 ValueSet: FijiDivisionVS
-Id: fiji-division-vs
+Id: fiji-division
 Title: "Valueset of Fiji Health Administration Divisions"
 Description: "A valueset containing Fiji Health Administration Divisions"
 
@@ -67,14 +77,14 @@ Description: "A valueset containing Fiji Health Administration Divisions"
 
 
 ValueSet: FijiSubDivisionVS
-Id: fiji-sub-division-vs
+Id: fiji-sub-division
 Title: "Valueset of Fiji Health Administration Sub-divisions"
 Description: "A valueset containing Fiji Health Administration sub-divisions"
 
 * include codes from system FijiSubDivisionCS
 
 ValueSet: FijiMedicalAreaVS
-Id: fiji-medical-area-vs
+Id: fiji-medical-area
 Title: "Valueset of Fiji Health Administration medical areas"
 Description: "A valueset containing Fiji Health Administration  medical areas"
 
@@ -82,7 +92,7 @@ Description: "A valueset containing Fiji Health Administration  medical areas"
 
 
 ValueSet: FijiNursingZoneVS
-Id: fiji-nursing-zone-vs
+Id: fiji-nursing-zone
 Title: "Valueset of Fiji Health Administration nursing zones"
 Description: "A valueset containing Fiji Health Administration  nursing zones"
 

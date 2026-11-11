@@ -3,7 +3,7 @@ Parent: Observation
 Id: fiji-pathology-observation
 Title: "Fiji Pathology Observation"
 Description: """
-## Scope
+### Fiji Pathology Observation Profile
 
 The **Fiji Pathology Observation** profile represents a laboratory or pathology result associated with a patient. It is based on the FHIR `Observation` resource and is intended to support the exchange of individual pathology results as well as groups of related results, such as lipid panels, full blood counts, and blood gas analyses.
 

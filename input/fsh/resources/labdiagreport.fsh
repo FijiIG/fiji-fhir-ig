@@ -3,7 +3,7 @@ Parent: DiagnosticReport
 Id: fiji-laboratory-diagnostic-report
 Title: "Fiji Laboratory Diagnostic Report"
 Description: """
-## Fiji Pathology DiagnosticReport
+### Fiji Pathology DiagnosticReport
 
 The **Fiji Pathology DiagnosticReport** profile defines the representation of a pathology diagnostic report in the Fiji FHIR Implementation Guide. It is based on the FHIR `DiagnosticReport` resource and is intended to provide a structured representation of pathology investigations and their results.
 

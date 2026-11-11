@@ -3,9 +3,7 @@ Parent: Procedure
 Id: fiji-procedure
 Title: "Fiji Healthcare Procedure"
 Description: """
-# Fiji Healthcare Procedure
-
-## Overview
+### Fiji Healthcare Procedure Profile
 
 The `FijiProcedure` profile defines how the FHIR `Procedure` resource is used to record current and historical procedures performed on or for a patient within the Fiji Healthcare Implementation Guide.
 
@@ -15,7 +13,7 @@ Procedures may be performed by healthcare professionals, service providers, frie
 
 This profile constrains the standard FHIR `Procedure` resource to support consistent recording of procedure details, including the procedure performed, its status, the patient, the associated encounter and service request, the performers, the reasons for the procedure, the anatomical site, the outcome, and any complications.
 
-## Resource Details
+### Resource Details
 
 | Property | Value |
 |---|---|
@@ -25,7 +23,7 @@ This profile constrains the standard FHIR `Procedure` resource to support consis
 | Parent | `Procedure` |
 | Title | Fiji Healthcare Procedure |
 
-## Profile Elements
+### Profile Elements
 
 The following table describes the key elements defined or constrained by the profile. Cardinalities and terminology bindings reflect the supplied FSH.
 
@@ -46,23 +44,23 @@ The following table describes the key elements defined or constrained by the pro
 | `complication` | 0..* | CodeableConcept | `FijiConditionCodeVS` (Preferred) | Records complications associated with the procedure. |
 | `note` | 0..* | Annotation | — | Provides additional narrative information about the procedure. |
 
-## Implementation Guidance
+### Implementation Guidance
 
-### Procedure Identification and Classification
+#### Procedure Identification and Classification
 
 The `code` element is mandatory and identifies the specific procedure. Implementations should use appropriate codes from the preferred `$proc-code-ips-vs` value set. The optional `category` element provides a broader classification using `$proc-cat-vs`.
 
-### Status and Timing
+#### Status and Timing
 
 The `status` element is mandatory and indicates the lifecycle state of the procedure. The `performed[x]` element records the procedure's timing when available. Implementations should distinguish between a procedure that was completed, is in progress, or was not performed, using the appropriate status and timing information.
 
-### Patient, Encounter and Service Request References
+#### Patient, Encounter and Service Request References
 
 The `subject` element must reference a `FijiPatient`. Where applicable, `encounter` links the procedure to a `FijiEncounter`, while `basedOn` links it to one or more `FijiServiceRequest` resources.
 
 These references support traceability between the patient, the clinical encounter, the requested service, and the procedure performed.
 
-### Performers
+#### Performers
 
 The `performer` element records those involved in performing the procedure. The `performer.actor` reference is constrained to the following Fiji profiles:
 
@@ -73,21 +71,21 @@ The `performer` element records those involved in performing the procedure. The 
 
 This allows procedures performed by healthcare professionals, healthcare organisations, or patients themselves to be represented.
 
-### Clinical Context and Anatomical Site
+#### Clinical Context and Anatomical Site
 
 The `reasonCode` element captures the clinical reason or indication for the procedure. The `bodySite` element identifies the relevant anatomical site and uses the `FijiBodySiteVS` value set with an extensible binding.
 
 Implementations should record these elements when the information is relevant and available.
 
-### Outcomes and Complications
+#### Outcomes and Complications
 
 The optional `outcome` element records the result of the procedure using the preferred `$proc-outcome-vs` value set. The `complication` element allows one or more complications to be recorded using the preferred `FijiConditionCodeVS` value set.
 
-### Additional Notes
+#### Additional Notes
 
 The `note` element supports narrative information that supplements the structured procedure data, such as relevant clinical observations or additional details about how the procedure was performed.
 
-## Conformance Requirements
+### Conformance Requirements
 
 - The `status`, `code`, and `subject` elements are mandatory.
 - The `subject` must reference a `FijiPatient`.

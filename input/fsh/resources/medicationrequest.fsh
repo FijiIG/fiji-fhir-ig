@@ -4,9 +4,7 @@ Parent: MedicationRequest
 Id: fiji-medication-request
 Title: "Fiji Medication Request"
 Description: """
-# Fiji Medication Request
-
-## Profile Description
+### Fiji Medication Request Profile Description
 
 The Fiji Medication Request profile defines minimum expectations for recording, searching, and retrieving medication requests associated with a patient in Fiji healthcare settings. It is based on the FHIR R4 `MedicationRequest` resource and supports the representation of prescriptions, medication orders, and associated clinical information.
 
@@ -14,7 +12,7 @@ The profile references Fiji-specific patient, encounter, practitioner, practitio
 
 A medication request records the details of a medication that is requested or prescribed for a patient, including the medication, the status and intent of the request, the requester, the date the request was authored, and any associated clinical reasons and dosage instructions.
 
-## Scope and Usage
+### Scope and Usage
 
 This profile is intended for use when recording medication requests in Fiji healthcare information systems. It supports:
 
@@ -27,7 +25,7 @@ This profile is intended for use when recording medication requests in Fiji heal
 
 The profile establishes minimum conformance expectations for the key elements required to exchange medication request information. Implementers may populate additional elements permitted by the base FHIR resource where required by local workflows.
 
-## Key Elements
+### Key Elements
 
 The following table describes the important, mandatory, and Must Support elements defined by this profile.
 
@@ -49,7 +47,7 @@ The following table describes the important, mandatory, and Must Support element
 
 **Cardinality note:** Elements described as retaining their base cardinality are not made mandatory by this profile. Their actual cardinality is inherited from FHIR R4 `MedicationRequest`.
 
-## Medication Identification
+### Medication Identification
 
 The `medication[x]` element is mandatory and supports two alternative representations:
 
@@ -60,7 +58,7 @@ Exactly one of these alternatives must be populated. The choice allows systems t
 
 The preferred binding to `FijiMedVS` encourages consistent medication coding across Fiji implementations while allowing alternative codes where necessary.
 
-## Clinical Reason and Dosage Instructions
+### Clinical Reason and Dosage Instructions
 
 The profile supports the recording of clinical reasons for a medication request through `reasonCode` and `reasonReference`.
 
@@ -71,7 +69,7 @@ Both elements are optional and marked Must Support. Implementations should suppo
 
 The `dosageInstruction` element supports instructions for medication use. Its `text` sub-element provides a human-readable representation that can be displayed in clinical applications and used to communicate medication directions. Both elements are marked Must Support but are not made mandatory by this profile.
 
-## Referenced Fiji Profiles
+### Referenced Fiji Profiles
 
 Where the profile restricts references to Fiji-specific resources, the target resources are:
 
@@ -87,7 +85,7 @@ Where the profile restricts references to Fiji-specific resources, the target re
 | `FijiPathologyObservation` | Represents a pathology-related observation that may support the clinical reason. |
 | `FijiDiagnosticObservation` | Represents a diagnostic observation that may support the clinical reason. |
 
-## Must Support Interpretation
+### Must Support Interpretation
 
 Elements marked Must Support indicate that implementations claiming conformance to this profile are expected to support the element according to the implementation guide's conformance requirements.
 
@@ -95,7 +93,7 @@ Must Support does not, by itself, make an element mandatory or require that it b
 
 For this profile, `status`, `intent`, `medication[x]`, `authoredOn`, and `requester` are mandatory and Must Support. Other Must Support elements remain optional unless their cardinality is constrained elsewhere.
 
-## Alignment with Regional IGs
+### Alignment with Regional IGs
 
 The following specifications have been reviewed in the development of this profile:
 

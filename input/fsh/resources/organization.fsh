@@ -4,9 +4,7 @@ Parent: Organization
 Id: fiji-organization
 Title: "Fiji Healthcare Service or Organization"
 Description: """
-# Fiji Healthcare Service or Organization
-
-## Overview
+### Fiji Healthcare Service or Organization
 
 The `FijiOrganization` profile represents a healthcare organization, facility, service provider, or other organizational entity involved in the delivery or administration of healthcare within the scope of the Fiji Implementation Guide (IG).
 
@@ -20,7 +18,7 @@ The national organization identifier provides a consistent means of identifying 
 
 The profile supports a range of healthcare entities, including hospitals, health centres, clinics, nursing stations, laboratories, and other healthcare service providers. Organizations may be associated with a parent organization to represent organizational hierarchies, such as a health facility belonging to a larger healthcare administration.
 
-## Key Elements
+### Key Elements
 
 The following table describes the key elements defined or constrained by the `FijiOrganization` profile.
 
@@ -35,7 +33,7 @@ The following table describes the key elements defined or constrained by the `Fi
 | `address` | 0..* | `FijiAddress` | One or more addresses associated with the organization. Addresses must conform to the `FijiAddress` profile, enabling the use of Fiji-specific address structures. |
 | `partOf` | 0..1 | `Reference(FijiOrganization)` | Identifies the parent organization of which this organization forms a part. This supports the representation of organizational hierarchies and administrative relationships. |
 
-## Implementation Guidance
+### Implementation Guidance
 
 - **National organization identifier:** Every organization record must contain exactly one identifier in the `nationalOrganizationId` slice. The identifier system is fixed to `https://fhir.health.gov.fj/identifier/organization`, and the identifier value must be populated with the organization's national identifier.
 - **Additional identifiers:** Implementations may provide additional identifiers using other identifier systems. These must not replace the required national organization identifier.
@@ -45,7 +43,7 @@ The following table describes the key elements defined or constrained by the `Fi
 - **Fiji-specific addresses:** All organization addresses must conform to `FijiAddress`, supporting consistent representation of address information in the Fiji context.
 - **Organizational hierarchy:** The `partOf` element can reference another `FijiOrganization` instance to represent parent–child relationships. For example, a health centre may be part of a divisional or national health service organization.
 
-## Conformance Notes
+### Conformance Notes
 
 The `FijiOrganization` profile constrains the base FHIR `Organization` resource to meet the requirements of the Fiji IG.
 
