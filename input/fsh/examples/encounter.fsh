@@ -28,4 +28,4 @@ Description: "Example of an outpatient encounter in a Fiji healthcare setting"
 * location[0].location = Reference(Location/FijiLocationExample)
 * location[0].status = #completed
 
-* serviceProvider = Reference(Organization/FijiOrganizationExample)
+* serviceProvider = Reference(Organization/FijiClinicExample)

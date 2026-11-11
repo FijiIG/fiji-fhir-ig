@@ -14,7 +14,7 @@ Description: "Example of an AllergyIntolerance for a patient with a confirmed pe
 * patient = Reference(Patient/FijiPatientExample)
 * onsetDateTime = "2024-06-15"
 
-* recorder = Reference(Patient/FijiPractitionerExample)
+* recorder = Reference(Practitioner/FijiPractitionerExample)
 
 * note.text = "Patient reports a previous allergic reaction to penicillin."
 

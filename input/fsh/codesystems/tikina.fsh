@@ -1,22 +1,26 @@
 CodeSystem: FijiTikinaCS
 Id: fiji-tikina
-Title: "Fiji Tikina"
+Title: "Fiji Tikina CodeSystem"
 Description: """
 A code system representing the tikina (districts) of Fiji
 for use in healthcare information exchange.
 
-Codes are based on the Fiji geographic coding convention
-and should be validated against the adopted authoritative
-geographic dataset.
-
-Tikina are associated with their respective provinces.
+Codes and display names should be sourced from the
+authoritative Fiji geographic administrative dataset
+adopted by the Fiji Implementation Guide.
 """
-* ^url = "https://fhir.health.gov.fj/CodeSystem/fiji-tikina"
+* ^url = $tikina-cs
 * ^status = #active
 * ^experimental = false
 * ^caseSensitive = true
-* ^content = #complete
-* ^hierarchyMeaning = #grouped-by
+// uncomment the next line once the code system is fully populated with all relevant codeable concepts
+// * ^content = #complete
+
+// Populate with coded concepts using the syntax:
+// * #<code> "<display-name>" "<concept-definition>"
+
+// example:
+* #dama "Dama Tikina" "Dama Tikina as used in example"
 
 // Ba Province
 * #0101 "Ba"

@@ -18,7 +18,7 @@ Select the JSON tab to view the JSON code that would represent this as a FHIR re
 
 * occurrenceDateTime = "2026-09-07"
 
-* location = Reference(Location/example-clinic)
+* location = Reference(Location/FijiLocationExample)
 
 * lotNumber = "TDAP-FJ-2026-001"
 

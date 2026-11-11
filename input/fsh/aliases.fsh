@@ -103,13 +103,21 @@ Alias: $bodyposition = http://hl7.org/fhir/StructureDefinition/observation-bodyP
 Alias: $allerg-assertdate = http://hl7.org/fhir/StructureDefinition/allergyintolerance-assertedDate
 Alias: $cond-assertdate = http://hl7.org/fhir/StructureDefinition/condition-assertedDate
 
-// Fiji Extension Definitions & System codes
+// Fiji CodeSystem urls
 Alias: $yasana-cs = https://core.fhir.health.gov.fj/CodeSystem/fiji-yasana
 Alias: $tikina-cs = https://core.fhir.health.gov.fj/CodeSystem/fiji-tikina
 Alias: $korodina-cs = https://core.fhir.health.gov.fj/CodeSystem/fiji-korodina
 Alias: $yavusa-cs = https://core.fhir.health.gov.fj/CodeSystem/fiji-yavusa
 Alias: $mataqali-cs = https://core.fhir.health.gov.fj/CodeSystem/fiji-mataqali
 Alias: $tokatoka-cs = https://core.fhir.health.gov.fj/CodeSystem/fiji-tokatoka
+
+// Fiji Valueset urls
+Alias: $yasana-vs = https://core.fhir.health.gov.fj/ValueSet/fiji-yasana
+Alias: $tikina-vs = https://core.fhir.health.gov.fj/ValueSet/fiji-tikina
+Alias: $korodina-vs = https://core.fhir.health.gov.fj/ValueSet/fiji-korodina
+Alias: $yavusa-vs = https://core.fhir.health.gov.fj/ValueSet/fiji-yavusa
+Alias: $mataqali-vs = https://core.fhir.health.gov.fj/ValueSet/fiji-mataqali
+Alias: $tokatoka-vs = https://core.fhir.health.gov.fj/ValueSet/fiji-tokatoka
 
 Alias: $division-cs = https://core.fhir.health.gov.fj/CodeSystem/fiji-division
 Alias: $subdivision-cs = https://core.fhir.health.gov.fj/CodeSystem/fiji-subdivision

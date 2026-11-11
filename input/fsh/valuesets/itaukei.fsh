@@ -5,7 +5,7 @@ Description: """
 The set of yasana codes recognised by the
 Fiji Implementation Guide.
 """
-* ^url = "https://fhir.health.gov.fj/ValueSet/fiji-yasana"
+* ^url = $yasana-vs
 * ^status = #active
 * include codes from system FijiTikinaCS
 
@@ -18,7 +18,7 @@ Description: """
 The set of tikina codes recognised by the
 Fiji Implementation Guide.
 """
-* ^url = "https://fhir.health.gov.fj/ValueSet/fiji-tikina"
+* ^url = $tikina-vs
 * ^status = #active
 * include codes from system FijiTikinaCS
 
@@ -30,7 +30,7 @@ Description: """
 The set of korodina codes recognised by the
 Fiji Implementation Guide.
 """
-* ^url = "https://fhir.health.gov.fj/ValueSet/fiji-korodina"
+* ^url = $korodina-vs
 * ^status = #active
 * include codes from system FijiKorodinaCS
 
@@ -43,7 +43,7 @@ Description: """
 The set of yavusa codes recognised by the
 Fiji Implementation Guide.
 """
-* ^url = "https://fhir.health.gov.fj/ValueSet/fiji-yavusa"
+* ^url = $yavusa-vs
 * ^status = #active
 * include codes from system FijiYavusaCS
 
@@ -55,7 +55,7 @@ Title: "Fiji Mataqali ValueSet"
 Description: """
 Mataqali codes recognised by the Fiji Implementation Guide.
 """
-* ^url = "https://fhir.health.gov.fj/ValueSet/fiji-mataqali"
+* ^url = $mataqali-vs
 * ^status = #active
 * include codes from system FijiMataqaliCS
 
@@ -67,6 +67,6 @@ Title: "Fiji Tokatoka ValueSet"
 Description: """
 Tokatoka codes recognised by the Fiji Implementation Guide.
 """
-* ^url = "https://fhir.health.gov.fj/ValueSet/fiji-tokatoka"
+* ^url = $tokatoka-vs
 * ^status = #active
 * include codes from system FijiTokatokaCS

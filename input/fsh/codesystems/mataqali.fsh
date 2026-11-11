@@ -1,23 +1,22 @@
 CodeSystem: FijiMataqaliCS
 Id: fiji-mataqali
-Title: "Fiji Mataqali"
+Title: "Fiji Mataqali CodeSystem"
 Description: """
 A code system representing mataqali recognised in Fiji,
 for use in healthcare information exchange where
 identification of a mataqali is required.
 
-Codes and display names must be sourced from an
-authoritative dataset approved for the intended use.
-Access, disclosure and use of customary information
-must respect applicable Fiji laws and governance.
+Codes and display names should be sourced from the
+authoritative Fiji geographic administrative dataset
+adopted by the Fiji Implementation Guide.
 """
-* ^url = "https://fhir.health.gov.fj/CodeSystem/fiji-mataqali"
+* ^url = $mataqali-cs
 * ^status = #active
 * ^experimental = false
 * ^caseSensitive = true
-* ^content = #fragment
+// uncomment the next line once the code system is fully populated with all relevant codeable concepts
+// * ^content = #complete
 
-// Add verified mataqali codes using the official
-// identifier and display name.
-// Example syntax:
-// * #<official-code> "<official-display-name>"
+// Populate with coded concepts using the syntax:
+// * #<code> "<display-name>" "<concept-definition>"
+* #tova-natokalau "Tova Natokalau" "Tova Natokalau"
