@@ -43,7 +43,7 @@ Title: "Example Total Cholesterol"
 * status = #final
 * category = $obs-cat-cs#laboratory
 * code = $loinc#2093-3 "Cholesterol [Mass/volume] in Serum or Plasma"
-* subject = Reference(Patient/FijiExamplePatient)
+* subject = Reference(Patient/FijiPatientExample)
 * effectiveDateTime = "2026-09-23T09:00:00+12:00"
 * specimen = Reference(ExampleLipidSpecimen)
 * valueQuantity = 4.8 'mmol/L'
@@ -59,7 +59,7 @@ Title: "Example HDL Cholesterol"
 * status = #final
 * category = $obs-cat-cs#laboratory
 * code = $loinc#2085-9 "Cholesterol in HDL [Mass/volume] in Serum or Plasma"
-* subject = Reference(Patient/FijiExamplePatient)
+* subject = Reference(Patient/FijiPatientExample)
 * effectiveDateTime = "2026-09-23T09:00:00+12:00"
 * specimen = Reference(ExampleLipidSpecimen)
 * valueQuantity = 1.3 'mmol/L'
@@ -75,7 +75,7 @@ Title: "Example LDL Cholesterol"
 * status = #final
 * category = $obs-cat-cs#laboratory
 * code = $loinc#2089-1 "Cholesterol in LDL [Mass/volume] in Serum or Plasma"
-* subject = Reference(Patient/FijiExamplePatient)
+* subject = Reference(Patient/FijiPatientExample)
 * effectiveDateTime = "2026-09-23T09:00:00+12:00"
 * specimen = Reference(ExampleLipidSpecimen)
 * valueQuantity = 2.7 'mmol/L'
@@ -91,7 +91,7 @@ Title: "Example Triglycerides"
 * status = #final
 * category = $obs-cat-cs#laboratory
 * code = $loinc#2571-8 "Triglyceride [Mass/volume] in Serum or Plasma"
-* subject = Reference(Patient/FijiExamplePatient)
+* subject = Reference(Patient/FijiPatientExample)
 * effectiveDateTime = "2026-09-23T09:00:00+12:00"
 * specimen = Reference(ExampleLipidSpecimen)
 * valueQuantity = 1.4 'mmol/L'
@@ -105,7 +105,7 @@ Title: "Example Lipid Panel Specimen"
 
 * status = #final
 * type = $SCT#119364003 "Serum specimen"
-* subject = Reference(Patient/FijiExamplePatient)
+* subject = Reference(Patient/FijiPatientExample)
 
 * receivedTime = "2026-09-23T09:15:00+12:00"
 

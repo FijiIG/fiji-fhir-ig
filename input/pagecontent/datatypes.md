@@ -41,9 +41,7 @@ Guidance for usage:
 - line is used for free text address lines and may relate to a landmark, school, church etc. rather than a street address.
 - city is used for a town or city
 - district is used for a Tikina or District
-- province is an extension added to support a Yasana or province
 - state is used for a Division
-- Village and Settlement are added as extensions to the base fhir Address definition to support common address formats.
 - geolocation is added as an optional extension to support use case where GPS coordinates are available. It is expected that this will become more common.
 - Postal code is often not used, so is currently optional and may be removed (ie 0..0) if not required in the future
 - Country should be used to support (future) international interoperability
@@ -63,13 +61,3 @@ Recommended mapping of address fields are below but should be validated and used
 #### Structure and Extensions  
 
 [FijiAddress](StructureDefinition-fiji-address.html)
-
-This includes extensions for:  
-[Fiji Address Province](StructureDefinition-fiji-address-province.html)  
-[Fiji Address Village](StructureDefinition-fiji-address-village.html)  
-[Fiji Address Settlement](StructureDefinition-fiji-address-settlement.html)  
-
-
-
-
-

@@ -1,14 +1,16 @@
 ### Extensions
 This page describes lists extensions used in the implementation guide.
 
-#### Extension used for Patient, Practitioner
+#### Extensions used for Patient
 
-The following optional extensions are defined for the PacificPatient and PacificPractitioner profiles: 
+The following optional extensions are defined for Fiji Patient profile:
 
-[FijiClanAffiliation](StructureDefinition-fiji-clan-affiliation.html)  
+[Fiji iTaukei Affiliation](StructureDefinition-fiji-iTaukei-affiliation) 
+[Patient Occupation](StructureDefinition-fiji-patient-occupation)
+[Patient Ethnicity](StructureDefinition-fiji-patient-ethnicity)
+[Birth Date Verified](StructureDefinition-birthdate-verified-indicator)
 
-#### Extensions used for Address
+These HL7 commonly used extensions are also added to the Fiji Patient profile:
+[Patient Nationality](https://hl7.org/fhir/extensions/5.4.0/en/StructureDefinition-patient-nationality)
+[Patient Religious Affiliation](https://hl7.org/fhir/extensions/5.4.0/en/StructureDefinition-patient-religion)
 
-The following optional extensions are defined for the PacificAddress data type profile:  
-[FijiAddressVillage](StructureDefinition-fiji-address-village.html)  
-[FijiAddressIsland](StructureDefinition-fiji-address-island.html)  
