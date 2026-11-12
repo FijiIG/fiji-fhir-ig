@@ -17,7 +17,7 @@ At least one professional identifier and exactly one official name are required.
 | Element | Cardinality | Constraints / requirements | Description |
 |---|---|---|---|
 | `identifier` | `1..*` | Must contain at least one identifier. | Professional registration, licensing, or other identifiers used to identify the practitioner. |
-| `identifier[medicalRegistrationNumber]` | `0..1` | Uses the system `https://fhir.health.gov.fj/identifier/practitioner-medical-registration`; when present, `system` and `value` are required. | Medical registration number issued by the relevant professional registration authority. |
+| `identifier[medicalRegistrationNumber]` | `0..1` | Uses the system `http://fhir.health.gov.fj/identifier/practitioner-medical-registration`; when present, `system` and `value` are required. | Medical registration number issued by the relevant professional registration authority. |
 | `name` | `1..*` | Uses `FijiHumanName`; sliced by `use`. | Names associated with the practitioner, supporting Fiji-specific naming conventions. |
 | `name[official]` | `1..1` | `use = official`. | The practitioner's registered or licensed name, supporting reliable medico-legal identification. |
 | `name[usual]` | `0..1` | `use = usual`. | The name commonly used in clinical practice or community interactions, where different from the official name. |
@@ -70,7 +70,7 @@ This profile is intended to provide a consistent representation of healthcare pr
 * identifier contains medicalRegistrationNumber 0..1 MS
 
 * identifier[medicalRegistrationNumber].system 1..1
-* identifier[medicalRegistrationNumber].system = "https://fhir.health.gov.fj/identifier/practitioner-medical-registration"
+* identifier[medicalRegistrationNumber].system = "http://fhir.health.gov.fj/identifier/practitioner-medical-registration"
 * identifier[medicalRegistrationNumber].value 1..1
 
 ///////////////////////////////////////////////////////////////

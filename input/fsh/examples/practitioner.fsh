@@ -6,7 +6,7 @@ Description: """Example of a registered medical practitioner practising in Fiji.
 Note: The registration number and names are for illustrative purposes only and are not intended to represent a verified practitioner record.
 """
 
-* identifier[medicalRegistrationNumber].system = "https://fhir.health.gov.fj/identifier/practitioner-medical-registration"
+* identifier[medicalRegistrationNumber].system = "http://fhir.health.gov.fj/identifier/practitioner-medical-registration"
 * identifier[medicalRegistrationNumber].value = "MED-12345"
 
 * name[official].use = #official

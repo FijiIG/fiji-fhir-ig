@@ -13,14 +13,12 @@ Title: "Condition Example - Type 2 Diabetes Mellitus"
 
 * severity = $SCT#6736007 "Moderate severity"
 
-* bodySite = $SCT#81745001 "Structure of pancreas"
+* bodySite = $SCT#15776009 "Structure of pancreas"
 
 * subject = Reference(FijiPatientExample)
 
 * onsetDateTime = "2024-03-15"
 
-* abatementDateTime = "2025-01-20"
-
-* evidence[0].code = $SCT#365826001 "Finding of endocrine system"
+* evidence[0].code = $SCT#444751005 "Hemoglobin A1c above reference range"
 
 * note.text = "Type 2 diabetes mellitus diagnosed following elevated blood glucose and HbA1c results."

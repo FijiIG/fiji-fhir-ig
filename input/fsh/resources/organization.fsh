@@ -62,7 +62,7 @@ The `name` element is required by its `1..1` cardinality. Other elements may be 
 * identifier contains nationalOrganizationId 1..1 MS
 
 * identifier[nationalOrganizationId].system 1..1
-* identifier[nationalOrganizationId].system = "https://fhir.health.gov.fj/identifier/organization" (exactly)
+* identifier[nationalOrganizationId].system = "http://fhir.health.gov.fj/identifier/organization" (exactly)
 * identifier[nationalOrganizationId].value 1..1
 
 * active MS
