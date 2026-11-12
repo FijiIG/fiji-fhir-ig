@@ -7,6 +7,7 @@ measurements, including body temperature, blood pressure, body height,
 body weight, heart rate, oxygen saturation and respiratory rate.
 This may be extended as required including with local codes used in historic data.
 """
+* ^experimental = false
 
 // ---------------------------------------------------------------------
 // Body temperature

@@ -42,6 +42,9 @@ The following elements must be recorded:
 
 * subject only Reference(FijiPatient)
 * encounter only Reference(FijiEncounter)
+// Ensure coding cardinalities are consistent with mandatory slices
+* code.coding 1..*
+
 * interpretation from FijiObsInterpretationVS (extensible)
 * bodySite from FijiBodySiteVS (preferred)
 * method from FijiVitalMethodVS (preferred)

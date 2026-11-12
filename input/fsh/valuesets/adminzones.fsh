@@ -72,7 +72,7 @@ ValueSet: FijiDivisionVS
 Id: fiji-division
 Title: "Valueset of Fiji Health Administration Divisions"
 Description: "A valueset containing Fiji Health Administration Divisions"
-
+* ^experimental = false
 * include codes from system FijiDivisionCS
 
 
@@ -80,14 +80,14 @@ ValueSet: FijiSubDivisionVS
 Id: fiji-sub-division
 Title: "Valueset of Fiji Health Administration Sub-divisions"
 Description: "A valueset containing Fiji Health Administration sub-divisions"
-
+* ^experimental = false
 * include codes from system FijiSubDivisionCS
 
 ValueSet: FijiMedicalAreaVS
 Id: fiji-medical-area
 Title: "Valueset of Fiji Health Administration medical areas"
 Description: "A valueset containing Fiji Health Administration  medical areas"
-
+* ^experimental = false
 * include codes from system FijiMedicalAreaCS
 
 
@@ -95,5 +95,5 @@ ValueSet: FijiNursingZoneVS
 Id: fiji-nursing-zone
 Title: "Valueset of Fiji Health Administration nursing zones"
 Description: "A valueset containing Fiji Health Administration  nursing zones"
-
+* ^experimental = false
 * include codes from system FijiNursingZoneCS

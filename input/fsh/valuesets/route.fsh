@@ -10,4 +10,4 @@ Values are descendants from SNOMED CT Route of Administration concept.
 * ^experimental = false
 * ^publisher = "MHMS Fiji"
 
-* include codes from system $SCT where constraint = "< #284009009"
+* include codes from system $SCT where constraint = "< 284009009"

@@ -7,7 +7,7 @@ Description: "Example prescription for amoxicillin for a Fiji patient."
 * status = #active
 * intent = #order
 
-* medicationCodeableConcept = $SCT#27658006 "Amoxicillin"
+* medicationCodeableConcept = $SCT#27658006 "Amoxicillin-containing product"
 * subject = Reference(FijiPatientExample)
 * authoredOn = "2026-10-20"
 * requester = Reference(FijiPractitionerExample)

@@ -7,6 +7,7 @@ Fiji Implementation Guide.
 """
 * ^url = $yasana-vs
 * ^status = #active
+* ^experimental = false
 * include codes from system FijiTikinaCS
 
 
@@ -20,6 +21,7 @@ Fiji Implementation Guide.
 """
 * ^url = $tikina-vs
 * ^status = #active
+* ^experimental = false
 * include codes from system FijiTikinaCS
 
 
@@ -32,6 +34,7 @@ Fiji Implementation Guide.
 """
 * ^url = $korodina-vs
 * ^status = #active
+* ^experimental = false
 * include codes from system FijiKorodinaCS
 
 
@@ -45,6 +48,7 @@ Fiji Implementation Guide.
 """
 * ^url = $yavusa-vs
 * ^status = #active
+* ^experimental = false
 * include codes from system FijiYavusaCS
 
 
@@ -57,6 +61,7 @@ Mataqali codes recognised by the Fiji Implementation Guide.
 """
 * ^url = $mataqali-vs
 * ^status = #active
+* ^experimental = false
 * include codes from system FijiMataqaliCS
 
 
@@ -69,4 +74,5 @@ Tokatoka codes recognised by the Fiji Implementation Guide.
 """
 * ^url = $tokatoka-vs
 * ^status = #active
+* ^experimental = false
 * include codes from system FijiTokatokaCS

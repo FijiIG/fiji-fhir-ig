@@ -9,6 +9,7 @@ NOTE: This is not currently used but may be used in future when a full valueset 
 // ---------------------------------------------------------------------
 // Body temperature
 // ---------------------------------------------------------------------
+* ^experimental = false
 
 * include $loinc#29463-7 "Body weight"
 * include $loinc#8339-4 "Birth weight Measured"

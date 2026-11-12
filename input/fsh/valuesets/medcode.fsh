@@ -2,6 +2,8 @@ ValueSet: FijiMedVS
 Id: fiji-med-vs
 Title: "Fiji Medication ValueSet"
 Description: "Fiji Medication valueset based on until Fiji-Pacific valueset is developed"
+* ^experimental = false
+
 * include codes from system $MSUPPLY
 // Include all SNOMED concepts descending from the Pharmaceutical/biologic product hierarchy."
 * include codes from system $SCT where constraint = "< 105590001"

@@ -13,7 +13,7 @@ Title: "Condition Example - Type 2 Diabetes Mellitus"
 
 * severity = $SCT#6736007 "Moderate severity"
 
-* bodySite = $SCT#15776009 "Structure of pancreas"
+* bodySite = $SCT#15776009 "Pancreas"
 
 * subject = Reference(FijiPatientExample)
 

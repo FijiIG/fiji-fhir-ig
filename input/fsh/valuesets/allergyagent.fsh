@@ -3,6 +3,7 @@ Id: fiji-allergy-agent-vs
 Title: "Allergy Causative Agent Value Set for Fiji Patient"
 Description: "A subset of SNOMED CT concepts representing substances or products that cause allergies or intolerances, aligned with global IPS."
 * ^status = #active
+* ^experimental = false
 
 // Intersecting allergen hierarchies with the IPS Reference Set
 //* include codes from system $SCT where expression = "< 762766007 |Edible substance| AND ^ 10811000132104 |International Patient Summary reference set|"

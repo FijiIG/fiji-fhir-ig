@@ -8,6 +8,8 @@ Status Reason codes for reason a vaccine was not administered.
 Initial codes used are ICD-11 codes from DAK.
 TODO: Converted and/or extend from vaccine specific exception codes from SNOMED CT codes or whatever code system chosen
 """
+* ^experimental = false
+
 * include $ICD11MMS#QC04.0 "Immunization not carried out due to patient having had the disease"
 * include $ICD11MMS#QC04.1 "Immunization not carried out because of acute illness"
 * include $ICD11MMS#QC04.2 "Immunization not carried out because of chronic illness or condition of patient"
