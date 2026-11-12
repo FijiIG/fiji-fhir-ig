@@ -75,7 +75,7 @@ Title: "Tdap Injection Site Reaction"
 * status = #final
 
 * subject = Reference(FijiPatientExample)
-
+* performer = Reference(Practitioner/FijiPractitionerExample)
 * effectiveDateTime = "2026-09-08"
 
 * code.coding.system = "http://snomed.info/sct"

@@ -11,6 +11,8 @@ Title: "Example arterial oxygen partial pressure"
 * code = $loinc#2703-7 "Oxygen [Partial pressure] in Arterial blood"
 * subject = Reference(Patient/FijiPatientExample)
 * effectiveDateTime = "2026-09-09T10:30:00+12:00"
+* performer = Reference(Practitioner/FijiPractitionerExample)
+
 * valueQuantity = 85 'mm[Hg]'
 * valueQuantity.system = $UCUM
 * valueQuantity.code = #mm[Hg]
@@ -29,6 +31,7 @@ Title: "Example Lipid Panel"
 * effectiveDateTime = "2026-09-23T09:00:00+12:00"
 * issued = "2026-09-23T12:00:00+12:00"
 * specimen = Reference(ExampleLipidSpecimen)
+* performer = Reference(Practitioner/FijiPractitionerExample)
 
 * hasMember[0] = Reference(ExampleTotalCholesterol)
 * hasMember[+] = Reference(ExampleHDLCholesterol)
@@ -45,6 +48,7 @@ Title: "Example Total Cholesterol"
 * code = $loinc#2093-3 "Cholesterol [Mass/volume] in Serum or Plasma"
 * subject = Reference(Patient/FijiPatientExample)
 * effectiveDateTime = "2026-09-23T09:00:00+12:00"
+* performer = Reference(Practitioner/FijiPractitionerExample)
 * specimen = Reference(ExampleLipidSpecimen)
 * valueQuantity = 4.8 'mmol/L'
 * valueQuantity.system = $UCUM
@@ -61,6 +65,7 @@ Title: "Example HDL Cholesterol"
 * code = $loinc#2085-9 "Cholesterol in HDL [Mass/volume] in Serum or Plasma"
 * subject = Reference(Patient/FijiPatientExample)
 * effectiveDateTime = "2026-09-23T09:00:00+12:00"
+* performer = Reference(Practitioner/FijiPractitionerExample)
 * specimen = Reference(ExampleLipidSpecimen)
 * valueQuantity = 1.3 'mmol/L'
 * valueQuantity.system = $UCUM
@@ -77,6 +82,7 @@ Title: "Example LDL Cholesterol"
 * code = $loinc#2089-1 "Cholesterol in LDL [Mass/volume] in Serum or Plasma"
 * subject = Reference(Patient/FijiPatientExample)
 * effectiveDateTime = "2026-09-23T09:00:00+12:00"
+* performer = Reference(Practitioner/FijiPractitionerExample)
 * specimen = Reference(ExampleLipidSpecimen)
 * valueQuantity = 2.7 'mmol/L'
 * valueQuantity.system = $UCUM
@@ -93,6 +99,7 @@ Title: "Example Triglycerides"
 * code = $loinc#2571-8 "Triglyceride [Mass/volume] in Serum or Plasma"
 * subject = Reference(Patient/FijiPatientExample)
 * effectiveDateTime = "2026-09-23T09:00:00+12:00"
+* performer = Reference(Practitioner/FijiPractitionerExample)
 * specimen = Reference(ExampleLipidSpecimen)
 * valueQuantity = 1.4 'mmol/L'
 * valueQuantity.system = $UCUM
@@ -110,4 +117,4 @@ Title: "Example Lipid Panel Specimen"
 * receivedTime = "2026-09-23T09:15:00+12:00"
 
 * collection.collectedDateTime = "2026-09-23T08:45:00+12:00"
-* collection.bodySite = $SCT#82094008 "Forearm structure"
+* collection.bodySite = $SCT#14975008 "Forearm structure"

@@ -21,25 +21,25 @@ Description: "Health administrative sub division codes in Fiji"
 * ^caseSensitive = true
 * ^url = $subdivision-cs
 
-* #rewa  "Rewa" "Rewa sub-division"
-* #naitasiri  "Naitasiri" "Naitasiri sub-division"
-* #tailevu  "Tailevu" "Tailevu sub-division"
-* #serua-namosi  "SeruaNamosi" "Serua/Namosi subDivision"
+* #rewa "Rewa" "Rewa sub-division"
+* #naitasiri "Naitasiri" "Naitasiri sub-division"
+* #tailevu "Tailevu" "Tailevu sub-division"
+* #serua-namosi "SeruaNamosi" "Serua/Namosi subDivision"
 
-* #lomaiviti  "LomaivitiLevuka" "Lomaiviti (Levuka)  sub-division"
-* #lau  "LauLakebaLomaloma" "Lau (Lakeba, Lomaloma)  sub-division"
-* #rotuma  "Rotuma" "Rotuma  sub-division"
+* #lomaiviti "LomaivitiLevuka" "Lomaiviti (Levuka)  sub-division"
+* #lau "LauLakebaLomaloma" "Lau (Lakeba, Lomaloma)  sub-division"
+* #rotuma "Rotuma" "Rotuma  sub-division"
 
-* #nadi  "" "  sub-division"
-* #lautoka-ba  "LautokaBa" "Lautoka/Ba sub-division"
-* #tavua  "Tavua" "Tavua sub-division"
-* #rakiraki  "Rakiraki" "Rakiraki sub-division"
-* #sigatoka  "Sigatoka" "Sigatoka sub-division"
+* #nadi "" "sub-division"
+* #lautoka-ba "LautokaBa" "Lautoka/Ba sub-division"
+* #tavua "Tavua" "Tavua sub-division"
+* #rakiraki "Rakiraki" "Rakiraki sub-division"
+* #sigatoka "Sigatoka" "Sigatoka sub-division"
 
-* #labasa  "Labasa" " Labasa sub-division"
-* #savusavu  "Savusavu" "Savusavu sub-division"
-* #bua  "BuaNabouwalu" "Bua (Nabouwalu) sub-division"
-* #taveuni  "Taveuni" "Taveuni sub-division"
+* #labasa "Labasa" "Labasa sub-division"
+* #savusavu "Savusavu" "Savusavu sub-division"
+* #bua "BuaNabouwalu" "Bua (Nabouwalu) sub-division"
+* #taveuni "Taveuni" "Taveuni sub-division"
 
 
 CodeSystem: FijiMedicalAreaCS

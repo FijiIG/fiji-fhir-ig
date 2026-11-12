@@ -2,6 +2,8 @@ CodeSystem: FijiObsInterpretationCS
 Id: fiji-obs-interpretation-cs
 Title: "Observation interpretation local codes in Fiji"
 Description: "Observation interpretation local codes in Fiji"
+* ^experimental = false
+* ^caseSensitive = true
 
 * #interp1 "ExampleInterpretation1" "Example Interpretation 1 (example only need to populate this code system)"
 

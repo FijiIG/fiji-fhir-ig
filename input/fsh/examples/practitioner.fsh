@@ -13,10 +13,12 @@ Note: The registration number and names are for illustrative purposes only and a
 * name[official].family = "Nabose"
 * name[official].given[0] = "Jone"
 * name[official].given[1] = "Viliame"
+* name[official].text = "Jone Viliame Nabose"
 
 * name[usual].use = #usual
 * name[usual].family = "Nabose"
 * name[usual].given[0] = "Jone"
+* name[usual].text = "Jone Nabose"
 
 * telecom[0].system = #phone
 * telecom[0].value = "+679 331 0000"
@@ -61,6 +63,7 @@ Note: The registration number and names are for illustrative purposes only and a
 * name[official].family = "Smith"
 * name[official].given[0] = "Michael"
 * name[official].given[1] = "James"
+* name[official].text = "Michael James Smith"
 
 * telecom[0].system = #phone
 * telecom[0].value = "+679 331 1234"

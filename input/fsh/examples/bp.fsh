@@ -11,6 +11,7 @@ Usage: #example
 * subject = Reference(Patient/FijiPatientExample)
 
 * effectiveDateTime = "2026-09-07T10:30:00+10:00"
+* performer = Reference(Practitioner/FijiPractitionerExample)
 
 * interpretation = $obs-interp-cs#H "High"
 

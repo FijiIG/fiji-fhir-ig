@@ -11,3 +11,10 @@ Usage: #example
 Title: "Device Example - Scale"
 * deviceName.name = "Scale"
 * deviceName.type = #user-friendly-name
+
+Instance: FijiDeviceExamplePulseOximeter
+InstanceOf: FijiDevice
+Usage: #example
+Title: "Device Example - Pulse Oximeter"
+* deviceName.name = "Pulse Oximeter"
+* deviceName.type = #user-friendly-name

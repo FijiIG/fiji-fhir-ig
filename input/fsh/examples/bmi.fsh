@@ -11,6 +11,8 @@ Usage: #example
 * subject = Reference(Patient/FijiPatientExample)
 * encounter = Reference(FijiEncounterExample)
 * effectiveDateTime = "2026-09-07"
+* performer = Reference(Practitioner/FijiPractitionerExample)
+
 
 * valueQuantity.value = 24.8
 * valueQuantity.unit = "kg/m2"

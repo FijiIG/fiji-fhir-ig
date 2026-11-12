@@ -16,5 +16,5 @@ Usage: #example
 * valueQuantity.system = $UCUM
 * valueQuantity.code = #/min
 
-* method = $SCT#248981007 "Respiration observation (procedure)"
+* method = $SCT#408867002 "Taking respiratory rate"
 * extension[bodyPosition].valueCodeableConcept =  $SCT#33586001 "Sitting position"

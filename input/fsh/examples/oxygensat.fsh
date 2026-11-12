@@ -12,7 +12,7 @@ Description: "Oxygen saturation measured by pulse oximetry"
 
 * subject = Reference(Patient/FijiPatientExample)
 * encounter = Reference(FijiEncounterExample)
-
+* performer = Reference(Practitioner/FijiPractitionerExample)
 * effectiveDateTime = "2026-09-08T10:15:00+10:00"
 
 * valueQuantity.value = 97
@@ -22,4 +22,4 @@ Description: "Oxygen saturation measured by pulse oximetry"
 
 * interpretation = $obs-interp-cs#N "Normal"
 
-* device = Reference(Device/PulseOximeterExample)
+* device = Reference(Device/FijiDeviceExamplePulseOximeter)

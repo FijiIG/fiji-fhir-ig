@@ -18,4 +18,4 @@ adopted by the Fiji Implementation Guide.
 
 // Populate with coded concepts using the syntax:
 // * #<code> "<display-name>" "<concept-definition>"
-* #kai-narocake "Kai Narokake" "Kai Narokake"
+* #kai-narocake "Kai Narocake" "Kai Narocake"

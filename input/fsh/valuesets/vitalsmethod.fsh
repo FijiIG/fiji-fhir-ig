@@ -65,3 +65,4 @@ This may be extended as required including with local codes used in historic dat
 // * include $SCT#37931006 "Auscultation"
 * include $SCT#32750006 "Inspection"
 * include $SCT#239516002 "Monitoring procedure"
+* include $SCT#408867002 "Taking respiratory rate"

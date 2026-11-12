@@ -8,6 +8,7 @@ Title: "Fiji Head Circumference Example"
 * code = http://loinc.org#9843-4 "Head Occipital-frontal circumference"
 * subject = Reference(Patient/FijiPatientChildExample)
 * effectiveDateTime = "2026-09-09T10:15:00+12:00"
-* valueQuantity = 42.5 'cm'
+* valueQuantity.value = 42.5
+* valueQuantity.unit = "cm"
 * valueQuantity.system = "http://unitsofmeasure.org"
 * valueQuantity.code = #cm

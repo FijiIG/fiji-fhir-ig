@@ -50,6 +50,27 @@ Description: """Example patient with official and usual names, clan affiliation,
 * gender = #male
 * birthDate = "1985-11-02"
 
+Instance: FijiPatientChildExample
+InstanceOf: FijiPatient
+Usage: #example
+Description: """Example child patient with official names and demographic details."""
+
+* identifier[0].system = "http://health.example.org/fhir/identifier"
+* identifier[0].value = "987654231"
+* identifier[nationalHealthNumber].system = "http://fhir.health.gov.fj/identifier/national-health-number"
+* identifier[nationalHealthNumber].use = #official
+* identifier[nationalHealthNumber].value = "44555666"
+
+
+* name[0].use = #official
+* name[0].given[0] = "Adi"
+* name[0].family = "Kalo"
+* name[0].text = "Adi Kalo"
+
+
+* gender = #female
+* birthDate = "2024-11-02"
+
 
 Instance: FijiPatientExample
 InstanceOf: FijiPatient
@@ -135,7 +156,7 @@ Example Indo-Fijian patient demonstrating:
 
 * name[1].use = #usual
 * name[1].given = "Anita"
-* name[0].text = "Anita Prasad"
+* name[1].text = "Anita Prasad"
 
 ///////////////////////////////////////////////////////////////
 // DEMOGRAPHICS
