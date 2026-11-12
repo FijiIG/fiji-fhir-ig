@@ -48,7 +48,7 @@ Title: "Tdap Immunization with Reaction"
 * encounter = Reference(Encounter/FijiEncounterExample)
 * occurrenceDateTime = "2026-09-07"
 
-* location = Reference(Organization/FijiClinicExample)
+* location = Reference(Location/FijiLocationExample)
 
 * lotNumber = "TDAP-FJ-2026-001"
 

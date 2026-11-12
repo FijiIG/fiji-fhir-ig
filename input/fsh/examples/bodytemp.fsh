@@ -19,7 +19,7 @@ Description: "Body temperature observation example with reference ranges and int
 
 * interpretation = $obs-interp-cs#H "High"
 
-* bodySite = $SCT#74262004 "Structure of oral cavity"
+* bodySite = $SCT#74262004 "Oral cavity"
 
 * method = $SCT#89003005 "Oral temperature taking"
 

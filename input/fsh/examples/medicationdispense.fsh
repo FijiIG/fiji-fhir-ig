@@ -12,7 +12,7 @@ for FijiPatientExample.
 
 * status = #completed
 
-* medicationCodeableConcept = $SCT#27658006 "Amoxicillin"
+* medicationCodeableConcept = $SCT#27658006 "Amoxicillin-containing product"
 
 * subject = Reference(FijiPatientExample)
 

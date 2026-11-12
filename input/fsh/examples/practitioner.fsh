@@ -45,6 +45,46 @@ Note: The registration number and names are for illustrative purposes only and a
 * communication[1].coding[0].code = #fj
 * communication[1].text = "Fijian"
 
+
+Instance: FijiRadiologistExample
+InstanceOf: FijiPractitioner
+Usage: #example
+Title: "Fiji Radiologist Example"
+Description: """Example of a radiologist practitioner practising in Fiji.
+Note: The registration number and names are for illustrative purposes only and are not intended to represent a verified practitioner record.
+"""
+
+* identifier[medicalRegistrationNumber].system = "http://fhir.health.gov.fj/identifier/practitioner-medical-registration"
+* identifier[medicalRegistrationNumber].value = "RAD-12345"
+
+* name[official].use = #official
+* name[official].family = "Smith"
+* name[official].given[0] = "Michael"
+* name[official].given[1] = "James"
+
+* telecom[0].system = #phone
+* telecom[0].value = "+679 331 1234"
+* telecom[0].use = #work
+
+* telecom[1].system = #email
+* telecom[1].value = "mj.smith@example.org"
+* telecom[1].use = #work
+
+* address[0].text = "Raidiology Road, Suva"
+* address[0].use = #work
+* address[0].type = #physical
+* address[0].line[0] = "Radiology Road"
+* address[0].city = "Suva"
+* address[0].country = "Fiji"
+
+* gender = #male
+
+* communication[0].coding[0].system = "urn:ietf:bcp:47"
+* communication[0].coding[0].code = #en
+* communication[0].text = "English"
+
+
+
 // Fiji PractitionerRole Examples ----------------------------------------------------------------------
 Instance: FijiPractitionerRoleExample
 InstanceOf: FijiPractitionerRole

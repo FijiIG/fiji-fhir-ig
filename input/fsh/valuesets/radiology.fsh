@@ -5,4 +5,4 @@ Description: "Fiji radiology findings including SNOMED CT concepts filtered for 
 * ^status = #active
 * ^experimental = false
 * ^publisher = "MHMS Fiji"
-* include codes from system $SCT where constraint = "descendant-of 404684003 AND descendant-of 363679005"
+* include codes from system $SCT where constraint = "< 404684003 AND < 363679005"
