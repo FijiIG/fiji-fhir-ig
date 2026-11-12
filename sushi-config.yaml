@@ -6,14 +6,14 @@
 # | The version should be updated for each release of the IG, in accord with versioning policy.    |
 # | Keep the fhirVersion and instanceOptions settings unless specific reasons to change them.      |
 # ╰───────────────────────────────────────────────────────────────────────────────────────────────╯
-id: health-gov-fhir-fj-core
-packageId: health.gov.fhir.fj.core
+id: fj.gov.health.fhir.core
+packageId: fj.gov.health.fhir.core
 canonical: https://core.fhir.health.gov.fj
 name: FijiCoreIG
 title: Draft Fiji Core Implementation Guide
 description: Implementation Guide for Fiji FHIR Interoperability.
 status: draft # draft | active | retired | unknown
-version: 0.3.0
+version: 0.9.0
 copyrightYear: 2026+
 releaseLabel: ci-build
 license: CC0-1.0

@@ -103,7 +103,7 @@ InstanceOf: Specimen
 Usage: #example
 Title: "Example Lipid Panel Specimen"
 
-* status = #final
+* status = #available
 * type = $SCT#119364003 "Serum specimen"
 * subject = Reference(Patient/FijiPatientExample)
 
