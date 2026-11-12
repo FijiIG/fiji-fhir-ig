@@ -37,5 +37,5 @@ The following elements must be recorded:
 
 // standard HL7 FHIR R4 body position extension added
 * extension contains $bodyposition named bodyPosition 0..1
-* extension[bodyPosition].valueCodeableConcept from $obs-bodypos-vs (extensible)
+* extension[bodyPosition].valueCodeableConcept from FijiBodyPositionVS (extensible)
 

@@ -25,6 +25,6 @@ adopted by the Fiji Implementation Guide.
 * #rewa "" ""
 * #cakaudrove "" ""
 * #macuata "" ""
-* #bua "" ""
+* #bua "Bua" "Bua"
 * #lau "" ""
 * #lomaiviti "" ""

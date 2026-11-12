@@ -60,9 +60,8 @@ Alias: $obs-interp-vs = http://hl7.org/fhir/ValueSet/observation-interpretation
 Alias: $obs-dataabsent-vs = http://hl7.org/fhir/ValueSet/data-absent-reason
 Alias: $obs-diag-svc-vs = http://hl7.org/fhir/ValueSet/diagnostic-service-sections
 Alias: $imm-route-vs = http://hl7.org/fhir/ValueSet/immunization-route
-Alias: $obs-bodypos-vs = http://hl7.org/fhir/us/vitals/ValueSet/bodyPositionVS
 Alias: $enc_reason-vs = http://hl7.org/fhir/ValueSet/encounter-reason
-Alias: $lang-vs = https://hl7.org/fhir/R4/Valueset/languages
+Alias: $lang-vs = http://hl7.org/fhir/R4/Valueset/languages
 Alias: $enc-class-vs = http://terminology.hl7.org/ValueSet/v3-ActEncounterCode
 Alias: $participant-type-vs = http://hl7.org/fhir/ValueSet/encounter-participant-type
 Alias: $proc-cat-vs = http://hl7.org/fhir/ValueSet/procedure-category
@@ -124,6 +123,7 @@ Alias: $subdivision-cs = https://core.fhir.health.gov.fj/CodeSystem/fiji-subdivi
 Alias: $medicalarea-cs = https://core.fhir.health.gov.fj/CodeSystem/fiji-medicalarea
 Alias: $nursingzone-cs = https://core.fhir.health.gov.fj/CodeSystem/fiji-nursingzone
 
+Alias: $bodypos-vs = https://core.fhir.health.gov.fj/ValueSet/fiji-body-position-vs
 
 
 // FHIR profiles for common scenarios

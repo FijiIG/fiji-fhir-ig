@@ -22,8 +22,6 @@ Example patient with official and usual names, clan affiliation, and demographic
 * name[1].given[0] = "Taviri"
 * name[1].text = "Taviri"
 
-// * extension[clanAffiliation].valueCodeableConcept.text = "Nakamal Vaturanga"
-
 * gender = #male
 * birthDate = "1990-04-12"
 
@@ -48,8 +46,6 @@ Description: """Example patient with official and usual names, clan affiliation,
 * name[1].prefix[0] = "Susuga"
 * name[1].given[0] = "Tui"
 * name[1].text = "Susuga Tui"
-
-//* extension[clanAffiliation].valueCodeableConcept.text = "Sa Malietoa"
 
 * gender = #male
 * birthDate = "1985-11-02"
@@ -80,6 +76,7 @@ Example Fijian patient of iTaukei background demonstrating:
 * name[0].use = #official
 * name[0].family = "Nabou"
 * name[0].given = "Jone"
+* name[0].text = "Jone Nabou"
 
 * name[1].use = #usual
 * name[1].given = "Jone"
@@ -89,11 +86,11 @@ Example Fijian patient of iTaukei background demonstrating:
 // iTaukei
 ///////////////////////////////////////////////////////////////
 * extension[iTaukei].extension[yasana].valueCodeableConcept = $yasana-cs#bua "Bua"
-* extension[iTaukei].extension[tikina].valueCodeableConcept = $tikina-cs#dama "Dama"
+* extension[iTaukei].extension[tikina].valueCodeableConcept = $tikina-cs#dama "Dama Tikina"
 * extension[iTaukei].extension[korodina].valueCodeableConcept = $korodina-cs#nagadoa "NagaDoa"
-* extension[iTaukei].extension[yavusa].valueCodeableConcept = $yavusa-cs#kai-narocake "KAI NAROCAKE"
-* extension[iTaukei].extension[mataqali].valueCodeableConcept = $mataqali-cs#tova-natokalau "TOVA(NATOKALAU)"
-* extension[iTaukei].extension[tokatoka].valueCodeableConcept = $tokatoka-cs#tk-bureta "TK:402,403 BURETA"
+* extension[iTaukei].extension[yavusa].valueCodeableConcept = $yavusa-cs#kai-narocake "Kai Narocake"
+* extension[iTaukei].extension[mataqali].valueCodeableConcept = $mataqali-cs#tova-natokalau "Tova Natokalau"
+* extension[iTaukei].extension[tokatoka].valueCodeableConcept = $tokatoka-cs#tk-bureta "Tk Bureta"
 
 ///////////////////////////////////////////////////////////////
 // DEMOGRAPHICS
@@ -134,9 +131,11 @@ Example Indo-Fijian patient demonstrating:
 * name[0].use = #official
 * name[0].family = "Prasad"
 * name[0].given = "Anita"
+* name[0].text = "Anita Prasad"
 
 * name[1].use = #usual
 * name[1].given = "Anita"
+* name[0].text = "Anita Prasad"
 
 ///////////////////////////////////////////////////////////////
 // DEMOGRAPHICS
