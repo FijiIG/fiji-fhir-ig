@@ -55,7 +55,7 @@ Usage: #example
 
 * code.coding[0].system = "http://snomed.info/sct"
 * code.coding[0].code = #77477000
-* code.coding[0].display = "Computerized axial tomography of head"
+* code.coding[0].display = "Computed Tomography"
 
 * subject = Reference(FijiPatientExample)
 * encounter = Reference(FijiEncounterExample)

@@ -80,8 +80,8 @@ Title: "Tdap Injection Site Reaction"
 
 * code.coding.system = "http://snomed.info/sct"
 * code.coding.code = #271807003
-* code.coding.display = "Skin lesion"
+* code.coding.display = "Skin rash"
 
 * valueCodeableConcept.coding.system = "http://snomed.info/sct"
-* valueCodeableConcept.coding.code = #385615009
-* valueCodeableConcept.coding.display = "Injection site reaction"
+* valueCodeableConcept.coding.code = #	95376002
+* valueCodeableConcept.coding.display = "Injection site disorder"

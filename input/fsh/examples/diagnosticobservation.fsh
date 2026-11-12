@@ -25,7 +25,7 @@ Title: "Fiji Diagnostic Observation - Pulmonary Consolidation"
 
 * status = #final
 * category = $obs-diag-svc-cs#RAD "Radiology"
-* code = $SCT#95436008 "Pulmonary consolidation"
+* code = $SCT#95436008 "Consolidation of lung"
 * subject = Reference(FijiPatientExample)
 * effectiveDateTime = "2026-09-28T09:30:00+12:00"
 * performer = Reference(Practitioner/FijiRadiologistExample)
@@ -39,8 +39,8 @@ Title: "Fiji Diagnostic Observation - Pleural Effusion"
 
 * status = #final
 * category = $obs-diag-svc-cs#RAD "Radiology"
-* code = $SCT#300999006 "Pleural effusion"
+* code = $SCT#300999006 "Basal pneumonia"
 * subject = Reference(FijiPatientExample)
 * effectiveDateTime = "2026-09-28T09:30:00+12:00"
 * performer = Reference(Practitioner/FijiRadiologistExample)
-* bodySite = $SCT#113197003 "Thoracic structure"
+* bodySite = $SCT#113197003 "Bone structure of rib"
