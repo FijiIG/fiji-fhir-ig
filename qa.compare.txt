@@ -1,0 +1,623 @@
+FijiCoreIG : Validation Results
+=========================================
+
+err = 5, warn = 53, info = 33, broken links = 4
+$--
+Generated $--. FHIR version $-- for fj.gov.health.fhir.core#$-- (canonical = https://core.fhir.health.gov.fj)
+ Build Errors : 4 / 2 / 0
+ /home/runner/work/fiji-fhir-ig/fiji-fhir-ig/fsh-generated/resources/AllergyIntolerance-FijiAllergyIntoleranceExample : 0 / 0 / 2
+ /home/runner/work/fiji-fhir-ig/fiji-fhir-ig/fsh-generated/resources/CodeSystem-fiji-division : 0 / 0 / 1
+ /home/runner/work/fiji-fhir-ig/fiji-fhir-ig/fsh-generated/resources/CodeSystem-fiji-korodina : 0 / 0 / 1
+ /home/runner/work/fiji-fhir-ig/fiji-fhir-ig/fsh-generated/resources/CodeSystem-fiji-mataqali : 0 / 0 / 1
+ /home/runner/work/fiji-fhir-ig/fiji-fhir-ig/fsh-generated/resources/CodeSystem-fiji-medicalarea : 0 / 0 / 1
+ /home/runner/work/fiji-fhir-ig/fiji-fhir-ig/fsh-generated/resources/CodeSystem-fiji-nursingzone : 0 / 0 / 1
+ /home/runner/work/fiji-fhir-ig/fiji-fhir-ig/fsh-generated/resources/CodeSystem-fiji-obs-interpretation-cs : 0 / 0 / 1
+ /home/runner/work/fiji-fhir-ig/fiji-fhir-ig/fsh-generated/resources/CodeSystem-fiji-subdivision : 0 / 0 / 1
+ /home/runner/work/fiji-fhir-ig/fiji-fhir-ig/fsh-generated/resources/CodeSystem-fiji-tikina : 0 / 0 / 1
+ /home/runner/work/fiji-fhir-ig/fiji-fhir-ig/fsh-generated/resources/CodeSystem-fiji-tokatoka : 0 / 0 / 1
+ /home/runner/work/fiji-fhir-ig/fiji-fhir-ig/fsh-generated/resources/CodeSystem-fiji-yasana : 0 / 0 / 1
+ /home/runner/work/fiji-fhir-ig/fiji-fhir-ig/fsh-generated/resources/CodeSystem-fiji-yavusa : 0 / 0 / 1
+ /home/runner/work/fiji-fhir-ig/fiji-fhir-ig/fsh-generated/resources/Condition-condition-example-diabetes2 : 0 / 0 / 3
+ /home/runner/work/fiji-fhir-ig/fiji-fhir-ig/fsh-generated/resources/Device-FijiDeviceExamplePulseOximeter : 0 / 0 / 1
+ /home/runner/work/fiji-fhir-ig/fiji-fhir-ig/fsh-generated/resources/Device-FijiDeviceExampleScale : 0 / 0 / 1
+ /home/runner/work/fiji-fhir-ig/fiji-fhir-ig/fsh-generated/resources/Device-FijiDeviceExampleStadiometer : 0 / 0 / 1
+ /home/runner/work/fiji-fhir-ig/fiji-fhir-ig/fsh-generated/resources/DiagnosticReport-ExampleLipidPanelReport : 0 / 0 / 1
+ /home/runner/work/fiji-fhir-ig/fiji-fhir-ig/fsh-generated/resources/DiagnosticReport-dr-ct-head-001 : 0 / 0 / 2
+ /home/runner/work/fiji-fhir-ig/fiji-fhir-ig/fsh-generated/resources/Encounter-FijiEncounterExample : 0 / 1 / 1
+ /home/runner/work/fiji-fhir-ig/fiji-fhir-ig/fsh-generated/resources/Immunization-FijiImmunizationReactionExample : 0 / 0 / 1
+ /home/runner/work/fiji-fhir-ig/fiji-fhir-ig/fsh-generated/resources/Immunization-FijiTdapImmunizationExample : 0 / 0 / 1
+ /home/runner/work/fiji-fhir-ig/fiji-fhir-ig/fsh-generated/resources/ImplementationGuide-fj.gov.health.fhir.core : 0 / 0 / 1
+ /home/runner/work/fiji-fhir-ig/fiji-fhir-ig/fsh-generated/resources/Location-FijiLocationExample : 0 / 0 / 1
+ /home/runner/work/fiji-fhir-ig/fiji-fhir-ig/fsh-generated/resources/MedicationDispense-FijiMedicationDispenseExample : 0 / 0 / 2
+ /home/runner/work/fiji-fhir-ig/fiji-fhir-ig/fsh-generated/resources/MedicationRequest-FijiMedicationRequestExample : 0 / 0 / 2
+ /home/runner/work/fiji-fhir-ig/fiji-fhir-ig/fsh-generated/resources/NamingSystem-FijiEncounterIdentifier : 0 / 0 / 1
+ /home/runner/work/fiji-fhir-ig/fiji-fhir-ig/fsh-generated/resources/NamingSystem-FijiMedicationDispenseIdentifier : 0 / 0 / 1
+ /home/runner/work/fiji-fhir-ig/fiji-fhir-ig/fsh-generated/resources/NamingSystem-FijiNationalPatientIdentifier : 0 / 0 / 1
+ /home/runner/work/fiji-fhir-ig/fiji-fhir-ig/fsh-generated/resources/NamingSystem-FijiOrganizationIdentifier : 0 / 0 / 1
+ /home/runner/work/fiji-fhir-ig/fiji-fhir-ig/fsh-generated/resources/NamingSystem-FijiPractitionerMedicalRegistrationNumber : 0 / 0 / 1
+ /home/runner/work/fiji-fhir-ig/fiji-fhir-ig/fsh-generated/resources/NamingSystem-FijiRISAccessionNumber : 0 / 0 / 1
+ /home/runner/work/fiji-fhir-ig/fiji-fhir-ig/fsh-generated/resources/Observation-Example-BMI : 0 / 0 / 2
+ /home/runner/work/fiji-fhir-ig/fiji-fhir-ig/fsh-generated/resources/Observation-Example-BodyHeight : 0 / 0 / 2
+ /home/runner/work/fiji-fhir-ig/fiji-fhir-ig/fsh-generated/resources/Observation-Example-BodyWeight : 0 / 0 / 2
+ /home/runner/work/fiji-fhir-ig/fiji-fhir-ig/fsh-generated/resources/Observation-ExampleArterialPO2 : 0 / 0 / 1
+ /home/runner/work/fiji-fhir-ig/fiji-fhir-ig/fsh-generated/resources/Observation-ExampleBloodPressure : 0 / 0 / 2
+ /home/runner/work/fiji-fhir-ig/fiji-fhir-ig/fsh-generated/resources/Observation-ExampleHDLCholesterol : 0 / 0 / 1
+ /home/runner/work/fiji-fhir-ig/fiji-fhir-ig/fsh-generated/resources/Observation-ExampleLDLCholesterol : 0 / 0 / 1
+ /home/runner/work/fiji-fhir-ig/fiji-fhir-ig/fsh-generated/resources/Observation-ExampleLipidPanel : 0 / 0 / 1
+ /home/runner/work/fiji-fhir-ig/fiji-fhir-ig/fsh-generated/resources/Observation-ExampleTotalCholesterol : 0 / 0 / 1
+ /home/runner/work/fiji-fhir-ig/fiji-fhir-ig/fsh-generated/resources/Observation-ExampleTriglycerides : 0 / 0 / 1
+ /home/runner/work/fiji-fhir-ig/fiji-fhir-ig/fsh-generated/resources/Observation-FijiBodyTemperatureExample : 0 / 0 / 2
+ /home/runner/work/fiji-fhir-ig/fiji-fhir-ig/fsh-generated/resources/Observation-FijiDiagnosticObservationChestXrayReport : 0 / 0 / 2
+ /home/runner/work/fiji-fhir-ig/fiji-fhir-ig/fsh-generated/resources/Observation-FijiDiagnosticObservationPleuralEffusion : 0 / 0 / 2
+ /home/runner/work/fiji-fhir-ig/fiji-fhir-ig/fsh-generated/resources/Observation-FijiDiagnosticObservationPulmonaryConsolidation : 0 / 0 / 2
+ /home/runner/work/fiji-fhir-ig/fiji-fhir-ig/fsh-generated/resources/Observation-FijiHeadCircumferenceExample : 0 / 1 / 2
+ /home/runner/work/fiji-fhir-ig/fiji-fhir-ig/fsh-generated/resources/Observation-FijiTdapReactionObservation : 0 / 0 / 1
+ /home/runner/work/fiji-fhir-ig/fiji-fhir-ig/fsh-generated/resources/Observation-HeartRateExample : 0 / 1 / 2
+ /home/runner/work/fiji-fhir-ig/fiji-fhir-ig/fsh-generated/resources/Observation-OxygenSaturationExample : 0 / 0 / 2
+ /home/runner/work/fiji-fhir-ig/fiji-fhir-ig/fsh-generated/resources/Observation-RespiratoryRateExample : 0 / 0 / 2
+ /home/runner/work/fiji-fhir-ig/fiji-fhir-ig/fsh-generated/resources/Organization-FijiClinicExample : 0 / 0 / 1
+ /home/runner/work/fiji-fhir-ig/fiji-fhir-ig/fsh-generated/resources/Organization-FijiHospitalExample : 0 / 0 / 1
+ /home/runner/work/fiji-fhir-ig/fiji-fhir-ig/fsh-generated/resources/Organization-FijiOrganizationExample : 0 / 0 / 1
+ /home/runner/work/fiji-fhir-ig/fiji-fhir-ig/fsh-generated/resources/Patient-FijiPatientChildExample : 0 / 0 / 2
+ /home/runner/work/fiji-fhir-ig/fiji-fhir-ig/fsh-generated/resources/Patient-FijiPatientExample : 0 / 0 / 1
+ /home/runner/work/fiji-fhir-ig/fiji-fhir-ig/fsh-generated/resources/Patient-FijiPatientExample1 : 0 / 0 / 2
+ /home/runner/work/fiji-fhir-ig/fiji-fhir-ig/fsh-generated/resources/Patient-FijiPatientExample2 : 0 / 0 / 2
+ /home/runner/work/fiji-fhir-ig/fiji-fhir-ig/fsh-generated/resources/Patient-FijiPatientFijiIndo : 0 / 0 / 1
+ /home/runner/work/fiji-fhir-ig/fiji-fhir-ig/fsh-generated/resources/Practitioner-FijiPractitionerExample : 0 / 0 / 2
+ /home/runner/work/fiji-fhir-ig/fiji-fhir-ig/fsh-generated/resources/Practitioner-FijiRadiologistExample : 0 / 0 / 1
+ /home/runner/work/fiji-fhir-ig/fiji-fhir-ig/fsh-generated/resources/PractitionerRole-FijiPractitionerRoleExample : 0 / 0 / 1
+ /home/runner/work/fiji-fhir-ig/fiji-fhir-ig/fsh-generated/resources/ServiceRequest-sr-ct-head-001 : 0 / 0 / 1
+ /home/runner/work/fiji-fhir-ig/fiji-fhir-ig/fsh-generated/resources/Specimen-ExampleLipidSpecimen : 0 / 0 / 1
+ /home/runner/work/fiji-fhir-ig/fiji-fhir-ig/fsh-generated/resources/StructureDefinition-birthdate-verified-indicator : 0 / 1 / 1
+ /home/runner/work/fiji-fhir-ig/fiji-fhir-ig/fsh-generated/resources/StructureDefinition-fiji-address : 0 / 0 / 1
+ /home/runner/work/fiji-fhir-ig/fiji-fhir-ig/fsh-generated/resources/StructureDefinition-fiji-allergy-intolerance : 0 / 0 / 2
+ /home/runner/work/fiji-fhir-ig/fiji-fhir-ig/fsh-generated/resources/StructureDefinition-fiji-condition : 0 / 0 / 1
+ /home/runner/work/fiji-fhir-ig/fiji-fhir-ig/fsh-generated/resources/StructureDefinition-fiji-device : 0 / 0 / 1
+ /home/runner/work/fiji-fhir-ig/fiji-fhir-ig/fsh-generated/resources/StructureDefinition-fiji-diagnostic-observation : 0 / 0 / 1
+ /home/runner/work/fiji-fhir-ig/fiji-fhir-ig/fsh-generated/resources/StructureDefinition-fiji-encounter : 0 / 0 / 1
+ /home/runner/work/fiji-fhir-ig/fiji-fhir-ig/fsh-generated/resources/StructureDefinition-fiji-humanname : 0 / 0 / 1
+ /home/runner/work/fiji-fhir-ig/fiji-fhir-ig/fsh-generated/resources/StructureDefinition-fiji-iTaukei-affiliation : 0 / 0 / 1
+ /home/runner/work/fiji-fhir-ig/fiji-fhir-ig/fsh-generated/resources/StructureDefinition-fiji-imaging-diagnostic-report : 0 / 0 / 1
+ /home/runner/work/fiji-fhir-ig/fiji-fhir-ig/fsh-generated/resources/StructureDefinition-fiji-immunization : 0 / 0 / 1
+ /home/runner/work/fiji-fhir-ig/fiji-fhir-ig/fsh-generated/resources/StructureDefinition-fiji-laboratory-diagnostic-report : 0 / 0 / 1
+ /home/runner/work/fiji-fhir-ig/fiji-fhir-ig/fsh-generated/resources/StructureDefinition-fiji-location : 0 / 0 / 1
+ /home/runner/work/fiji-fhir-ig/fiji-fhir-ig/fsh-generated/resources/StructureDefinition-fiji-medication : 0 / 1 / 1
+ /home/runner/work/fiji-fhir-ig/fiji-fhir-ig/fsh-generated/resources/StructureDefinition-fiji-medication-dispense : 0 / 0 / 3
+ /home/runner/work/fiji-fhir-ig/fiji-fhir-ig/fsh-generated/resources/StructureDefinition-fiji-medication-request : 0 / 0 / 2
+ /home/runner/work/fiji-fhir-ig/fiji-fhir-ig/fsh-generated/resources/StructureDefinition-fiji-organization : 0 / 0 / 1
+ /home/runner/work/fiji-fhir-ig/fiji-fhir-ig/fsh-generated/resources/StructureDefinition-fiji-pathology-observation : 0 / 0 / 1
+ /home/runner/work/fiji-fhir-ig/fiji-fhir-ig/fsh-generated/resources/StructureDefinition-fiji-patient : 0 / 4 / 2
+ /home/runner/work/fiji-fhir-ig/fiji-fhir-ig/fsh-generated/resources/StructureDefinition-fiji-patient-ethnicity : 0 / 1 / 1
+ /home/runner/work/fiji-fhir-ig/fiji-fhir-ig/fsh-generated/resources/StructureDefinition-fiji-patient-occupation : 0 / 1 / 1
+ /home/runner/work/fiji-fhir-ig/fiji-fhir-ig/fsh-generated/resources/StructureDefinition-fiji-practitioner : 0 / 0 / 1
+ /home/runner/work/fiji-fhir-ig/fiji-fhir-ig/fsh-generated/resources/StructureDefinition-fiji-practitioner-role : 0 / 0 / 1
+ /home/runner/work/fiji-fhir-ig/fiji-fhir-ig/fsh-generated/resources/StructureDefinition-fiji-procedure : 0 / 1 / 1
+ /home/runner/work/fiji-fhir-ig/fiji-fhir-ig/fsh-generated/resources/StructureDefinition-fiji-related-person : 0 / 1 / 1
+ /home/runner/work/fiji-fhir-ig/fiji-fhir-ig/fsh-generated/resources/StructureDefinition-fiji-service-request : 0 / 0 / 1
+ /home/runner/work/fiji-fhir-ig/fiji-fhir-ig/fsh-generated/resources/StructureDefinition-fiji-specimen : 0 / 1 / 1
+ /home/runner/work/fiji-fhir-ig/fiji-fhir-ig/fsh-generated/resources/StructureDefinition-fiji-vital-blood-pressure : 0 / 2 / 1
+ /home/runner/work/fiji-fhir-ig/fiji-fhir-ig/fsh-generated/resources/StructureDefinition-fiji-vital-bmi : 0 / 0 / 1
+ /home/runner/work/fiji-fhir-ig/fiji-fhir-ig/fsh-generated/resources/StructureDefinition-fiji-vital-body-temperature : 0 / 0 / 1
+ /home/runner/work/fiji-fhir-ig/fiji-fhir-ig/fsh-generated/resources/StructureDefinition-fiji-vital-head-circumference : 0 / 0 / 1
+ /home/runner/work/fiji-fhir-ig/fiji-fhir-ig/fsh-generated/resources/StructureDefinition-fiji-vital-heart-rate : 0 / 2 / 1
+ /home/runner/work/fiji-fhir-ig/fiji-fhir-ig/fsh-generated/resources/StructureDefinition-fiji-vital-height : 0 / 2 / 1
+ /home/runner/work/fiji-fhir-ig/fiji-fhir-ig/fsh-generated/resources/StructureDefinition-fiji-vital-oxygen-saturation : 0 / 2 / 1
+ /home/runner/work/fiji-fhir-ig/fiji-fhir-ig/fsh-generated/resources/StructureDefinition-fiji-vital-respiratory-rate : 0 / 2 / 1
+ /home/runner/work/fiji-fhir-ig/fiji-fhir-ig/fsh-generated/resources/StructureDefinition-fiji-vital-weight : 0 / 0 / 1
+ /home/runner/work/fiji-fhir-ig/fiji-fhir-ig/fsh-generated/resources/ValueSet-fiji-allergy-agent-vs : 0 / 5 / 1
+ /home/runner/work/fiji-fhir-ig/fiji-fhir-ig/fsh-generated/resources/ValueSet-fiji-body-position-vs : 0 / 0 / 2
+ /home/runner/work/fiji-fhir-ig/fiji-fhir-ig/fsh-generated/resources/ValueSet-fiji-body-site-vs : 0 / 1 / 1
+ /home/runner/work/fiji-fhir-ig/fiji-fhir-ig/fsh-generated/resources/ValueSet-fiji-condition-code-vs : 0 / 4 / 1
+ /home/runner/work/fiji-fhir-ig/fiji-fhir-ig/fsh-generated/resources/ValueSet-fiji-dcm-modality-vs : 0 / 0 / 3
+ /home/runner/work/fiji-fhir-ig/fiji-fhir-ig/fsh-generated/resources/ValueSet-fiji-division : 0 / 0 / 1
+ /home/runner/work/fiji-fhir-ig/fiji-fhir-ig/fsh-generated/resources/ValueSet-fiji-encounter-reason-vs : 0 / 2 / 1
+ /home/runner/work/fiji-fhir-ig/fiji-fhir-ig/fsh-generated/resources/ValueSet-fiji-evidence-vs : 2 / 2 / 1
+ /home/runner/work/fiji-fhir-ig/fiji-fhir-ig/fsh-generated/resources/ValueSet-fiji-korodina : 0 / 0 / 1
+ /home/runner/work/fiji-fhir-ig/fiji-fhir-ig/fsh-generated/resources/ValueSet-fiji-mataqali : 0 / 0 / 1
+ /home/runner/work/fiji-fhir-ig/fiji-fhir-ig/fsh-generated/resources/ValueSet-fiji-med-vs : 0 / 5 / 1
+ /home/runner/work/fiji-fhir-ig/fiji-fhir-ig/fsh-generated/resources/ValueSet-fiji-medical-area : 0 / 0 / 1
+ /home/runner/work/fiji-fhir-ig/fiji-fhir-ig/fsh-generated/resources/ValueSet-fiji-medication-request-reason-vs : 0 / 4 / 1
+ /home/runner/work/fiji-fhir-ig/fiji-fhir-ig/fsh-generated/resources/ValueSet-fiji-medication-route-vs : 0 / 1 / 1
+ /home/runner/work/fiji-fhir-ig/fiji-fhir-ig/fsh-generated/resources/ValueSet-fiji-nursing-zone : 0 / 0 / 1
+ /home/runner/work/fiji-fhir-ig/fiji-fhir-ig/fsh-generated/resources/ValueSet-fiji-obs-interpretation-vs : 0 / 0 / 1
+ /home/runner/work/fiji-fhir-ig/fiji-fhir-ig/fsh-generated/resources/ValueSet-fiji-organization-role-vs : 0 / 1 / 1
+ /home/runner/work/fiji-fhir-ig/fiji-fhir-ig/fsh-generated/resources/ValueSet-fiji-radiology-findings-vs : 0 / 1 / 1
+ /home/runner/work/fiji-fhir-ig/fiji-fhir-ig/fsh-generated/resources/ValueSet-fiji-service-type-vs : 0 / 1 / 1
+ /home/runner/work/fiji-fhir-ig/fiji-fhir-ig/fsh-generated/resources/ValueSet-fiji-sub-division : 0 / 0 / 1
+ /home/runner/work/fiji-fhir-ig/fiji-fhir-ig/fsh-generated/resources/ValueSet-fiji-tikina : 0 / 0 / 1
+ /home/runner/work/fiji-fhir-ig/fiji-fhir-ig/fsh-generated/resources/ValueSet-fiji-tokatoka : 0 / 0 / 1
+ /home/runner/work/fiji-fhir-ig/fiji-fhir-ig/fsh-generated/resources/ValueSet-fiji-vital-body-weight-vs : 1 / 0 / 1
+ /home/runner/work/fiji-fhir-ig/fiji-fhir-ig/fsh-generated/resources/ValueSet-fiji-vital-method-vs : 0 / 1 / 3
+ /home/runner/work/fiji-fhir-ig/fiji-fhir-ig/fsh-generated/resources/ValueSet-fiji-yasana : 0 / 0 / 1
+ /home/runner/work/fiji-fhir-ig/fiji-fhir-ig/fsh-generated/resources/ValueSet-fiji-yavusa : 0 / 0 / 1
+ /home/runner/work/fiji-fhir-ig/fiji-fhir-ig/fsh-generated/resources/ValueSet-heart-rate-loinc : 1 / 1 / 1
+ /home/runner/work/fiji-fhir-ig/fiji-fhir-ig/fsh-generated/resources/ValueSet-imm-vs : 0 / 0 / 1
+ /home/runner/work/fiji-fhir-ig/fiji-fhir-ig/fsh-generated/resources/ValueSet-immunization-status-reason : 0 / 1 / 12
+ /home/runner/work/fiji-fhir-ig/fiji-fhir-ig/fsh-generated/resources/ValueSet-obs-vs : 1 / 0 / 1
+</table>
+
+== n/a ==
+ERROR: en/extensions.html#/html/body/div/div/div/div/div/p/a at Line 175, column 5: The link 'StructureDefinition-fiji-iTaukei-affiliation' for "Fiji iTaukei Affiliation" cannot be resolved
+ERROR: en/extensions.html#/html/body/div/div/div/div/div/p/a at Line 176, column 2: The link 'StructureDefinition-fiji-patient-occupation' for "Patient Occupation" cannot be resolved
+ERROR: en/extensions.html#/html/body/div/div/div/div/div/p/a at Line 177, column 2: The link 'StructureDefinition-fiji-patient-ethnicity' for "Patient Ethnicity" cannot be resolved
+ERROR: en/extensions.html#/html/body/div/div/div/div/div/p/a at Line 178, column 2: The link 'StructureDefinition-birthdate-verified-indicator' for "Birth Date Verified" cannot be resolved
+WARNING: 2: An HTML fragment from the set [cross-version-analysis.xhtml, cross-version-analysis-inline.xhtml] is not included anywhere in the produced implementation guide
+WARNING: 3: An HTML fragment from the set [dependency-table.xhtml, dependency-table-short.xhtml, dependency-table-nontech.xhtml] is not included anywhere in the produced implementation guide
+
+
+== fsh-generated/resources/AllergyIntolerance-FijiAllergyIntoleranceExample.json ==
+INFORMATION: AllergyIntolerance/FijiAllergyIntoleranceExample: AllergyIntolerance.reaction[0].manifestation[0]: None of the codings provided are in the value set 'Condition/Diagnosis code valueset' (https://core.fhir.health.gov.fj/ValueSet/fiji-condition-code-vs|0.9.0), and a coding is recommended to come from this value set (codes = http://snomed.info/sct#39579001)
+
+
+== fsh-generated/resources/CodeSystem-fiji-division.json ==
+
+
+== fsh-generated/resources/CodeSystem-fiji-korodina.json ==
+
+
+== fsh-generated/resources/CodeSystem-fiji-mataqali.json ==
+
+
+== fsh-generated/resources/CodeSystem-fiji-medicalarea.json ==
+
+
+== fsh-generated/resources/CodeSystem-fiji-nursingzone.json ==
+
+
+== fsh-generated/resources/CodeSystem-fiji-obs-interpretation-cs.json ==
+
+
+== fsh-generated/resources/CodeSystem-fiji-subdivision.json ==
+
+
+== fsh-generated/resources/CodeSystem-fiji-tikina.json ==
+
+
+== fsh-generated/resources/CodeSystem-fiji-tokatoka.json ==
+
+
+== fsh-generated/resources/CodeSystem-fiji-yasana.json ==
+
+
+== fsh-generated/resources/CodeSystem-fiji-yavusa.json ==
+
+
+== fsh-generated/resources/Condition-condition-example-diabetes2.json ==
+INFORMATION: Condition/condition-example-diabetes2: Condition.code: None of the codings provided are in the value set 'Condition/Diagnosis code valueset' (https://core.fhir.health.gov.fj/ValueSet/fiji-condition-code-vs|0.9.0), and a coding is recommended to come from this value set (codes = http://snomed.info/sct#44054006)
+INFORMATION: Condition/condition-example-diabetes2: Condition.evidence[0].code[0]: None of the codings provided are in the value set 'Condition Evidence Value Set for Fiji Core IG' (https://core.fhir.health.gov.fj/ValueSet/fiji-evidence-vs|0.9.0), and a coding is recommended to come from this value set (codes = http://snomed.info/sct#444751005)
+
+
+== fsh-generated/resources/Device-FijiDeviceExamplePulseOximeter.json ==
+
+
+== fsh-generated/resources/Device-FijiDeviceExampleScale.json ==
+
+
+== fsh-generated/resources/Device-FijiDeviceExampleStadiometer.json ==
+
+
+== fsh-generated/resources/DiagnosticReport-ExampleLipidPanelReport.json ==
+
+
+== fsh-generated/resources/DiagnosticReport-dr-ct-head-001.json ==
+INFORMATION: DiagnosticReport/dr-ct-head-001: DiagnosticReport.code: None of the codings provided are in the value set 'Fiji Radiology/Diagnostic Findings Value Set' (https://core.fhir.health.gov.fj/ValueSet/fiji-radiology-findings-vs|0.9.0), and a coding is recommended to come from this value set (codes = http://snomed.info/sct#77477000)
+
+
+== fsh-generated/resources/Encounter-FijiEncounterExample.json ==
+WARNING: Encounter/FijiEncounterExample: Encounter.identifier[0].system: No definition could be found for URL value 'https://fhir.health.gov.fj/encounter'
+
+
+== fsh-generated/resources/Immunization-FijiImmunizationReactionExample.json ==
+
+
+== fsh-generated/resources/Immunization-FijiTdapImmunizationExample.json ==
+
+
+== fsh-generated/resources/ImplementationGuide-fj.gov.health.fhir.core.json ==
+
+
+== fsh-generated/resources/Location-FijiLocationExample.json ==
+
+
+== fsh-generated/resources/MedicationDispense-FijiMedicationDispenseExample.json ==
+INFORMATION: MedicationDispense/FijiMedicationDispenseExample: MedicationDispense.medication.ofType(CodeableConcept): None of the codings provided are in the value set 'Fiji Medication ValueSet' (https://core.fhir.health.gov.fj/ValueSet/fiji-med-vs|0.9.0), and a coding is recommended to come from this value set (codes = http://snomed.info/sct#27658006)
+
+
+== fsh-generated/resources/MedicationRequest-FijiMedicationRequestExample.json ==
+INFORMATION: MedicationRequest/FijiMedicationRequestExample: MedicationRequest.medication.ofType(CodeableConcept): None of the codings provided are in the value set 'Fiji Medication ValueSet' (https://core.fhir.health.gov.fj/ValueSet/fiji-med-vs|0.9.0), and a coding is recommended to come from this value set (codes = http://snomed.info/sct#27658006)
+
+
+== fsh-generated/resources/NamingSystem-FijiEncounterIdentifier.json ==
+
+
+== fsh-generated/resources/NamingSystem-FijiMedicationDispenseIdentifier.json ==
+
+
+== fsh-generated/resources/NamingSystem-FijiNationalPatientIdentifier.json ==
+
+
+== fsh-generated/resources/NamingSystem-FijiOrganizationIdentifier.json ==
+
+
+== fsh-generated/resources/NamingSystem-FijiPractitionerMedicalRegistrationNumber.json ==
+
+
+== fsh-generated/resources/NamingSystem-FijiRISAccessionNumber.json ==
+
+
+== fsh-generated/resources/Observation-Example-BMI.json ==
+
+
+== fsh-generated/resources/Observation-Example-BodyHeight.json ==
+
+
+== fsh-generated/resources/Observation-Example-BodyWeight.json ==
+
+
+== fsh-generated/resources/Observation-ExampleArterialPO2.json ==
+
+
+== fsh-generated/resources/Observation-ExampleBloodPressure.json ==
+
+
+== fsh-generated/resources/Observation-ExampleHDLCholesterol.json ==
+
+
+== fsh-generated/resources/Observation-ExampleLDLCholesterol.json ==
+
+
+== fsh-generated/resources/Observation-ExampleLipidPanel.json ==
+
+
+== fsh-generated/resources/Observation-ExampleTotalCholesterol.json ==
+
+
+== fsh-generated/resources/Observation-ExampleTriglycerides.json ==
+
+
+== fsh-generated/resources/Observation-FijiBodyTemperatureExample.json ==
+
+
+== fsh-generated/resources/Observation-FijiDiagnosticObservationChestXrayReport.json ==
+INFORMATION: Observation/FijiDiagnosticObservationChestXrayReport: Observation.code: None of the codings provided are in the value set 'Fiji Radiology/Diagnostic Findings Value Set' (https://core.fhir.health.gov.fj/ValueSet/fiji-radiology-findings-vs|0.9.0), and a coding is recommended to come from this value set (codes = http://snomed.info/sct#1290960005)
+
+
+== fsh-generated/resources/Observation-FijiDiagnosticObservationPleuralEffusion.json ==
+INFORMATION: Observation/FijiDiagnosticObservationPleuralEffusion: Observation.code: None of the codings provided are in the value set 'Fiji Radiology/Diagnostic Findings Value Set' (https://core.fhir.health.gov.fj/ValueSet/fiji-radiology-findings-vs|0.9.0), and a coding is recommended to come from this value set (codes = http://snomed.info/sct#300999006)
+
+
+== fsh-generated/resources/Observation-FijiDiagnosticObservationPulmonaryConsolidation.json ==
+INFORMATION: Observation/FijiDiagnosticObservationPulmonaryConsolidation: Observation.code: None of the codings provided are in the value set 'Fiji Radiology/Diagnostic Findings Value Set' (https://core.fhir.health.gov.fj/ValueSet/fiji-radiology-findings-vs|0.9.0), and a coding is recommended to come from this value set (codes = http://snomed.info/sct#95436008)
+
+
+== fsh-generated/resources/Observation-FijiHeadCircumferenceExample.json ==
+WARNING: Observation/FijiHeadCircumferenceExample: Observation: Best Practice Recommendation: In general, all observations should have a performer
+
+
+== fsh-generated/resources/Observation-FijiTdapReactionObservation.json ==
+
+
+== fsh-generated/resources/Observation-HeartRateExample.json ==
+WARNING: Observation/HeartRateExample: Observation: Best Practice Recommendation: In general, all observations should have a performer
+
+
+== fsh-generated/resources/Observation-OxygenSaturationExample.json ==
+
+
+== fsh-generated/resources/Observation-RespiratoryRateExample.json ==
+
+
+== fsh-generated/resources/Organization-FijiClinicExample.json ==
+
+
+== fsh-generated/resources/Organization-FijiHospitalExample.json ==
+
+
+== fsh-generated/resources/Organization-FijiOrganizationExample.json ==
+
+
+== fsh-generated/resources/Patient-FijiPatientChildExample.json ==
+INFORMATION: Patient/FijiPatientChildExample: Patient.identifier[0]: This element does not match any known slice defined in the profile https://core.fhir.health.gov.fj/StructureDefinition/fiji-patient|0.9.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+
+
+== fsh-generated/resources/Patient-FijiPatientExample.json ==
+
+
+== fsh-generated/resources/Patient-FijiPatientExample1.json ==
+INFORMATION: Patient/FijiPatientExample1: Patient.identifier[0]: This element does not match any known slice defined in the profile https://core.fhir.health.gov.fj/StructureDefinition/fiji-patient|0.9.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+
+
+== fsh-generated/resources/Patient-FijiPatientExample2.json ==
+INFORMATION: Patient/FijiPatientExample2: Patient.identifier[0]: This element does not match any known slice defined in the profile https://core.fhir.health.gov.fj/StructureDefinition/fiji-patient|0.9.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+
+
+== fsh-generated/resources/Patient-FijiPatientFijiIndo.json ==
+
+
+== fsh-generated/resources/Practitioner-FijiPractitionerExample.json ==
+INFORMATION: Practitioner/FijiPractitionerExample: Practitioner.communication[1]: None of the codings provided are in the value set 'Common Languages' (http://hl7.org/fhir/ValueSet/languages|4.0.1), and a coding is recommended to come from this value set (codes = urn:ietf:bcp:47#fj)
+
+
+== fsh-generated/resources/Practitioner-FijiRadiologistExample.json ==
+
+
+== fsh-generated/resources/PractitionerRole-FijiPractitionerRoleExample.json ==
+
+
+== fsh-generated/resources/ServiceRequest-sr-ct-head-001.json ==
+
+
+== fsh-generated/resources/Specimen-ExampleLipidSpecimen.json ==
+
+
+== fsh-generated/resources/StructureDefinition-birthdate-verified-indicator.json ==
+WARNING: StructureDefinition.where(url = 'https://core.fhir.health.gov.fj/StructureDefinition/birthdate-verified-indicator'): The Implementation Guide contains no examples for this extension
+
+
+== fsh-generated/resources/StructureDefinition-fiji-address.json ==
+
+
+== fsh-generated/resources/StructureDefinition-fiji-allergy-intolerance.json ==
+INFORMATION: StructureDefinition/fiji-allergy-intolerance: StructureDefinition.snapshot.element[4].binding.extension[0]: The extension http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet|5.4.0 is deprecated with the note: 'Use additionalBinding extension or element instead'
+
+
+== fsh-generated/resources/StructureDefinition-fiji-condition.json ==
+
+
+== fsh-generated/resources/StructureDefinition-fiji-device.json ==
+
+
+== fsh-generated/resources/StructureDefinition-fiji-diagnostic-observation.json ==
+
+
+== fsh-generated/resources/StructureDefinition-fiji-encounter.json ==
+
+
+== fsh-generated/resources/StructureDefinition-fiji-humanname.json ==
+
+
+== fsh-generated/resources/StructureDefinition-fiji-iTaukei-affiliation.json ==
+
+
+== fsh-generated/resources/StructureDefinition-fiji-imaging-diagnostic-report.json ==
+
+
+== fsh-generated/resources/StructureDefinition-fiji-immunization.json ==
+
+
+== fsh-generated/resources/StructureDefinition-fiji-laboratory-diagnostic-report.json ==
+
+
+== fsh-generated/resources/StructureDefinition-fiji-location.json ==
+
+
+== fsh-generated/resources/StructureDefinition-fiji-medication.json ==
+WARNING: StructureDefinition.where(url = 'https://core.fhir.health.gov.fj/StructureDefinition/fiji-medication'): The Implementation Guide contains no examples for this profile
+
+
+== fsh-generated/resources/StructureDefinition-fiji-medication-dispense.json ==
+INFORMATION: StructureDefinition/fiji-medication-dispense: StructureDefinition.snapshot.element[47].mapping[0].map: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
+INFORMATION: StructureDefinition/fiji-medication-dispense: StructureDefinition.snapshot.element[31]: The Binding on the type slicer MedicationDispense.medication[x] applies to all its slices, but it only makes sense for some of its types, so it has no effect on the slices for Reference
+
+
+== fsh-generated/resources/StructureDefinition-fiji-medication-request.json ==
+INFORMATION: StructureDefinition/fiji-medication-request: StructureDefinition.snapshot.element[17]: The Binding on the type slicer MedicationRequest.medication[x] applies to all its slices, but it only makes sense for some of its types, so it has no effect on the slices for Reference
+
+
+== fsh-generated/resources/StructureDefinition-fiji-organization.json ==
+
+
+== fsh-generated/resources/StructureDefinition-fiji-pathology-observation.json ==
+
+
+== fsh-generated/resources/StructureDefinition-fiji-patient.json ==
+WARNING: StructureDefinition/fiji-patient: StructureDefinition.snapshot.element[9].type[0].profile[0]: There are multiple different potential matches for the url 'http://hl7.org/fhir/StructureDefinition/patient-nationality'. It might be a good idea to fix to the correct version to reduce the likelihood of a wrong version being selected by an implementation/implementer, or use the [IG Parameter `pin-canonicals`](https://hl7.org/fhir/tools/CodeSystem-ig-parameters.html). Using version '5.4.0', found versions: 4.0.1 (from hl7.fhir.r4.core#4.0.1), 5.4.0 (from hl7.fhir.uv.extensions.r4#5.4.0). Suggested fix: change the canonical reference from 'http://hl7.org/fhir/StructureDefinition/patient-nationality' to 'http://hl7.org/fhir/StructureDefinition/patient-nationality|5.4.0'
+WARNING: StructureDefinition/fiji-patient: StructureDefinition.snapshot.element[24].type[0].profile[0]: There are multiple different potential matches for the url 'http://hl7.org/fhir/StructureDefinition/patient-religion'. It might be a good idea to fix to the correct version to reduce the likelihood of a wrong version being selected by an implementation/implementer, or use the [IG Parameter `pin-canonicals`](https://hl7.org/fhir/tools/CodeSystem-ig-parameters.html). Using version '5.4.0', found versions: 4.0.1 (from hl7.fhir.r4.core#4.0.1), 5.4.0 (from hl7.fhir.uv.extensions.r4#5.4.0). Suggested fix: change the canonical reference from 'http://hl7.org/fhir/StructureDefinition/patient-religion' to 'http://hl7.org/fhir/StructureDefinition/patient-religion|5.4.0'
+INFORMATION: StructureDefinition/fiji-patient: StructureDefinition.snapshot.element[54].type[0].extension[1]: The extension http://hl7.org/fhir/StructureDefinition/regex|5.4.0 is deprecated with the note: 'This was deprecated in favor of using a constraint on the element using FHIRPath, since constraints allow for the provision of a human readable message associated with the regex'
+WARNING: StructureDefinition/fiji-patient: StructureDefinition.differential.element[3].type[0].profile[0]: There are multiple different potential matches for the url 'http://hl7.org/fhir/StructureDefinition/patient-nationality'. It might be a good idea to fix to the correct version to reduce the likelihood of a wrong version being selected by an implementation/implementer, or use the [IG Parameter `pin-canonicals`](https://hl7.org/fhir/tools/CodeSystem-ig-parameters.html). Using version '5.4.0', found versions: 4.0.1 (from hl7.fhir.r4.core#4.0.1), 5.4.0 (from hl7.fhir.uv.extensions.r4#5.4.0). Suggested fix: change the canonical reference from 'http://hl7.org/fhir/StructureDefinition/patient-nationality' to 'http://hl7.org/fhir/StructureDefinition/patient-nationality|5.4.0'
+WARNING: StructureDefinition/fiji-patient: StructureDefinition.differential.element[6].type[0].profile[0]: There are multiple different potential matches for the url 'http://hl7.org/fhir/StructureDefinition/patient-religion'. It might be a good idea to fix to the correct version to reduce the likelihood of a wrong version being selected by an implementation/implementer, or use the [IG Parameter `pin-canonicals`](https://hl7.org/fhir/tools/CodeSystem-ig-parameters.html). Using version '5.4.0', found versions: 4.0.1 (from hl7.fhir.r4.core#4.0.1), 5.4.0 (from hl7.fhir.uv.extensions.r4#5.4.0). Suggested fix: change the canonical reference from 'http://hl7.org/fhir/StructureDefinition/patient-religion' to 'http://hl7.org/fhir/StructureDefinition/patient-religion|5.4.0'
+
+
+== fsh-generated/resources/StructureDefinition-fiji-patient-ethnicity.json ==
+WARNING: StructureDefinition.where(url = 'https://core.fhir.health.gov.fj/StructureDefinition/fiji-patient-ethnicity'): The Implementation Guide contains no examples for this extension
+
+
+== fsh-generated/resources/StructureDefinition-fiji-patient-occupation.json ==
+WARNING: StructureDefinition.where(url = 'https://core.fhir.health.gov.fj/StructureDefinition/fiji-patient-occupation'): The Implementation Guide contains no examples for this extension
+
+
+== fsh-generated/resources/StructureDefinition-fiji-practitioner.json ==
+
+
+== fsh-generated/resources/StructureDefinition-fiji-practitioner-role.json ==
+
+
+== fsh-generated/resources/StructureDefinition-fiji-procedure.json ==
+WARNING: StructureDefinition.where(url = 'https://core.fhir.health.gov.fj/StructureDefinition/fiji-procedure'): The Implementation Guide contains no examples for this profile
+
+
+== fsh-generated/resources/StructureDefinition-fiji-related-person.json ==
+WARNING: StructureDefinition.where(url = 'https://core.fhir.health.gov.fj/StructureDefinition/fiji-related-person'): The Implementation Guide contains no examples for this profile
+
+
+== fsh-generated/resources/StructureDefinition-fiji-service-request.json ==
+
+
+== fsh-generated/resources/StructureDefinition-fiji-specimen.json ==
+WARNING: StructureDefinition.where(url = 'https://core.fhir.health.gov.fj/StructureDefinition/fiji-specimen'): The Implementation Guide contains no examples for this profile
+
+
+== fsh-generated/resources/StructureDefinition-fiji-vital-blood-pressure.json ==
+WARNING: StructureDefinition/fiji-vital-blood-pressure: StructureDefinition.snapshot.element[8].type[0].profile[0]: There are multiple different potential matches for the url 'http://hl7.org/fhir/StructureDefinition/observation-bodyPosition'. It might be a good idea to fix to the correct version to reduce the likelihood of a wrong version being selected by an implementation/implementer, or use the [IG Parameter `pin-canonicals`](https://hl7.org/fhir/tools/CodeSystem-ig-parameters.html). Using version '5.4.0', found versions: 4.0.1 (from hl7.fhir.r4.core#4.0.1), 5.4.0 (from hl7.fhir.uv.extensions.r4#5.4.0). Suggested fix: change the canonical reference from 'http://hl7.org/fhir/StructureDefinition/observation-bodyPosition' to 'http://hl7.org/fhir/StructureDefinition/observation-bodyPosition|5.4.0'
+WARNING: StructureDefinition/fiji-vital-blood-pressure: StructureDefinition.differential.element[2].type[0].profile[0]: There are multiple different potential matches for the url 'http://hl7.org/fhir/StructureDefinition/observation-bodyPosition'. It might be a good idea to fix to the correct version to reduce the likelihood of a wrong version being selected by an implementation/implementer, or use the [IG Parameter `pin-canonicals`](https://hl7.org/fhir/tools/CodeSystem-ig-parameters.html). Using version '5.4.0', found versions: 4.0.1 (from hl7.fhir.r4.core#4.0.1), 5.4.0 (from hl7.fhir.uv.extensions.r4#5.4.0). Suggested fix: change the canonical reference from 'http://hl7.org/fhir/StructureDefinition/observation-bodyPosition' to 'http://hl7.org/fhir/StructureDefinition/observation-bodyPosition|5.4.0'
+
+
+== fsh-generated/resources/StructureDefinition-fiji-vital-bmi.json ==
+
+
+== fsh-generated/resources/StructureDefinition-fiji-vital-body-temperature.json ==
+
+
+== fsh-generated/resources/StructureDefinition-fiji-vital-head-circumference.json ==
+
+
+== fsh-generated/resources/StructureDefinition-fiji-vital-heart-rate.json ==
+WARNING: StructureDefinition/fiji-vital-heart-rate: StructureDefinition.snapshot.element[8].type[0].profile[0]: There are multiple different potential matches for the url 'http://hl7.org/fhir/StructureDefinition/observation-bodyPosition'. It might be a good idea to fix to the correct version to reduce the likelihood of a wrong version being selected by an implementation/implementer, or use the [IG Parameter `pin-canonicals`](https://hl7.org/fhir/tools/CodeSystem-ig-parameters.html). Using version '5.4.0', found versions: 4.0.1 (from hl7.fhir.r4.core#4.0.1), 5.4.0 (from hl7.fhir.uv.extensions.r4#5.4.0). Suggested fix: change the canonical reference from 'http://hl7.org/fhir/StructureDefinition/observation-bodyPosition' to 'http://hl7.org/fhir/StructureDefinition/observation-bodyPosition|5.4.0'
+WARNING: StructureDefinition/fiji-vital-heart-rate: StructureDefinition.differential.element[2].type[0].profile[0]: There are multiple different potential matches for the url 'http://hl7.org/fhir/StructureDefinition/observation-bodyPosition'. It might be a good idea to fix to the correct version to reduce the likelihood of a wrong version being selected by an implementation/implementer, or use the [IG Parameter `pin-canonicals`](https://hl7.org/fhir/tools/CodeSystem-ig-parameters.html). Using version '5.4.0', found versions: 4.0.1 (from hl7.fhir.r4.core#4.0.1), 5.4.0 (from hl7.fhir.uv.extensions.r4#5.4.0). Suggested fix: change the canonical reference from 'http://hl7.org/fhir/StructureDefinition/observation-bodyPosition' to 'http://hl7.org/fhir/StructureDefinition/observation-bodyPosition|5.4.0'
+
+
+== fsh-generated/resources/StructureDefinition-fiji-vital-height.json ==
+WARNING: StructureDefinition/fiji-vital-height: StructureDefinition.snapshot.element[8].type[0].profile[0]: There are multiple different potential matches for the url 'http://hl7.org/fhir/StructureDefinition/observation-bodyPosition'. It might be a good idea to fix to the correct version to reduce the likelihood of a wrong version being selected by an implementation/implementer, or use the [IG Parameter `pin-canonicals`](https://hl7.org/fhir/tools/CodeSystem-ig-parameters.html). Using version '5.4.0', found versions: 4.0.1 (from hl7.fhir.r4.core#4.0.1), 5.4.0 (from hl7.fhir.uv.extensions.r4#5.4.0). Suggested fix: change the canonical reference from 'http://hl7.org/fhir/StructureDefinition/observation-bodyPosition' to 'http://hl7.org/fhir/StructureDefinition/observation-bodyPosition|5.4.0'
+WARNING: StructureDefinition/fiji-vital-height: StructureDefinition.differential.element[2].type[0].profile[0]: There are multiple different potential matches for the url 'http://hl7.org/fhir/StructureDefinition/observation-bodyPosition'. It might be a good idea to fix to the correct version to reduce the likelihood of a wrong version being selected by an implementation/implementer, or use the [IG Parameter `pin-canonicals`](https://hl7.org/fhir/tools/CodeSystem-ig-parameters.html). Using version '5.4.0', found versions: 4.0.1 (from hl7.fhir.r4.core#4.0.1), 5.4.0 (from hl7.fhir.uv.extensions.r4#5.4.0). Suggested fix: change the canonical reference from 'http://hl7.org/fhir/StructureDefinition/observation-bodyPosition' to 'http://hl7.org/fhir/StructureDefinition/observation-bodyPosition|5.4.0'
+
+
+== fsh-generated/resources/StructureDefinition-fiji-vital-oxygen-saturation.json ==
+WARNING: StructureDefinition/fiji-vital-oxygen-saturation: StructureDefinition.snapshot.element[8].type[0].profile[0]: There are multiple different potential matches for the url 'http://hl7.org/fhir/StructureDefinition/observation-bodyPosition'. It might be a good idea to fix to the correct version to reduce the likelihood of a wrong version being selected by an implementation/implementer, or use the [IG Parameter `pin-canonicals`](https://hl7.org/fhir/tools/CodeSystem-ig-parameters.html). Using version '5.4.0', found versions: 4.0.1 (from hl7.fhir.r4.core#4.0.1), 5.4.0 (from hl7.fhir.uv.extensions.r4#5.4.0). Suggested fix: change the canonical reference from 'http://hl7.org/fhir/StructureDefinition/observation-bodyPosition' to 'http://hl7.org/fhir/StructureDefinition/observation-bodyPosition|5.4.0'
+WARNING: StructureDefinition/fiji-vital-oxygen-saturation: StructureDefinition.differential.element[2].type[0].profile[0]: There are multiple different potential matches for the url 'http://hl7.org/fhir/StructureDefinition/observation-bodyPosition'. It might be a good idea to fix to the correct version to reduce the likelihood of a wrong version being selected by an implementation/implementer, or use the [IG Parameter `pin-canonicals`](https://hl7.org/fhir/tools/CodeSystem-ig-parameters.html). Using version '5.4.0', found versions: 4.0.1 (from hl7.fhir.r4.core#4.0.1), 5.4.0 (from hl7.fhir.uv.extensions.r4#5.4.0). Suggested fix: change the canonical reference from 'http://hl7.org/fhir/StructureDefinition/observation-bodyPosition' to 'http://hl7.org/fhir/StructureDefinition/observation-bodyPosition|5.4.0'
+
+
+== fsh-generated/resources/StructureDefinition-fiji-vital-respiratory-rate.json ==
+WARNING: StructureDefinition/fiji-vital-respiratory-rate: StructureDefinition.snapshot.element[8].type[0].profile[0]: There are multiple different potential matches for the url 'http://hl7.org/fhir/StructureDefinition/observation-bodyPosition'. It might be a good idea to fix to the correct version to reduce the likelihood of a wrong version being selected by an implementation/implementer, or use the [IG Parameter `pin-canonicals`](https://hl7.org/fhir/tools/CodeSystem-ig-parameters.html). Using version '5.4.0', found versions: 4.0.1 (from hl7.fhir.r4.core#4.0.1), 5.4.0 (from hl7.fhir.uv.extensions.r4#5.4.0). Suggested fix: change the canonical reference from 'http://hl7.org/fhir/StructureDefinition/observation-bodyPosition' to 'http://hl7.org/fhir/StructureDefinition/observation-bodyPosition|5.4.0'
+WARNING: StructureDefinition/fiji-vital-respiratory-rate: StructureDefinition.differential.element[2].type[0].profile[0]: There are multiple different potential matches for the url 'http://hl7.org/fhir/StructureDefinition/observation-bodyPosition'. It might be a good idea to fix to the correct version to reduce the likelihood of a wrong version being selected by an implementation/implementer, or use the [IG Parameter `pin-canonicals`](https://hl7.org/fhir/tools/CodeSystem-ig-parameters.html). Using version '5.4.0', found versions: 4.0.1 (from hl7.fhir.r4.core#4.0.1), 5.4.0 (from hl7.fhir.uv.extensions.r4#5.4.0). Suggested fix: change the canonical reference from 'http://hl7.org/fhir/StructureDefinition/observation-bodyPosition' to 'http://hl7.org/fhir/StructureDefinition/observation-bodyPosition|5.4.0'
+
+
+== fsh-generated/resources/StructureDefinition-fiji-vital-weight.json ==
+
+
+== fsh-generated/resources/ValueSet-fiji-allergy-agent-vs.json ==
+WARNING: ValueSet/fiji-allergy-agent-vs: ValueSet.compose.include[0].filter[0]: The value '< 762766007 AND ^ 816080008' for the filter constraint can't be checked: Unknown operation on this server: POST /r4/ValueSet/$validate
+WARNING: ValueSet/fiji-allergy-agent-vs: ValueSet.compose.include[1].filter[0]: The value '< 406455002 AND ^ 816080008' for the filter constraint can't be checked: Unknown operation on this server: POST /r4/ValueSet/$validate
+WARNING: ValueSet/fiji-allergy-agent-vs: ValueSet.compose.include[2].filter[0]: The value '< 425620007 AND ^ 816080008' for the filter constraint can't be checked: Unknown operation on this server: POST /r4/ValueSet/$validate
+WARNING: ValueSet/fiji-allergy-agent-vs: ValueSet.compose.include[3].filter[0]: The value '< 373873005 AND ^ 816080008' for the filter constraint can't be checked: Unknown operation on this server: POST /r4/ValueSet/$validate
+WARNING: ValueSet/fiji-allergy-agent-vs: ValueSet.compose.include[4].filter[0]: The value '< 410942007 AND ^ 816080008' for the filter constraint can't be checked: Unknown operation on this server: POST /r4/ValueSet/$validate
+
+
+== fsh-generated/resources/ValueSet-fiji-body-position-vs.json ==
+INFORMATION: ValueSet/fiji-body-position-vs: ValueSet.compose.include[0].concept[7]: Wrong Display Name 'Reverse trendelenburg positioning (finding)' for http://snomed.info/sct#423413008. Valid display is one of 2 choices: 'Reverse trendelenburg positioning' (en) or 'Reverse trendelenburg positioning (procedure)' (en) (for the language(s) 'en'). Note that the display in the ValueSet does not have to match; this check exists to help check that it's not accidentally the wrong code
+
+
+== fsh-generated/resources/ValueSet-fiji-body-site-vs.json ==
+WARNING: ValueSet/fiji-body-site-vs: ValueSet.compose.include[0].filter[0]: The value '< 442083009' for the filter constraint can't be checked: Unknown operation on this server: POST /r4/ValueSet/$validate
+
+
+== fsh-generated/resources/ValueSet-fiji-condition-code-vs.json ==
+WARNING: ValueSet/fiji-condition-code-vs: ValueSet.compose.include[0].filter[0]: The value '< 404684003 AND ^ 816080008' for the filter constraint can't be checked: Unknown operation on this server: POST /r4/ValueSet/$validate
+WARNING: ValueSet/fiji-condition-code-vs: ValueSet.compose.include[1].filter[0]: The value '< 243796009 AND ^ 816080008' for the filter constraint can't be checked: Unknown operation on this server: POST /r4/ValueSet/$validate
+WARNING: ValueSet.where(id = 'fiji-condition-code-vs'): Error from https://tx.fhir.org/r4: Error: A definition for CodeSystem 'http://hl7.org/fhir/sid/icd-10-am' could not be found, so the value set cannot be expanded
+
+
+== fsh-generated/resources/ValueSet-fiji-dcm-modality-vs.json ==
+INFORMATION: ValueSet.where(id = 'fiji-dcm-modality-vs'): The value set expansion is too large, and only a subset has been displayed
+
+
+== fsh-generated/resources/ValueSet-fiji-division.json ==
+
+
+== fsh-generated/resources/ValueSet-fiji-encounter-reason-vs.json ==
+WARNING: ValueSet/fiji-encounter-reason-vs: ValueSet.compose.include[0].filter[0]: The value '< 404684003' for the filter constraint can't be checked: Unknown operation on this server: POST /r4/ValueSet/$validate
+WARNING: ValueSet/fiji-encounter-reason-vs: ValueSet.compose.include[1].filter[0]: The value '< 71388002' for the filter constraint can't be checked: Unknown operation on this server: POST /r4/ValueSet/$validate
+
+
+== fsh-generated/resources/ValueSet-fiji-evidence-vs.json ==
+WARNING: ValueSet/fiji-evidence-vs: ValueSet.compose.include[0].filter[0]: The value '(< 404684003 MINUS < 64572001) AND ^ 816080008' for the filter constraint can't be checked: Unknown operation on this server: POST /r4/ValueSet/$validate
+WARNING: ValueSet/fiji-evidence-vs: ValueSet.compose.include[1].filter[0]: The value '< 71388002 AND ^ 816080008' for the filter constraint can't be checked: Unknown operation on this server: POST /r4/ValueSet/$validate
+ERROR: ValueSet/fiji-evidence-vs: ValueSet.compose.include[2]: The system 'http://loinc.org' is actually a value set, which itself refers to the system 'http://loinc.org' so that may be what is intended here
+ERROR: ValueSet/fiji-evidence-vs: ValueSet.compose.include[3]: The system 'http://loinc.org' is actually a value set, which itself refers to the system 'http://loinc.org' so that may be what is intended here
+
+
+== fsh-generated/resources/ValueSet-fiji-korodina.json ==
+
+
+== fsh-generated/resources/ValueSet-fiji-mataqali.json ==
+
+
+== fsh-generated/resources/ValueSet-fiji-med-vs.json ==
+WARNING: ValueSet/fiji-med-vs: ValueSet.compose.include[0].system: No definition could be found for URL value 'https://universalcodes.msupply.org.nz'
+WARNING: ValueSet/fiji-med-vs: ValueSet.compose.include[2].system: No definition could be found for URL value 'http://whocc.no'
+WARNING: ValueSet/fiji-med-vs: ValueSet.compose.include[1].filter[0]: The value '< 105590001' for the filter constraint can't be checked: Unknown operation on this server: POST /r4/ValueSet/$validate
+WARNING: ValueSet.where(id = 'fiji-med-vs'): Error from https://tx.fhir.org/r4: Error: A definition for CodeSystem 'https://universalcodes.msupply.org.nz' could not be found, so the value set cannot be expanded
+
+
+== fsh-generated/resources/ValueSet-fiji-medical-area.json ==
+
+
+== fsh-generated/resources/ValueSet-fiji-medication-request-reason-vs.json ==
+WARNING: ValueSet/fiji-medication-request-reason-vs: ValueSet.compose.include[0].filter[0]: The value '^ 32570581000036105' for the filter constraint can't be checked: Unknown operation on this server: POST /r4/ValueSet/$validate
+WARNING: ValueSet/fiji-medication-request-reason-vs: ValueSet.compose.include[1].filter[0]: The value '< 404684003 AND ^ 816080008' for the filter constraint can't be checked: Unknown operation on this server: POST /r4/ValueSet/$validate
+WARNING: ValueSet.where(id = 'fiji-medication-request-reason-vs'): Error from https://tx.fhir.org/r4: Error: Invalid ECL expression: '^ 32570581000036105': (The SNOMED CT Concept 32570581000036105 is not known)
+
+
+== fsh-generated/resources/ValueSet-fiji-medication-route-vs.json ==
+WARNING: ValueSet/fiji-medication-route-vs: ValueSet.compose.include[0].filter[0]: The value '< 284009009' for the filter constraint can't be checked: Unknown operation on this server: POST /r4/ValueSet/$validate
+
+
+== fsh-generated/resources/ValueSet-fiji-nursing-zone.json ==
+
+
+== fsh-generated/resources/ValueSet-fiji-obs-interpretation-vs.json ==
+
+
+== fsh-generated/resources/ValueSet-fiji-organization-role-vs.json ==
+WARNING: ValueSet/fiji-organization-role-vs: ValueSet.compose.include[0].filter[0]: The value '<< 285201006 OR << 43741000|Site of care| OR << 440655000 OR << 440654001' for the filter constraint can't be checked: Unknown operation on this server: POST /r4/ValueSet/$validate
+
+
+== fsh-generated/resources/ValueSet-fiji-radiology-findings-vs.json ==
+WARNING: ValueSet/fiji-radiology-findings-vs: ValueSet.compose.include[0].filter[0]: The value '< 404684003 AND < 363679005' for the filter constraint can't be checked: Unknown operation on this server: POST /r4/ValueSet/$validate
+
+
+== fsh-generated/resources/ValueSet-fiji-service-type-vs.json ==
+WARNING: ValueSet/fiji-service-type-vs: ValueSet.compose.include[0].filter[0]: The value '< 224930009' for the filter constraint can't be checked: Unknown operation on this server: POST /r4/ValueSet/$validate
+
+
+== fsh-generated/resources/ValueSet-fiji-sub-division.json ==
+
+
+== fsh-generated/resources/ValueSet-fiji-tikina.json ==
+
+
+== fsh-generated/resources/ValueSet-fiji-tokatoka.json ==
+
+
+== fsh-generated/resources/ValueSet-fiji-vital-body-weight-vs.json ==
+ERROR: ValueSet/fiji-vital-body-weight-vs: ValueSet.compose.include[0]: The system 'http://loinc.org' is actually a value set, which itself refers to the system 'http://loinc.org' so that may be what is intended here
+
+
+== fsh-generated/resources/ValueSet-fiji-vital-method-vs.json ==
+INFORMATION: ValueSet/fiji-vital-method-vs: ValueSet.compose.include[0].concept[1]: Wrong Display Name 'Tympanic temperature taking' for http://snomed.info/sct#386725007. Valid display is one of 4 choices: 'Body temperature' (en), 'Body temperature (observable entity)' (en), 'BT - Body temperature' (en) or 'Body temperature - observation' (en) (for the language(s) 'en'). Note that the display in the ValueSet does not have to match; this check exists to help check that it's not accidentally the wrong code
+INFORMATION: ValueSet/fiji-vital-method-vs: ValueSet.compose.include[0].concept[2]: Wrong Display Name 'Axillary temperature taking' for http://snomed.info/sct#415882003. Valid display is one of 6 choices: 'Axillary temperature' (en), 'Axillary temperature (observable entity)' (en), 'Core body temperature measured in axillary region' (en), 'Core body temperature measured in axillary region (observable entity)' (en), 'Estimated core body temperature measured in axillary region (observable entity)' (en) or 'Estimated core body temperature measured in axillary region' (en) (for the language(s) 'en'). Note that the display in the ValueSet does not have to match; this check exists to help check that it's not accidentally the wrong code
+WARNING: ValueSet/fiji-vital-method-vs: ValueSet.compose.include[0].concept[16]: The concept '268447006' has a status of inactive and its use should be reviewed
+
+
+== fsh-generated/resources/ValueSet-fiji-yasana.json ==
+
+
+== fsh-generated/resources/ValueSet-fiji-yavusa.json ==
+
+
+== fsh-generated/resources/ValueSet-heart-rate-loinc.json ==
+ERROR: ValueSet/heart-rate-loinc: ValueSet.compose.include[0]: The system 'http://loinc.org' is actually a value set, which itself refers to the system 'http://loinc.org' so that may be what is intended here
+WARNING: ValueSet/heart-rate-loinc: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
+
+
+== fsh-generated/resources/ValueSet-imm-vs.json ==
+
+
+== fsh-generated/resources/ValueSet-immunization-status-reason.json ==
+WARNING: ValueSet/immunization-status-reason: ValueSet.compose.include[0].concept[6].display: value should not start or finish with whitespace ' Immunization not carried out because of caregiver refusal'
+INFORMATION: ValueSet/immunization-status-reason: ValueSet.compose.include[0].concept[0].code: The code 'QC04.0' is valid, but it is not the normal form for the code system 'http://id.who.int/icd/release/11/mms|2026-01'; the normal form is '1498576014'
+INFORMATION: ValueSet/immunization-status-reason: ValueSet.compose.include[0].concept[1].code: The code 'QC04.1' is valid, but it is not the normal form for the code system 'http://id.who.int/icd/release/11/mms|2026-01'; the normal form is '679809409'
+INFORMATION: ValueSet/immunization-status-reason: ValueSet.compose.include[0].concept[2].code: The code 'QC04.2' is valid, but it is not the normal form for the code system 'http://id.who.int/icd/release/11/mms|2026-01'; the normal form is '1650200188'
+INFORMATION: ValueSet/immunization-status-reason: ValueSet.compose.include[0].concept[3].code: The code 'QC04.3' is valid, but it is not the normal form for the code system 'http://id.who.int/icd/release/11/mms|2026-01'; the normal form is '1200706488'
+INFORMATION: ValueSet/immunization-status-reason: ValueSet.compose.include[0].concept[4].code: The code 'QC04.4' is valid, but it is not the normal form for the code system 'http://id.who.int/icd/release/11/mms|2026-01'; the normal form is '472002267'
+INFORMATION: ValueSet/immunization-status-reason: ValueSet.compose.include[0].concept[5].code: The code 'QC04.5' is valid, but it is not the normal form for the code system 'http://id.who.int/icd/release/11/mms|2026-01'; the normal form is '583273619'
+INFORMATION: ValueSet/immunization-status-reason: ValueSet.compose.include[0].concept[6].code: The code 'QC04.6' is valid, but it is not the normal form for the code system 'http://id.who.int/icd/release/11/mms|2026-01'; the normal form is '118051153'
+INFORMATION: ValueSet/immunization-status-reason: ValueSet.compose.include[0].concept[6]: Wrong whitespace in Display Name ' Immunization not carried out because of caregiver refusal' for http://id.who.int/icd/release/11/mms#QC04.6. Valid display is 'Immunization not carried out because of caregiver refusal' (en) (for the language(s) 'en'). Note that the display in the ValueSet does not have to match; this check exists to help check that it's not accidentally the wrong code
+INFORMATION: ValueSet/immunization-status-reason: ValueSet.compose.include[0].concept[7].code: The code 'QC04.7' is valid, but it is not the normal form for the code system 'http://id.who.int/icd/release/11/mms|2026-01'; the normal form is '300485628'
+INFORMATION: ValueSet/immunization-status-reason: ValueSet.compose.include[0].concept[8].code: The code 'QC04.Y' is valid, but it is not the normal form for the code system 'http://id.who.int/icd/release/11/mms|2026-01'; the normal form is '836689174/other'
+INFORMATION: ValueSet/immunization-status-reason: ValueSet.compose.include[0].concept[9].code: The code 'QC04.Z' is valid, but it is not the normal form for the code system 'http://id.who.int/icd/release/11/mms|2026-01'; the normal form is '836689174/unspecified'
+
+
+== fsh-generated/resources/ValueSet-obs-vs.json ==
+ERROR: ValueSet/obs-vs: ValueSet.compose.include[0]: The system 'http://loinc.org' is actually a value set, which itself refers to the system 'http://loinc.org' so that may be what is intended here
+
+

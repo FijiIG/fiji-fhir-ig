@@ -1,0 +1,30 @@
+{
+  "resourceType" : "Organization",
+  "id" : "FijiOrganizationExample",
+  "language" : "en",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Organization FijiOrganizationExample</b></p><a name=\"FijiOrganizationExample\"> </a><a name=\"hcFijiOrganizationExample\"> </a><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\">Suva Divisional Hospital (http://fhir.health.gov.fj/identifier/organization#FijiOrganizationIdentifier#FJ-HOSP-SUH-001)</p><hr/><table class=\"grid\"><tr><td style=\"background-color: #f3f5da\" title=\"Ways to contact the organization\">Contact Detail</td><td colspan=\"3\"><ul><li><a href=\"tel:+6793313444\">+6793313444</a></li><li><a href=\"mailto:info@suvahospital.gov.fj\">info@suvahospital.gov.fj</a></li><li>Amy Street Suva FJ </li></ul></td></tr></table></div>"
+  },
+  "identifier" : [{
+    "system" : "http://fhir.health.gov.fj/identifier/organization",
+    "value" : "FJ-HOSP-SUH-001"
+  }],
+  "name" : "Suva Divisional Hospital",
+  "telecom" : [{
+    "system" : "phone",
+    "value" : "+6793313444",
+    "use" : "work"
+  },
+  {
+    "system" : "email",
+    "value" : "info@suvahospital.gov.fj",
+    "use" : "work"
+  }],
+  "address" : [{
+    "line" : ["Amy Street"],
+    "city" : "Suva",
+    "district" : "Central Division",
+    "country" : "FJ"
+  }]
+}

@@ -1,0 +1,48 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://core.fhir.health.gov.fj/Location/FijiLocationExample> a fhir:Location ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "FijiLocationExample"] ;
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "https://core.fhir.health.gov.fj/StructureDefinition/fiji-location" ;
+       fhir:index -1 ;
+       fhir:link <https://core.fhir.health.gov.fj/StructureDefinition/fiji-location>
+     ]
+  ] ;
+  fhir:Resource.language [ fhir:value "en"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Location FijiLocationExample</b></p><a name=\"FijiLocationExample\"> </a><a name=\"hcFijiLocationExample\"> </a><div style=\"display: inline-block; background-color: #fbffeb; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-fiji-location.html\">Fiji Healthcare Location</a></p></div><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\">Navua Community Clinic</p><hr/><table class=\"grid\"><tr><td style=\"background-color: #f3f5da\" title=\"The status of the location\">Status:</td><td>Active</td><td style=\"background-color: #f3f5da\" title=\"Whether this describes a specific location, or a class of locations\">Mode:</td><td>Instance</td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Physical location\">Address:</td><td colspan=\"3\">Navua Community Clinic, Navua, Fiji(work)</td></tr><tr><td style=\"background-color: #f3f5da\" title=\"The latitude and longitude of the location (WGS84)\">Position:</td><td colspan=\"3\">-18.2146, 178.16723</td></tr></table></div>"
+  ] ;
+  fhir:Location.status [ fhir:value "active"] ;
+  fhir:Location.name [ fhir:value "Navua Community Clinic"] ;
+  fhir:Location.mode [ fhir:value "instance"] ;
+  fhir:Location.address [
+     fhir:Address.use [ fhir:value "work" ] ;
+     fhir:Address.type [ fhir:value "physical" ] ;
+     fhir:Address.text [ fhir:value "Navua Community Clinic, Navua, Fiji" ] ;
+     fhir:Address.line [
+       fhir:value "Main Road" ;
+       fhir:index -1
+     ] ;
+     fhir:Address.city [ fhir:value "Navua" ] ;
+     fhir:Address.country [ fhir:value "Fiji" ]
+  ] ;
+  fhir:Location.position [
+     fhir:Location.position.longitude [ fhir:value "178.16723"^^xsd:decimal ] ;
+     fhir:Location.position.latitude [ fhir:value "-18.2146"^^xsd:decimal ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://core.fhir.health.gov.fj/Location/FijiLocationExample.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

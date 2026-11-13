@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Location xmlns="http://hl7.org/fhir">
+  <id value="FijiLocationExample"/>
+  <meta>
+    <profile value="https://core.fhir.health.gov.fj/StructureDefinition/fiji-location"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Location FijiLocationExample</b></p><a name="FijiLocationExample"> </a><a name="hcFijiLocationExample"> </a><div style="display: inline-block; background-color: #fbffeb; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-fiji-location.html">Fiji Healthcare Location</a></p></div><p style="border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;">Navua Community Clinic</p><hr/><table class="grid"><tr><td style="background-color: #f3f5da" title="The status of the location">Status:</td><td>Active</td><td style="background-color: #f3f5da" title="Whether this describes a specific location, or a class of locations">Mode:</td><td>Instance</td></tr><tr><td style="background-color: #f3f5da" title="Physical location">Address:</td><td colspan="3">Navua Community Clinic, Navua, Fiji(work)</td></tr><tr><td style="background-color: #f3f5da" title="The latitude and longitude of the location (WGS84)">Position:</td><td colspan="3">-18.2146, 178.16723</td></tr></table></div>
+  </text>
+  <status value="active"/>
+  <name value="Navua Community Clinic"/>
+  <mode value="instance"/>
+  <address>
+    <use value="work"/>
+    <type value="physical"/>
+    <text value="Navua Community Clinic, Navua, Fiji"/>
+    <line value="Main Road"/>
+    <city value="Navua"/>
+    <country value="Fiji"/>
+  </address>
+  <position>
+    <longitude value="178.16723"/>
+    <latitude value="-18.2146"/>
+  </position>
+</Location>

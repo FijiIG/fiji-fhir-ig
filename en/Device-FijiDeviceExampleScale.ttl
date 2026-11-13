@@ -1,0 +1,35 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://core.fhir.health.gov.fj/Device/FijiDeviceExampleScale> a fhir:Device ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "FijiDeviceExampleScale"] ;
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "https://core.fhir.health.gov.fj/StructureDefinition/fiji-device" ;
+       fhir:index -1 ;
+       fhir:link <https://core.fhir.health.gov.fj/StructureDefinition/fiji-device>
+     ]
+  ] ;
+  fhir:Resource.language [ fhir:value "en"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Device FijiDeviceExampleScale</b></p><a name=\"FijiDeviceExampleScale\"> </a><a name=\"hcFijiDeviceExampleScale\"> </a><div style=\"display: inline-block; background-color: #fbffeb; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-fiji-device.html\">Fiji Healthcare Device</a></p></div><h3>DeviceNames</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Name</b></td><td><b>Type</b></td></tr><tr><td style=\"display: none\">*</td><td>Scale</td><td>User Friendly name</td></tr></table></div>"
+  ] ;
+  fhir:Device.deviceName [
+     fhir:index -1 ;
+     fhir:Device.deviceName.name [ fhir:value "Scale" ] ;
+     fhir:Device.deviceName.type [ fhir:value "user-friendly-name" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://core.fhir.health.gov.fj/Device/FijiDeviceExampleScale.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

@@ -1,0 +1,20 @@
+{
+  "url" : "https://core.fhir.health.gov.fj/ImplementationGuide/fj.gov.health.fhir.core",
+  "name" : "FijiCoreIG",
+  "title" : "Draft Fiji Core Implementation Guide",
+  "description" : "Implementation Guide for Fiji FHIR Interoperability.",
+  "status" : "draft",
+  "package-id" : "fj.gov.health.fhir.core",
+  "ig-ver" : "0.9.0",
+  "date" : "Fri, 13 Nov, 2026 04:51:51 +0000",
+  "dateISO8601" : "2026-11-13T04:51:51+00:00",
+  "errs" : 5,
+  "warnings" : 53,
+  "hints" : 33,
+  "broken-links" : 4,
+  "suppressed-hints" : 0,
+  "suppressed-warnings" : 0,
+  "version" : "4.0.1",
+  "tool" : "6.0.0-snapshot1 (3)",
+  "maxMemory" : 1766215472
+}

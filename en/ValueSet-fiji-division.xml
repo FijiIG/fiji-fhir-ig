@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="fiji-division"/>
+  <language value="en"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet fiji-division</b></p><a name="fiji-division"> </a><a name="hcfiji-division"> </a><ul><li>Include all codes defined in <a href="CodeSystem-fiji-division.html"><code>https://core.fhir.health.gov.fj/CodeSystem/fiji-division</code></a><span title="Version is not explicitly stated, which means it is fixed to the version provided in this specification"> version &#x1F4E6;0.9.0</span></li></ul></div>
+  </text>
+  <url value="https://core.fhir.health.gov.fj/ValueSet/fiji-division"/>
+  <identifier>
+    <system value="urn:ietf:rfc:3986"/>
+    <value value="urn:oid:2.16.840.1.113883.4.642.40.1005.48.6"/>
+  </identifier>
+  <version value="0.9.0"/>
+  <name value="FijiDivisionVS"/>
+  <title value="Valueset of Fiji Health Administration Divisions"/>
+  <status value="draft"/>
+  <experimental value="false"/>
+  <date value="2026-11-13T04:51:51+00:00"/>
+  <publisher value="MHMS Fiji"/>
+  <contact>
+    <name value="MHMS Fiji"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://fhir.health.gov.fj"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Support"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.fhir.health.gov.fj"/>
+    </telecom>
+  </contact>
+  <description value="A valueset containing Fiji Health Administration Divisions"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="FJ"/>
+      <display value="Fiji"/>
+    </coding>
+  </jurisdiction>
+  <copyright value="Distributed under the Creative Commons CC0-1.0 License (https://creativecommons.org/publicdomain/zero/1.0/)"/>
+  <compose>
+    <include>
+      <system value="https://core.fhir.health.gov.fj/CodeSystem/fiji-division"/>
+    </include>
+  </compose>
+</ValueSet>

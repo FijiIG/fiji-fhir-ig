@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="fiji-mataqali"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: CodeSystem fiji-mataqali</b></p><a name="fiji-mataqali"> </a><a name="hcfiji-mataqali"> </a><p>This case-sensitive code system <code>https://core.fhir.health.gov.fj/CodeSystem/fiji-mataqali</code> defines the following code:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style="white-space:nowrap">tova-natokalau<a name="fiji-mataqali-tova-natokalau"> </a></td><td>Tova Natokalau</td><td>Tova Natokalau</td></tr></table></div>
+  </text>
+  <url value="https://core.fhir.health.gov.fj/CodeSystem/fiji-mataqali"/>
+  <identifier>
+    <system value="urn:ietf:rfc:3986"/>
+    <value value="urn:oid:2.16.840.1.113883.4.642.40.1005.16.3"/>
+  </identifier>
+  <version value="0.9.0"/>
+  <name value="FijiMataqaliCS"/>
+  <title value="Fiji Mataqali CodeSystem"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2026-11-13T04:51:51+00:00"/>
+  <publisher value="MHMS Fiji"/>
+  <contact>
+    <name value="MHMS Fiji"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://fhir.health.gov.fj"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Support"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.fhir.health.gov.fj"/>
+    </telecom>
+  </contact>
+  <description value="A code system representing mataqali recognised in Fiji,&#xA;for use in healthcare information exchange where&#xA;identification of a mataqali is required.&#xA;&#xA;Codes and display names should be sourced from the&#xA;authoritative Fiji geographic administrative dataset&#xA;adopted by the Fiji Implementation Guide."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="FJ"/>
+      <display value="Fiji"/>
+    </coding>
+  </jurisdiction>
+  <copyright value="Distributed under the Creative Commons CC0-1.0 License (https://creativecommons.org/publicdomain/zero/1.0/)"/>
+  <caseSensitive value="true"/>
+  <content value="complete"/>
+  <count value="1"/>
+  <concept>
+    <code value="tova-natokalau"/>
+    <display value="Tova Natokalau"/>
+    <definition value="Tova Natokalau"/>
+  </concept>
+</CodeSystem>
