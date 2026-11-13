@@ -1,6 +1,7 @@
 Instance: FijiAddressExampleFiji
 InstanceOf: FijiAddress
 Usage: #inline
+Description: "Example of Fiji Village address with geolocation"
 
 * text = "Opposite Methodist Church, Nabouwalu Village, Bua Province, Fiji"
 * line[0] = "Opposite Methodist Church"

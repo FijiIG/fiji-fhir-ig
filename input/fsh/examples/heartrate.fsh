@@ -1,6 +1,7 @@
 Instance: HeartRateExample
 InstanceOf: FijiVitalHeartRate
 Usage: #example
+Description: "Example of heart rate observation"
 
 * status = #final
 * category[VSCat] = $obs-cat-cs#vital-signs "Vital Signs"

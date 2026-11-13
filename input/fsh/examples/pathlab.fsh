@@ -5,6 +5,8 @@ Instance: ExampleArterialPO2
 InstanceOf: FijiPathologyObservation
 Usage: #example
 Title: "Example arterial oxygen partial pressure"
+Description: "Example arterial oxygen partial pressure"
+
 
 * status = #final
 * category = $obs-cat-cs#laboratory
@@ -23,6 +25,7 @@ Instance: ExampleLipidPanel
 InstanceOf: FijiPathologyObservation
 Usage: #example
 Title: "Example Lipid Panel"
+Description: "Example Lipid Panel"
 
 * status = #final
 * category = $obs-cat-cs#laboratory
@@ -42,6 +45,7 @@ Instance: ExampleTotalCholesterol
 InstanceOf: FijiPathologyObservation
 Usage: #example
 Title: "Example Total Cholesterol"
+Description: "Example Total Cholesterol"
 
 * status = #final
 * category = $obs-cat-cs#laboratory
@@ -59,6 +63,7 @@ Instance: ExampleHDLCholesterol
 InstanceOf: FijiPathologyObservation
 Usage: #example
 Title: "Example HDL Cholesterol"
+Description: "Example HDL Cholesterol"
 
 * status = #final
 * category = $obs-cat-cs#laboratory
@@ -76,6 +81,7 @@ Instance: ExampleLDLCholesterol
 InstanceOf: FijiPathologyObservation
 Usage: #example
 Title: "Example LDL Cholesterol"
+Description: "Example LDL Cholesterol"
 
 * status = #final
 * category = $obs-cat-cs#laboratory
@@ -93,6 +99,7 @@ Instance: ExampleTriglycerides
 InstanceOf: FijiPathologyObservation
 Usage: #example
 Title: "Example Triglycerides"
+Description: "Example Triglycerides observation"
 
 * status = #final
 * category = $obs-cat-cs#laboratory
@@ -109,6 +116,7 @@ Instance: ExampleLipidSpecimen
 InstanceOf: Specimen
 Usage: #example
 Title: "Example Lipid Panel Specimen"
+Description: "Example Lipid Panel Specimen"
 
 * status = #available
 * type = $SCT#119364003 "Serum specimen"

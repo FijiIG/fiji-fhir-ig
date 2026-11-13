@@ -1,6 +1,7 @@
 Instance: RespiratoryRateExample
 InstanceOf: FijiRespiratoryRate
 Usage: #example
+Description: "Example of respiratory rate observation"
 
 * status = #final
 

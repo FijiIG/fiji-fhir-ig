@@ -1,6 +1,7 @@
 Instance: Example-BMI
 InstanceOf: FijiBMI
 Usage: #example
+Description: "Example of Body-Mass-Index observation"
 
 * status = #final
 

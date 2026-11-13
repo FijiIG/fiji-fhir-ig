@@ -1,6 +1,7 @@
 Instance: ExampleBloodPressure
 InstanceOf: FijiVitalBloodPressure
 Usage: #example
+Description: "Example of a blood pressure observation with both Systolic & Diastolic measures"
 
 * status = #final
 

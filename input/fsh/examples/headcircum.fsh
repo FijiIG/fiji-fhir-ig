@@ -2,6 +2,7 @@ Instance: FijiHeadCircumferenceExample
 InstanceOf: FijiHeadCircumference
 Usage: #example
 Title: "Fiji Head Circumference Example"
+Description: "Example of head circumference observation"
 
 * status = #final
 * category[VSCat] = http://terminology.hl7.org/CodeSystem/observation-category#vital-signs "Vital Signs"

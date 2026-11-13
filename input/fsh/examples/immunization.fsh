@@ -37,6 +37,7 @@ Instance: FijiImmunizationReactionExample
 InstanceOf: FijiImmunization
 Usage: #example
 Title: "Tdap Immunization with Reaction"
+Description: "Example of Immunization with reaction"
 
 * status = #completed
 
@@ -71,6 +72,7 @@ Instance: FijiTdapReactionObservation
 InstanceOf: Observation
 Usage: #example
 Title: "Tdap Injection Site Reaction"
+Description: "Example of Immunization reaction observation"
 
 * status = #final
 

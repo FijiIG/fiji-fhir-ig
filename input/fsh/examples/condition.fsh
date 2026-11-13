@@ -2,6 +2,7 @@ Instance: FijiConditionExample
 InstanceOf: FijiCondition
 Usage: #example
 Title: "Condition Example - Type 2 Diabetes Mellitus"
+Description:  "Example of diagnosis/problem list condition"
 
 * id = "condition-example-diabetes2"
 

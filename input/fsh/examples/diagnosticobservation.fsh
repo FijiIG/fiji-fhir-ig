@@ -22,6 +22,7 @@ Instance: FijiDiagnosticObservationPulmonaryConsolidation
 InstanceOf: FijiDiagnosticObservation
 Usage: #example
 Title: "Fiji Diagnostic Observation - Pulmonary Consolidation"
+Description: "Example of Pulmonary Consolidation observation"
 
 * status = #final
 * category = $obs-diag-svc-cs#RAD "Radiology"
@@ -36,6 +37,7 @@ Instance: FijiDiagnosticObservationPleuralEffusion
 InstanceOf: FijiDiagnosticObservation
 Usage: #example
 Title: "Fiji Diagnostic Observation - Pleural Effusion"
+Description: "Example of Basal Pnuemonia observation"
 
 * status = #final
 * category = $obs-diag-svc-cs#RAD "Radiology"

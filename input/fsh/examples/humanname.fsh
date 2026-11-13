@@ -3,6 +3,7 @@
 Instance: InlineFijiHumanNameOfficialOnly
 InstanceOf: FijiHumanName
 Usage: #inline
+Description: "Example of official name"
 
 * use = #official
 * given[0] = "Maria"
@@ -12,6 +13,7 @@ Usage: #inline
 Instance: InlineFijiHumanNameDual
 InstanceOf: FijiHumanName
 Usage: #inline
+Description: "Example of offiical name"
 
 * use = #official
 * given[0] = "Tevita"
@@ -21,6 +23,7 @@ Usage: #inline
 Instance: InlineFijiHumanNameUsual
 InstanceOf: FijiHumanName
 Usage: #inline
+Description: "Example of usual name"
 
 * use = #usual
 * prefix[0] = "Susuga"
@@ -30,6 +33,7 @@ Usage: #inline
 Instance: InlineFijiHumanNameUsualOnly
 InstanceOf: FijiHumanName
 Usage: #inline
+Description: "Example of usual name"
 
 * use = #usual
 * given[0] = "Taviri"
