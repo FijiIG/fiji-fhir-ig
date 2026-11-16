@@ -11,7 +11,7 @@ Description: "Example of a patient undergoing a surgical appendectomy."
 
 * subject = Reference(Patient/FijiPatientExample)
 
-* encounter = Reference(Patient/FijiEncounterExample)
+* encounter = Reference(Encounter/FijiEncounterExample)
 
 * performedDateTime = "2026-11-16T09:30:00+12:00"
 

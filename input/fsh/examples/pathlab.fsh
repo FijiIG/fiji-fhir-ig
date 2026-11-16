@@ -49,7 +49,7 @@ Description: "Example Total Cholesterol"
 
 * status = #final
 * category = $obs-cat-cs#laboratory
-* code = $loinc#2093-3 "Cholesterol [Mass/volume] in Serum or Plasma"
+* code = $loinc#14647-2 "Cholesterol [Mass/volume] in Serum or Plasma"
 * subject = Reference(Patient/FijiPatientExample)
 * effectiveDateTime = "2026-09-23T09:00:00+12:00"
 * performer = Reference(Practitioner/FijiPractitionerExample)
@@ -67,7 +67,7 @@ Description: "Example HDL Cholesterol"
 
 * status = #final
 * category = $obs-cat-cs#laboratory
-* code = $loinc#2085-9 "Cholesterol in HDL [Mass/volume] in Serum or Plasma"
+* code = $loinc#14646-4 "Cholesterol in HDL [Mass/volume] in Serum or Plasma"
 * subject = Reference(Patient/FijiPatientExample)
 * effectiveDateTime = "2026-09-23T09:00:00+12:00"
 * performer = Reference(Practitioner/FijiPractitionerExample)
@@ -85,7 +85,7 @@ Description: "Example LDL Cholesterol"
 
 * status = #final
 * category = $obs-cat-cs#laboratory
-* code = $loinc#2089-1 "Cholesterol in LDL [Mass/volume] in Serum or Plasma"
+* code = $loinc#22748-8 "Cholesterol in LDL [Mass/volume] in Serum or Plasma"
 * subject = Reference(Patient/FijiPatientExample)
 * effectiveDateTime = "2026-09-23T09:00:00+12:00"
 * performer = Reference(Practitioner/FijiPractitionerExample)
@@ -103,7 +103,7 @@ Description: "Example Triglycerides observation"
 
 * status = #final
 * category = $obs-cat-cs#laboratory
-* code = $loinc#2571-8 "Triglyceride [Mass/volume] in Serum or Plasma"
+* code = $loinc#14927-8 "Triglyceride [Mass/volume] in Serum or Plasma"
 * subject = Reference(Patient/FijiPatientExample)
 * effectiveDateTime = "2026-09-23T09:00:00+12:00"
 * performer = Reference(Practitioner/FijiPractitionerExample)
