@@ -3,6 +3,9 @@ ValueSet: HeartRateVS
 Id: heart-rate-loinc
 Title: "Heart Rate LOINC Codes"
 Description: "LOINC codes for heart rate measurements, spot or average."
+* ^status = #active
+* ^experimental = false
+
 * include $loinc#8867-4 "Heart rate"
 * include $loinc#103205-1 "Mean heart rate"
 

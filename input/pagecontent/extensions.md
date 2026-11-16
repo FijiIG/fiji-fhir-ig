@@ -5,10 +5,10 @@ This page describes lists extensions used in the implementation guide.
 
 The following optional extensions are defined for Fiji Patient profile:
 
-[Fiji iTaukei Affiliation](StructureDefinition-fiji-iTaukei-affiliation) 
-[Patient Occupation](StructureDefinition-fiji-patient-occupation)
-[Patient Ethnicity](StructureDefinition-fiji-patient-ethnicity)
-[Birth Date Verified](StructureDefinition-birthdate-verified-indicator)
+[Fiji iTaukei Affiliation](StructureDefinition-fiji-iTaukei-affiliation.html) 
+[Patient Occupation](StructureDefinition-fiji-patient-occupation.html)
+[Patient Ethnicity](StructureDefinition-fiji-patient-ethnicity.html)
+[Birth Date Verified](StructureDefinition-birthdate-verified-indicator.html)
 
 These HL7 commonly used extensions are also added to the Fiji Patient profile:
 [Patient Nationality](https://hl7.org/fhir/extensions/5.4.0/en/StructureDefinition-patient-nationality)

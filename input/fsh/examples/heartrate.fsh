@@ -8,6 +8,7 @@ Description: "Example of heart rate observation"
 * code = $loinc#8867-4 "Heart rate"
 * subject = Reference(Patient/FijiPatientExample)
 * effectiveDateTime = "2026-09-08T09:30:00+10:00"
+* performer = Reference(Practitioner/FijiPractitionerExample)
 * encounter = Reference(FijiEncounterExample)
 * valueQuantity.value = 78
 * valueQuantity.unit = "/min"

@@ -16,7 +16,7 @@ TODO: Converted and/or extend from vaccine specific exception codes from SNOMED 
 * include $ICD11MMS#QC04.3 "Immunization not carried out because of immune-compromised state of patient"
 * include $ICD11MMS#QC04.4 "Immunization not carried out because of patient allergy to vaccine or component"
 * include $ICD11MMS#QC04.5 "Immunization not carried out because of patient refusal"
-* include $ICD11MMS#QC04.6 " Immunization not carried out because of caregiver refusal"
+* include $ICD11MMS#QC04.6 "Immunization not carried out because of caregiver refusal"
 * include $ICD11MMS#QC04.7 "Immunization not carried out due to lack of availability"
 * include $ICD11MMS#QC04.Y "Immunization not carried out for other reasons"
 * include $ICD11MMS#QC04.Z "Immunization not carried out for unspecified reason"

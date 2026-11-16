@@ -165,6 +165,9 @@ Example Indo-Fijian patient demonstrating:
 * gender = #female
 * birthDate = "1985-09-02"
 
+* extension[+].url = $birthdate-verified
+* extension[=].valueBoolean = true
+
 ///////////////////////////////////////////////////////////////
 // ADDRESS
 ///////////////////////////////////////////////////////////////

@@ -9,3 +9,4 @@ A device is a manufactured item that is used in the provision of healthcare with
 The device may be a medical or non-medical device.
 """
 * deviceName MS
+
