@@ -1,6 +1,6 @@
 // Externally Published Code Systems
 Alias: $loinc = http://loinc.org
-Alias: $SCT = http://snomed.info/sct
+Alias: $SCT = http://snomed.info/sct/900000000000207008
 Alias: $UCUM = http://unitsofmeasure.org
 Alias: $RXN = http://www.nlm.nih.gov/research/umls/rxnorm	
 Alias: $NCI = http://ncimeta.nci.nih.gov
