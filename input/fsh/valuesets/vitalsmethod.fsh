@@ -46,7 +46,7 @@ This may be extended as required including with local codes used in historic dat
 // ---------------------------------------------------------------------
 
 // * include $SCT#37931006 "Auscultation"
-* include $SCT#268447006 "Doppler studies"
+// * include $SCT#765172009 "Doppler ultrasound"
 * include $SCT#29303009 "Electrocardiographic procedure"
 // * include $SCT#13385008 "Mediate auscultation"
 // * include $SCT#264598005 "Oximetry"

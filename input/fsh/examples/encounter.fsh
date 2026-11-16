@@ -6,7 +6,7 @@ Description: "Example of an outpatient encounter in a Fiji healthcare setting"
 
 * status = #finished
 
-* identifier[0].system = "https://fhir.health.gov.fj/identifier/encounter"
+* identifier[0].system = "http://fhir.health.gov.fj/identifier/encounter"
 * identifier[0].value = "ENC-2026-000123"
 
 * class = $enc-class-cs#AMB "ambulatory"
