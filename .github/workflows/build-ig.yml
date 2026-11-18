@@ -72,7 +72,9 @@ jobs:
       - name: Run IG Publisher
         run: |
           set -euxo pipefail
-          java -Xmx4g -jar publisher.jar -ig ig.ini -tx https://r4.ontoserver.csiro.au/fhir | tee publisher.log
+          # java -Xmx4g -jar publisher.jar -ig ig.ini -tx https://r4.ontoserver.csiro.au/fhir | tee publisher.log
+          java -Xmx4g -jar publisher.jar -ig ig.ini -tx https://tx.fhir.org/r4 | tee publisher.log
+          
       # run: java -jar publisher.jar -ig ig.ini
 
       # 12. Upload IG Publisher log
