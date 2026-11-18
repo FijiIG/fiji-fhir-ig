@@ -11,6 +11,7 @@ Includes "clinical finding"  codes and codes for "situation with explicit conten
 * ^status = #active
 * ^experimental = false
 * ^publisher = "MHMS Fiji"
+* ^version = "0.1.0"
 
 // SNOMED rule: Intersect Clinical Finding with the IPS RefSet using ECL
 // SNOMED: Also pull in clinical history concepts ("Situation with explicit context") from the IPS RefSet

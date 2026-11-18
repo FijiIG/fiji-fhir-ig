@@ -9,6 +9,8 @@ Proposed valueset is taken from SNOMED descendant of clinical findings and Proce
 * ^status = #active
 * ^experimental = false
 * ^publisher = "MHMS Fiji"
+* ^version = "0.1.0"
+
 // include SCT codes for Problem/diagnosis ref set or Procedures
 * include codes from system $SCT where constraint = "< 404684003"
 * include codes from system $SCT where constraint = "< 71388002"

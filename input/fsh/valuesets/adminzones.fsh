@@ -5,6 +5,7 @@ Description: "Health administrative division codes in Fiji"
 
 * ^experimental = false
 * ^caseSensitive = true
+* ^version = "0.1.0"
 * ^url = $division-cs
 
 * #central "Central" "Central division covers capital regions and surrounding provinces"
@@ -19,6 +20,7 @@ Description: "Health administrative sub division codes in Fiji"
 
 * ^experimental = false
 * ^caseSensitive = true
+* ^version = "0.1.0"
 * ^url = $subdivision-cs
 
 * #rewa "Rewa" "Rewa sub-division"
@@ -49,6 +51,7 @@ Description: "Health administrative medical area codes in Fiji"
 
 * ^experimental = false
 * ^caseSensitive = true
+* ^version = "0.1.0"
 * ^url = $medicalarea-cs
 
 * #area1 "Area1" "Medical area 1 (example only need to populate this code system)"
@@ -60,6 +63,7 @@ Description: "Health administrative nursing zone codes in Fiji"
 
 * ^experimental = false
 * ^caseSensitive = true
+* ^version = "0.1.0"
 * ^url = $nursingzone-cs
 
 * #zone1 "Zone1" "Nursing zone 1 (example only need to populate this code system)"
@@ -72,6 +76,7 @@ ValueSet: FijiDivisionVS
 Id: fiji-division
 Title: "Valueset of Fiji Health Administration Divisions"
 Description: "A valueset containing Fiji Health Administration Divisions"
+* ^version = "0.1.0"
 * ^experimental = false
 * include codes from system FijiDivisionCS
 
@@ -80,6 +85,7 @@ ValueSet: FijiSubDivisionVS
 Id: fiji-sub-division
 Title: "Valueset of Fiji Health Administration Sub-divisions"
 Description: "A valueset containing Fiji Health Administration sub-divisions"
+* ^version = "0.1.0"
 * ^experimental = false
 * include codes from system FijiSubDivisionCS
 
@@ -87,6 +93,7 @@ ValueSet: FijiMedicalAreaVS
 Id: fiji-medical-area
 Title: "Valueset of Fiji Health Administration medical areas"
 Description: "A valueset containing Fiji Health Administration  medical areas"
+* ^version = "0.1.0"
 * ^experimental = false
 * include codes from system FijiMedicalAreaCS
 
@@ -95,5 +102,6 @@ ValueSet: FijiNursingZoneVS
 Id: fiji-nursing-zone
 Title: "Valueset of Fiji Health Administration nursing zones"
 Description: "A valueset containing Fiji Health Administration  nursing zones"
+* ^version = "0.1.0"
 * ^experimental = false
 * include codes from system FijiNursingZoneCS

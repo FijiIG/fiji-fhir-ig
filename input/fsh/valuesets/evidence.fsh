@@ -3,6 +3,8 @@ Id: fiji-evidence-vs
 Title: "Condition Evidence Value Set for Fiji Core IG"
 Description: "Evidence: Signs, symptoms, procedures, and labs, explicitly excluding formal diseases."
 * ^experimental = false
+* ^version = "0.1.0"
+
 // 1. SNOMED CT: Include clinical findings, MINUS formal disorders, filtered by the IPS refset
 * include codes from system $SCT where constraint = "(< 404684003 MINUS < 64572001) AND ^ 816080008"
 

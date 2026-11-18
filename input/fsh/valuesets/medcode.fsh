@@ -6,6 +6,7 @@ Fiji Medication valueset including support for legacy codes derived from Fiji MS
 Provisionally SNOMED CT medication refset and ATC codes have also been added.
 """
 * ^experimental = false
+* ^version = "0.1.0"
 
 * include codes from system FijiMedCS
 // Include all SNOMED concepts descending from the Pharmaceutical/biologic product hierarchy."

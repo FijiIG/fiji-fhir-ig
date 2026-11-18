@@ -9,6 +9,8 @@ Proposed valueset is taken from SNOMED Problem/Diagnosis refsets.
 * ^status = #active
 * ^experimental = false
 * ^publisher = "MHMS Fiji"
+* ^version = "0.1.0"
+
 * include codes from system $SCT where constraint = "^ 32570581000036105"
 // SNOMED rule: Intersect Clinical Finding with the IPS RefSet using ECL
 * include codes from system $SCT where constraint = "< 404684003 AND ^ 816080008"

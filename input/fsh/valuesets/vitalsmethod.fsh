@@ -8,6 +8,8 @@ body weight, heart rate, oxygen saturation and respiratory rate.
 This may be extended as required including with local codes used in historic data.
 """
 * ^experimental = false
+* ^version = "0.1.0"
+
 
 // ---------------------------------------------------------------------
 // Body temperature

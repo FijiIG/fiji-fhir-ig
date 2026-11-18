@@ -6,10 +6,9 @@ Concepts representing options that provide further context for body weight codin
 NOTE: This is not currently used but may be used in future when a full valueset has been developed
 """
 
-// ---------------------------------------------------------------------
-// Body temperature
-// ---------------------------------------------------------------------
 * ^experimental = false
+* ^version = "0.1.0"
+
 
 * include $loinc#29463-7 "Body weight"
 * include $loinc#8339-4 "Birth weight Measured"

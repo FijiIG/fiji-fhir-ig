@@ -12,6 +12,8 @@ adopted by the Fiji Implementation Guide.
 * ^status = #active
 * ^experimental = false
 * ^caseSensitive = true
+* ^version = "0.1.0"
+
 // uncomment the next line once the code system is fully populated with all relevant codeable concepts
 // * ^content = #complete
 

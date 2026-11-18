@@ -8,6 +8,7 @@ Values from SNOMED CT anatomical structures.
 """
 * ^status = #active
 * ^experimental = false
+* ^version = "0.1.0"
 * ^publisher = "MHMS Fiji"
 
 // Pulls the entire anatomical structure tree as defined by the HL7 IPS standard

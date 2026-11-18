@@ -4,6 +4,7 @@ Title: "Observation interpretation local codes in Fiji"
 Description: "Observation interpretation local codes in Fiji"
 * ^experimental = false
 * ^caseSensitive = true
+* ^version = "0.1.0"
 
 * #interp1 "ExampleInterpretation1" "Example Interpretation 1 (example only need to populate this code system)"
 
@@ -18,6 +19,7 @@ Values from  HL7 v3 Code System ObservationInterpretation with added values from
 * ^status = #active
 * ^experimental = false
 * ^publisher = "MHMS Fiji"
+* ^version = "0.1.0"
 
 // Pulls the observation interpretation codes from HL7 v3 CodeSystem
 * include codes from system $obs-interp-cs
