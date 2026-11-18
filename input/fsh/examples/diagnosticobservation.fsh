@@ -26,7 +26,7 @@ Description: "Example of Pulmonary Consolidation observation"
 
 * status = #final
 * category = $obs-diag-svc-cs#RAD "Radiology"
-* code = $SCT#95436008 "Consolidation of lung"
+* code = $SCT#95436008 "Lung consolidation"
 * subject = Reference(FijiPatientExample)
 * effectiveDateTime = "2026-09-28T09:30:00+12:00"
 * performer = Reference(Practitioner/FijiRadiologistExample)

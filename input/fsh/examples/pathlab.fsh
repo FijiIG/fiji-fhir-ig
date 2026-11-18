@@ -29,7 +29,7 @@ Description: "Example Lipid Panel"
 
 * status = #final
 * category = $obs-cat-cs#laboratory
-* code = $loinc#24331-1 "Lipid 1996 panel - Serum or Plasma"
+* code = $loinc#100898-6 "Lipid panel - Serum or Plasma"
 * subject = Reference(Patient/FijiPatientExample)
 * effectiveDateTime = "2026-09-23T09:00:00+12:00"
 * issued = "2026-09-23T12:00:00+12:00"
@@ -49,7 +49,7 @@ Description: "Example Total Cholesterol"
 
 * status = #final
 * category = $obs-cat-cs#laboratory
-* code = $loinc#14647-2 "Cholesterol [Mass/volume] in Serum or Plasma"
+* code = $loinc#14647-2 "Cholesterol [Moles/volume] in Serum or Plasma"
 * subject = Reference(Patient/FijiPatientExample)
 * effectiveDateTime = "2026-09-23T09:00:00+12:00"
 * performer = Reference(Practitioner/FijiPractitionerExample)
@@ -67,7 +67,7 @@ Description: "Example HDL Cholesterol"
 
 * status = #final
 * category = $obs-cat-cs#laboratory
-* code = $loinc#14646-4 "Cholesterol in HDL [Mass/volume] in Serum or Plasma"
+* code = $loinc#14646-4 "Cholesterol in HDL [Moles/volume] in Serum or Plasma"
 * subject = Reference(Patient/FijiPatientExample)
 * effectiveDateTime = "2026-09-23T09:00:00+12:00"
 * performer = Reference(Practitioner/FijiPractitionerExample)
@@ -85,7 +85,7 @@ Description: "Example LDL Cholesterol"
 
 * status = #final
 * category = $obs-cat-cs#laboratory
-* code = $loinc#22748-8 "Cholesterol in LDL [Mass/volume] in Serum or Plasma"
+* code = $loinc#22748-8 "Cholesterol in LDL [Moles/volume] in Serum or Plasma"
 * subject = Reference(Patient/FijiPatientExample)
 * effectiveDateTime = "2026-09-23T09:00:00+12:00"
 * performer = Reference(Practitioner/FijiPractitionerExample)
@@ -103,7 +103,7 @@ Description: "Example Triglycerides observation"
 
 * status = #final
 * category = $obs-cat-cs#laboratory
-* code = $loinc#14927-8 "Triglyceride [Mass/volume] in Serum or Plasma"
+* code = $loinc#14927-8 "Triglyceride [Moles/volume] in Serum or Plasma"
 * subject = Reference(Patient/FijiPatientExample)
 * effectiveDateTime = "2026-09-23T09:00:00+12:00"
 * performer = Reference(Practitioner/FijiPractitionerExample)

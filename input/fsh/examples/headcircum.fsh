@@ -12,5 +12,5 @@ Description: "Example of head circumference observation"
 * performer = Reference(Practitioner/FijiPractitionerExample)
 * valueQuantity.value = 42.5
 * valueQuantity.unit = "cm"
-* valueQuantity.system = "http://unitsofmeasure.org"
+* valueQuantity.system = $UCUM
 * valueQuantity.code = #cm

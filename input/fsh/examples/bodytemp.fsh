@@ -14,7 +14,7 @@ Description: "Body temperature observation example with reference ranges and int
 
 * valueQuantity.value = 39.1
 * valueQuantity.unit = "°C"
-* valueQuantity.system = "http://unitsofmeasure.org"
+* valueQuantity.system = $UCUM
 * valueQuantity.code = #Cel
 
 * interpretation = $obs-interp-cs#H "High"

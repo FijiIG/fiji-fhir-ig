@@ -22,7 +22,7 @@ Alias: $ICDO3 = http://terminology.hl7.org/CodeSystem/icd-o-3
 Alias: $UMLS = http://terminology.hl7.org/CodeSystem/umls
 Alias: $DCM = http://dicom.nema.org/resources/ontology/DCM
 Alias: $MSUPPLY = https://universalcodes.msupply.org.nz
-Alias: $ATC = http://whocc.no
+Alias: $ATC = http://whocc.no/atc
 
 // Code systems for specific elements
 Alias: $id-type-cs = http://terminology.hl7.org/CodeSystem/v2-0203
@@ -109,6 +109,7 @@ Alias: $korodina-cs = https://core.fhir.health.gov.fj/CodeSystem/fiji-korodina
 Alias: $yavusa-cs = https://core.fhir.health.gov.fj/CodeSystem/fiji-yavusa
 Alias: $mataqali-cs = https://core.fhir.health.gov.fj/CodeSystem/fiji-mataqali
 Alias: $tokatoka-cs = https://core.fhir.health.gov.fj/CodeSystem/fiji-tokatoka
+Alias: $fiji-msupply-cs = https://core.fhir.health.gov.fj/CodeSystem/fiji-msupply
 
 // Fiji Valueset urls
 Alias: $yasana-vs = https://core.fhir.health.gov.fj/ValueSet/fiji-yasana
@@ -126,7 +127,7 @@ Alias: $nursingzone-cs = https://core.fhir.health.gov.fj/CodeSystem/fiji-nursing
 Alias: $bodypos-vs = https://core.fhir.health.gov.fj/ValueSet/fiji-body-position-vs
 
 // Fiji specific extensions
-Alias: $birthdate-verified = https:​/​/core​.fhir​.health​.gov​.fj​/StructureDefinition​/birthdate-verified-indicator
+Alias: $birthdate-verified = https:​/​/core​.fhir​.health​.gov​.fj​/StructureDefinition​-birthdate-verified-indicator
 
 // FHIR profiles for common scenarios
 Alias: $obs-bmi = http://hl7.org/fhir/StructureDefinition/bmi

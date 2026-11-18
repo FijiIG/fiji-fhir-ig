@@ -9,7 +9,7 @@ and until a standardised codesystem for medications is agreed.
 Codes and display names should be sourced from the
 MSupply codes used in Fiji for dispensing medication.
 """
-* ^url = $mataqali-cs
+* ^url = $fiji-msupply-cs
 * ^status = #active
 * ^experimental = false
 * ^caseSensitive = true
