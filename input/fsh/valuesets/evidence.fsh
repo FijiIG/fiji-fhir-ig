@@ -17,4 +17,4 @@ Description: "Evidence: Signs, symptoms, procedures, and labs, explicitly exclud
 
 // 3. LOINC: Include lab and radiology tests
 * include codes from system $loinc where ancestor = #LP29684-5 "Laboratory studies"
-* include codes from system $loinc where ancestor = #LP29700-9 "Radiology"
+* include codes from system $loinc where ancestor = #LP74263-2 "Radiology studies"
