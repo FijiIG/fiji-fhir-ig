@@ -169,7 +169,7 @@ The Fiji Medication Dispense profile builds on the FHIR R4 `MedicationDispense` 
 
 * performer 1..* MS
 * performer.actor 1..1 MS
-* performer.actor only Reference(FijiPractitioner or FijiPractitionerRole or FijiOrganization)
+* performer.actor only Reference(FijiPractitioner or FijiPractitionerRole or FijiFacility)
 
 * location only Reference(FijiLocation)
 

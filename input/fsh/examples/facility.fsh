@@ -1,5 +1,5 @@
 Instance: FijiHospitalExample
-InstanceOf: FijiOrganization
+InstanceOf: FijiFacility
 Usage: #example
 Title: "Example Fiji Hospital"
 Description: "Example of a hospital providing healthcare services in Fiji."
@@ -23,9 +23,11 @@ Description: "Example of a hospital providing healthcare services in Fiji."
 * address[0].city = "Namosi"
 * address[0].country = "Fiji"
 
+* partOf = Reference(Organization/FijiSubdivisionExampleNamosi)
+
 
 Instance: FijiClinicExample
-InstanceOf: FijiOrganization
+InstanceOf: FijiFacility
 Usage: #example
 Title: "Example Fiji Clinic"
 Description: "Example of a primary care clinic providing community healthcare services in Fiji."
@@ -94,3 +96,5 @@ Includes organizational identifier, contact information, and address.
 * address.city = "Suva"
 * address.district = "Central Division"
 * address.country = "FJ"
+
+* partOf = Reference(Organization/FijiDivisionExampleCentral)

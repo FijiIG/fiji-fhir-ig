@@ -23,7 +23,7 @@ Intended for use in Fiji regional health systems and future HIE environments.
 * practitioner ^short = "The practitioner performing this role"
 
 * organization 1..1
-* organization only Reference(FijiOrganization)
+* organization only Reference(FijiFacility or FijiAdministrativeZone)
 * organization ^short = "The healthcare organisation where the role is performed"
 
 ///////////////////////////////////////////////////////////////

@@ -110,6 +110,8 @@ Alias: $yavusa-cs = https://core.fhir.health.gov.fj/CodeSystem/fiji-yavusa
 Alias: $mataqali-cs = https://core.fhir.health.gov.fj/CodeSystem/fiji-mataqali
 Alias: $tokatoka-cs = https://core.fhir.health.gov.fj/CodeSystem/fiji-tokatoka
 Alias: $fiji-msupply-cs = https://core.fhir.health.gov.fj/CodeSystem/fiji-msupply
+Alias: $admin-zones-cs = https://core.fhir.health.gov.fj/CodeSystem/fiji-admin-zones
+
 
 // Fiji Valueset urls
 Alias: $yasana-vs = https://core.fhir.health.gov.fj/ValueSet/fiji-yasana
@@ -119,10 +121,7 @@ Alias: $yavusa-vs = https://core.fhir.health.gov.fj/ValueSet/fiji-yavusa
 Alias: $mataqali-vs = https://core.fhir.health.gov.fj/ValueSet/fiji-mataqali
 Alias: $tokatoka-vs = https://core.fhir.health.gov.fj/ValueSet/fiji-tokatoka
 
-Alias: $division-cs = https://core.fhir.health.gov.fj/CodeSystem/fiji-division
-Alias: $subdivision-cs = https://core.fhir.health.gov.fj/CodeSystem/fiji-subdivision
-Alias: $medicalarea-cs = https://core.fhir.health.gov.fj/CodeSystem/fiji-medicalarea
-Alias: $nursingzone-cs = https://core.fhir.health.gov.fj/CodeSystem/fiji-nursingzone
+Alias: $admin-zones-cs = https://core.fhir.health.gov.fj/CodeSystem/fiji-admin-zones
 
 Alias: $bodypos-vs = https://core.fhir.health.gov.fj/ValueSet/fiji-body-position-vs
 

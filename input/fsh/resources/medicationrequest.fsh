@@ -118,7 +118,7 @@ The Fiji Medication Request profile builds on the FHIR R4 `MedicationRequest` re
 * encounter only Reference(FijiEncounter)
 * authoredOn 1..1 MS
 * requester 1..1 MS
-* requester only  Reference(FijiPractitioner or FijiPractitionerRole or FijiOrganization)
+* requester only  Reference(FijiPractitioner or FijiPractitionerRole or FijiFacility)
 
 * reasonCode MS
 * reasonCode from FijiMedicationRequestReasonVS (preferred)

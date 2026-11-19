@@ -85,7 +85,7 @@ The profile uses the standard FHIR Data Absent Reason value set with an **extens
 * effective[x] 1..1 MS
 * encounter only Reference(FijiEncounter)
 * performer MS
-* performer only Reference(FijiPatient or FijiPractitioner or FijiPractitionerRole or FijiOrganization)
+* performer only Reference(FijiPatient or FijiPractitioner or FijiPractitionerRole or FijiFacility)
 * value[x] MS
 * dataAbsentReason MS
 * dataAbsentReason from $obs-dataabsent-vs (extensible)

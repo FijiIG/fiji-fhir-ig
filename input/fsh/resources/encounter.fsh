@@ -97,4 +97,4 @@ This profile is currently **work in progress** and may be subject to further ref
 * reasonReference MS
 * reasonReference only Reference(FijiCondition or FijiProcedure)
 * location.location only Reference(FijiLocation)
-* serviceProvider only Reference(FijiOrganization)
+* serviceProvider only Reference(FijiFacility)

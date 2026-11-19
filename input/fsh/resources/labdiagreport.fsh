@@ -72,9 +72,9 @@ The structured `result` references should be used for individual pathology findi
 * issued 1..1 MS
 
 * performer MS
-* performer only Reference(FijiPractitioner or FijiPractitionerRole or FijiOrganization)
+* performer only Reference(FijiPractitioner or FijiPractitionerRole or FijiFacility)
 * resultsInterpreter 0..* MS
-* resultsInterpreter only Reference(FijiPractitioner or FijiPractitionerRole or FijiOrganization)
+* resultsInterpreter only Reference(FijiPractitioner or FijiPractitionerRole or FijiFacility)
 * specimen only Reference(FijiSpecimen)
 * result 1..* MS
 * result only Reference(FijiPathologyObservation)

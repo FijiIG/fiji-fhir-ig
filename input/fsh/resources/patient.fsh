@@ -145,7 +145,7 @@ The `generalPractitioner` element supports references to practitioners and pract
 - `generalPractitioner[practitioner]` references a `FijiPractitioner` or standard `Practitioner`.
 - `generalPractitioner[role]` references a `FijiPractitionerRole` or standard `PractitionerRole`.
 
-The `managingOrganization` element identifies the organization responsible for the patient and may reference a `FijiOrganization` or standard `Organization`.
+The `managingOrganization` element identifies the Administrative Zone organizational unit (Division, Subdivision, Medical Area or Nursing Zone) responsible for the patient and should reference a `FijiAdministrativeZone`.
 
 Implementations should prefer Fiji-specific profiles where available, while permitting standard FHIR resources for interoperability.
 
@@ -168,7 +168,7 @@ The profile also defines mandatory cardinalities for identifiers, identifier sys
 
 1. **Patient identity:** Ensure that the mandatory national health number is recorded using the prescribed identifier system URI.
 2. **Name handling:** Use `FijiHumanName` and distinguish official and usual names where the information is available.
-3. **Administrative geography:** Use `FijiAdminZone` for healthcare administration and service geography.
+3. **Administrative geography:** Reference `FijiAdministrativeZone` in managingOrganization for healthcare administration and service geography.
 4. **Cultural affiliation:** Use `FijiITaukeiAffiliation` for relevant iTaukei cultural and genealogical information, without substituting administrative geography for traditional affiliation.
 5. **Terminology:** Apply the required ISO country value set for nationality and the specified extensible terminology binding for religious affiliation.
 6. **Terminology development:** Complete the occupation and ethnicity value set definitions before imposing more specific terminology conformance requirements.
@@ -182,7 +182,6 @@ The profile also defines mandatory cardinalities for identifiers, identifier sys
 |---|---|
 | `FijiHumanName` | Fiji-specific patient name representation |
 | `FijiAddress` | Fiji-specific address representation |
-| `FijiAdminZone` | Healthcare administrative geography |
 | `FijiITaukeiAffiliation` | iTaukei cultural and genealogical affiliation |
 | Patient-nationality extension | Patient nationality using coded country values |
 | Patient-religion extension | Patient religious affiliation |
@@ -303,8 +302,8 @@ The profile also defines mandatory cardinalities for identifiers, identifier sys
 * generalPractitioner ^short = "Care providers for this patient; prefer Fiji-specific profiles"
 
 * managingOrganization 0..1
-* managingOrganization only Reference(FijiOrganization or Organization)
-* managingOrganization ^short = "Organization responsible for the patient; prefer Fiji specific profiles"
+* managingOrganization only Reference(FijiAdministrativeZone)
+* managingOrganization ^short = "Fiji Administrative Organization unit responsible for the patient"
 
 ///////////////////////////////////////////////////////////////
 // COMMUNICATION

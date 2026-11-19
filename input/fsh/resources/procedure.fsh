@@ -110,7 +110,7 @@ The `note` element supports narrative information that supplements the structure
 * encounter only Reference(FijiEncounter)
 * performed[x] 0..1 MS
 * performer MS
-* performer.actor only Reference(FijiPractitioner or FijiPractitionerRole or FijiOrganization or FijiPatient)
+* performer.actor only Reference(FijiPractitioner or FijiPractitionerRole or FijiFacility or FijiPatient)
 * reasonCode 0..* MS
 * reasonCode from $proc-reason-vs (preferred)
 * bodySite MS

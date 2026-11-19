@@ -65,7 +65,7 @@ The following specifications have been reviewed in development of this profile.
 * route 0..1
 * route from FijiMedicationRouteVS (extensible)
 * performer 0..*
-* performer.actor only Reference(FijiPractitioner or FijiPractitionerRole or FijiOrganization)
+* performer.actor only Reference(FijiPractitioner or FijiPractitionerRole or FijiFacility)
 * note MS
 * reaction 0..1
 * reaction ^short = "Details of an adverse reaction that follows immunization"

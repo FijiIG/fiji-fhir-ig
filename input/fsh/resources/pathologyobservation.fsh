@@ -87,7 +87,7 @@ For example, an observation representing a blood pressure measurement can contai
 * effective[x] 1..1 MS
 * encounter only Reference(FijiEncounter)
 * performer MS
-* performer only Reference(FijiPatient or FijiPractitioner or FijiPractitionerRole or FijiOrganization)
+* performer only Reference(FijiPatient or FijiPractitioner or FijiPractitionerRole or FijiFacility)
 * value[x] MS
 * dataAbsentReason MS
 * dataAbsentReason from $obs-dataabsent-vs (extensible)

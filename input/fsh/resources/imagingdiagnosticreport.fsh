@@ -91,9 +91,9 @@ The `language` element may be populated to identify the language used in the pre
 * effective[x] 1..1 MS
 * issued 1..1 MS
 * performer MS
-* performer only Reference(FijiPractitioner or FijiPractitionerRole or FijiOrganization)
+* performer only Reference(FijiPractitioner or FijiPractitionerRole or FijiFacility)
 * resultsInterpreter 0..* MS
-* resultsInterpreter only Reference(FijiPractitioner or FijiPractitionerRole or FijiOrganization)
+* resultsInterpreter only Reference(FijiPractitioner or FijiPractitionerRole or FijiFacility)
 * presentedForm 1..* MS
 * presentedForm.contentType 1..1 MS
 * presentedForm.data 1..1 MS

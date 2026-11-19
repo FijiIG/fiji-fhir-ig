@@ -24,6 +24,7 @@ Example patient with official and usual names, clan affiliation, and demographic
 
 * gender = #male
 * birthDate = "1990-04-12"
+* managingOrganization = Reference(Organization/FijiNursingZoneExample)
 
 Instance: FijiPatientExample2
 InstanceOf: FijiPatient
@@ -49,6 +50,7 @@ Description: """Example patient with official and usual names, clan affiliation,
 
 * gender = #male
 * birthDate = "1985-11-02"
+* managingOrganization = Reference(Organization/FijiNursingZoneExample)
 
 Instance: FijiPatientChildExample
 InstanceOf: FijiPatient
@@ -70,6 +72,7 @@ Description: """Example child patient with official names and demographic detail
 
 * gender = #female
 * birthDate = "2024-11-02"
+* managingOrganization = Reference(Organization/FijiNursingZoneExample)
 
 
 Instance: FijiPatientExample
@@ -175,6 +178,7 @@ Example Indo-Fijian patient demonstrating:
 
 * address.text = "Lautoka, Western Division"
 * address.country = "FJ"
+* managingOrganization = Reference(Organization/FijiNursingZoneExample)
 
 
 
