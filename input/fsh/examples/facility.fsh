@@ -67,7 +67,7 @@ Includes organizational identifier, contact information, and address.
 // IDENTIFIER
 ///////////////////////////////////////////////////////////////
 
-* identifier.system = "http://fhir.health.gov.fj/identifier/organization"
+* identifier.system = "http://fhir.health.gov.fj/identifier/facility"
 * identifier.value = "FJ-HOSP-SUH-001"
 
 ///////////////////////////////////////////////////////////////

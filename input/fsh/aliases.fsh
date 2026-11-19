@@ -120,9 +120,6 @@ Alias: $korodina-vs = https://core.fhir.health.gov.fj/ValueSet/fiji-korodina
 Alias: $yavusa-vs = https://core.fhir.health.gov.fj/ValueSet/fiji-yavusa
 Alias: $mataqali-vs = https://core.fhir.health.gov.fj/ValueSet/fiji-mataqali
 Alias: $tokatoka-vs = https://core.fhir.health.gov.fj/ValueSet/fiji-tokatoka
-
-Alias: $admin-zones-cs = https://core.fhir.health.gov.fj/CodeSystem/fiji-admin-zones
-
 Alias: $bodypos-vs = https://core.fhir.health.gov.fj/ValueSet/fiji-body-position-vs
 
 // Fiji specific extensions

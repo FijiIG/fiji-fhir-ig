@@ -16,7 +16,7 @@ This profile can be used to represent both confirmed allergies and other adverse
 
 | Element | Cardinality | Must Support | Description |
 |---|---:|:---:|---|
-| `code` | 1..1 | ✓ | **Allergy or intolerance agent.** Identifies the substance, medication, food, or other agent to which the patient has an allergy or intolerance. Bound to the [Fiji Allergy Agent ValueSet](https://core.fhir.health.gov.fj/en/ValueSet-fiji-allergy-agent-vs.html) with an extensible binding. |
+| `code` | 1..1 | ✓ | **Allergy or intolerance agent.** Identifies the substance, medication, food, or other agent to which the patient has an allergy or intolerance. Bound to the [Fiji Allergy Agent ValueSet](https://core.fhir.health.gov.fj/ValueSet-fiji-allergy-agent-vs.html) with an extensible binding. |
 | `clinicalStatus` | 0..1 | ✓ | Indicates the current clinical status of the allergy or intolerance, such as active or resolved. |
 | `verificationStatus` | 0..1 | ✓ | Indicates the degree of certainty that the allergy or intolerance is valid, such as confirmed, unconfirmed, or refuted. |
 | `category` | 1..* | ✓ | Identifies the general category of the allergy or intolerance, such as medication, food, or environment. |
