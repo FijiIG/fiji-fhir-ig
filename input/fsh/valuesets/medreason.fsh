@@ -12,7 +12,9 @@ Proposed valueset is taken from SNOMED Problem/Diagnosis refsets.
 * ^version = "0.1.0"
 
 * include codes from system $SCT where constraint = "^ 32570581000036105"
+* include codes from system $SCT where constraint = "< 404684003"
+
 // SNOMED rule: Intersect Clinical Finding with the IPS RefSet using ECL
-* include codes from system $SCT where constraint = "< 404684003 AND ^ 816080008"
+// * include codes from system $SCT where constraint = "< 404684003 AND ^ 816080008"
 // ICD-10: These codes are included for support of historic data and until SNOMED is fully supported
 * include codes from system $ICD10AM

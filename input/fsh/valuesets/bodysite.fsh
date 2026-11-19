@@ -1,6 +1,6 @@
 ValueSet: FijiBodySiteVS
 Id: fiji-body-site-vs
-Title: "Fiji Body Site (Anatomical Structure) Value Set"
+Title: "Body Site (Anatomical Structure) Value Set"
 Description: """
 Valueset for bodysite/anatomical structures.
 Used for Condition.bodySite and Immunization.site
