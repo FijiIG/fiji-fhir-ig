@@ -126,7 +126,7 @@ Alias: $admin-zones-cs = https://core.fhir.health.gov.fj/CodeSystem/fiji-admin-z
 Alias: $bodypos-vs = https://core.fhir.health.gov.fj/ValueSet/fiji-body-position-vs
 
 // Fiji specific extensions
-Alias: $birthdate-verified = https:​/​/core​.fhir​.health​.gov​.fj​/StructureDefinition​-birthdate-verified-indicator
+Alias: $birthdate-verified = https://core.fhir.health.gov.fj/StructureDefinition/birthdate-verified-indicator
 
 // FHIR profiles for common scenarios
 Alias: $obs-bmi = http://hl7.org/fhir/StructureDefinition/bmi

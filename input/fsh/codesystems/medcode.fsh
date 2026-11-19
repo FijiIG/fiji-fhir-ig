@@ -1,5 +1,5 @@
 CodeSystem: FijiMedCS
-Id: fiji-msupply-cs
+Id: fiji-msupply
 Title: "Fiji MSupply Medication CodeSystem"
 Description: """
 A code system representing legacy MSupply medication codes used in Fiji,
