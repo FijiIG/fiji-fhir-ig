@@ -1,0 +1,65 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://core.fhir.health.gov.fj/CodeSystem/fiji-msupply> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "fiji-msupply"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem fiji-msupply</b></p><a name=\"fiji-msupply\"> </a><a name=\"hcfiji-msupply\"> </a><p>This case-sensitive code system <code>https://core.fhir.health.gov.fj/CodeSystem/fiji-msupply</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td></tr></table></div>"
+  ] ;
+  fhir:CodeSystem.url [ fhir:value "https://core.fhir.health.gov.fj/CodeSystem/fiji-msupply"] ;
+  fhir:CodeSystem.identifier [
+     fhir:index 0 ;
+     fhir:Identifier.system [ fhir:value "urn:ietf:rfc:3986" ] ;
+     fhir:Identifier.value [ fhir:value "urn:oid:2.16.840.1.113883.4.642.40.1005.16.14" ]
+  ] ;
+  fhir:CodeSystem.version [ fhir:value "0.9.0"] ;
+  fhir:CodeSystem.name [ fhir:value "FijiMedCS"] ;
+  fhir:CodeSystem.title [ fhir:value "Fiji MSupply Medication CodeSystem"] ;
+  fhir:CodeSystem.status [ fhir:value "active"] ;
+  fhir:CodeSystem.experimental [ fhir:value "false"^^xsd:boolean] ;
+  fhir:CodeSystem.date [ fhir:value "2026-11-19T06:50:17+00:00"^^xsd:dateTime] ;
+  fhir:CodeSystem.publisher [ fhir:value "MHMS Fiji"] ;
+  fhir:CodeSystem.contact [
+     fhir:index 0 ;
+     fhir:ContactDetail.name [ fhir:value "MHMS Fiji" ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index 0 ;
+       fhir:ContactPoint.system [ fhir:value "url" ] ;
+       fhir:ContactPoint.value [ fhir:value "https://fhir.health.gov.fj" ]
+     ]
+  ], [
+     fhir:index 1 ;
+     fhir:ContactDetail.name [ fhir:value "Support" ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index 0 ;
+       fhir:ContactPoint.system [ fhir:value "url" ] ;
+       fhir:ContactPoint.value [ fhir:value "https://www.fhir.health.gov.fj" ]
+     ]
+  ] ;
+  fhir:CodeSystem.description [ fhir:value "A code system representing legacy MSupply medication codes used in Fiji,\nfor use in healthcare information exchange with legacy medication dispense information\nand until a standardised codesystem for medications is agreed.\n\nCodes and display names should be sourced from the\nMSupply codes used in Fiji for dispensing medication."] ;
+  fhir:CodeSystem.jurisdiction [
+     fhir:index 0 ;
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       fhir:Coding.system [ fhir:value "urn:iso:std:iso:3166" ] ;
+       fhir:Coding.code [ fhir:value "FJ" ] ;
+       fhir:Coding.display [ fhir:value "Fiji" ]
+     ]
+  ] ;
+  fhir:CodeSystem.copyright [ fhir:value "Distributed under the Creative Commons CC0-1.0 License (https://creativecommons.org/publicdomain/zero/1.0/)"] ;
+  fhir:CodeSystem.caseSensitive [ fhir:value "true"^^xsd:boolean] ;
+  fhir:CodeSystem.content [ fhir:value "complete"] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://core.fhir.health.gov.fj/CodeSystem/fiji-msupply.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

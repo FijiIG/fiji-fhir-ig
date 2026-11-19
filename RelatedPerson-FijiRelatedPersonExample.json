@@ -1,0 +1,15 @@
+{
+  "resourceType" : "RelatedPerson",
+  "id" : "FijiRelatedPersonExample",
+  "meta" : {
+    "profile" : ["https://core.fhir.health.gov.fj/StructureDefinition/fiji-related-person"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: RelatedPerson FijiRelatedPersonExample</b></p><a name=\"FijiRelatedPersonExample\"> </a><a name=\"hcFijiRelatedPersonExample\"> </a><div style=\"display: inline-block; background-color: #fbffeb; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-fiji-related-person.html\">Fiji Healthcare Related Person</a></p></div><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\">Anonymous Related Person</p><hr/><table class=\"grid\"><tr><td style=\"background-color: #f3f5da\" title=\"Record is active\">Active:</td><td colspan=\"3\">false</td></tr><tr><td style=\"background-color: #f3f5da\" title=\"The patient this person is related to\">Patient:</td><td colspan=\"3\"><a href=\"Patient-FijiPatientExample.html\">Jone Nabou Male, DoB: 1992-04-17 ( http://fhir.health.gov.fj/identifier/national-health-number#FijiPatientIdentifier#FJ-NHI-982345671)</a></td></tr></table></div>"
+  },
+  "active" : false,
+  "patient" : {
+    "reference" : "Patient/FijiPatientExample"
+  }
+}

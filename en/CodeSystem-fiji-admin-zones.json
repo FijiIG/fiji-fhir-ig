@@ -1,0 +1,67 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "fiji-admin-zones",
+  "language" : "en",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem fiji-admin-zones</b></p><a name=\"fiji-admin-zones\"> </a><a name=\"hcfiji-admin-zones\"> </a><p>This case-sensitive code system <code>https://core.fhir.health.gov.fj/CodeSystem/fiji-admin-zones</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">division<a name=\"fiji-admin-zones-division\"> </a></td><td>Division</td><td>Division - highest level health admin zone</td></tr><tr><td style=\"white-space:nowrap\">subdivision<a name=\"fiji-admin-zones-subdivision\"> </a></td><td>Subdivision</td><td>Subdivision - health admin zone part of a Division</td></tr><tr><td style=\"white-space:nowrap\">medicalarea<a name=\"fiji-admin-zones-medicalarea\"> </a></td><td>MedicalArea</td><td>Medical Area - health admin zone part of a Subdivision</td></tr><tr><td style=\"white-space:nowrap\">nursingzone<a name=\"fiji-admin-zones-nursingzone\"> </a></td><td>NursingZone</td><td>Nursing Zone - health admin zone part of a Medical Area</td></tr></table></div>"
+  },
+  "url" : "https://core.fhir.health.gov.fj/CodeSystem/fiji-admin-zones",
+  "identifier" : [{
+    "system" : "urn:ietf:rfc:3986",
+    "value" : "urn:oid:2.16.840.1.113883.4.642.40.1005.16.12"
+  }],
+  "version" : "0.9.0",
+  "name" : "FijiAdminZonesCS",
+  "title" : "Health administrative zones in Fiji",
+  "status" : "draft",
+  "experimental" : false,
+  "date" : "2026-11-19T06:50:17+00:00",
+  "publisher" : "MHMS Fiji",
+  "contact" : [{
+    "name" : "MHMS Fiji",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://fhir.health.gov.fj"
+    }]
+  },
+  {
+    "name" : "Support",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.fhir.health.gov.fj"
+    }]
+  }],
+  "description" : "Health administrative zones in Fiji",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "FJ",
+      "display" : "Fiji"
+    }]
+  }],
+  "copyright" : "Distributed under the Creative Commons CC0-1.0 License (https://creativecommons.org/publicdomain/zero/1.0/)",
+  "caseSensitive" : true,
+  "content" : "complete",
+  "count" : 4,
+  "concept" : [{
+    "code" : "division",
+    "display" : "Division",
+    "definition" : "Division - highest level health admin zone"
+  },
+  {
+    "code" : "subdivision",
+    "display" : "Subdivision",
+    "definition" : "Subdivision - health admin zone part of a Division"
+  },
+  {
+    "code" : "medicalarea",
+    "display" : "MedicalArea",
+    "definition" : "Medical Area - health admin zone part of a Subdivision"
+  },
+  {
+    "code" : "nursingzone",
+    "display" : "NursingZone",
+    "definition" : "Nursing Zone - health admin zone part of a Medical Area"
+  }]
+}

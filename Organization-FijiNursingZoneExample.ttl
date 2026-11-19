@@ -1,0 +1,45 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://core.fhir.health.gov.fj/Organization/FijiNursingZoneExample> a fhir:Organization ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "FijiNursingZoneExample"] ;
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "https://core.fhir.health.gov.fj/StructureDefinition/fiji-administrative-zone" ;
+       fhir:index 0 ;
+       fhir:link <https://core.fhir.health.gov.fj/StructureDefinition/fiji-administrative-zone>
+     ]
+  ] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Organization FijiNursingZoneExample</b></p><a name=\"FijiNursingZoneExample\"> </a><a name=\"hcFijiNursingZoneExample\"> </a><div style=\"display: inline-block; background-color: #fbffeb; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-fiji-administrative-zone.html\">Fiji Healthcare Administrative Zone</a></p></div><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\">Nursing Zone 1 - in Medical Area 1 somewhere in Savusavu (Nursing Zone - health admin zone part of a Medical Area)</p><hr/><table class=\"grid\"><tr><td style=\"background-color: #f3f5da\" title=\"Record is active\">Active:</td><td colspan=\"3\">true</td></tr><tr><td style=\"background-color: #f3f5da\" title=\"The kind(s) of organization that this is\">Type:</td><td colspan=\"3\"><span title=\"Codes:{https://core.fhir.health.gov.fj/CodeSystem/fiji-admin-zones nursingzone}\">Nursing Zone - health admin zone part of a Medical Area</span></td></tr><tr><td style=\"background-color: #f3f5da\" title=\"The organization of which this organization forms a part\">Part Of:</td><td colspan=\"3\"><a href=\"Organization-FijiMedicalAreaExample.html\">Medical Area 1 - somewhere in Savusavu (Medical Area - health admin zone part of a Subdivision)</a></td></tr></table></div>"
+  ] ;
+  fhir:Organization.active [ fhir:value "true"^^xsd:boolean] ;
+  fhir:Organization.type [
+     fhir:index 0 ;
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       fhir:Coding.system [ fhir:value "https://core.fhir.health.gov.fj/CodeSystem/fiji-admin-zones" ] ;
+       fhir:Coding.code [ fhir:value "nursingzone" ] ;
+       fhir:Coding.display [ fhir:value "NursingZone" ]
+     ] ;
+     fhir:CodeableConcept.text [ fhir:value "Nursing Zone - health admin zone part of a Medical Area" ]
+  ] ;
+  fhir:Organization.name [ fhir:value "Nursing Zone 1 - in Medical Area 1 somewhere in Savusavu"] ;
+  fhir:Organization.partOf [
+     fhir:link <https://core.fhir.health.gov.fj/Organization/FijiMedicalAreaExample> ;
+     fhir:Reference.reference [ fhir:value "Organization/FijiMedicalAreaExample" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://core.fhir.health.gov.fj/Organization/FijiNursingZoneExample.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+
