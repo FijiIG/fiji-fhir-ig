@@ -1,6 +1,6 @@
 ValueSet: FijiAdminZonesVS
 Id: fiji-admin-zones
-Title: "Valueset of Health administrative zones in Fiji"
+Title: "Health administrative zones ValueSet"
 Description: "Valuset of Health administrative zones in Fiji"
 * ^status = #active
 * ^experimental = false

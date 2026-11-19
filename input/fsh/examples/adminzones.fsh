@@ -1,7 +1,7 @@
 Instance: FijiDivisionExample
 InstanceOf: FijiAdministrativeZone
 Usage: #example
-Title: "Example Fiji Divsion"
+Title: "Example Fiji Divsion - Northen"
 Description: "Example of a Division level Administrative Zone."
 
 * active = true
@@ -16,7 +16,7 @@ Description: "Example of a Division level Administrative Zone."
 Instance: FijiDivisionExampleCentral
 InstanceOf: FijiAdministrativeZone
 Usage: #example
-Title: "Example Fiji Divsion"
+Title: "Example Fiji Divsion - Central"
 Description: "Example of a Division level Administrative Zone."
 
 * active = true
