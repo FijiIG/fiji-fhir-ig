@@ -1,6 +1,6 @@
 ValueSet: FijiOrganizationRoleVS
 Id: fiji-organization-role-vs
-Title: "Fiji Healthcare Organization Role Type Value Set"
+Title: "Organization Role Value Set"
 Description: """
 Valueset for Healthcare Organization Role Type.
 Values from SNOMED CT Hospital environment, Site of care, Outpatient environment, and Inpatient environment.

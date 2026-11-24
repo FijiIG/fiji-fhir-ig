@@ -1,6 +1,6 @@
 ValueSet: FijiEvidenceVS
 Id: fiji-evidence-vs
-Title: "Condition Evidence Value Set for Fiji Core IG"
+Title: "Condition Evidence Value Set"
 Description: "Evidence: Signs, symptoms, procedures, and labs, explicitly excluding formal diseases."
 * ^experimental = false
 * ^version = "0.1.0"

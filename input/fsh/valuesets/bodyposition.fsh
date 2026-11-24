@@ -1,6 +1,6 @@
 ValueSet: FijiBodyPositionVS
 Id: fiji-body-position-vs
-Title: "Body Position value set"
+Title: "Body Position Value Set"
 Description: "SELECT SNOMED CT code system values the position in which the individual was in during a measurement."
 * ^experimental = false
 * ^version = "0.1.0"

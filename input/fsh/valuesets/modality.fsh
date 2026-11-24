@@ -1,6 +1,6 @@
 ValueSet: FijiDCMModalityVS
 Id: fiji-dcm-modality-vs
-Title: "Fiji Dicom Imaging Modality Value Set"
+Title: "Dicom Modality Value Set"
 Description: """
 Imaging acquisition modalities based on DICOM CID 29.
 """

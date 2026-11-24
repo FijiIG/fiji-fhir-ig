@@ -1,7 +1,7 @@
 // ValueSet for Immunization Status Reason Codes
 ValueSet: ImmStatusReasonVS
 Id: immunization-status-reason
-Title: "Immunization Status Reason valueset for reason a vaccine was not administered"
+Title: "Immunization Status Reason Value Set"
 Description: 
 """
 Status Reason codes for reason a vaccine was not administered. 

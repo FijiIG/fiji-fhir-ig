@@ -1,7 +1,7 @@
 CodeSystem: FijiObsInterpretationCS
 Id: fiji-obs-interpretation-cs
 Title: "Observation interpretation local codes in Fiji"
-Description: "Observation interpretation local codes in Fiji"
+Description: "Observation Interpretation local codes in Fiji"
 * ^experimental = false
 * ^caseSensitive = true
 * ^version = "0.1.0"

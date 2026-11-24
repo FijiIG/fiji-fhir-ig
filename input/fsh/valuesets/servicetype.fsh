@@ -1,7 +1,7 @@
 // ValueSet for Service Type
 ValueSet: FijiServiceTypeVS
 Id: fiji-service-type-vs
-Title: "Service Type code valueset"
+Title: "Service Type Valueset"
 Description: 
 """
 Service Type valueset for Fiji Core. 

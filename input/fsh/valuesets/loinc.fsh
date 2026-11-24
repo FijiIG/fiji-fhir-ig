@@ -1,6 +1,6 @@
 ValueSet: ObsVS
 Id: obs-vs
-Title: "Observation ValueSet"
+Title: "Observation Value Set"
 Description: "Use all LOINC codes as temporary observation valueset until Fiji-Pacific valueset is developed"
 * ^experimental = false
 * ^version = "0.1.0"

@@ -1,6 +1,6 @@
 ValueSet: FijiMedVS
 Id: fiji-med-vs
-Title: "Fiji Medication ValueSet"
+Title: "Medication Value Set"
 Description: """
 Fiji Medication valueset including support for legacy codes derived from Fiji MSupply instance.
 Provisionally SNOMED CT medication refset and ATC codes have also been added.

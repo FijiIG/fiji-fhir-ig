@@ -1,6 +1,6 @@
 ValueSet: FijiYasanaVS
 Id: fiji-yasana
-Title: "Fiji Yasana ValueSet"
+Title: "Fiji Yasana Value Set"
 Description: """
 The set of yasana codes recognised by the
 Fiji Implementation Guide.
@@ -16,7 +16,7 @@ Fiji Implementation Guide.
 
 ValueSet: FijiTikinaVS
 Id: fiji-tikina
-Title: "Fiji Tikina ValueSet"
+Title: "Fiji Tikina Value Set"
 Description: """
 The set of tikina codes recognised by the
 Fiji Implementation Guide.
@@ -31,7 +31,7 @@ Fiji Implementation Guide.
 
 ValueSet: FijiKorodinaVS
 Id: fiji-korodina
-Title: "Fiji Korodina ValueSet"
+Title: "Fiji Korodina Value Set"
 Description: """
 The set of korodina codes recognised by the
 Fiji Implementation Guide.
@@ -47,7 +47,7 @@ Fiji Implementation Guide.
 
 ValueSet: FijiYavusaVS
 Id: fiji-yavusa
-Title: "Fiji Yavusa ValueSet"
+Title: "Fiji Yavusa Value Set"
 Description: """
 The set of yavusa codes recognised by the
 Fiji Implementation Guide.
@@ -63,7 +63,7 @@ Fiji Implementation Guide.
 
 ValueSet: FijiMataqaliVS
 Id: fiji-mataqali
-Title: "Fiji Mataqali ValueSet"
+Title: "Fiji Mataqali Value Set"
 Description: """
 Mataqali codes recognised by the Fiji Implementation Guide.
 """
@@ -78,7 +78,7 @@ Mataqali codes recognised by the Fiji Implementation Guide.
 
 ValueSet: FijiTokatokaVS
 Id: fiji-tokatoka
-Title: "Fiji Tokatoka ValueSet"
+Title: "Fiji Tokatoka Value Set"
 Description: """
 Tokatoka codes recognised by the Fiji Implementation Guide.
 """

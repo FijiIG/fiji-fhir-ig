@@ -1,7 +1,7 @@
 // ValueSet for Encounter Reason
 ValueSet: FijiEncounterReasonVS
 Id: fiji-encounter-reason-vs
-Title: "Encounter reason code valueset"
+Title: "Encounter Reason Value Set"
 Description: 
 """Encounter reason valueset for Fiji Core. 
 Proposed valueset is taken from SNOMED descendant of clinical findings and Procedures.

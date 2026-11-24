@@ -1,6 +1,6 @@
 ValueSet: FijiRadiologyFindingsVS
 Id: fiji-radiology-findings-vs
-Title: "Fiji Radiology/Diagnostic Findings Value Set"
+Title: "Radiology Findings Value Set"
 Description: "Fiji radiology findings including SNOMED CT concepts filtered for radiology and imaging findings used within an IPS context."
 * ^status = #active
 * ^experimental = false

@@ -1,7 +1,7 @@
 // ValueSet for MedicationRequest Reason
 ValueSet: FijiMedicationRequestReasonVS
 Id: fiji-medication-request-reason-vs
-Title: "MedicationRequest reason code valueset"
+Title: "Medication Request Reason Value Set"
 Description: 
 """MedicationRequest reason valueset for Fiji Core. 
 Proposed valueset is taken from SNOMED Problem/Diagnosis refsets.

@@ -1,6 +1,6 @@
 ValueSet: FijiVitalMethodVS
 Id: fiji-vital-method-vs
-Title: "Fiji Vital Sign Measurement Method ValueSet"
+Title: "Vital Measurement Method Value Set"
 Description: """
 SNOMED CT concepts representing methods used to obtain vital sign
 measurements, including body temperature, blood pressure, body height,

@@ -1,11 +1,10 @@
 // ValueSet for Problem/Diagnosis Codes
 ValueSet: FijiConditionCodeVS
 Id: fiji-condition-code-vs
-Title: "Condition/Diagnosis code valueset"
+Title: "Condition (Diagnosis) Value Set"
 Description: 
 """
 Condition Code valueset for Fiji Core. 
-Proposed valueset is taken from SNOMED codes curated for International Patient Summary.
 Includes "clinical finding"  codes and codes for "situation with explicit content".
 """
 * ^status = #active

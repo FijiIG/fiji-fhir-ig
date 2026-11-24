@@ -1,6 +1,6 @@
 ValueSet: FijiMedicationRouteVS
 Id: fiji-medication-route-vs
-Title: "Fiji Medication and Vaccine Route Value Set"
+Title: "Medication or Vaccine Route Value Set"
 Description: """
 Valueset for medication and vaccine route.
 Used for Medications and Immunization.route
