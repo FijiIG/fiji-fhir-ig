@@ -23,16 +23,7 @@ This guide is intended for:
 * Clinical/Technical Advisors and Working Groups
 * Vendors
 
-### Design & Decision Documents
-* [Document Index](https://github.com/FijiIG/fiji-fhir-ig/blob/main/docs/index.md)
-
-### Getting Started, Contributions and Feedback
-
-New users should begin with:
-
-* [Getting Started](gettingstarted.html)
-
-Then review the following key artifacts:
+### Profiles and other Artifacts
 
 | Category | Description |
 |------------|-------------|
@@ -40,7 +31,10 @@ Then review the following key artifacts:
 | [Data Type Profiles](datatypes.html) | Fiji-specific constrained or extended FHIR datatypes |
 | [Extensions](extensions.html)   | Fiji-specific extension data elements |
 | [Terminology](terminology.html) | Terminology bindings |
-| Downloads | Package and definitions |
+
+### Contributions, Improvements and Feedback
+
+If you would like to contribute to this Implementation Guide, firstly review the "Profiles and other Artifacts" links,  and then follow the steps outlined in [Getting Started](gettingstarted.html).
 
 
 ### Primary Contributors  
