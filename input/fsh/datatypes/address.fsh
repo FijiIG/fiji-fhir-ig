@@ -2,13 +2,12 @@ Profile: FijiAddress
 Parent: Address
 Id: fiji-address
 Title: "Fiji Address"
-Description: """Address profile designed for Fiji where addresses are commonly descriptive and village-based rather than 
-street-based.   
+Description: """Address profile designed for Fiji addresses which may include descriptive and village-based rather than 
+street-based locations.   
 This profile supports a range of address formats and general usage guidance.
 In all cases:
 - text is a mandatory field and should be considered the primary representation of the fully address.
 - line is used for free text address lines and may relate to a landmark, school, church etc. in some cases combined with a village or settlement name - rather than a street address.
-- Postal code is often not used, so is currently optional and may be removed (ie 0..0) if not required in the future
 - Country supports international interoperability
 - geolocation is added as an optional extension to support use case where GPS coordinates are available. It is expected that this will become more common.
 
@@ -18,11 +17,11 @@ Recommended mapping of address fields are below but should be validated and used
 
 | FHIR Element        | Typical Use            | Notes                          |
 | ------------------- | ------------------------------ | ------------------------------ |
-| `text`              | Full narrative address         | Often the primary address form |
-| `line`              | Landmark, compound, street     | Free-text                      |
-| `city`              | Town                           | Mainly urban areas             |
-| `district`          | Tikina / district              | Country dependent              |
-| `state`             | Division                       | Country dependent              |
+| `text`              | Full narrative address         | (required) Often the primary address form |
+| `line`              | May include Landmark, compound or street     | Free-text                      |
+| `city`              | Town                          | May be used for urban areas but also smaller centres            |
+| `district`          | District              | District, ward, or sub-provincial administrative area              |
+| `state`             | Division              | Province, division, or first-level administrative region              |
 | `extension:geolocation` | Geolocation coordinates    | Lat/Long coordinates        |
 """
 
@@ -59,9 +58,6 @@ Recommended mapping of address fields are below but should be validated and used
 * extension contains
 //    FijiAddressVillage named village 0..1 MS and
     $geolocation|4.0.1 named geolocation 0..1
-
-//* extension[village] ^short = "Village or rural settlement."
-//* extension[village] ^definition = "Village, settlement, or rural community name. This may be a primary geographic identifier for addressing."
 
 * extension[geolocation] ^short = "Geographic coordinates of the address."
 * extension[geolocation] ^definition = "Latitude and longitude coordinates representing the geographic location of the address. May represent household, facility, or village centroid."

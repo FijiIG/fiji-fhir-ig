@@ -1,16 +1,13 @@
 ### Extensions
-This page describes lists extensions used in the implementation guide.
+These optional extensions for Fiji Patient profile are defined in this implementation guide.
 
-#### Extensions used for Patient
 
-The following optional extensions are defined for Fiji Patient profile:
-
-[Fiji iTaukei Affiliation](StructureDefinition-fiji-iTaukei-affiliation.html) 
-[Patient Occupation](StructureDefinition-fiji-patient-occupation.html)
-[Patient Ethnicity](StructureDefinition-fiji-patient-ethnicity.html)
-[Birth Date Verified](StructureDefinition-birthdate-verified-indicator.html)
+* [Fiji iTaukei Affiliation](StructureDefinition-fiji-iTaukei-affiliation.html) - Optionally used to record Yasana, Korodina, Tikina, Yavusa, Mataqali and Tokatoka affiliation
+* [Patient Occupation](StructureDefinition-fiji-patient-occupation.html) - Optionally used to record patient occupation
+* [Patient Ethnicity](StructureDefinition-fiji-patient-ethnicity.html) - Used to record patient ethnicity
+* [Birth Date Verified](StructureDefinition-birthdate-verified-indicator.html) - Used to indicate if a patient birthdate has been officially verified
 
 These HL7 commonly used extensions are also added to the Fiji Patient profile:
-[Patient Nationality](https://hl7.org/fhir/extensions/5.4.0/en/StructureDefinition-patient-nationality)
-[Patient Religious Affiliation](https://hl7.org/fhir/extensions/5.4.0/en/StructureDefinition-patient-religion)
+* [Patient Nationality](https://hl7.org/fhir/extensions/5.4.0/en/StructureDefinition-patient-nationality)
+* [Patient Religious Affiliation](https://hl7.org/fhir/extensions/5.4.0/en/StructureDefinition-patient-religion)
 

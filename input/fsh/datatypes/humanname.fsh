@@ -5,8 +5,7 @@ Title: "Fiji HumanName"
 Description: """
 A HumanName profile designed for representing Fiji names.
 
-Naming conventions are diverse and may not align with Western norms. This profile accommodates a range of naming practices including:
-
+This profile accommodates a range of naming practices including:
 - Absence of family names (e.g., in some cultures where individuals may have only given names)
 - Patronymic or Matronymic structures
 - Multiple given names
@@ -16,9 +15,7 @@ Naming conventions are diverse and may not align with Western norms. This profil
 At least one FijiHumanName instance must exist on FijiPatient and FijiPractitioner resources.
 Systems SHALL NOT require both usual and official names.
 
-Note: iTaukei affiliation is recorded separately from the FijiHumanName.  It issupported as an optional extension of  FijiPatient profiles to capture important cultural identity information.
-
-**STATUS**: Proposed for wider Pacific use - needs further review and consensus from Pacific stakeholders before finalization.
+Note: iTaukei affiliation is recorded separately from the FijiHumanName as an extension of FijiPatient profile to capture important cultural identity information.
 """
 
 * ^status = #active

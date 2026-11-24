@@ -59,8 +59,7 @@ pages:
     title: Terminology
   extensions.md:
     title: Extensions
-  snomed.md:
-    title: SNOMED CT Adoption
+
   
 parameters:
   auto-oid-root: 2.16.840.1.113883.4.642.40.1005
