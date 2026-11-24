@@ -47,6 +47,7 @@ The following table lists the ValueSets defined in the Fiji Core Implementation 
 
 #### Code Systems
 The following table lists the Fiji-specific Code Systems defined in the Fiji Core Implementation Guide. 
+
 | Code System Name             | Description                                                                              |
 | ---------------------------- | ---------------------------------------------------------------------------------------- |
 | [Fiji Korodina CodeSystem](https://core.fhir.health.gov.fj/en/CodeSystem-fiji-korodina.html)                            | A code system representing korodina (wards) in Fiji for use in healthcare information exchange. Codes and display names should be sourced from the authoritative Fiji geographic administrative dataset adopted by the Fiji Implementation Guide.                         |
@@ -58,3 +59,4 @@ The following table lists the Fiji-specific Code Systems defined in the Fiji Cor
 | [Fiji Yavusa CodeSystem](https://core.fhir.health.gov.fj/en/CodeSystem-fiji-yavusa.html)                                        | A code system representing Yavusa in Fiji for use in healthcare information exchange. Codes and display names should be sourced from the authoritative Fiji geographic administrative dataset adopted by the Fiji Implementation Guide.                                                                                                 |
 | [Health administrative zones in Fiji](https://core.fhir.health.gov.fj/en/CodeSystem-fiji-admin-zones.html)                      | Health administrative zones in Fiji                                              |
 | [Observation interpretation local codes in Fiji](https://core.fhir.health.gov.fj/en/CodeSystem-fiji-obs-interpretation-cs.html) |    Observation Interpretation local codes in Fiji                                                     | 
+
