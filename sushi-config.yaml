@@ -26,11 +26,11 @@ publisher:
 
 menu:
   Home: index.html
-  Getting Started: gettingstarted.html
-  Data Types: datatypes.html
   Resources: resources.html
   Terminology: terminology.html
+  Data Types: datatypes.html
   Extensions: extensions.html
+  Getting Started: gettingstarted.html
   Artifacts: artifacts.html
 
 # contact
