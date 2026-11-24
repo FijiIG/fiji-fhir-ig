@@ -49,16 +49,18 @@ instanceOptions:
 pages:
   index.md:
     title: Fiji Core Implementation Guide
-  gettingstarted.md:
-    title: Contributing to the Fiji Core IG
-  datatypes.md:
-    title: Data Type Profiles
   resources.md:
     title: Resource Profiles
   terminology.md:
     title: Terminology
+  datatypes.md:
+    title: Data Type Profiles
   extensions.md:
     title: Extensions
+  gettingstarted.md:
+    title: Contributing to the Fiji Core IG
+
+
 
   
 parameters:
