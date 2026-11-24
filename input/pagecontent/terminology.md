@@ -10,6 +10,9 @@ Historic clinical records and legacy data may use alternative terminologies or l
 
 Free text entry should only be permitted for Codeable Concepts if no suitable coded value is available,  or in order to retain uncoded free text historic information.
 
+##### Use of Full SNOMED refsets
+After discussion on the relative merits of using full SNOMED refsets vs the International Patient Summary curated subsets, it was decided (23/10/2026 at Sydney workshop) to use the full refsets in the Valuesets of this Implementation Guide.
+
 
 #### ValueSets
 The following table lists the ValueSets defined in the Fiji Core Implementation Guide. Note that other ValueSets defined as a part of the HL7 FHIR R4 are used as defined in the specification.
