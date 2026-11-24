@@ -13,6 +13,12 @@ The high level goals of this IG are:
 
 The Fiji Core IG is intended to be maintained as a living artifact and is expected to evolve based on feedback and usage experience from the implementation community. Artifacts are included where there is a clear Fiji-specific requirement, where reuse across implementations is expected, and where the artifact is appropriate for inclusion in a national guide. Where suitable definitions already exist in the core FHIR specification, international implementation guides, or other recognised registries, reuse is preferred over defining new Fiji-specific artifacts.
 
+This version of the Fiji Core IG defines [24 profiles](resources.html) with data standards supporting the exchange of administative healthcare,  clinical & vital signs resources.   Constraints defined within the profiles are deliberately somewhat relaxed in this initial version of the IG.  This is in order to manage migration into FHIR of legacy data that is of clinical value but is lacking in terms of: use of free text vs. Codeable Concepts, use of private coding systems,  and/or missing data elements that would be desirable in future implementations.  
+
+Future versions of this IG will progressively strengthen the data standard requirements and extend the scope of resource profiles according to defined priorities for Fiji healthcare interoperability.
+
+This initial version
+
 ### Audience
 
 This guide is intended for:

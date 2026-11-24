@@ -44,3 +44,13 @@ For vital signs:
 * [FijiOxygenSaturation](StructureDefinition-fiji-vital-oxygen-saturation.html)  
 * [FijiRespiratoryRate](StructureDefinition-fiji-vital-respiratory-rate.html)  
 * [FijiWeight](StructureDefinition-fiji-vital-weight.html)  
+
+
+Placeholder profiles:
+The following resource profiles are included in this IG as placeholders for further definition in subsequent iterations of the this IG.  These are included because these are signficant data resources and/or are dependencies of the above listed profiles.  These profiles require further detailed evaluation and consultation before meaningful data standards can be put in place.  Placeholders profiles have only minimal data constraints, but provide reference links from/to FijiPatient,  FijiAddress etc. so as to ensure a foundational level of future interoperability.
+* [FijiDevice](StructureDefinition-fiji-device.html)
+* [FijiMedication](StructureDefinition-fiji-medication.html)
+* [FijiLocation](StructureDefinition-fiji-location.html)
+* [FijiRelatedPerson](StructureDefinition-fiji-related-person.html)
+* [FijiServiceRequest](StructureDefinition-fiji-service-request.html)
+* [FijiSpecimen](StructureDefinition-fiji-specimen.html)

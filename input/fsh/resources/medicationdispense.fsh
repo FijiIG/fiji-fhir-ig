@@ -37,7 +37,7 @@ The following table describes the important, mandatory, and Must Support element
 | `identifier[mSupplyDispenseId].value` | 1..1 | Contains the unique dispense identifier assigned by mSupply. The value must be present for every dispense record. |
 | `status` | 1..1 Must Support | Records the current status of the dispensing event, such as preparation, completion, cancellation, or entry in error. The value must conform to the FHIR `MedicationDispense.status` value set. |
 | `medication[x]` | 1..1 Must Support | Identifies the medication supplied. Exactly one representation must be provided: `medicationCodeableConcept` or `medicationReference`. |
-| `medicationCodeableConcept` | Choice option; Must Support | Identifies the medication directly using a coded concept. It is bound to `FijiMedVS` with **preferred** binding strength. Implementations should use codes from this ValueSet where appropriate. |
+| `medicationCodeableConcept` | Choice option; Must Support | Identifies the medication directly using a coded concept. It is bound to [Medication Value Set](https://core.fhir.health.gov.fj/en/ValueSet-fiji-med-vs.html)  with preferred binding strength. Implementations should use codes from this ValueSet where appropriate. |
 | `medicationReference` | Choice option; Must Support | References a `FijiMedication` resource containing details of the medication supplied. This is an alternative to the coded concept representation. |
 | `subject` | 1..1 Must Support | Identifies the patient who received the medication. The reference must target `FijiPatient`. |
 | `context` | Base cardinality; Must Support | Optionally links the dispense to the healthcare encounter associated with the dispensing event. When present, the reference must target `FijiEncounter`. In FHIR R4, this element is named `context`. |
@@ -73,7 +73,7 @@ The open slicing rule allows additional identifiers to be recorded alongside the
 
 The `medication[x]` element is mandatory and supports two alternative representations:
 
-1. **Coded medication:** Use `medicationCodeableConcept` to identify the supplied medication directly using a coded concept. The `FijiMedVS` ValueSet provides the preferred terminology.
+1. **Coded medication:** Use `medicationCodeableConcept` to identify the supplied medication directly using a coded concept. The [Medication Value Set](https://core.fhir.health.gov.fj/en/ValueSet-fiji-med-vs.html)  provides the preferred terminology.
 2. **Medication resource reference:** Use `medicationReference` to reference a `FijiMedication` resource containing the medication details.
 
 Exactly one of these alternatives must be populated. The preferred ValueSet binding encourages consistent medication coding while allowing other appropriate codes when necessary.
