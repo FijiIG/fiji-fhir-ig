@@ -15,7 +15,7 @@ Description: "Body temperature observation example with reference ranges and int
 * valueQuantity.value = 39.1
 * valueQuantity.unit = "°C"
 * valueQuantity.system = $UCUM
-* valueQuantity.code = #Cel
+* valueQuantity.code = $UCUM#Cel
 
 * interpretation = $obs-interp-cs#H "High"
 
@@ -25,10 +25,10 @@ Description: "Body temperature observation example with reference ranges and int
 
 * referenceRange.low.value = 36.1
 * referenceRange.low.unit = "°C"
-* referenceRange.low.system = "http://unitsofmeasure.org"
-* referenceRange.low.code = #Cel
+* referenceRange.low.system = $UCUM
+* referenceRange.low.code = $UCUM#Cel
 
 * referenceRange.high.value = 38.0
 * referenceRange.high.unit = "°C"
-* referenceRange.high.system = "http://unitsofmeasure.org"
-* referenceRange.high.code = #Cel
+* referenceRange.high.system = $UCUM
+* referenceRange.high.code = $UCUM#Cel

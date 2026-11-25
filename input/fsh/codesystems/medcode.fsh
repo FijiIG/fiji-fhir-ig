@@ -19,4 +19,4 @@ MSupply codes used in Fiji for dispensing medication.
 // * ^content = #complete
 
 // Populate with coded concepts using the syntax:
-// * #<code> "<display-name>" "<concept-definition>"
+* #example "Example Medication description" "Example Medication definition"

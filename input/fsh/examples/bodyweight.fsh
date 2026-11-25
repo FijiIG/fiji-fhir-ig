@@ -17,6 +17,6 @@ Example of Body Weight vital measurement
 * valueQuantity.value = 98.4
 * valueQuantity.unit = "kg"
 * valueQuantity.system = $UCUM
-* valueQuantity.code = #kg
+* valueQuantity.code = $UCUM#kg
 
 * device = Reference(Device/FijiDeviceExampleScale)

@@ -13,4 +13,4 @@ Description: "Example of head circumference observation"
 * valueQuantity.value = 42.5
 * valueQuantity.unit = "cm"
 * valueQuantity.system = $UCUM
-* valueQuantity.code = #cm
+* valueQuantity.code = $UCUM#cm
