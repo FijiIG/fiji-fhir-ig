@@ -17,12 +17,12 @@ The profile constrains the patient, encounter classification, service type, part
 | `identifier` | 0..* | Identifier | Business identifier(s) assigned to the encounter, such as a facility encounter number or local medical record number. |
 | `status` | **1..1** | Code | Current status of the encounter, such as planned, in-progress, finished, or cancelled. |
 | `class` | **1..1** | [HL7 ActEncounterCode ValueSet](https://terminology.hl7.org/7.5.0/en/ValueSet-v3-ActEncounterCode.html) | Classification of the encounter, for example inpatient, outpatient, emergency, or ambulatory care. |
-| `serviceType` | 0..* | [Service Type Valueset](https://core.fhir.health.gov.fj/en/ValueSet-fiji-service-type-vs.html) (preferred) | The type of healthcare service provided during the encounter. |
+| `serviceType` | 0..* | [Service Type Valueset](ValueSet-fiji-service-type-vs.html) (preferred) | The type of healthcare service provided during the encounter. |
 | `subject` | **1..1** | Reference(`FijiPatient`) | The patient who is the subject of the encounter. |
 | `participant.type` | 0..* | [FHIR R4 Encounter Participant Type Value Set](https://hl7.org/fhir/R4/valueset-encounter-participant-type.html) | Identifies the role or function of a participant in the encounter, such as attending clinician or consultant. |
 | `participant.individual` | 0..1 | Reference(`FijiPractitioner`, `FijiPractitionerRole`, or `FijiRelatedPerson`) | Identifies the person participating in the encounter. |
 | `period` | 0..1 | Period | The date and time during which the encounter took place or is expected to take place. |
-| `reasonCode` | 0..* | [Encounter Reason Value Set](https://core.fhir.health.gov.fj/en/ValueSet-fiji-encounter-reason-vs.html) (preferred) | Coded reason for the encounter, such as a presenting complaint, clinical problem, or other reason for seeking care. |
+| `reasonCode` | 0..* | [Encounter Reason Value Set](ValueSet-fiji-encounter-reason-vs.html) (preferred) | Coded reason for the encounter, such as a presenting complaint, clinical problem, or other reason for seeking care. |
 | `reasonReference` | 0..* | Reference(`FijiCondition` or `FijiProcedure`) | References a condition or procedure that is the reason for the encounter. |
 | `location.location` | 0..1 | Reference(`FijiLocation`) | The physical location where the encounter occurred. |
 | `serviceProvider` | 0..1 | Reference(`FijiOrganization`) | The organisation responsible for providing the healthcare services associated with the encounter. |
@@ -33,7 +33,7 @@ The `class` element is mandatory and is bound to the [HL7 ActEncounterCode Value
 
 ### Service Type
 
-`serviceType` identifies the specific type of healthcare service being provided. It is bound with a **preferred** binding to [Service Type Valueset](https://core.fhir.health.gov.fj/en/ValueSet-fiji-service-type-vs.html), allowing implementations to use the Fiji-defined terminology where applicable while permitting other codes where necessary.
+`serviceType` identifies the specific type of healthcare service being provided. It is bound with a **preferred** binding to [Service Type Valueset](ValueSet-fiji-service-type-vs.html), allowing implementations to use the Fiji-defined terminology where applicable while permitting other codes where necessary.
 
 ### Patient and Participants
 
@@ -48,7 +48,7 @@ The reason for the encounter can be represented using either:
 - `reasonCode` for a coded reason that does not require a reference to another resource; or
 - `reasonReference` when the reason is represented by an existing `FijiCondition` or `FijiProcedure` resource.
 
-The `reasonCode` element has a preferred binding to [Encounter Reason Value Set](https://core.fhir.health.gov.fj/en/ValueSet-fiji-encounter-reason-vs.html).
+The `reasonCode` element has a preferred binding to [Encounter Reason Value Set](ValueSet-fiji-encounter-reason-vs.html).
 
 ### Location and Service Provider
 
@@ -61,9 +61,9 @@ The `serviceProvider` identifies the organisation responsible for the healthcare
 | Element | Value Set | Binding |
 |---|---|---|
 | `class` | [HL7 ActEncounterCode Value Set](https://terminology.hl7.org/7.5.0/en/ValueSet-v3-ActEncounterCode.html) | **Preferred** |
-| `serviceType` | [Service Type Valueset](https://core.fhir.health.gov.fj/en/ValueSet-fiji-service-type-vs.html) | **Preferred** |
+| `serviceType` | [Service Type Valueset](ValueSet-fiji-service-type-vs.html) | **Preferred** |
 | `participant.type` | [FHIR R4 Encounter Participant Type Value Set](https://hl7.org/fhir/R4/valueset-encounter-participant-type.html) | **Required** |
-| `reasonCode` | [Encounter Reason Value Set](https://core.fhir.health.gov.fj/en/ValueSet-fiji-encounter-reason-vs.html) | **Preferred** |
+| `reasonCode` | [Encounter Reason Value Set](ValueSet-fiji-encounter-reason-vs.html) | **Preferred** |
 
 ### Relationship to Other Resources
 

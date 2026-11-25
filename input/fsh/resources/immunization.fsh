@@ -12,7 +12,7 @@ associated with a patient.
 ### Mandatory elements  
 The following elements must be recorded:
 * `status` - one of the following codes (`completed`, `entered-in-error` or `not-done`)
-* `vaccineCode` - a vaccine code from [Immunization Value Set](https://core.fhir.health.gov.fj/en/ValueSet-imm-vs.html) If no appropriate value is available then a coded value from another terminology may be used. Free text entry should only be permitted if no coded value is available or to record historic immunizations.
+* `vaccineCode` - a vaccine code from [Immunization Value Set](ValueSet-imm-vs.html) If no appropriate value is available then a coded value from another terminology may be used. Free text entry should only be permitted if no coded value is available or to record historic immunizations.
 * `patient` - a reference to a  Fiji Patient
 * `occurrence[x]` -  the vaccine administration date can be recorded using one of the two options below
   * `occurenceDateTime`  (recommended for use where possible)
@@ -23,8 +23,8 @@ The following elements must be recorded:
 * `lotNumber` - is not mandatory but should be recorded if known
 * `encounter` - a reference to an encounter where/when the immunization took place
 * `location` only Reference(FijiLocation)
-* `site` - body location where the vaccine was administered (use [Body Site Value Set](https://core.fhir.health.gov.fj/en/ValueSet-fiji-body-site-vs.html) or extend if required)
-* `route` - how vaccine entered body use [Medication or Vaccine Route Value Set](https://core.fhir.health.gov.fj/en/ValueSet-fiji-medication-route-vs.html)
+* `site` - body location where the vaccine was administered (use [Body Site Value Set](ValueSet-fiji-body-site-vs.html) or extend if required)
+* `route` - how vaccine entered body use [Medication or Vaccine Route Value Set](ValueSet-fiji-medication-route-vs.html)
 * `protocolApplied.doseNumber` - should be recorded if multiple doses are required
 * `protocolApplied.seriesDoses` - should be recorded where multiple doses are recommended for full immunity
 * `performer.actor` - who administered the vaccine can be Fiji Practitioner, PractitionerRole or Organization
@@ -35,7 +35,7 @@ The following elements must be recorded:
 
 ### Terminology  
 
-Immunization.vaccineCode.coding shall be populated by one of the codes from [Immunization Value Set](https://core.fhir.health.gov.fj/en/ValueSet-imm-vs.html) where such a code exists
+Immunization.vaccineCode.coding shall be populated by one of the codes from [Immunization Value Set](ValueSet-imm-vs.html) where such a code exists
 for the vaccine.  Additional codes may be used where no matching code is present.
 
 ### Alignment with Regional IGs  

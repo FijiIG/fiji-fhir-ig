@@ -11,7 +11,7 @@ associated with a patient.
 
 ### Mandatory elements  
 The following elements must be recorded:
-* code - a coded concept for the condition.  The recommendation for future terminology of this element should be selected from [Condition (Diagnosis) Value Set](https://core.fhir.health.gov.fj/en/ValueSet-fiji-condition-code-vs.html) SNOMED CT 
+* code - a coded concept for the condition.  The recommendation for future terminology of this element should be selected from [Condition (Diagnosis) Value Set](ValueSet-fiji-condition-code-vs.html) SNOMED CT 
  Clinical Finding or Situation with Explicit Context reference sets.   Current and past records may use ICD-10 AM terminology.
 Free text entry should only be permitted if no coded value is available or to record uncoded historic condition information.
 * subject - a reference to a  Fiji Patient
@@ -23,9 +23,9 @@ Free text entry should only be permitted if no coded value is available or to re
 * onset[x] -  the estimated or actual date or age when the condition was first observed/diagnosed
 * abatement[x] - the estimated or actual date when the condition was resolved or went into remission
 * severity - subjective severity of condition coded from [condition severity valueset](https://hl7.org/fhir/R4/valueset-condition-severity.html)
-* bodySite - a coded concept specifying the part of the body used in this measurement preferred to use [Body Site Value Set](https://core.fhir.health.gov.fj/en/ValueSet-fiji-body-site-vs.html) derived from SNOMED CT body structure concepts
+* bodySite - a coded concept specifying the part of the body used in this measurement preferred to use [Body Site Value Set](ValueSet-fiji-body-site-vs.html) derived from SNOMED CT body structure concepts
 * evidence.code - coded concept for the manifestation or symptom leading to diagnosis (there may be multiple values).  It is preferred that these concepts 
-be derived from [Condition Evidence Value Set](https://core.fhir.health.gov.fj/en/ValueSet-fiji-evidence-vs.html) SNOMED CT clinical finding or procedure sets, or LOINC lab studies or radiology codes.
+be derived from [Condition Evidence Value Set](ValueSet-fiji-evidence-vs.html) SNOMED CT clinical finding or procedure sets, or LOINC lab studies or radiology codes.
 
 ### Terminology  
 

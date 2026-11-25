@@ -26,7 +26,7 @@ The `code` element identifies the type of imaging diagnostic report and is bound
 | `category` | 1..* | Classification of the diagnostic service and/or imaging modality associated with the report. |
 | `category[hl7DiagnosticService]` | 0..1 | HL7 diagnostic service classification. Uses the HL7 diagnostic service value set. |
 | `category[dicomModality]` | 0..1 | DICOM modality classification. Uses the Fiji DICOM Modality value set. |
-| `code` | 1..1 | Code identifying the type of imaging diagnostic report or examination. Bound to [Radiology Findings Value Set](https://core.fhir.health.gov.fj/en/ValueSet-fiji-radiology-findings-vs.html)  with a preferred binding. |
+| `code` | 1..1 | Code identifying the type of imaging diagnostic report or examination. Bound to [Radiology Findings Value Set](ValueSet-fiji-radiology-findings-vs.html)  with a preferred binding. |
 | `subject` | 1..1 | The patient to whom the report relates. Restricted to `FijiPatient`. |
 | `encounter` | 0..1 | The healthcare encounter associated with the imaging examination. Restricted to `FijiEncounter`. |
 | `effective[x]` | 1..1 | The clinically relevant time or period of the imaging examination. |

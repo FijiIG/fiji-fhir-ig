@@ -19,7 +19,7 @@ The profile requires a report identifier, a pathology service category, a coded 
 | `basedOn` | 0..* | References the `ServiceRequest` that initiated or authorised the pathology investigation. References are constrained to `FijiServiceRequest`. |
 | `status` | 1..1 | Indicates the current status of the diagnostic report, such as preliminary, final, amended, or cancelled. |
 | `category` | 1..1 | Identifies the type of diagnostic service. This profile fixes the category to the laboratory value `LAB` from the diagnostic service category code system. |
-| `code` | 1..1 | Coded description of the pathology investigation or diagnostic service being reported. The code is bound to [Observation Value Set](https://core.fhir.health.gov.fj/en/ValueSet-obs-vs.html) with a preferred binding. |
+| `code` | 1..1 | Coded description of the pathology investigation or diagnostic service being reported. The code is bound to [Observation Value Set](ValueSet-obs-vs.html) with a preferred binding. |
 | `subject` | 1..1 | Identifies the patient who is the subject of the pathology investigation. References are constrained to `FijiPatient`. |
 | `effective[x]` | 1..1 | Records the clinically relevant date/time or period for the pathology investigation, such as the time the specimen was collected or the investigation was performed. |
 | `issued` | 1..1 | Date and time at which the diagnostic report was issued and made available. |

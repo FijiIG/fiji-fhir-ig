@@ -16,7 +16,7 @@ This profile can be used to represent both confirmed allergies and other adverse
 
 | Element | Cardinality | Must Support | Description |
 |---|---:|:---:|---|
-| `code` | 1..1 | ✓ | **Allergy or intolerance agent.** Identifies the substance, medication, food, or other agent to which the patient has an allergy or intolerance. Bound to the [Fiji Allergy Agent ValueSet](https://core.fhir.health.gov.fj/ValueSet-fiji-allergy-agent-vs.html) with an extensible binding. |
+| `code` | 1..1 | ✓ | **Allergy or intolerance agent.** Identifies the substance, medication, food, or other agent to which the patient has an allergy or intolerance. Bound to the [Fiji Allergy Agent ValueSet](ValueSet-fiji-allergy-agent-vs.html) with an extensible binding. |
 | `clinicalStatus` | 0..1 | ✓ | Indicates the current clinical status of the allergy or intolerance, such as active or resolved. |
 | `verificationStatus` | 0..1 | ✓ | Indicates the degree of certainty that the allergy or intolerance is valid, such as confirmed, unconfirmed, or refuted. |
 | `category` | 1..* | ✓ | Identifies the general category of the allergy or intolerance, such as medication, food, or environment. |
@@ -26,7 +26,7 @@ This profile can be used to represent both confirmed allergies and other adverse
 | `note` | 0..* | ✓ | Provides additional free-text clinical information about the allergy or intolerance that is not captured by the structured elements. |
 | `recorder` | 0..1 |  | Identifies the practitioner or practitioner role who recorded the allergy or intolerance. References are constrained to **Fiji Practitioner** or **Fiji PractitionerRole**. |
 | `reaction` | 0..* | ✓ | Describes a clinical reaction associated with the allergy or intolerance, including its manifestations and severity. |
-| `reaction.manifestation` | 1..* | ✓ | **Clinical symptoms/signs associated with the adverse reaction.** Bound to the [Condition (Diagnosis) Value Set](https://core.fhir.health.gov.fj/en/ValueSet-fiji-condition-code-vs.html) using a preferred binding. |
+| `reaction.manifestation` | 1..* | ✓ | **Clinical symptoms/signs associated with the adverse reaction.** Bound to the [Condition (Diagnosis) Value Set](ValueSet-fiji-condition-code-vs.html) using a preferred binding. |
 | `reaction.severity` | 0..1 | ✓ | Indicates the severity of the reaction, such as mild, moderate, or severe. |
 
 #### Terminology
@@ -35,8 +35,8 @@ The following terminology bindings are defined by this profile:
 
 | Element | Value Set | Description |
 |---|---|---|
-| `code` | [Fiji Allergy Agent ValueSet](https://core.fhir.health.gov.fj/ValueSet-fiji-allergy-agent-vs.html) | Based on subset of SNOMED CT concepts representing substances or products that cause allergies or intolerances, aligned with global IPS.|
-| `reaction.manifestation` | [Condition (Diagnosis) Value Set](https://core.fhir.health.gov.fj/en/ValueSet-fiji-condition-code-vs.html) | Based on SNOMED CT concepts for "clinical finding" and "situation with explicit content" curated for International Patient Summary|
+| `code` | [Fiji Allergy Agent ValueSet](ValueSet-fiji-allergy-agent-vs.html) | Based on subset of SNOMED CT concepts representing substances or products that cause allergies or intolerances, aligned with global IPS.|
+| `reaction.manifestation` | [Condition (Diagnosis) Value Set](ValueSet-fiji-condition-code-vs.html) | Based on SNOMED CT concepts for "clinical finding" and "situation with explicit content" curated for International Patient Summary|
 
 The extensible binding on `code` allows an allergy or intolerance agent to be represented using a code outside the Fiji Allergy Agent ValueSet when an appropriate concept is not available in the value set.
 

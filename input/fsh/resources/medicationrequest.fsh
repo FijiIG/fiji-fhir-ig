@@ -34,13 +34,13 @@ The following table describes the important, mandatory, and Must Support element
 | `status` | 1..1 Must Support | The current state of the medication request, such as active, completed, cancelled, or entered in error. This element is mandatory and must be supported by implementations. The value must conform to the FHIR `MedicationRequest.status` value set. |
 | `intent` | 1..1 Must Support | The intent of the request, such as order, proposal, or plan. This element is mandatory and must be supported by implementations. The value must conform to the FHIR `MedicationRequest.intent` value set. |
 | `medication[x]` | 1..1 Must Support | Identifies the medication being requested. Exactly one medication representation must be provided: either `medicationCodeableConcept` or `medicationReference`. Both representations are marked Must Support, allowing implementations to support coded medication identification and references to structured medication resources. |
-| `medicationCodeableConcept` | Choice option; Must Support | Identifies the medication directly using a coded concept. The element is bound to the [Medication Value Set](https://core.fhir.health.gov.fj/en/ValueSet-fiji-med-vs.html)  with **preferred** binding strength. Implementations should use codes from this ValueSet where appropriate. The preferred binding does not prohibit other codes when necessary. |
+| `medicationCodeableConcept` | Choice option; Must Support | Identifies the medication directly using a coded concept. The element is bound to the [Medication Value Set](ValueSet-fiji-med-vs.html)  with **preferred** binding strength. Implementations should use codes from this ValueSet where appropriate. The preferred binding does not prohibit other codes when necessary. |
 | `medicationReference` | Choice option; Must Support | References a `FijiMedication` resource that describes the medication being requested. The reference must target the Fiji Medication profile. This option is an alternative to `medicationCodeableConcept`; both must not be populated simultaneously. |
 | `subject` | Base cardinality; Must Support not explicitly declared | Identifies the patient for whom the medication is requested. When present, the reference must target `FijiPatient`. The base FHIR cardinality is retained, so this element is not made mandatory by this profile. |
 | `encounter` | Base cardinality; Must Support not explicitly declared | Links the medication request to the healthcare encounter during which it was initiated or is being managed. When present, the reference must target `FijiEncounter`. The element remains optional. |
 | `authoredOn` | 1..1 Must Support | Records the date and time when the medication request was initially authored. This is mandatory and supports the chronological interpretation of the prescription or order. |
 | `requester` | 1..1 Must Support | Identifies the individual or organization responsible for the medication request. This element is mandatory. The reference must target a `FijiPractitioner`, `FijiPractitionerRole`, or `FijiOrganization` resource. |
-| `reasonCode` | Base cardinality; Must Support | Records the clinical reason for the medication request using one or more coded concepts. The element is bound to [Medication Request Reason Value Set](https://core.fhir.health.gov.fj/en/ValueSet-fiji-medication-request-reason-vs.html)  with **preferred** binding strength. Implementations should use codes from this ValueSet where appropriate. |
+| `reasonCode` | Base cardinality; Must Support | Records the clinical reason for the medication request using one or more coded concepts. The element is bound to [Medication Request Reason Value Set](ValueSet-fiji-medication-request-reason-vs.html)  with **preferred** binding strength. Implementations should use codes from this ValueSet where appropriate. |
 | `reasonReference` | Base cardinality; Must Support | References clinical information supporting the reason for the medication request. Permitted targets are `FijiCondition`, `FijiPathologyObservation`, and `FijiDiagnosticObservation`. This enables the request to be linked to a recorded condition or relevant clinical finding. |
 | `dosageInstruction` | Base cardinality; Must Support | Provides instructions describing how the medication is to be used or administered. This element may contain structured dosage information, timing, route, dose, and other details supported by the base FHIR resource. |
 | `dosageInstruction.text` | Base cardinality; Must Support | Provides a human-readable description of the dosage instructions. This is useful for clinical review and for displaying instructions to patients and healthcare professionals. It is not mandatory under this profile. |
@@ -51,7 +51,7 @@ The following table describes the important, mandatory, and Must Support element
 
 The `medication[x]` element is mandatory and supports two alternative representations:
 
-1. **Coded medication:** Use `medicationCodeableConcept` to identify the medication directly by a code and, where appropriate, display text. The [Medication Value Set](https://core.fhir.health.gov.fj/en/ValueSet-fiji-med-vs.html)  provides the preferred terminology for medication identification.
+1. **Coded medication:** Use `medicationCodeableConcept` to identify the medication directly by a code and, where appropriate, display text. The [Medication Value Set](ValueSet-fiji-med-vs.html)  provides the preferred terminology for medication identification.
 2. **Medication resource reference:** Use `medicationReference` to reference a `FijiMedication` resource containing the medication details.
 
 Exactly one of these alternatives must be populated. The choice allows systems to exchange medication requests using either a directly coded medication or a separately maintained medication resource.
@@ -62,7 +62,7 @@ The preferred binding to `FijiMedVS` encourages consistent medication coding acr
 
 The profile supports the recording of clinical reasons for a medication request through `reasonCode` and `reasonReference`.
 
-- `reasonCode` supports direct coding of the clinical reason using the preferred [Medication Request Reason Value Set](https://core.fhir.health.gov.fj/en/ValueSet-fiji-medication-request-reason-vs.html) .
+- `reasonCode` supports direct coding of the clinical reason using the preferred [Medication Request Reason Value Set](ValueSet-fiji-medication-request-reason-vs.html) .
 - `reasonReference` supports links to a condition or clinical observation that provides evidence or context for the request.
 
 Both elements are optional and marked Must Support. Implementations should support both coded and reference-based representations as appropriate to their workflows.
