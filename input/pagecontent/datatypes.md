@@ -2,7 +2,7 @@ This page describes data type profiles used in this implementation guide.
 
 ### Fiji HumanName
 
-[Fiji HumanName](https://core.fhir.health.gov.fj/en/StructureDefinition-fiji-humanname.html)
+[Fiji HumanName](/StructureDefinition-fiji-humanname.html)
 
 A HumanName profile designed for representing Fiji names.
 
@@ -24,7 +24,7 @@ This datatype profile is intended for:
 
 ### Fiji Address  
 
-[Fiji Address](https://core.fhir.health.gov.fj/en/StructureDefinition-fiji-address.html)
+[Fiji Address](/StructureDefinition-fiji-address.html)
 
 Address profile designed for Fiji addresses which may include descriptive and village-based rather than 
 street-based locations.   
