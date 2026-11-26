@@ -14,6 +14,6 @@ Description: "Example body height observation including measurement device refer
 * valueQuantity.value = 178.5
 * valueQuantity.unit = "cm"
 * valueQuantity.system = $UCUM
-* valueQuantity.code = $UCUM#cm
+* valueQuantity.code = #cm
 
 * device = Reference(Device/FijiDeviceExampleStadiometer)
