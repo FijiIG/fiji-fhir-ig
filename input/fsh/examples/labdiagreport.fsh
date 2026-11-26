@@ -18,7 +18,7 @@ Description: "Example laboratory report containing a lipid panel."
 * result[0] = Reference(ExampleLipidPanel)
 
 // Final report presented as PDF
-* presentedForm.contentType = #application/pdf
+* presentedForm.contentType = urn:ietf:bcp:13#application/pdf
 * presentedForm.data = "JVBERi0xLjQK"
 * presentedForm.language = #en
 * presentedForm.title = "Lipid Panel Report"
