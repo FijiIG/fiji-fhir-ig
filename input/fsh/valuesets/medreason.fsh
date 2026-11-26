@@ -11,10 +11,35 @@ Proposed valueset is taken from SNOMED Problem/Diagnosis refsets.
 * ^publisher = "MHMS Fiji"
 * ^version = "0.1.0"
 
-* include codes from system $SCT where constraint = "^ 32570581000036105"
-* include codes from system $SCT where constraint = "< 404684003"
 
-// SNOMED rule: Intersect Clinical Finding with the IPS RefSet using ECL
-// * include codes from system $SCT where constraint = "< 404684003 AND ^ 816080008"
+
+Alias: $SCT = http://snomed.info/sct
+
+ValueSet: MedicationOrderingClinicalReason
+Id: medication-ordering-clinical-reason
+Title: "Medication Ordering Clinical Reason"
+Description: "Clinical conditions, findings, observations and circumstances that provide the reason or indication for ordering or not ordering a medication."
+
+* ^status = #active
+* ^experimental = true
+
+// GP/FP Reason for Encounter reference sets
+
+* include codes from system $SCT where constraint = "^ 450974004"
+* include codes from system $SCT where constraint = "^ 450976002"
+* include codes from system $SCT where constraint = "^ 450977006"
+* include codes from system $SCT where constraint = "^ 450978001"
+* include codes from system $SCT where constraint = "^ 450980007"
+* include codes from system $SCT where constraint = "^ 450981006"
+
+// GP/FP Health Issue reference sets
+
+* include codes from system $SCT where constraint = "^ 450984003"
+* include codes from system $SCT where constraint = "^ 450985002"
+* include codes from system $SCT where constraint = "^ 450986001"
+* include codes from system $SCT where constraint = "^ 450988000"
+* include codes from system $SCT where constraint = "^ 450989008"
+* include codes from system $SCT where constraint = "^ 450990004"
+
 // ICD-10: These codes are included for support of historic data and until SNOMED is fully supported
 * include codes from system $ICD10AM

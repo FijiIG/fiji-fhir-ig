@@ -16,8 +16,8 @@ This may be extended as required including with local codes used in historic dat
 // ---------------------------------------------------------------------
 
 * include $SCT#89003005 "Oral temperature taking"
-* include $SCT#386725007 "Tympanic temperature taking"
-* include $SCT#415882003 "Axillary temperature taking"
+* include $SCT#386725007 "Body temperature"
+* include $SCT#415882003 "Axillary temperature"
 
 // ---------------------------------------------------------------------
 // Blood pressure

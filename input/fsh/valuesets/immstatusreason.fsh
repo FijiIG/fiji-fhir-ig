@@ -12,9 +12,9 @@ TODO: Converted and/or extend from vaccine specific exception codes from SNOMED 
 * ^version = "0.1.0"
 
 
-* include $ICD11MMS#QC04.0 "Immunization not carried out due to patient having had the disease"
-* include $ICD11MMS#QC04.1 "Immunization not carried out because of acute illness"
-* include $ICD11MMS#QC04.2 "Immunization not carried out because of chronic illness or condition of patient"
+* include $ICD11MMS#1498576014 "Immunization not carried out due to patient having had the disease"
+* include $ICD11MMS#679809409 "Immunization not carried out because of acute illness"
+* include $ICD11MMS#1650200188 "Immunization not carried out because of chronic illness or condition of patient"
 * include $ICD11MMS#QC04.3 "Immunization not carried out because of immune-compromised state of patient"
 * include $ICD11MMS#QC04.4 "Immunization not carried out because of patient allergy to vaccine or component"
 * include $ICD11MMS#QC04.5 "Immunization not carried out because of patient refusal"
