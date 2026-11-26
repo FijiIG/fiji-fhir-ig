@@ -6,6 +6,6 @@ Description: "Patient Occumpation as recorded by Fiji MHMS"
 * ^experimental = false
 * ^caseSensitive = true
 * ^version = "0.1.0"
-* ^url = $ethnicity-cs
+* ^url = $occupation-cs
 
 * #teacher "Teacher" "Teacher"
