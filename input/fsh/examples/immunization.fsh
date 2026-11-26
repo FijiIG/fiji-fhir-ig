@@ -80,10 +80,6 @@ Description: "Example of Immunization reaction observation"
 * performer = Reference(Practitioner/FijiPractitionerExample)
 * effectiveDateTime = "2026-09-08"
 
-* code.coding.system = "http://snomed.info/sct"
-* code.coding.code = #271807003
-* code.coding.display = "Skin rash"
+* code = $SCT#363788007 "Clinical history/examination observable"
 
-* valueCodeableConcept.coding.system = "http://snomed.info/sct"
-* valueCodeableConcept.coding.code = #95376002
-* valueCodeableConcept.coding.display = "Injection site disorder"
+* valueCodeableConcept = $SCT#271807003 "Skin rash"
