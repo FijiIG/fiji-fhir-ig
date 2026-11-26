@@ -13,4 +13,5 @@ but is separately defined so as to enable a national/regional valueset for ethni
 
 * value[x] only CodeableConcept
 * valueCodeableConcept 1..1
+* valueCodeableConcept from FijiEthnicityVS (extensible)
 * valueCodeableConcept.text 1..1

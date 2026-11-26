@@ -106,15 +106,22 @@ Example Fijian patient of iTaukei background demonstrating:
 * name[1].given = "Jone"
 * name[1].text = "Jone Nabou"
 
-///////////////////////////////////////////////////////////////
-// iTaukei
-///////////////////////////////////////////////////////////////
+
+// iTaukei affiliation
 * extension[iTaukei].extension[yasana].valueCodeableConcept = $yasana-cs#bua "Bua"
 * extension[iTaukei].extension[tikina].valueCodeableConcept = $tikina-cs#dama "Dama Tikina"
 * extension[iTaukei].extension[korodina].valueCodeableConcept = $korodina-cs#nagadoa "NagaDoa"
 * extension[iTaukei].extension[yavusa].valueCodeableConcept = $yavusa-cs#kai-narocake "Kai Narocake"
 * extension[iTaukei].extension[mataqali].valueCodeableConcept = $mataqali-cs#tova-natokalau "Tova Natokalau"
 * extension[iTaukei].extension[tokatoka].valueCodeableConcept = $tokatoka-cs#tk-bureta "Tk Bureta"
+
+// ethnicity
+* extension[ethnicity].valueCodeableConcept.coding[0] = $ethnicity-cs#iTaukei "iTaukei"
+* extension[ethnicity].valueCodeableConcept.text = "iTaukei"
+
+// occupation
+* extension[occupation].valueCodeableConcept.coding[0] = $occupation-cs#teacher "Teacher"
+* extension[occupation].valueCodeableConcept.text = "Teacher"
 
 ///////////////////////////////////////////////////////////////
 // DEMOGRAPHICS

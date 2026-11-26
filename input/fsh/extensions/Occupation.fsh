@@ -13,4 +13,5 @@ but is separately defined so as to enable a national/regional valueset for occup
 
 * value[x] only CodeableConcept
 * valueCodeableConcept 1..1
+* valueCodeableConcept from FijiOccupationVS (extensible)
 * valueCodeableConcept.text 1..1

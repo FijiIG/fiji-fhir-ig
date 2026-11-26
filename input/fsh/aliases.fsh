@@ -22,7 +22,7 @@ Alias: $ICDO3 = http://terminology.hl7.org/CodeSystem/icd-o-3
 Alias: $UMLS = http://terminology.hl7.org/CodeSystem/umls
 Alias: $DCM = http://dicom.nema.org/resources/ontology/DCM
 Alias: $MSUPPLY = https://universalcodes.msupply.org.nz
-Alias: $ATC = http://whocc.no/atc
+Alias: $ATC = http://www.whocc.no/atc
 
 // Code systems for specific elements
 Alias: $id-type-cs = http://terminology.hl7.org/CodeSystem/v2-0203
@@ -111,7 +111,8 @@ Alias: $mataqali-cs = https://core.fhir.health.gov.fj/CodeSystem/fiji-mataqali
 Alias: $tokatoka-cs = https://core.fhir.health.gov.fj/CodeSystem/fiji-tokatoka
 Alias: $fiji-msupply-cs = https://core.fhir.health.gov.fj/CodeSystem/fiji-msupply
 Alias: $admin-zones-cs = https://core.fhir.health.gov.fj/CodeSystem/fiji-admin-zones
-
+Alias: $ethnicity-cs = https://core.fhir.health.gov.fj/CodeSystem/fiji-ethnicity
+Alias: $occupation-cs = https://core.fhir.health.gov.fj/CodeSystem/fiji-occupation
 
 // Fiji Valueset urls
 Alias: $yasana-vs = https://core.fhir.health.gov.fj/ValueSet/fiji-yasana
@@ -121,6 +122,10 @@ Alias: $yavusa-vs = https://core.fhir.health.gov.fj/ValueSet/fiji-yavusa
 Alias: $mataqali-vs = https://core.fhir.health.gov.fj/ValueSet/fiji-mataqali
 Alias: $tokatoka-vs = https://core.fhir.health.gov.fj/ValueSet/fiji-tokatoka
 Alias: $bodypos-vs = https://core.fhir.health.gov.fj/ValueSet/fiji-body-position-vs
+Alias: $admin-zones-vs = https://core.fhir.health.gov.fj/ValueSet/fiji-admin-zones
+Alias: $ethnicity-vs = https://core.fhir.health.gov.fj/ValueSet/fiji-ethnicity
+Alias: $occupation-vs = https://core.fhir.health.gov.fj/ValueSet/fiji-occupation
+
 
 // Fiji specific extensions
 Alias: $birthdate-verified = https://core.fhir.health.gov.fj/StructureDefinition/birthdate-verified-indicator
