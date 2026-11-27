@@ -84,7 +84,7 @@ The `language` element may be populated to identify the language used in the pre
 * category[dicomModality].coding.system = $DCM
 
 * code 1..1 MS
-* code from FijiRadiologyFindingsVS (preferred)
+* code from FijiImagingReportVS (preferred)
 * subject 1..1 MS
 * subject only Reference(FijiPatient)
 * encounter only Reference(FijiEncounter)
@@ -94,6 +94,7 @@ The `language` element may be populated to identify the language used in the pre
 * performer only Reference(FijiPractitioner or FijiPractitionerRole or FijiFacility)
 * resultsInterpreter 0..* MS
 * resultsInterpreter only Reference(FijiPractitioner or FijiPractitionerRole or FijiFacility)
+* conclusionCode from FijiRadiologyFindingsVS (preferred)
 * presentedForm 1..* MS
 * presentedForm.contentType 1..1 MS
 * presentedForm.data 1..1 MS

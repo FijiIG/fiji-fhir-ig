@@ -7,4 +7,5 @@ Description: "Fiji radiology findings including SNOMED CT concepts filtered for 
 * ^publisher = "MHMS Fiji"
 * ^version = "0.1.0"
 
-* include codes from system $SCT where constraint = "< 404684003 AND < 363679005"
+* include codes from system $SCT where constraint = "<<  365853002"
+* include codes from system $SCT where constraint = "<  118247008"
