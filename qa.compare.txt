@@ -1,0 +1,588 @@
+FijiCoreIG : Validation Results
+=========================================
+
+err = 0, warn = 1, info = 15, broken links = 0
+$--
+Generated $--. FHIR version $-- for fj.gov.health.fhir.core#$-- (canonical = https://core.fhir.health.gov.fj)
+ Build Errors : 0 / 1 / 0
+ /home/runner/work/fiji-fhir-ig/fiji-fhir-ig/fsh-generated/resources/AllergyIntolerance-FijiAllergyIntoleranceExample : 0 / 0 / 1
+ /home/runner/work/fiji-fhir-ig/fiji-fhir-ig/fsh-generated/resources/CodeSystem-fiji-admin-zones : 0 / 0 / 1
+ /home/runner/work/fiji-fhir-ig/fiji-fhir-ig/fsh-generated/resources/CodeSystem-fiji-ethnicity : 0 / 0 / 1
+ /home/runner/work/fiji-fhir-ig/fiji-fhir-ig/fsh-generated/resources/CodeSystem-fiji-korodina : 0 / 0 / 1
+ /home/runner/work/fiji-fhir-ig/fiji-fhir-ig/fsh-generated/resources/CodeSystem-fiji-mataqali : 0 / 0 / 1
+ /home/runner/work/fiji-fhir-ig/fiji-fhir-ig/fsh-generated/resources/CodeSystem-fiji-msupply : 0 / 0 / 1
+ /home/runner/work/fiji-fhir-ig/fiji-fhir-ig/fsh-generated/resources/CodeSystem-fiji-obs-interpretation-cs : 0 / 0 / 1
+ /home/runner/work/fiji-fhir-ig/fiji-fhir-ig/fsh-generated/resources/CodeSystem-fiji-occupation : 0 / 0 / 1
+ /home/runner/work/fiji-fhir-ig/fiji-fhir-ig/fsh-generated/resources/CodeSystem-fiji-tikina : 0 / 0 / 1
+ /home/runner/work/fiji-fhir-ig/fiji-fhir-ig/fsh-generated/resources/CodeSystem-fiji-tokatoka : 0 / 0 / 1
+ /home/runner/work/fiji-fhir-ig/fiji-fhir-ig/fsh-generated/resources/CodeSystem-fiji-yasana : 0 / 0 / 1
+ /home/runner/work/fiji-fhir-ig/fiji-fhir-ig/fsh-generated/resources/CodeSystem-fiji-yavusa : 0 / 0 / 1
+ /home/runner/work/fiji-fhir-ig/fiji-fhir-ig/fsh-generated/resources/Condition-condition-example-diabetes2 : 0 / 0 / 1
+ /home/runner/work/fiji-fhir-ig/fiji-fhir-ig/fsh-generated/resources/Device-FijiDeviceExamplePulseOximeter : 0 / 0 / 1
+ /home/runner/work/fiji-fhir-ig/fiji-fhir-ig/fsh-generated/resources/Device-FijiDeviceExampleScale : 0 / 0 / 1
+ /home/runner/work/fiji-fhir-ig/fiji-fhir-ig/fsh-generated/resources/Device-FijiDeviceExampleStadiometer : 0 / 0 / 1
+ /home/runner/work/fiji-fhir-ig/fiji-fhir-ig/fsh-generated/resources/DiagnosticReport-ExampleLipidPanelReport : 0 / 0 / 1
+ /home/runner/work/fiji-fhir-ig/fiji-fhir-ig/fsh-generated/resources/DiagnosticReport-dr-ct-head-001 : 0 / 0 / 2
+ /home/runner/work/fiji-fhir-ig/fiji-fhir-ig/fsh-generated/resources/Encounter-FijiEncounterExample : 0 / 0 / 1
+ /home/runner/work/fiji-fhir-ig/fiji-fhir-ig/fsh-generated/resources/Immunization-FijiImmunizationReactionExample : 0 / 0 / 1
+ /home/runner/work/fiji-fhir-ig/fiji-fhir-ig/fsh-generated/resources/Immunization-FijiTdapImmunizationExample : 0 / 0 / 1
+ /home/runner/work/fiji-fhir-ig/fiji-fhir-ig/fsh-generated/resources/ImplementationGuide-fj.gov.health.fhir.core : 0 / 0 / 1
+ /home/runner/work/fiji-fhir-ig/fiji-fhir-ig/fsh-generated/resources/Location-FijiLocationExample : 0 / 0 / 1
+ /home/runner/work/fiji-fhir-ig/fiji-fhir-ig/fsh-generated/resources/Medication-FijiMedicationExample : 0 / 0 / 1
+ /home/runner/work/fiji-fhir-ig/fiji-fhir-ig/fsh-generated/resources/MedicationDispense-FijiMedicationDispenseExample : 0 / 0 / 2
+ /home/runner/work/fiji-fhir-ig/fiji-fhir-ig/fsh-generated/resources/MedicationRequest-FijiMedicationRequestExample : 0 / 0 / 2
+ /home/runner/work/fiji-fhir-ig/fiji-fhir-ig/fsh-generated/resources/NamingSystem-FijiEncounterIdentifier : 0 / 0 / 1
+ /home/runner/work/fiji-fhir-ig/fiji-fhir-ig/fsh-generated/resources/NamingSystem-FijiMedicationDispenseIdentifier : 0 / 0 / 1
+ /home/runner/work/fiji-fhir-ig/fiji-fhir-ig/fsh-generated/resources/NamingSystem-FijiNationalPatientIdentifier : 0 / 0 / 1
+ /home/runner/work/fiji-fhir-ig/fiji-fhir-ig/fsh-generated/resources/NamingSystem-FijiOrganizationIdentifier : 0 / 0 / 1
+ /home/runner/work/fiji-fhir-ig/fiji-fhir-ig/fsh-generated/resources/NamingSystem-FijiPractitionerMedicalRegistrationNumber : 0 / 0 / 1
+ /home/runner/work/fiji-fhir-ig/fiji-fhir-ig/fsh-generated/resources/NamingSystem-FijiRISAccessionNumber : 0 / 0 / 1
+ /home/runner/work/fiji-fhir-ig/fiji-fhir-ig/fsh-generated/resources/Observation-Example-BMI : 0 / 0 / 2
+ /home/runner/work/fiji-fhir-ig/fiji-fhir-ig/fsh-generated/resources/Observation-Example-BodyHeight : 0 / 0 / 2
+ /home/runner/work/fiji-fhir-ig/fiji-fhir-ig/fsh-generated/resources/Observation-Example-BodyWeight : 0 / 0 / 2
+ /home/runner/work/fiji-fhir-ig/fiji-fhir-ig/fsh-generated/resources/Observation-ExampleArterialPO2 : 0 / 0 / 1
+ /home/runner/work/fiji-fhir-ig/fiji-fhir-ig/fsh-generated/resources/Observation-ExampleBloodPressure : 0 / 0 / 2
+ /home/runner/work/fiji-fhir-ig/fiji-fhir-ig/fsh-generated/resources/Observation-ExampleHDLCholesterol : 0 / 0 / 1
+ /home/runner/work/fiji-fhir-ig/fiji-fhir-ig/fsh-generated/resources/Observation-ExampleLDLCholesterol : 0 / 0 / 1
+ /home/runner/work/fiji-fhir-ig/fiji-fhir-ig/fsh-generated/resources/Observation-ExampleLipidPanel : 0 / 0 / 1
+ /home/runner/work/fiji-fhir-ig/fiji-fhir-ig/fsh-generated/resources/Observation-ExampleTotalCholesterol : 0 / 0 / 1
+ /home/runner/work/fiji-fhir-ig/fiji-fhir-ig/fsh-generated/resources/Observation-ExampleTriglycerides : 0 / 0 / 1
+ /home/runner/work/fiji-fhir-ig/fiji-fhir-ig/fsh-generated/resources/Observation-FijiBodyTemperatureExample : 0 / 0 / 2
+ /home/runner/work/fiji-fhir-ig/fiji-fhir-ig/fsh-generated/resources/Observation-FijiDiagnosticObservationChestXrayReport : 0 / 0 / 1
+ /home/runner/work/fiji-fhir-ig/fiji-fhir-ig/fsh-generated/resources/Observation-FijiDiagnosticObservationPleuralEffusion : 0 / 0 / 2
+ /home/runner/work/fiji-fhir-ig/fiji-fhir-ig/fsh-generated/resources/Observation-FijiDiagnosticObservationPulmonaryConsolidation : 0 / 0 / 2
+ /home/runner/work/fiji-fhir-ig/fiji-fhir-ig/fsh-generated/resources/Observation-FijiHeadCircumferenceExample : 0 / 0 / 2
+ /home/runner/work/fiji-fhir-ig/fiji-fhir-ig/fsh-generated/resources/Observation-FijiTdapReactionObservation : 0 / 0 / 1
+ /home/runner/work/fiji-fhir-ig/fiji-fhir-ig/fsh-generated/resources/Observation-HeartRateExample : 0 / 0 / 2
+ /home/runner/work/fiji-fhir-ig/fiji-fhir-ig/fsh-generated/resources/Observation-OxygenSaturationExample : 0 / 0 / 2
+ /home/runner/work/fiji-fhir-ig/fiji-fhir-ig/fsh-generated/resources/Observation-RespiratoryRateExample : 0 / 0 / 2
+ /home/runner/work/fiji-fhir-ig/fiji-fhir-ig/fsh-generated/resources/Organization-FijiClinicExample : 0 / 0 / 1
+ /home/runner/work/fiji-fhir-ig/fiji-fhir-ig/fsh-generated/resources/Organization-FijiDivisionExample : 0 / 0 / 1
+ /home/runner/work/fiji-fhir-ig/fiji-fhir-ig/fsh-generated/resources/Organization-FijiDivisionExampleCentral : 0 / 0 / 1
+ /home/runner/work/fiji-fhir-ig/fiji-fhir-ig/fsh-generated/resources/Organization-FijiHospitalExample : 0 / 0 / 1
+ /home/runner/work/fiji-fhir-ig/fiji-fhir-ig/fsh-generated/resources/Organization-FijiMedicalAreaExample : 0 / 0 / 1
+ /home/runner/work/fiji-fhir-ig/fiji-fhir-ig/fsh-generated/resources/Organization-FijiNursingZoneExample : 0 / 0 / 1
+ /home/runner/work/fiji-fhir-ig/fiji-fhir-ig/fsh-generated/resources/Organization-FijiOrganizationExample : 0 / 0 / 1
+ /home/runner/work/fiji-fhir-ig/fiji-fhir-ig/fsh-generated/resources/Organization-FijiSubdivisionExample : 0 / 0 / 1
+ /home/runner/work/fiji-fhir-ig/fiji-fhir-ig/fsh-generated/resources/Organization-FijiSubdivisionExampleNamosi : 0 / 0 / 1
+ /home/runner/work/fiji-fhir-ig/fiji-fhir-ig/fsh-generated/resources/Patient-FijiPatientChildExample : 0 / 0 / 2
+ /home/runner/work/fiji-fhir-ig/fiji-fhir-ig/fsh-generated/resources/Patient-FijiPatientExample : 0 / 0 / 3
+ /home/runner/work/fiji-fhir-ig/fiji-fhir-ig/fsh-generated/resources/Patient-FijiPatientExample1 : 0 / 0 / 2
+ /home/runner/work/fiji-fhir-ig/fiji-fhir-ig/fsh-generated/resources/Patient-FijiPatientExample2 : 0 / 0 / 2
+ /home/runner/work/fiji-fhir-ig/fiji-fhir-ig/fsh-generated/resources/Patient-FijiPatientFijiIndo : 0 / 0 / 1
+ /home/runner/work/fiji-fhir-ig/fiji-fhir-ig/fsh-generated/resources/Practitioner-FijiPractitionerExample : 0 / 0 / 2
+ /home/runner/work/fiji-fhir-ig/fiji-fhir-ig/fsh-generated/resources/Practitioner-FijiRadiologistExample : 0 / 0 / 1
+ /home/runner/work/fiji-fhir-ig/fiji-fhir-ig/fsh-generated/resources/PractitionerRole-FijiPractitionerRoleExample : 0 / 0 / 1
+ /home/runner/work/fiji-fhir-ig/fiji-fhir-ig/fsh-generated/resources/Procedure-AppendectomyProcedureExample : 0 / 0 / 1
+ /home/runner/work/fiji-fhir-ig/fiji-fhir-ig/fsh-generated/resources/RelatedPerson-FijiRelatedPersonExample : 0 / 0 / 1
+ /home/runner/work/fiji-fhir-ig/fiji-fhir-ig/fsh-generated/resources/ServiceRequest-sr-ct-head-001 : 0 / 0 / 1
+ /home/runner/work/fiji-fhir-ig/fiji-fhir-ig/fsh-generated/resources/Specimen-ExampleLipidSpecimen : 0 / 0 / 1
+ /home/runner/work/fiji-fhir-ig/fiji-fhir-ig/fsh-generated/resources/Specimen-FijiSpecimenExample : 0 / 0 / 1
+ /home/runner/work/fiji-fhir-ig/fiji-fhir-ig/fsh-generated/resources/StructureDefinition-birthdate-verified-indicator : 0 / 0 / 1
+ /home/runner/work/fiji-fhir-ig/fiji-fhir-ig/fsh-generated/resources/StructureDefinition-fiji-address : 0 / 0 / 1
+ /home/runner/work/fiji-fhir-ig/fiji-fhir-ig/fsh-generated/resources/StructureDefinition-fiji-administrative-zone : 0 / 0 / 2
+ /home/runner/work/fiji-fhir-ig/fiji-fhir-ig/fsh-generated/resources/StructureDefinition-fiji-allergy-intolerance : 0 / 0 / 1
+ /home/runner/work/fiji-fhir-ig/fiji-fhir-ig/fsh-generated/resources/StructureDefinition-fiji-condition : 0 / 0 / 1
+ /home/runner/work/fiji-fhir-ig/fiji-fhir-ig/fsh-generated/resources/StructureDefinition-fiji-device : 0 / 0 / 1
+ /home/runner/work/fiji-fhir-ig/fiji-fhir-ig/fsh-generated/resources/StructureDefinition-fiji-diagnostic-observation : 0 / 0 / 1
+ /home/runner/work/fiji-fhir-ig/fiji-fhir-ig/fsh-generated/resources/StructureDefinition-fiji-encounter : 0 / 0 / 1
+ /home/runner/work/fiji-fhir-ig/fiji-fhir-ig/fsh-generated/resources/StructureDefinition-fiji-facility : 0 / 0 / 1
+ /home/runner/work/fiji-fhir-ig/fiji-fhir-ig/fsh-generated/resources/StructureDefinition-fiji-humanname : 0 / 0 / 1
+ /home/runner/work/fiji-fhir-ig/fiji-fhir-ig/fsh-generated/resources/StructureDefinition-fiji-iTaukei-affiliation : 0 / 0 / 1
+ /home/runner/work/fiji-fhir-ig/fiji-fhir-ig/fsh-generated/resources/StructureDefinition-fiji-imaging-diagnostic-report : 0 / 0 / 1
+ /home/runner/work/fiji-fhir-ig/fiji-fhir-ig/fsh-generated/resources/StructureDefinition-fiji-immunization : 0 / 0 / 1
+ /home/runner/work/fiji-fhir-ig/fiji-fhir-ig/fsh-generated/resources/StructureDefinition-fiji-laboratory-diagnostic-report : 0 / 0 / 1
+ /home/runner/work/fiji-fhir-ig/fiji-fhir-ig/fsh-generated/resources/StructureDefinition-fiji-location : 0 / 0 / 1
+ /home/runner/work/fiji-fhir-ig/fiji-fhir-ig/fsh-generated/resources/StructureDefinition-fiji-medication : 0 / 0 / 1
+ /home/runner/work/fiji-fhir-ig/fiji-fhir-ig/fsh-generated/resources/StructureDefinition-fiji-medication-dispense : 0 / 0 / 2
+ /home/runner/work/fiji-fhir-ig/fiji-fhir-ig/fsh-generated/resources/StructureDefinition-fiji-medication-request : 0 / 0 / 1
+ /home/runner/work/fiji-fhir-ig/fiji-fhir-ig/fsh-generated/resources/StructureDefinition-fiji-pathology-observation : 0 / 0 / 1
+ /home/runner/work/fiji-fhir-ig/fiji-fhir-ig/fsh-generated/resources/StructureDefinition-fiji-patient : 0 / 0 / 2
+ /home/runner/work/fiji-fhir-ig/fiji-fhir-ig/fsh-generated/resources/StructureDefinition-fiji-patient-ethnicity : 0 / 0 / 1
+ /home/runner/work/fiji-fhir-ig/fiji-fhir-ig/fsh-generated/resources/StructureDefinition-fiji-patient-occupation : 0 / 0 / 1
+ /home/runner/work/fiji-fhir-ig/fiji-fhir-ig/fsh-generated/resources/StructureDefinition-fiji-practitioner : 0 / 0 / 1
+ /home/runner/work/fiji-fhir-ig/fiji-fhir-ig/fsh-generated/resources/StructureDefinition-fiji-practitioner-role : 0 / 0 / 1
+ /home/runner/work/fiji-fhir-ig/fiji-fhir-ig/fsh-generated/resources/StructureDefinition-fiji-procedure : 0 / 0 / 1
+ /home/runner/work/fiji-fhir-ig/fiji-fhir-ig/fsh-generated/resources/StructureDefinition-fiji-related-person : 0 / 0 / 1
+ /home/runner/work/fiji-fhir-ig/fiji-fhir-ig/fsh-generated/resources/StructureDefinition-fiji-service-request : 0 / 0 / 1
+ /home/runner/work/fiji-fhir-ig/fiji-fhir-ig/fsh-generated/resources/StructureDefinition-fiji-specimen : 0 / 0 / 1
+ /home/runner/work/fiji-fhir-ig/fiji-fhir-ig/fsh-generated/resources/StructureDefinition-fiji-vital-blood-pressure : 0 / 0 / 1
+ /home/runner/work/fiji-fhir-ig/fiji-fhir-ig/fsh-generated/resources/StructureDefinition-fiji-vital-bmi : 0 / 0 / 1
+ /home/runner/work/fiji-fhir-ig/fiji-fhir-ig/fsh-generated/resources/StructureDefinition-fiji-vital-body-temperature : 0 / 0 / 1
+ /home/runner/work/fiji-fhir-ig/fiji-fhir-ig/fsh-generated/resources/StructureDefinition-fiji-vital-head-circumference : 0 / 0 / 1
+ /home/runner/work/fiji-fhir-ig/fiji-fhir-ig/fsh-generated/resources/StructureDefinition-fiji-vital-heart-rate : 0 / 0 / 1
+ /home/runner/work/fiji-fhir-ig/fiji-fhir-ig/fsh-generated/resources/StructureDefinition-fiji-vital-height : 0 / 0 / 1
+ /home/runner/work/fiji-fhir-ig/fiji-fhir-ig/fsh-generated/resources/StructureDefinition-fiji-vital-oxygen-saturation : 0 / 0 / 1
+ /home/runner/work/fiji-fhir-ig/fiji-fhir-ig/fsh-generated/resources/StructureDefinition-fiji-vital-respiratory-rate : 0 / 0 / 1
+ /home/runner/work/fiji-fhir-ig/fiji-fhir-ig/fsh-generated/resources/StructureDefinition-fiji-vital-weight : 0 / 0 / 1
+ /home/runner/work/fiji-fhir-ig/fiji-fhir-ig/fsh-generated/resources/ValueSet-fiji-admin-zones : 0 / 0 / 1
+ /home/runner/work/fiji-fhir-ig/fiji-fhir-ig/fsh-generated/resources/ValueSet-fiji-allergy-agent-vs : 0 / 0 / 1
+ /home/runner/work/fiji-fhir-ig/fiji-fhir-ig/fsh-generated/resources/ValueSet-fiji-body-position-vs : 0 / 0 / 1
+ /home/runner/work/fiji-fhir-ig/fiji-fhir-ig/fsh-generated/resources/ValueSet-fiji-body-site-vs : 0 / 0 / 1
+ /home/runner/work/fiji-fhir-ig/fiji-fhir-ig/fsh-generated/resources/ValueSet-fiji-condition-code-vs : 0 / 0 / 1
+ /home/runner/work/fiji-fhir-ig/fiji-fhir-ig/fsh-generated/resources/ValueSet-fiji-dcm-modality-vs : 0 / 0 / 2
+ /home/runner/work/fiji-fhir-ig/fiji-fhir-ig/fsh-generated/resources/ValueSet-fiji-encounter-reason-vs : 0 / 0 / 1
+ /home/runner/work/fiji-fhir-ig/fiji-fhir-ig/fsh-generated/resources/ValueSet-fiji-ethnicity : 0 / 0 / 1
+ /home/runner/work/fiji-fhir-ig/fiji-fhir-ig/fsh-generated/resources/ValueSet-fiji-evidence-vs : 0 / 0 / 1
+ /home/runner/work/fiji-fhir-ig/fiji-fhir-ig/fsh-generated/resources/ValueSet-fiji-imaging-report-vs : 0 / 0 / 1
+ /home/runner/work/fiji-fhir-ig/fiji-fhir-ig/fsh-generated/resources/ValueSet-fiji-korodina : 0 / 0 / 1
+ /home/runner/work/fiji-fhir-ig/fiji-fhir-ig/fsh-generated/resources/ValueSet-fiji-mataqali : 0 / 0 / 1
+ /home/runner/work/fiji-fhir-ig/fiji-fhir-ig/fsh-generated/resources/ValueSet-fiji-med-vs : 0 / 0 / 1
+ /home/runner/work/fiji-fhir-ig/fiji-fhir-ig/fsh-generated/resources/ValueSet-fiji-medication-request-reason-vs : 0 / 1 / 1
+ /home/runner/work/fiji-fhir-ig/fiji-fhir-ig/fsh-generated/resources/ValueSet-fiji-medication-route-vs : 0 / 0 / 1
+ /home/runner/work/fiji-fhir-ig/fiji-fhir-ig/fsh-generated/resources/ValueSet-fiji-obs-interpretation-vs : 0 / 0 / 1
+ /home/runner/work/fiji-fhir-ig/fiji-fhir-ig/fsh-generated/resources/ValueSet-fiji-occupation : 0 / 0 / 1
+ /home/runner/work/fiji-fhir-ig/fiji-fhir-ig/fsh-generated/resources/ValueSet-fiji-organization-role-vs : 0 / 0 / 1
+ /home/runner/work/fiji-fhir-ig/fiji-fhir-ig/fsh-generated/resources/ValueSet-fiji-radiology-findings-vs : 0 / 0 / 1
+ /home/runner/work/fiji-fhir-ig/fiji-fhir-ig/fsh-generated/resources/ValueSet-fiji-service-type-vs : 0 / 0 / 1
+ /home/runner/work/fiji-fhir-ig/fiji-fhir-ig/fsh-generated/resources/ValueSet-fiji-tikina : 0 / 0 / 1
+ /home/runner/work/fiji-fhir-ig/fiji-fhir-ig/fsh-generated/resources/ValueSet-fiji-tokatoka : 0 / 0 / 1
+ /home/runner/work/fiji-fhir-ig/fiji-fhir-ig/fsh-generated/resources/ValueSet-fiji-vital-body-weight-vs : 0 / 0 / 1
+ /home/runner/work/fiji-fhir-ig/fiji-fhir-ig/fsh-generated/resources/ValueSet-fiji-vital-method-vs : 0 / 0 / 1
+ /home/runner/work/fiji-fhir-ig/fiji-fhir-ig/fsh-generated/resources/ValueSet-fiji-yasana : 0 / 0 / 1
+ /home/runner/work/fiji-fhir-ig/fiji-fhir-ig/fsh-generated/resources/ValueSet-fiji-yavusa : 0 / 0 / 1
+ /home/runner/work/fiji-fhir-ig/fiji-fhir-ig/fsh-generated/resources/ValueSet-heart-rate-loinc : 0 / 0 / 1
+ /home/runner/work/fiji-fhir-ig/fiji-fhir-ig/fsh-generated/resources/ValueSet-imm-vs : 0 / 0 / 1
+ /home/runner/work/fiji-fhir-ig/fiji-fhir-ig/fsh-generated/resources/ValueSet-immunization-status-reason : 0 / 0 / 1
+ /home/runner/work/fiji-fhir-ig/fiji-fhir-ig/fsh-generated/resources/ValueSet-obs-vs : 0 / 0 / 1
+</table>
+
+== n/a ==
+WARNING: /home/runner/work/fiji-fhir-ig/fiji-fhir-ig/output/artifacts.html: The html source has duplicate element ids: alignment-with-regional-igs,conformance-notes,implementation-guidance,key-elements,mandatory-elements,medication-identification,must-support-interpretation,other-elements-defined,referenced-fiji-profiles,report-presentation,scope-and-usage,terminology,terminology-bindings. An id must be unique in a page - a link to one of these is ambiguous, and it is invalid HTML
+
+
+== fsh-generated/resources/AllergyIntolerance-FijiAllergyIntoleranceExample.json ==
+
+
+== fsh-generated/resources/CodeSystem-fiji-admin-zones.json ==
+
+
+== fsh-generated/resources/CodeSystem-fiji-ethnicity.json ==
+
+
+== fsh-generated/resources/CodeSystem-fiji-korodina.json ==
+
+
+== fsh-generated/resources/CodeSystem-fiji-mataqali.json ==
+
+
+== fsh-generated/resources/CodeSystem-fiji-msupply.json ==
+
+
+== fsh-generated/resources/CodeSystem-fiji-obs-interpretation-cs.json ==
+
+
+== fsh-generated/resources/CodeSystem-fiji-occupation.json ==
+
+
+== fsh-generated/resources/CodeSystem-fiji-tikina.json ==
+
+
+== fsh-generated/resources/CodeSystem-fiji-tokatoka.json ==
+
+
+== fsh-generated/resources/CodeSystem-fiji-yasana.json ==
+
+
+== fsh-generated/resources/CodeSystem-fiji-yavusa.json ==
+
+
+== fsh-generated/resources/Condition-condition-example-diabetes2.json ==
+
+
+== fsh-generated/resources/Device-FijiDeviceExamplePulseOximeter.json ==
+
+
+== fsh-generated/resources/Device-FijiDeviceExampleScale.json ==
+
+
+== fsh-generated/resources/Device-FijiDeviceExampleStadiometer.json ==
+
+
+== fsh-generated/resources/DiagnosticReport-ExampleLipidPanelReport.json ==
+
+
+== fsh-generated/resources/DiagnosticReport-dr-ct-head-001.json ==
+INFORMATION: DiagnosticReport/dr-ct-head-001: DiagnosticReport.code: None of the codings provided are in the value set 'Imaging Report Value Set' (https://core.fhir.health.gov.fj/ValueSet/fiji-imaging-report-vs|0.9.1), and a coding is recommended to come from this value set (codes = http://snomed.info/sct#77477000)
+
+
+== fsh-generated/resources/Encounter-FijiEncounterExample.json ==
+
+
+== fsh-generated/resources/Immunization-FijiImmunizationReactionExample.json ==
+
+
+== fsh-generated/resources/Immunization-FijiTdapImmunizationExample.json ==
+
+
+== fsh-generated/resources/ImplementationGuide-fj.gov.health.fhir.core.json ==
+
+
+== fsh-generated/resources/Location-FijiLocationExample.json ==
+
+
+== fsh-generated/resources/Medication-FijiMedicationExample.json ==
+
+
+== fsh-generated/resources/MedicationDispense-FijiMedicationDispenseExample.json ==
+INFORMATION: MedicationDispense/FijiMedicationDispenseExample: MedicationDispense.medication.ofType(CodeableConcept): None of the codings provided are in the value set 'Medication Value Set' (https://core.fhir.health.gov.fj/ValueSet/fiji-med-vs|0.9.1), and a coding is recommended to come from this value set (codes = http://snomed.info/sct#27658006)
+
+
+== fsh-generated/resources/MedicationRequest-FijiMedicationRequestExample.json ==
+INFORMATION: MedicationRequest/FijiMedicationRequestExample: MedicationRequest.medication.ofType(CodeableConcept): None of the codings provided are in the value set 'Medication Value Set' (https://core.fhir.health.gov.fj/ValueSet/fiji-med-vs|0.9.1), and a coding is recommended to come from this value set (codes = http://snomed.info/sct#27658006)
+
+
+== fsh-generated/resources/NamingSystem-FijiEncounterIdentifier.json ==
+
+
+== fsh-generated/resources/NamingSystem-FijiMedicationDispenseIdentifier.json ==
+
+
+== fsh-generated/resources/NamingSystem-FijiNationalPatientIdentifier.json ==
+
+
+== fsh-generated/resources/NamingSystem-FijiOrganizationIdentifier.json ==
+
+
+== fsh-generated/resources/NamingSystem-FijiPractitionerMedicalRegistrationNumber.json ==
+
+
+== fsh-generated/resources/NamingSystem-FijiRISAccessionNumber.json ==
+
+
+== fsh-generated/resources/Observation-Example-BMI.json ==
+
+
+== fsh-generated/resources/Observation-Example-BodyHeight.json ==
+
+
+== fsh-generated/resources/Observation-Example-BodyWeight.json ==
+
+
+== fsh-generated/resources/Observation-ExampleArterialPO2.json ==
+
+
+== fsh-generated/resources/Observation-ExampleBloodPressure.json ==
+
+
+== fsh-generated/resources/Observation-ExampleHDLCholesterol.json ==
+
+
+== fsh-generated/resources/Observation-ExampleLDLCholesterol.json ==
+
+
+== fsh-generated/resources/Observation-ExampleLipidPanel.json ==
+
+
+== fsh-generated/resources/Observation-ExampleTotalCholesterol.json ==
+
+
+== fsh-generated/resources/Observation-ExampleTriglycerides.json ==
+
+
+== fsh-generated/resources/Observation-FijiBodyTemperatureExample.json ==
+
+
+== fsh-generated/resources/Observation-FijiDiagnosticObservationChestXrayReport.json ==
+
+
+== fsh-generated/resources/Observation-FijiDiagnosticObservationPleuralEffusion.json ==
+INFORMATION: Observation/FijiDiagnosticObservationPleuralEffusion: Observation.code: None of the codings provided are in the value set 'Radiology Findings Value Set' (https://core.fhir.health.gov.fj/ValueSet/fiji-radiology-findings-vs|0.9.1), and a coding is recommended to come from this value set (codes = http://snomed.info/sct#300999006)
+
+
+== fsh-generated/resources/Observation-FijiDiagnosticObservationPulmonaryConsolidation.json ==
+INFORMATION: Observation/FijiDiagnosticObservationPulmonaryConsolidation: Observation.code: None of the codings provided are in the value set 'Radiology Findings Value Set' (https://core.fhir.health.gov.fj/ValueSet/fiji-radiology-findings-vs|0.9.1), and a coding is recommended to come from this value set (codes = http://snomed.info/sct#95436008)
+
+
+== fsh-generated/resources/Observation-FijiHeadCircumferenceExample.json ==
+
+
+== fsh-generated/resources/Observation-FijiTdapReactionObservation.json ==
+
+
+== fsh-generated/resources/Observation-HeartRateExample.json ==
+
+
+== fsh-generated/resources/Observation-OxygenSaturationExample.json ==
+
+
+== fsh-generated/resources/Observation-RespiratoryRateExample.json ==
+
+
+== fsh-generated/resources/Organization-FijiClinicExample.json ==
+
+
+== fsh-generated/resources/Organization-FijiDivisionExample.json ==
+
+
+== fsh-generated/resources/Organization-FijiDivisionExampleCentral.json ==
+
+
+== fsh-generated/resources/Organization-FijiHospitalExample.json ==
+
+
+== fsh-generated/resources/Organization-FijiMedicalAreaExample.json ==
+
+
+== fsh-generated/resources/Organization-FijiNursingZoneExample.json ==
+
+
+== fsh-generated/resources/Organization-FijiOrganizationExample.json ==
+
+
+== fsh-generated/resources/Organization-FijiSubdivisionExample.json ==
+
+
+== fsh-generated/resources/Organization-FijiSubdivisionExampleNamosi.json ==
+
+
+== fsh-generated/resources/Patient-FijiPatientChildExample.json ==
+INFORMATION: Patient/FijiPatientChildExample: Patient.identifier[0]: This element does not match any known slice defined in the profile https://core.fhir.health.gov.fj/StructureDefinition/fiji-patient|0.9.1 (this may not be a problem, but you should check that it's not intended to match a slice)
+
+
+== fsh-generated/resources/Patient-FijiPatientExample.json ==
+INFORMATION: Patient/FijiPatientExample: Patient.extension[2].value.ofType(CodeableConcept): Reference to draft CodeSystem https://core.fhir.health.gov.fj/CodeSystem/fiji-occupation|0.9.1 from active ValueSet https://core.fhir.health.gov.fj/ValueSet/fiji-occupation|0.9.1
+INFORMATION: Patient/FijiPatientExample: Patient.extension[2].value.ofType(CodeableConcept): Reference to draft CodeSystem https://core.fhir.health.gov.fj/CodeSystem/fiji-occupation|0.9.1
+
+
+== fsh-generated/resources/Patient-FijiPatientExample1.json ==
+INFORMATION: Patient/FijiPatientExample1: Patient.identifier[0]: This element does not match any known slice defined in the profile https://core.fhir.health.gov.fj/StructureDefinition/fiji-patient|0.9.1 (this may not be a problem, but you should check that it's not intended to match a slice)
+
+
+== fsh-generated/resources/Patient-FijiPatientExample2.json ==
+INFORMATION: Patient/FijiPatientExample2: Patient.identifier[0]: This element does not match any known slice defined in the profile https://core.fhir.health.gov.fj/StructureDefinition/fiji-patient|0.9.1 (this may not be a problem, but you should check that it's not intended to match a slice)
+
+
+== fsh-generated/resources/Patient-FijiPatientFijiIndo.json ==
+
+
+== fsh-generated/resources/Practitioner-FijiPractitionerExample.json ==
+INFORMATION: Practitioner/FijiPractitionerExample: Practitioner.communication[1]: None of the codings provided are in the value set 'Common Languages' (http://hl7.org/fhir/ValueSet/languages|4.0.1), and a coding is recommended to come from this value set (codes = urn:ietf:bcp:47#fj)
+
+
+== fsh-generated/resources/Practitioner-FijiRadiologistExample.json ==
+
+
+== fsh-generated/resources/PractitionerRole-FijiPractitionerRoleExample.json ==
+
+
+== fsh-generated/resources/Procedure-AppendectomyProcedureExample.json ==
+
+
+== fsh-generated/resources/RelatedPerson-FijiRelatedPersonExample.json ==
+
+
+== fsh-generated/resources/ServiceRequest-sr-ct-head-001.json ==
+
+
+== fsh-generated/resources/Specimen-ExampleLipidSpecimen.json ==
+
+
+== fsh-generated/resources/Specimen-FijiSpecimenExample.json ==
+
+
+== fsh-generated/resources/StructureDefinition-birthdate-verified-indicator.json ==
+
+
+== fsh-generated/resources/StructureDefinition-fiji-address.json ==
+
+
+== fsh-generated/resources/StructureDefinition-fiji-administrative-zone.json ==
+INFORMATION: StructureDefinition/fiji-administrative-zone: StructureDefinition.snapshot.element[4].binding.extension[0]: The extension http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet|5.4.1 is deprecated with the note: 'Use additionalBinding extension or element instead'
+
+
+== fsh-generated/resources/StructureDefinition-fiji-allergy-intolerance.json ==
+
+
+== fsh-generated/resources/StructureDefinition-fiji-condition.json ==
+
+
+== fsh-generated/resources/StructureDefinition-fiji-device.json ==
+
+
+== fsh-generated/resources/StructureDefinition-fiji-diagnostic-observation.json ==
+
+
+== fsh-generated/resources/StructureDefinition-fiji-encounter.json ==
+
+
+== fsh-generated/resources/StructureDefinition-fiji-facility.json ==
+
+
+== fsh-generated/resources/StructureDefinition-fiji-humanname.json ==
+
+
+== fsh-generated/resources/StructureDefinition-fiji-iTaukei-affiliation.json ==
+
+
+== fsh-generated/resources/StructureDefinition-fiji-imaging-diagnostic-report.json ==
+
+
+== fsh-generated/resources/StructureDefinition-fiji-immunization.json ==
+
+
+== fsh-generated/resources/StructureDefinition-fiji-laboratory-diagnostic-report.json ==
+
+
+== fsh-generated/resources/StructureDefinition-fiji-location.json ==
+
+
+== fsh-generated/resources/StructureDefinition-fiji-medication.json ==
+
+
+== fsh-generated/resources/StructureDefinition-fiji-medication-dispense.json ==
+INFORMATION: StructureDefinition/fiji-medication-dispense: StructureDefinition.snapshot.element[47].mapping[0].map: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
+
+
+== fsh-generated/resources/StructureDefinition-fiji-medication-request.json ==
+
+
+== fsh-generated/resources/StructureDefinition-fiji-pathology-observation.json ==
+
+
+== fsh-generated/resources/StructureDefinition-fiji-patient.json ==
+INFORMATION: StructureDefinition/fiji-patient: StructureDefinition.snapshot.element[54].type[0].extension[1]: The extension http://hl7.org/fhir/StructureDefinition/regex|5.4.1 is deprecated with the note: 'This was deprecated in favor of using a constraint on the element using FHIRPath, since constraints allow for the provision of a human readable message associated with the regex'
+
+
+== fsh-generated/resources/StructureDefinition-fiji-patient-ethnicity.json ==
+
+
+== fsh-generated/resources/StructureDefinition-fiji-patient-occupation.json ==
+
+
+== fsh-generated/resources/StructureDefinition-fiji-practitioner.json ==
+
+
+== fsh-generated/resources/StructureDefinition-fiji-practitioner-role.json ==
+
+
+== fsh-generated/resources/StructureDefinition-fiji-procedure.json ==
+
+
+== fsh-generated/resources/StructureDefinition-fiji-related-person.json ==
+
+
+== fsh-generated/resources/StructureDefinition-fiji-service-request.json ==
+
+
+== fsh-generated/resources/StructureDefinition-fiji-specimen.json ==
+
+
+== fsh-generated/resources/StructureDefinition-fiji-vital-blood-pressure.json ==
+
+
+== fsh-generated/resources/StructureDefinition-fiji-vital-bmi.json ==
+
+
+== fsh-generated/resources/StructureDefinition-fiji-vital-body-temperature.json ==
+
+
+== fsh-generated/resources/StructureDefinition-fiji-vital-head-circumference.json ==
+
+
+== fsh-generated/resources/StructureDefinition-fiji-vital-heart-rate.json ==
+
+
+== fsh-generated/resources/StructureDefinition-fiji-vital-height.json ==
+
+
+== fsh-generated/resources/StructureDefinition-fiji-vital-oxygen-saturation.json ==
+
+
+== fsh-generated/resources/StructureDefinition-fiji-vital-respiratory-rate.json ==
+
+
+== fsh-generated/resources/StructureDefinition-fiji-vital-weight.json ==
+
+
+== fsh-generated/resources/ValueSet-fiji-admin-zones.json ==
+
+
+== fsh-generated/resources/ValueSet-fiji-allergy-agent-vs.json ==
+
+
+== fsh-generated/resources/ValueSet-fiji-body-position-vs.json ==
+
+
+== fsh-generated/resources/ValueSet-fiji-body-site-vs.json ==
+
+
+== fsh-generated/resources/ValueSet-fiji-condition-code-vs.json ==
+
+
+== fsh-generated/resources/ValueSet-fiji-dcm-modality-vs.json ==
+INFORMATION: ValueSet.where(id = 'fiji-dcm-modality-vs'): The value set expansion is too large, and only a subset has been displayed
+
+
+== fsh-generated/resources/ValueSet-fiji-encounter-reason-vs.json ==
+
+
+== fsh-generated/resources/ValueSet-fiji-ethnicity.json ==
+
+
+== fsh-generated/resources/ValueSet-fiji-evidence-vs.json ==
+
+
+== fsh-generated/resources/ValueSet-fiji-imaging-report-vs.json ==
+
+
+== fsh-generated/resources/ValueSet-fiji-korodina.json ==
+
+
+== fsh-generated/resources/ValueSet-fiji-mataqali.json ==
+
+
+== fsh-generated/resources/ValueSet-fiji-med-vs.json ==
+
+
+== fsh-generated/resources/ValueSet-fiji-medication-request-reason-vs.json ==
+
+
+== fsh-generated/resources/ValueSet-fiji-medication-route-vs.json ==
+
+
+== fsh-generated/resources/ValueSet-fiji-obs-interpretation-vs.json ==
+
+
+== fsh-generated/resources/ValueSet-fiji-occupation.json ==
+
+
+== fsh-generated/resources/ValueSet-fiji-organization-role-vs.json ==
+
+
+== fsh-generated/resources/ValueSet-fiji-radiology-findings-vs.json ==
+
+
+== fsh-generated/resources/ValueSet-fiji-service-type-vs.json ==
+
+
+== fsh-generated/resources/ValueSet-fiji-tikina.json ==
+
+
+== fsh-generated/resources/ValueSet-fiji-tokatoka.json ==
+
+
+== fsh-generated/resources/ValueSet-fiji-vital-body-weight-vs.json ==
+
+
+== fsh-generated/resources/ValueSet-fiji-vital-method-vs.json ==
+
+
+== fsh-generated/resources/ValueSet-fiji-yasana.json ==
+
+
+== fsh-generated/resources/ValueSet-fiji-yavusa.json ==
+
+
+== fsh-generated/resources/ValueSet-heart-rate-loinc.json ==
+
+
+== fsh-generated/resources/ValueSet-imm-vs.json ==
+
+
+== fsh-generated/resources/ValueSet-immunization-status-reason.json ==
+
+
+== fsh-generated/resources/ValueSet-obs-vs.json ==
+
+

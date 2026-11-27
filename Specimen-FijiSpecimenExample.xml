@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Specimen xmlns="http://hl7.org/fhir">
+  <id value="FijiSpecimenExample"/>
+  <meta>
+    <profile value="https://core.fhir.health.gov.fj/StructureDefinition/fiji-specimen"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Specimen FijiSpecimenExample</b></p><a name="FijiSpecimenExample"> </a><a name="hcFijiSpecimenExample"> </a><div style="display: inline-block; background-color: #fbffeb; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-fiji-specimen.html">Fiji Specimen</a></p></div><p><b>status</b>: Unavailable</p><p><b>type</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/v2-0487 BDY}">Whole body</span></p><p><b>subject</b>: <a href="Patient-FijiPatientExample.html">Jone Nabou Male, DoB: 1992-04-17 ( http://fhir.health.gov.fj/identifier/national-health-number#FijiPatientIdentifier#FJ-NHI-982345671)</a></p></div>
+  </text>
+  <status value="unavailable"/>
+  <type>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/v2-0487"/>
+      <code value="BDY"/>
+    </coding>
+  </type>
+  <subject>
+    <reference value="Patient/FijiPatientExample"/>
+  </subject>
+</Specimen>

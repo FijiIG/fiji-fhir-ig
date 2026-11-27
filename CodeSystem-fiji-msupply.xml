@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="fiji-msupply"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: CodeSystem fiji-msupply</b></p><a name="fiji-msupply"> </a><a name="hcfiji-msupply"> </a><p>This case-sensitive code system <code>https://core.fhir.health.gov.fj/CodeSystem/fiji-msupply</code> defines the following code:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style="white-space:nowrap">example<a name="fiji-msupply-example"> </a></td><td>Example Medication description</td><td>Example Medication definition</td></tr></table></div>
+  </text>
+  <url value="https://core.fhir.health.gov.fj/CodeSystem/fiji-msupply"/>
+  <identifier>
+    <system value="urn:ietf:rfc:3986"/>
+    <value value="urn:oid:2.16.840.1.113883.4.642.40.1005.16.15"/>
+  </identifier>
+  <version value="0.9.1"/>
+  <name value="FijiMedCS"/>
+  <title value="Fiji MSupply Medication CodeSystem"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2026-11-27T08:01:49+00:00"/>
+  <publisher value="MHMS Fiji"/>
+  <contact>
+    <name value="MHMS Fiji"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://fhir.health.gov.fj"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Support"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.fhir.health.gov.fj"/>
+    </telecom>
+  </contact>
+  <description value="A code system representing legacy MSupply medication codes used in Fiji,&#xA;for use in healthcare information exchange with legacy medication dispense information&#xA;and until a standardised codesystem for medications is agreed.&#xA;&#xA;Codes and display names should be sourced from the&#xA;MSupply codes used in Fiji for dispensing medication."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="FJ"/>
+      <display value="Fiji"/>
+    </coding>
+  </jurisdiction>
+  <copyright value="Distributed under the Creative Commons CC0-1.0 License (https://creativecommons.org/publicdomain/zero/1.0/)"/>
+  <caseSensitive value="true"/>
+  <content value="complete"/>
+  <count value="1"/>
+  <concept>
+    <code value="example"/>
+    <display value="Example Medication description"/>
+    <definition value="Example Medication definition"/>
+  </concept>
+</CodeSystem>

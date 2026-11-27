@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Organization xmlns="http://hl7.org/fhir">
+  <id value="FijiDivisionExampleCentral"/>
+  <meta>
+    <profile value="https://core.fhir.health.gov.fj/StructureDefinition/fiji-administrative-zone"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Organization FijiDivisionExampleCentral</b></p><a name="FijiDivisionExampleCentral"> </a><a name="hcFijiDivisionExampleCentral"> </a><div style="display: inline-block; background-color: #fbffeb; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-fiji-administrative-zone.html">Fiji Healthcare Administrative Zone</a></p></div><p style="border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;">Central Division - capital regions and surrounding provinces (Division - highest level health admin zone)</p><hr/><table class="grid"><tr><td style="background-color: #f3f5da" title="Record is active">Active:</td><td colspan="3">true</td></tr><tr><td style="background-color: #f3f5da" title="The kind(s) of organization that this is">Type:</td><td colspan="3"><span title="Codes:{https://core.fhir.health.gov.fj/CodeSystem/fiji-admin-zones division}">Division - highest level health admin zone</span></td></tr></table></div>
+  </text>
+  <active value="true"/>
+  <type>
+    <coding>
+      <system value="https://core.fhir.health.gov.fj/CodeSystem/fiji-admin-zones"/>
+      <code value="division"/>
+      <display value="Division"/>
+    </coding>
+    <text value="Division - highest level health admin zone"/>
+  </type>
+  <name value="Central Division - capital regions and surrounding provinces"/>
+</Organization>

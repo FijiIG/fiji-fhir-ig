@@ -1,0 +1,7 @@
+{
+  "version" : "0.9.1",
+  "fhirVersion" : ["4.0.1"],
+  "date" : "20261127080149",
+  "name" : "fj.gov.health.fhir.core",
+  "jurisdiction" : "urn:iso:std:iso:3166#FJ"
+}

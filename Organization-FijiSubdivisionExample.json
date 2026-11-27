@@ -1,0 +1,24 @@
+{
+  "resourceType" : "Organization",
+  "id" : "FijiSubdivisionExample",
+  "meta" : {
+    "profile" : ["https://core.fhir.health.gov.fj/StructureDefinition/fiji-administrative-zone"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Organization FijiSubdivisionExample</b></p><a name=\"FijiSubdivisionExample\"> </a><a name=\"hcFijiSubdivisionExample\"> </a><div style=\"display: inline-block; background-color: #fbffeb; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-fiji-administrative-zone.html\">Fiji Healthcare Administrative Zone</a></p></div><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\">Savusavu sub-division (Subdivision - health admin zone part of a Division)</p><hr/><table class=\"grid\"><tr><td style=\"background-color: #f3f5da\" title=\"Record is active\">Active:</td><td colspan=\"3\">true</td></tr><tr><td style=\"background-color: #f3f5da\" title=\"The kind(s) of organization that this is\">Type:</td><td colspan=\"3\"><span title=\"Codes:{https://core.fhir.health.gov.fj/CodeSystem/fiji-admin-zones subdivision}\">Subdivision - health admin zone part of a Division</span></td></tr><tr><td style=\"background-color: #f3f5da\" title=\"The organization of which this organization forms a part\">Part Of:</td><td colspan=\"3\"><a href=\"Organization-FijiDivisionExample.html\">Northern Division - Vanua Levu and Taveuni (Division - highest level health admin zone)</a></td></tr></table></div>"
+  },
+  "active" : true,
+  "type" : [{
+    "coding" : [{
+      "system" : "https://core.fhir.health.gov.fj/CodeSystem/fiji-admin-zones",
+      "code" : "subdivision",
+      "display" : "Subdivision"
+    }],
+    "text" : "Subdivision - health admin zone part of a Division"
+  }],
+  "name" : "Savusavu sub-division",
+  "partOf" : {
+    "reference" : "Organization/FijiDivisionExample"
+  }
+}

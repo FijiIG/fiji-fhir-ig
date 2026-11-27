@@ -1,0 +1,85 @@
+# Terminology - Draft Fiji Core Implementation Guide v0.9.1
+
+* [**Table of Contents**](toc.md)
+* **Terminology**
+
+## Terminology
+
+### Terminology
+
+This page describes the code systems and valuesets that are defined in this Implementation Guide.
+
+#### SNOMED CT for Clinical Terminology
+
+In order to facilitate future interoperability both internally within Fiji and between other nations in the region, Fiji MHMS has made a strategic decision to adopt the SNOMED CT (International) clinical terminology as the primary representation of coded clinical concepts for this FHIR Implementation Guide. Current Fiji MHMS systems at the time of publishing of this Implementation Guide do not yet support SNOMED CT and thus legacy data is either uncoded or used alternate terminology sets. However, future application acquisitions, upgrades and deployments should support this strategic intent.
+
+Historic clinical records and legacy data may use alternative terminologies or local coding systems and valuesets for coded entries, but wherever possible, current systems should migrate towards the use of SNOMED CT for coded data.
+
+Free text entry should only be permitted for Codeable Concepts if no suitable coded value is available, or in order to retain uncoded free text historic information.
+
+##### Use of Full SNOMED refsets
+
+After discussion on the relative merits of using full SNOMED refsets vs the International Patient Summary curated subsets, it was decided (23/10/2026 at Sydney workshop) to use the full refsets in the Valuesets of this Implementation Guide.
+
+#### Other International Terminology Sets Used
+
+The following terminologies are used for specific profiles/elements in this implementation guide.
+
+* [CVX Standard Code Set for Vaccines](https://www2a.cdc.gov/vaccines/iis/iisstandards/vaccines.asp?rpt=cvx) These codes are used in the valueset bound to the Immunization profile vaccineCode element.
+* [ATC Anatomical Therapeutic Chemical Code Set](https://www.who.int/tools/atc-ddd-toolkit/atc-classification) These codes may be used in the Medication Value Set used in MedicationRequest and MedicationDispense profiles for the medication element.
+* [ICD-10 AM]() These codes are included to support legacy data handling, and may be used in the Condition (Diagnosis) or Medication Request Reason valuesets.
+
+#### ValueSets
+
+The following table lists the ValueSets defined in the Fiji Core Implementation Guide. Note that other ValueSets defined as a part of the HL7 FHIR R4 are used as defined in the specification.
+
+| | |
+| :--- | :--- |
+| [Allergy Causative Agent Value Set](/ValueSet-fiji-allergy-agent-vs.md) | A subset of SNOMED CT concepts representing substances or products that cause allergies or intolerances. |
+| [Body Position Value Set](/ValueSet-fiji-body-position-vs.md) | SELECT SNOMED CT code system values the position in which the individual was in during a measurement. |
+| [Body Site Value Set](/ValueSet-fiji-body-site-vs.md) | Valueset for bodysite/anatomical structures. Used for Condition.bodySite and Immunization.site Values from SNOMED CT anatomical structures. |
+| [Body Weight Vital Value Set](/ValueSet-fiji-vital-body-weight-vs.md) | Concepts representing options that provide further context for body weight coding. (eg. Birth Weight…) NOTE: This is not currently used but may be used in future when a full valueset has been developed |
+| [Condition (Diagnosis) Value Set](/ValueSet-fiji-condition-code-vs.md) | Condition Code valueset for Fiji Core. Includes "clinical finding" codes and codes for "situation with explicit content". |
+| [Condition Evidence Value Set](/ValueSet-fiji-evidence-vs.md) | Evidence: Signs, symptoms, procedures, and labs, explicitly excluding formal diseases. |
+| [Dicom Modality Value Set](/ValueSet-fiji-dcm-modality-vs.md) | Imaging acquisition modalities based on DICOM CID 29. |
+| [Encounter Reason Value Set](/ValueSet-fiji-encounter-reason-vs.md) | Encounter reason valueset for Fiji Core. Proposed valueset is taken from SNOMED descendant of clinical findings and Procedures. |
+| [Fiji Patient Ethnicity ValueSet](/ValueSet-fiji-ethnicity.md) | The set of ethnicity codes recognised by the Fiji Implementation Guide |
+| [Fiji Korodina Value Set](/ValueSet-fiji-korodina.md) | The set of korodina codes recognised by the Fiji Implementation Guide. |
+| [Fiji Mataqali Value Set](/ValueSet-fiji-mataqali.md) | Mataqali codes recognised by the Fiji Implementation Guide. |
+| [Fiji Observation Interpretation Value Set](/ValueSet-fiji-obs-interpretation-vs.md) | Valueset for interpretations of Observations for Fiji. Used for interpretaton element for Observations and derived profiles (eg. Vital signs) Values from HL7 v3 Code System ObservationInterpretation with added values from WHO/Fiji usage. |
+| [Fiji Patient Occupation Value Set](/ValueSet-fiji-occupation.md) | The set of occupation codes recognised by the Fiji Implementation Guide |
+| [Fiji Tikina Value Set](/ValueSet-fiji-tikina.md) | The set of tikina codes recognised by the Fiji Implementation Guide. |
+| [Fiji Tokatoka Value Set](/ValueSet-fiji-tokatoka.md) | Tokatoka codes recognised by the Fiji Implementation Guide. |
+| [Fiji Yasana Value Set](/ValueSet-fiji-yasana.md) | The set of yasana codes recognised by the Fiji Implementation Guide. |
+| [Fiji Yavusa Value Set](/ValueSet-fiji-yavusa.md) | The set of yavusa codes recognised by the Fiji Implementation Guide. |
+| [Health Administrative Zones Value Set](/ValueSet-fiji-admin-zones.md) | Valueset of Health administrative zones in Fiji |
+| [Heart Rate LOINC Codes](/ValueSet-heart-rate-loinc.md) | LOINC codes for heart rate measurements, spot or average. |
+| [Immunization Status Reason Value Set](/ValueSet-immunization-status-reason.md) | Status Reason codes for reason a vaccine was not administered. Initial codes used are ICD-11 codes from DAK. TODO: Converted and/or extend from vaccine specific exception codes from SNOMED CT codes or whatever code system chosen |
+| [Immunization Value Set](/ValueSet-imm-vs.md) | Immunization valueset based on until Fiji-Pacific valueset is developed |
+| [Medication Request Reason Value Set](/ValueSet-fiji-medication-request-reason-vs.md) | MedicationRequest reason valueset for Fiji Core. Proposed valueset is taken from SNOMED Problem/Diagnosis refsets. |
+| [Medication Value Set](/ValueSet-fiji-med-vs.md) | Fiji Medication valueset including support for legacy codes derived from Fiji MSupply instance. Provisionally SNOMED CT medication refset and ATC codes have also been added. |
+| [Medication or Vaccine Route Value Set](/ValueSet-fiji-medication-route-vs.md) | Valueset for medication and vaccine route. Used for Medications and Immunization.route Values are descendants from SNOMED CT Route of Administration concept. |
+| [Observation Value Set](/ValueSet-obs-vs.md) | Use all LOINC codes as temporary observation valueset until Fiji-Pacific valueset is developed |
+| [Organization Role Value Set](/ValueSet-fiji-organization-role-vs.md) | Valueset for Healthcare Organization Role Type. Values from SNOMED CT Hospital environment, Site of care, Outpatient environment, and Inpatient environment. |
+| [Radiology Findings Value Set](/ValueSet-fiji-radiology-findings-vs.md) | Fiji radiology findings including SNOMED CT concepts filtered for radiology and imaging findings used within an IPS context. |
+| [Service Type Valueset](/ValueSet-fiji-service-type-vs.md) | Service Type valueset for Fiji Core. Proposed valueset is taken from SNOMED Services codes. |
+| [Vital Measurement Method Value Set](/ValueSet-fiji-vital-method-vs.md) | SNOMED CT concepts representing methods used to obtain vital sign measurements, including body temperature, blood pressure, body height, body weight, heart rate, oxygen saturation and respiratory rate. This may be extended as required including with local codes used in historic data. |
+
+#### Code Systems
+
+The following table lists the Fiji-specific Code Systems defined in the Fiji Core Implementation Guide.
+
+| | |
+| :--- | :--- |
+| [Fiji Ethnicity CodeSystem](/CodeSystem-fiji-ethnicity.md) | A code system representing ethnicities in Fiji for use in healthcare information exchange. Codes and display names should be sourced from the authoritative Fiji geographic administrative dataset adopted by the Fiji Implementation Guide. |
+| [Fiji Occupation CodeSystem](/CodeSystem-fiji-occupation.md) | A code system representing patient occupation in Fiji for use in healthcare information exchange. Codes and display names should be sourced from the authoritative Fiji geographic administrative dataset adopted by the Fiji Implementation Guide. |
+| [Fiji Korodina CodeSystem](/CodeSystem-fiji-korodina.md) | A code system representing korodina (wards) in Fiji for use in healthcare information exchange. Codes and display names should be sourced from the authoritative Fiji geographic administrative dataset adopted by the Fiji Implementation Guide. |
+| [Fiji MSupply Medication CodeSystem](/CodeSystem-fiji-msupply.md) | A code system representing legacy MSupply medication codes used in Fiji, for use in healthcare information exchange with legacy medication dispense information and until a standardised codesystem for medications is agreed. Codes and display names should be sourced from the MSupply codes used in Fiji for dispensing medication. |
+| [Fiji Mataqali CodeSystem](/CodeSystem-fiji-mataqali.md) | A code system representing mataqali recognised in Fiji, for use in healthcare information exchange where identification of a mataqali is required. Codes and display names should be sourced from the authoritative Fiji geographic administrative dataset adopted by the Fiji Implementation Guide. |
+| [Fiji Tikina CodeSystem](/CodeSystem-fiji-tikina.md) | A code system representing the tikina (districts) of Fiji for use in healthcare information exchange. Codes and display names should be sourced from the authoritative Fiji geographic administrative dataset adopted by the Fiji Implementation Guide. |
+| [Fiji Tokatoka CodeSystem](/CodeSystem-fiji-tokatoka.md) | A code system representing tokatoka recognised in Fiji, for use in healthcare information exchange where identification of a tokatoka is required. Codes and display names should be sourced from the authoritative Fiji geographic administrative dataset adopted by the Fiji Implementation Guide. |
+| [Fiji Yasana CodeSystem](/CodeSystem-fiji-yasana.md) | A code system representing Yasana (province) largest administrative division codes in Fiji iTaukei society as recognised in Fiji. Codes and display names should be sourced from the authoritative Fiji geographic administrative dataset adopted by the Fiji Implementation Guide. |
+| [Fiji Yavusa CodeSystem](/CodeSystem-fiji-yavusa.md) | A code system representing Yavusa in Fiji for use in healthcare information exchange. Codes and display names should be sourced from the authoritative Fiji geographic administrative dataset adopted by the Fiji Implementation Guide. |
+| [Health administrative zones in Fiji](/CodeSystem-fiji-admin-zones.md) | Health administrative zones in Fiji |
+| [Observation interpretation local codes in Fiji](/CodeSystem-fiji-obs-interpretation-cs.md) | Observation Interpretation local codes in Fiji |
+

@@ -1,0 +1,238 @@
+{
+  "codeSystems" : [{
+    "url" : "http://dicom.nema.org/resources/ontology/DCM",
+    "version" : "01",
+    "status" : "active",
+    "name" : "DICOM Controlled Terminology Definitions",
+    "title" : null,
+    "description" : "DICOM Code Definitions (Coding Scheme Designator \"DCM\" Coding Scheme Version \"01\")",
+    "oids" : ["1.2.840.10008.2.16.4"],
+    "uses" : {
+    },
+    "ValueSet-fiji-dcm-modality-vs.html" : "Dicom Modality Value Set"
+  },
+  {
+    "url" : "http://snomed.info/sct",
+    "version" : null,
+    "status" : "active",
+    "name" : "SNOMED_CT",
+    "title" : "SNOMED CT (all versions)",
+    "description" : "SNOMED CT is the most comprehensive and precise clinical health terminology product in the world, owned and distributed around the world by The International Health Terminology Standards Development Organisation (IHTSDO).",
+    "oids" : ["2.16.840.1.113883.6.96"],
+    "uses" : {
+    },
+    "ValueSet-fiji-medication-route-vs.html" : "Medication or Vaccine Route Value Set",
+    "http://hl7.org/fhir/R4/valueset-procedure-outcome.html" : "Procedure Outcome Codes (SNOMED CT)",
+    "ValueSet-fiji-imaging-report-vs.html" : "Imaging Report Value Set",
+    "ValueSet-fiji-allergy-agent-vs.html" : "Allergy Causative Agent Value Set",
+    "ValueSet-fiji-body-site-vs.html" : "Body Site Value Set",
+    "ValueSet-fiji-vital-method-vs.html" : "Vital Measurement Method Value Set",
+    "ValueSet-fiji-organization-role-vs.html" : "Organization Role Value Set",
+    "http://hl7.org/fhir/R4/valueset-procedure-reason.html" : "Procedure Reason Codes",
+    "http://hl7.org/fhir/R4/valueset-procedure-category.html" : "Procedure Category Codes (SNOMED CT)",
+    "ValueSet-fiji-medication-request-reason-vs.html" : "Medication Request Reason Value Set",
+    "ValueSet-fiji-body-position-vs.html" : "Body Position Value Set",
+    "ValueSet-fiji-condition-code-vs.html" : "Condition (Diagnosis) Value Set",
+    "ValueSet-fiji-evidence-vs.html" : "Condition Evidence Value Set",
+    "ValueSet-fiji-radiology-findings-vs.html" : "Radiology Findings Value Set",
+    "ValueSet-fiji-encounter-reason-vs.html" : "Encounter Reason Value Set",
+    "https://tx.fhir.org/r4/ValueSet/ips-procedures-uv-ips" : "Procedures - IPS",
+    "ValueSet-fiji-service-type-vs.html" : "Service Type Valueset",
+    "ValueSet-fiji-med-vs.html" : "Medication Value Set"
+  },
+  {
+    "url" : "http://terminology.hl7.org/CodeSystem/data-absent-reason",
+    "version" : "2.0.0",
+    "status" : "active",
+    "name" : "DataAbsentReason",
+    "title" : "DataAbsentReason",
+    "description" : "Used to specify why the normally expected content of the data element is missing.",
+    "oids" : ["2.16.840.1.113883.4.642.4.1048"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-data-absent-reason.html" : "DataAbsentReason"
+  },
+  {
+    "url" : "http://terminology.hl7.org/CodeSystem/observation-category",
+    "version" : "2.0.0",
+    "status" : "active",
+    "name" : "ObservationCategoryCodes",
+    "title" : "Observation Category Codes",
+    "description" : "Observation Category codes.",
+    "oids" : ["2.16.840.1.113883.4.642.1.1125"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-observation-category.html" : "Observation Category Codes"
+  },
+  {
+    "url" : "http://terminology.hl7.org/CodeSystem/participant-type",
+    "version" : "1.0.1",
+    "status" : "active",
+    "name" : "ParticipantType",
+    "title" : "Participant type",
+    "description" : "This value set defines a set of codes that can be used to indicate how an individual participates in an encounter.",
+    "oids" : ["2.16.840.1.113883.4.642.1.1089"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-encounter-participant-type.html" : "Participant type"
+  },
+  {
+    "url" : "http://terminology.hl7.org/CodeSystem/v2-0074",
+    "version" : "3.0.0",
+    "status" : "active",
+    "name" : "DiagnosticServiceSectionId",
+    "title" : "diagnosticServiceSectionId",
+    "description" : "HL7-defined code system of concepts which specify a section of a diagnostic service where the observation may be performed.  Used in HL7 Version 2.x messaging in the OBR and OM4 segments.",
+    "oids" : ["2.16.840.1.113883.18.29"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-diagnostic-service-sections.html" : "Diagnostic Service Section Codes"
+  },
+  {
+    "url" : "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+    "version" : "11.0.0",
+    "status" : "active",
+    "name" : "ActCode",
+    "title" : "ActCode",
+    "description" : "A code specifying the particular kind of Act that the Act-instance represents within its class.\r\n\r\n*Constraints:* The kind of Act (e.g. physical examination, serum potassium, inpatient encounter, charge financial transaction, etc.) is specified with a code from one of several, typically external, coding systems. The coding system will depend on the class of Act, such as LOINC for observations, etc.\r\n\r\nConceptually, the Act.code must be a specialization of the Act.classCode. This is why the structure of ActClass domain should be reflected in the superstructure of the ActCode domain and then individual codes or externally referenced vocabularies subordinated under these domains that reflect the ActClass structure.\r\n\r\nAct.classCode and Act.code are not modifiers of each other but the Act.code concept should really imply the Act.classCode concept. For a negative example, it is not appropriate to use an Act.code \"potassium\" together with and Act.classCode for \"laboratory observation\" to somehow mean \"potassium laboratory observation\" and then use the same Act.code for \"potassium\" together with Act.classCode for \"medication\" to mean \"substitution of potassium\". This mutually modifying use of Act.code and Act.classCode is not permitted.",
+    "oids" : ["2.16.840.1.113883.5.4"],
+    "uses" : {
+    },
+    "http://terminology.hl7.org/7.5.0/ValueSet-v3-ActEncounterCode.html" : "ActEncounterCode"
+  },
+  {
+    "url" : "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+    "version" : "4.0.0",
+    "status" : "active",
+    "name" : "ObservationInterpretation",
+    "title" : "ObservationInterpretation",
+    "description" : "One or more codes providing a rough qualitative interpretation of the observation, such as \"normal\" / \"abnormal\", \"low\" / \"high\", \"better\" / \"worse\", \"resistant\" / \"susceptible\", \"expected\" / \"not expected\". The value set is intended to be for ANY use where coded representation of an interpretation is needed.",
+    "oids" : ["2.16.840.1.113883.5.83"],
+    "uses" : {
+    },
+    "ValueSet-fiji-obs-interpretation-vs.html" : "Fiji Observation Interpretation Value Set",
+    "http://hl7.org/fhir/R4/valueset-observation-interpretation.html" : "Observation Interpretation Codes"
+  },
+  {
+    "url" : "http://terminology.hl7.org/CodeSystem/v3-ParticipationType",
+    "version" : "7.0.0",
+    "status" : "active",
+    "name" : "ParticipationType",
+    "title" : "ParticipationType",
+    "description" : "A code specifying the meaning and purpose of every Participation instance. Each of its values implies specific constraints on the Roles undertaking the participation.",
+    "oids" : ["2.16.840.1.113883.5.90"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-encounter-participant-type.html" : "Participant type"
+  },
+  {
+    "url" : "https://core.fhir.health.gov.fj/CodeSystem/fiji-admin-zones",
+    "version" : "0.9.1",
+    "status" : "active",
+    "name" : "FijiAdminZonesCS",
+    "title" : "Health administrative zones in Fiji",
+    "description" : "Health administrative zones in Fiji",
+    "oids" : ["2.16.840.1.113883.4.642.40.1005.16.12"],
+    "uses" : {
+    },
+    "ValueSet-fiji-admin-zones.html" : "Health Administrative Zones Value Set"
+  },
+  {
+    "url" : "https://core.fhir.health.gov.fj/CodeSystem/fiji-ethnicity",
+    "version" : "0.9.1",
+    "status" : "active",
+    "name" : "FijiEthnicityCS",
+    "title" : "Ethnicity",
+    "description" : "Ethnicity as recorded by Fiji MHMS",
+    "oids" : ["2.16.840.1.113883.4.642.40.1005.16.14"],
+    "uses" : {
+    },
+    "ValueSet-fiji-occupation.html" : "Fiji Patient Occupation Value Set",
+    "ValueSet-fiji-ethnicity.html" : "Fiji Patient Ethnicity Value Set"
+  },
+  {
+    "url" : "https://core.fhir.health.gov.fj/CodeSystem/fiji-korodina",
+    "version" : "0.9.1",
+    "status" : "active",
+    "name" : "FijiKorodinaCS",
+    "title" : "Fiji Korodina CodeSystem",
+    "description" : "A code system representing korodina (wards) in Fiji\nfor use in healthcare information exchange.\n\nCodes and display names should be sourced from the\nauthoritative Fiji geographic administrative dataset\nadopted by the Fiji Implementation Guide.",
+    "oids" : ["2.16.840.1.113883.4.642.40.1005.16.2"],
+    "uses" : {
+    },
+    "ValueSet-fiji-korodina.html" : "Fiji Korodina Value Set"
+  },
+  {
+    "url" : "https://core.fhir.health.gov.fj/CodeSystem/fiji-mataqali",
+    "version" : "0.9.1",
+    "status" : "active",
+    "name" : "FijiMataqaliCS",
+    "title" : "Fiji Mataqali CodeSystem",
+    "description" : "A code system representing mataqali recognised in Fiji,\nfor use in healthcare information exchange where\nidentification of a mataqali is required.\n\nCodes and display names should be sourced from the\nauthoritative Fiji geographic administrative dataset\nadopted by the Fiji Implementation Guide.",
+    "oids" : ["2.16.840.1.113883.4.642.40.1005.16.3"],
+    "uses" : {
+    },
+    "ValueSet-fiji-mataqali.html" : "Fiji Mataqali Value Set"
+  },
+  {
+    "url" : "https://core.fhir.health.gov.fj/CodeSystem/fiji-msupply",
+    "version" : "0.9.1",
+    "status" : "active",
+    "name" : "FijiMedCS",
+    "title" : "Fiji MSupply Medication CodeSystem",
+    "description" : "A code system representing legacy MSupply medication codes used in Fiji,\nfor use in healthcare information exchange with legacy medication dispense information\nand until a standardised codesystem for medications is agreed.\n\nCodes and display names should be sourced from the\nMSupply codes used in Fiji for dispensing medication.",
+    "oids" : ["2.16.840.1.113883.4.642.40.1005.16.15"],
+    "uses" : {
+    },
+    "ValueSet-fiji-med-vs.html" : "Medication Value Set"
+  },
+  {
+    "url" : "https://core.fhir.health.gov.fj/CodeSystem/fiji-obs-interpretation-cs",
+    "version" : "0.9.1",
+    "status" : "draft",
+    "name" : "FijiObsInterpretationCS",
+    "title" : "Observation interpretation local codes in Fiji",
+    "description" : "Observation Interpretation local codes in Fiji",
+    "oids" : ["2.16.840.1.113883.4.642.40.1005.16.6"],
+    "uses" : {
+    },
+    "ValueSet-fiji-obs-interpretation-vs.html" : "Fiji Observation Interpretation Value Set"
+  },
+  {
+    "url" : "https://core.fhir.health.gov.fj/CodeSystem/fiji-tikina",
+    "version" : "0.9.1",
+    "status" : "active",
+    "name" : "FijiTikinaCS",
+    "title" : "Fiji Tikina CodeSystem",
+    "description" : "A code system representing the tikina (districts) of Fiji\nfor use in healthcare information exchange.\n\nCodes and display names should be sourced from the\nauthoritative Fiji geographic administrative dataset\nadopted by the Fiji Implementation Guide.",
+    "oids" : ["2.16.840.1.113883.4.642.40.1005.16.8"],
+    "uses" : {
+    },
+    "ValueSet-fiji-tikina.html" : "Fiji Tikina Value Set",
+    "ValueSet-fiji-yasana.html" : "Fiji Yasana Value Set"
+  },
+  {
+    "url" : "https://core.fhir.health.gov.fj/CodeSystem/fiji-tokatoka",
+    "version" : "0.9.1",
+    "status" : "active",
+    "name" : "FijiTokatokaCS",
+    "title" : "Fiji Tokatoka CodeSystem",
+    "description" : "A code system representing tokatoka recognised in Fiji,\nfor use in healthcare information exchange where\nidentification of a tokatoka is required.\n\nCodes and display names should be sourced from the\nauthoritative Fiji geographic administrative dataset\nadopted by the Fiji Implementation Guide.",
+    "oids" : ["2.16.840.1.113883.4.642.40.1005.16.9"],
+    "uses" : {
+    },
+    "ValueSet-fiji-tokatoka.html" : "Fiji Tokatoka Value Set"
+  },
+  {
+    "url" : "https://core.fhir.health.gov.fj/CodeSystem/fiji-yavusa",
+    "version" : "0.9.1",
+    "status" : "active",
+    "name" : "FijiYavusaCS",
+    "title" : "Fiji Yavusa CodeSystem",
+    "description" : "A code system representing Yavusa in Fiji\nfor use in healthcare information exchange.\n\nCodes and display names should be sourced from the\nauthoritative Fiji geographic administrative dataset\nadopted by the Fiji Implementation Guide.",
+    "oids" : ["2.16.840.1.113883.4.642.40.1005.16.11"],
+    "uses" : {
+    },
+    "ValueSet-fiji-yavusa.html" : "Fiji Yavusa Value Set"
+  }]
+}
