@@ -3,10 +3,11 @@
 # Add warning and/or information messages here after you've confirmed that they aren't really a problem
 # (And include comments like this justifying why)
 # See https://github.com/FHIR/sample-ig/blob/master/input/ignoreWarnings.txt for examples
-An HTML fragment from the set [cross-version-analysis.xhtml, cross-version-analysis-inline.xhtml] is not included anywhere in the produced implementation guide
-An HTML fragment from the set [dependency-table.xhtml, dependency-table-short.xhtml, dependency-table-nontech.xhtml] is not included anywhere in the produced implementation guide
+# An HTML fragment from the set [cross-version-analysis.xhtml, cross-version-analysis-inline.xhtml] is not included anywhere in the produced implementation guide
+# An HTML fragment from the set [dependency-table.xhtml, dependency-table-short.xhtml, dependency-table-nontech.xhtml] is not included anywhere in the produced implementation guide
 # The system 'http://loinc.org' is actually a value set, which itself refers to the system 'http://loinc.org' so that may be what is intended here
 # A definition for CodeSystem 'urn:iso:std:iso:3166:-2' could not be found, so the code cannot be validated
 # A definition for CodeSystem 'http://hl7.org/fhir/sid/cvx' could not be found, so the code cannot be validated 
 # A definition for CodeSystem 'http://whocc.no/atc' could not be found, so the code cannot be validated
 # A definition for CodeSystem 'urn:ietf:bcp:47' could not be found, so the code cannot be validated
+Error: A definition for CodeSystem 'http://hl7.org/fhir/sid/icd-10-am' could not be found, so the value set cannot be expanded
