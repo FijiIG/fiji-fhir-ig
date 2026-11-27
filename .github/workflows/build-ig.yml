@@ -25,7 +25,7 @@ jobs:
       - name: Install Sushi
         run: npm install -g fsh-sushi
 
-      # 4. Install IG dependencies (e.g., AU Core) from package.json
+      # 4. Install IG dependencies from package.json
       - name: Install IG dependencies
         run: npm ci
 
@@ -54,6 +54,18 @@ jobs:
             "https://github.com/HL7/fhir-ig-publisher/releases/download/${PUBLISHER_TAG}/publisher.jar" \
             -o publisher.jar
 
+
+      # pre8. Temporarily pin FHIR Extensions package
+      - name: Pin FHIR Extensions package
+        run: |
+          cat >> sushi-config.yaml <<'EOF'
+
+          dependencies:
+            hl7.fhir.uv.extensions.r4: 5.4.0
+          EOF
+
+          echo "FHIR Extensions dependency pinned to 5.4.0"
+          tail -5 sushi-config.yaml
 
       # 8. Run Sushi
       - name: Run Sushi
