@@ -19,6 +19,6 @@ Description: "Example of heart rate observation"
 * method = $SCT#113011001 "Palpation"
 
 // Measurement site: radial artery
-* bodySite = $SCT#45631007 "Structure of radial artery"
+* bodySite = $SCT#368503001 "Structure of right radial artery"
 
 * extension[bodyPosition].valueCodeableConcept =  $SCT#33586001 "Sitting position"

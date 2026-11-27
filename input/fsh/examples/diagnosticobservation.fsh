@@ -30,7 +30,7 @@ Description: "Example of Pulmonary Consolidation observation"
 * subject = Reference(FijiPatientExample)
 * effectiveDateTime = "2026-09-28T09:30:00+12:00"
 * performer = Reference(Practitioner/FijiRadiologistExample)
-* bodySite = $SCT#39607008 "Lung structure"
+* bodySite = $SCT#44029006 "Left lung structure"
 
 
 Instance: FijiDiagnosticObservationPleuralEffusion
@@ -45,4 +45,4 @@ Description: "Example of Basal Pnuemonia observation"
 * subject = Reference(FijiPatientExample)
 * effectiveDateTime = "2026-09-28T09:30:00+12:00"
 * performer = Reference(Practitioner/FijiRadiologistExample)
-* bodySite = $SCT#113197003 "Bone structure of rib"
+* bodySite = $SCT#724223001 "Bone structure of left rib"
