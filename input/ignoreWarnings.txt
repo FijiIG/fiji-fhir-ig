@@ -1,13 +1,22 @@
 == Suppressed Messages ==
 
-# Add warning and/or information messages here after you've confirmed that they aren't really a problem
-# (And include comments like this justifying why)
-# See https://github.com/FHIR/sample-ig/blob/master/input/ignoreWarnings.txt for examples
-# An HTML fragment from the set [cross-version-analysis.xhtml, cross-version-analysis-inline.xhtml] is not included anywhere in the produced implementation guide
-# An HTML fragment from the set [dependency-table.xhtml, dependency-table-short.xhtml, dependency-table-nontech.xhtml] is not included anywhere in the produced implementation guide
-# The system 'http://loinc.org' is actually a value set, which itself refers to the system 'http://loinc.org' so that may be what is intended here
+# -- Validation errors due to limited codesystems loaded in https://tx.fhirlab.net/fhir
 # A definition for CodeSystem 'urn:iso:std:iso:3166:-2' could not be found, so the code cannot be validated
 # A definition for CodeSystem 'http://hl7.org/fhir/sid/cvx' could not be found, so the code cannot be validated 
 # A definition for CodeSystem 'http://whocc.no/atc' could not be found, so the code cannot be validated
 # A definition for CodeSystem 'urn:ietf:bcp:47' could not be found, so the code cannot be validated
+
+# -- Known issues with fhir.base.template (same warnings in HL7 FHIR Implementation Guide Guidance)
+The html source is not well formed: Found "</a>" expecting "</img>" at line 34 column 177
+The html source is not well formed: Found "</div>" expecting "</body>" at line 79 column 10
+The html source is not well formed: Found "</div>" expecting "</body>" at line 80 column 9
+The html source is not well formed: Found "</div>" expecting "</body>" at line 109 column 8
+The html source is not well formed: Found "</div>" expecting "</body>" at line 111 column 12
+The html source is not well formed: Found "</div>" expecting "</body>" at line 112 column 20
+The html source is not well formed: Found "</div>" expecting "</body>" at line 113 column 16
+The html source is not well formed: Found "</div>" expecting "</body>" at line 115 column 12
+
+# -- Unused xhtml fragments - these are not needed 
+
+# Issue due to missing CodeSystem for ICD-10 AM
 Error: A definition for CodeSystem 'http://hl7.org/fhir/sid/icd-10-am' could not be found, so the value set cannot be expanded

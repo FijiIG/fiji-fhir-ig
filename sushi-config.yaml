@@ -59,6 +59,8 @@ pages:
     title: Extensions
   gettingstarted.md:
     title: Contributing to the Fiji Core IG
+  ig-metadata.md:
+    title: IG Metadata
 
 
 
