@@ -94,6 +94,7 @@ The `language` element may be populated to identify the language used in the pre
 * performer only Reference(FijiPractitioner or FijiPractitionerRole or FijiFacility)
 * resultsInterpreter 0..* MS
 * resultsInterpreter only Reference(FijiPractitioner or FijiPractitionerRole or FijiFacility)
+* conclusionCode MS
 * conclusionCode from FijiRadiologyFindingsVS (preferred)
 * presentedForm 1..* MS
 * presentedForm.contentType 1..1 MS

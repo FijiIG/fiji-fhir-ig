@@ -7,6 +7,7 @@ Description: "Health administrative zones in Fiji"
 * ^caseSensitive = true
 * ^version = "0.1.0"
 * ^url = $admin-zones-cs
+* ^status = #active
 
 * #division "Division" "Division - highest level health admin zone"
 * #subdivision "Subdivision" "Subdivision - health admin zone part of a Division"
