@@ -88,8 +88,8 @@ Alias: $reference = http://hl7.org/fhir/StructureDefinition/Reference
 Alias: $narrative = http://hl7.org/fhir/StructureDefinition/Narrative
  
 // Commonly Used Extension Definitions
-Alias: $patient-nationality = http://hl7.org/fhir/StructureDefinition/patient-nationality
-Alias: $patient-religion = http://hl7.org/fhir/StructureDefinition/patient-religion
+Alias: $patient-nationality = http://hl7.org/fhir/StructureDefinition/patient-nationality|5.4.1
+Alias: $patient-religion = http://hl7.org/fhir/StructureDefinition/patient-religion|5.4.1
 Alias: $patient-occupation-nz = http://hl7.org.nz/fhir/StructureDefinition/acc-patient-occupation
 Alias: $patient-ethnicity-nz = http://hl7.org.nz/fhir/StructureDefinition/nz-ethnicity
 Alias: $patient-birthPlace = http://hl7.org/fhir/StructureDefinition/patient-birthPlace
@@ -98,7 +98,7 @@ Alias: $patient-interpreterRequired = http://hl7.org/fhir/StructureDefinition/pa
 Alias: $patient-birthTime = http://hl7.org/fhir/StructureDefinition/patient-birthTime
 Alias: $geolocation = http://hl7.org/fhir/StructureDefinition/geolocation
 Alias: $bodysite = http://hl7.org/fhir/StructureDefinition/bodySite // references BodyStructure
-Alias: $bodyposition = http://hl7.org/fhir/StructureDefinition/observation-bodyPosition // references BodyPosition in Observations
+Alias: $bodyposition = http://hl7.org/fhir/StructureDefinition/observation-bodyPosition|5.4.1 // references BodyPosition in Observations
 Alias: $allerg-assertdate = http://hl7.org/fhir/StructureDefinition/allergyintolerance-assertedDate
 Alias: $cond-assertdate = http://hl7.org/fhir/StructureDefinition/condition-assertedDate
 
