@@ -25,17 +25,16 @@ jobs:
       - name: Install Sushi
         run: npm install -g fsh-sushi
 
-      # 4. Install IG dependencies from package.json
+      # 4. Install IG dependencies (e.g., AU Core) from package.json
       - name: Install IG dependencies
         run: npm ci
 
-
-      # 5. Set IG Publisher version (pinned to 3.0.6)
-      - name: Set IG Publisher version
+      # 5. Get latest IG Publisher version
+      - name: Get latest IG Publisher version
         id: ig-publisher-version
         run: |
-          PUBLISHER_TAG="3.0.6"
-          echo "tag=$PUBLISHER_TAG" >> "$GITHUB_OUTPUT"
+          LATEST_TAG=$(curl -sL -o /dev/null -w '%{url_effective}' https://github.com/HL7/fhir-ig-publisher/releases/latest | sed 's#.*/tag/##')
+          echo "tag=$LATEST_TAG" >> "$GITHUB_OUTPUT"
 
       # 6. Cache IG Publisher
       - name: Cache IG Publisher
@@ -43,29 +42,13 @@ jobs:
         uses: actions/cache@v4
         with:
           path: ./publisher.jar
-          key: publisher-${{ steps.ig-publisher-version.outputs.tag }}
+          key: publisher-${{ steps.ig-publisher-version.outputs.tag }}        
 
       # 7. Download publisher.jar if not cached
       - name: Download IG Publisher
         if: steps.cache-publisher.outputs.cache-hit != 'true'
         run: |
-          PUBLISHER_TAG="${{ steps.ig-publisher-version.outputs.tag }}"
-          curl -fL \
-            "https://github.com/HL7/fhir-ig-publisher/releases/download/${PUBLISHER_TAG}/publisher.jar" \
-            -o publisher.jar
-
-
-      # pre8. Temporarily pin FHIR Extensions package
-      - name: Pin FHIR Extensions package
-        run: |
-          cat >> sushi-config.yaml <<'EOF'
-
-          dependencies:
-            hl7.fhir.uv.extensions.r4: 5.4.0
-          EOF
-
-          echo "FHIR Extensions dependency pinned to 5.4.0"
-          tail -5 sushi-config.yaml
+          curl -L https://github.com/HL7/fhir-ig-publisher/releases/latest/download/publisher.jar -o publisher.jar
 
       # 8. Run Sushi
       - name: Run Sushi
