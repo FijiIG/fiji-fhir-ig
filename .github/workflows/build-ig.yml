@@ -29,12 +29,13 @@ jobs:
       - name: Install IG dependencies
         run: npm ci
 
-      # 5. Get latest IG Publisher version
-      - name: Get latest IG Publisher version
+
+      # 5. Set IG Publisher version (pinned to 3.0.6)
+      - name: Set IG Publisher version
         id: ig-publisher-version
         run: |
-          LATEST_TAG=$(curl -sL -o /dev/null -w '%{url_effective}' https://github.com/HL7/fhir-ig-publisher/releases/latest | sed 's#.*/tag/##')
-          echo "tag=$LATEST_TAG" >> "$GITHUB_OUTPUT"
+          PUBLISHER_TAG="3.0.6"
+          echo "tag=$PUBLISHER_TAG" >> "$GITHUB_OUTPUT"
 
       # 6. Cache IG Publisher
       - name: Cache IG Publisher
@@ -42,13 +43,17 @@ jobs:
         uses: actions/cache@v4
         with:
           path: ./publisher.jar
-          key: publisher-${{ steps.ig-publisher-version.outputs.tag }}        
+          key: publisher-${{ steps.ig-publisher-version.outputs.tag }}
 
       # 7. Download publisher.jar if not cached
       - name: Download IG Publisher
         if: steps.cache-publisher.outputs.cache-hit != 'true'
         run: |
-          curl -L https://github.com/HL7/fhir-ig-publisher/releases/latest/download/publisher.jar -o publisher.jar
+          PUBLISHER_TAG="${{ steps.ig-publisher-version.outputs.tag }}"
+          curl -fL \
+            "https://github.com/HL7/fhir-ig-publisher/releases/download/${PUBLISHER_TAG}/publisher.jar" \
+            -o publisher.jar
+
 
       # 8. Run Sushi
       - name: Run Sushi
