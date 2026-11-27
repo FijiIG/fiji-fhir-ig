@@ -2,7 +2,7 @@
 
 This page describes the code systems and valuesets that are defined in this Implementation Guide.
 
-#### Migration to Use of SNOMED CT for Clinical Terminology
+#### SNOMED CT for Clinical Terminology
 
 In order to facilitate future interoperability both internally within Fiji and between other nations in the region, Fiji MHMS has made a strategic decision to adopt the SNOMED CT (International) clinical terminology as the primary representation of coded clinical concepts for this FHIR Implementation Guide. Current Fiji MHMS systems at the time of publishing of this Implementation Guide do not yet support SNOMED CT and thus legacy data is either uncoded or used alternate terminology sets.  However, future application acquisitions, upgrades and deployments should support this strategic intent.
 
@@ -12,6 +12,13 @@ Free text entry should only be permitted for Codeable Concepts if no suitable co
 
 ##### Use of Full SNOMED refsets
 After discussion on the relative merits of using full SNOMED refsets vs the International Patient Summary curated subsets, it was decided (23/10/2026 at Sydney workshop) to use the full refsets in the Valuesets of this Implementation Guide.
+
+#### Other International Terminology Sets Used
+The following terminologies are used for specific profiles/elements in this implementation guide.
+
+* [CVX Standard Code Set for Vaccines](https://www2a.cdc.gov/vaccines/iis/iisstandards/vaccines.asp?rpt=cvx) These codes are used in the valueset bound to the Immunization profile vaccineCode element.
+* [ATC Anatomical Therapeutic Chemical Code Set](https://www.who.int/tools/atc-ddd-toolkit/atc-classification) These codes may be used in the Medication Value Set used in MedicationRequest and MedicationDispense profiles for the medication element.
+* [ICD-10 AM]() These codes are included to support legacy data handling,  and may be used in the Condition (Diagnosis) or Medication Request Reason valuesets.  
 
 
 #### ValueSets

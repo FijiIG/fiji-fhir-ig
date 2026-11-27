@@ -11,18 +11,6 @@ Proposed valueset is taken from SNOMED Problem/Diagnosis refsets.
 * ^publisher = "MHMS Fiji"
 * ^version = "0.1.0"
 
-
-
-Alias: $SCT = http://snomed.info/sct
-
-ValueSet: MedicationOrderingClinicalReason
-Id: medication-ordering-clinical-reason
-Title: "Medication Ordering Clinical Reason"
-Description: "Clinical conditions, findings, observations and circumstances that provide the reason or indication for ordering or not ordering a medication."
-
-* ^status = #active
-* ^experimental = true
-
 // GP/FP Reason for Encounter reference sets
 
 * include codes from system $SCT where constraint = "^ 450974004"
